@@ -78,8 +78,8 @@
 \begin_body
 
 \begin_layout Title
-Estudio por simulación del flujo de líquidos confinados por cepillos poliméricos
- semi-flexibles
+Estudio por simulación del flujo confinado por cepillos poliméricos semi-flexibl
+es
 \end_layout
 
 \begin_layout Author
@@ -102,16 +102,16 @@ es de la cadena polimérica.
  Se utilizó el termostato de dissipative particle dynamics para realizar
  simulaciones en el ensamble canónico (N, V, T) o a temperatura constante,
  fuera del equilibrio.
- El trabajo está dividido en tres partes, según las caracterísitcas del
+ El trabajo está dividido en tres partes, según las características del
  sistema estudiado.
  Primero se investigó el canal lleno por un líquido simple en equilibrio
  y moviendo las paredes a velocidad constante para inducir un flujo tipo
  Couette.
  Se estudió la estructura y la dinámica del medio confinante, utilizando
- diferentes valores de rígidez para los polímeros.
+ diferentes valores de rigidez para los polímeros.
  También se varió la cantidad de polímeros fijados a la pared del canal
  por unidad de área y la velocidad de las paredes.
- Se caracterizó la interfase líquido-cepillo y se analizó la penetración
+ Se caracterizó la interfaz líquido-cepillo y se analizó la penetración
  del fluido en los intersticios del medio confinante.
  Se cuantificó el deslizamiento del líquido sobre el medio confinante, observand
 o siempre un resbalamiento apreciable.
@@ -121,7 +121,7 @@ o siempre un resbalamiento apreciable.
  por cepillos poliméricos.
  En este caso, el fluido forma una gota en el canal, que coexiste con su
  vapor en equilibrio termodinámico.
- Se hizó enfasis en la influencia de la rigidez de las cadenas en las propiedade
+ Se hizo énfasis en la influencia de la rigidez de las cadenas en las propiedade
 s de fricción y transporte del líquido.
  Se halló una estrecha y compleja relación entre la dinámica interna del
  cepillo polimérico y el flujo sobre el mismo.
@@ -136,13 +136,14 @@ Por otro lado, se estudió el comportamiento del sistema cuando el ancho
  anclados en su interior.
  De esta manera, se permite la interacción directa entre cadenas ancladas
  a paredes opuestas, generando estructuras que atraviesan el ancho del canal.
- Imponiendo una fuerza externa, se investigó el flujo del líqudo que llena
+ Imponiendo una fuerza externa, se investigó el flujo del líquido que llena
  el canal en función de la intensidad de la fuerza impuesta.
  Se encontró una respuesta no lineal muy rica, debido al rompimiento de
  los enlaces entre polímeros de paredes opuestas y la desobstrucción del
  canal.
  Luego, se estudió esta respuesta en función de parámetros físicos relevantes
- como la rígidez de las cadenas, la calidad del solvente.
+ como la rigidez de las cadenas, la calidad del solvente.
+ 
 \end_layout
 
 \begin_layout Chapter
@@ -151,6 +152,10 @@ Introducción
 
 \begin_layout Chapter
 Técnica de simulación
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Chapter
