@@ -155,7 +155,25 @@ Técnica de simulación
 \end_layout
 
 \begin_layout Standard
+En este trabajo se realizaron simulaciones numéricas de grano grueso con
+ la técnica de dinámica molecular.
+ Esta técnica consiste en resolver las ecuaciones de Newton p 
+\end_layout
 
+\begin_layout Standard
+DPD
+\end_layout
+
+\begin_layout Standard
+LJ
+\end_layout
+
+\begin_layout Standard
+FENE
+\end_layout
+
+\begin_layout Standard
+BENDING
 \end_layout
 
 \begin_layout Chapter
