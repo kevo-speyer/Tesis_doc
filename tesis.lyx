@@ -157,7 +157,20 @@ Técnica de simulación
 \begin_layout Standard
 En este trabajo se realizaron simulaciones numéricas de grano grueso con
  la técnica de dinámica molecular.
- Esta técnica consiste en resolver las ecuaciones de Newton p 
+ Esta técnica consiste en resolver las ecuaciones de movimiento para todas
+ las partículas presentes en el sistema.
+ Primero se inicializa el sistema, ubicando cada partícula en una posición
+ inicial.
+ Para moléculas lineales, la posición inicial es elegida de acuerdo a una
+ caminata al azar en el espacio, de manera de obtener una configuración
+ cercana a al equilibrio.
+ Para partículas sueltas, se puede elegir simplemente un punto aleatorio
+ dentro de la caja de simulación como posición inicial.
+ Las velocidades iniciales son seleccionadas de una distribución 
+\end_layout
+
+\begin_layout Standard
+Marco teórico: mecánica estadística
 \end_layout
 
 \begin_layout Standard
