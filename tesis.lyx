@@ -154,6 +154,10 @@ Introducción
 Técnica de simulación
 \end_layout
 
+\begin_layout Section
+Dinámica Molecular
+\end_layout
+
 \begin_layout Standard
 En este trabajo se realizaron simulaciones numéricas de grano grueso con
  la técnica de dinámica molecular.
@@ -166,15 +170,58 @@ En este trabajo se realizaron simulaciones numéricas de grano grueso con
  cercana a al equilibrio.
  Para partículas sueltas, se puede elegir simplemente un punto aleatorio
  dentro de la caja de simulación como posición inicial.
- Las velocidades iniciales son seleccionadas de una distribución 
+ Las velocidades iniciales son seleccionadas de una distribución Maxwell-Boltzma
+nn con la temperatura deseada.
+ Dado el estado inicial de todas las partículas del sistema, se calculan
+ las fuerzas y se integran las ecuaciones de movimiento mediante el esquema
+ Velocity Verlet, obteniendo así las trayectorias de las partículas en el
+ espacio de fases.
+ 
 \end_layout
 
 \begin_layout Standard
-Marco teórico: mecánica estadística
+El esquema de integración Velocity Verlet utiliza un punto medio temporal,
+ como los métodos de salta de rana (
+\shape italic
+leapfrog
+\shape default
+).
+ Conocidas la posición
+\begin_inset Formula $\boldsymbol{r}(t)$
+\end_inset
+
+, velocidad 
+\begin_inset Formula $\boldsymbol{v}(t)$
+\end_inset
+
+y fuerzas 
+\begin_inset Formula $\boldsymbol{f}(t)$
+\end_inset
+
+ actuantes sobre un partícula en un instante de tiempo 
+\begin_inset Formula $t$
+\end_inset
+
+, hallar la posición y velocidad luego de un paso temporal 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+ se reduce a :
 \end_layout
 
 \begin_layout Standard
-DPD
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{v}(t+\frac{1}{2}\Delta t)=\boldsymbol{v}(t)+\frac{1}{2}\boldsymbol{a}(t)\Delta t
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Modelado de interacciones
 \end_layout
 
 \begin_layout Standard
@@ -187,6 +234,22 @@ FENE
 
 \begin_layout Standard
 BENDING
+\end_layout
+
+\begin_layout Section
+Termostato y conexión con Mecánica estadística 
+\end_layout
+
+\begin_layout Section
+Tratamiento de incertezas
+\end_layout
+
+\begin_layout Standard
+Marco teórico: mecánica estadística
+\end_layout
+
+\begin_layout Standard
+DPD
 \end_layout
 
 \begin_layout Chapter
