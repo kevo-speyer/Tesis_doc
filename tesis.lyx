@@ -220,6 +220,85 @@ y fuerzas
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{r}(t+\Delta t)=\boldsymbol{r}(t)+\boldsymbol{v}(t+\frac{1}{2}\Delta t)\Delta t
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{a}(t+\Delta t)=\boldsymbol{f}(\boldsymbol{r}(t+\Delta t))/m\label{eq: calc_force}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{v}(t+\Delta t)=\boldsymbol{v}(t+\frac{1}{2}\Delta t)+\boldsymbol{a}(t+\Delta t)\frac{1}{2}\Delta t
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el paso correspondiente a la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: calc_force"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, se calculan las fuerzas utilizando las coordenadas 
+\begin_inset Formula $\boldsymbol{r}(t+\Delta t)$
+\end_inset
+
+ actualizadas.
+\end_layout
+
+\begin_layout Standard
+Si bien este algoritmo no es particularmente preciso para incrementos temporales
+ grandes, presenta dos ventajas por sobre el resto.
+ La primera es la rapidez, aunque esto no es determinante, debido a que
+ el mayor consumo de tiempo se da en el cálculo de las fuerzas.
+ La segunda y mas importante, es que la energía total del sistema no sufre
+ desviaciones sistemáticas para tiempos largos.
+ Esto es destacable, ya que para disminuir la contribución del error estadístico
+ en las mediciones es necesario tomar tiempos largos de simulación.
+ Cabe mencionar que la trayectoria en el espacio de fases del sistema de
+ estudio, como de la gran mayoría tratados mediante el método de Dinámica
+ Molecular, es sensible a las condiciones iniciales.
+ Esto significa que ante condiciones iniciales muy cercanas, las trayectorias
+ divergen exponencialmente.
+ Como consecuencia, es de esperar que las trayectorias de las partículas
+ obtenidas difieran apreciablemente de las reales.
+ Sin embargo esto no representa un verdadero problema, pues no son las trayector
+ias de cada una de las partículas las que se quieren conocer con exactitud,
+ sino las magnitudes físicas macroscópicas y comportamiento medio de las
+ partículas.
+ Por esta razón es que es importante que la trayectoria del sistema en el
+ espacio de fases sea compatible con las restricciones dadas en el ensamble
+ que se esté trabajando.
+ Si se trabaja en el ensamble canónico, que la temperatura se mantenga constante
+ durante toda la experiencia, es una condición necesaria para saber que
+ se están integrando correctamente las ecuaciones de movimiento.
+\end_layout
+
 \begin_layout Section
 Modelado de interacciones
 \end_layout
