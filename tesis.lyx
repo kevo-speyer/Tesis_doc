@@ -154,6 +154,32 @@ Introducción
 Técnica de simulación
 \end_layout
 
+\begin_layout Standard
+En este capítulo se aborda en primer lugar la técnica de simulación de Dinámica
+ Molecular 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "frenkel.md.book.1996"
+literal "true"
+
+\end_inset
+
+.
+ Se discuten brevemente los algoritmos más importantes, las dificultades
+ y sus soluciones.
+ Luego se presenta el método con el cuál se mantuvo la condición termodinámica
+ de temperatura constante y su conexión con la mecánica estadística.
+ Luego se desarrolla los modelos de interacciones de grano grueso utilizados
+ para simular las fuerzas entre las partículas del sistema estudiado.
+ También se discute sobre las simulaciones fuera del equilibrio en los caso
+ particulares de flujos de Couette y de Poiseuille, y se introducen las
+ cantidades de interés asociadas a la dinámica del sistema.
+ Más adelante se explica cómo es el proceso de medición de una cantidad
+ física y la estimación de su incerteza en una corrida.
+ Por último, se detallan cada una de las magnitudes extraídas de las simulacione
+s.
+\end_layout
+
 \begin_layout Section
 Dinámica Molecular
 \end_layout
@@ -269,6 +295,7 @@ noprefix "false"
 \end_inset
 
  actualizadas.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -276,7 +303,7 @@ Si bien este algoritmo no es particularmente preciso para incrementos temporales
  grandes, presenta dos ventajas por sobre el resto.
  La primera es la rapidez, aunque esto no es determinante, debido a que
  el mayor consumo de tiempo se da en el cálculo de las fuerzas.
- La segunda y mas importante, es que la energía total del sistema no sufre
+ La segunda y más importante, es que la energía total del sistema no sufre
  desviaciones sistemáticas para tiempos largos.
  Esto es destacable, ya que para disminuir la contribución del error estadístico
  en las mediciones es necesario tomar tiempos largos de simulación.
@@ -297,6 +324,239 @@ ias de cada una de las partículas las que se quieren conocer con exactitud,
  Si se trabaja en el ensamble canónico, que la temperatura se mantenga constante
  durante toda la experiencia, es una condición necesaria para saber que
  se están integrando correctamente las ecuaciones de movimiento.
+\end_layout
+
+\begin_layout Standard
+Si bien la idea del método es simple, su implementación trae algunas complicacio
+nes.
+ Para inicializar el sistema es necesario dar las posiciones y velocidades
+ de cada partícula en un instante.
+ Fijar las velocidades no trae mayores inconvenientes, ya que se si se pretende
+ estudiar el sistema en equilibrio, se pueden tomar de la distribución de
+ Maxwell-Boltzmann.
+ Imponer las posiciones iniciales es más difícil, pues si dos partículas
+ están muy cerca, la fuerza de repulsión es demasiado grande y las ecuaciones
+ de movimiento no se integran correctamente.
+ Si se trabaja con densidades bajas, se puede sortear esta complicación,
+ reasignando la posición de la partícula si esta cae demasiado cerca de
+ otra.
+ Sin embargo para densidades altas, como es el caso al tratar fluidos, este
+ método no es eficiente, porque la probabilidad de que sea reasignada a
+ una posición suficientemente lejos de las demás es pequeña.
+ Para resolver el inconveniente se utilizó una técnica denominada 
+\shape italic
+Force Switch on
+\shape default
+ (Encendido de Fuerza).
+ Primero se distribuyen las partículas al azar dentro de la caja de simulación
+ y se define un radio 
+\begin_inset Formula $r_{min}$
+\end_inset
+
+ como la distancia de equilibrio entre entre dos partículas.
+ Se hace evolucionar el sistema según las ecuaciones de movimiento, pero
+ en vez de usar la distancia real entre partículas (
+\begin_inset Formula $d$
+\end_inset
+
+) para calcular la fuerza, se utiliza el máximo valor entre 
+\begin_inset Formula $d$
+\end_inset
+
+ y 
+\begin_inset Formula $r_{min}$
+\end_inset
+
+.
+ El valor de 
+\begin_inset Formula $r_{min}$
+\end_inset
+
+ disminuye lealmente con el tiempo hasta llegar a cero, y a partir de ese
+ momento la fuerza utilizada es la correspondiente al modelo.
+ Es conveniente elegir un tiempo de encendido suficientemente largo, para
+ que no haya superposición entre partículas al finalizar al rutina de encendido
+ de fuerza.
+ Pero si se elige un tiempo excesivamente largo, se está desperdiciando
+ tiempo de computo, ya que el sistema demora más en alcanzar el estado de
+ equilibrio.
+\end_layout
+
+\begin_layout Standard
+Para hacer evolucionar al sistema temporalmente, es necesario conocer las
+ fuerzas actuantes sobre cada partícula.
+ En principio cada partícula interactúa con las demás 
+\begin_inset Formula $N-1$
+\end_inset
+
+, por lo que en cada paso de tiempo es necesario computar tantas fuerzas
+ como pares existen en el sistema: 
+\begin_inset Formula $N\text{(}N-1)/2$
+\end_inset
+
+.
+ El hecho de que este algoritmo sea de orden 
+\begin_inset Formula $N^{2}$
+\end_inset
+
+, hace que sea muy costoso agrandar el tamaño de la caja de simulación,
+ imposibilitando el estudio de algunos sistemas.
+ Aumentar la eficiencia de esta etapa del programa es muy importante, ya
+ que la rutina de cálculo de fuerzas puede llegar a consumir hasta un 80%
+ del tiempo total de simulación.
+\end_layout
+
+\begin_layout Standard
+En este caso se combinaron dos métodos (
+\shape italic
+Verlet list
+\shape default
+ y 
+\shape italic
+Cell List
+\shape default
+) que logran que el cálculo total de fuerzas escalee como 
+\begin_inset Formula $N\text{·}log(N)$
+\end_inset
+
+, tomando ventaja de que todas las interacciones en el sistema estudiado
+ son de corto alcance.
+ Esto quiere decir que la fuerza disminuye rápidamente al aumentar la distancia
+ entre partículas, por lo tanto, a fines prácticos, ésta es no nula solamente
+ si la distancia de interacción es menor a un determinado valor, llamado
+ radio de corte (
+\begin_inset Formula $r_{C}$
+\end_inset
+
+).
+ La idea básica del algoritmo consiste en generar dos listas para cada partícula
+, una con todos los vecinos que se encuentren a una distancia menor al radio
+ de corte, y otra con todos los vecinos que se encuentren a una distancia
+ mayor al radio de corte y menor a un determinado valor (
+\begin_inset Formula $r_{V}$
+\end_inset
+
+) (ver Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Verlet list"
+
+\end_inset
+
+).
+ Luego, es suficiente con computar las interacciones con los vecinos que
+ se encuentran en la primera lista, lo cual es un algoritmo de orden 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ La ganancia de este método radica en que no es necesario actualizar las
+ listas de vecinos en todos los pasos, pues revisando solamente la posición
+ de las partículas en la segunda lista, se puede saber si habrá nuevas partícula
+s interactuando.
+ Renovar la lista de vecinos es un algoritmo que escalea como el cuadrado
+ de la cantidad de partículas, pero típicamente esto se realiza cada diez
+ pasos.
+ El método de la lista de celdas sirve para agilizar el llenado de las listas
+ de Verlet y funciona dividiendo la caja de simulación en celdas cuyo lado
+ sea parecido a 
+\begin_inset Formula $r_{C}$
+\end_inset
+
+ y llevando cuenta de qué partículas están en cada caja.
+ De esta manera, cada vez que se quieren renovar las listas de Verlet, solamente
+ es necesario inspeccionar la distancia de las partículas pertenecientes
+ a la misma celda o a celdas vecinas, lo cual es nuevamente un algoritmo
+ de orden 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Tesis_lic/figs/Fig_Frenkel1.eps
+	width 50text%
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Verlet list"
+
+\end_inset
+
+Se representa gráficamente como se realizan las listas de vecinos es el
+ algoritmo Verles List para la partícula i-ésima.
+ La primera lista contiene a todas las partículas a una distancia menor
+ al radio de de corte de las interacciones 
+\begin_inset Formula $r_{C}$
+\end_inset
+
+.
+ Solamente las partículas pertenecientes a esta lista son capaces de realizar
+ fuerza sobre la partícula i-ésima.
+ La segunda lista comprende a los vecinos que están a una distancia mayor
+ que el radio de corte, y menor al radio de Verlet (
+\begin_inset Formula $r_{V}$
+\end_inset
+
+).
+ Revisando exclusivamente las posiciones de las partículas correspondientes
+ a esta lista, es posible determinar si existen nuevos vecinos interactuando
+ con la partícula en cuestión.
+ Este método permite disminuir considerablemente la cantidad de cálculos,
+ ya que solamente hay que computar la distancia de cada partícula con un
+ pequeño número de vecinos y no con todas las existentes en el sistema.
+ Figura extraída de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "frenkel.md.book.1996"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Agregar la comparacion con cell linked-list
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -337,7 +597,7 @@ Resultados I: Cepillos poliméricos en equilibrio y bajo flujo en régimen
 \end_layout
 
 \begin_layout Chapter
-Resultados II: Influencia de la rígidez de los polímeros en flujo bifásico
+Resultados II: Influencia de la rigidez de los polímeros en flujo bifásico
  
 \end_layout
 
