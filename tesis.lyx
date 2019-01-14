@@ -176,8 +176,7 @@ literal "true"
  cantidades de interés asociadas a la dinámica del sistema.
  Más adelante se explica cómo es el proceso de medición de una cantidad
  física y la estimación de su incerteza en una corrida.
- Por último, se detallan cada una de las magnitudes extraídas de las simulacione
-s.
+ Por último, se detallan algunas de las magnitudes extraídas de las simulaciones.
 \end_layout
 
 \begin_layout Section
@@ -340,7 +339,16 @@ nes.
  Si se trabaja con densidades bajas, se puede sortear esta complicación,
  reasignando la posición de la partícula si esta cae demasiado cerca de
  otra.
- Sin embargo para densidades altas, como es el caso al tratar fluidos, este
+ Esta estrategia funciona de manera eficaz para situar el primer monómero
+ de un polímero anclado a una superficie.
+ Para sortear las posiciones iniciales de todos los monómeros de un cepillo
+ polimérico, primero se sitúan los monómeros terminales sobre la superficie,
+ de manera tal que no haya solapamientos, y luego se crecen los monómeros
+ subsiguientes de cada cadena, siguiendo una caminata al azar.
+\end_layout
+
+\begin_layout Standard
+Sin embargo para densidades altas, como es el caso al tratar fluidos, este
  método no es eficiente, porque la probabilidad de que sea reasignada a
  una posición suficientemente lejos de las demás es pequeña.
  Para resolver el inconveniente se utilizó una técnica denominada 
@@ -402,7 +410,7 @@ Para hacer evolucionar al sistema temporalmente, es necesario conocer las
 , hace que sea muy costoso agrandar el tamaño de la caja de simulación,
  imposibilitando el estudio de algunos sistemas.
  Aumentar la eficiencia de esta etapa del programa es muy importante, ya
- que la rutina de cálculo de fuerzas puede llegar a consumir hasta un 80%
+ que la rutina de cálculo de fuerzas puede llegar a consumir hasta un 90%
  del tiempo total de simulación.
 \end_layout
 
@@ -559,6 +567,159 @@ Agregar la comparacion con cell linked-list
 
 \end_layout
 
+\begin_layout Standard
+Para aprovechar los recursos de cómputo en paralelo disponibles en CNEA,
+ se exploraron otros algoritmo para agilizar el calculo de fuerzas entre
+ pares de partículas.
+ Un método que resulto ser particularmente ventajoso para el cálculo en
+ un esquema de memoria compartida y múltiples núcleos de cálculo, es el
+ denominado 
+\shape italic
+cell linked-lists
+\shape default
+.
+ Este método es más eficiente en manejo de memoria, ya que no requiere de
+ un buffer de posibles vecinos como el método anterior.
+ El método consiste en dividir el espacio en celdas cubicas, y generar una
+ lista enlazada de partículas para cada una de estas.
+ Si se elige el largo de las celdas cúbicas igual al radio de corte de las
+ interacciones (
+\begin_inset Formula $r_{cell}=r_{cut}$
+\end_inset
+
+ ), entonces para calcular las interacciones con una partícula es suficiente
+ con explorar todas las partículas que se sitúan en la misma celda o en
+ cualquiera de las 26 celdas lindantes.
+ En principio este método es más costos que el descrito anteriormente (Verlet
+ cell list), ya que para cada partícula se tienen que barrer más vecinos.
+ Esto es fácil de ver en un sistema homogéneo con densidad 
+\begin_inset Formula $\rho$
+\end_inset
+
+.
+ Para el caso de Verlet cell list, el volumen a barrer es 
+\begin_inset Formula $V=\frac{4}{3}\pi r_{c}^{3}$
+\end_inset
+
+, lo cual da una cantidad de vecinos 
+\begin_inset Formula $N_{verlet}=\rho\frac{4}{3}\pi r_{c}^{3}$
+\end_inset
+
+, mientras que el método de listas enlazadas por celda da un volumen 
+\begin_inset Formula $V_{celdas}=27r_{c}^{3}$
+\end_inset
+
+ y en consecuencia, una cantidad media de vecinos 
+\begin_inset Formula $N_{celdas}=27r_{c}^{3}$
+\end_inset
+
+.
+ Es decir, que en promedio, el método de celdas computa 
+\begin_inset Formula $N_{celdas}/N_{verlet}=\frac{3·27}{4\pi}\backsimeq6.5$
+\end_inset
+
+ veces más distancias.
+ Sin embargo, el método de listas enlazadas tiene la ventaja de no tener
+ que rearmar nunca la lista de vecinos completa.
+ Cada vez que una partícula sale de una celda y entra en otra, simplemente
+ se quita la partícula de una lista enlazada y se agrega en una nueva lista,
+ que es una operación 
+\begin_inset Formula $O(1)$
+\end_inset
+
+.
+ Por otro lado, rearmar la lista de vecinos en el método de Verlet, es una
+ operación 
+\begin_inset Formula $O(N)$
+\end_inset
+
+ y no es trivial de paralelizar.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figs/Time_vs_nthreads.agr
+	width 48page%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figs/Speedup_vs_nth.agr
+	width 48page%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Time_vs_threads"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Time_vs_threads"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ a) se compara el tiempo que tardan en completar una simulación utilizando
+ los dos métodos descritos, en función de la cantidad de nucleos utilizados.
+ Es interesante ver que el programa serial (un solo núcleo) utilizando del
+ método Verlet+listas en mucho más rápido que el de listas enlazadas.
+ A medida que se utilizan más nucleos para los cálculos, el tiempo para
+ completar la simulación baja rápidamente en el caso de celdas enlazadas,
+ llegando a ser un 25% más rápido que el método de Verlet para 12 hilos.
+ Esto también se puede ver en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Time_vs_threads"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ b), en la que se muestra la curva de speed-up.
+ En ésta se calcula cuantas veces más rápido corre el programa, a medida
+ que se utilizan más hilos en paralelo.
+ Se aprecia que para el esquema de lsitas enlazadas, la curva crece rápidamente
+ con la cantidad de nucleos de cálculo, mientras que el método Verlet+celdas,
+ la curva se aplana rápidamente.
+ Este último esquema fue desarrollado y optimizado para agilizar los cálculos
+ en un programa serial y no hace un uso eficiente de los diferentes nucleos
+ de computo al paralelizar el programa.
+ En conclusión, para decidir que esquema de aceleración usar, es conveniente
+ saber las propiedades del nodo en el cual se corren las simulaciones.
+\end_layout
+
 \begin_layout Section
 Modelado de interacciones
 \end_layout
@@ -611,6 +772,15 @@ Observaciones finales
 
 \begin_layout Section*
 Agradecimientos
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "bib/database"
+options "plain"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
