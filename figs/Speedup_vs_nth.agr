@@ -5,20 +5,29 @@
 @page scroll 5%
 @page inout 5%
 @link page off
-@map font 0 to "Times-Roman", "Times-Roman"
-@map font 1 to "Times-Italic", "Times-Italic"
-@map font 2 to "Times-Bold", "Times-Bold"
-@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
-@map font 4 to "Helvetica", "Helvetica"
-@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
-@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
-@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
-@map font 8 to "Courier", "Courier"
-@map font 9 to "Courier-Oblique", "Courier-Oblique"
-@map font 10 to "Courier-Bold", "Courier-Bold"
-@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
-@map font 12 to "Symbol", "Symbol"
 @map font 13 to "ZapfDingbats", "ZapfDingbats"
+@map font 4 to "Helvetica", "Helvetica"
+@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
+@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
+@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+@map font 17 to "Nimbus-Sans-L-Regular-Condensed", "Nimbus-Sans-L-Regular-Condensed"
+@map font 18 to "Nimbus-Sans-L-Bold-Condensed", "Nimbus-Sans-L-Bold-Condensed"
+@map font 19 to "Nimbus-Sans-L-Regular-Condensed-Italic", "Nimbus-Sans-L-Regular-Condensed-Italic"
+@map font 20 to "Nimbus-Sans-L-Bold-Condensed-Italic", "Nimbus-Sans-L-Bold-Condensed-Italic"
+@map font 0 to "Times-Roman", "Times-Roman"
+@map font 2 to "Times-Bold", "Times-Bold"
+@map font 1 to "Times-Italic", "Times-Italic"
+@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
+@map font 8 to "Courier", "Courier"
+@map font 10 to "Courier-Bold", "Courier-Bold"
+@map font 9 to "Courier-Oblique", "Courier-Oblique"
+@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+@map font 29 to "URW-Palladio-L-Roman", "URW-Palladio-L-Roman"
+@map font 30 to "URW-Palladio-L-Bold", "URW-Palladio-L-Bold"
+@map font 31 to "URW-Palladio-L-Italic", "URW-Palladio-L-Italic"
+@map font 32 to "URW-Palladio-L-Bold-Italic", "URW-Palladio-L-Bold-Italic"
+@map font 12 to "Symbol", "Symbol"
+@map font 34 to "URW-Chancery-L-Medium-Italic", "URW-Chancery-L-Medium-Italic"
 @map color 0 to (255, 255, 255), "white"
 @map color 1 to (0, 0, 0), "black"
 @map color 2 to (255, 0, 0), "red"
@@ -54,7 +63,17 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Wed Jan 10 06:36:14 2018"
+@timestamp def "Tue Jan 15 16:59:05 2019"
+@with string
+@    string on
+@    string loctype view
+@    string 0.229166666667, 0.767156862745
+@    string color 1
+@    string rot 0
+@    string font 2
+@    string just 0
+@    string char size 1.750000
+@    string def "b)"
 @r0 off
 @link r0 to g0
 @r0 type above
@@ -101,15 +120,15 @@
 @g0 fixedpoint format general general
 @g0 fixedpoint prec 6, 6
 @with g0
-@    world 1, 0, 100, 6
+@    world 1, 0, 48, 6
 @    stack world 0, 0, 0, 0
 @    znorm 1
 @    view 0.150000, 0.150000, 1.150000, 0.850000
-@    title "Strong Staciln Speedup"
+@    title ""
 @    title font 0
 @    title size 1.500000
 @    title color 1
-@    subtitle "N ~ 90.000 "
+@    subtitle ""
 @    subtitle font 0
 @    subtitle size 1.000000
 @    subtitle color 1
@@ -223,7 +242,7 @@
 @    altyaxis  off
 @    legend on
 @    legend loctype view
-@    legend 0.23112745098, 0.790196078431
+@    legend 0.740931373, 0.329411764
 @    legend box color 1
 @    legend box pattern 1
 @    legend box linewidth 1.0
@@ -234,7 +253,7 @@
 @    legend char size 1.000000
 @    legend color 1
 @    legend length 4
-@    legend vgap 1
+@    legend vgap 2
 @    legend hgap 1
 @    legend invert false
 @    frame type 0
@@ -247,7 +266,7 @@
 @    s0 hidden false
 @    s0 type xy
 @    s0 symbol 1
-@    s0 symbol size 1.000000
+@    s0 symbol size 1.750000
 @    s0 symbol color 1
 @    s0 symbol pattern 1
 @    s0 symbol fill color 1
@@ -259,7 +278,7 @@
 @    s0 symbol skip 0
 @    s0 line type 1
 @    s0 line linestyle 1
-@    s0 line linewidth 1.0
+@    s0 line linewidth 3.0
 @    s0 line color 1
 @    s0 line pattern 1
 @    s0 baseline type 0
@@ -296,7 +315,7 @@
 @    s1 hidden false
 @    s1 type xy
 @    s1 symbol 2
-@    s1 symbol size 1.000000
+@    s1 symbol size 1.750000
 @    s1 symbol color 2
 @    s1 symbol pattern 1
 @    s1 symbol fill color 2
@@ -308,7 +327,7 @@
 @    s1 symbol skip 0
 @    s1 line type 1
 @    s1 line linestyle 1
-@    s1 line linewidth 1.0
+@    s1 line linewidth 3.0
 @    s1 line color 2
 @    s1 line pattern 1
 @    s1 baseline type 0

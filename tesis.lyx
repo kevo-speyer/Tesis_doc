@@ -181,6 +181,13 @@ literal "true"
 
 \begin_layout Section
 Dinámica Molecular
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Dinámica-Molecular"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -492,7 +499,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Tesis_lic/figs/Fig_Frenkel1.eps
+	filename figs/Fig_Frenkel1.eps
 	width 50text%
 	clip
 
@@ -547,19 +554,6 @@ literal "true"
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Agregar la comparacion con cell linked-list
 \end_layout
 
 \end_inset
@@ -666,7 +660,21 @@ name "fig:Time_vs_threads"
 
 \end_inset
 
+Comparación entre los métodos de listas enlazadas y lista de Verlet+celdas
+ para optimizar el cálculo de interacciones entre pares.
+ El sistema está compuesto por 90000 partículas, que interactuan por medio
+ de un potencial de Lennard-Jones en una caja de dimensiones 
+\begin_inset Formula $50\sigma\times50\sigma\times50\sigma$
+\end_inset
 
+.
+ a) Se grafica el tiempo que tarda en finalizar 5000 pasos de simulación
+ en función de la cantidad the procesadores utilizados.
+ b) Se muestra la curva de 
+\shape italic
+speed-up
+\shape default
+ para ambos métodos.
 \end_layout
 
 \end_inset
@@ -708,16 +716,18 @@ noprefix "false"
 \end_inset
 
  b), en la que se muestra la curva de speed-up.
- En ésta se calcula cuantas veces más rápido corre el programa, a medida
- que se utilizan más hilos en paralelo.
+ En ésta, se calcula cuantas veces más rápido corre el programa, a medida
+ que se utilizan más hilos en paralelo, mientras se mantiene igual el tamaño
+ del sistema (strong scaling).
  Se aprecia que para el esquema de lsitas enlazadas, la curva crece rápidamente
  con la cantidad de nucleos de cálculo, mientras que el método Verlet+celdas,
  la curva se aplana rápidamente.
  Este último esquema fue desarrollado y optimizado para agilizar los cálculos
  en un programa serial y no hace un uso eficiente de los diferentes nucleos
  de computo al paralelizar el programa.
- En conclusión, para decidir que esquema de aceleración usar, es conveniente
- saber las propiedades del nodo en el cual se corren las simulaciones.
+ En conclusión, para decidir que esquema de aceleración usar para recorrer
+ pares, es conveniente saber las propiedades del nodo en el cual se corren
+ las simulaciones.
 \end_layout
 
 \begin_layout Section
@@ -725,7 +735,551 @@ Modelado de interacciones
 \end_layout
 
 \begin_layout Standard
-LJ
+Se utilizaron potenciales clásicos de grano grueso (
+\shape italic
+coarse-grain
+\shape default
+) para modelar las interacciones entre partículas.
+ El objetivo es utilizar un modelo de interacción simplificado que contenga
+ todos los ingredientes necesarios para representar la física del sistema,
+ y que permita acortar los tiempos de cálculo.
+ Para esto se recurrió a la bibliografía y se implementaron potenciales
+ ampliamente respaldados en el campo de las simulaciones en materia blanda.
+\end_layout
+
+\begin_layout Standard
+Para representar las interacciones de Van der Waals y de volumen excluido
+ se utilizó un potencial de Lenard-Jonnes truncado y desplazado según la
+ ecuación:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U(r)=U_{LJ}(r)-U_{LJ}(r_{c})\,,
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $U_{LJ}$
+\end_inset
+
+ es el potencial de Lennard-Jonnes:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U_{LJ}(r)=\begin{cases}
+4\varepsilon^{(ab)}\left[\left(\frac{\sigma}{r}\right)^{12}-\left(\frac{\sigma}{r}\right)^{6}\right] & ;\quad si\;r\leq r_{C}^{(ab)}\\
+0 & ;\quad si\;r>r_{C}^{(ab)}
+\end{cases}\,,
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $r$
+\end_inset
+
+ es la distancia entre partículas, 
+\begin_inset Formula $r_{C}^{(ab)}$
+\end_inset
+
+ es el radio de corte de la interacción y los super-índices 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+ refieren a las diferentes espacies de partículas.
+ Estas especies pueden ser distintos tipos de polímeros, o distintos fluidos.
+ 
+\end_layout
+
+\begin_layout Standard
+Como se discutió en la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Dinámica-Molecular"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, truncar el potencial es necesario para lograr que cada partícula interactúe
+ con un número finito de vecinos, pues de otra manera habría que computar
+ la fuerza con todos los monómeros, que en el caso de usar condiciones periódica
+s de contorno, serían infinitos.
+ El desplazamiento del potencial es necesario para que el mismo sea continuo
+ y que no haya saltos en el cálculo de la energía.
+ En todos los casos se utilizó 
+\begin_inset Formula $\sigma=1$
+\end_inset
+
+, valor que define la unidad para medir longitudes.
+ Este parámetro del potencial está directamente relacionado con el diámetro
+ de las partículas, por lo que esta elección corresponde a monómeros de
+ distintas especies con igual volumen.
+ De la misma manera, se escogieron las masas de todas las especies iguales
+ y se tomó como unidad de medida 
+\begin_inset Formula $m=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/Bundles.png
+	scale 50
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: montañas"
+
+\end_inset
+
+En el esquema se aprecia la formación de cúmulos en el cepillo polimérico,
+ debido a la fuerza atractiva entre las cadenas.
+ Es interesante estudiar bajo que condiciones se forman las aglomeraciones,
+ su dependencia con la rigidez de las cadenas y como varía la distancia
+ típica (
+\begin_inset Formula $l$
+\end_inset
+
+) entre estas.
+ Figura extraída de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevE.88.042601"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los valores de radio de corte utilizados fueron 
+\begin_inset Formula $r_{C}^{(ll)}=r_{C}^{(lc)}=2\text{·}\sqrt[6]{2}\sigma$
+\end_inset
+
+, que coincide con el doble del mínimo del potencial.
+ De esta manera la fuerza es repulsiva a cortas distancias y atractiva a
+ distancias mayores de 
+\begin_inset Formula $\sqrt[6]{2}\sigma$
+\end_inset
+
+ y menores a 
+\begin_inset Formula $2\text{·}\sqrt[6]{2}\sigma$
+\end_inset
+
+ .
+ El radio de corte para la interacción entre monómeros pertenecientes al
+ cepillo fue de 
+\begin_inset Formula $r_{C}^{(cc)}=\sqrt[6]{2}\sigma$
+\end_inset
+
+, lo cual hace que la fuerza sea puramente repulsiva.
+ Inicialmente se tomaron todos los radios de corte de los potenciales iguales
+ a 
+\begin_inset Formula $r_{C}=2\text{·}\sqrt[6]{2}\sigma$
+\end_inset
+
+, pero para algunas densidades de fijado (cantidad de cadenas por unidad
+ de área) se observó que debido a la atracción entre polímeros, las cadenas
+ forman cúmulos, como se muestra en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: montañas"
+
+\end_inset
+
+.
+ Este resultado está reportado en la bibliografía 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevE.88.042601"
+literal "true"
+
+\end_inset
+
+, y resulta interesante estudiar la formación de las aglomeraciones y la
+ distancia típica entre ellas en función del radio de corte de la interacción
+ entre cadenas.
+ También se puede investigar como interactúa un cepillo polimérico de estas
+ características con un líquido simple, y en particular la penetración del
+ fluido en el mismo.
+ Este sistema trae el inconveniente de imponer una nueva longitud característica
+ (
+\begin_inset Formula $l$
+\end_inset
+
+, distancia típica entre aglomeraciones) que es del orden del largo de los
+ polímeros (
+\begin_inset Formula $\sim10\sigma$
+\end_inset
+
+ ).
+ Para estudiar este fenómeno es necesario que las longitudes de la caja
+ de simulación sean mucho mayores que esta longitud característica, lo cual
+ requiere un elevado costo computacional, haciendo difícil el estudio sistemátic
+o del sistema.
+ La posibilidad de utilizar diferentes radios de corte para las interacciones
+ entre los distintos tipos de monómeros, fue una de las modificaciones que
+ se realizaron al programa de dinámica molecular.
+\end_layout
+
+\begin_layout Standard
+Esta elección de radios de corte corresponde al sistema en un buen solvente
+ para el cepillo y un solvente pobre para el líquido.
+ En términos físicos, un buen solvente se puede pensar como pequeñas partículas
+ que son atraídas por los monómeros, logrando apantallar la atracción entre
+ estos y permitiendo su dispersión.
+ Tomar el valor del radio de corte 
+\begin_inset Formula $r_{C}^{(cc)}=\sqrt[6]{2}\sigma$
+\end_inset
+
+ en potencial de Lennard-Jones, resulta en una fuerza totalmente repulsiva
+ entre partículas pertenecientes al cepillo (ver Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Lennard_Jones"
+
+\end_inset
+
+), simulando el efecto de un buen solvente.
+ Para calcular la fuerza entre partículas correspondientes al líquido se
+ tomo un radio de corte para el potencial 
+\begin_inset Formula $r_{C}^{(cc)}=2\text{·}\sqrt[6]{2}\sigma$
+\end_inset
+
+, que a distancias intermedias es atractiva.
+ Esto se condice con una situación en la cual la atracción entre partículas
+ del líquido es mayor que la atracción entre el solvente y el líquido, permitien
+do la formación de la fase líquida.
+ En este caso el solvente interviene de manera ineficiente y se lo denomina
+ solvente pobre.
+ El radio de corte para la interacción líquido-cepillo fue también de 
+\begin_inset Formula $r_{C}^{(lc)}=2\text{·}\sqrt[6]{2}\sigma$
+\end_inset
+
+, que en principio corresponde a la condición de solvente pobre.
+ Sin embargo, en este caso se varió el parámetro 
+\begin_inset Formula $\varepsilon^{(lc)}$
+\end_inset
+
+ del potencial, que no corresponde a ninguno de los dos casos de solvente
+ descriptos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Tesis_lic/figs/Potenciales.agr
+	width 50page%
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Lennard_Jones"
+
+\end_inset
+
+Se grafican los potenciales de interacción entre las distintas especies
+ de monómeros.
+ En negro se aprecia el potencial de interacción entre partículas de fluido.
+ En este caso el radio de corte del potencial es 
+\begin_inset Formula $r_{C}^{(ll)}=2,24\sigma$
+\end_inset
+
+ (línea punteada negra), y existe distancia entre partículas en la cual
+ la fuerza es atractiva.
+ Para el potencial entre monómeros pertenecientes al cepillo polimérico,
+ el radio de corte utilizado fue 
+\begin_inset Formula $r_{C}^{(cc)}=1,12\sigma$
+\end_inset
+
+, y la fuerza entre ellos resulta netamente repulsiva.
+ Esto representa una situación en que el sistema está embebido en un buen
+ solvente, que logra dispersar a los polímeros.
+ El radio de corte de la interacción cepillo-líquido es 
+\begin_inset Formula $r_{C}^{(lc)}=2,24$
+\end_inset
+
+, pero se utilizó un valor distinto para el parámetro que da la intensidad
+ de la interacción 
+\begin_inset Formula $\varepsilon^{(lc)}=1/3\varepsilon$
+\end_inset
+
+.
+ Este valor representa la incompatibilidad química entre las especies y
+ da lugar a un medio confinante hidrofóbico.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La intensidad de la interacción se tomó como 
+\begin_inset Formula $\varepsilon^{(ll)}=\varepsilon^{(cc)}\equiv\varepsilon=1$
+\end_inset
+
+, y define la unidad de medida de la energía.
+ Se eligió 
+\begin_inset Formula $\varepsilon^{(lc)}=1/3$
+\end_inset
+
+ para dar cuenta de la incompatibilidad química entre cepillo y líquido.
+ Este valor fue tomado de la bibliografía 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.96.206101,PhysRevLett.82.4671,:/content/aip/journal/jcp/135/21/10.1063/1.3663381,PhysRevLett.101.226101,PhysRevLett.97.266101,:/content/aip/journal/pof2/16/5/10.1063/1.1669400,Doshi05072005,:/content/aip/journal/jcp/135/22/10.1063/1.3663965"
+literal "true"
+
+\end_inset
+
+, con el fin de estar cerca de la condición hidrofóbica de efecto 
+\begin_inset Quotes eld
+\end_inset
+
+Fakir
+\begin_inset Quotes erd
+\end_inset
+
+.
+ En este contexto, se denomina efecto Fakir al estado en el cual el líquido
+ reposa sobre un cepillo poco denso, manteniendo una baja interpenetración
+ entre ambas fases.
+ Cabe notar que la interacción líquido-cepillo no es puramente repulsiva,
+ ya que el radio de corte para esta fuerza, fue el mismo que para la interacción
+ líquido-líquido.
+ Es decir que la atracción entre dos monómeros de distintas especies la
+ tercera parte de la fuerza que se ejercen dos partículas pertenecientes
+ a la fase líquida, a la misma distancia.
+ 
+\end_layout
+
+\begin_layout Standard
+Para darle conectividad a las cadenas poliméricas, se utilizó el potencial
+ no elástico de extensión finita desarrollado por Kremer y Grest
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevA.33.3628,:/content/aip/journal/jcp/92/8/10.1063/1.458541"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Tesis_lic/figs/UFENE.agr
+	width 60text%
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:FENE"
+
+\end_inset
+
+Se aprecia el potencial de interacción 
+\begin_inset Formula $U_{FENE}$
+\end_inset
+
+, dado por la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:FENE"
+
+\end_inset
+
+.
+ Se grafica también un potencial armónico 
+\begin_inset Formula $U_{ARM}=1/2kr^{2}$
+\end_inset
+
+, con el mismo valor de constante elástica 
+\begin_inset Formula $k=30\varepsilon/\sigma^{2}$
+\end_inset
+
+.
+ Se observa que las fuerzas difieren a medida que la distancia entre partículas
+ 
+\begin_inset Formula $r$
+\end_inset
+
+ se acerca a la longitud máxima del polímero 
+\begin_inset Formula $r_{max}=1,5\sigma$
+\end_inset
+
+, debido al efecto de extensión finita.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El modelo elegido para codificar la física de las cadenas se debe a Kremer
+ y Grest 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kroeger2004453,PhysRevA.33.3628,doi:10.1021/ma00200a041"
+literal "true"
+
+\end_inset
+
+.
+ Las interacciones entre monómeros contiguos, pertenecientes a un mismo
+ polímero, es representada por un potencial elástico no lineal de extensión
+ finita (FENE, de las siglas en ingles), que viene dado por la ecuación:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U_{FENE}(r)=\begin{cases}
+-\frac{1}{2}kR_{0}^{2}ln\left[1-\left(\frac{r}{R_{0}}\right)^{2}\right] & ;\quad si\;r\leq R_{0}\\
+\infty & ;\quad si\;r>R_{0}
+\end{cases}\,,\label{eq:FENE}
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $R_{0}=1.5\sigma$
+\end_inset
+
+, la constante del resorte 
+\begin_inset Formula $k=30\varepsilon/\sigma^{2}$
+\end_inset
+
+.
+ Este modelo está ampliamente estudiado en la bibliografía 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kroeger2004453,PhysRevA.33.3628,doi:10.1021/ma00200a041"
+literal "true"
+
+\end_inset
+
+ y es una elección frecuente para estudiar la dinámica de líquidos poliméricos.
+ En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:FENE"
+
+\end_inset
+
+ se grafica este potencial de interacción y se lo compara con un potencial
+ armónico 
+\begin_inset Formula $U_{ARM}=1/2kr^{2}$
+\end_inset
+
+, con la misma constante elástica 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ Se puede apreciar que para apartamientos pequeños ambas fuerzas son similares,
+ pero difieren a medida que la distancia entre partículas es comparable
+ con 
+\begin_inset Formula $r=1,5\sigma$
+\end_inset
+
+.
+ La interacción provocada por el potencial 
+\begin_inset Formula $U_{FENE}$
+\end_inset
+
+ es mayor que 
+\begin_inset Formula $U_{ARM}$
+\end_inset
+
+, debido a los efectos de extensión finita de las cadenas.
 \end_layout
 
 \begin_layout Standard
@@ -733,15 +1287,423 @@ FENE
 \end_layout
 
 \begin_layout Standard
+Uno de los puntos distintivos de este trabajo es el estudio de las propiedades
+ del sistema líquido-cepillo en función de la rigidez de los polímeros.
+ Esta se impuso mediante un potencial de flexión armónico entre tres monómeros
+ sucesivos.
+ 
+\begin_inset Formula 
+\begin{equation}
+U_{flex}(\theta)=\frac{1}{2}k_{f}\theta^{2}\,,
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $\theta$
+\end_inset
+
+ es el ángulo (medido en radianes) formado por los vectores que unen a monómeros
+ contiguos.
+ Para comprender la naturaleza de la fuerza conviene pensar inicialmente
+ en una cadena formada por 3 eslabones, ya que esta es la cantidad de partículas
+ necesaria para determinar 
+\begin_inset Formula $\theta$
+\end_inset
+
+ (ver Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Bendig_versores"
+
+\end_inset
+
+).
+ Si bien la dependencia del potencial con ángulo es simple, se necesita
+ expresar la fuerza en coordenadas cartesianas para acoplarla a la estructura
+ del programa de dinámica molecular.
+ El ángulo se puede escribir en función de las coordenadas de los monómeros
+ según la relación:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+cos(\theta)=\frac{(\vec{r}_{3}-\vec{r}_{2})\text{·}(\vec{r}_{2}-\vec{r}_{1})}{|\vec{r}_{3}-\vec{r}_{2}||\vec{r}_{2}-\vec{r}_{1}|}\Rightarrow\theta(\vec{r}_{1},\vec{r}_{2},\vec{r}_{3})=cos^{-1}\left[\frac{(\vec{r}_{3}-\vec{r}_{2})\text{·}(\vec{r}_{2}-\vec{r}_{1})}{|\vec{r}_{3}-\vec{r}_{2}||\vec{r}_{2}-\vec{r}_{1}|}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Tesis_lic/figs/Bending.eps
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Bendig_versores"
+
+\end_inset
+
+El esquema muestra la acción del potencial de flexión, sobre una cadena
+ de 3 monómeros.
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+ es el ángulo formado por los vectores 
+\begin_inset Formula $\vec{r}_{3}-\vec{r}_{2}$
+\end_inset
+
+ y 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\vec{r}_{2}-\vec{r}_{1}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang spanish
+, que unen a los monómeros y la posición de equilibrio está dada por 
+\begin_inset Formula $\theta=0$
+\end_inset
+
+.
+ La fuerza de flexión sobre el monómero 3 (arriba), esta contenida en el
+ plano formado por las tres partículas y es perpendicular al vector que
+ une los monómeros 2 y 3.
+ Es decir que la fuerza sobre este monómero es la dirección y sentido de
+ 
+\begin_inset Formula $\hat{n}_{3}$
+\end_inset
+
+.
+ De la misma manera la fuerza de flexión sobre el monómero 1 (abajo), es
+ en la dirección y sentido de 
+\begin_inset Formula $\hat{n}_{1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las fuerzas actuantes sobre cada masa pueden ser calculadas tomando las
+ derivadas parciales correspondientes del potencial 
+\begin_inset Formula $U_{flex}[\theta(\vec{r}_{1},\vec{r}_{2},\vec{r}_{3})]$
+\end_inset
+
+.
+ Para hallar la fuerza actuante sobre la partícula 3, hay que tomar el gradiente
+ con respecto a las coordenadas correspondientes a dicha partícula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\vec{F}_{3}=-\overset{\rightharpoonup}{\nabla}_{3}U_{flex}(\vec{r}_{1},\vec{r}_{2},\vec{r}_{3})=\frac{k_{f}\theta}{|\vec{r}_{3}-\vec{r}_{2}|}\left[\frac{(\vec{r}_{2}-\vec{r}_{1})}{|\vec{r}_{2}-\vec{r}_{1}||sen(\theta)|}-\frac{cos(\theta)(\vec{r}_{3}-\vec{r}_{2})}{|sen(\theta)||\vec{r}_{3}-\vec{r}_{2}|}\right]
+\end{equation}
+
+\end_inset
+
+Se puede demostrar que el corchete en la ecuación anterior es un vector
+ de módulo unidad, que está contenido en el plano formado por los versores
+ 
+\begin_inset Formula $\vec{r}_{2}-\vec{r}_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\vec{r}_{3}-\vec{r}_{2}$
+\end_inset
+
+, y que es ortogonal a este último.
+ Teniendo esto en cuenta, la fuerza se puede escribir de manera más compacta.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\vec{F}_{3}=\frac{k_{f}\theta}{|\vec{r}_{3}-\vec{r}_{2}|}\hat{n}_{3};\qquad\hat{n}_{3}\equiv\left[\frac{(\vec{r}_{2}-\vec{r}_{1})}{|\vec{r}_{2}-\vec{r}_{1}||sen(\theta)|}-\frac{cos(\theta)(\vec{r}_{3}-\vec{r}_{2})}{|sen(\theta)||\vec{r}_{3}-\vec{r}_{2}|}\right]\label{eq:Fza_bend_3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La fuerza sobre la masa 3 es directamente proporcional al ángulo, e inversamente
+ proporcional a la distancia al primer vecino, mientras que la dirección
+ esta contenida en el plano formado por las tres partículas y perpendicular
+ a la línea que une a los eslabones 3 y 2.
+ Cabe mencionar que el ángulo de equilibrio corresponde a 
+\begin_inset Formula $\theta=0,$
+\end_inset
+
+ por lo que puede traer inconvenientes evaluar el versor 
+\begin_inset Formula $\hat{n}$
+\end_inset
+
+ de la ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Fza_bend_3"
+
+\end_inset
+
+), debido a que aparece la función 
+\begin_inset Formula $sen(\theta)$
+\end_inset
+
+ en el denominador.
+ A la hora de implementar esta rutina se evitó esta divergencia, anulando
+ la fuerza siempre que el ángulo, medido en radianes, fuera menor a 
+\begin_inset Formula $\theta<0,001$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+De la misma manera se puede hallar la fuerza sobre el primer monómero ,
+ obteniendo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\vec{F}_{1}=\frac{k_{f}\theta}{|\vec{r}_{1}-\vec{r}_{2}|}\hat{n}_{1};\qquad\hat{n}_{1}\equiv\left[\frac{\hat{n}_{2,3}-cos(\theta)\hat{n}_{1,2}}{|sen(\theta)|}\right]
+\end{equation}
+
+\end_inset
+
+La fuerza sobre la partícula 2 se calcula del mismo modo y se cumple que
+ 
+\begin_inset Formula 
+\begin{equation}
+\vec{F}_{1}+\vec{F}_{2}+\vec{F}_{3}=0
+\end{equation}
+
+\end_inset
+
+Esta ecuación indica que la sumatoria de fuerzas internas es nula, lo que
+ implica que ante la ausencia de fuerzas externas, el momento total de la
+ cadena se conserva.
+ Si bien esta es una característica física esperable, cabe notar que no
+ se deduce de la cancelación de pares de interacción, pues la fuerza sobre
+ cada partícula depende la posición de las otras dos.
+ Esto es fácil de ver fijando la posición de la dos últimas masas y notando
+ que al mover el primer monómero varía la apertura angular y por tanto la
+ intensidad de la fuerza ejercida sobre el último eslabón.
+\end_layout
+
+\begin_layout Standard
+Si ahora se considera una cadena más larga, el cálculo de la fuerza de flexión
+ sobre la i-ésima partícula puede computarse considerando los tripletes
+ en los cuales esta masa está contenida.
+ Es decir, que hay que tener en cuenta las contribuciones asociadas a los
+ tripletes (i-2,i-1,i) (i-1,i,i+1) (i,i+1,i+2) correspondientes a los ángulos
+ 
+\begin_inset Formula $\theta_{i-1};\theta_{i};\theta_{i+1}$
+\end_inset
+
+, respectivamente.
+ Es interesante notar que la fuerza no depende solamente de la posición
+ de las masas adyacentes, sino también de los segundos vecinos.
+ 
+\end_layout
+
+\begin_layout Standard
+Durante las simulaciones, el primer monómero de cada polímero permanece
+ fijo al sustrato, mientras que el segundo se mueve según las ecuaciones
+ de movimiento.
+ Las fuerzas de flexión aplicadas sobre esta partícula son debidas a los
+ tripletes (1,2,3) y (2,3,4).
+ Sin embargo, de esta manera no se está teniendo en cuenta la fuerza que,
+ en una situación real, le haría el monómero fijo al sustrato, a la segunda
+ partícula de la cadena.
+ Para incluir esta interacción en el sistema, se programó una rutina que
+ calcule la fuerza de flexión entre los eslabones 0,1 y 2, donde la posición
+ del eslabón 0 fue arreglada de manera que la orientación de equilibrio
+ fuera perpendicular al sustrato (ver Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Orientacion"
+
+\end_inset
+
+).
+ Esta partícula, se sitúa a una distancia de 
+\begin_inset Formula $1\sigma$
+\end_inset
+
+, directamente debajo del monómero sujeto a la pared.
+ La fuerza sobre la segunda partícula fue hallada como se explicó anteriormente,
+ aplicándolo a esta terna.
+ Como se discutió en la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Termodinámicas"
+
+\end_inset
+
+, las fuerzas ejercidas sobre los extremos fijos de los polímeros son una
+ cantidad interesante para medir, pero dan información confiable del sistema
+ solamente cuando la sumatoria de fuerzas internas sobre cada cadena se
+ cancela.
+ Por esta razón, se tomó la fuerza sobre el eslabón fijo a la pared como
+ el par de interacción de la fuerza de flexión que ejerce esta terna sobre
+ la segunda partícula.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Tesis_lic/figs/Orientation.eps
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Orientacion"
+
+\end_inset
+
+Directamente debajo del monómero fijo al sustrato (1), se ubica una partícula
+ en línea punteada (0), que facilita el cálculo de la fuerza sobre el último
+ eslabón de la cadena (2).
+ La posición de equilibrio de esta terna corresponde a las partículas alineadas
+ en posición vertical, perpendicular al sustrato.
+ La fuerza sobre el monómero 2 se calculó tomando en cuenta el ángulo formado
+ ente los vectores 
+\begin_inset Formula $\vec{r}_{2}-\vec{r}_{1}$
+\end_inset
+
+ y 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\vec{r}_{1}-\vec{r}_{0}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang spanish
+.
+ La fuerza sobre el monómero fijo a la pared es 
+\begin_inset Formula $\overset{\rightharpoonup}{F}_{1}=-\overset{\rightharpoonup}{F}_{2}$
+\end_inset
+
+, para que la sumatoria de fuerzas internas sobre la cadena sea nula.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 BENDING
+\end_layout
+
+\begin_layout Standard
+pared
 \end_layout
 
 \begin_layout Section
 Termostato y conexión con Mecánica estadística 
-\end_layout
-
-\begin_layout Section
-Tratamiento de incertezas
 \end_layout
 
 \begin_layout Standard
@@ -750,6 +1712,18 @@ Marco teórico: mecánica estadística
 
 \begin_layout Standard
 DPD
+\end_layout
+
+\begin_layout Section
+Tratamiento de incertezas
+\end_layout
+
+\begin_layout Standard
+Tratamiento en bloques, 
+\end_layout
+
+\begin_layout Standard
+fuentes de errores
 \end_layout
 
 \begin_layout Chapter
