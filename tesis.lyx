@@ -774,7 +774,7 @@ donde
 U_{LJ}(r)=\begin{cases}
 4\varepsilon^{(ab)}\left[\left(\frac{\sigma}{r}\right)^{12}-\left(\frac{\sigma}{r}\right)^{6}\right] & ;\quad si\;r\leq r_{C}^{(ab)}\\
 0 & ;\quad si\;r>r_{C}^{(ab)}
-\end{cases}\,,
+\end{cases}\,,k\label{eq:Lennard_Jones}
 \end{equation}
 
 \end_inset
@@ -835,6 +835,158 @@ s de contorno, serían infinitos.
 \end_layout
 
 \begin_layout Standard
+Utilizando diferentes valores para el radio de corte de esta interacción
+ se pueden simular distintas condiciones fisico-químicas.
+ Si se toma un radio de corte que coincida con el mínimo del potencial,
+ todas las fuerzas serán repulsivas.
+ De esta manera pueden modelarse un 
+\shape italic
+melt
+\shape default
+ polimérico en buen solvente, dónde las cadenas no forman aglomerados.
+ Esta elección para el radio de corte de la interacción suele utilizarse
+ para simular la presencia de un buen solvente, sin colocar explícitamente
+ las partículas del mismo, por lo que lleva el nombre de solvente implícito.
+ La ventaja de esta elección radica en ahorrarse los cálculos de las fuerzas
+ para para las partículas del solvente, que pueden ser muchos más que para
+ los monómeros, y así agilizar sensiblemente el programa de simulación.
+ La desventaja del modelado con solvente implícito, es que se pierde el
+ movimiento del solvente, que puede ser importante para entender el comportamien
+to del sistema.
+\end_layout
+
+\begin_layout Standard
+Por otro lado, si se toma como radio de corte el doble del valor para el
+ cual el potencial alcanza el mínimo 
+\begin_inset Formula $r_{C}=2\text{·}\sqrt[6]{2}\sigma$
+\end_inset
+
+, se incluye la parte atractiva de la interacción.
+ Esta elección da lugar a un diagrama de fases más rico, ya que permite
+ la formación de líquidos en el sistema, como se aprecia en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Phase_diag"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ A lo largo de este trabajo de tesis doctoral se han utilizado partículas
+ sueltas con este valor de 
+\begin_inset Formula $r_{C}$
+\end_inset
+
+ para simular líquidos simples en condiciones de flujo y en equilibrio.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/Phase_diag.png
+	width 48text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Phase_diag"
+
+\end_inset
+
+Diagrama de fases del potencial descrito en la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Lennard_Jones"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, para polímeros compuestos por N sitios de interacción.
+ N=1 corresponde a partículas sueltas y se utilizó como modelo de líquido
+ simple.
+ Figura tomada de la referencia 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/ma991796t"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Al incluir interacciones atractivas entre polímeros anclados a una superficie,
+ la aglomeración de las cadenas es energéticamente favorable, dando lugar
+ a formaciones, como las que se pueden observar en el esquema de la figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: montañas"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ La formación de estas estructuras está ampliamente estudiada en la bibliografía
+ y depende, entre otros parámetros, de la densidad de fijado de cadenas
+ por unidad de superficie, la intensidad de la interacción y la rigidez
+ de los polímeros 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevE.88.042601,:/content/aip/journal/jcp/123/3/10.1063/1.1955523,0295-5075-45-3-321"
+literal "true"
+
+\end_inset
+
+.
+ En el capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Resultados-III:-Cepillos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se desarrolla como pueden utilizarse estas estructuras para generar válvulas
+ sensibles a la presión en nano canales.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
@@ -867,11 +1019,7 @@ En el esquema se aprecia la formación de cúmulos en el cepillo polimérico,
  debido a la fuerza atractiva entre las cadenas.
  Es interesante estudiar bajo que condiciones se forman las aglomeraciones,
  su dependencia con la rigidez de las cadenas y como varía la distancia
- típica (
-\begin_inset Formula $l$
-\end_inset
-
-) entre estas.
+ típica entre estas.
  Figura extraída de 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -894,209 +1042,43 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-Utilizando diferentes valores para el radio de corte de esta interacción
- se pueden simular distintas condiciones fisico-químicas.
- Si se toma un radio de corte que coincida con el mínimo del potencial,
- todas las fuerzas serán repulsivas.
- De esta manera pueden modelarse un melt polimérico en buen solvente, dónde
- las cadenas no forman aglomerados.
-\end_layout
-
-\begin_layout Standard
-Los valores de radio de corte utilizados fueron 
-\begin_inset Formula $r_{C}^{(ll)}=r_{C}^{(lc)}=2\text{·}\sqrt[6]{2}\sigma$
-\end_inset
-
-, que coincide con el doble del mínimo del potencial.
- De esta manera la fuerza es repulsiva a cortas distancias y atractiva a
- distancias mayores de 
-\begin_inset Formula $\sqrt[6]{2}\sigma$
-\end_inset
-
- y menores a 
-\begin_inset Formula $2\text{·}\sqrt[6]{2}\sigma$
-\end_inset
-
- .
- El radio de corte para la interacción entre monómeros pertenecientes al
- cepillo fue de 
-\begin_inset Formula $r_{C}^{(cc)}=\sqrt[6]{2}\sigma$
-\end_inset
-
-, lo cual hace que la fuerza sea puramente repulsiva.
- Inicialmente se tomaron todos los radios de corte de los potenciales iguales
- a 
-\begin_inset Formula $r_{C}=2\text{·}\sqrt[6]{2}\sigma$
-\end_inset
-
-, pero para algunas densidades de fijado (cantidad de cadenas por unidad
- de área) se observó que debido a la atracción entre polímeros, las cadenas
- forman cúmulos, como se muestra en la Figura 
+La intensidad de la interacción del potencial 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig: montañas"
+reference "eq:Lennard_Jones"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-.
- Este resultado está reportado en la bibliografía 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "PhysRevE.88.042601"
-literal "true"
-
-\end_inset
-
-, y resulta interesante estudiar la formación de las aglomeraciones y la
- distancia típica entre ellas en función del radio de corte de la interacción
- entre cadenas.
- También se puede investigar como interactúa un cepillo polimérico de estas
- características con un líquido simple, y en particular la penetración del
- fluido en el mismo.
- Este sistema trae el inconveniente de imponer una nueva longitud característica
- (
-\begin_inset Formula $l$
-\end_inset
-
-, distancia típica entre aglomeraciones) que es del orden del largo de los
- polímeros (
-\begin_inset Formula $\sim10\sigma$
-\end_inset
-
- ).
- Para estudiar este fenómeno es necesario que las longitudes de la caja
- de simulación sean mucho mayores que esta longitud característica, lo cual
- requiere un elevado costo computacional, haciendo difícil el estudio sistemátic
-o del sistema.
- La posibilidad de utilizar diferentes radios de corte para las interacciones
- entre los distintos tipos de monómeros, fue una de las modificaciones que
- se realizaron al programa de dinámica molecular.
-\end_layout
-
-\begin_layout Standard
-Esta elección de radios de corte corresponde al sistema en un buen solvente
- para el cepillo y un solvente pobre para el líquido.
- En términos físicos, un buen solvente se puede pensar como pequeñas partículas
- que son atraídas por los monómeros, logrando apantallar la atracción entre
- estos y permitiendo su dispersión.
- Tomar el valor del radio de corte 
-\begin_inset Formula $r_{C}^{(cc)}=\sqrt[6]{2}\sigma$
-\end_inset
-
- en potencial de Lennard-Jones, resulta en una fuerza totalmente repulsiva
- entre partículas pertenecientes al cepillo (ver Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig: Lennard_Jones"
-
-\end_inset
-
-), simulando el efecto de un buen solvente.
- Para calcular la fuerza entre partículas correspondientes al líquido se
- tomo un radio de corte para el potencial 
-\begin_inset Formula $r_{C}^{(cc)}=2\text{·}\sqrt[6]{2}\sigma$
-\end_inset
-
-, que a distancias intermedias es atractiva.
- Esto se condice con una situación en la cual la atracción entre partículas
- del líquido es mayor que la atracción entre el solvente y el líquido, permitien
-do la formación de la fase líquida.
- En este caso el solvente interviene de manera ineficiente y se lo denomina
- solvente pobre.
- El radio de corte para la interacción líquido-cepillo fue también de 
-\begin_inset Formula $r_{C}^{(lc)}=2\text{·}\sqrt[6]{2}\sigma$
-\end_inset
-
-, que en principio corresponde a la condición de solvente pobre.
- Sin embargo, en este caso se varió el parámetro 
-\begin_inset Formula $\varepsilon^{(lc)}$
-\end_inset
-
- del potencial, que no corresponde a ninguno de los dos casos de solvente
- descriptos.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../Tesis_lic/figs/Potenciales.agr
-	width 50page%
-	clip
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig: Lennard_Jones"
-
-\end_inset
-
-Se grafican los potenciales de interacción entre las distintas especies
- de monómeros.
- En negro se aprecia el potencial de interacción entre partículas de fluido.
- En este caso el radio de corte del potencial es 
-\begin_inset Formula $r_{C}^{(ll)}=2,24\sigma$
-\end_inset
-
- (línea punteada negra), y existe distancia entre partículas en la cual
- la fuerza es atractiva.
- Para el potencial entre monómeros pertenecientes al cepillo polimérico,
- el radio de corte utilizado fue 
-\begin_inset Formula $r_{C}^{(cc)}=1,12\sigma$
-\end_inset
-
-, y la fuerza entre ellos resulta netamente repulsiva.
- Esto representa una situación en que el sistema está embebido en un buen
- solvente, que logra dispersar a los polímeros.
- El radio de corte de la interacción cepillo-líquido es 
-\begin_inset Formula $r_{C}^{(lc)}=2,24$
-\end_inset
-
-, pero se utilizó un valor distinto para el parámetro que da la intensidad
- de la interacción 
-\begin_inset Formula $\varepsilon^{(lc)}=1/3\varepsilon$
-\end_inset
-
-.
- Este valor representa la incompatibilidad química entre las especies y
- da lugar a un medio confinante hidrofóbico.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La intensidad de la interacción se tomó como 
+ se tomó como 
 \begin_inset Formula $\varepsilon^{(ll)}=\varepsilon^{(cc)}\equiv\varepsilon=1$
 \end_inset
 
-, y define la unidad de medida de la energía.
- Se eligió 
+, donde los superíndices 
+\begin_inset Formula $l$
+\end_inset
+
+ y 
+\begin_inset Formula $c$
+\end_inset
+
+ indican si la interacción es entre partículas pertenecientes al líquido
+ o al cepillo, y define la unidad de medida de la energía.
+ El parámetro 
+\begin_inset Formula $\varepsilon^{(lc)}$
+\end_inset
+
+ da la intensidad de la interacción entre partículas pertenecientes al cepillo
+ y partículas pertenecientes al fluido.
+ Este parámetro cambia la afinidad entre las diferentes especies y sirve
+ para explorar diferentes condiciones fisico-químicas.
+ Un valor frecuentemente utilizado a lo largo de este trabajo fue 
 \begin_inset Formula $\varepsilon^{(lc)}=1/3$
 \end_inset
 
- para dar cuenta de la incompatibilidad química entre cepillo y líquido.
+ para fijar una incompatibilidad química entre cepillo y líquido.
  Este valor fue tomado de la bibliografía 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1118,7 +1100,7 @@ Fakir
  reposa sobre un cepillo poco denso, manteniendo una baja interpenetración
  entre ambas fases.
  Cabe notar que la interacción líquido-cepillo no es puramente repulsiva,
- ya que el radio de corte para esta fuerza, fue el mismo que para la interacción
+ ya que el radio de corte para esta fuerza fue el mismo que para la interacción
  líquido-líquido.
  Es decir que la atracción entre dos monómeros de distintas especies la
  tercera parte de la fuerza que se ejercen dos partículas pertenecientes
@@ -1127,6 +1109,15 @@ Fakir
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+HASTA ACA VA BIEN
+\end_layout
+
+\end_inset
+
 Para darle conectividad a las cadenas poliméricas, se utilizó el potencial
  no elástico de extensión finita desarrollado por Kremer y Grest
 \begin_inset CommandInset citation
@@ -1338,7 +1329,7 @@ reference "fig:Bendig_versores"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-cos(\theta)=\frac{(\vec{r}_{3}-\vec{r}_{2})\text{·}(\vec{r}_{2}-\vec{r}_{1})}{|\vec{r}_{3}-\vec{r}_{2}||\vec{r}_{2}-\vec{r}_{1}|}\Rightarrow\theta(\vec{r}_{1},\vec{r}_{2},\vec{r}_{3})=cos^{-1}\left[\frac{(\vec{r}_{3}-\vec{r}_{2})\text{·}(\vec{r}_{2}-\vec{r}_{1})}{|\vec{r}_{3}-\vec{r}_{2}||\vec{r}_{2}-\vec{r}_{1}|}\right]
+cos(\theta)=\frac{(\boldsymbol{r}_{3}-\boldsymbol{r}_{2})\text{·}(\boldsymbol{r}_{2}-\boldsymbol{r}_{1})}{|\boldsymbol{r}_{3}-\boldsymbol{r}_{2}||\boldsymbol{r}_{2}-\boldsymbol{r}_{1}|}\Rightarrow\theta(\boldsymbol{r}_{1},\boldsymbol{r}_{2},\boldsymbol{r}_{3})=cos^{-1}\left[\frac{(\boldsymbol{r}_{3}-\boldsymbol{r}_{2})\text{·}(\boldsymbol{r}_{2}-\boldsymbol{r}_{1})}{|\boldsymbol{r}_{3}-\boldsymbol{r}_{2}||\boldsymbol{r}_{2}-\boldsymbol{r}_{1}|}\right]
 \end{equation}
 
 \end_inset
@@ -1461,7 +1452,7 @@ Las fuerzas actuantes sobre cada masa pueden ser calculadas tomando las
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\vec{F}_{3}=-\overset{\rightharpoonup}{\nabla}_{3}U_{flex}(\vec{r}_{1},\vec{r}_{2},\vec{r}_{3})=\frac{k_{f}\theta}{|\vec{r}_{3}-\vec{r}_{2}|}\left[\frac{(\vec{r}_{2}-\vec{r}_{1})}{|\vec{r}_{2}-\vec{r}_{1}||sen(\theta)|}-\frac{cos(\theta)(\vec{r}_{3}-\vec{r}_{2})}{|sen(\theta)||\vec{r}_{3}-\vec{r}_{2}|}\right]
+\boldsymbol{F}_{3}=-\nabla_{3}U_{flex}(\boldsymbol{r}_{1},\boldsymbol{r}_{2},\boldsymbol{r}_{3})=\frac{k_{f}\theta}{|\boldsymbol{r}_{3}-\boldsymbol{r}_{2}|}\left[\frac{(\boldsymbol{r}_{2}-\boldsymbol{r}_{1})}{|\boldsymbol{r}_{2}-\boldsymbol{r}_{1}||sen(\theta)|}-\frac{cos(\theta)(\boldsymbol{r}_{3}-\boldsymbol{r}_{2})}{|sen(\theta)||\boldsymbol{r}_{3}-\boldsymbol{r}_{2}|}\right]
 \end{equation}
 
 \end_inset
@@ -1483,7 +1474,7 @@ Se puede demostrar que el corchete en la ecuación anterior es un vector
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\vec{F}_{3}=\frac{k_{f}\theta}{|\vec{r}_{3}-\vec{r}_{2}|}\hat{n}_{3};\qquad\hat{n}_{3}\equiv\left[\frac{(\vec{r}_{2}-\vec{r}_{1})}{|\vec{r}_{2}-\vec{r}_{1}||sen(\theta)|}-\frac{cos(\theta)(\vec{r}_{3}-\vec{r}_{2})}{|sen(\theta)||\vec{r}_{3}-\vec{r}_{2}|}\right]\label{eq:Fza_bend_3}
+\boldsymbol{F}_{3}=\frac{k_{f}\theta}{|\boldsymbol{r}_{3}-\boldsymbol{r}_{2}|}\boldsymbol{n}_{3};\qquad\boldsymbol{n}_{3}\equiv\left[\frac{(\boldsymbol{r}_{2}-\boldsymbol{r}_{1})}{|\boldsymbol{r}_{2}-\boldsymbol{r}_{1}||sen(\theta)|}-\frac{cos(\theta)(\boldsymbol{r}_{3}-\boldsymbol{r}_{2})}{|sen(\theta)||\boldsymbol{r}_{3}-\boldsymbol{r}_{2}|}\right]\label{eq:Fza_bend_3}
 \end{equation}
 
 \end_inset
@@ -1501,7 +1492,7 @@ La fuerza sobre la masa 3 es directamente proporcional al ángulo, e inversament
 \end_inset
 
  por lo que puede traer inconvenientes evaluar el versor 
-\begin_inset Formula $\hat{n}$
+\begin_inset Formula $\boldsymbol{n}$
 \end_inset
 
  de la ecuación (
@@ -1533,7 +1524,7 @@ De la misma manera se puede hallar la fuerza sobre el primer monómero ,
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\vec{F}_{1}=\frac{k_{f}\theta}{|\vec{r}_{1}-\vec{r}_{2}|}\hat{n}_{1};\qquad\hat{n}_{1}\equiv\left[\frac{\hat{n}_{2,3}-cos(\theta)\hat{n}_{1,2}}{|sen(\theta)|}\right]
+\boldsymbol{F}_{1}=\frac{k_{f}\theta}{|\boldsymbol{r}_{1}-\boldsymbol{r}_{2}|}\boldsymbol{n}_{1};\qquad\boldsymbol{n}_{1}\equiv\left[\frac{\boldsymbol{n}_{2,3}-cos(\theta)\boldsymbol{n}_{1,2}}{|sen(\theta)|}\right]
 \end{equation}
 
 \end_inset
@@ -1542,7 +1533,7 @@ La fuerza sobre la partícula 2 se calcula del mismo modo y se cumple que
  
 \begin_inset Formula 
 \begin{equation}
-\vec{F}_{1}+\vec{F}_{2}+\vec{F}_{3}=0
+\boldsymbol{F}_{1}+\boldsymbol{F}_{2}+\boldsymbol{F}_{3}=0
 \end{equation}
 
 \end_inset
@@ -1652,42 +1643,16 @@ Directamente debajo del monómero fijo al sustrato (1), se ubica una partícula
  en posición vertical, perpendicular al sustrato.
  La fuerza sobre el monómero 2 se calculó tomando en cuenta el ángulo formado
  ente los vectores 
-\begin_inset Formula $\vec{r}_{2}-\vec{r}_{1}$
+\begin_inset Formula $\boldsymbol{r}_{2}-\boldsymbol{r}_{1}$
 \end_inset
 
  y 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
-
-\begin_inset Formula $\vec{r}_{1}-\vec{r}_{0}$
+\begin_inset Formula $\boldsymbol{r}_{1}-\boldsymbol{r}_{0}$
 \end_inset
 
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-\lang spanish
 .
  La fuerza sobre el monómero fijo a la pared es 
-\begin_inset Formula $\overset{\rightharpoonup}{F}_{1}=-\overset{\rightharpoonup}{F}_{2}$
+\begin_inset Formula $\boldsymbol{F}_{1}=-\boldsymbol{F}_{2}$
 \end_inset
 
 , para que la sumatoria de fuerzas internas sobre la cadena sea nula.
@@ -1745,7 +1710,7 @@ Si se llevara a cabo la simulación integrando directamente las ecuaciones
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\vec{F}_{i}=\vec{F}_{c}+\underset{j\neq i}{\sum}\vec{F}^{D}(\vec{r}_{ij},\vec{v}_{ij})+\vec{F}^{R}(\vec{r}_{ij})\,,
+\boldsymbol{F}_{i}=\boldsymbol{F}_{c}+\underset{j\neq i}{\sum}\boldsymbol{F}^{D}(\boldsymbol{r}_{ij},\boldsymbol{v}_{ij})+\boldsymbol{F}^{R}(\boldsymbol{r}_{ij})\,,
 \end{equation}
 
 \end_inset
@@ -1755,16 +1720,16 @@ Si se llevara a cabo la simulación integrando directamente las ecuaciones
 
 \begin_layout Standard
 donde 
-\begin_inset Formula $\vec{F}_{c}$
+\begin_inset Formula $\boldsymbol{F}_{c}$
 \end_inset
 
  son las fuerzas conservativas del modelo sobre la partícula i-ésima.
  
-\begin_inset Formula $\vec{F}^{D}$
+\begin_inset Formula $\boldsymbol{F}^{D}$
 \end_inset
 
  y 
-\begin_inset Formula $\vec{F}^{R}$
+\begin_inset Formula $\boldsymbol{F}^{R}$
 \end_inset
 
  son las fuerzas disipativas y estocásticas que se agregan, y su expresión
@@ -1774,7 +1739,7 @@ donde
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\vec{F}^{D}(\vec{r}_{ij},\vec{v}_{ij})=-\gamma w^{D}(r_{ij})(\vec{v}_{ij}\text{·}\hat{r}_{ij})\hat{r}_{ij}
+\boldsymbol{F}^{D}(\boldsymbol{r}_{ij},\boldsymbol{v}_{ij})=-\gamma w^{D}(r_{ij})(\boldsymbol{v}_{ij}\text{·}\hat{\boldsymbol{r}}_{ij})\hat{\boldsymbol{r}}_{ij}
 \end{equation}
 
 \end_inset
@@ -1785,7 +1750,7 @@ donde
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\vec{F}^{R}(\vec{r}_{ij})=\beta w^{R}(r_{ij})\xi_{ij}\hat{r}_{ij}\,,
+\vec{F}^{R}(\boldsymbol{r}_{ij})=\beta w^{R}(r_{ij})\xi_{ij}\hat{\boldsymbol{r}}_{ij}\,,
 \end{equation}
 
 \end_inset
@@ -1795,7 +1760,11 @@ donde
 
 \begin_layout Standard
 donde 
-\begin_inset Formula $\vec{a}_{ij}\equiv\vec{a}_{i}-\vec{a}_{j}$
+\begin_inset Formula $\boldsymbol{a}_{ij}\equiv\boldsymbol{a}_{i}-\boldsymbol{a}_{j}$
+\end_inset
+
+ y 
+\begin_inset Formula $\boldsymbol{\hat{a}}_{ij}\equiv(\boldsymbol{a}_{i}-\boldsymbol{a}_{j})/\left|\boldsymbol{a}_{i}-\boldsymbol{a}_{j}\right|$
 \end_inset
 
 .
@@ -2106,6 +2075,13 @@ Resultados II: Influencia de la rigidez de los polímeros en flujo bifásico
 
 \begin_layout Chapter
 Resultados III: Cepillos poliméricos como válvulas en nanocanales
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Resultados-III:-Cepillos"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
