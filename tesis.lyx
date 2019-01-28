@@ -699,7 +699,7 @@ noprefix "false"
 \end_inset
 
  a) se compara el tiempo que tardan en completar una simulación utilizando
- los dos métodos descritos, en función de la cantidad de nucleos utilizados.
+ los dos métodos descritos, en función de la cantidad de núcleos utilizados.
  Es interesante ver que el programa serial (un solo núcleo) utilizando del
  método Verlet+listas en mucho más rápido que el de listas enlazadas.
  A medida que se utilizan más nucleos para los cálculos, el tiempo para
@@ -719,11 +719,11 @@ noprefix "false"
  En ésta, se calcula cuantas veces más rápido corre el programa, a medida
  que se utilizan más hilos en paralelo, mientras se mantiene igual el tamaño
  del sistema (strong scaling).
- Se aprecia que para el esquema de lsitas enlazadas, la curva crece rápidamente
- con la cantidad de nucleos de cálculo, mientras que el método Verlet+celdas,
+ Se aprecia que para el esquema de listas enlazadas, la curva crece rápidamente
+ con la cantidad de núcleos de cálculo, mientras que el método Verlet+celdas,
  la curva se aplana rápidamente.
  Este último esquema fue desarrollado y optimizado para agilizar los cálculos
- en un programa serial y no hace un uso eficiente de los diferentes nucleos
+ en un programa serial y no hace un uso eficiente de los diferentes núcleos
  de computo al paralelizar el programa.
  En conclusión, para decidir que esquema de aceleración usar para recorrer
  pares, es conveniente saber las propiedades del nodo en el cual se corren
@@ -795,8 +795,8 @@ donde
 \begin_inset Formula $b$
 \end_inset
 
- refieren a las diferentes espacies de partículas.
- Estas especies pueden ser distintos tipos de polímeros, o distintos fluidos.
+ refieren a las diferentes especies de partículas.
+ Estas especies pueden ser distintos tipos de polímeros o distintos fluidos.
  
 \end_layout
 
@@ -891,6 +891,15 @@ literal "true"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Utilizando diferentes valores para el radio de corte de esta interacción
+ se pueden simular distintas condiciones fisico-químicas.
+ Si se toma un radio de corte que coincida con el mínimo del potencial,
+ todas las fuerzas serán repulsivas.
+ De esta manera pueden modelarse un melt polimérico en buen solvente, dónde
+ las cadenas no forman aglomerados.
 \end_layout
 
 \begin_layout Standard
@@ -1714,6 +1723,177 @@ Marco teórico: mecánica estadística
 DPD
 \end_layout
 
+\begin_layout Standard
+Si se llevara a cabo la simulación integrando directamente las ecuaciones
+ de movimiento dadas por el modelo, la energía total del sistema sería una
+ constante de movimiento y no la temperatura.
+ Este esquema corresponde al ensamble microcanónico, pero los experimentos
+ se realizan mayoritariamente manteniendo constante la temperatura, que
+ se corresponde con el ensamble canónico.
+ Para satisfacer esta condición en las experiencias, se pone en contacto
+ la muestra con un baño térmico, de manera tal, que se permite el intercambio
+ de calor con el exterior.
+ La idea para llevar a cabo simulaciones en el ensamble canónico es parecida.
+ En el termostato utilizado, se agregan fuerzas externas al sistema para
+ que se cumplan las condiciones termodinámicas compatibles con el ensamble.
+ Se llaman termostatos a las diferentes técnicas que logran esto.
+ El termostato elegido en este caso fue el denominado Dissipative Particle
+ Dynamics (DPD), que consiste en modificar la fuerza para la partícula i-ésima
+ de la siguiente manera:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\vec{F}_{i}=\vec{F}_{c}+\underset{j\neq i}{\sum}\vec{F}^{D}(\vec{r}_{ij},\vec{v}_{ij})+\vec{F}^{R}(\vec{r}_{ij})\,,
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde 
+\begin_inset Formula $\vec{F}_{c}$
+\end_inset
+
+ son las fuerzas conservativas del modelo sobre la partícula i-ésima.
+ 
+\begin_inset Formula $\vec{F}^{D}$
+\end_inset
+
+ y 
+\begin_inset Formula $\vec{F}^{R}$
+\end_inset
+
+ son las fuerzas disipativas y estocásticas que se agregan, y su expresión
+ es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\vec{F}^{D}(\vec{r}_{ij},\vec{v}_{ij})=-\gamma w^{D}(r_{ij})(\vec{v}_{ij}\text{·}\hat{r}_{ij})\hat{r}_{ij}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\vec{F}^{R}(\vec{r}_{ij})=\beta w^{R}(r_{ij})\xi_{ij}\hat{r}_{ij}\,,
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde 
+\begin_inset Formula $\vec{a}_{ij}\equiv\vec{a}_{i}-\vec{a}_{j}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ es el coeficiente de fricción,
+\begin_inset Formula $\beta$
+\end_inset
+
+ la intensidad de la fuerza aleatoria, 
+\begin_inset Formula $\xi_{ij}$
+\end_inset
+
+ es un número aleatorio, tomado de una distribución normal de media cero
+ y varianza unidad.
+ Para que se cumpla la relación de fluctuación-disipación, se requiere que
+ las funciones que dan el peso de cada fuerza estén relacionadas de la siguiente
+ manera: 
+\begin_inset Formula $w^{D}=\left[w^{R}\right]^{2}$
+\end_inset
+
+.
+ La dependencia de estas funciones fue la comúnmente usada en la literatura
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "frenkel.md.book.1996"
+literal "true"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevE.76.026706"
+literal "true"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+w^{D}=\left[w^{R}\right]^{2}=\begin{cases}
+(1-r/r_{c})^{2} & ,\,r<r_{c}\\
+0 & ,\,r\geq r_{c}
+\end{cases}\,,
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $r_{c}$
+\end_inset
+
+ es el radio de corte y viene dado por el modelo molecular.
+\end_layout
+
+\begin_layout Standard
+Hay varias razones para la elección de este termostato.
+ La primera es que las fuerzas introducidas en el termostato DPD cumplen
+ la tercera ley de Newton, por lo que conserva localmente el momento lineal.
+ Esto es esencial para recobrar el comportamiento hidrodinámico adecuado
+ a grandes escalas.
+ Ésta es la gran ventaja que presenta este método por sobre otros como el
+ de Langevin y fue esencial en este trabajo, ya que se realizaron simulaciones
+ con flujos, fuera del equilibrio.
+ La segunda es la eficiencia computacional, pues con esta elección de 
+\begin_inset Formula $w^{D}$
+\end_inset
+
+ y 
+\begin_inset Formula $w^{R}$
+\end_inset
+
+ las fuerzas son de corto alcance y la cantidad de operaciones escalea con
+ el número de partículas (y no con la cantidad de pares).
+ La tercera es que induce correctamente el movimiento browniano.
+ Una desventaja del método DPD es que las fuerzas dependen de la cercanía
+ de otras partículas, por lo tanto en zonas de baja densidad las fuerzas
+ del termostato son débiles y no actúan eficientemente.
+ Por último, cabe destacar que este termostato está extensamente estudiado
+ en la literatura, dando resultados satisfactorios en sistemas parecidos
+ al estudiado en este trabajo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevE.76.026706"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Tratamiento de incertezas
 \end_layout
@@ -1724,6 +1904,194 @@ Tratamiento en bloques,
 
 \begin_layout Standard
 fuentes de errores
+\end_layout
+
+\begin_layout Standard
+Hasta ahora se ha discutido cómo obtener las posiciones y velocidades en
+ función del tiempo para determinadas condiciones termodinámicas.
+ Sin embargo, estas cantidades no son accesibles en los experimentos y por
+ lo tanto no sirven para comparar con las simulaciones.
+ Para obtener cantidades macroscópicas contrastables con experiencias en
+ un laboratorio, es necesario escribir a las mismas como función de las
+ velocidades y posiciones de las partículas.
+ Luego es posible tomar el promedio temporal para obtener un valor más preciso:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\bar{A}_{\tau}=\frac{1}{\tau}\int_{0}^{\tau}A(\vec{r}_{1}(t),...,\vec{r}_{N}(t),\vec{v}_{1}(t),...,\vec{v}_{N}(t))dt
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se puede argumentar que este valor no es exacto, pues en principio depende
+ del tiempo de integración y de las condiciones iniciales.
+ Incluso tomando el límite 
+\begin_inset Formula $\tau\rightarrow\infty$
+\end_inset
+
+ es posible que no coincida el promedio temporal con el promedio estadístico
+ sobre el ensamble 
+\begin_inset Formula $<A>$
+\end_inset
+
+.
+ Sin embargo, si la trayectoria del sistema en el espacio de fases recorre
+ una cantidad significativa de puntos compatibles con las restricciones
+ termodinámicas, entonces se cumple que 
+\begin_inset Formula 
+\begin{equation}
+\underset{\tau\rightarrow\text{\infty}}{lim}\:\bar{A}_{\tau}=\left\langle A\right\rangle 
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta igualdad es conocida como hipótesis de ergodicidad y durante esta tesis
+ se trabajó bajo esta suposición.
+ En estas condiciones, es válido tomar a 
+\begin_inset Formula $\bar{A}_{\tau}$
+\end_inset
+
+ como estimador de 
+\begin_inset Formula $\left\langle A\right\rangle $
+\end_inset
+
+.
+ Naturalmente esta cantidad depende del tiempo total de la simulación y
+ no dará exactamente igual si se realiza la experiencia varias veces.
+ Es necesario poder estimar la varianza de 
+\begin_inset Formula $\bar{A}_{\tau}$
+\end_inset
+
+, para saber la bondad del promedio estadístico.
+ Por definición esto es
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+var(\bar{A}_{\tau})=\left\langle (\bar{A}_{\tau})^{2}\right\rangle -\left\langle \bar{A}_{\tau}\right\rangle {}^{2}=\int_{0}^{\tau}\int_{0}^{\tau}dtdt'\left\langle [\bar{A}(t)-\left\langle A\right\rangle ][\overline{A}(t')-\left\langle A\right\rangle ]\right\rangle =\int_{0}^{\tau}\int_{0}^{\tau}dtdt'C(t,t')
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $C(t,t')=\left\langle [\bar{A}(t)-\left\langle A\right\rangle ][\bar{A}(t')-\left\langle A\right\rangle ]\right\rangle $
+\end_inset
+
+ es la función de autocorrelación de 
+\begin_inset Formula $A(t)$
+\end_inset
+
+.
+ Estimar esta cantidad requiere un número de cómputos mucho mayor que el
+ necesario para realizar los promedios temporales.
+ Por esta razón es que en la práctica se hace un análisis por bloques de
+ los datos para estimar la varianza del estimador 
+\begin_inset Formula $\bar{A}_{\tau}$
+\end_inset
+
+.
+ El análisis por bloques consiste en dividir el tiempo total de la corrida
+ 
+\begin_inset Formula $\tau$
+\end_inset
+
+, en L bloques de igual duración 
+\begin_inset Formula $t_{B}=\tau/L$
+\end_inset
+
+.
+ Si se elige la cantidad de bloques de manera tal que 
+\begin_inset Formula $t_{B}$
+\end_inset
+
+ sea mayor al tiempo de correlación, entonces los promedios tomados dentro
+ de cada bloque estarán decorrelacionados entre si 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Se define el tiempo de correlación 
+\begin_inset Formula $t_{C}$
+\end_inset
+
+ como 
+\begin_inset Formula $\frac{\int_{0}^{\infty}\left\langle A(o)A(t)\right\rangle {}^{2}dt}{\left\langle A^{2}(0)\right\rangle }$
+\end_inset
+
+ y caracteriza al tiempo mínimo para considerar dos mediciones de la magnitud
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ como independientes
+\end_layout
+
+\end_inset
+
+.
+ Llamando 
+\begin_inset Formula $\bar{A}_{i}$
+\end_inset
+
+ a la media del bloque i-ésimo y suponiendo que sigue una distribución gaussiana
+ de esperanza 
+\begin_inset Formula $\left\langle A\right\rangle $
+\end_inset
+
+ y varianza 
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+, se tiene que 
+\begin_inset Formula 
+\begin{equation}
+\bar{A}_{\tau}=\underset{i=1}{\frac{1}{L}\overset{L}{\sum}A_{i}}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+Var(\bar{A}_{\tau})=\frac{1}{(L-1)^{2}}\overset{L}{\underset{i=1}{\sum}}(A_{i}-\bar{A}_{\tau})^{2}=\frac{\sigma^{2}}{L-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cabe notar que muchas de las cantidades medidas pueden ser calculadas en
+ cada instante como el promedio sobre varias partículas, es decir:
+\begin_inset Formula 
+\begin{equation}
+A(t)=\underset{i=1}{\overset{N}{\sum}}a(\overset{\rightharpoonup}{r_{i}}(t),\overset{\rightharpoonup}{v_{i}}(t))
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esto hace que el tiempo de correlación disminuya fuertemente, siempre que
+ las funciones 
+\begin_inset Formula $a(\overset{\rightharpoonup}{r}_{i},\overset{\rightharpoonup}{v}_{i})$
+\end_inset
+
+ sean independientes entre sí.
 \end_layout
 
 \begin_layout Chapter
