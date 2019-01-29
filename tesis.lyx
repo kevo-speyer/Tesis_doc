@@ -1204,7 +1204,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Tesis_lic/figs/UFENE.agr
+	filename figs/UFENE.agr
 	width 60text%
 	clip
 
@@ -1223,7 +1223,7 @@ name "fig:FENE"
 
 \end_inset
 
-Se aprecia el potencial de interacción 
+Se aprecia en negro el potencial de interacción 
 \begin_inset Formula $U_{FENE}$
 \end_inset
 
@@ -1239,7 +1239,7 @@ reference "eq:FENE"
 \begin_inset Formula $U_{ARM}=1/2kr^{2}$
 \end_inset
 
-, con el mismo valor de constante elástica 
+ en rojo, con el mismo valor de constante elástica 
 \begin_inset Formula $k=30\varepsilon/\sigma^{2}$
 \end_inset
 
