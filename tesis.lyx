@@ -1173,15 +1173,6 @@ Fakir
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-HASTA ACA VA BIEN
-\end_layout
-
-\end_inset
-
 Para darle conectividad a las cadenas poliméricas, se utilizó el potencial
  no elástico de extensión finita desarrollado por Kremer y Grest
 \begin_inset CommandInset citation
@@ -1223,7 +1214,7 @@ name "fig:FENE"
 
 \end_inset
 
-Se aprecia en negro el potencial de interacción 
+En negro se aprecia el potencial de interacción 
 \begin_inset Formula $U_{FENE}$
 \end_inset
 
@@ -1235,11 +1226,11 @@ reference "eq:FENE"
 \end_inset
 
 .
- Se grafica también un potencial armónico 
+ En rojo se grafica también un potencial armónico 
 \begin_inset Formula $U_{ARM}=1/2kr^{2}$
 \end_inset
 
- en rojo, con el mismo valor de constante elástica 
+, con el mismo valor de constante elástica 
 \begin_inset Formula $k=30\varepsilon/\sigma^{2}$
 \end_inset
 
@@ -1347,10 +1338,6 @@ reference "fig:FENE"
 \end_layout
 
 \begin_layout Standard
-FENE
-\end_layout
-
-\begin_layout Standard
 Uno de los puntos distintivos de este trabajo es el estudio de las propiedades
  del sistema líquido-cepillo en función de la rigidez de los polímeros.
  Esta se impuso mediante un potencial de flexión armónico entre tres monómeros
@@ -1436,39 +1423,13 @@ El esquema muestra la acción del potencial de flexión, sobre una cadena
 \end_inset
 
  es el ángulo formado por los vectores 
-\begin_inset Formula $\vec{r}_{3}-\vec{r}_{2}$
+\begin_inset Formula $\boldsymbol{r}_{3}-\boldsymbol{r}_{2}$
 \end_inset
 
  y 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
-
-\begin_inset Formula $\vec{r}_{2}-\vec{r}_{1}$
+\begin_inset Formula $\boldsymbol{r}_{2}-\boldsymbol{r}_{1}$
 \end_inset
 
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-\lang spanish
 , que unen a los monómeros y la posición de equilibrio está dada por 
 \begin_inset Formula $\theta=0$
 \end_inset
@@ -1479,13 +1440,13 @@ El esquema muestra la acción del potencial de flexión, sobre una cadena
  une los monómeros 2 y 3.
  Es decir que la fuerza sobre este monómero es la dirección y sentido de
  
-\begin_inset Formula $\hat{n}_{3}$
+\begin_inset Formula $\boldsymbol{n}_{3}$
 \end_inset
 
 .
  De la misma manera la fuerza de flexión sobre el monómero 1 (abajo), es
  en la dirección y sentido de 
-\begin_inset Formula $\hat{n}_{1}$
+\begin_inset Formula $\boldsymbol{n}_{1}$
 \end_inset
 
 .
@@ -1505,7 +1466,7 @@ El esquema muestra la acción del potencial de flexión, sobre una cadena
 \begin_layout Standard
 Las fuerzas actuantes sobre cada masa pueden ser calculadas tomando las
  derivadas parciales correspondientes del potencial 
-\begin_inset Formula $U_{flex}[\theta(\vec{r}_{1},\vec{r}_{2},\vec{r}_{3})]$
+\begin_inset Formula $U_{flex}[\theta(\boldsymbol{r}_{1},\boldsymbol{r}_{2},\boldsymbol{r}_{3})]$
 \end_inset
 
 .
@@ -1524,11 +1485,11 @@ Las fuerzas actuantes sobre cada masa pueden ser calculadas tomando las
 Se puede demostrar que el corchete en la ecuación anterior es un vector
  de módulo unidad, que está contenido en el plano formado por los versores
  
-\begin_inset Formula $\vec{r}_{2}-\vec{r}_{1}$
+\begin_inset Formula $\boldsymbol{r}_{2}-\boldsymbol{r}_{1}$
 \end_inset
 
  y 
-\begin_inset Formula $\vec{r}_{3}-\vec{r}_{2}$
+\begin_inset Formula $\boldsymbol{r}_{3}-\boldsymbol{r}_{2}$
 \end_inset
 
 , y que es ortogonal a este último.
@@ -1551,7 +1512,10 @@ La fuerza sobre la masa 3 es directamente proporcional al ángulo, e inversament
  proporcional a la distancia al primer vecino, mientras que la dirección
  esta contenida en el plano formado por las tres partículas y perpendicular
  a la línea que une a los eslabones 3 y 2.
- Cabe mencionar que el ángulo de equilibrio corresponde a 
+\end_layout
+
+\begin_layout Standard
+Cabe mencionar que el ángulo de equilibrio corresponde a 
 \begin_inset Formula $\theta=0,$
 \end_inset
 
@@ -1571,24 +1535,33 @@ reference "eq:Fza_bend_3"
 \end_inset
 
  en el denominador.
- A la hora de implementar esta rutina se evitó esta divergencia, anulando
- la fuerza siempre que el ángulo, medido en radianes, fuera menor a 
-\begin_inset Formula $\theta<0,001$
+ A la hora de implementar esta rutina se evitó esta divergencia, haciendo
+ una aproximación a primer orden para ángulos pequeños 
+\begin_inset Formula $\theta<0.002$
 \end_inset
 
 .
- 
+ Tomando el limite para ángulos pequeños, la expresión anterior queda:
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{F}_{3}=\frac{k_{f}}{|\boldsymbol{r}_{3}-\boldsymbol{r}_{2}|}\left[\frac{(\boldsymbol{r}_{2}-\boldsymbol{r}_{1})}{|\boldsymbol{r}_{2}-\boldsymbol{r}_{1}|}-\frac{(\boldsymbol{r}_{3}-\boldsymbol{r}_{2})}{|\boldsymbol{r}_{3}-\boldsymbol{r}_{2}|}\right]\,,
+\end{equation}
+
+\end_inset
+
+ donde los denominadores corresponden a las distancias entre monómeros consecuti
+vos y no se anulan nunca debido a la interacciónd e volumen excluido.
 \end_layout
 
 \begin_layout Standard
-De la misma manera se puede hallar la fuerza sobre el primer monómero ,
- obteniendo:
+De la misma manera se puede hallar la fuerza sobre el primer monómero para
+ todo ángulo, obteniendo:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\boldsymbol{F}_{1}=\frac{k_{f}\theta}{|\boldsymbol{r}_{1}-\boldsymbol{r}_{2}|}\boldsymbol{n}_{1};\qquad\boldsymbol{n}_{1}\equiv\left[\frac{\boldsymbol{n}_{2,3}-cos(\theta)\boldsymbol{n}_{1,2}}{|sen(\theta)|}\right]
+\boldsymbol{F}_{1}=\frac{k_{f}\theta}{|\boldsymbol{r}_{1}-\boldsymbol{r}_{2}|}\boldsymbol{n}_{1};\qquad\boldsymbol{n}_{1}\equiv\left[\frac{(\boldsymbol{r}_{2}-\boldsymbol{r}_{3})}{|\boldsymbol{r}_{2}-\boldsymbol{r}_{3}||sen(\theta)|}-\frac{cos(\theta)(\boldsymbol{r}_{1}-\boldsymbol{r}_{2})}{|sen(\theta)||\boldsymbol{r}_{1}-\boldsymbol{r}_{2}|}\right]
 \end{equation}
 
 \end_inset
@@ -1607,7 +1580,8 @@ Esta ecuación indica que la sumatoria de fuerzas internas es nula, lo que
  cadena se conserva.
  Si bien esta es una característica física esperable, cabe notar que no
  se deduce de la cancelación de pares de interacción, pues la fuerza sobre
- cada partícula depende la posición de las otras dos.
+ cada partícula depende la posición de los dos primeros vecinos de de la
+ cadena.
  Esto es fácil de ver fijando la posición de la dos últimas masas y notando
  que al mover el primer monómero varía la apertura angular y por tanto la
  intensidad de la fuerza ejercida sobre el último eslabón.
