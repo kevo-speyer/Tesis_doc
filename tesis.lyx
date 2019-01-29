@@ -835,9 +835,73 @@ s de contorno, serían infinitos.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/U_LJ.agr
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ULJ"
+
+\end_inset
+
+Potencial de interacción de Lennard-Jonnes truncado y desplazado.
+ En negro se aprecia el potencial con radio de corte 
+\begin_inset Formula $r_{C}=2·\sqrt[6]{2}$
+\end_inset
+
+, que incluye una zona de fuerza atractiva.
+ En rojo se grafica el potencial de interacción con radio de corte 
+\begin_inset Formula $r_{C}=\sqrt[6]{2}$
+\end_inset
+
+, que resulta puramente repulsivo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Utilizando diferentes valores para el radio de corte de esta interacción
  se pueden simular distintas condiciones fisico-químicas.
- Si se toma un radio de corte que coincida con el mínimo del potencial,
+ Como se aprecia en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ULJ"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, si se toma un radio de corte que coincida con el mínimo del potencial,
  todas las fuerzas serán repulsivas.
  De esta manera pueden modelarse un 
 \shape italic
@@ -1267,7 +1331,7 @@ reference "fig:FENE"
  Se puede apreciar que para apartamientos pequeños ambas fuerzas son similares,
  pero difieren a medida que la distancia entre partículas es comparable
  con 
-\begin_inset Formula $r=1,5\sigma$
+\begin_inset Formula $r=1.5\sigma$
 \end_inset
 
 .
@@ -2057,7 +2121,7 @@ A(t)=\underset{i=1}{\overset{N}{\sum}}a(\overset{\rightharpoonup}{r_{i}}(t),\ove
 \begin_layout Standard
 Esto hace que el tiempo de correlación disminuya fuertemente, siempre que
  las funciones 
-\begin_inset Formula $a(\overset{\rightharpoonup}{r}_{i},\overset{\rightharpoonup}{v}_{i})$
+\begin_inset Formula $a(\overset{\rightharpoonup}{r}_{⁩},\overset{\rightharpoonup}{v}_{i})$
 \end_inset
 
  sean independientes entre sí.
