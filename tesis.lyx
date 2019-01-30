@@ -1345,7 +1345,7 @@ Uno de los puntos distintivos de este trabajo es el estudio de las propiedades
  
 \begin_inset Formula 
 \begin{equation}
-U_{flex}(\theta)=\frac{1}{2}k_{f}\theta^{2}\,,
+U_{flex}(\theta)=\frac{1}{2}k_{f}\theta^{2}\,,\label{eq:bending}
 \end{equation}
 
 \end_inset
@@ -1592,14 +1592,73 @@ Si ahora se considera una cadena más larga, el cálculo de la fuerza de flexió
  sobre la i-ésima partícula puede computarse considerando los tripletes
  en los cuales esta masa está contenida.
  Es decir, que hay que tener en cuenta las contribuciones asociadas a los
- tripletes (i-2,i-1,i) (i-1,i,i+1) (i,i+1,i+2) correspondientes a los ángulos
- 
+ tripletes 
+\begin_inset Formula $(i-2,\,i-1,\,i)$
+\end_inset
+
+, 
+\begin_inset Formula $(i-1,\,i,\,i+1)$
+\end_inset
+
+ y 
+\begin_inset Formula $(i,\,i+1,\,i+2)$
+\end_inset
+
+ correspondientes a los ángulos 
 \begin_inset Formula $\theta_{i-1};\theta_{i};\theta_{i+1}$
 \end_inset
 
 , respectivamente.
  Es interesante notar que la fuerza no depende solamente de la posición
  de las masas adyacentes, sino también de los segundos vecinos.
+ 
+\end_layout
+
+\begin_layout Standard
+Cabe mencionar que este no es el único potencial utilizado para modelar
+ la rigidez en moléculas lineales.
+ Otra opción comunmente utilizada es tomar la energía de flexión como 
+\begin_inset Formula $U(\theta)=k_{f}(1-cos\,\theta)$
+\end_inset
+
+.
+ Esta elección tiene la ventaja de tener una expresión sencilla cuando se
+ toma el límite al continuo, en el que los polímeros son modelados como
+ curvas de longitud finita, conformados por infinitos monómeros.
+ Esta aproximación es ampliamente utilizada para desarrollos analíticos
+ en el que se pasa de una descripción de partícula a una descripción de
+ campo medio (
+\shape italic
+mean field theory
+\shape default
+).
+ Es conveniente destacar que ambos potenciales de flexión presentados tienen
+ una forma funcional similar y exhiben un comportamiento muy parecido.
+ Esto queda claro al desarrollar el potencial alrededor del valor de equilibrio
+ y recuperar lo mismo que en la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:bending"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+U(\theta)=k_{f}(1-cos\,\theta)=\frac{1}{2}k_{f}\theta^{2}+O(\theta^{4})
+\end{equation}
+
+\end_inset
+
+Es decir, que un potencial utilizado en este trabajo se puede pensar como
+ la aproximación alrededor del ángulo de equilibrio a tercer orden de 
+\begin_inset Formula $U(\theta)=k_{f}(1-cos\,\theta)$
+\end_inset
+
+.
  
 \end_layout
 
@@ -1630,20 +1689,6 @@ reference "fig:Orientacion"
 , directamente debajo del monómero sujeto a la pared.
  La fuerza sobre la segunda partícula fue hallada como se explicó anteriormente,
  aplicándolo a esta terna.
- Como se discutió en la sección 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:Termodinámicas"
-
-\end_inset
-
-, las fuerzas ejercidas sobre los extremos fijos de los polímeros son una
- cantidad interesante para medir, pero dan información confiable del sistema
- solamente cuando la sumatoria de fuerzas internas sobre cada cadena se
- cancela.
- Por esta razón, se tomó la fuerza sobre el eslabón fijo a la pared como
- el par de interacción de la fuerza de flexión que ejerce esta terna sobre
- la segunda partícula.
 \end_layout
 
 \begin_layout Standard
@@ -1656,7 +1701,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Tesis_lic/figs/Orientation.eps
+	filename figs/Orientation.eps
 	scale 40
 
 \end_inset
@@ -1707,11 +1752,217 @@ Directamente debajo del monómero fijo al sustrato (1), se ubica una partícula
 \end_layout
 
 \begin_layout Standard
-BENDING
+Todas las simulaciones se llevaron a cabo en un prisma ortogonal de dimensiones
+ 
+\begin_inset Formula $L_{x}\times L_{y}\times L_{z}$
+\end_inset
+
+, utilizando condiciones de contorno periódicas en las direcciones en algunas
+ direcciones (típicamente 
+\begin_inset Formula $\widehat{x}$
+\end_inset
+
+ e 
+\begin_inset Formula $\widehat{y}$
+\end_inset
+
+).
+ La idea de utilizar condiciones de contorno periódicas es reproducir el
+ comportamiento en el seno de la muestra, minimizando los efectos de superficie
+ no deseados.
+ Entender la implementación de esta técnica es sencillo si se imaginan celdas
+ vecinas adyacentes, idénticas a la original (ver Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CPC"
+
+\end_inset
+
+), como una celda primitiva en un sólido.
+ Las partículas pertenecientes a la celda original pueden interactuar con
+ las demás, contenidas en la misma celda o con las imágenes de las mismas,
+ en las celdas vecinas.
+ Si una partícula escapa a través de uno de los límites de la celda de dinámica
+ molecular, simultáneamente entra a la misma la imagen de esta partícula
+ por el lado opuesto, conservando el impulso lineal y la cantidad de monómeros
+ en la caja de simulación.
+ 
 \end_layout
 
 \begin_layout Standard
-pared
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/CPC.eps
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CPC"
+
+\end_inset
+
+Se muestra, de manera esquemática, como se aplican las condiciones periódicas
+ de contorno en las simulaciones de dinámica molecular.
+ Cada rectángulo es una imagen exacta de la caja de simulación original.
+ Las partículas en la caja de simulación original puede interactuar con
+ los vecinos en la misma celda o con las imágenes de las mismas, en las
+ celdas adyacentes.
+ Figura adaptada de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "frenkel.md.book.1996"
+literal "true"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+HASTA ACA REVISE Y VA
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los límites del canal confinante se impusieron en 
+\begin_inset Formula $z=0$
+\end_inset
+
+ y 
+\begin_inset Formula $z=40\sigma$
+\end_inset
+
+, de manera tal que en el caso límite en el cual el cepillo se encuentre
+ totalmente estirado, el líquido se pueda mover en la mitad de la celda
+ de dinámica molecular.
+ El sustrato fue modelado como una pared ideal sin rugosidad, impenetrable,
+ cuya interacción con los monómeros viene dada por un potencial de Lennard-Jones
+ integrado:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U_{sus}(z)=A\left[\left(\frac{\sigma}{z}\right)^{9}+\left(\frac{\sigma}{z}\right)^{3}\right]\,,\label{eq:Usus}
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $z$
+\end_inset
+
+ es la distancia a la pared y se tomó 
+\begin_inset Formula $A=3,2\varepsilon$
+\end_inset
+
+.
+ Este potencial representa una pared netamente repulsiva, de manera tal
+ de no favorecer la penetración del líquido en los intersticios del cepillo.
+ La simetría de traslación en las direcciones paralelas a la pared implican
+ que la misma no realiza esfuerzos de corte y no es capaz de arrastrar al
+ líquido.
+ En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Usus"
+
+\end_inset
+
+ se grafica el potencial correspondiente al sustrato, en función de la distancia
+ al mismo.
+ Se aprecia que el alcance efectivo del potencial es de 
+\begin_inset Formula $3\sigma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Tesis_lic/figs/Usus.agr
+	width 50text%
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Usus"
+
+\end_inset
+
+Se muestra la dependencia del potencial de interacción entre la pared y
+ los monómeros, en función de la distancia.
+ Se aprecia que la fuerza es altamente repulsiva hasta 
+\begin_inset Formula $z=3\sigma$
+\end_inset
+
+, y para distancias mayores se cumple 
+\begin_inset Formula $F_{sus}\leq0,1\varepsilon/\sigma.$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2128,6 +2379,13 @@ Observaciones finales
 
 \begin_layout Section*
 Agradecimientos
+\end_layout
+
+\begin_layout Standard
+Macri gato
+\end_layout
+
+\begin_layout Section*
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintCited"
