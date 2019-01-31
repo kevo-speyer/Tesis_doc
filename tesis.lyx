@@ -4,8 +4,13 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass docbook-book
+\textclass amsbook
 \use_default_options true
+\begin_removed_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_removed_modules
 \maintain_unincluded_children false
 \language spanish
 \language_package auto
@@ -1399,7 +1404,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/Bending.eps
-	scale 40
+	width 20page%
 
 \end_inset
 
@@ -1702,7 +1707,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/Orientation.eps
-	scale 40
+	width 20page%
 
 \end_inset
 
@@ -1752,13 +1757,13 @@ Directamente debajo del monómero fijo al sustrato (1), se ubica una partícula
 \end_layout
 
 \begin_layout Standard
-Todas las simulaciones se llevaron a cabo en un prisma ortogonal de dimensiones
- 
+Las simulaciones en nano canales se llevaron a cabo en un prisma ortogonal
+ de dimensiones 
 \begin_inset Formula $L_{x}\times L_{y}\times L_{z}$
 \end_inset
 
-, utilizando condiciones de contorno periódicas en las direcciones en algunas
- direcciones (típicamente 
+, utilizando condiciones de contorno periódicas en las direcciones en dos
+ direcciones (
 \begin_inset Formula $\widehat{x}$
 \end_inset
 
@@ -1766,7 +1771,21 @@ Todas las simulaciones se llevaron a cabo en un prisma ortogonal de dimensiones
 \begin_inset Formula $\widehat{y}$
 \end_inset
 
-).
+) e imponiendo paredes sólidas en 
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+.
+ Este canal en forma de hendidura (
+\shape italic
+slit-like channel
+\shape default
+) supone una dirección de confinamiento (
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+) mucho menor a las otras dos y es ampliamente utilizada tanto experimental
+ como teóricamente.
  La idea de utilizar condiciones de contorno periódicas es reproducir el
  comportamiento en el seno de la muestra, minimizando los efectos de superficie
  no deseados.
@@ -1846,30 +1865,20 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-HASTA ACA REVISE Y VA
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Los límites del canal confinante se impusieron en 
+Los límites del canal confinante se imponen en sobre los planos definidos
+ por las ecuaciones 
 \begin_inset Formula $z=0$
 \end_inset
 
  y 
-\begin_inset Formula $z=40\sigma$
+\begin_inset Formula $z=L_{z}$
 \end_inset
 
-, de manera tal que en el caso límite en el cual el cepillo se encuentre
- totalmente estirado, el líquido se pueda mover en la mitad de la celda
- de dinámica molecular.
+, dónde 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+ define  el ancho del canal.
  El sustrato fue modelado como una pared ideal sin rugosidad, impenetrable,
  cuya interacción con los monómeros viene dada por un potencial de Lennard-Jones
  integrado:
@@ -1888,7 +1897,7 @@ donde
 \end_inset
 
  es la distancia a la pared y se tomó 
-\begin_inset Formula $A=3,2\varepsilon$
+\begin_inset Formula $A=3.2\varepsilon$
 \end_inset
 
 .
@@ -1923,7 +1932,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Tesis_lic/figs/Usus.agr
+	filename figs/Usus.agr
 	width 50text%
 	clip
 
@@ -1949,7 +1958,7 @@ Se muestra la dependencia del potencial de interacción entre la pared y
 \end_inset
 
 , y para distancias mayores se cumple 
-\begin_inset Formula $F_{sus}\leq0,1\varepsilon/\sigma.$
+\begin_inset Formula $F_{sus}\leq0.1\varepsilon/\sigma.$
 \end_inset
 
 
@@ -1966,19 +1975,18 @@ Se muestra la dependencia del potencial de interacción entre la pared y
 \end_layout
 
 \begin_layout Section
-Termostato y conexión con Mecánica estadística 
+Termostato y conexión con Mecánica estadística
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Termostato-y-conexión"
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
-Marco teórico: mecánica estadística
-\end_layout
-
-\begin_layout Standard
-DPD
-\end_layout
-
-\begin_layout Standard
-Si se llevara a cabo la simulación integrando directamente las ecuaciones
+Si se llevaran a cabo las simulaciones integrando directamente las ecuaciones
  de movimiento dadas por el modelo, la energía total del sistema sería una
  constante de movimiento y no la temperatura.
  Este esquema corresponde al ensamble microcanónico, pero los experimentos
@@ -1987,7 +1995,7 @@ Si se llevara a cabo la simulación integrando directamente las ecuaciones
  Para satisfacer esta condición en las experiencias, se pone en contacto
  la muestra con un baño térmico, de manera tal, que se permite el intercambio
  de calor con el exterior.
- La idea para llevar a cabo simulaciones en el ensamble canónico es parecida.
+ La técnica para llevar a cabo simulaciones en el ensamble canónico es parecida.
  En el termostato utilizado, se agregan fuerzas externas al sistema para
  que se cumplan las condiciones termodinámicas compatibles con el ensamble.
  Se llaman termostatos a las diferentes técnicas que logran esto.
@@ -2039,7 +2047,7 @@ donde
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\vec{F}^{R}(\boldsymbol{r}_{ij})=\beta w^{R}(r_{ij})\xi_{ij}\hat{\boldsymbol{r}}_{ij}\,,
+\boldsymbol{F}^{R}(\boldsymbol{r}_{ij})=\beta w^{R}(r_{ij})\xi_{ij}\hat{\boldsymbol{r}}_{ij}\,,
 \end{equation}
 
 \end_inset
@@ -2061,7 +2069,7 @@ donde
 \begin_inset Formula $\gamma$
 \end_inset
 
- es el coeficiente de fricción,
+ es el coeficiente de fricción, 
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -2070,15 +2078,22 @@ donde
 \end_inset
 
  es un número aleatorio, tomado de una distribución normal de media cero
- y varianza unidad.
- Para que se cumpla la relación de fluctuación-disipación, se requiere que
+ y varianza unidad, que cumple
+\begin_inset Formula 
+\begin{equation}
+\left\langle \xi_{ij}(t)\xi_{kl}(t')\right\rangle =\delta_{tt'}(\delta_{ik}\delta_{jl}-\delta_{il}\delta_{jk})\label{eq:DPD1}
+\end{equation}
+
+\end_inset
+
+Para que se cumpla la relación de fluctuación-disipación, se requiere que
  las funciones que dan el peso de cada fuerza estén relacionadas de la siguiente
  manera: 
 \begin_inset Formula $w^{D}=\left[w^{R}\right]^{2}$
 \end_inset
 
 .
- La dependencia de estas funciones fue la comúnmente usada en la literatura
+ La dependencia de estas funciones fue la usada comúnmente en la literatura
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2104,7 +2119,7 @@ literal "true"
 w^{D}=\left[w^{R}\right]^{2}=\begin{cases}
 (1-r/r_{c})^{2} & ,\,r<r_{c}\\
 0 & ,\,r\geq r_{c}
-\end{cases}\,,
+\end{cases}\,,\label{eq:DPD2}
 \end{equation}
 
 \end_inset
@@ -2113,7 +2128,18 @@ donde
 \begin_inset Formula $r_{c}$
 \end_inset
 
- es el radio de corte y viene dado por el modelo molecular.
+ es el radio de corte y puede ser distinto al radio de corte de la interacción
+ descrita en la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Lennard_Jones"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2150,18 +2176,58 @@ literal "true"
 \end_inset
 
 .
+ 
+\end_layout
+
+\begin_layout Standard
+De esta manera se logra obtener una trayectoria del sistema en el espacio
+ de fases, compatible con las condiciones termodinámicas impuestas.
+ Más importante aún, es saber que mediante esta técnica se están obteniendo
+ configuraciones según la distribución de probabilidad correspondiente al
+ ensamble canónico:
+\begin_inset Formula 
+\begin{equation}
+P[\{\boldsymbol{r},\boldsymbol{v}\}]=\frac{e^{-\frac{1}{k_{B}T}H[\{\boldsymbol{r},\boldsymbol{v}\}]}}{\int e^{-\frac{1}{k_{B}T}H[\{\boldsymbol{r},\boldsymbol{v}\}]}}\label{eq:Maxwell-Boltzmann}
+\end{equation}
+
+\end_inset
+
+Español y Warren
+\begin_inset CommandInset citation
+LatexCommand cite
+key "0295-5075-30-4-001"
+literal "false"
+
+\end_inset
+
+ demostraron que para la elección de funciones hechas en las ecuaciones
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:DPD1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:DPD2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, efectivamente se obtienen configuraciones compatibles con la distribución
+ de Maxwell-Boltzmann, haciendo posible simular al sistema en el ensamble
+ correcto.
 \end_layout
 
 \begin_layout Section
 Tratamiento de incertezas
-\end_layout
-
-\begin_layout Standard
-Tratamiento en bloques, 
-\end_layout
-
-\begin_layout Standard
-fuentes de errores
 \end_layout
 
 \begin_layout Standard
@@ -2178,7 +2244,7 @@ Hasta ahora se ha discutido cómo obtener las posiciones y velocidades en
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\bar{A}_{\tau}=\frac{1}{\tau}\int_{0}^{\tau}A(\vec{r}_{1}(t),...,\vec{r}_{N}(t),\vec{v}_{1}(t),...,\vec{v}_{N}(t))dt
+\bar{A}_{\tau}=\frac{1}{\tau}\int_{0}^{\tau}A(\boldsymbol{r}_{1}(t),...,\boldsymbol{r}_{N}(t),\boldsymbol{v}_{1}(t),...,\boldsymbol{v}_{N}(t))dt
 \end{equation}
 
 \end_inset
@@ -2187,8 +2253,52 @@ Hasta ahora se ha discutido cómo obtener las posiciones y velocidades en
 \end_layout
 
 \begin_layout Standard
-Se puede argumentar que este valor no es exacto, pues en principio depende
- del tiempo de integración y de las condiciones iniciales.
+Al lector atento puede llamarle la atención la falta del factor 
+\begin_inset Formula $e^{-\frac{1}{k_{B}T}H[\{\boldsymbol{r}(t),\boldsymbol{v}(t)\}]}$
+\end_inset
+
+ al tomar el promedio, dado que se quieren obtener cantidades dentro del
+ ensamble canónico.
+ Podemos pensar que el factor de probabilidad de la distribución de Maxwell-Bolt
+zmann se encuentra presente implícitamente, ya que ,como se explico en la
+ sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Termostato-y-conexión"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, las configuraciones 
+\begin_inset Formula $\{\boldsymbol{r},\boldsymbol{v}\}$
+\end_inset
+
+ son sorteadas de la distribución de probabilidad apropiados.
+ Es decir, que los microestados con mayor peso 
+\begin_inset Formula $e^{-\frac{1}{k_{B}T}H[\{\boldsymbol{r}(t),\boldsymbol{v}(t)\}]}$
+\end_inset
+
+ se realizan con mayor frecuencia que los que tienen menor peso.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Hasta aca va bien
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por otro lado, se puede argumentar que este promedio no es exacto, pues
+ en principio depende del tiempo de integración y de las condiciones iniciales.
  Incluso tomando el límite 
 \begin_inset Formula $\tau\rightarrow\infty$
 \end_inset
@@ -2335,7 +2445,7 @@ Cabe notar que muchas de las cantidades medidas pueden ser calculadas en
  cada instante como el promedio sobre varias partículas, es decir:
 \begin_inset Formula 
 \begin{equation}
-A(t)=\underset{i=1}{\overset{N}{\sum}}a(\overset{\rightharpoonup}{r_{i}}(t),\overset{\rightharpoonup}{v_{i}}(t))
+A(t)=\underset{i=1}{\overset{N}{\sum}}a(\boldsymbol{r}_{i}(t),\boldsymbol{v}_{i}(t))
 \end{equation}
 
 \end_inset
@@ -2346,7 +2456,7 @@ A(t)=\underset{i=1}{\overset{N}{\sum}}a(\overset{\rightharpoonup}{r_{i}}(t),\ove
 \begin_layout Standard
 Esto hace que el tiempo de correlación disminuya fuertemente, siempre que
  las funciones 
-\begin_inset Formula $a(\overset{\rightharpoonup}{r}_{⁩},\overset{\rightharpoonup}{v}_{i})$
+\begin_inset Formula $a(\boldsymbol{r}_{i},\boldsymbol{v}_{i})$
 \end_inset
 
  sean independientes entre sí.
@@ -2373,23 +2483,28 @@ name "chap:Resultados-III:-Cepillos"
 
 \end_layout
 
+\begin_layout Standard
+A partir de los resultados obtenidos y de lo aprendido a lo largo del trabajo
+ de esta tesis de doctorado, se propuso investigar como la rigidez de los
+ polímeros pueden mejorar la eficiencia en sistema con mayor posibilidad
+ de aplicación tecnológica.
+ 
+\end_layout
+
 \begin_layout Chapter
 Observaciones finales
 \end_layout
 
-\begin_layout Section*
-Agradecimientos
-\end_layout
-
-\begin_layout Standard
-Macri gato
+\begin_layout Thanks
+Macri gato.
+ Sci-Hub.
 \end_layout
 
 \begin_layout Section*
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintCited"
-bibfiles "bib/database"
+bibfiles "bib/database,bib/database_2"
 options "plain"
 
 \end_inset
