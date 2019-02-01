@@ -1135,6 +1135,29 @@ noprefix "false"
 
  indican si la interacción es entre partículas pertenecientes al líquido
  o al cepillo, y define la unidad de medida de la energía.
+ Estas tres cantidades 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+, 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ y 
+\begin_inset Formula $m$
+\end_inset
+
+ son las unidades básicas a partir de las cuales quedan definidas todas
+ las demás magnitudes físicas.
+ Por ejemplo, la unidad temporal queda definida como 
+\begin_inset Formula $\tau=\sqrt{m\sigma^{2}/\varepsilon}$
+\end_inset
+
+ y la unidad de fuerza 
+\begin_inset Formula $F=\varepsilon/\sigma$
+\end_inset
+
+.
  El parámetro 
 \begin_inset Formula $\varepsilon^{(lc)}$
 \end_inset
@@ -1385,7 +1408,7 @@ reference "fig:Bendig_versores"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-cos(\theta)=\frac{(\boldsymbol{r}_{3}-\boldsymbol{r}_{2})\text{·}(\boldsymbol{r}_{2}-\boldsymbol{r}_{1})}{|\boldsymbol{r}_{3}-\boldsymbol{r}_{2}||\boldsymbol{r}_{2}-\boldsymbol{r}_{1}|}\Rightarrow\theta(\boldsymbol{r}_{1},\boldsymbol{r}_{2},\boldsymbol{r}_{3})=cos^{-1}\left[\frac{(\boldsymbol{r}_{3}-\boldsymbol{r}_{2})\text{·}(\boldsymbol{r}_{2}-\boldsymbol{r}_{1})}{|\boldsymbol{r}_{3}-\boldsymbol{r}_{2}||\boldsymbol{r}_{2}-\boldsymbol{r}_{1}|}\right]
+cos(\theta)=\frac{(\boldsymbol{r}_{3}-\boldsymbol{r}_{2})\text{·}(\boldsymbol{r}_{2}-\boldsymbol{r}_{1})}{|\boldsymbol{r}_{3}-\boldsymbol{r}_{2}||\boldsymbol{r}_{2}-\boldsymbol{r}_{1}|}\Rightarrow\theta(\boldsymbol{r}_{1},\boldsymbol{r}_{2},\boldsymbol{r}_{3})=cos^{-1}\left[\frac{(\boldsymbol{r}_{3}-\boldsymbol{r}_{2})\text{·}(\boldsymbol{r}_{2}-\boldsymbol{r}_{1})}{|\boldsymbol{r}_{3}-\boldsymbol{r}_{2}||\boldsymbol{r}_{2}-\boldsymbol{r}_{1}|}\right]\label{eq:cos_theta}
 \end{equation}
 
 \end_inset
@@ -1754,6 +1777,128 @@ Directamente debajo del monómero fijo al sustrato (1), se ubica una partícula
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+La constante de flexión 
+\begin_inset Formula $k_{f}$
+\end_inset
+
+ tiene unidades de energía y es adecuada para el acercamiento teórico a
+ la rigidez de los polímeros, sin embargo esta no es una cantidad accesible
+ directamente desde los experimentos.
+ Para presentar los resultados, es conveniente utilizar otra medida de la
+ rigidez que sea físicamente más relevante y sea adimensional.
+ La cantidad utilizada para medir la rigidez es el cociente entre la longitud
+ de de persistencia 
+\begin_inset Formula $l_{p}$
+\end_inset
+
+ y la longitud de contorno 
+\begin_inset Formula $l_{c}$
+\end_inset
+
+.
+ La longitud de contorno es simplemente el largo total del polímero y puede
+ ser calculado de la siguiente manera:
+\begin_inset Formula 
+\begin{equation}
+l_{c}=\sum_{i=1}^{N-1}\left|\boldsymbol{r}_{i+1}-\boldsymbol{r}_{i}\right|\,,
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $N$
+\end_inset
+
+ es la cantidad de monómeros del polímero.
+ La longitud de persistencia 
+\begin_inset Formula $l_{p}$
+\end_inset
+
+, es la distancia a la cual se pierde la correlación orientacional de los
+ segmentos de un polímero.
+ A medida que se aumenta la constante de flexión, la orientación de los
+ segmentos a lo largo de la cadena se mantiene similar por una distancia
+ mayor.
+ La forma de cuantificar este fenómeno es mediante la ecuación:
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2013arXiv1303.2543H"
+literal "false"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+l_{p}=-\frac{a}{ln<cos\,\theta>}\,,
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $<cos\,\theta>$
+\end_inset
+
+ es el valor medio sobre toda la cadena del coseno del ángulo definido por
+ la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:cos_theta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, y 
+\begin_inset Formula $a$
+\end_inset
+
+ es distancia media entre monómeros consecutivos, que para este modelo es
+ alrededor de 
+\begin_inset Formula $a\approx0.97\sigma$
+\end_inset
+
+.
+ Esta ecuación se deduce del modelo de varilla elástica (
+\shape italic
+Worm-like chain
+\shape default
+), dónde la correlación orientacional a 
+\begin_inset Formula $k$
+\end_inset
+
+ segmentos de distancia está dada por 
+\begin_inset Formula 
+\begin{equation}
+\left\langle cos\,\theta_{k}\right\rangle \equiv\left\langle \frac{(\boldsymbol{r}_{i+k}-\boldsymbol{r}_{i+k-1})\text{·}(\boldsymbol{r}_{i}-\boldsymbol{r}_{i-1})}{|\boldsymbol{r}_{i+k}-\boldsymbol{r}_{i+k-1}||\boldsymbol{r}_{i}-\boldsymbol{r}_{i-1}|}\right\rangle _{i}=e^{-a·k/l_{p}}\,,
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $\left\langle \right\rangle _{i}$
+\end_inset
+
+ representa el promedio sobre todos los segmentos de la cadena.
+ Si se evalúa la expresión anterior para monómeros consecutivos, es decir
+ 
+\begin_inset Formula $k=1$
+\end_inset
+
+, se puede despejar el 
+\begin_inset Formula $l_{p}$
+\end_inset
+
+ en función de 
+\begin_inset Formula $\left\langle cos\,\theta\right\rangle $
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2284,19 +2429,6 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Hasta aca va bien
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Por otro lado, se puede argumentar que este promedio no es exacto, pues
  en principio depende del tiempo de integración y de las condiciones iniciales.
  Incluso tomando el límite 
@@ -2374,7 +2506,11 @@ donde
 \begin_inset Formula $\tau$
 \end_inset
 
-, en L bloques de igual duración 
+, en 
+\begin_inset Formula $L$
+\end_inset
+
+ bloques de igual duración 
 \begin_inset Formula $t_{B}=\tau/L$
 \end_inset
 
@@ -2486,9 +2622,96 @@ name "chap:Resultados-III:-Cepillos"
 \begin_layout Standard
 A partir de los resultados obtenidos y de lo aprendido a lo largo del trabajo
  de esta tesis de doctorado, se propuso investigar como la rigidez de los
- polímeros pueden mejorar la eficiencia en sistema con mayor posibilidad
- de aplicación tecnológica.
+ polímeros pueden mejorar la eficiencia en en dispositivos de nanofluídica.
+ Los resultados presentados en este capítulo fueron publicados y pueden
+ encontrarse de manera resumida en la referencia 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C8SM02388C"
+literal "false"
+
+\end_inset
+
+.
  
+\end_layout
+
+\begin_layout Standard
+Controlar el flujo en condiciones de alto confinamiento es de gran interés
+ para el desarrollo de aplicaciones tecnológicas.
+ Poder manejar líquido en la micro y nano escala permite implementar nuevos
+ y mejores dispositivos a nivel industrial y biológico.
+ Las nano válvulas son utilizadas para controlar el flujo de líquido en
+ canales, variando .
+\end_layout
+
+\begin_layout Standard
+Una forma de controlar el flujo utilizada en la actualidad, es disponer
+ de cepillos poliméricos sujetos a un sustrato y, variando algún parámetro
+ externo, modificar estados de conducción entre altos y bajos.
+ El parámetro externo puede ser el pH del solvente, o la temperatura, o
+ las condiciones lumínicas.
+ Estos sistemas tienen un funcionamiento que tiene una semejanza al de un
+ transistor eléctrico, en el cual la conducción entre dos de sus terminales,
+ puede ser ajustada al modificar un estímulo externo (corriente sobre sus
+ otras terminales).
+ El cambio en el estado de conducción en este caso se produce por una alteración
+ en la morfología del cepillo polimérico.
+ Por ejemplo, al variar el PH del solvente, los polímeros sufren una transición
+ conocida como 
+\shape italic
+coil-to-globule transition 
+\shape default
+en la cual las cadenas pasan de un estado contraído contra el sustrato a
+ estar estiradas y ocupar el centro del canal, como se aprecia en la figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:coil-to-globule"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:coil-to-globule"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
