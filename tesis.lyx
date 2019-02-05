@@ -169,8 +169,8 @@ Técnica de simulación
 \end_layout
 
 \begin_layout Standard
-En este capítulo se aborda en la técnica y los fundamentos de la simulación
- de Dinámica Molecular 
+En este capítulo se aborda la metodología y los fundamentos de la técnica
+ de simulación de Dinámica Molecular
 \begin_inset CommandInset citation
 LatexCommand cite
 key "frenkel.md.book.1996"
@@ -178,18 +178,18 @@ literal "true"
 
 \end_inset
 
-.
+, que fue la utilizada para estudiar los sistemas físicos de interés.
  Se discuten brevemente los algoritmos más importantes, las dificultades
  y sus soluciones.
- Luego se presenta el método con el cuál se mantuvo la condición termodinámica
- de temperatura constante y su conexión con la mecánica estadística.
- También se desarrollan los modelos de interacciones de grano grueso utilizados
+ También se desarrollan los modelos de interacciones de grano grueso, utilizados
  para simular las fuerzas entre las partículas del sistema estudiado y se
  introducen cantidades de interés que serán utilizadas a lo largo de todo
  el trabajo.
+ Luego se presenta termostato con el cuál se mantuvo la condición termodinámica
+ de temperatura constante y su conexión con la mecánica estadística.
  Más adelante se explica cómo es el proceso de medición de una cantidad
  física y la estimación de su incerteza en una corrida.
- Por último, se detallan algunas de las magnitudes extraídas de las simulaciones.
+ 
 \end_layout
 
 \begin_layout Section
@@ -207,7 +207,7 @@ name "sec:Dinámica-Molecular"
 En este trabajo se realizaron simulaciones numéricas de grano grueso con
  la técnica de dinámica molecular.
  Esta técnica consiste en resolver las ecuaciones de movimiento para todas
- las partículas presentes en el sistema.
+ las partículas presentes en el sistema y seguir su evolución en el tiempo.
  Primero se inicializa el sistema, ubicando cada partícula en una posición
  inicial.
  Para moléculas lineales, la posición inicial es elegida de acuerdo a una
@@ -226,7 +226,7 @@ nn con la temperatura deseada.
 
 \begin_layout Standard
 El esquema de integración Velocity Verlet utiliza un punto medio temporal,
- como los métodos de salta de rana (
+ como los métodos de salto de rana (
 \shape italic
 leapfrog
 \shape default
@@ -239,7 +239,7 @@ leapfrog
 \begin_inset Formula $\boldsymbol{v}(t)$
 \end_inset
 
-y fuerzas 
+ y fuerzas 
 \begin_inset Formula $\boldsymbol{f}(t)$
 \end_inset
 
@@ -295,10 +295,6 @@ y fuerzas
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 En el paso correspondiente a la ecuación 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -368,9 +364,9 @@ nes.
 \end_layout
 
 \begin_layout Standard
-Sin embargo para densidades altas, como es el caso al tratar fluidos, este
- método no es eficiente, porque la probabilidad de que sea reasignada a
- una posición suficientemente lejos de las demás es pequeña.
+Sin embargo para densidades altas, como es el caso al tratar líquidos, este
+ método no es eficiente, porque la probabilidad de que la partícula sea
+ reasignada a una posición suficientemente lejana a las demás es pequeña.
  Para resolver el inconveniente se utilizó una técnica denominada 
 \shape italic
 Force Switch on
@@ -491,7 +487,7 @@ s interactuando.
 \begin_inset Formula $r_{C}$
 \end_inset
 
- y llevando cuenta de qué partículas están en cada caja.
+.
  De esta manera, cada vez que se quieren renovar las listas de Verlet, solamente
  es necesario inspeccionar la distancia de las partículas pertenecientes
  a la misma celda o a celdas vecinas, lo cual es nuevamente un algoritmo
@@ -531,8 +527,8 @@ name "fig:Verlet list"
 
 \end_inset
 
-Se representa gráficamente como se realizan las listas de vecinos es el
- algoritmo Verles List para la partícula i-ésima.
+Se representa gráficamente como se realizan las listas de vecinos en el
+ algoritmo Verlet List para la partícula i-ésima.
  La primera lista contiene a todas las partículas a una distancia menor
  al radio de de corte de las interacciones 
 \begin_inset Formula $r_{C}$
@@ -576,7 +572,7 @@ literal "true"
 
 \begin_layout Standard
 Para aprovechar los recursos de cómputo en paralelo disponibles en CNEA,
- se exploraron otros algoritmo para agilizar el calculo de fuerzas entre
+ se exploraron otros algoritmo para agilizar el cálculo de fuerzas entre
  pares de partículas.
  Un método que resulto ser particularmente ventajoso para el cálculo en
  un esquema de memoria compartida y múltiples núcleos de cálculo, es el
@@ -588,7 +584,11 @@ cell linked-lists
  Este método es más eficiente en manejo de memoria, ya que no requiere de
  un buffer de posibles vecinos como el método anterior.
  El método consiste en dividir el espacio en celdas cubicas, y generar una
- lista enlazada de partículas para cada una de estas.
+ lista enlazada (
+\shape italic
+linked-list
+\shape default
+) de partículas para cada una de estas.
  Si se elige el largo de las celdas cúbicas igual al radio de corte de las
  interacciones (
 \begin_inset Formula $r_{cell}=r_{cut}$
@@ -617,7 +617,7 @@ cell linked-lists
 \end_inset
 
  y en consecuencia, una cantidad media de vecinos 
-\begin_inset Formula $N_{celdas}=27r_{c}^{3}$
+\begin_inset Formula $N_{celdas}=\rho27r_{c}^{3}$
 \end_inset
 
 .
@@ -682,7 +682,7 @@ Comparación entre los métodos de listas enlazadas y lista de Verlet+celdas
 
 .
  a) Se grafica el tiempo que tarda en finalizar 5000 pasos de simulación
- en función de la cantidad the procesadores utilizados.
+ en función de la cantidad de procesadores utilizados.
  b) Se muestra la curva de 
 \shape italic
 speed-up
@@ -787,7 +787,7 @@ donde
 U_{LJ}(r)=\begin{cases}
 4\varepsilon^{(ab)}\left[\left(\frac{\sigma}{r}\right)^{12}-\left(\frac{\sigma}{r}\right)^{6}\right] & ;\quad si\;r\leq r_{C}^{(ab)}\\
 0 & ;\quad si\;r>r_{C}^{(ab)}
-\end{cases}\,,k\label{eq:Lennard_Jones}
+\end{cases}\,,\label{eq:Lennard_Jones}
 \end{equation}
 
 \end_inset
@@ -925,8 +925,8 @@ melt
  para simular la presencia de un buen solvente, sin colocar explícitamente
  las partículas del mismo, por lo que lleva el nombre de solvente implícito.
  La ventaja de esta elección radica en ahorrarse los cálculos de las fuerzas
- para para las partículas del solvente, que pueden ser muchos más que para
- los monómeros, y así agilizar sensiblemente el programa de simulación.
+ para las partículas del solvente, que pueden ser muchos más que para los
+ monómeros, y así agilizar sensiblemente el programa de simulación.
  La desventaja del modelado con solvente implícito, es que se pierde el
  movimiento del solvente, que puede ser importante para entender el comportamien
 to del sistema.
@@ -1179,7 +1179,7 @@ noprefix "false"
 \end_inset
 
  para fijar una incompatibilidad química entre cepillo y líquido.
- Este valor fue tomado de la bibliografía 
+ Este valor fue tomado de la bibliografía
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PhysRevLett.96.206101,PhysRevLett.82.4671,:/content/aip/journal/jcp/135/21/10.1063/1.3663381,PhysRevLett.101.226101,PhysRevLett.97.266101,:/content/aip/journal/pof2/16/5/10.1063/1.1669400,Doshi05072005,:/content/aip/journal/jcp/135/22/10.1063/1.3663965"
@@ -1206,19 +1206,6 @@ Fakir
  tercera parte de la fuerza que se ejercen dos partículas pertenecientes
  a la fase líquida, a la misma distancia.
  
-\end_layout
-
-\begin_layout Standard
-Para darle conectividad a las cadenas poliméricas, se utilizó el potencial
- no elástico de extensión finita desarrollado por Kremer y Grest
-\begin_inset CommandInset citation
-LatexCommand cite
-key "PhysRevA.33.3628,:/content/aip/journal/jcp/92/8/10.1063/1.458541"
-literal "false"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
