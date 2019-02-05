@@ -93,6 +93,15 @@ Lic.
 \end_layout
 
 \begin_layout Abstract
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+FALTA REESCRIBIR, LO HAGO DESPUES
+\end_layout
+
+\end_inset
+
 En este trabajo de tesis se estudió un sistema compuesto por un fluido,
  confinado en un canal blando mediante simulaciones de dinámica molecular.
  El medio confinante está compuesto por cadenas poliméricas con un extremo
@@ -160,8 +169,8 @@ Técnica de simulación
 \end_layout
 
 \begin_layout Standard
-En este capítulo se aborda en primer lugar la técnica de simulación de Dinámica
- Molecular 
+En este capítulo se aborda en la técnica y los fundamentos de la simulación
+ de Dinámica Molecular 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "frenkel.md.book.1996"
@@ -174,11 +183,10 @@ literal "true"
  y sus soluciones.
  Luego se presenta el método con el cuál se mantuvo la condición termodinámica
  de temperatura constante y su conexión con la mecánica estadística.
- Luego se desarrolla los modelos de interacciones de grano grueso utilizados
- para simular las fuerzas entre las partículas del sistema estudiado.
- También se discute sobre las simulaciones fuera del equilibrio en los caso
- particulares de flujos de Couette y de Poiseuille, y se introducen las
- cantidades de interés asociadas a la dinámica del sistema.
+ También se desarrollan los modelos de interacciones de grano grueso utilizados
+ para simular las fuerzas entre las partículas del sistema estudiado y se
+ introducen cantidades de interés que serán utilizadas a lo largo de todo
+ el trabajo.
  Más adelante se explica cómo es el proceso de medición de una cantidad
  física y la estimación de su incerteza en una corrida.
  Por último, se detallan algunas de las magnitudes extraídas de las simulaciones.
@@ -1833,7 +1841,7 @@ literal "false"
 
 \begin_inset Formula 
 \begin{equation}
-l_{p}=-\frac{a}{ln<cos\,\theta>}\,,
+l_{p}=-\frac{a}{ln<cos\,\theta>}\,,\label{eq:lp=-1/lncos}
 \end{equation}
 
 \end_inset
@@ -1898,6 +1906,52 @@ donde
 \end_inset
 
 .
+ Bajo este modelo, la relación entre la longitud de persistencia y la constante
+ de flexión es lineal
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/ma902715e"
+literal "false"
+
+\end_inset
+
+ y está depende de la temperatura:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+l_{p}=k_{b}/k_{B}T\label{eq:lp=kb/kT}
+\end{equation}
+
+\end_inset
+
+En este trabajo siempre se utilizó la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:lp=-1/lncos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ para determinar la longitud de persistencia de los polímeros.
+ Para valores de rigidez 
+\begin_inset Formula $k_{f}\gg k_{B}T$
+\end_inset
+
+, la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:lp=kb/kT"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ es una estimación muy buena a lo que dan las simulaciones.
  
 \end_layout
 
@@ -2371,6 +2425,57 @@ noprefix "false"
  correcto.
 \end_layout
 
+\begin_layout Standard
+Para certificar que el termostato este funcionando correctamente, es conveniente
+ verificar la temperatura del sistema.
+ Utilizando el teorema de equipartición, podemos obtener una expresión de
+ la temperatura instantánea del sistema en función de las velocidades de
+ todas las partículas:
+\begin_inset Formula 
+\begin{equation}
+<T>=\frac{\underset{i=1}{\overset{N}{\sum}}m_{i}<\boldsymbol{v}{}_{i}^{2}>}{3Nk_{B}}\label{eq:temp_eq}
+\end{equation}
+
+\end_inset
+
+Típicamente las muestras examinadas no son homogéneas, por lo cual se calculan
+ perfiles de densidad en función de alguna coordenada del canal, y así controlar
+ una temperatura uniforme a lo largo de la caja de simulación.
+ 
+\end_layout
+
+\begin_layout Standard
+En condiciones de no equilibrio la fórmula 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:temp_eq"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ no es válida en general y no se puede hallar la temperatura mediante esa
+ ecuación.
+ En este caso los sistema fueron perturbados ligeramente fuera del equilibrio,
+ en el régimen lineal, por lo cual se espera que no haya acoplamientos en
+ la diferentes direcciones.
+ Por esta razón se utilizó la velocidad cuadrática media en las direcciones
+ perpendiculares al estímulo (siempre aplicado en 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+) que saca del equilibrio al sistema, para medir la temperatura:
+\begin_inset Formula 
+\begin{equation}
+<T>=\frac{\underset{i=1}{\overset{N}{\sum}}m_{i}<v_{y}{}_{i}^{2}>}{Nk_{B}}=\frac{\underset{i=1}{\overset{N}{\sum}}m_{i}<v_{z}{}_{i}^{2}>}{Nk_{B}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Tratamiento de incertezas
 \end_layout
@@ -2641,8 +2746,15 @@ Controlar el flujo en condiciones de alto confinamiento es de gran interés
  para el desarrollo de aplicaciones tecnológicas.
  Poder manejar líquido en la micro y nano escala permite implementar nuevos
  y mejores dispositivos a nivel industrial y biológico.
- Las nano válvulas son utilizadas para controlar el flujo de líquido en
- canales, variando .
+ Un campo en pleno crecimiento que se apoya sobre estos conocimientos, es
+ el de suministro de medicamentos en la micro y nano escala (
+\shape italic
+drug delivery
+\shape default
+).
+ Uno de los objetivos es poder enviar pequeñas cantidades de fármacos a
+ sitios específicamente localizados, de manera de aumentar la eficacia de
+ los tratamientos.
 \end_layout
 
 \begin_layout Standard
@@ -2657,7 +2769,7 @@ Una forma de controlar el flujo utilizada en la actualidad, es disponer
  otras terminales).
  El cambio en el estado de conducción en este caso se produce por una alteración
  en la morfología del cepillo polimérico.
- Por ejemplo, al variar el PH del solvente, los polímeros sufren una transición
+ Por ejemplo, al variar el pH del solvente, los polímeros sufren una transición
  conocida como 
 \shape italic
 coil-to-globule transition 
@@ -2688,12 +2800,135 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/coil_to_globule.png
+	width 40col%
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:coil-to-globule"
+
+\end_inset
+
+Regulando el nivel de pH en el nano-canal se logra un cambio morfológco
+ en el cepillo polimérico, y logrando que las cadenas se retraigan sobre
+ el sustrato o que ocupen la mitad del canal, cambiando radicalmente el
+ caudal.
+ Figura tomada de la referencia 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C5RA08990E"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta clase de nano-válvulas, reguladas por cepillos poliméricos han sido
+ estudiadas previamente.
+ Adiga y Brenner estudiaron teóricamente en una serie de trabajos nanovalvulas
+ activadas por cepillos poliméricos sensibles a la calidad del solvente
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/ma0617522,doi:10.1021/nl025527j,doi:10.1021/nl051843x,jfb3020239"
+literal "false"
+
+\end_inset
+
+.
+ En esta serie de trabajos estudian, mediante simulaciones numéricas, la
+ influencia de la geometría del canal, el largo de las cadenas, la densidad
+ de fijado de cadenas y la diferencia de presión en el flujo de líquido.
+ El resultado más notable, es el cambio significativo en el caudal al cambiar
+ la afinidad entre el líquido y los polímeros.
+ Huang_2006
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/ma060628f"
+literal "false"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+DAR MAS EJEMPLOS teóricas y experimentales
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A pesar de la cantidad de trabajos hechos alrededor de este sistema, no
+ se había, hasta este trabajo, estudiado la influencia de la rigidez de
+ los polímeros en la respuesta morfólogica de los cepillos poliméricos y
+ el efecto reológico en el solvente.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/TOC.png
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/TOC_2.eps
+	width 60text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:esquema_paper_3"
 
 \end_inset
 

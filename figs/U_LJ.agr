@@ -63,7 +63,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Tue Jan 29 13:03:25 2019"
+@timestamp def "Mon Feb  4 19:29:06 2019"
 @r0 off
 @link r0 to g0
 @r0 type above
@@ -110,7 +110,7 @@
 @g0 fixedpoint format general general
 @g0 fixedpoint prec 6, 6
 @with g0
-@    world 0.5, -2, 2.5, 10
+@    world 0.5, -2, 2.5, 5
 @    stack world 0, 0, 0, 0
 @    znorm 1
 @    view 0.150000, 0.150000, 1.150000, 0.850000
@@ -192,7 +192,7 @@
 @    yaxis  label color 1
 @    yaxis  label place normal
 @    yaxis  tick on
-@    yaxis  tick major 2
+@    yaxis  tick major 1
 @    yaxis  tick minor ticks 1
 @    yaxis  tick default 6
 @    yaxis  tick place rounded true
@@ -498,6 +498,104 @@
 @    s4 errorbar riser clip length 0.100000
 @    s4 comment "figs/U_LJ.agr"
 @    s4 legend  "r\sC\N = 1.12"
+@    s5 hidden false
+@    s5 type xy
+@    s5 symbol 0
+@    s5 symbol size 1.000000
+@    s5 symbol color 2
+@    s5 symbol pattern 1
+@    s5 symbol fill color 2
+@    s5 symbol fill pattern 0
+@    s5 symbol linewidth 1.0
+@    s5 symbol linestyle 1
+@    s5 symbol char 65
+@    s5 symbol char font 0
+@    s5 symbol skip 0
+@    s5 line type 1
+@    s5 line linestyle 3
+@    s5 line linewidth 3.5
+@    s5 line color 2
+@    s5 line pattern 1
+@    s5 baseline type 0
+@    s5 baseline off
+@    s5 dropline off
+@    s5 fill type 0
+@    s5 fill rule 0
+@    s5 fill color 1
+@    s5 fill pattern 1
+@    s5 avalue off
+@    s5 avalue type 2
+@    s5 avalue char size 1.000000
+@    s5 avalue font 0
+@    s5 avalue color 1
+@    s5 avalue rot 0
+@    s5 avalue format general
+@    s5 avalue prec 3
+@    s5 avalue prepend ""
+@    s5 avalue append ""
+@    s5 avalue offset 0.000000 , 0.000000
+@    s5 errorbar on
+@    s5 errorbar place both
+@    s5 errorbar color 2
+@    s5 errorbar pattern 1
+@    s5 errorbar size 1.000000
+@    s5 errorbar linewidth 1.0
+@    s5 errorbar linestyle 1
+@    s5 errorbar riser linewidth 1.0
+@    s5 errorbar riser linestyle 1
+@    s5 errorbar riser clip off
+@    s5 errorbar riser clip length 0.100000
+@    s5 comment ""
+@    s5 legend  ""
+@    s6 hidden false
+@    s6 type xy
+@    s6 symbol 0
+@    s6 symbol size 1.000000
+@    s6 symbol color 1
+@    s6 symbol pattern 1
+@    s6 symbol fill color 1
+@    s6 symbol fill pattern 0
+@    s6 symbol linewidth 1.0
+@    s6 symbol linestyle 1
+@    s6 symbol char 65
+@    s6 symbol char font 0
+@    s6 symbol skip 0
+@    s6 line type 1
+@    s6 line linestyle 3
+@    s6 line linewidth 3.5
+@    s6 line color 1
+@    s6 line pattern 1
+@    s6 baseline type 0
+@    s6 baseline off
+@    s6 dropline off
+@    s6 fill type 0
+@    s6 fill rule 0
+@    s6 fill color 1
+@    s6 fill pattern 1
+@    s6 avalue off
+@    s6 avalue type 2
+@    s6 avalue char size 1.000000
+@    s6 avalue font 0
+@    s6 avalue color 1
+@    s6 avalue rot 0
+@    s6 avalue format general
+@    s6 avalue prec 3
+@    s6 avalue prepend ""
+@    s6 avalue append ""
+@    s6 avalue offset 0.000000 , 0.000000
+@    s6 errorbar on
+@    s6 errorbar place both
+@    s6 errorbar color 1
+@    s6 errorbar pattern 1
+@    s6 errorbar size 1.000000
+@    s6 errorbar linewidth 1.0
+@    s6 errorbar linestyle 1
+@    s6 errorbar riser linewidth 1.0
+@    s6 errorbar riser linestyle 1
+@    s6 errorbar riser clip off
+@    s6 errorbar riser clip length 0.100000
+@    s6 comment ""
+@    s6 legend  ""
 @target G0.S0
 @type xy
 0 0
@@ -6712,4 +6810,210 @@
 1.121277 4.0311063e-05
 1.1218385 1.1042013e-05
 1.1224 0
+&
+@target G0.S5
+@type xy
+1.12 -2
+1.12 -1.979798
+1.12 -1.959596
+1.12 -1.9393939
+1.12 -1.9191919
+1.12 -1.8989899
+1.12 -1.8787879
+1.12 -1.8585859
+1.12 -1.8383838
+1.12 -1.8181818
+1.12 -1.7979798
+1.12 -1.7777778
+1.12 -1.7575758
+1.12 -1.7373737
+1.12 -1.7171717
+1.12 -1.6969697
+1.12 -1.6767677
+1.12 -1.6565657
+1.12 -1.6363636
+1.12 -1.6161616
+1.12 -1.5959596
+1.12 -1.5757576
+1.12 -1.5555556
+1.12 -1.5353535
+1.12 -1.5151515
+1.12 -1.4949495
+1.12 -1.4747475
+1.12 -1.4545455
+1.12 -1.4343434
+1.12 -1.4141414
+1.12 -1.3939394
+1.12 -1.3737374
+1.12 -1.3535354
+1.12 -1.3333333
+1.12 -1.3131313
+1.12 -1.2929293
+1.12 -1.2727273
+1.12 -1.2525253
+1.12 -1.2323232
+1.12 -1.2121212
+1.12 -1.1919192
+1.12 -1.1717172
+1.12 -1.1515152
+1.12 -1.1313131
+1.12 -1.1111111
+1.12 -1.0909091
+1.12 -1.0707071
+1.12 -1.0505051
+1.12 -1.030303
+1.12 -1.010101
+1.12 -0.98989899
+1.12 -0.96969697
+1.12 -0.94949495
+1.12 -0.92929293
+1.12 -0.90909091
+1.12 -0.88888889
+1.12 -0.86868687
+1.12 -0.84848485
+1.12 -0.82828283
+1.12 -0.80808081
+1.12 -0.78787879
+1.12 -0.76767677
+1.12 -0.74747475
+1.12 -0.72727273
+1.12 -0.70707071
+1.12 -0.68686869
+1.12 -0.66666667
+1.12 -0.64646465
+1.12 -0.62626263
+1.12 -0.60606061
+1.12 -0.58585859
+1.12 -0.56565657
+1.12 -0.54545455
+1.12 -0.52525253
+1.12 -0.50505051
+1.12 -0.48484848
+1.12 -0.46464646
+1.12 -0.44444444
+1.12 -0.42424242
+1.12 -0.4040404
+1.12 -0.38383838
+1.12 -0.36363636
+1.12 -0.34343434
+1.12 -0.32323232
+1.12 -0.3030303
+1.12 -0.28282828
+1.12 -0.26262626
+1.12 -0.24242424
+1.12 -0.22222222
+1.12 -0.2020202
+1.12 -0.18181818
+1.12 -0.16161616
+1.12 -0.14141414
+1.12 -0.12121212
+1.12 -0.1010101
+1.12 -0.080808081
+1.12 -0.060606061
+1.12 -0.04040404
+1.12 -0.02020202
+1.12 0
+&
+@target G0.S6
+@type xy
+2.24 -2
+2.24 -1.979798
+2.24 -1.959596
+2.24 -1.9393939
+2.24 -1.9191919
+2.24 -1.8989899
+2.24 -1.8787879
+2.24 -1.8585859
+2.24 -1.8383838
+2.24 -1.8181818
+2.24 -1.7979798
+2.24 -1.7777778
+2.24 -1.7575758
+2.24 -1.7373737
+2.24 -1.7171717
+2.24 -1.6969697
+2.24 -1.6767677
+2.24 -1.6565657
+2.24 -1.6363636
+2.24 -1.6161616
+2.24 -1.5959596
+2.24 -1.5757576
+2.24 -1.5555556
+2.24 -1.5353535
+2.24 -1.5151515
+2.24 -1.4949495
+2.24 -1.4747475
+2.24 -1.4545455
+2.24 -1.4343434
+2.24 -1.4141414
+2.24 -1.3939394
+2.24 -1.3737374
+2.24 -1.3535354
+2.24 -1.3333333
+2.24 -1.3131313
+2.24 -1.2929293
+2.24 -1.2727273
+2.24 -1.2525253
+2.24 -1.2323232
+2.24 -1.2121212
+2.24 -1.1919192
+2.24 -1.1717172
+2.24 -1.1515152
+2.24 -1.1313131
+2.24 -1.1111111
+2.24 -1.0909091
+2.24 -1.0707071
+2.24 -1.0505051
+2.24 -1.030303
+2.24 -1.010101
+2.24 -0.98989899
+2.24 -0.96969697
+2.24 -0.94949495
+2.24 -0.92929293
+2.24 -0.90909091
+2.24 -0.88888889
+2.24 -0.86868687
+2.24 -0.84848485
+2.24 -0.82828283
+2.24 -0.80808081
+2.24 -0.78787879
+2.24 -0.76767677
+2.24 -0.74747475
+2.24 -0.72727273
+2.24 -0.70707071
+2.24 -0.68686869
+2.24 -0.66666667
+2.24 -0.64646465
+2.24 -0.62626263
+2.24 -0.60606061
+2.24 -0.58585859
+2.24 -0.56565657
+2.24 -0.54545455
+2.24 -0.52525253
+2.24 -0.50505051
+2.24 -0.48484848
+2.24 -0.46464646
+2.24 -0.44444444
+2.24 -0.42424242
+2.24 -0.4040404
+2.24 -0.38383838
+2.24 -0.36363636
+2.24 -0.34343434
+2.24 -0.32323232
+2.24 -0.3030303
+2.24 -0.28282828
+2.24 -0.26262626
+2.24 -0.24242424
+2.24 -0.22222222
+2.24 -0.2020202
+2.24 -0.18181818
+2.24 -0.16161616
+2.24 -0.14141414
+2.24 -0.12121212
+2.24 -0.1010101
+2.24 -0.080808081
+2.24 -0.060606061
+2.24 -0.04040404
+2.24 -0.02020202
+2.24 0
 &
