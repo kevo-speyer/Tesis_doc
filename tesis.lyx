@@ -1936,7 +1936,7 @@ literal "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-l_{p}=k_{b}/k_{B}T\label{eq:lp=kb/kT}
+l_{p}=k_{b}\sigma/k_{B}T\label{eq:lp=kb/kT}
 \end{equation}
 
 \end_inset
@@ -2745,6 +2745,13 @@ Resultados I: Cepillos poliméricos en equilibrio y bajo flujo en régimen
 \begin_layout Chapter
 Resultados II: Influencia de la rigidez de los polímeros en flujo bifásico
  
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Resultados-II:-Influencia"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -2756,6 +2763,10 @@ name "chap:Resultados-III:-Cepillos"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Antecedentes
 \end_layout
 
 \begin_layout Standard
@@ -2789,6 +2800,7 @@ drug delivery
  Uno de los objetivos es poder enviar pequeñas cantidades de fármacos a
  sitios específicamente localizados, de manera de aumentar la eficacia de
  los tratamientos.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2830,10 +2842,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename figs/coil_to_globule.png
@@ -2871,10 +2879,6 @@ literal "false"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -2898,15 +2902,9 @@ literal "false"
  de fijado de cadenas y la diferencia de presión en el flujo de líquido.
  El resultado más notable, es el cambio significativo en el caudal al cambiar
  la afinidad entre el líquido y los polímeros.
- Huang_2006
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1021/ma060628f"
-literal "false"
+\end_layout
 
-\end_inset
-
-
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -2920,11 +2918,194 @@ DAR MAS EJEMPLOS teóricas y experimentales
 \end_layout
 
 \begin_layout Standard
-A pesar de la cantidad de trabajos hechos alrededor de este sistema, no
+Fortin y Klok ensamblaron un sensor hidráulico utilizando cepillos poliméricos
+ sensibles a la glucosa, que se expanden al entrar en contacto especificamente
+ con esta molécula
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/am507927w"
+literal "false"
+
+\end_inset
+
+.
+ La glucosa se une a los polímeros funcionalizados, obligandolos a estirarse
+ aumentando altura de los cepillos.
+ Esto genera una reducción en el ancho efectivo del canal y se observa una
+ reducción sensible del caudal a través del canal.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Yameen et al.
+ designed brush-coated conical nanopores to obtain a highly functional signal-re
+sponsive chemical nano-device
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/ja8086104"
+literal "false"
+
+\end_inset
+
+.
+ In this case, the responsive brushes were constituted of zwitterionic monomers
+ whose charge is regulated via changes of pH in the environmental conditions.
+ Temperature activated nano-valves have also been investigated theoretically
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1080/00222348.2016.1254563"
+literal "false"
+
+\end_inset
+
+ and experimentally 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1002/smll.200801318"
+literal "false"
+
+\end_inset
+
+ observing a high sensitivity of the gate.
+ These results lead to great advances towards the development of nano-medical
+ devices, in which transport of an encapsulated drug across a polymer coated
+ nanopore is regulated based on a change in a given physiologic parameter
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jfb3020239,doi:10.1021/nn405092w,doi:10.1021/ja401000m,C2JM32430J"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Flow confined by polymer brushes is not only found in technological applications.
+ The endothelial glycocalyx, present in blood vessels, is a perfect example
+ of the importance of the brush-liquid interplay in nature.
+ Furthermore, various groups have been investigating theoretically and experimen
+tally these systems, to elucidate the influence of the ``hairy'' structures
+ on the fluid inside the microchannels 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CruzChu2014232,Deng_2012,doi:10.1146/annurev.bioeng.9.060906.151959,Jiang20170780,Roemer_15"
+literal "false"
+
+\end_inset
+
+.
+ Lanotte et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lanotte_2014"
+literal "false"
+
+\end_inset
+
+ studied the flow behavior of red blood cells in glass microcapillaries,
+ coated with a polymer brush, and found that the glycocalyx is the main
+ factor responsible of the higher flow resistance found 
+\shape italic
+in vivo
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+Huang et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/ma060628f"
+literal "false"
+
+\end_inset
+
+ estudiaron por simulaciones de dinámica molecular un canal en forma de
+ hendidura, con polímeros fijados a la pared y solvente en el seno del sistema.
+ Ellos estudiaron el proceso de apertura y cerrado del canal para diferentes
+ afinidades solvente-cepillo, densidad de fijado de las cadenas y longitud
+ de las mismas.
+ En ese trabajo también se encuentra una relación cercana entre los cambios
+ morfológicos del cepillo polimérico y el cambio en el caudal que atraviesa
+ el canal.
+ 
+\end_layout
+
+\begin_layout Standard
+Como se estudió en el capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Resultados-II:-Influencia"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, la rigidez de las cadenas induce cambios sensibles en la morfología del
+ cepillo, por lo que es natural pensar que la dureza de los polímeros pueda
+ modificar el fenómeno de apertura y cierre en nano válvulas.
+ A pesar de la cantidad de trabajos hechos alrededor de este sistema, no
  se había, hasta este trabajo, estudiado la influencia de la rigidez de
  los polímeros en la respuesta morfólogica de los cepillos poliméricos y
  el efecto reológico en el solvente.
- 
+ También se estudió la respuesta del sistema en función de la cantidad de
+ cadenas por unidad de área.
+ Al variar la densidad de fijado 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+, se modifican los cúmulos que forman los polímeros y esto repercute en
+ el proceso de apertura y cerrado del canal.
+ Para completar el estudio de este sistema, se varió la afinidad entre el
+ solvente y las cadenas poliméricas.
+ Este análisis en función de la calidad del solvente sirve también para
+ comparar nuestros resultados con la bibliografía existente y validarlos.
+\end_layout
+
+\begin_layout Section
+Detalles del sistema estudiado
+\end_layout
+
+\begin_layout Standard
+El sistema estudiado puede observarse en las figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:esquema_paper_3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ La muestra consiste en un canal plano, con paredes rígidas en 
+\begin_inset Formula $z=0$
+\end_inset
+
+ y 
+\begin_inset Formula $z=18\sigma$
+\end_inset
+
+, y polímeros anclados al sustrato, formando un cepillo.
+ Partículas sueltas que interactúan mediante el potencial tipo Lennard-Jones
+ (ver ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Lennard_Jones"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) llenan el seno del canal, formando un líquido.
+ E
 \end_layout
 
 \begin_layout Standard
@@ -2932,10 +3113,6 @@ A pesar de la cantidad de trabajos hechos alrededor de este sistema, no
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -2974,13 +3151,13 @@ name "fig:esquema_paper_3"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Resultados
 \end_layout
 
 \begin_layout Chapter
