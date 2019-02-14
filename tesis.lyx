@@ -2936,11 +2936,10 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Yameen et al.
- designed brush-coated conical nanopores to obtain a highly functional signal-re
-sponsive chemical nano-device
+ diseñaron un nanoporo cónico con las las paredes revestidas con cepillos
+ poliméricos, obteniendo un dispositivo funcionalizado, altamente sensible
+ a cambios químicos 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1021/ja8086104"
@@ -2949,17 +2948,13 @@ literal "false"
 \end_inset
 
 .
- In this case, the responsive brushes were constituted of zwitterionic monomers
- whose charge is regulated via changes of pH in the environmental conditions.
- Temperature activated nano-valves have also been investigated theoretically
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1080/00222348.2016.1254563"
-literal "false"
+ En este caso, se utilizaron polímeros compuestos por monómeros zwitteriónicos
+ cuya carga es regulada por medio de las condiciones del pH del medio, logrando
+ así rectificar el flujo de iones.
+\end_layout
 
-\end_inset
-
- and experimentally 
+\begin_layout Standard
+También se han investigado experimental 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1002/smll.200801318"
@@ -2967,10 +2962,20 @@ literal "false"
 
 \end_inset
 
- observing a high sensitivity of the gate.
- These results lead to great advances towards the development of nano-medical
- devices, in which transport of an encapsulated drug across a polymer coated
- nanopore is regulated based on a change in a given physiologic parameter
+ y teóricamente
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1080/00222348.2016.1254563"
+literal "false"
+
+\end_inset
+
+ nanoválvulas activadas por medio de la temperatura, alcanzando una alta
+ sensibilidad de la compuerta.
+ Estos resultados significan grandes avances hacia el desarrollo de nano
+ dispositivos con aplicaciones medicinales, donde el transporte de drogas
+ encapsuladas a traves de nanoporos revestidos con polímeros es regulada
+ por medio de cambios en parámetros fisiológicos 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "jfb3020239,doi:10.1021/nn405092w,doi:10.1021/ja401000m,C2JM32430J"
@@ -2982,23 +2987,34 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+El interés de flujos confinados en la micro y nano escala por cepillos poliméric
+os no se limita a al desarrollo de aplicaciones tecnológicas.
+ En los vasos sanguíneos se encuentra el glicocálix, una capa de proteínas
+ que revisten la matriz extracelular de determinadas células, como las endotelia
+les de las superficies mucosas (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Glycocalyx_Zhup"
+plural "false"
+caps "false"
+noprefix "false"
 
-\lang english
-Flow confined by polymer brushes is not only found in technological applications.
- The endothelial glycocalyx, present in blood vessels, is a perfect example
- of the importance of the brush-liquid interplay in nature.
- Furthermore, various groups have been investigating theoretically and experimen
-tally these systems, to elucidate the influence of the ``hairy'' structures
- on the fluid inside the microchannels 
+\end_inset
+
+).
+ Varios grupos están investigando teórica y experimentalmente estos sistemas,
+ para comprender la interacción entre estas estructuras ''peludas'' y el
+ fluido confinado
 \begin_inset CommandInset citation
 LatexCommand cite
-key "CruzChu2014232,Deng_2012,doi:10.1146/annurev.bioeng.9.060906.151959,Jiang20170780,Roemer_15"
+key "CruzChu2014232,Deng_2012,doi:10.1146/annurev.bioeng.9.060906.151959,Jiang20170780,Roemer_15,Jiang2018"
 literal "false"
 
 \end_inset
 
 .
  Lanotte et al.
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Lanotte_2014"
@@ -3006,13 +3022,65 @@ literal "false"
 
 \end_inset
 
- studied the flow behavior of red blood cells in glass microcapillaries,
- coated with a polymer brush, and found that the glycocalyx is the main
- factor responsible of the higher flow resistance found 
+ estudiaron el flujo de glóbulos rojos en microcapilares de vidrio revestidos
+ por un cepillo polimérico, hallando que el glicocálix es el factor mas
+ importante para explicar la gran resistencia al caudal observado en los
+ experimentos 
 \shape italic
-in vivo
-\shape default
-.
+in vivo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/Glycocalyx_Zhuo_2018.jpg
+	width 50col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Glycocalyx_Zhup"
+
+\end_inset
+
+Simulaciones de dinámica molecular realizadas por Zhuo et al.
+ del flujo y su interacción con el glicocálix endotelial.
+ En verde se observan las proteínas ancladas a la membrana celular, formando
+ un cepillo polimérico.
+ Figura tomada de la referencia
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jiang2018"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3052,7 +3120,7 @@ noprefix "false"
  modificar el fenómeno de apertura y cierre en nano válvulas.
  A pesar de la cantidad de trabajos hechos alrededor de este sistema, no
  se había, hasta este trabajo, estudiado la influencia de la rigidez de
- los polímeros en la respuesta morfólogica de los cepillos poliméricos y
+ los polímeros en la respuesta morfológica de los cepillos poliméricos y
  el efecto reológico en el solvente.
  También se estudió la respuesta del sistema en función de la cantidad de
  cadenas por unidad de área.
@@ -3066,6 +3134,45 @@ noprefix "false"
  solvente y las cadenas poliméricas.
  Este análisis en función de la calidad del solvente sirve también para
  comparar nuestros resultados con la bibliografía existente y validarlos.
+\end_layout
+
+\begin_layout Section
+Formaciones de estructuras en cepillos poliméricos semiflexibles en un solvente
+ pobre
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ver resultados que deje en el cuaderno.
+ Basicamente el 
+\begin_inset Quotes fld
+\end_inset
+
+diagrama de fases
+\begin_inset Quotes frd
+\end_inset
+
+ de que fomraciones hay en función de rigidez y bending rigidity 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pham et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key ":/content/aip/journal/jcp/123/3/10.1063/1.1955523"
+literal "false"
+
+\end_inset
+
+ realizó estudios similares mediante simulaciones blabla
 \end_layout
 
 \begin_layout Section
@@ -3105,7 +3212,18 @@ noprefix "false"
 \end_inset
 
 ) llenan el seno del canal, formando un líquido.
- E
+ Las paredes lisas interactuan con el potencial descrito en la ecuación
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Usus"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3158,6 +3276,20 @@ name "fig:esquema_paper_3"
 
 \begin_layout Section
 Resultados
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Habría que poner acá tambien lo que estudié sobre formaciones de polímeros
+ en funcion de rigidez y densidad de fijado
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
