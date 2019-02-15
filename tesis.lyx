@@ -2905,19 +2905,6 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-DAR MAS EJEMPLOS teóricas y experimentales
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Fortin y Klok ensamblaron un sensor hidráulico utilizando cepillos poliméricos
  sensibles a la glucosa, que se expanden al entrar en contacto especificamente
  con esta molécula
@@ -3212,7 +3199,7 @@ noprefix "false"
 \end_inset
 
 ) llenan el seno del canal, formando un líquido.
- Las paredes lisas interactuan con el potencial descrito en la ecuación
+ Las paredes lisas interactúan con el potencial descrito en la ecuación
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3223,7 +3210,214 @@ noprefix "false"
 
 \end_inset
 
+ con el resto del las partículas en la caja de simulación.
+ 
+\end_layout
+
+\begin_layout Standard
+La conectividad de las cadenas se impuso mediante el potencial FENE, dado
+ por la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:FENE"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
 .
+ Se utilizaron cadenas de 
+\begin_inset Formula $N=16$
+\end_inset
+
+ monómeros, que según el modelo utilizado da una distancia de equilibrio
+ para los segmentos de 
+\begin_inset Formula $a=0.97\sigma$
+\end_inset
+
+ y una la longitud de contorno de las cadenas de 
+\begin_inset Formula $l_{c}\simeq15\sigma$
+\end_inset
+
+.
+ Dado que la distancia entre las paredes es menor a el doble de la longitud
+ de contorno de los polímeros (
+\begin_inset Formula $L_{z}<2l_{c}$
+\end_inset
+
+), estos entrarán en contacto en el interior del canal.
+ En condiciones de solvente pobre, los polímeros anclados a paredes opuestas
+ podrán unirse, formando estructuras y ocupando el seno del sistema.
+ La calidad del solvente fue regulada por el parámetro 
+\begin_inset Formula $\varepsilon^{(lc)}$
+\end_inset
+
+ (ver ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Lennard_Jones"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), mientras que la intensidad de la interacción entre partículas del solvente
+ se mantuvo constante 
+\begin_inset Formula $\varepsilon^{(ll)}=1$
+\end_inset
+
+, al igual que para las interacciones monómero-monómero 
+\begin_inset Formula $\varepsilon^{(cc)}=1$
+\end_inset
+
+.
+ El radio de interacción entre todas las partículas fue fijada en 
+\begin_inset Formula $r_{C}=2.24\sigma$
+\end_inset
+
+, excepto en el caso de ideal de buen solvente ideal, en el cual la interacción
+ entre monómeros fue puramente repulsiva, fijando 
+\begin_inset Formula $r_{C}=1.12\sigma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+La temperatura se mantuvo constante 
+\begin_inset Formula $k_{B}T=0.8\varepsilon$
+\end_inset
+
+, como a lo largo de todo el trabajo de doctorado.
+ Se utilizó el termostato DPD con una constante de fricción de 
+\begin_inset Formula $\gamma=0.5$
+\end_inset
+
+.
+ El canal fue llenado con partículas, hasta alcanzar la densidad de equilibrio
+ en estas condiciones termodinámicas 
+\begin_inset Formula $\rho_{l}=0.67\sigma^{-3}$
+\end_inset
+
+.
+ Usualmente el numero de partículas de solvente fue de alrededor de 
+\begin_inset Formula $N_{liq}=9000$
+\end_inset
+
+.
+ Para relajar el sistema se realizaron 
+\begin_inset Formula $10^{7}$
+\end_inset
+
+ pasos, con un intervalo temporal 
+\begin_inset Formula $dt=2·10^{-3}\tau$
+\end_inset
+
+ hasta alcanzar el equilibrio sistema.
+ Para las simulaciones fuera del equilibrio, el paso temporal fue de 
+\begin_inset Formula $dt=2·10^{-4}\tau$
+\end_inset
+
+, para mantener la temperatura constante en toda la muestra.
+\end_layout
+
+\begin_layout Standard
+Se aplicó una fuerza externa constante 
+\begin_inset Formula $\boldsymbol{F}_{ext}$
+\end_inset
+
+ sobre todas las partículas del sistema para inducir un flujo y estudiar
+ el sistema fuera de equilibrio.
+ La fuerza se impuso en la dirección 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ y con una intensidad constante en el intervalo 
+\begin_inset Formula $0\leq\left|\boldsymbol{F}_{ext}\right|\leq0.02\varepsilon/\sigma$
+\end_inset
+
+.
+ Esto equivale a tener un gradiente de presión 
+\begin_inset Formula $\Delta P$
+\end_inset
+
+ en la dirección 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ del canal con el valor 
+\begin_inset Formula 
+\begin{equation}
+F_{ext}\rho_{l}=\Delta P/L_{x}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La densidad de cadenas por unidad de área 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ fue variada entre 
+\begin_inset Formula $0.02\sigma^{-2}\ge\rho_{g}\ge0.06\sigma^{-2}$
+\end_inset
+
+ y los sitios de fijado fueron elegidos para formar una red cuadrada, con
+ parámetro de red 
+\begin_inset Formula $a_{l}=1/\sqrt{\rho_{g}}$
+\end_inset
+
+.
+ Se eligió una distribución ordenada sobre una aleatoria, como se hizo en
+ otros trabajos
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Roemer_15,doi:10.1021/acs.langmuir.7b02640,C7SM00466D"
+literal "false"
+
+\end_inset
+
+, para evitar inhomogeneidades que pudieran introducir efectos espurios
+ que no se verían en un sistema real mas grande.
+ De todas maneras, se realizaron simulaciones con una distribución de sitios
+ de fijado al azar para comparar la respuesta del sistema, obteniendo comportami
+entos cualitativamente similares.
+ Los detalles se dan en la siguiente sección.
+\end_layout
+
+\begin_layout Standard
+Los lados de la caja de simulación fueron alrededor de 
+\begin_inset Formula $L_{x}=49\sigma$
+\end_inset
+
+ y 
+\begin_inset Formula $L_{y}=28\sigma$
+\end_inset
+
+ y se ajustaron ligeramente para utilizar condiciones periódicas de contorno
+ con una red ordenada de sitios de fijado de polímeros.
+ Es decir, que para mantener una muestra uniforme con condiciones periódicas
+ de contorno, es necesario que la longitud de la caja en las direcciones
+ 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ y 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ sea un número entero de veces el parámetro de red de los sitios de interacción
+ 
+\begin_inset Formula $a_{l}$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3247,6 +3441,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/TOC_2.eps
+	lyxscale 34
 	width 60text%
 
 \end_inset
@@ -3261,7 +3456,13 @@ name "fig:esquema_paper_3"
 
 \end_inset
 
-
+En la figura superior se muestra un esquela del sistema estudiado en equilibrio
+ y luego al aplicarle un gradiente de presión .
+ En la figura inferior se aprecia el sistema estudiado mediante el software
+ VMD, que permite visualizar las simulaciones numéricas.
+ En rojo se presentan los polímeros y en verde los monómeros terminales
+ anclados al sustrato.
+ Las partículas de fluido no se muestras para una mejor visualización.
 \end_layout
 
 \end_inset
@@ -3279,12 +3480,623 @@ Resultados
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dens_profs_cap6"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se aprecian los perfiles de densidad de los monómeros (en negro) y del
+ solvente (en rojo) para a) el sistema en equilibrio y b) en condiciones
+ de flujo.
+ dsa 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Habría que poner acá tambien lo que estudié sobre formaciones de polímeros
- en funcion de rigidez y densidad de fijado
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename figs/dens_profs.eps
+	lyxscale 50
+	width 98col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dens_profs_cap6"
+
+\end_inset
+
+Density profiles of the solvent (dashed line) and monomers of the brush
+ (solid line).
+ The profiles correspond to the same system a) in equilibrium and b) under
+ an external driving force which produces solvent flow.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename ../Paper_3/resubmission_2/graphs/gd0.03_Q_vs_fext.eps
+	width 98col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Mean-fluid-velocity_vs_Fx_example"
+
+\end_inset
+
+Average fluid velocity as a function of the external force applied on the
+ system.
+ A non-linear response of the system can be observed, due to the breaking
+ of the bonds between top and bottom grafted polymers.
+ The insets show a snapshot of the closed (left) and open (right) gate.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/random_vs_order_brush.agr
+	width 50col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Influencia de la rigidez de las cadenas
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename ../Paper_3/resubmission_2/graphs/Q_vs_fext_gd0.02.eps
+	width 98col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:flow_vs_F_all_lp"
+
+\end_inset
+
+Flow rate as a function of the external force, for various values of polymer
+ bending rigidity.
+ Inset: Close up for the fully flexible (black dots) and semi-flexible (blue
+ triangles) cases for better visibility.
+ Lines are guides to the eye.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename ../Paper_3/resubmission_2/graphs/mean_vel_vs_lp_gd0.02.eps
+	width 98col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:flow_vs_lp"
+
+\end_inset
+
+Normalized flow rate as a function of persistence length 
+\begin_inset Formula $l_{p}$
+\end_inset
+
+ over contour length 
+\begin_inset Formula $l_{c}$
+\end_inset
+
+ of the polymers for the closed (red squares) and open (black circles) gate
+ cases.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename ../Paper_3/resubmission_2/graphs/Theta_Rend_vs_lp.eps
+	width 98col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Rend_vs_lp_Open_Channel"
+
+\end_inset
+
+ Angle of inclination of the chains in the flow direction (black dots) and
+ polymer extension perpendicular to the wall (red squares) as a function
+ of bending rigidity, for the open gate (
+\begin_inset Formula $F_{ext}=0.008\varepsilon/\sigma$
+\end_inset
+
+ ).
+ Insets are top-view snapshots of the polymer brush.
+ The lower left snapshot corresponds to 
+\begin_inset Formula $l_{p}/l_{c}=0.1$
+\end_inset
+
+ and the upper snapshot corresponds to 
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename ../Paper_3/resubmission_2/graphs/gr_vs_lp_2.eps
+	width 98col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:gr_vs_lp"
+
+\end_inset
+
+ Bidimensional radial distribution function of the monomers in the center
+ of the nanochannel in equilibrium, for various bending rigidities.
+ Inset: monomer density in the center of the channel as a function of polymer
+ stiffness, in equilibrium.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Efecto de la densidad de fijado de cadenas
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide true
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename ../Paper_3/resubmission_2/graphs/Perm_vs_Fx_all_gd.eps
+	width 94col%
+	clip
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../Paper_3/resubmission_2/graphs/Rz_vs_lp2.eps
+	width 98col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:flow_vs_fext_lp1"
+
+\end_inset
+
+ a) Permeability (
+\begin_inset Formula $\kappa$
+\end_inset
+
+) as a function of the external force 
+\begin_inset Formula $F_{ext}$
+\end_inset
+
+, for various grafting densities.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Rz_vs_Fext_lp1"
+
+\end_inset
+
+b) Mean polymer extension in the direction perpendicular to the wall as
+ a function of the external driving force, for various grafting densities.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename ../Paper_3/resubmission_2/graphs/Fc_bund_dens_vs_gd.eps
+	width 98col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:F*_vs_gd_lp1"
+
+\end_inset
+
+ Critical force (black dots) and bundle density in the middle of the channel
+ (red squares) as a function of grafting density.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Comportamiento en función de la calidad del solvente
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename ../Paper_3/resubmission_2/graphs/perm_vs_Fx_solvQual.eps
+	width 98col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:perm_vs_fext_solv_qual"
+
+\end_inset
+
+Permeability of the systems for various values of solvent quality, as a
+ function of the external force.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename ../Paper_3/resubmission_2/graphs/R_vs_F_allSolvents_2.eps
+	width 98col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Rz_vs_F_all_solvents"
+
+\end_inset
+
+ Average extension of the polymers in the direction perpendicular to the
+ walls as a function of the driving force, for various solvent qualities.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename ../Paper_3/resubmission_2/graphs/gr_bunDens_vs_solvQ.eps
+	width 98col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:gr_Solv_Qual"
+
+\end_inset
+
+Bidimensional radial distribution function for the monomers at 
+\begin_inset Formula $z=L/2$
+\end_inset
+
+ (center of the channel), for various solvent qualities.
+ Inset: monomer number density in the center of the channel (
+\begin_inset Formula $L_{z}/2-2\sigma<z<L_{z}/2+2\sigma$
+\end_inset
+
+) as a function of solvent quality.
+ 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
