@@ -3492,13 +3492,39 @@ noprefix "false"
 
  se aprecian los perfiles de densidad de los monómeros (en negro) y del
  solvente (en rojo) para a) el sistema en equilibrio y b) en condiciones
- de flujo.
- dsa 
+ de flujo en función de la coordenada perpendicular al sustrato 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ La densidad fue integrada y promediad en las direcciones paralelas al sustrato,
+ aprovechando la simetría de traslación en estas direcciones.
+ En equilibrio se observa la presencia de monómeros cerca del centro del
+ canal (
+\begin_inset Formula $z=9\sigma$
+\end_inset
+
+), mientras que en condiciones de flujo, la densidad de monómeros en en
+ el centro del canal desaparece y la misma aumenta cerca de las paredes.
+ De estas figuras se puede deducir que pasado cierto umbral de fuerza externa,
+ los polímeros se retraen hacia las paredes del canal, dejando libre el
+ centro del mismo.
+ La densidad de fijado de esta muestra es de 
+\begin_inset Formula $\rho_{g}=0.03\sigma^{-2}$
+\end_inset
+
+, la rigidez de las cadenas corresponde a 
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+ y una baja afinidad entre solvente y polímeros 
+\begin_inset Formula $\varepsilon^{(lc)}=1/3\varepsilon$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 \begin_inset Float figure
 wide false
 sideways false
@@ -3506,8 +3532,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename figs/dens_profs.eps
 	lyxscale 50
@@ -3519,18 +3543,27 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:dens_profs_cap6"
 
 \end_inset
 
-Density profiles of the solvent (dashed line) and monomers of the brush
- (solid line).
- The profiles correspond to the same system a) in equilibrium and b) under
- an external driving force which produces solvent flow.
+Perfiles de densidad del solvente líquido (lineas punteadas rojas) y de
+ los monómeros (lineas llenas negras) en función de la coordenada perpendicular
+ al sustrato (
+\begin_inset Formula $z$
+\end_inset
+
+).
+ En la figura superior a), se aprecian los perfiles de densidad del sistema
+ en equilibrio, sin fuerzas externas, mientras que en b), el sistema se
+ encuentra fuera de equilibrio, en estado estacionario, con una fuerza externa
+ 
+\begin_inset Formula $F_{ext}=0.008\varepsilon/\sigma$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -3544,8 +3577,169 @@ Density profiles of the solvent (dashed line) and monomers of the brush
 \end_layout
 
 \begin_layout Standard
+Para comprender la influencia de los cambios morfológicos del cepillo en
+ el flujo, se midió el caudal 
+\begin_inset Formula $Q$
+\end_inset
 
-\lang english
+ en función de la fuerza constante externa 
+\begin_inset Formula $F_{ext}$
+\end_inset
+
+ impuesta sobre todas las partículas.
+ El caudal 
+\begin_inset Formula $Q$
+\end_inset
+
+ se refiere a la cantidad de partículas que atraviesa un plano dado por
+ la ecuación 
+\begin_inset Formula $x=cte$
+\end_inset
+
+ por unidad de tiempo y se calcula de la siguiente manera:
+\begin_inset Formula 
+\begin{equation}
+\widetilde{Q}=\iint\rho_{s}(y,z)v_{x}(y,z)dydz\,,
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $v_{x}(y,z)$
+\end_inset
+
+ es la componente 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ de la velocidad del solvente.
+ Para obtener un valor más preciso, se puede tomar el promedio a lo largo
+ del canal en la dirección 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+, ya que por continuidad, el caudal es el mismo a lo largo de todo el canal.
+\begin_inset Formula 
+\begin{equation}
+Q=\frac{1}{L_{x}}\int\widetilde{Q}(x)dx=\frac{1}{L_{x}}\iiint\rho_{s}(x,y,z)v_{x}(x,y,z)dxdydz\,\label{eq:Q_def}
+\end{equation}
+
+\end_inset
+
+Esta cantidad se puede relacionar con la velocidad media del solvente en
+ la dirección del flujo,
+\begin_inset Formula 
+\begin{equation}
+\left\langle v\right\rangle \equiv\frac{\iiintop\rho(x,y,z)v_{x}(x,y,z)dydz}{\iiint\rho(x,y,z)dxdydz}
+\end{equation}
+
+\end_inset
+
+El denominador de esta ecuación es simplemente la cantidad total de partículas
+ de solvente 
+\begin_inset Formula $N_{s}$
+\end_inset
+
+, y el numerador es 
+\begin_inset Formula $QL_{x}$
+\end_inset
+
+, según la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Q_def"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ De esta manera, la relación entre el caudal y la velocidad media es una
+ constante de proporcionalidad:
+\begin_inset Formula 
+\begin{equation}
+\left\langle v\right\rangle =\frac{L_{x}}{N_{s}}Q
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-fluid-velocity_vs_Fx_example"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, se observa la respuesta del sistema en función de 
+\begin_inset Formula $F_{ext}$
+\end_inset
+
+.
+ Se aprecian dos regímenes distintos, separados por un valor de fuerza externa
+ 
+\begin_inset Formula $F^{*}=0.004\varepsilon/\sigma$
+\end_inset
+
+.
+ Para valores 
+\begin_inset Formula $F_{ext}<F^{*}$
+\end_inset
+
+, el caudal crece lentamente con el gradiente de presión y a partir de 
+\begin_inset Formula $F_{ext}>F^{*}$
+\end_inset
+
+, el caudal crece a un ritmo mucho mayor con la fuerza externa.
+ Para entender este cambio de comportamiento, conviene observar los recuadros
+ de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-fluid-velocity_vs_Fx_example"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, que presentan una mirada lateral del canal, en cada uno de los regímenes.
+ Para flujos pequeños se aprecia que las cadenas fijadas a paredes opuestas
+ del canal se encuentran en la mitad de la muestra, formando estructuras.
+ La presencia de estas estructuras dificultan el flujo del solvente a través
+ del nano canal.
+ Al imponer una fuerza externa mayor al umbral 
+\begin_inset Formula $F_{ext}>F^{*}$
+\end_inset
+
+, las estructuras se rompen y la mitad de canal queda liberado, amplificando
+ rápidamente el caudal.
+ En el recuadro de la derecha de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-fluid-velocity_vs_Fx_example"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se aprecia que para 
+\begin_inset Formula $F_{ext}>F^{*}$
+\end_inset
+
+ las cadenas se inclinan en la dirección del flujo y hacia la pared, desobstruye
+ndo el canal.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -3553,8 +3747,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename ../Paper_3/resubmission_2/graphs/gd0.03_Q_vs_fext.eps
 	width 98col%
@@ -3566,20 +3758,19 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Mean-fluid-velocity_vs_Fx_example"
 
 \end_inset
 
-Average fluid velocity as a function of the external force applied on the
- system.
- A non-linear response of the system can be observed, due to the breaking
- of the bonds between top and bottom grafted polymers.
- The insets show a snapshot of the closed (left) and open (right) gate.
- 
+Caudal del solvente a través del canal en función de la fuerza externa.
+ La linea punteada azul divide los dos regímenes: a la izquierda el canal
+ obstruido y a su derecha, el canal liberado.
+ Las lineas roja y verde son ajustes lineales para cada régimen (canal abierto
+ / canal cerrado).
+ En los recuadros se observa un corte lateral del sistema para el canal
+ cerrado (izquierda) y para el canal abierto (derecha).
 \end_layout
 
 \end_inset
@@ -3590,6 +3781,35 @@ Average fluid velocity as a function of the external force applied on the
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Para analizar el comportamiento del sistema y evitar efectos espurios provenient
+es de inhomogeneidades, se eligió utilizar sitios de fijado ordenados en
+ una red cuadrada para los polímeros.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Q_random_vs_ordered"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se grafica el caudal en función de la fuerza para una distribución ordenada
+ de sitios de fijado (en negro) y para una distribución desordenada (en
+ rojo).
+ Se aprecia un comportamiento cualitativamente igual, con una quiebre en
+ la curva, que divide el régimen de canal cerrado y el de canal abierto.
+ Es esperable que haya diferencias menores en la respuesta de los dos sistemas,
+ ya que para muestras pequeñas, la distribución de los sitios de fijado
+ puede modificar las formaciones de las estructuras poliméricas.
+ Sin embargo, cabe destacar que el umbral del fuerza para el cual las formacione
+s se rompen y el canal se abre es el mismo en ambos casos.
+ Esto indica que los resultados hallados en este capítulo se sostienen también
+ para cepillos poliméricos desordenados o para sitios ordenados con otra
+ geometría.
 \end_layout
 
 \begin_layout Standard
@@ -3610,7 +3830,16 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Q_random_vs_ordered"
 
+\end_inset
+
+Caudal de solvente líquido en función de la fuerza externa impuesta para
+ sitios de fijado de polímeros ordenados (en negro) y desordenados (en rojo).
+ Si bien las curvas no se solapan exactamente, se aprecia el mismo cambio
+ de comportamiento y los regímenes abierto/cerrado del canal.
 \end_layout
 
 \end_inset
@@ -3621,6 +3850,86 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Una magnitud conveniente para analizar estos sistemas, en los cuales hay
+ un cambio en el caudal, es la permeabilidad 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ (
+\shape italic
+\lang english
+permeability
+\shape default
+\lang spanish
+).
+ La permeabilidad es una magnitud adimensional que se define como el cociente
+ entre el caudal con el canal abierto 
+\begin_inset Formula $Q$
+\end_inset
+
+ sobre el caudal con el canal cerrado 
+\begin_inset Formula $Q_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $\kappa\equiv Q/Q_{0}$
+\end_inset
+
+.
+ Para el canal cerrado los valores de fuerza externa son pequeños (
+\begin_inset Formula $F_{ext}<F^{*}$
+\end_inset
+
+), y el caudal se aproxima bien por una relación lineal con la fuerza externa,
+ como se aprecia en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Mean-fluid-velocity_vs_Fx_example"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Tomando este ajuste lineal de 
+\begin_inset Formula $Q_{0}$
+\end_inset
+
+ en función de 
+\begin_inset Formula $F_{ext}$
+\end_inset
+
+, se puede calcular la permeabilidad del canal para el régimen abierto (
+\begin_inset Formula $F_{ext}>F^{*}$
+\end_inset
+
+).
+ En caso de no haber un cambio en el flujo, 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ exhibirá un comportamiento plano para todos los valores de 
+\begin_inset Formula $F_{ext}$
+\end_inset
+
+, en cambio si existe un cambio brusco en el caudal para cierto valor de
+ fuerza externa 
+\begin_inset Formula $F^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ será constante hasta 
+\begin_inset Formula $F_{ext}=F^{*}$
+\end_inset
+
+ y luego crecerá rápidamente.
 \end_layout
 
 \begin_layout Subsection
