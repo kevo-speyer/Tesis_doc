@@ -3937,8 +3937,126 @@ Influencia de la rigidez de las cadenas
 \end_layout
 
 \begin_layout Standard
+Primero se estudió como la rigidez de las cadenas afecta el proceso de apertura
+ del canal.
+ En este caso se mantuvieron constantes la afinidad química entre el cepillo
+ y el líquido 
+\begin_inset Formula $\varepsilon^{(lc)}=1/3\varepsilon$
+\end_inset
 
-\lang english
+ y la cantidad de cadenas fijadas por unidad de área 
+\begin_inset Formula $\rho_{g}=0.02\sigma^{-2}$
+\end_inset
+
+.
+ Se tomaron 
+\begin_inset Formula $7$
+\end_inset
+
+ valores distintos de constantes de flexión 
+\begin_inset Formula $k_{f}=0;\,3.5\varepsilon;\,8.1\varepsilon;\,12.4\varepsilon;\,18.53\varepsilon;\,34.75\varepsilon;\,116\varepsilon$
+\end_inset
+
+ para evaluar un amplio rango de valores de rigidez.
+ El valor físicamente relevante para evaluar la rigidez de los polímeros
+ es la longitud de persistencia 
+\begin_inset Formula $l_{p}$
+\end_inset
+
+, que cuantifica la distancia a la cual las cadenas pierden la coherencia
+ orientacional.
+ Se realizaron nuevas simulaciones con polímeros aislados, en las misma
+ condiciones termodinámicas, con la sola finalidad determinar el valor de
+ 
+\begin_inset Formula $l_{p},$
+\end_inset
+
+según la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:lp=-1/lncos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Los valores obtenidos para el cociente fueron 
+\begin_inset Formula $l_{p}/l_{c}=0.1;\,0.3;\,0.7;\,1;\,1.6;\,3;\,10$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:flow_vs_F_all_lp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se presenta el caudal 
+\begin_inset Formula $Q$
+\end_inset
+
+ en función de la fuerza externa 
+\begin_inset Formula $F_{ext}$
+\end_inset
+
+, para 
+\begin_inset Formula $7$
+\end_inset
+
+ valores de rigidez distintos.
+ Cabe remarcar que los sistemas son idénticos, excepto por la rigidez de
+ las cadenas.
+ Todas las simulaciones se dejaron relajar al equilibrio y luego se les
+ impuso la fuerza externa constante, hasta llegar al estado estacionario.
+ Se observa que en el caso de cadenas totalmente flexibles 
+\begin_inset Formula $l_{p}/l_{c}=0$
+\end_inset
+
+, el caudal crece linealmente con 
+\begin_inset Formula $F_{ext}$
+\end_inset
+
+.
+ Este curva sugiere que, para este caso, no existe una transición abierto/cerrad
+o del canal.
+ Las cadenas permanecen en un estado de '' glóbulo'', maximizando asi su
+ entropía configuracional, y no llegan a hacer contacto con los polímeros
+ anclados a la pared opuesta.
+ Para este caso de cadenas totalmente flexibles, el canal nunca está en
+ un estado cerrado, ya que no hay formaciones de polímeros en el medio del
+ canal.
+ Al subir la rigidez, se comienza a apreciar un quiebre en la curva del
+ caudal que corresponde al paso del régimen de bajo caudal al de alto caudal.
+ El potencial de flexión obliga a las cadenas a estirarse en la direción
+ perpendicular a las paredes, venciendo la fuerza entrópica y logrando contactar
+ a los polímeros fijados al sustrato opuesto para formar estructuras estables.
+ Estas formaciones se rompen para algún valor de fuerza externa 
+\begin_inset Formula $F^{*}$
+\end_inset
+
+ y el canal se abre, amplificando notablemente el caudal.
+ Para valores más altos de la constante de flexión 
+\begin_inset Formula $l_{p}/l_{c}\geq3$
+\end_inset
+
+, se aprecia una respuesta mas plana del caudal en función del gradiente
+ de presión.
+ En este caso, las estructuras poliméricas que obstruyen el flujo a través
+ del canal son más difíciles de romper, y en el rango de fuerzas estudiado,
+ el canal no llega a abrirse completamente.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -3946,8 +4064,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename ../Paper_3/resubmission_2/graphs/Q_vs_fext_gd0.02.eps
 	width 98col%
@@ -3956,22 +4072,51 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:flow_vs_F_all_lp"
 
 \end_inset
 
-Flow rate as a function of the external force, for various values of polymer
- bending rigidity.
- Inset: Close up for the fully flexible (black dots) and semi-flexible (blue
- triangles) cases for better visibility.
- Lines are guides to the eye.
+Caudal de solvente líquido en función de la fuerza externa, para diferentes
+ valores de rigidez de las cadenas.
+ Para valores muy bajos 
+\begin_inset Formula $l_{p}/l_{c}\ll1$
+\end_inset
+
+ y valores altos 
+\begin_inset Formula $l_{p}/l_{c}\gg1$
+\end_inset
+
+ de dureza, se aprecia una respuesta lineal 
+\begin_inset Formula $Q$
+\end_inset
+
+ para todo el rango de 
+\begin_inset Formula $F_{ext}$
+\end_inset
+
+ explorados.
+ En cambio para valores intermedios, se ve una rápida subida del caudal,
+ a partir de algún valor de 
+\begin_inset Formula $F_{ext}$
+\end_inset
+
+.
+ En el recuadro se observa la misma curva, para los casos de polímeros totalment
+e flexibles y para 
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+ para mostrar la diferencia de comportamiento visibilidad.
+ Las lineas son guías para el ojo.
 \end_layout
 
 \end_inset
@@ -3985,8 +4130,169 @@ Flow rate as a function of the external force, for various values of polymer
 \end_layout
 
 \begin_layout Standard
+De la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:flow_vs_F_all_lp"
+plural "false"
+caps "false"
+noprefix "false"
 
-\lang english
+\end_inset
+
+ se desprende que para valores bajos 
+\begin_inset Formula $l_{p}/l_{c}\ll1$
+\end_inset
+
+ y valores altos 
+\begin_inset Formula $l_{p}/l_{c}\gg1$
+\end_inset
+
+ re rigidez, la respuesta del sistema es plana y no se observan estados
+ de flujo distinguibles.
+ Para valores intermedios de rigidez (
+\begin_inset Formula $0<l_{p}/l_{c}<10$
+\end_inset
+
+) existe un cambió notable en la dependencia del caudal con la fuerza externa.
+ Es de gran interés encontrar el valor de longitud de persistencia que maximiza
+ este cambio de comportamiento de flujo.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:flow_vs_lp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se grafica el caudal en función del parámetro de rigidez 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+ de las cadenas.
+ Para mejorar la visualización, el valor del caudal está normalizado de
+ manera tal de que sea 
+\begin_inset Formula $1$
+\end_inset
+
+ para el caso de las cadenas totalmente flexibles.
+ Se presentan los resultados para una fuerza que en ningún caso logra abrir
+ el canal (curva roja) y para una fuerza que logra romper las formaciones
+ poliméricas y despejar el canal (curva negra).
+ Mientras el canal permanece cerrado (curva roja), el caudal disminuye con
+ la rigidez de la cadenas.
+ Esto se debe a que al aumentar la dureza de los polímeros, éstos se estiran
+ hacia el centro de canal, incrementando así la población de monómeros en
+ el medio del canal y obstruyendo el flujo de solvente.
+ En condiciones de canal abierto (curva negra), el comportamiento es distinto
+ y se aprecia un valor óptimo de caudal.
+ En este caso, el caudal crece con la rigidez en el intervalo 
+\begin_inset Formula $l_{p}/l_{c}\le1$
+\end_inset
+
+ y para el intervalo 
+\begin_inset Formula $l_{p}/l_{c}\ge1$
+\end_inset
+
+ el caudal decrece rápidamente con la dureza de las cadenas.
+ La merma del caudal con la creciente rigidez de las cadenas, para el intervalo
+ 
+\begin_inset Formula $l_{p}/l_{c}\ge1$
+\end_inset
+
+ fue también observada por Deng et al.
+ por simulaciones de dinámica molecular
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Deng_2012"
+literal "false"
+
+\end_inset
+
+.
+ Es interesante notar que el caudal alcanza un máximo cuando la longitud
+ de persistencia de las cadenas es igual a la longitud de contorno de las
+ mismas, en condiciones de canal abierto.
+ 
+\end_layout
+
+\begin_layout Standard
+Para observar este fenómeno de manera experimental es necesario usar polímeros
+ muy rígidos, dado que la longitud de persistencia de un polímero es de
+ orden de 
+\begin_inset Formula $1nm$
+\end_inset
+
+.
+ Una posibilidad es utilizar cadenas cortas de ADN (
+\begin_inset Formula $l_{c}\sim80nm$
+\end_inset
+
+ y 
+\begin_inset Formula $l_{p}\sim40nm$
+\end_inset
+
+) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "GROSSNPHYS2002"
+literal "false"
+
+\end_inset
+
+ en un canal estrecho 
+\begin_inset Formula $(L_{z}\sim100nm)$
+\end_inset
+
+, y densidades de fijado bajas 
+\begin_inset Formula $(\rho_{g}\sim0.003\,nm^{-2})$
+\end_inset
+
+.
+ Si se utiliza una diferencia de potencial para inducir el flujo (flujo
+ electrocinético), es posible achicar el ancho de canal a 
+\begin_inset Formula $L_{z}\sim50nm$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "C2NR30098B"
+literal "false"
+
+\end_inset
+
+, donde los efectos de la semiflexibilidad de la cadena sobre el caudal
+ son máximos para 
+\begin_inset Formula $l_{p}\sim l_{c}\sim40nm$
+\end_inset
+
+.
+ Otra posibilidades utilizar polielectrolitos de ADN monocatenario, cuyo
+ grosor/dureza puede variarse con la fuerza iónica 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "0953-8984-18-14-S11"
+literal "false"
+
+\end_inset
+
+.
+ Estas cadenas también pueden ser hibribizadas con cadenas complementarias,
+ logrando una gran variación en la longitud de persistencia 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "C2NR11662F,C3NR01799K"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -3994,8 +4300,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename ../Paper_3/resubmission_2/graphs/mean_vel_vs_lp_gd0.02.eps
 	width 98col%
@@ -4007,27 +4311,18 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:flow_vs_lp"
 
 \end_inset
 
-Normalized flow rate as a function of persistence length 
-\begin_inset Formula $l_{p}$
-\end_inset
-
- over contour length 
-\begin_inset Formula $l_{c}$
-\end_inset
-
- of the polymers for the closed (red squares) and open (black circles) gate
- cases.
- 
-\end_layout
-
+Caudal en función del parámetro de rigidez de las cadenas, para el canal
+ abierto (curva negra) y el canal cerrado (curva roja).
+ El caudal está normalizado para una mejor visualización de ambos casos.
+ Se aprecia en en el caso del canal abierto, el caudal alcanza un máximo
+ para 
+\begin_inset Formula $l_{p}/l_{c}=1.$
 \end_inset
 
 
@@ -4036,6 +4331,106 @@ Normalized flow rate as a function of persistence length
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para comprender como la rigidez de los polímeros modifica el flujo dentro
+ del canal, es conveniente analizar la morfología del cepillo y los grados
+ de libertad moleculares.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rend_vs_lp_Open_Channel"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se observan la inclinación media de las cadenas 
+\begin_inset Formula $\theta$
+\end_inset
+
+ en la dirección del flujo y la componente vertical del vector 
+\begin_inset Formula $\boldsymbol{R}_{end}$
+\end_inset
+
+ en función de la rigidez de los polímeros para el canal abierto (
+\begin_inset Formula $F_{ext}=0.008\varepsilon/\sigma$
+\end_inset
+
+).
+ La altura de los polímeros (curva roja) permanece constante para 
+\begin_inset Formula $l_{p}/l_{c}\le1.6$
+\end_inset
+
+ y luego crece rápidamente con la rigidez.
+ Mientras el canal permanece abierto 
+\begin_inset Formula $l_{p}/l_{c}\le1.6$
+\end_inset
+
+, la altura media del cepillo no varía con la rigidez de las cadenas.
+ La altura media del cepillo si cambia notablemente al cerrarse el canal
+ (
+\begin_inset Formula $l_{p}/l_{c}>1.6$
+\end_inset
+
+), cuando algunos polímeros logran cruzar la mitad del canal.
+ Es interesante observar que en el intervalo 
+\begin_inset Formula $l_{p}/l_{c}\le1.6$
+\end_inset
+
+ , la altura de los polímeros permanece constante, pero se aprecia un notable
+ crecimiento del caudal (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:flow_vs_lp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Esto implica que las variaciones del caudal no están dadas por la variación
+ en el ancho efectivo del canal.
+\end_layout
+
+\begin_layout Standard
+La variable que muestra un comportamiento similar al caudal en el rango
+ de longitudes de persistencia estudiados, es la inclinación de las cadenas
+ en la dirección del flujo.
+ El ángulo está tomado de manera tal que 
+\begin_inset Formula $\theta=90°$
+\end_inset
+
+ corresponde al polímero perpendicular al sustrato y 
+\begin_inset Formula $\theta=0°$
+\end_inset
+
+ corresponde al polímero inclinado paralelo a la dirección del caudal.
+ Se puede apreciar que 
+\begin_inset Formula $\theta$
+\end_inset
+
+ tiene una alta correlación con el caudal para todo el rango de valores
+ de rigidez explorado.
+ Está relación entre la inclinación de las cadenas y el caudal fue observada
+ anteriormente por Qiao y He 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "doi:10.1021/la063042v"
+literal "false"
+
+\end_inset
+
+ en el contexto de flujo electroosmotico para cepillos polímeros totalmente
+ flexibles.
 \end_layout
 
 \begin_layout Standard
