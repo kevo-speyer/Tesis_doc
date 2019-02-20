@@ -4405,16 +4405,40 @@ noprefix "false"
 La variable que muestra un comportamiento similar al caudal en el rango
  de longitudes de persistencia estudiados, es la inclinación de las cadenas
  en la dirección del flujo.
- El ángulo está tomado de manera tal que 
-\begin_inset Formula $\theta=90°$
-\end_inset
-
- corresponde al polímero perpendicular al sustrato y 
+ El ángulo está medido desde la vertical, es decir que 
 \begin_inset Formula $\theta=0°$
 \end_inset
 
+ corresponde al polímero perpendicular al sustrato y 
+\begin_inset Formula $\theta=90°$
+\end_inset
+
  corresponde al polímero inclinado paralelo a la dirección del caudal.
- Se puede apreciar que 
+ El ángulo de inclinación se midió tomando en cuenta solamente la diferencia
+ entre la posición de los monómeros terminales y los monómeros fijados a
+ la pared.
+ El ángulo queda definido por la cuación 
+\begin_inset Formula $tan\,\theta=R_{x}/R_{z}$
+\end_inset
+
+, dónde 
+\begin_inset Formula $R_{x}$
+\end_inset
+
+ y 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ son las componentes del vector 
+\begin_inset Formula $\boldsymbol{R}_{end-to-end}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Se puede apreciar que 
 \begin_inset Formula $\theta$
 \end_inset
 
@@ -4431,11 +4455,52 @@ literal "false"
 
  en el contexto de flujo electroosmotico para cepillos polímeros totalmente
  flexibles.
+ El comportamiento no monótono de la inclinación en función de la dureza
+ de los polímeros es muy interesante.
+ Las cadenas totalmente flexibles permanecen en un régimen de glóbulo, dobladas
+ sobre si mismas para maximizar su entropía configuracional resistiendose
+ a la inclinación en la dirección del flujo, como se observa en el recuadro
+ izquierdo de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rend_vs_lp_Open_Channel"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Al aumentar la constante de flexión, aumenta la distancia de persistencia
+ orientacional de las cadenas y estas logran estirarse coherentemente en
+ una dirección, maximizando el ángulo de inclinación.
+ Si la distancia entre sitios de fijado es menor a la longitud de contorno
+ de los polímeros, estos entran en contacto, formando hileras ordenadas
+ en la dirección del flujo, como se observa en el recuadro superior de la
+ figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rend_vs_lp_Open_Channel"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Este ordenamiento es menos eficiente para quitarle momento al líquido,
+ comparado con la configuración globular correspondiente a los polímeros
+ totalmente flexibles, y por lo tanto la velocidad del líquido en este caso
+ es mayor.
+ Al aumentar la rigidez de las cadenas más allá de 
+\begin_inset Formula $l_{p}/l_{c}>1$
+\end_inset
+
+, estas se comienzan a orientar de manera perpendicular al sustrato, estirandose
+ hacia el centro del canal y obstruyendo el flujo del solvente.
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 \begin_inset Float figure
 wide false
 sideways false
@@ -4443,8 +4508,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename ../Paper_3/resubmission_2/graphs/Theta_Rend_vs_lp.eps
 	width 98col%
@@ -4455,31 +4518,33 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Rend_vs_lp_Open_Channel"
 
 \end_inset
 
- Angle of inclination of the chains in the flow direction (black dots) and
- polymer extension perpendicular to the wall (red squares) as a function
- of bending rigidity, for the open gate (
+ Se grafica el angulo de inclinación de las cadenas en la dirección del
+ flujo (curva negra) y la altura media del cepillo en función de la rigidez
+ de las cadenas (curva roja), para una fuerza externa constante de 
 \begin_inset Formula $F_{ext}=0.008\varepsilon/\sigma$
 \end_inset
 
- ).
- Insets are top-view snapshots of the polymer brush.
- The lower left snapshot corresponds to 
+, que corresponde al canal abierto.
+ Los recuadros corresponden vistas del cepillo polimérico desde arriba,
+ para los casos de cadena totalmente flexible (
 \begin_inset Formula $l_{p}/l_{c}=0.1$
 \end_inset
 
- and the upper snapshot corresponds to 
+, recuadro inferior) y para 
 \begin_inset Formula $l_{p}/l_{c}=1$
 \end_inset
 
-.
+ (recuadro superior).
+ La disposición de las cadenas modifica la fricción sobre el fluido y afecta
+ directamente a la cantidad de solvente que atraviesa el canal por unidad
+ de tiempo.
+ 
 \end_layout
 
 \end_inset
@@ -4493,8 +4558,200 @@ name "fig:Rend_vs_lp_Open_Channel"
 \end_layout
 
 \begin_layout Standard
+La distribución de las cadenas en el canal modifica sustancialmente el comportam
+iento reologico del sistema.
+ Para tener una imagen más acabada de la morfología del cepillo, se calculó
+ la función de distribución de pares 
+\begin_inset Formula $g(r)$
+\end_inset
 
-\lang english
+ de los monómeros en condición de equilibrio.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gr_vs_lp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se presenta la función de distribución de pares bidimensional de monómeros
+ a mitad de altura 
+\begin_inset Formula $z=L_{z}/2$
+\end_inset
+
+ para distintos valores de rigidez de las cadenas.
+ 
+\end_layout
+
+\begin_layout Standard
+La función 
+\begin_inset Formula $g(r)$
+\end_inset
+
+ bidimensional se calcula contando la cantidad media de monómeros vecinos
+ a una distancia 
+\begin_inset Formula $r,r+dr$
+\end_inset
+
+ , y a una altura en el intervalo 
+\begin_inset Formula $L_{z}/2-0.25\sigma<z<L_{z}/2+0.25\sigma$
+\end_inset
+
+ y luego dividiendo este valor por el área de la corona.
+ Al estar usando condiciones periódicas de contorno, hay que ser cauteloso
+ en el cálculo para no contar dos veces la misma partícula.
+ Esto se puede lograr limitando el dominio de la función 
+\begin_inset Formula $g(r)$
+\end_inset
+
+ entre 
+\begin_inset Formula $0<r<1/2min(L_{x},L_{y})$
+\end_inset
+
+.
+ Para adimensionalizar la 
+\begin_inset Formula $g(r)$
+\end_inset
+
+, se dividió esta cantidad por la densidad de fijado de las cadenas, que
+ fue la misma en todos los sistemas: 
+\begin_inset Formula $\rho_{g}=0.02\sigma^{-2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para cadenas totalmente flexibles (
+\begin_inset Formula $l_{p}/l_{c}=0.1$
+\end_inset
+
+), no hay presencia de monomeros a mitad de altura del canal, y por lo tanto
+ no hay formaciones de estructuras poliméricas.
+ Al aumentar la rigidez de las cadenas, la cantidad de formaciones crece
+ (ver recuadro de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gr_vs_lp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), pero el ancho de las mismas nocambia significativamente en el rango 
+\begin_inset Formula $l_{p}/l_{c}\le1.6$
+\end_inset
+
+.
+ Para 
+\begin_inset Formula $l_{p}/l_{c}=3$
+\end_inset
+
+, la función de de distribución de pares presenta un pico marcado cerca
+ de 
+\begin_inset Formula $r=2\sigma$
+\end_inset
+
+, que corresponde a la presencia de segundos vecinos en las estructuras
+ poliméricas.
+ Estas formaciones están compuestas por una cantidad mayor de monomeros,
+ y son más más difíciles de romper que las formaciones observadas para 
+\begin_inset Formula $l_{p}/l_{c}\le1.6$
+\end_inset
+
+.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:flow_vs_lp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se aprecia que para 
+\begin_inset Formula $l_{p}/l_{c}\ge3$
+\end_inset
+
+ el caudal decrece rapidamente, ya que la fuerza externa no es suficiente
+ para romper los enlaces de los polímeros en el centro de canal y pasar
+ hacia un estado abierto.
+ 
+\end_layout
+
+\begin_layout Standard
+Otro aspecto que cabe mencionar de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:flow_vs_lp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ es que para el límite de varillas rígidas 
+\begin_inset Formula $l_{p}/l_{c}=10$
+\end_inset
+
+, la función 
+\begin_inset Formula $g(r)$
+\end_inset
+
+ carece de picos secundarios marcados.
+ El primer pico en 
+\begin_inset Formula $r\approx1\sigma$
+\end_inset
+
+ corresponde al primer vecino y está bien marcado, pero para distancias
+ mayores la función de correlación de pares decrece sin máximos marcados.
+ Esto es un indicio de que en este caso la fuerza de flexión es tan alta,
+ que no permite que las cadenas se doblen para formar estructuras estables
+ de muchas cadenas.
+ De la inspección visual de las simulaciones, se puede observar que la mayoría
+ de las formaciones en este caso, se componen de dos cadenas ancladas a
+ paredes opuestas.
+ Si bien existen formaciones con más de 2 cadenas, la rigidez y el potencial
+ que obliga a las cadenas a orientarse perpendicular a las paredes, impide
+ que estas sean estables.
+\end_layout
+
+\begin_layout Standard
+En el recuadro de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:flow_vs_lp"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se muestra la densidad monomérica promedio en el centro del canal 
+\begin_inset Formula $\rho_{b}$
+\end_inset
+
+ para los sistemas en equilibrio en función de la dureza de los polímeros.
+ En este recuadro se observa como la cantidad de monómeros crece monotonamente
+ con la rigidez de las cadenas.
+ Como se mencionó anteriormente, las cadenas totalmente flexibles no alcanzan
+ el seno del canal y no hay formaciones que obstruyan el flujo del solvente.
+ A medida que aumenta la rigidez, las cadenas ancladas a paredes opuestas
+ se encuentran y forman las estructuras que dificultan el flujo.
+ Para 
+\begin_inset Formula $l_{p}/l_{c}\ge3$
+\end_inset
+
+ se observa un salto en la población de monómeros en el centro del canal.
+ Para este valor, la longitud de persistencia supera ampliamente a la longitud
+ de contorno y las cadenas se estiran en la dirección perpendicular al sustrato.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -4502,10 +4759,9 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename ../Paper_3/resubmission_2/graphs/gr_vs_lp_2.eps
+	lyxscale 40
 	width 98col%
 	clip
 
@@ -4515,19 +4771,22 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:gr_vs_lp"
 
 \end_inset
 
- Bidimensional radial distribution function of the monomers in the center
- of the nanochannel in equilibrium, for various bending rigidities.
- Inset: monomer density in the center of the channel as a function of polymer
- stiffness, in equilibrium.
- 
+ Se grafica la distribución bidimensional de pares de los monómeros en condicion
+es de equilibrio, para distintos valores de 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+.
+ En el recuadro se muestra la densidad de monómeros en el centro del canal
+ en función de la rigidez de las cadenas.
+ Se observa como la cantidad de cadenas que alcanzan la mitad del canal
+ crece monotonamente con la dureza de los polímeros
 \end_layout
 
 \end_inset
@@ -4545,8 +4804,6 @@ Efecto de la densidad de fijado de cadenas
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 \begin_inset Float figure
 wide true
 sideways false
@@ -4554,8 +4811,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename ../Paper_3/resubmission_2/graphs/Perm_vs_Fx_all_gd.eps
 	width 94col%
