@@ -3364,7 +3364,7 @@ La densidad de cadenas por unidad de área
 \end_inset
 
  fue variada entre 
-\begin_inset Formula $0.02\sigma^{-2}\ge\rho_{g}\ge0.06\sigma^{-2}$
+\begin_inset Formula $0.02\sigma^{-2}\le\rho_{g}\le0.06\sigma^{-2}$
 \end_inset
 
  y los sitios de fijado fueron elegidos para formar una red cuadrada, con
@@ -4804,6 +4804,203 @@ Efecto de la densidad de fijado de cadenas
 \end_layout
 
 \begin_layout Standard
+Hasta ahora se exploró el comportamiento del sistema variando solamente
+ la longitud de persistencia de las cadenas, dejando la densidad de fijado
+ constante en 
+\begin_inset Formula $\rho_{g}=0.02\sigma^{-2}$
+\end_inset
+
+.
+ En esta sección se analiza la respuesta del sistema de estudio en función
+ de la cantidad de cadenas por unidad de área 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ La rigidez de las cadenas para este estudio se dejo fija en 
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+, que corresponde al valor que maximiza el caudal mientras el canal permanece
+ abierto.
+ Se utilizaron cinco valores de densidad de fijado 
+\begin_inset Formula $\rho_{g}=0.02\sigma^{-2};\,0.03\sigma^{-2};\,0.04\sigma^{-2};\,0.05\sigma^{-2};\,0.11\sigma^{-2}$
+\end_inset
+
+.
+ Para el valor más grande de 
+\begin_inset Formula $\rho_{g}=0.11\sigma^{-2}$
+\end_inset
+
+ no se observó un transición de canal cerrado a canal abierto, por lo cual
+ se excluyó del análisis.
+ 
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:flow_vs_fext_lp1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ a) se muestra la permitividad del canal 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ en función de la fuerza externa, para distintos valores de densidad de
+ fijado 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ Las curva presentan un comportamiento similar en todos los casos: para
+ fuerzas externas bajas la permitividad permanece constante y a partir de
+ algún valor umbral 
+\begin_inset Formula $F_{ext}=F^{*}$
+\end_inset
+
+ , 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ aumenta súbitamente.
+ El salto en la permitividad describe un crecimiento del caudal por encima
+ del valor esperado para un comportamiento lineal y corresponde a la apertura
+ del canal.
+ A medida que aumenta la cantidad de cadenas por unidad de área 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+, la fuerza necesaria para romper las formaciones poliméricas incrementa.
+ 
+\end_layout
+
+\begin_layout Standard
+Es interesante analizar como se observan estos cambios en la morfología
+ del cepillo.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:flow_vs_fext_lp1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ b) se aprecia la altura media del cepillo polimérico 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ en función de la fuerza externa para cada un de los distintos valores de
+ 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ explorados.
+ Se observa como el valor medio de la altura de las cadenas decrece al mismo
+ tiempo que se produce el aumento repentino en la permitividad.
+ Esto muestra que la altura de del cepillo es un buen observable para determinar
+ el estado (abierto o cerrado) del canal.
+ El valor de 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ varía rápidamente cerca de 
+\begin_inset Formula $F_{ext}=F^{*}$
+\end_inset
+
+, que corresponde al valor para el cual se desarman las estructuras poliméricas
+ que obstruyen el canal y se acuestan las cadenas hacia las paredes del
+ canal.
+ Esto se corresponde con lo observado experimentalmente por Castro et al.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "CASTRO2000207"
+literal "false"
+
+\end_inset
+
+.
+ Mientras el canal permanece en cualquiera de los estados, ya sea abierto
+ o cerrado, 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ no varía sensiblemente con la fuerza externa.
+ En este grafico 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:flow_vs_fext_lp1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ b), se observa claramente una dependencia de 
+\begin_inset Formula $F^{*}$
+\end_inset
+
+ con 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+También puede apreciarse en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:flow_vs_fext_lp1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ a), que la permitividad es mayor, cuanto menor es 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ Este comportamiento coincide por lo reportado en la literatura por Huang
+ et al.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "doi:10.1021/ma060628f"
+literal "false"
+
+\end_inset
+
+, por Li et al.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "doi:10.1080/00222348.2011.596776"
+literal "false"
+
+\end_inset
+
+ y por Zuo et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "doi:10.1080/00222348.2016.1254563"
+literal "false"
+
+\end_inset
+
+ para polímeros totalmente flexibles.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide true
 sideways false
@@ -4830,33 +5027,36 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:flow_vs_fext_lp1"
 
 \end_inset
 
- a) Permeability (
+ En el cuadro superior a) se grafica la permitividad 
 \begin_inset Formula $\kappa$
 \end_inset
 
-) as a function of the external force 
+ en función de la fuerza externa, para distintos valores de cadenas por
+ unidad de área.
+ En esta figura se aprecia que para cada 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ existe algún umbral de fuerza 
+\begin_inset Formula $F^{*}$
+\end_inset
+
+ para el cual el caudal crece de manera no lineal con la fuerza externa.
+ En la figura inferior b) se muestra el valor medio de la componente vertical
+ de las cadenas, en función de 
 \begin_inset Formula $F_{ext}$
 \end_inset
 
-, for various grafting densities.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Rz_vs_Fext_lp1"
-
-\end_inset
-
-b) Mean polymer extension in the direction perpendicular to the wall as
- a function of the external driving force, for various grafting densities.
- 
+.
+ Es importante notar que la baja repentina en la la altura del cepillo coincide
+ con el aumento súbito del caudal en el canal, exponiendo la conexión entre
+ la morfología del cepillo polimérico y la dinámica del fluido.
 \end_layout
 
 \end_inset
@@ -4870,8 +5070,179 @@ b) Mean polymer extension in the direction perpendicular to the wall as
 \end_layout
 
 \begin_layout Standard
+Se puede estudiar la dependencia de la fuerza de umbral 
+\begin_inset Formula $F^{*}$
+\end_inset
 
-\lang english
+ (fuerza necesaria para desarmar las formaciones que atraviesan el ancho
+ del canal) con la densidad de fijado de las cadenas 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:F*_vs_gd_lp1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se grafica 
+\begin_inset Formula $F^{*}$
+\end_inset
+
+ en función 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ Para determinar el valor de 
+\begin_inset Formula $F^{*}$
+\end_inset
+
+ para cada curva presentada en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:flow_vs_fext_lp1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ b), se tomó el valor de 
+\begin_inset Formula $F_{ext}$
+\end_inset
+
+ para el cual la curva de 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ cruza el valor promedio de 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ entre el canal abierto y el canal cerrado.
+ Primero se calculan los promedios de 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ para el canal en el estado abierto y el canal en el estado cerrado, obteniendo
+ los valores 
+\begin_inset Formula $\left\langle R_{z}\right\rangle _{abierto}$
+\end_inset
+
+ y 
+\begin_inset Formula $\left\langle R_{z}\right\rangle _{cerrado}$
+\end_inset
+
+ para cada 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ Luego se extrae el valor de 
+\begin_inset Formula $F_{ext}$
+\end_inset
+
+ de la curvas en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:flow_vs_fext_lp1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, para el cual 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ alcanza el valor promedio entre 
+\begin_inset Formula $\left\langle R_{z}\right\rangle _{abierto}$
+\end_inset
+
+ y 
+\begin_inset Formula $\left\langle R_{z}\right\rangle _{cerrado}$
+\end_inset
+
+.
+ Las incertezas en la determinación de 
+\begin_inset Formula $F^{*}$
+\end_inset
+
+ provienen de tomar valores discretos para la fuerza externa en vez de un
+ continuo de 
+\begin_inset Formula $F_{ext}$
+\end_inset
+
+.
+ Las barras de error en el gráfico 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:F*_vs_gd_lp1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se toman de manera tal de incluir el intervalo entre la mayor fuerza para
+ el cual el canal permanece cerrado y la menor fuerza para la cual el canal
+ está abierto.
+\end_layout
+
+\begin_layout Standard
+Se observa en la curva negra de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:F*_vs_gd_lp1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ que la fuerza de corte crece monotonamente con la cantidad de polímeros
+ fijados.
+ Al incrementar el número de polímeros, es necesario más fuerza para romper
+ los enlaces que unen las cadenas en el medio del canal.
+ Este comportamiento es esperable, ya que al aumentar 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+, incrementa la cantidad de cadenas y consecuentemente aumenta la cantidad
+ de enlaces que son necesarios romper para abrir el canal.
+ La fuerza umbral 
+\begin_inset Formula $F^{*}$
+\end_inset
+
+ se puede pensar como la fuerza necesaria para romper un enlace polimérico,
+ multiplicado por la cantidad de enlaces.
+ Esto es apoyado por en la curva roja de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:F*_vs_gd_lp1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, en la que se muestra la densidad monomérica en el centro del canal en
+ función de la densidad de fijado de cadenas.
+ La presencia de cadenas en el centro del canal para 
+\begin_inset Formula $\rho_{g}\ge0.03\sigma^{-2}$
+\end_inset
+
+ crece linealmente con la densidad de fijado de polímeros.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -4879,8 +5250,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename ../Paper_3/resubmission_2/graphs/Fc_bund_dens_vs_gd.eps
 	width 98col%
@@ -4892,16 +5261,23 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:F*_vs_gd_lp1"
 
 \end_inset
 
- Critical force (black dots) and bundle density in the middle of the channel
- (red squares) as a function of grafting density.
+ La curva negra muestra la dependencia de la fuerza necesaria para la realizar
+ la transición abierto/cerrado con la densidad de fijado de cadenas.
+ Se aprecia que la 
+\begin_inset Formula $F^{*}$
+\end_inset
+
+ crece linealmente con la cantidad de cadenas en el sistema.
+ La curva roja muestra la densidad de monómeros en el centro del canal,
+ en función de la densidad de fijado de las cadenas.
+ Como es de esperarse, a mayor cantidad de monómeros en el centro del canal,
+ mayor es la fuerza necesaria para romper todos las formaciones poliméricas
 \end_layout
 
 \end_inset
@@ -4919,8 +5295,146 @@ Comportamiento en función de la calidad del solvente
 \end_layout
 
 \begin_layout Standard
+Para tener una mirada más amplia sobre la respuesta del sistema, se varió
+ la afinidad entre el solvente líquido y el cepillo polimérico.
+ En este caso se fijó la densidad de fijado de cadenas en 
+\begin_inset Formula $\rho_{g}=0.02\sigma^{-2}$
+\end_inset
 
-\lang english
+ y la rigidez polimérica en 
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+ y se varió el parámetro 
+\begin_inset Formula $\varepsilon^{(lc)}$
+\end_inset
+
+ para controlar la intensidad de la interacción líquido-cepillo.
+ Los valores utilizados fueron 
+\begin_inset Formula $\varepsilon^{(lc)}=1\varepsilon$
+\end_inset
+
+, que corresponde a buen solvente, 
+\begin_inset Formula $\varepsilon^{(lc)}=0.66\varepsilon$
+\end_inset
+
+, que corresponde a un solvente intermedio, 
+\begin_inset Formula $\varepsilon^{(lc)}=0.33\varepsilon$
+\end_inset
+
+, que corresponde a una interacción solvofóbica y, para completar el estudio
+ se simuló un solvente pobre ideal, modelando una interacción puramente
+ repulsiva modificando el radio de corte de la fuerza 
+\begin_inset Formula $r_{C}=1.12\sigma$
+\end_inset
+
+.
+ Cabe recordad que el parámetro correspondiente a las interacciones solvente-sol
+vente y monómero-monómero es 
+\begin_inset Formula $\varepsilon^{(ll)}=\varepsilon^{(cc)}=1\varepsilon$
+\end_inset
+
+ y la temperatura quedó siempre fija en 
+\begin_inset Formula $k_{B}T=0.8\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:perm_vs_fext_solv_qual"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se grafica la permitividad del canal 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ en función de la fuerza externa 
+\begin_inset Formula $F_{ext}$
+\end_inset
+
+, para afinidades solvente-polímero.
+ En el caso de buen solvente (curva azul) se aprecia una respuesta plana
+ de 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ para todo el tango de 
+\begin_inset Formula $F_{ext}$
+\end_inset
+
+ estudiado.
+ Esto indica que el caudal crece linealmente con el gradiente de presión
+ y no se produce una transición abierto/cerrado.
+ En este caso la atracción entre polímeros es similar a la atracción polímero-so
+lvente, por lo cual no se produce la formación de estructuras que atraviesan
+ el ancho del canal.
+ De aquí se desprende que la incompatibilidad entre cepillo y solvente es
+ un elemento indispensable para obtener una respuesta no lineal del caudal
+ con la fuerza externa.
+ 
+\end_layout
+
+\begin_layout Standard
+Al disminuir la afinidad monómero-solvente, se aprecia el aumento de 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ con la fuerza externa.
+ El aumento del caudal entre el estado cerrado y el estado abierto del canal
+ es mayor, cuanto menor es la afinidad entre el solvente y el cepillo.
+ Esto coincide con lo reportado por Adiga y Brenner 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "doi:10.1021/nl051843x"
+literal "false"
+
+\end_inset
+
+ y Huang et al.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "doi:10.1021/ma060628f"
+literal "false"
+
+\end_inset
+
+ en la literatura.
+ Sin embargo, este resultado discrepa con el estudio de Suo el al.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "doi:10.1063/1.4867999"
+literal "false"
+
+\end_inset
+
+, en el que observan una disminución en la permitividad, debido a un incremento
+ en la altura del cepillo, al aumentar el gradiente de presión.
+ Para el caso de solvente pobre ideal, el caudal alcanza a ser 10 veces
+ mayor en el estado abierto comparado con el canal cerrado.
+ 
+\end_layout
+
+\begin_layout Standard
+En interesante notar que el valor de la fuerza para la cual se abre el canal
+ y crece el flujo de manera no lineal, no depende de la calidad del solvente.
+ En todos los casos presentados, la apertura del canal se produce alrededor
+ de 
+\begin_inset Formula $F_{ext}=0.003\varepsilon/\sigma$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -4928,10 +5442,9 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename ../Paper_3/resubmission_2/graphs/perm_vs_Fx_solvQual.eps
+	lyxscale 50
 	width 98col%
 	clip
 
@@ -4941,16 +5454,22 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:perm_vs_fext_solv_qual"
 
 \end_inset
 
-Permeability of the systems for various values of solvent quality, as a
- function of the external force.
+Se grafica la permitividad 
+\begin_inset Formula $\kappa=Q/Q_{0}$
+\end_inset
+
+ del canal en función de la fuerza externa, para distintas afinidades entre
+ solvente y cepillo polimérico.
+ En azul se observa la respuesta plana del sistema para condiciones de buen
+ solvente, ya que no se forman estructuras poliméricas a lo ancho del canal.
+ En el otro extremo, en negro, se aprecia el rápido crecimiento del caudal
+ para un solvente químicamente incompatible con los polímeros.
  
 \end_layout
 
@@ -4965,8 +5484,111 @@ Permeability of the systems for various values of solvent quality, as a
 \end_layout
 
 \begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rz_vs_F_all_solvents"
+plural "false"
+caps "false"
+noprefix "false"
 
-\lang english
+\end_inset
+
+ se presenta el valor medio del estiramiento del los polímeros en la dirección
+ perpendicular al sustrato, en función de la fuerza externa, para diferentes
+ calidades de solvente.
+ En todos los casos se aprecia que las cadenas se retraen hacia las paredes
+ del canal a medida que aumenta el gradiente de presión a lo largo del canal.
+ Esto se debe a que las cadenas se inclinan en la dirección del flujo, arrastrad
+as por el solvente, y disminuyendo la distancia con el sustrato.
+ Para los casos de menor afinidad polímero-solvente (curvas roja y negra)
+ se aprecia una disminución repentina de 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ alrededor de 
+\begin_inset Formula $F_{ext}=0.003\varepsilon/\sigma$
+\end_inset
+
+, que corresponde a la transición del canal cerrado al estado abierto.
+ Este resultado contrasta con lo observado por Huang et al.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "doi:10.1021/ma060628f"
+literal "false"
+
+\end_inset
+
+ en condiciones de solvente pobre, done la altura del cepillo no se ve afectada
+ significativamente por la fuerza que induce el flujo.
+ Cabe mencionar que en el trabajo mencionado, las densidades de fijado son
+ considerablemente mayores a las utilizadas en este trabajo, y ellos usan
+ polímeros totalmente flexibles, mientras aquí los cadenas son semiflexibles.
+ Se puede en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rz_vs_F_all_solvents"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ nuevamente la correspondencia entre la disminución de la altura del cepillo
+ y el crecimiento en el caudal.
+ Esta correlación negativa entre la altura del cepillo y la permitividad
+ del canal fue observada también por Posel et al.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "C6SM02751B"
+literal "false"
+
+\end_inset
+
+ variando la calidad del solvente.
+\end_layout
+
+\begin_layout Standard
+Para condiciones de buen solvente, la altura del cepillo disminuye suvamente
+ con la fuerza externa.
+ Resultados similares fueron observados por Adiga y Brenner, en simulaciones
+ de dinámica molecular en un canal cilíndrico para polímeros totalmente
+ flexibles (ver la figura 5 of ref 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "doi:10.1021/nl051843x"
+literal "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Se puede apreciar también que la altura del cepillo es mayor en el caso
+ de buen solvente.
+ Para condiciones de solvente pobre, los polímeros tienden a formar estructuras
+ por la atracción efectiva entre ellos, y algunas de estas estructuras se
+ dan entre cadenas ancladas a la misma pared.
+ Estas formaciones con forma de arco no se desarrollan en la dirección perpendic
+ular al canal, sino paralelo al mismo, por lo cual el valor medio de 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ en estos casos es menor.
+ La disminución de la altura del cepillo a medida que la calidad del solvente
+ se hace más pobre fue observada experimentalmente por Constable y Brittan
+\begin_inset CommandInset citation
+LatexCommand citep
+key "CONSTABLE2011128"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -4974,10 +5596,9 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename ../Paper_3/resubmission_2/graphs/R_vs_F_allSolvents_2.eps
+	lyxscale 50
 	width 98col%
 	clip
 
@@ -4987,16 +5608,21 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Rz_vs_F_all_solvents"
 
 \end_inset
 
- Average extension of the polymers in the direction perpendicular to the
- walls as a function of the driving force, for various solvent qualities.
+ Valor medio de la componente vertical del vector 
+\begin_inset Formula $\boldsymbol{R}_{end}$
+\end_inset
+
+ en función de la fuerza externa 
+\begin_inset Formula $F_{ext}$
+\end_inset
+
+, para distintas calidades del solvente.
 \end_layout
 
 \end_inset
