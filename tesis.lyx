@@ -5597,7 +5597,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Paper_3/resubmission_2/graphs/R_vs_F_allSolvents_2.eps
+	filename figs/R_vs_F_allSolvents_2.eps
 	lyxscale 50
 	width 98col%
 	clip
@@ -5636,8 +5636,121 @@ name "fig:Rz_vs_F_all_solvents"
 \end_layout
 
 \begin_layout Standard
+Para ahondar en el estudio morfológico del cepillo, en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gr_Solv_Qual"
+plural "false"
+caps "false"
+noprefix "false"
 
-\lang english
+\end_inset
+
+ se muestra la función de correlación de pares de monómeros 
+\begin_inset Formula $g(r)$
+\end_inset
+
+ bidimensional del sistema en equilibrio en 
+\begin_inset Formula $z=L/2$
+\end_inset
+
+ para diferentes calidades de solvente.
+ En el caso de solvente pobre ideal (curva negra) se observan dos picos
+ en la 
+\begin_inset Formula $g(r)$
+\end_inset
+
+, que corresponden a la presencia de monómeros vecinos alrededor de 
+\begin_inset Formula $r=1\sigma$
+\end_inset
+
+ y 
+\begin_inset Formula $r=1.9\sigma$
+\end_inset
+
+.
+ Esto indica que para el caso de solvente pobre, las estructuras poliméricas
+ que atraviesan el canal están constituidas por varias cadenas.
+ Para el caso de 
+\begin_inset Formula $\varepsilon^{(lc)}=1/3\varepsilon$
+\end_inset
+
+ (curva roja), se puede observar que el segundo pico en la 
+\begin_inset Formula $g(r)$
+\end_inset
+
+ es mucho más bajo que para el solvente pobre ideal, indicando que en este
+ caso las estructuras poliméricas son menos anchas y están formadas por
+ menor cantidad de cadenas.
+ Esto es esperable, ya que en el caso de solvente pobre, la interacción
+ monómero-solvente es puramente repulsiva y la atracción efectiva entre
+ los polímeros es mayor.
+ En el caso de buen solvente (curva azul), la 
+\begin_inset Formula $g(r)$
+\end_inset
+
+ es presenta características distintas a los casos anteriores.
+ En la curva azul de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gr_Solv_Qual"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se aprecia que la función 
+\begin_inset Formula $g(r)$
+\end_inset
+
+ no se anula para ningún valor en el intervalo 
+\begin_inset Formula $r\ge1$
+\end_inset
+
+.
+ Esto se entiende luego de hace una inspección visual del movimiento del
+ los polímeros, y notando que no se forman estructuras poliméricas que perduren
+ en el tiempo.
+ Para el caso del buen solvente, las cadenas son atraidas con la misma intensida
+d por otras cadenas que por el solvente, por lo cual no se forman estructuras
+ estables, como se vio anteriormente.
+\end_layout
+
+\begin_layout Standard
+En el recuadro de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gr_Solv_Qual"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se muestra la densidad de monómeros en la mitad del canal 
+\begin_inset Formula $z=L_{z}/2$
+\end_inset
+
+ para las distitanas calidades de solvente estudiadas.
+ Se observa que la presencia de monómeros en el centro del canal no varía
+ significativamente para solventes pobres, y crece rápidamente para el caso
+ de buen solvente.
+ En condiciones de buen solvente, los polímeros no forman estructuras y
+ debido a la rigidez impuesta por el potencial de flexión, estas se estiran
+ verticalmente.
+ Para solventes con una afinidad química menor con el cepillo, las cadenas
+ forman estructuras en forma de arco entre polímeros fijados a la misma
+ pared.
+ Las estructuras en forma de arco no se extienden en la dirección perpendicular
+ al sustrato y no alcanzan el centro del canal, por lo que en 
+\begin_inset Formula $z=L_{z}/2$
+\end_inset
+
+ hay menor población de monómeros.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -5645,10 +5758,9 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
-	filename ../Paper_3/resubmission_2/graphs/gr_bunDens_vs_solvQ.eps
+	filename figs/gr_bunDens_vs_solvQ.eps
+	lyxscale 50
 	width 98col%
 	clip
 
@@ -5658,25 +5770,26 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:gr_Solv_Qual"
 
 \end_inset
 
-Bidimensional radial distribution function for the monomers at 
-\begin_inset Formula $z=L/2$
+Función de distribución de pares de monómeros bidimensional en el centro
+ del canal 
+\begin_inset Formula $z=L_{z}/2$
 \end_inset
 
- (center of the channel), for various solvent qualities.
- Inset: monomer number density in the center of the channel (
+ en equilibrio.
+ La curva negra corresponde a condiciones de solvente pobre ideal, donde
+ la interacción líquido-monómeros es puramente repulsiva.
+ La azul corresponde a un buen solvente, y la curva roja es un caso intermedio.
+ El recuadro muestra la densidad monomérica en el centro del canal (
 \begin_inset Formula $L_{z}/2-2\sigma<z<L_{z}/2+2\sigma$
 \end_inset
 
-) as a function of solvent quality.
- 
+) de estos sistemas en equilibrio, en función de la calidad del solvente.
 \end_layout
 
 \end_inset
@@ -5687,6 +5800,111 @@ Bidimensional radial distribution function for the monomers at
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Resumen
+\end_layout
+
+\begin_layout Standard
+En este capitulo se estudió el flujo de líquido en un nanocanal con geometría
+ de hendidura, cuyas paredes están revestidas por cepillos poliméricos.
+ Una particularidad del sistema, es que las cadenas ancaldas a paredes opuestas
+ llegan a tocarse en el interior de canal, es decir 
+\begin_inset Formula $2l_{c}<L_{z}$
+\end_inset
+
+.
+ Variando diferentes parámetros del sistema, se encontró que en determinadas
+ condiciones el caudal presenta dos regímenes de conducción distintos.
+ Para gradientes de presión bajos, el caudal crece lentamente con la fuerza
+ externa impuesta sobre el sistema y a partir de cierto valor umbral de
+ fuerza 
+\begin_inset Formula $F^{*}$
+\end_inset
+
+, el caudal incrementa rápidamente.
+ Se demostró que este cambio en el flujo se debe a un cambio morfológico
+ del cepillo polimérico.
+ En condiciones de equilibrio o para 
+\begin_inset Formula $F_{ext}$
+\end_inset
+
+ bajas, los polímeros entran en contacto, formando estructuras que atraviesan
+ el ancho del canal y obstruyen el paso del líquido.
+ Al aumentar la fuerza por encima del umbral 
+\begin_inset Formula $F_{ext}>F^{*}$
+\end_inset
+
+, los polímeros se inclinan en la dirección del flujo, rompiendo estas formacion
+es y liberando el seno del canal, incrementando sensiblemente el caudal.
+\end_layout
+
+\begin_layout Standard
+Primero se estudió el rol de la rigidez de las cadenas en este proceso de
+ apertura/cierre del nanocanal.
+ Se observó que para cadenas totalmente flexibles, los polímeros no forman
+ estructuras a lo ancho del canal y el caudal crece linealmente con 
+\begin_inset Formula $F_{ext}$
+\end_inset
+
+.
+ En el caso de polímeros extremadamente rígidos 
+\begin_inset Formula $l_{p}/l_{c}\gg1$
+\end_inset
+
+ ocurre lo contrario: estos forman estructuras muy estables y para el rango
+ de fuerzas estudiado el canal permanece en un estado de caudal bajo.
+ Para valores intermedios se observa la transición cerrado/abierto del canal
+ y el cambio sensible en el caudal de solvente.
+ En particular se observó que el efecto encuentra un máximo para un valor
+ de rigidez polimérica tal que 
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Con la rigidez fija en 
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+, se procedió a investigar como varía la respuesta del sistema para diferentes
+ valores de densidad de fijado de cadenas 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ Al aumentar la cantidad de polímeros en el sistema, se observó que la fuerza
+ umbral necesaria para romper las formaciones incremente.
+ Es decir que la fuerza umbral 
+\begin_inset Formula $F^{*}$
+\end_inset
+
+ depende de 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ y es una función monotonamente creciente.
+ También se observó que la respuesta del sistema al abrirse el canal es
+ mayort, cuanto menor es la densidad de fijado de cadenas 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ en el tengo de valores estudiado en este trabajo.
+\end_layout
+
+\begin_layout Standard
+Por último se estudió la respuesta del sistema para distintas afinidades
+ entre el solvente y el cepillo polimérico.
+ En este caso se vio que la respuesta del sistema se maximiza cuanto menor
+ se la afinidad, es decir en condiciones de solvente pobre.
+ Al mejorar disminuir la incompatiblidad química entre el cepillo y solvente,
+ el caudal cambia de manera continua con la fuerza externa y no se ve una
+ trasición del canal entre el estado abierto y el estado cerrado.
+ Por lo tanto, concluimos que la incompatibilidad cepillo-solvente es necesaria
+ para obtener una repuesta no lineal en el sistema.
 \end_layout
 
 \begin_layout Chapter
