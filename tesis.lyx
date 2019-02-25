@@ -3129,20 +3129,215 @@ Formaciones de estructuras en cepillos poliméricos semiflexibles en un solvente
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
+A diferencia del resto del trabajo de tesis de doctorado, en este capitulo
+ se utiliza una interacción atractiva entre monómeros para modelar la condición
+ de un solvente pobre.
+ Al entrar en contacto entre si, los polímeros forman estructuras estables,
+ que dan lugar a una rica morfología.
+ Las formaciones originadas son variadas y dependen de la distancia entre
+ los polímeros, la longitud de contorno de los mismo, la temperatura y la
+ rigidez de las cadenas, entre otros.
+\end_layout
 
-\begin_layout Plain Layout
-Ver resultados que deje en el cuaderno.
- Basicamente el 
+\begin_layout Standard
+Se exploró el comportamiento y los agregados formados por las cadenas, variando
+ la densidad de fijado 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ y la rigidez de las cadenas 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+.
+ El sistema de estudio en este caso consiste de polímeros fijados en un
+ arreglo ordenado de sitios a una pared lisa, que interactúan entre si mediante
+ un potencial tipo Lennard-Jonnes.
+ A diferencia de los casos anteriores, este sistema tiene una sola pared
+ a la cual se fijan los polímeros y no es un canal.
+ El objetivo de estas simulaciones es ver las posibles formaciones que se
+ dan en un cepillo polimérico y cómo dependen de los parámetros relevantes
+ del sistema.
+ Se realizaron simulaciones de dinámica molecular en equilibrio, fijando
+ la temperatura en 
+\begin_inset Formula $k_{B}T=1\varepsilon$
+\end_inset
+
+ mediante el termostato de Langevin y sin partículas de solvente.
+ Las dimensiones de la caja de simulación fueron 
+\begin_inset Formula $L_{x}=L_{y}=90$
+\end_inset
+
+, con condiciones periodicas de contorno en 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ e 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+.
+ En 
+\begin_inset Formula $z=40\sigma$
+\end_inset
+
+ se impuso una pared lisa perfectamente reflectiva, equivalente a un pontecial
+ infinito.
+ La constante de fricción se fijó en 
+\begin_inset Formula $\gamma=0.1$
+\end_inset
+
+ y se utilizó un paso temporal de 
+\begin_inset Formula $dt=0.5·10^{-2}$
+\end_inset
+
+.
+ La intensidad de la interacción entre monómeros se fijó en 
+\begin_inset Formula $\varepsilon=1$
+\end_inset
+
+ y el radio de corte de la interacción 
+\begin_inset Formula $r_{C}=2.24\sigma$
+\end_inset
+
+, de manera de incluir el segmento atractivo del potencial.
+ Se utilizaron cadenas largas, de 
+\begin_inset Formula $N=32$
+\end_inset
+
+ monómeros, que corresponde a una longitud de contorno alrededor de 
+\begin_inset Formula $l_{c}=30\sigma$
+\end_inset
+
+.
+ Para adimensionalizar la densidad de fijado se utilizó la longitud de contorno
+ de las cadenas, que tiene unidades de distancia.
+ Se realizaron 25 simulaciones, con todas las las combinaciones posibles
+ de 
+\begin_inset Formula $\rho_{g}l_{c}^{2}=2.5;\,3.4;\,8.5;\,23;\,93$
+\end_inset
+
+ y los valores de rigidez 
+\begin_inset Formula $l_{p}/l_{c}=0.01;\,0.25;\,1;\,10;\,30$
+\end_inset
+
+.
+ Se dejó equilibrar al sistema y luego se realizó una inspección visual
+ de cada sistema para determinar que clase de agregados formaron las cadenas.
+ 
+\end_layout
+
+\begin_layout Standard
+De esta manera se obtuvo un 
 \begin_inset Quotes fld
 \end_inset
 
-diagrama de fases
+diagrama de fase
 \begin_inset Quotes frd
 \end_inset
 
- de que fomraciones hay en función de rigidez y bending rigidity 
+ de las formaciones posibles en un cepillo polimérico en solvente pobre
+ en función de dos parámetros relevantes del sistema, la densidad de fijade
+ de cadenas 
+\begin_inset Formula $\rho_{g}l_{c}^{2}$
+\end_inset
+
+ y la rigidez de los polímeros 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/bund_phas_diag.agr
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:bundle_phase_diagram"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la figura se muestran las diferentes formaciones con su respectiva nomenclatu
+ra
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/Formations.png
+	lyxscale 20
+	width 75col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:formaciones"
+
+\end_inset
+
+Se muestran las 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -3159,7 +3354,12 @@ literal "false"
 
 \end_inset
 
- realizó estudios similares mediante simulaciones blabla
+ estudiaron la formación mediante de agregados poliméricos fijados a la
+ pared en mal solvente, variando la densidad de fijado 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ y de la longitud de las cadenas por simulaciones de bond fluctuation model.
 \end_layout
 
 \begin_layout Section
@@ -3748,7 +3948,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Paper_3/resubmission_2/graphs/gd0.03_Q_vs_fext.eps
+	filename figs/gd0.03_Q_vs_fext.eps
 	width 98col%
 	clip
 
@@ -4065,7 +4265,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Paper_3/resubmission_2/graphs/Q_vs_fext_gd0.02.eps
+	filename figs/Q_vs_fext_gd0.02.eps
 	width 98col%
 	clip
 
@@ -4301,7 +4501,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Paper_3/resubmission_2/graphs/mean_vel_vs_lp_gd0.02.eps
+	filename figs/mean_vel_vs_lp_gd0.02.eps
 	width 98col%
 	clip
 
@@ -4509,7 +4709,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Paper_3/resubmission_2/graphs/Theta_Rend_vs_lp.eps
+	filename figs/Theta_Rend_vs_lp.eps
 	width 98col%
 
 \end_inset
@@ -4760,7 +4960,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Paper_3/resubmission_2/graphs/gr_vs_lp_2.eps
+	filename figs/gr_vs_lp_2.eps
 	lyxscale 40
 	width 98col%
 	clip
@@ -5009,7 +5209,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Paper_3/resubmission_2/graphs/Perm_vs_Fx_all_gd.eps
+	filename figs/Perm_vs_Fx_all_gd.eps
 	width 94col%
 	clip
 
@@ -5017,7 +5217,7 @@ status open
 
 
 \begin_inset Graphics
-	filename ../Paper_3/resubmission_2/graphs/Rz_vs_lp2.eps
+	filename figs/Rz_vs_lp2.eps
 	width 98col%
 	clip
 
@@ -5251,7 +5451,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Paper_3/resubmission_2/graphs/Fc_bund_dens_vs_gd.eps
+	filename figs/Fc_bund_dens_vs_gd.eps
 	width 98col%
 	clip
 
@@ -5443,7 +5643,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Paper_3/resubmission_2/graphs/perm_vs_Fx_solvQual.eps
+	filename figs/perm_vs_Fx_solvQual.eps
 	lyxscale 50
 	width 98col%
 	clip
