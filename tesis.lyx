@@ -3237,7 +3237,7 @@ diagrama de fase
 \end_inset
 
  de las formaciones posibles en un cepillo polimérico en solvente pobre
- en función de dos parámetros relevantes del sistema, la densidad de fijade
+ en función de dos parámetros relevantes del sistema, la densidad de fijado
  de cadenas 
 \begin_inset Formula $\rho_{g}l_{c}^{2}$
 \end_inset
@@ -3247,6 +3247,68 @@ diagrama de fase
 \end_inset
 
 .
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:bundle_phase_diagram"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se describen los distintos agregados que se forman en el sistema, según
+ la rigidez y la cantidad de cadenas por unidad de área.
+ Las formaciones descritas están representadas gráficamente en la figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:formaciones"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, donde se aprecia la disposición geométrica de los polímeros con una vista
+ latera y otra superior.
+ A bajas densidades de fijado y altos valores de rigidez, las cadenas están
+ totalmente estiradas en la dirección perpendicular al sustrato y no entran
+ en contacto entre si.
+ Al bajar la rigidez a 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ bajo, las logran inclinarse en el sentido lateral y entrar en contacto
+ con otras cadenas, formando arcos hormigueros.
+ En el caso taotalmente flexible y a baja densidad de fijado, los polímeros
+ se doblan sobre si mismos, maximizando la entropía configuracional y formando
+ glóbulos aislados.
+ Al aumentar la densidad de fijado, comienzan a verse las formaciones en
+ forma de ramillete (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:formaciones"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), donde varios polímeros entran en contacto y crecen verticalmente.
+ Para altas densidades de fijado y polímeros flexibles se observa que los
+ polímeros cubren toda la superficie sobre la cual están fijados, dejando
+ pequeños huecos.
+ Estos huecos y su dependencia del tamaño con la intensidad de la fuerza
+ atractiva fueron estudiados por Lappala et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/ma501985r"
+literal "false"
+
+\end_inset
+
+ recientemente.
  
 \end_layout
 
@@ -3264,6 +3326,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/bund_phas_diag.agr
+	lyxscale 50
 
 \end_inset
 
@@ -3277,7 +3340,10 @@ name "fig:bundle_phase_diagram"
 
 \end_inset
 
-
+Diagrama de las formaciones poliméricas observadas en solvente pobre, en
+ función de la rigiez de las cadenas (eje vertical) y de la densidad de
+ fijado (eje horizontal).
+ 
 \end_layout
 
 \end_inset
@@ -3292,11 +3358,6 @@ name "fig:bundle_phase_diagram"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-En la figura se muestran las diferentes formaciones con su respectiva nomenclatu
-ra
 \end_layout
 
 \begin_layout Standard
@@ -3304,10 +3365,6 @@ ra
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -3328,7 +3385,10 @@ name "fig:formaciones"
 
 \end_inset
 
-Se muestran las 
+Se muestran vistas laterales y superiores de las diferentes configuraciones
+ observadas para los distintos valores de densidad de fijado y rigidez de
+ las cadenas.
+ 
 \end_layout
 
 \end_inset
@@ -3346,7 +3406,50 @@ Se muestran las
 \end_layout
 
 \begin_layout Standard
-Pham et al.
+Cabe mencionar que en varias simulaciones conviven dos o más de este tipo
+ de formaciones.
+ Para analizar si estas configuraciones con distintas formaciones poliméricas
+ son estables, es necesario un estudio más profundo, dónde se mida y compare
+ la energía libre de las distintas estructuras halladas para cada conjunto
+ de parámetros.
+ Con las técinicas utilizadas en este trabajo es difícil discernir en este
+ caso entre un estado metaestable y un estado de equilibrio.
+ Una linea de investigación a futuro es analizar la estabilidad y el equilibrio
+ de este tipo de sistemas e intentar dilucidad si existen fases separadas
+ entre algunas de estas formaciones y como se dan las transiciones.
+ También puede ser de interés estudiar como varían el ancho o la cantidad
+ de cadenas de las formaciones en función de 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ y de 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+.
+ Por ejemplo, para los ramilletes se apreció una gran variabilidad en la
+ cantidad de cadenas que forman parte de estos aglomerados en función de
+ los parámetros explorados.
+\end_layout
+
+\begin_layout Standard
+Sin embargo, el objetivo en este caso fue explorar el espacio de parámetros
+ relevantes, e investigar las posibles configuraciones del cepillo polimérico
+ para luego utilizar lo aprendido para simular un nanocanal revestido por
+ cepillos poliméricos en condiciones de solvente pobre.
+ El rango de parámetros estudiados puede observarse en el diagrama 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:bundle_phase_diag_2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, en elipses rojas.
+ A Las formaciones vistas en estas simulaciones son similares a las encontradas
+ por Pham y Pattanayek 
 \begin_inset CommandInset citation
 LatexCommand cite
 key ":/content/aip/journal/jcp/123/3/10.1063/1.1955523"
@@ -3354,12 +3457,64 @@ literal "false"
 
 \end_inset
 
- estudiaron la formación mediante de agregados poliméricos fijados a la
- pared en mal solvente, variando la densidad de fijado 
+, que estudiaron la formación de agregados poliméricos fijados a la pared
+ en mal solvente, variando la densidad de fijado 
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
- y de la longitud de las cadenas por simulaciones de bond fluctuation model.
+ y de la longitud de las cadenas por simulaciones de 
+\shape italic
+bond fluctuation model
+\shape default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/bund_phas_diag_2.png
+	width 50col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:bundle_phase_diag_2"
+
+\end_inset
+
+Las zonas delimitada en rojo muestras el rango de valores en el espacio
+ de parámetros que se decidió utilizar para estudiar el nanocanal revestido
+ con cepillos poliméricos en solvente pobre.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
