@@ -2743,8 +2743,8 @@ Resultados I: Cepillos poliméricos en equilibrio y bajo flujo en régimen
 \end_layout
 
 \begin_layout Chapter
-Resultados II: Influencia de la rigidez de los polímeros en flujo bifásico
- 
+Resultados II: Estudio del flujo bifásico en un nanocanal revestido por
+ cepillos poliméricos semiflexibles
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Resultados-II:-Influencia"
@@ -2752,6 +2752,1250 @@ name "chap:Resultados-II:-Influencia"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Antecedentes
+\end_layout
+
+\begin_layout Standard
+BLABLA INTRO
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename figs/Fig1_1.eps
+	lyxscale 45
+	width 45col%
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Snap"
+
+\end_inset
+
+The system studied in this work consists of a slit like nano-channel, whose
+ walls are separated by a distance 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+.
+ Hydrophobic polymers anchored by a terminal bead to the walls coat the
+ channel, generating a soft substrate.
+ A liquid droplet in coexistence with its vapor fills the interior of the
+ channel.
+ A constant external force is applied to every particle to generate net
+ flow of mass.
+ 
+\begin_inset Formula $D$
+\end_inset
+
+ is the extent of the droplet in the direction of the flow (
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+) and 
+\begin_inset Formula $L_{x}$
+\end_inset
+
+ is the length of the simulation box in the same direction.
+ Up: snapshot of the simulated system.
+ Down: Schematic representation of the system.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Detalles del sistema y metodología
+\end_layout
+
+\begin_layout Subsection
+Seguimiento de las gotas 
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Seguimiento-de-las-gotas"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename figs/cm_algorithm.eps
+	lyxscale 40
+	width 98col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Histogram of particle positions along the channel (
+\begin_inset Formula $x$
+\end_inset
+
+ coordinate).
+ The difference in densities between vapor and liquid is clearly appreciated.
+ The fluid's center of mass (black circle) falls outside the droplet, due
+ to the significant number of particles in vapor phase.
+ The mode of the distribution (
+\begin_inset Formula $x_{cm}^{0}$
+\end_inset
+
+) is a better estimator for the droplet's center of mass.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Histo_cm"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Determinación del ancho del canal
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Determinación-del-ancho"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+das
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename figs/Chi2_vs_Lz_kb80_SM2.eps
+	lyxscale 40
+	width 98col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Chi2_vs_Lz"
+
+\end_inset
+
+ To select the appropriate width of the channel (
+\begin_inset Formula $L_{z}$
+\end_inset
+
+), the 2 dimensional density histograms of the droplets are compared.
+ 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ is a metric that quantifies the distance between the simulation and the
+ reference droplet, the lower it's value, the more similar the droplets.
+ A value of 
+\begin_inset Formula $\chi^{2}=0$
+\end_inset
+
+ is achieved for an exact match between histograms.
+ Insets: two-dimensional histograms are presented for the smallest and largest
+ values of 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+ explored.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Resultados
+\end_layout
+
+\begin_layout Subsection
+Interacción líquido-cepillo
+\end_layout
+
+\begin_layout Standard
+En esta sección se analiza la interacción entre el cepillo poliméricos anclados
+ a las paredes interiores de nanocanal y la gota que fluye a través del
+ mismo.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/dropVel_vs_rigidity.eps
+	lyxscale 45
+	width 45col%
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:veldroplet_vs_lpersistence"
+
+\end_inset
+
+ Velocidad de la gota en función de la longitud de persistencia de las cadenas.
+ En el recuadro se observa el mismo grafico, pero el eje vertical esta en
+ escala logarítmica para una mejor visualización.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:veldroplet_vs_lpersistence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se grafica la velocidad de la gota en el nanocanal, en función de la rigidez
+ de los polímeros.
+ Las barras de error grande proviene de la incerteza en la determinación
+ del ancho del canal 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+, para obtener gotas similares en los distintos casos, como se explico en
+ la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Determinación-del-ancho"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Es importante recordar que la comparación en esta caso no se hace manteniendo
+ el ancho del canal constante, sino que se decidió preservar la forma de
+ la gota similar en todos los casos, variando el ancho del canal.
+ De la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:veldroplet_vs_lpersistence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se puede apreciar que la velocidad de la gota desciende rápidamente al
+ aumentar la rigidez de los polímeros en el rango 
+\begin_inset Formula $l_{p}/l_{c}\le1$
+\end_inset
+
+, mientras que para valores mayores de longitudes de persistencia, la velocidad
+ de la gota parece disminuir con la rigidez, aunque es difícil ver una tendencia
+ definida.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/Drop_dens.eps
+	lyxscale 40
+	width 50text%
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/Brush_dens.eps
+	lyxscale 40
+	width 50text%
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/Overlap_dens.eps
+	lyxscale 40
+	width 40text%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Dens_profs_drop"
+
+\end_inset
+
+Perfiles de densidad del sistema visto en un corte a 
+\begin_inset Formula $y$
+\end_inset
+
+ constante.
+ La imagen superior corresponde la perfil del fluido y la imagen del centro
+ corresponde al perfil de densidad de los polímeros.
+ La imagen inferior es el producto de las densidades polimericas y del fluido,
+ y muestra el área donde las cadenas y el líquido interactúan.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para comprender el comportamiento de la gota en función de la longitud de
+ persistencia de las cadenas, se presentan los perfiles de densidad bidimensiona
+les del líquido y de los monómeros en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Dens_profs_drop"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ En en la figura superior se puede observar la forma de la gota en el centro
+ del canal y su contorno bien definidos.
+ En la figura central se aprecia el perfil de densidad de los monómeros
+ y su deformación debido a la presencia de la gota líquida.
+ Es interesante notar el efecto doble que causa el líquido sobre el cepillo:
+ por un lado se observa la compresión del cepillo hacia las paredes del
+ canal, y por otro la acumulación de monómeros cercana al centro de la gota,
+ debido a la inclinación de las cadenas en la dirección del flujo.
+ También se puede observar una baja en la densidad del cepillo cercano a
+ la retaguardia de la gota (borde izquierdo), que se también debe a la inclinaci
+ón de las cadenas en la dirección del flujo.
+ En la imagen inferior de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Dens_profs_drop"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se grafica el producto entre el perfil de densidad monomérico y el perfil
+ de densidad del líquido.
+ El producto de estos perfiles de densidad es no nulo, solo en los lugares
+ donde coexisten monómeros y partículas de fluido.
+ De esta manera se tiene una representación de la zona de interacción entre
+ el cepillo y la gota.
+ Para descartar la interacción gas-monómero, se tomó como nula la densidad
+ de partículas de fluido, cuyo valor fuera menor al doble de la densidad
+ de equilibrio de gas en coexistencia con el líquido.
+ De esta manera, se eliminó la contribución del gas y solo se tomo en cuenta
+ la gota líquida para los cálculos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/pol_liq_interac_vs_rigidity3.eps
+	lyxscale 45
+	width 45col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Brush_Liq_Interactions"
+
+\end_inset
+
+ Se muestra el valor medio del producto de la densidade de monómeros y densidad
+ de líquido, en función de la longitud de persistencia.
+ Este valor medio 
+\begin_inset Formula $\left\langle \rho_{b}\rho_{l}\right\rangle $
+\end_inset
+
+ es proporcional a la cantidad de interacciones entre monómeros y partículas
+ de líquido.
+ En los recuadros se muestran imágenes del sistema líquido-cepillo, para
+ diferentes valores de rigidez 
+\begin_inset Formula $l_{p}/l_{c}=0.1$
+\end_inset
+
+, 
+\begin_inset Formula $l_{p}/l_{c}=1.1$
+\end_inset
+
+, 
+\begin_inset Formula $l_{p}/l_{c}=11$
+\end_inset
+
+.
+ Las partícuals de gas fueron borradas para una mejor visualización de estos
+ recuadros.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir del gráfico inferior de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Dens_profs_drop"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se estimar la cantidad de interacciones entre monómeros y partículas del
+ líquido, tomando el promedio espacial del producto de las densidades de
+ monómeros 
+\begin_inset Formula $\rho_{b}$
+\end_inset
+
+ y de líquido 
+\begin_inset Formula $\rho_{l}$
+\end_inset
+
+.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Brush_Liq_Interactions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se presenta este promedio 
+\begin_inset Formula $\left\langle \rho_{b}\rho_{l}\right\rangle $
+\end_inset
+
+, que es proporcional a la cantidad de interacciones líquido-monómero
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/la010807k"
+literal "false"
+
+\end_inset
+
+, en función de la longitud de persistencia de los polímeros que forman
+ el cepillo.
+ Se puede apreciar en esta figura, que para 
+\begin_inset Formula $l_{p}/l_{c}\le1$
+\end_inset
+
+, la cantidad de interacciones crece con la la rigidez de las cadenas, mientras
+ que para 
+\begin_inset Formula $l_{p}/l_{c}>1$
+\end_inset
+
+, la cantidad de interacciónes entre el cepillo y la gota decrece con la
+ longitud de persistencia.
+ El número de interacciones entre el líquido y el cepillo presenta un máximo
+ marcado, para polímeros cuya longitud de persistencia es igual a su longitud
+ de contorno 
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+.
+ Para polímeros totalmente flexibles 
+\begin_inset Formula $l_{p}/l_{c}\ll1$
+\end_inset
+
+, la entropía configuracional domina el comportamiento de las cadenas, y
+ estas se retuercen sobre si mismas, en una configuración tipo ''glóbulo''.
+ Esta disposición de las cadenas hace que solo unos pocos monómeros entren
+ en contacto con el líquido, y la la mayor cantidad de interaciones de los
+ monómeros sean conotros monómeros pertenecientes a la misma cadena, como
+ puede observarse en el recuadro inferior izquierdo de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:veldroplet_vs_lpersistence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ El cepillo que presenta el mayor número de interacciones con el líquido,
+ es el que está conformado por cadenas con longitud de persistencia 
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+.
+ Esto se debe a que estas cadenas se inclinan coherentemente en la dirección
+ del flujo en forma de arco de curva, exponiendo varios monómeros a la superfici
+e con la gota líquida, como puede apreciarse en el recuadro central superior
+ de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Brush_Liq_Interactions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Las cadenas más rígidas 
+\begin_inset Formula $l_{p}/l_{c}\gg1$
+\end_inset
+
+ se estiran de manera perpendicular a la superficie de fijado, forzadas
+ por el potencial de orientación, y solamente el último monómero libre entra
+ en contacto con el líquido.
+ Por esta razón, el número de interacciones disminuye al aumentar la longitud
+ de persistencia más alla de 
+\begin_inset Formula $l_{p}/l_{c}>1$
+\end_inset
+
+.
+ Cabe notar que en todos los casos estudiados, la gota líquida se mantuvo
+ en un estado Cassie-Baxter, sin penetrar el cepillo polimérico, debido
+ a la hidrofobicidad del mismo.
+\end_layout
+
+\begin_layout Standard
+Es interesante contrastar el comportamiento de la velocidad de la gota (ver
+ figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:veldroplet_vs_lpersistence"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), que decrece con 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+, contra la cantidad de interacciones en función de la rigidez, que presenta
+ un comportamiento no monótono.
+ Esta diferencia indica que la fricción que sufre la gota no depende solamente
+ de la cantidad de choques con el cepillo, y que es necesario ahondar en
+ la naturaleza de las interacciones.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename figs/Rend_p_histo_2D_20.eps
+	width 45col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Rend_2D_histo"
+
+\end_inset
+
+The polymer's end-bead distribution is shown as a color map.
+ The correspondence between colors and monomer density (given in units of
+ 
+\begin_inset Formula $\sigma^{-3}$
+\end_inset
+
+) is shown in the color bar at the bottom.
+  The red arrows, composing a vector field, represent the mean momentum
+ of the end-beads of the polymers.
+ These graphs are presented for various rigidities, from top to bottom:
+ 
+\begin_inset Formula $l_{p}/l_{c}=0.1;\,0.72;\,2.9;\,8.3$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con el fin de profundizar en la naturaleza de las interacciones líquido-cepillo,
+ se grafica en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rend_2D_histo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ el perfil de densidad bidimensional de los monómeros terminales de las
+ cadenas y la densidad de momento lineal de los mismos para distintos valores
+ de rigidez 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+.
+ El eje vertical, corresponde al eje perpendicular a la superficie de anclaje
+ de las cadenas (
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+) y el eje horizontal corresponde al eje paralelo a la dirección del flujo
+ de la gota
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+.
+ El perfil de densidad está tomado desde el sistema de referencia solidario
+ a la gota, con el centro de masa de la gota en el centro del canal 
+\begin_inset Formula $x_{drop}=L_{x}/2=53\sigma$
+\end_inset
+
+.
+ Solo se muestra el cepillo inferior, pero por simetría el cepillo anclado
+ a la pared superior es similar.
+ Las zonas coloreadas de azul muestran la ausencia de monómeros terminales,
+ mientras que las zonas con colores más cercanos al rojo en el espectro,
+ denotan una mayor presencia de monómeros.
+ Las flechas en las ismas figuras indícan la dirección, sentido e intensidad
+ del impulso lineal de estos monómeros terminales.
+ Los gráficos están corresponden a valores de rigidez 
+\begin_inset Formula $l_{p}/l_{c}=0.1;\,0.72;\,2.9;\,8.3$
+\end_inset
+
+, desde arriba hacia abajo.
+\end_layout
+
+\begin_layout Standard
+La morfología y dinámica del cepillo varían ampliamente con la rigidez de
+ las cadenas.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename figs/SlipVel_vs_rigidity3.eps
+	lyxscale 45
+	width 45col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SlipVel_vs_rigidity"
+
+\end_inset
+
+Velocity of the brush (black circles) and liquid (red squares) in the brush-liqu
+id interface are plotted with respect to the reduced persistence length.
+ The difference between these velocities, shows how the liquid boundary
+ layer passes over the brush boundary layer (open green diamonds).
+ Inset: droplet velocity versus the liquid boundary layer velocity.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Comportamiento del cepillo polimérico
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename figs/Rx_vs_rigidity_norm.eps
+	lyxscale 45
+	width 45col%
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Rx_vs_rigidity"
+
+\end_inset
+
+End-to-end distance vector component in the flow direction (
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+) versus position (
+\begin_inset Formula $x$
+\end_inset
+
+), normalized by the droplet size (
+\begin_inset Formula $D$
+\end_inset
+
+).
+ Data is analyzed in the droplet frame of reference, where the center of
+ mass of the droplet is always on 
+\begin_inset Formula $x=0.$
+\end_inset
+
+ Inset: Maximum inclination of the end-to-end brush vector component in
+ the direction of the flow (
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+) versus rigidity (
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename figs/Rz_vs_rigidity2_norm.eps
+	lyxscale 45
+	width 45col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Rz_vs_x"
+
+\end_inset
+
+Profile of the end-to-end polymer vector component in the direction perpendicula
+r to the walls (
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+) versus 
+\begin_inset Formula $x$
+\end_inset
+
+ coordinate, in the droplet frame of reference .
+ The horizontal axis is normalized, dividing by the length of the droplet
+ in the direction of the droplet velocity.
+ Inset: Mean value of 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ unperturbed (black circles) and under the droplet (red squares) in a log-log
+ plot.
+ The dashed line is the scaling law predicted by Mean Field theory 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BIRSHTEIN19832165"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename figs/Deformation_vs_rigidity.eps
+	lyxscale 45
+	width 45col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SDRz_vs_rigidity"
+
+\end_inset
+
+Difference between vertical stretching of the polymers under the droplet
+ and far away from it (black circles) as functions of the reduced persistence
+ length.
+ This magnitude quantifies the deformations of the brush in the directions
+ perpendicular to the wall, due to the presence of the droplet.
+ In red squares, it is shown the mean displacement of the end-to-end vector
+ under the droplet with respect to the unperturbed displacement in the direction
+ perpendicular to the wall.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename figs/Rx_time_autocorr.eps
+	lyxscale 45
+	width 45col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Time-autocorrelation-function"
+
+\end_inset
+
+Time autocorrelation function of the 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ component of the end to end vector for different values of rigidity.
+ The values of relative stiffness 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+ are shown in the legend.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Dinámica del fluido
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename figs/vfluid_vs_Lx_5.eps
+	width 45col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Fluid_vel_vs_x"
+
+\end_inset
+
+Fluid velocity in the direction of the flow (
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+) as a function of the x coordinate (in log scale).
+ The droplet (
+\begin_inset Formula $x<48\sigma$
+\end_inset
+
+) travels at a higher velocity than the vapor phase (
+\begin_inset Formula $x>48\sigma$
+\end_inset
+
+).
+ It is also possible to observe that gas velocity decays exponentially with
+ x.
+  Inset: 2-dimensional density profile of the droplet, with the liquid velocity
+ field overlayed.
+ The velocities are calculated in the frame of reference of the center of
+ mass of the droplet.
+ The color legend shows the liquid number density in units of 
+\begin_inset Formula $\sigma^{-3}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename figs/vd_vs_L2_.eps
+	lyxscale 50
+	width 45col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "dropVel_vs_L_kb0"
+
+\end_inset
+
+Droplet velocity (
+\begin_inset Formula $v_{d}$
+\end_inset
+
+) as a function of the channel length (
+\begin_inset Formula $L_{x}$
+\end_inset
+
+).
+  Inset: Droplet velocity (black circles) plotted against surrounding gas
+ velocity.
+ Each point corresponds to a different channel length.
+ The red continuous line is the linear regression of the data.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Resumen
 \end_layout
 
 \begin_layout Chapter
