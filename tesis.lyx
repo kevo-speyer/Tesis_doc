@@ -3225,8 +3225,8 @@ noprefix "false"
  De esta manera se tiene una representación de la zona de interacción entre
  el cepillo y la gota.
  Para descartar la interacción gas-monómero, se tomó como nula la densidad
- de partículas de fluido, cuyo valor fuera menor al doble de la densidad
- de equilibrio de gas en coexistencia con el líquido.
+ de partículas de fluido, cuyo valor fuera menor al promedio entre la densidad
+ de equilibrio de gas y el líquido.
  De esta manera, se eliminó la contribución del gas y solo se tomo en cuenta
  la gota líquida para los cálculos.
 \end_layout
@@ -3439,8 +3439,6 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 \begin_inset Float figure
 wide false
 sideways false
@@ -3448,10 +3446,9 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
-	filename figs/Rend_p_histo_2D_20.eps
+	filename figs/Rend_p_histo_2D.eps
+	lyxscale 200
 	width 45col%
 	clip
 
@@ -3461,29 +3458,27 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Rend_2D_histo"
 
 \end_inset
 
-The polymer's end-bead distribution is shown as a color map.
- The correspondence between colors and monomer density (given in units of
- 
+ Perfil de densidad bidimensional de los monómeros terminales del cepillo
+ polimérico.
+ La correspondencia entre los colores y los valores de densidad se explica
+ en la leyenda al pie de las figuras (en unidades de 
 \begin_inset Formula $\sigma^{-3}$
 \end_inset
 
-) is shown in the color bar at the bottom.
-  The red arrows, composing a vector field, represent the mean momentum
- of the end-beads of the polymers.
- These graphs are presented for various rigidities, from top to bottom:
- 
+).
+ Las flechas negras sobre las figuras representan la densidad de momento
+ de los monómeros terminales.
+ Los valores de rigidez mostrados son 
 \begin_inset Formula $l_{p}/l_{c}=0.1;\,0.72;\,2.9;\,8.3$
 \end_inset
 
-.
+ de arriba hacia abajo.
 \end_layout
 
 \end_inset
@@ -3537,7 +3532,7 @@ noprefix "false"
  Las zonas coloreadas de azul muestran la ausencia de monómeros terminales,
  mientras que las zonas con colores más cercanos al rojo en el espectro,
  denotan una mayor presencia de monómeros.
- Las flechas en las ismas figuras indícan la dirección, sentido e intensidad
+ Las flechas en las mismas figuras indican la dirección, sentido e intensidad
  del impulso lineal de estos monómeros terminales.
  Los gráficos están corresponden a valores de rigidez 
 \begin_inset Formula $l_{p}/l_{c}=0.1;\,0.72;\,2.9;\,8.3$
@@ -3549,12 +3544,199 @@ noprefix "false"
 \begin_layout Standard
 La morfología y dinámica del cepillo varían ampliamente con la rigidez de
  las cadenas.
+ En el caso de cadenas más flexibles (gráfico superior de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rend_2D_histo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) se aprecia que los monómeros terminales son empujados por la gota hacia
+ las paredes del canal, apreciándose una alta densidad alrededor de 
+\begin_inset Formula $z=5\sigma$
+\end_inset
+
+.
+ Al aumentar la rigidez, el cepillo se expande en la dirección vertical
+ y como se puede observar en el segundo gráfico de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rend_2D_histo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ (
+\begin_inset Formula $l_{p}/l_{c}=0.72$
+\end_inset
+
+), el cepillo es menos compacto.
+ Las cadenas totalmente flexibles son comprimidas con mayor facilidad por
+ la gota que las semiflexibles, hasta el punto en que las interacciones
+ de volumen excluido entran en juego.
+ Estas interacciones impiden que el cepillo compuesto por cadenas totalmente
+ flexibles siga comprimiéndose, alcanzando una alta densidad.
+ Por el contrario, las cadenas semiflexibles presentan una mayor resistencia
+ a la compresión debido al potencial de flexión, por lo que estas logran
+ ocupar más espacio y configuran un cepillo polimérico menos denso.
+ Al seguir aumentando la rigidez de los polímeros, se observa que los monómeros
+ terminales se estiran hacia el centro del canal y visitan infrecuentemente
+ el seno del cepillo.
+ De los perfiles bidimensionales de densidad de los monómeros terminales
+ también se desprende que cerca del frente de avance de las gotas se acumulan
+ los monómeros, debido a la inclinación de las cadenas en la dirección del
+ flujo.
+\end_layout
+
+\begin_layout Standard
+El campo vectorial de momento lineal de los monómeros terminales del cepillo
+ graficado sobre los perfiles bidimensionales de densidad muestras que los
+ monómeros en contacto con la gota son arrastrados en la dirección del flujo
+ y tienden a acompañar su movimiento.
+ Los monómeros cercanos al frente de avance de la gota se mueven también
+ hacia la pared de anclaje, sujetados por las cadenas fijadas al sustrato.
+ Por otro lado, los monómeros cercanos al extermo izquierdo de la gota poseen
+ una velocidad positiva en el eje 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Esto indica que luego del paso de la gota, las cadenas que estaban comprimidas
+ por la misma, se expanden en la dirección perpendicular al sustrato.
  
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
 
-\lang english
+\begin_layout Plain Layout
+Aca podría ir una figura del cyclic motion de un polímero
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Del gráfico superior de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rend_2D_histo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se puede observar como los monómeros terminales cercanos a la pared poseen
+ una velocidad negativa, es decir contraria a la dirección del flujo.
+ Los monómeros terminales visitan la parte superior del cepillo, entran
+ en contacto con la gota y son arrastrados por la misma en la dirección
+ del flujo.
+ Luego de estirarse, las cadenas se retraen hacia la pared del canal y vuelven
+ cerca de su posision de anclaje tomando una velocidad negativa en 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+.
+ Este movimiento colectivo del cepillo, que se asemeja al de una cinta en
+ una maquina caminadora, es compatible con el ya estudiado movimiento cíclico
+\begin_inset CommandInset citation
+LatexCommand cite
+key "0295-5075-81-2-28002,:/content/aip/journal/jcp/140/1/10.1063/1.4851195"
+literal "false"
+
+\end_inset
+
+.
+ Como se explica en las referencias, el movimiento cíclico describe el movimient
+o de las cadenas individuales en flujo.
+ Como se aprecia en este caso, los monómeros cercanos al líquido en movimiento
+ tienden a acompañar el movimiento del fluido, mientras que los monómeros
+ más cercanos al sustrato de fijado se mueven en la dirección contraria.
+ Al aumentar la rigidez de las cadenas, este movimiento colectivo deja de
+ ser visible, ya que la fuerza de flexión impide a los monómeros terminales
+ plegarse hacia el sustrato.
+ Los cadenas más rígidas describen un movimiento similar al de un parabrisas
+ de un auto, en que la trayectoria de ida y vuelta, al ser empujados por
+ la gota, son similares.
+\end_layout
+
+\begin_layout Standard
+Para comprender la influencia de está dinámica del cepillo sobre la dinámica
+ de la gota, se calculó la velocidad del cepillo en la zona de interacción
+ con el líquido.
+ Se tomó el promedio de la velocidad de los monómeros, ponderado por el
+ producto de las densidades del líquido 
+\begin_inset Formula $\rho_{l}$
+\end_inset
+
+ y el cepillo 
+\begin_inset Formula $\rho_{b}$
+\end_inset
+
+.
+ Como se mencionó anteriormente el producto 
+\begin_inset Formula $\rho_{l}(\boldsymbol{r})\rho_{b}(\boldsymbol{r})$
+\end_inset
+
+ es no nulo, solo en las zonas del espacio en las que las densidades del
+ líquido y los monómeros son mayores a cero.
+ Se define entonces 
+\begin_inset Formula $v_{b}^{(BL)}$
+\end_inset
+
+, como la velocidad del cepillo en la capa lindante con el líquido y se
+ calcula según la siguiente ecuación:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+v_{b}^{(BL)}\equiv\frac{\int d\boldsymbol{r}\rho_{l}(\boldsymbol{r})\rho_{b}(\boldsymbol{r})v_{b}(\boldsymbol{r})}{\int d\boldsymbol{r}\rho_{l}(\boldsymbol{r})\rho_{b}(\boldsymbol{r})}\,,\label{eq:vBL_b}
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $v_{b}(\boldsymbol{r})$
+\end_inset
+
+ es la velocidades del cepillo en la dirección del flujo.
+ De la misma manera, se puede definir la velocidad del líquido en la capa
+ lindante con el cepillo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+v_{l}^{(BL)}\equiv\frac{\int d\boldsymbol{r}\rho_{l}(\boldsymbol{r})\rho_{b}(\boldsymbol{r})v_{l}(\boldsymbol{r})}{\int d\boldsymbol{r}\rho_{l}(\boldsymbol{r})\rho_{b}(\boldsymbol{r})}\,,\label{eq:vBL_l}
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $v_{l}(\boldsymbol{r})$
+\end_inset
+
+ es la velocidad del líquido en la dirección del flujo.
+ Nuevamente se tomo 
+\begin_inset Formula $\rho_{l}=0$
+\end_inset
+
+, si la densidad del fluido es menor al promedio entre la densidad del líquido
+ y la densidad de vapor de gas, para tomar en cuenta solamente la fase líquido
+ y anular la contribución del gas.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -3562,8 +3744,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename figs/SlipVel_vs_rigidity3.eps
 	lyxscale 45
@@ -3576,30 +3756,226 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:SlipVel_vs_rigidity"
 
 \end_inset
 
-Velocity of the brush (black circles) and liquid (red squares) in the brush-liqu
-id interface are plotted with respect to the reduced persistence length.
- The difference between these velocities, shows how the liquid boundary
- layer passes over the brush boundary layer (open green diamonds).
- Inset: droplet velocity versus the liquid boundary layer velocity.
+Se grafican la velocidad del cepillo (círculos negros) y del líquido (cuadrados
+ rojos) en la interfase líquido cepillo en función de la longitud de persistenci
+a dividida por la longitud de contorno de las cadenas.
+ La diferencia entre estas velocidades cuantifica el deslizamiento de la
+ gota sobre el cepillo polimérico y está presentada en rombos verdes.
+ En el recuadro se muestra la velocidad de la gota en función de la velocidad
+ de la capa de líquido en contacto con el cepillo, apreciándose una relación
+ lineal entre ambos.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SlipVel_vs_rigidity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se grafican las velocidades del cepillo (en negro) y la velocidad del líquido
+ (en rojo) en la zona de interacción cepillo líquido.
+ Se puede apreciar que la velocidad del cepillo cercano al líquido decrece
+ monótonamente con la rigidez de las cadenas.
+ Como se aprecia en el perfil de momento lineal para las cadenas totalmente
+ flexibles (ver figura superior 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rend_2D_histo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), los monómeros en contacto con la gota son arrastrados en la dirección
+ del flujo, y luego estos monómeros vuelven a su posición de equilibrio
+ por una trayectoria mas cercana a la pared del canal.
+ Al aumentar la rigidez de los polímeros, estos no logran flexionarse y
+ volver a otra altura, luego de ser arrastrados por la gota.
+ Este movimiento de las cadenas rígidas, en el cual la trayectoria de ida
+ es la misma que la de la vuelta, hace que el promedio de la velocidad de
+ los monómeros en contacto con el líquido sea cercano a cero.
+\end_layout
+
+\begin_layout Standard
+El comportamiento de la velocidad del líquido en contacto con el cepillo
+ 
+\begin_inset Formula $v_{l}^{(BL)}$
+\end_inset
+
+ tiene un comportamiento similar al de 
+\begin_inset Formula $v_{b}^{(BL)}$
+\end_inset
+
+.
+ Aunque de manera más ruidosa, la velocidad de la capa límite del líquido
+ disminuye monótonamente con la rigidez de las cadenas.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SlipVel_vs_rigidity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se grafica en rombos verdes la diferencia entre 
+\begin_inset Formula $v_{l}^{(BL)}$
+\end_inset
+
+ y 
+\begin_inset Formula $v_{b}^{(BL)}$
+\end_inset
+
+, y allí se puede observa que esta cantidad se mantiene relativamente constante
+ hasta 
+\begin_inset Formula $l_{p}/l_{c}=6$
+\end_inset
+
+.
+ Esto indica que la velocidad de deslizamiento del líquido sobre el cepillo
+ mantiene un valor similar para los distintos valores de rigidez, pero lo
+ que se modifica es la velocidad de la capa límite del cepillo.
+ Es decir, que al incrementar la rigidez de los polímeros, la velocidad
+ de la capa de monómeros en contacto con el líquido disminuye, frenando
+ de manera más eficaz a la gota, mientras que la velocidad relativa de la
+ gota sobre la capa de monómeros en contacto con el líquido se mantiene
+ relativamente constante.
+ Es interesante notar que el efecto de frenado del cepillo sobre la gota
+ es de naturaleza dinámica y no estática.
+ Es la forma de moverse de la gota, la que determina en gran medida la velocidad
+ de la gota en el nanocanal.
  
 \end_layout
 
+\begin_layout Standard
+Para cuantificar esta última afirmación se calculó la correlación entre
+ la velocidad de la gota 
+\begin_inset Formula $v_{d}$
 \end_inset
 
+ y la velocidad de los monómeros en contacto con el líquido 
+\begin_inset Formula $v_{b}^{(BL)}$
+\end_inset
 
+, obteniendo un valor 
+\begin_inset Formula $corr(v_{d},v_{b}^{(BL)})=0.91$
+\end_inset
+
+.
+ Esto refuerza la hipótesis, de que la velocidad de la gota está influenciada
+ de gran manera por la capacidad del cepillo de acompañar el movimiento
+ del líquido.
+ Se grafica en el recuadro de a figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SlipVel_vs_rigidity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ la velocidad de la gota en función de la velocidad de la capa límite del
+ líquido 
+\begin_inset Formula $v_{l}^{(BL)}$
+\end_inset
+
+.
+ Como es de esperarse, existe una relación lineal entre la velocidad de
+ la gota y la velocidad de la capa límite del líquido en contacto con el
+ cepillo polimérico.
+ De esta manera, se puede identificar aproximadamente a 
+\begin_inset Formula $v_{l}^{(BL)}$
+\end_inset
+
+ como la velocidad de deslizamiento efectiva de la gota.
 \end_layout
 
+\begin_layout Standard
+Para 
+\begin_inset Formula $l_{p}/l_{c}>4$
 \end_inset
 
+, la diferencia entre 
+\begin_inset Formula $v_{l}^{(BL)}$
+\end_inset
 
+ y 
+\begin_inset Formula $v_{b}^{(BL)}$
+\end_inset
+
+ (llamemosla 
+\begin_inset Formula $\delta v_{s}$
+\end_inset
+
+) sufre un incremento repentino.
+ Este incremento en la velocidad de deslizamiento entre el líquido y el
+ cepillo se produce simultaneamente con una reducción en la cantidad de
+ interacciones entre el cepillo y la gota, como se aprecia en la figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Brush_Liq_Interactions"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Creemos que al decrecer la cantidad de interacciones entre el líquido y
+ el cepillo, disminuye la fricción entre ambos y se produce un aumento en
+ la velocidad de deslizamiento 
+\begin_inset Formula $\delta v_{s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para resumir, existen dos efectos que determinan la velocidad de la gota
+ en el nanocanal.
+ Por un lado, la dinámica interna del cepillo polimérico.
+ Las cadenas totalmente flexibles permiten un movimiento que se asemeja
+ al de una cinta de una maquina caminadora y acompañan al líquido.
+ Al aumentar la rigidez, la dinámica del cepillo amaina, reduciendo la velocidad
+ final de la gota.
+ La otra cantidad importante, es la velocidad de deslizamiento de la capa
+ límite de líquido sobre los monómeros 
+\begin_inset Formula $\delta v_{s}$
+\end_inset
+
+.
+ Esta cantidad permanece relativamente constante, hasta 
+\begin_inset Formula $l_{p}/l_{c}=4$
+\end_inset
+
+ y luego crece abruptamente con la rigidez de las cadenas.
+ Estos factores compiten entre sí, y el efecto de la dinámica interna del
+ cepillo parece dominar.
 \end_layout
 
 \begin_layout Subsection
@@ -3607,8 +3983,24 @@ Comportamiento del cepillo polimérico
 \end_layout
 
 \begin_layout Standard
+Hasta ahora se ha estudiado la interacción entre el cepillo y la gota líquida,
+ y se mostrado como la dinámica interna del cepillo puede influir sobre
+ las propiedades reologicas del sistema.
+ En estudios recientes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/acs.langmuir.7b00217"
+literal "false"
 
-\lang english
+\end_inset
+
+ se a mostrado una relación entre las deformaciones del cepillo poliméricos
+ y las fuerzas de freicción sobre líquidos en nanocanales.
+ Por lo tanto, es preciso profundizar en el estudio de la conformación de
+ las cadenas y su dinámica
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -3616,8 +4008,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename figs/Rx_vs_rigidity_norm.eps
 	lyxscale 45
@@ -3631,58 +4021,146 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Rx_vs_rigidity"
 
 \end_inset
 
-End-to-end distance vector component in the flow direction (
-\begin_inset Formula $\hat{x}$
+Se muestra la componente del vector 
+\begin_inset Formula $\boldsymbol{R}_{end}$
 \end_inset
 
-) versus position (
-\begin_inset Formula $x$
+ en la dirección del flujo, en función de la posición de la cadena con respecto
+ a la gota.
+ El eje horizontal está normalizado por la mitad del ancho de la gota 
+\begin_inset Formula $D/2$
 \end_inset
 
-), normalized by the droplet size (
-\begin_inset Formula $D$
+, mientras que el eje vertical está normalizado por la longitud de contorno
+ de las cadenas.
+ Los datos son medidos en el sistema de referencia de la gota, cuyo centro
+ de masa está en 
+\begin_inset Formula $x=0$
 \end_inset
 
-).
- Data is analyzed in the droplet frame of reference, where the center of
- mass of the droplet is always on 
-\begin_inset Formula $x=0.$
+.
+ En el recuadro se muestra el valor de estiramiento máximo de las cadenas
+ para cada valor de rigidez estudiado.
+\end_layout
+
 \end_inset
 
- Inset: Maximum inclination of the end-to-end brush vector component in
- the direction of the flow (
-\begin_inset Formula $\hat{x}$
+
+\end_layout
+
 \end_inset
 
-) versus rigidity (
-\begin_inset Formula $l_{p}/l_{c}$
+
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rx_vs_rigidity"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
-).
+ se grafica la extensión media de las cadenas en la dirección del flujo
+ en función de la posición de anclaje de las mismas.
+ Estas mediciones se relizaron en un sistema solidario a la gota, en que
+ 
+\begin_inset Formula $x=0$
+\end_inset
+
+ corresponde al centro de masa de la misma.
+ Se normalizó el horizontal, dividiendo la posición por la mitad del ancho
+ de la gota 
+\begin_inset Formula $D/2$
+\end_inset
+
+, de manera que 
+\begin_inset Formula $2x/D=\pm1$
+\end_inset
+
+ corresponde al frente o a reverso de la gota.
+\end_layout
+
+\begin_layout Standard
+Para todos los valores de rigidez se cumple que cerca del centro de la gota,
+ las cadenas presentan un máximo en el estiramiento den la dirección del
+ flujo.
+ Las cadenas alejadas de la gota presentan una pequeña inclinación en la
+ dirección del flujo, debido a la fuerza externa constante aplicada sobre
+ todas las partículas 
+\begin_inset Formula $F_{ext}=0.002\varepsilon/\sigma$
+\end_inset
+
+ .
  
 \end_layout
 
+\begin_layout Standard
+Se puede observar que 
+\begin_inset Formula $R_{x}$
 \end_inset
 
+ varía ampliamente con el valor de 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
 
-\end_layout
+.
+ Para observar mejor esta dependencia, se grafica en el recuadro de la figua
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rx_vs_rigidity"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+, el máximo del pefil de 
+\begin_inset Formula $R_{x}$
+\end_inset
 
+, en función de la rigidez de las cadenas 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+.
+ Primero cabe notar el comportamiento no monótono de del estiramiento de
+ las cadenas en la dirección del flujo en función de la longitud de persistencia.
+ La física de las cadenas totalmente flexibles es dominado por la entropía
+ configuracional, y tienden a permanecer en un estado de glóbulo, flexionada
+ sobre si misma, impidiendo el estiramiento.
+ En el otro lado del espectro, la física de las cadenas muy rígidas 
+\begin_inset Formula $l_{p}/l_{c}\gg1$
+\end_inset
+
+ es dominado por la energía de flexión y estas se estiran verticalmente,
+ penalizando la inclinación en las direcciones paralelas a la pared.
+ Para valores de rigidez 
+\begin_inset Formula $l_{p}/l_{c}\simeq1$
+\end_inset
+
+, las cadenas son suficientemente rígidas para mantener una orientación
+ coherente a lo largo de todo el contorno, y suficientemente flexibles para
+ extenderse en la dirección del flujo.
+ Para este valor de longitud de persistencia 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+, la inclinación de las cadenas alcanza su valor máximo.
+ 
 \end_layout
 
 \begin_layout Standard
