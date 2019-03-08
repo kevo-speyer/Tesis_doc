@@ -92,7 +92,11 @@ Lic.
  Kevin Speyer
 \end_layout
 
-\begin_layout Abstract
+\begin_layout Chapter*
+Resumen
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -144,7 +148,7 @@ s de fricción y transporte del líquido.
  
 \end_layout
 
-\begin_layout Abstract
+\begin_layout Standard
 Por otro lado, se estudió el comportamiento del sistema cuando el ancho
  del canal es menor al doble de la longitud de contorno de los polímeros
  anclados en su interior.
@@ -4075,7 +4079,7 @@ noprefix "false"
 
  se grafica la extensión media de las cadenas en la dirección del flujo
  en función de la posición de anclaje de las mismas.
- Estas mediciones se relizaron en un sistema solidario a la gota, en que
+ Estas mediciones se realizaron en un sistema solidario a la gota, en que
  
 \begin_inset Formula $x=0$
 \end_inset
@@ -4128,7 +4132,7 @@ noprefix "false"
 
 \end_inset
 
-, el máximo del pefil de 
+, el máximo del perfil de 
 \begin_inset Formula $R_{x}$
 \end_inset
 
@@ -4164,8 +4168,6 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 \begin_inset Float figure
 wide false
 sideways false
@@ -4173,8 +4175,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename figs/Rz_vs_rigidity2_norm.eps
 	lyxscale 45
@@ -4186,37 +4186,53 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Rz_vs_x"
 
 \end_inset
 
-Profile of the end-to-end polymer vector component in the direction perpendicula
-r to the walls (
-\begin_inset Formula $\hat{z}$
+Perfil de la componente vertical (
+\begin_inset Formula $z$
 \end_inset
 
-) versus 
-\begin_inset Formula $x$
+) del vector 
+\begin_inset Formula $\boldsymbol{R}_{end}$
 \end_inset
 
- coordinate, in the droplet frame of reference .
- The horizontal axis is normalized, dividing by the length of the droplet
- in the direction of the droplet velocity.
- Inset: Mean value of 
+ en función de la coordenada posición de las cadenas relativas al centro
+ de masa de la gota, para distintos valores de rigidez 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+ de los polímeros.
+ El eje horizontal está normalizado por la mitad del ancho de la gota 
+\begin_inset Formula $D/2$
+\end_inset
+
+, y el eje vertical está normalizado por la longitud de contorno de las
+ cadenas 
+\begin_inset Formula $l_{c}$
+\end_inset
+
+.
+ En el recuadro se grafica el valor medio de 
 \begin_inset Formula $R_{z}$
 \end_inset
 
- unperturbed (black circles) and under the droplet (red squares) in a log-log
- plot.
- The dashed line is the scaling law predicted by Mean Field theory 
+ para el cepillo directamente debajo de la gota (círculos negros) y para
+ el cepillo lejos de la gota (cuadrados rojos) en función de la longitud
+ de persistencia 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+.
+ La linea punteada verde es el ajuste con la ley de potencias predicha por
+ Birshtein y Zhulina
 \begin_inset CommandInset citation
 LatexCommand cite
 key "BIRSHTEIN19832165"
-literal "true"
+literal "false"
 
 \end_inset
 
@@ -4231,6 +4247,127 @@ literal "true"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rz_vs_x"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se presenta la componente 
+\begin_inset Formula $z$
+\end_inset
+
+ del vector 
+\begin_inset Formula $\boldsymbol{R}_{end}$
+\end_inset
+
+ de las cadenas, en función de la posición de las cadena con respecto a
+ la gota, para los distintos valores de longitud de persistencia estudiados
+ 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+.
+ Las datos del cepillo superior e inferior fueron promediados para hacer
+ esta análisis y disminuir el error estadístico, aprovechando la simetría
+ del problema.
+ Como en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rx_vs_rigidity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, el eje vertical de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rz_vs_x"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ está normalizado por la longitud de contorno de las cadenas 
+\begin_inset Formula $l_{c}$
+\end_inset
+
+, y el eje vertical está normalizado por la mitad del ancho de la gota.
+ 
+\end_layout
+
+\begin_layout Standard
+En esta figura se aprecia el perfil de la altura del cepillo a lo largo
+ del canal, en el sistema de referencia solidario a la gota.
+ Cerca de 
+\begin_inset Formula $x=0$
+\end_inset
+
+, donde se encuentra el centro de masa de la gota, se observa la compresión
+ del cepillo hacia la pared.
+ Lejos de la gota, la altura de las cadenas alcanza un valor constante,
+ que varía sensiblemente con longitud de persistencia 
+\begin_inset Formula $l_{p}$
+\end_inset
+
+.
+ Como es de esperarse, al aumentar la rigidez de las cadenas, estas se expanden
+ en la dirección perpendicular al sustrato incrementando la altura promedio
+ del cepillo.
+ En el recuadro de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rz_vs_x"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se muestra la altura media del cepillo lejos de la gota en círculos negros
+ y la altura media del cepillo ubicado directamente bajo la gota en cuadrados
+ rojos en función de la longitud de persistencia en escala logarítmica.
+ El comportamiento de la altura del cepillo sin perturbar y la altura del
+ cepillo debajo de la gota se comportan de manera similar a simple vista.
+ Ambos crecen con la longitud de persistencia, ajustándose a una ley de
+ potencias 
+\begin_inset Formula $h_{brush}\propto l_{p}^{1/4}$
+\end_inset
+
+, como muestra la linea verde cortada.
+ Esta relación fue hallada por primera vez por Birshtein y Zhulina
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BIRSHTEIN19832165"
+literal "false"
+
+\end_inset
+
+ en 1983, utilizando teoría de campo medio.
+ Para 
+\begin_inset Formula $l_{p}/l_{c}>4$
+\end_inset
+
+ se aprecia una saturación de este comportamiento, debido a que 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ se acerca al valor máximo que puede tomar, que corresponde a la cadena
+ estirada completamente en la dirección perpendicular al sustrato 
+\begin_inset Formula $R_{z}=l_{c}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -4258,22 +4395,29 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:SDRz_vs_rigidity"
 
 \end_inset
 
-Difference between vertical stretching of the polymers under the droplet
- and far away from it (black circles) as functions of the reduced persistence
- length.
- This magnitude quantifies the deformations of the brush in the directions
- perpendicular to the wall, due to the presence of the droplet.
- In red squares, it is shown the mean displacement of the end-to-end vector
- under the droplet with respect to the unperturbed displacement in the direction
- perpendicular to the wall.
+En círculos negros se muestra la diferencia entre el valor medio de la altura
+ del cepillo lejos de la gota y el valor mínimo de altura de las cadenas
+ comprimidas por el líquido en función del parámetro de rigidez 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+ de los polímeros.
+ Esta magnitud cuantifica cuan deformable es el cepillo polimérico en la
+ dirección perpendicular al sustrato al cual está anclado.
+ En cuadrados rojos se muestra la diferencia entre el desplazamiento medio
+ en la dirección 
+\begin_inset Formula $z$
+\end_inset
+
+ del monómero terminal bajo la gota y lejos de la misma, normalizado por
+ la altura media del cepillo sin perturbar por la gota.
+ 
 \end_layout
 
 \end_inset
@@ -4287,8 +4431,163 @@ Difference between vertical stretching of the polymers under the droplet
 \end_layout
 
 \begin_layout Standard
+Del recuadro de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rz_vs_x"
+plural "false"
+caps "false"
+noprefix "false"
 
-\lang english
+\end_inset
+
+ no parece haber una gran diferencia entre el comportamiento del cepillo
+ comprimido por la gota y el cepillo lejos de la gota a medida que aumenta
+ la rigidez de las cadenas.
+ Sin embargo, en una inspección más cercana, puede notarse que existen desviacio
+nes entre ambas curvas, que están relacionados a la compresibilidad los
+ cepillos con cadenas de distintas rigideces.
+ 
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SDRz_vs_rigidity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se grafica (círculos negros) la diferencia entre el valor medio del estiramient
+o de las cadenas en la dirección vertical 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ lejos del cepillo y el valor mínimo de 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ bajo la compresión de la gota líquida en función de 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+.
+ Esta magnitud cuantifica la compresibilidad del cepillo ante la presión
+ ejercida por la gota.
+ Dado que la forma de la gota es similar para todos los valores 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+, los valores de deformación son comparables entre si.
+ De este gráfico puede observarse un resultado anti intuitivo: la compresibilida
+d del cepillo no es monótono con la rigidez de las cadenas.
+ Las cadenas totalmente flexibles son difíciles de comprimir, una vez que
+ los monómeros están suficientemente cerca, ya que las interacciones de
+ volumen excluido son muy duras.
+ Por otro lado, las cadenas más rígidas 
+\begin_inset Formula $l_{p}/l_{c}\gg1$
+\end_inset
+
+ permanecen estiradas en la dirección perpendicular al sustrato por el potencial
+ de orientación y soportan la presión inclinándose ligeramente.
+ En el medio del espectro de dureza, las cadenas con 
+\begin_inset Formula $l_{p}/l_{c}\simeq1$
+\end_inset
+
+presentan la mayor deformación ante la misma presión ejercida por la gota.
+ Para equilibrar la fuerza ejercida por la gota, estás cadenas deben inclinarse
+ más que en el caso 
+\begin_inset Formula $l_{p}/l_{c}\gg1$
+\end_inset
+
+, ya que poseen una constante de flexión más baja.
+ En este caso se observa que las cadenas semiflexibles 
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+ se deforman más fácil que las totalmente flexibles 
+\begin_inset Formula $l_{p}/l_{c}=0.1$
+\end_inset
+
+, porque en estas últimas domina la interacción de volumen excluido, mientras
+ que en las semiflexibles domina la energía de flexión.
+\end_layout
+
+\begin_layout Standard
+Los círculos rojos en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SDRz_vs_rigidity"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ muestran la diferencia entre la desviación estándar de 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ debajo de la gota y la desviación estándar de 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ lejos de la gota, normalizado por el 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ lejos de la gota.
+ Esta cantidad da una idea de la diferencia entre la movilidad perpendicular
+ al sustrato de las cadenas debajo de la gota y alejada de la misma.
+ Las cadenas más flexibles 
+\begin_inset Formula $l_{p}/l_{c}<1$
+\end_inset
+
+ presentan un valor negativo, indicando que los monómeros terminales pierden
+ movilidad ser comprimidos por el líquido.
+ Para valores mayores de rigidez 
+\begin_inset Formula $l_{p}/l_{c}>1$
+\end_inset
+
+ se aprecia que 
+\begin_inset Formula $\left\langle SDR_{z}\right\rangle _{drop}<\left\langle SDR_{z}\right\rangle $
+\end_inset
+
+, lo cual indica que la movilidad de las cadenas es mayor al estar en contacto
+ con la gota líquida, que al estar libres.
+ Este resultado se puede comprender de la siguiente manera: la gota empuja
+ a los monómeros terminales hacia el sustrato, fuera de su posición de equilibri
+o.
+ El potencial de flexión actúa forzando las cadenas a expandirse en la dirección
+ 
+\begin_inset Formula $z$
+\end_inset
+
+, y los monómeros terminales se estiran visitando el líquido.
+ Esto explica la amplia movilidad de las cadenas al ser presionadas por
+ la gota.
+ En las zonas ausentes de líquido, las cadenas permanecen cerca de su posición
+ de equilibrio y no alcanzan ciertos valores de 
+\begin_inset Formula $z$
+\end_inset
+
+ que si alcanzan al ser forzados por la gota.
+ A medida que aumenta la rigidez de las cadenas más allá de 
+\begin_inset Formula $l_{p}/l_{c}>4$
+\end_inset
+
+, la movilidad de las cadenas debajo de la gota disminuye, ya que estás
+ son cada vez menos compresibles y se mueven en un rango de valores de 
+\begin_inset Formula $z$
+\end_inset
+
+ más acotado.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -4296,8 +4595,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename figs/Rx_time_autocorr.eps
 	lyxscale 45
@@ -4310,35 +4607,90 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Time-autocorrelation-function"
 
 \end_inset
 
-Time autocorrelation function of the 
-\begin_inset Formula $\hat{x}$
+Función de autocorrelación temporal de la posición del monómero libre de
+ las cadenas, para diferentes valores de rigidez.
+ Para altos valores de rigidez, se pueden apreciar las oscilaciones de 
+\begin_inset Formula $C_{x}(t)$
 \end_inset
 
- component of the end to end vector for different values of rigidity.
- The values of relative stiffness 
-\begin_inset Formula $l_{p}/l_{c}$
+, que corresponde al vaivén de las cadenas
+\end_layout
+
 \end_inset
 
- are shown in the legend.
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para expandir el entendimiento de la dinámica individual de las cadenas,
+ en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Time-autocorrelation-function"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se grafica la función de autocorrelación temporal de la componente 
+\begin_inset Formula $x$
+\end_inset
+
+ del vector 
+\begin_inset Formula $\boldsymbol{R}_{end}(t)$
+\end_inset
+
+, para diferentes valores de rigidez.
+ Esta cantidad se calculo de la siguiente manera:
+\begin_inset Formula 
+\begin{equation}
+C_{x}(t)=\frac{\langle R_{x}(0)\text{·}R_{x}(t)\rangle-\langle R_{x}^{2}\rangle}{\langle R_{x}\rangle^{2}-\langle R_{x}^{2}\rangle}\,,
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $\langle f\rangle$
+\end_inset
+
+ denota el promedio temporal de la cantidad 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ El efecto del potencial de flexión queda en evidencia para las cadenas
+ más rígidas, al observa las oscilaciones en la función de autocorrelación.
+ Como es de esperar, al aumentar la rigidez de las cadenas, incrementa la
+ frecuencia de oscilación Para las cadenas menos rígidas 
+\begin_inset Formula $l_{p}/l_{c}<3$
+\end_inset
+
+ no se observan oscilaciones en 
+\begin_inset Formula $C_{x}(t)$
+\end_inset
+
+.
+ Para tiempos largos se aprecia la tendencia de la función de autocorrelación
  
-\end_layout
-
+\begin_inset Formula $C_{x}(t)\rightarrow0;\,t\rightarrow\infty$
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
-
+, que indica la descorrelación del movimiento de las cadenas para tiempos
+ largos.
+ También se puede observa que las cadenas totalmente flexibles tienen un
+ tiempo característico de decaimiento mas corto que las cadenas semiflexibles.
 \end_layout
 
 \begin_layout Subsection
