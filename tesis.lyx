@@ -2917,8 +2917,6 @@ name "fig:Histo_cm"
 \end_layout
 
 \begin_layout Subsection
-
-\lang english
 Determinación del ancho del canal
 \begin_inset CommandInset label
 LatexCommand label
@@ -4720,39 +4718,36 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Fluid_vel_vs_x"
 
 \end_inset
 
-Fluid velocity in the direction of the flow (
-\begin_inset Formula $\hat{x}$
+ Perfil de velocidad del fluido en la dirección del flujo, para 
+\begin_inset Formula $y=L_{y}/2$
 \end_inset
 
-) as a function of the x coordinate (in log scale).
- The droplet (
-\begin_inset Formula $x<48\sigma$
-\end_inset
-
-) travels at a higher velocity than the vapor phase (
-\begin_inset Formula $x>48\sigma$
-\end_inset
-
-).
- It is also possible to observe that gas velocity decays exponentially with
- x.
-  Inset: 2-dimensional density profile of the droplet, with the liquid velocity
- field overlayed.
- The velocities are calculated in the frame of reference of the center of
- mass of the droplet.
- The color legend shows the liquid number density in units of 
-\begin_inset Formula $\sigma^{-3}$
+, en función de la coordenada 
+\begin_inset Formula $x$
 \end_inset
 
 .
+ Se puede apreciar que la gota (
+\begin_inset Formula $x<48\sigma$
+\end_inset
+
+) viaja más rápido que la fase gaseosa del fluido.
+ La curva roja es el ajuste del decaimiento exponencial en la velocidad
+ del gas.
+ En el recuadro se observa el perfil de densidad bidimensional de la gota,
+ a 
+\begin_inset Formula $y$
+\end_inset
+
+ constante.
+ Sobre el mismo, se grafica el campo de velocidad de las partículas de líquido
+ dentro de la gota, para un sistema de referencia solidario a la misma
 \end_layout
 
 \end_inset
@@ -4766,8 +4761,170 @@ Fluid velocity in the direction of the flow (
 \end_layout
 
 \begin_layout Standard
+En esta última subsección se analizará el comportamiento del fluido en el
+ nanocanal.
+ Una de las particularidades del sistema estudiado en este capítulo es que
+ el fluido está compuesto por dos fases.
+ El líquido, por un lado, y el vapor de gas en coexistencia por el otro.
+ Para analizar la dinámica del fluido, se grafica en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Fluid_vel_vs_x"
+plural "false"
+caps "false"
+noprefix "false"
 
-\lang english
+\end_inset
+
+ un perfil de la velocidad del fluido en la dirección 
+\begin_inset Formula $x$
+\end_inset
+
+, a la altura media del canal 
+\begin_inset Formula $z=L_{z}/2$
+\end_inset
+
+, en función de la coordenada 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ La gota se encuentra en valores 
+\begin_inset Formula $x<48\sigma$
+\end_inset
+
+, dónde se aprecia la linea verde punteada que la divide de la fase gaseosa
+ para 
+\begin_inset Formula $x>48\sigma$
+\end_inset
+
+.
+ En primer lugar puede observarse la diferencia en la amplitud de las fluctuacio
+nes de la velocidad para la gota y para el gas.
+ Naturalmente, la velocidad del líquido es menos ruidosa, ya que al ser
+ una fase más densa, se tienen más partículas y en consecuencia promedios
+ mas robustos.
+ Por el otro lado, el gas es poco denso y la cantidad de partículas es mucho
+ menor, aumentando la incerteza en el perfil velocidad.
+ 
+\end_layout
+
+\begin_layout Standard
+También se puede observar que la velocidad media de la gota es mucho mayor
+ que la velocidad media del gas.
+ Esto se entiende si recordamos que la fuerza externa es aplicada por partícula
+ y la gota es considerablemente que el gas.
+ La fuerza aplicada por unidad de volumen sobre el líquido es más de un
+ orden de magnitud mayor que la fuerza por unidad de volumen aplicada sobre
+ el gas.
+ La velocidad del gas cerca de la gota 
+\begin_inset Formula $x=48\sigma$
+\end_inset
+
+ es igual a la velocidad del líquido y luego decrece exponencialmente, como
+ se puede ver del ajuste (curva roja).
+ Del ajuste del decaimiento exponencial de la velocidad del vapor, se puede
+ extraer una longitud característica del relajamiento del gas en el nanocanal,
+ 
+\begin_inset Formula $l_{rel}=107\sigma$
+\end_inset
+
+.
+ Lejos de la gota, la velocidad del gas tiende a la velocidad terminal 
+\begin_inset Formula $v_{\infty}=0.085\sigma/\tau$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En el recuadro de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Fluid_vel_vs_x"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se exhibe el perfil de densidad lateral (
+\begin_inset Formula $y\equiv L_{y}/2$
+\end_inset
+
+) bidimensional de la gota y el campo de velocidades dentro de la gota para
+ el sistema solidario a la misma.
+ Se aprecia la recirculación dentro del líquido, con dos nodos cerca de
+ la interfase líquido cepillo.
+ Günther et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/la0482406"
+literal "false"
+
+\end_inset
+
+ midieron y capturaron campos vectoriales de volcidad similares para segmentos
+ de líquido en microcanales, en coexistencia con gas (ver figura 5b de la
+ referencia 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/la0482406"
+literal "false"
+
+\end_inset
+
+).
+ Este flujo interno de líquido dentro de la gota afecta su velocidad media,
+ debido a los efectos de disipación viscosa.
+\end_layout
+
+\begin_layout Standard
+Por la diferencia de velocidades entre el gas y la gota, se puede afirmar
+ que el líquido se mueve relativo al vapor de gas, y, por lo tanto, la gota
+ sufre una fuerza de arrastre aplicada por el gas.
+ Si el canal no es lo suficientemente largo, como para dejar relajar al
+ gas (
+\begin_inset Formula $L_{x}\le2l_{rel}$
+\end_inset
+
+) y adoptar su velocidad final, entonces la velocidad media del gas será
+ más parecida a la velocidad de la gota.
+ La fuerza de arrastre es proporcional a la diferencia de velocidad entre
+ el gas y el líquido, y en consecuencia, en un canal corto, la fuerza de
+ arrastre que sufrirá la gota será menor, tal como puede apreciarse en la
+ figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "dropVel_vs_L_kb0"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Otra manera de pensar esto, es notando que dado a las condiciones periódicas
+ de contorno en la dirección del flujo 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+, se puede pensar a este sistema como un tren infinito de gotas consecutivas,
+ dónde 
+\begin_inset Formula $L_{x}$
+\end_inset
+
+ es la distancia constante entre gotas.
+ Si la distancia entre gotas es suficientemente grande, el gas alcanza su
+ velocidad terminal 
+\begin_inset Formula $v_{\infty}$
+\end_inset
+
+ y opone una mayor resistencia al flujo de la gota.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
@@ -4776,8 +4933,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename figs/vd_vs_L2_.eps
 	lyxscale 50
@@ -4790,38 +4945,244 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "dropVel_vs_L_kb0"
 
 \end_inset
 
-Droplet velocity (
-\begin_inset Formula $v_{d}$
-\end_inset
-
-) as a function of the channel length (
+Velocidad de la gota, en función del largo de la caja de simulación en la
+ dirección del flujo 
 \begin_inset Formula $L_{x}$
 \end_inset
 
-).
-  Inset: Droplet velocity (black circles) plotted against surrounding gas
- velocity.
- Each point corresponds to a different channel length.
- The red continuous line is the linear regression of the data.
+.
+ Se aprecia que la velocidad de la gota decrece con 
+\begin_inset Formula $L_{x}$
+\end_inset
+
+, debido a que al aumentar 
+\begin_inset Formula $L_{x}$
+\end_inset
+
+, disminuye la velocidad media del gas, lo cual resulta en menos fricción.
+ En el recuadro se muestra la velocidad de la gota (circulos negros) en
+ función de la velocidad del gas circundante a la misma.
+ La linea roja es la regresión lineal de los datos, que validan la relación
+ proporcional entre las variables
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para estudiar más a fondo la interacción entre el vapor y el líquido, se
+ realizaron simulaciones variando el largo de la caja de simulación en la
+ dirección del flujo 
+\begin_inset Formula $L_{x}$
+\end_inset
+
+.
+ Para poder comparar las simulaciones, se utilizaron polímeros totalmente
+ flexibles para revestir el canal, y una gota líquida compuesta por 
+\begin_inset Formula $n_{d}\simeq4200$
+\end_inset
+
+ partículas.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "dropVel_vs_L_kb0"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se muestra la velocidad media de la gota en función de la longitud de la
+ caja de simulación en la dirección del flujo 
+\begin_inset Formula $L_{x}$
+\end_inset
+
+.
+ Se puede observar que, a pesar de mantener la masa de la gota constante
+ y aplicar la misma fuerza externa en todos los casos, existe una disminución
+ notable 
+\begin_inset Formula $(\sim16\%$
+\end_inset
+
+) de la velocidad media de la gota al aumentar 
+\begin_inset Formula $L_{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Se propuso estudiar el modelo de fuerza de arrastre en el gas y líquido,
+ según la cual, la fuerza ejercida por el gas sobre el líquido es proporcional
+ a la diferencia de velocidad entre la gota y el gas:
+\begin_inset Formula 
+\begin{equation}
+f_{g}=-\gamma_{{\rm gas}}(v_{d}-v_{{\rm gas}})\,,
+\end{equation}
+
+\end_inset
+
+donde
+\begin_inset Formula $v_{d}$
+\end_inset
+
+es la velocidad de la gota, 
+\begin_inset Formula $v_{gas}$
+\end_inset
+
+ es la velocidad del gas y 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ es un constante de fricción.
+ Las fuerzas disipativas sobre la gota son proporcionales a su velocidad
+\begin_inset CommandInset citation
+LatexCommand cite
+key "0953-8984-25-19-195103,0953-8984-23-18-184105,doi:10.1021/acs.jpcc.5b07951"
+literal "true"
+
+\end_inset
+
  
+\begin_inset Formula $f_{{\rm dis}}=-\alpha\eta Av_{d}/\delta$
+\end_inset
+
+ , donde 
+\begin_inset Formula $\eta$
+\end_inset
+
+ es la viscosidad del líquido ,
+\begin_inset Formula $A$
+\end_inset
+
+ es el área de contacto entre el líquido y el cepillo , 
+\begin_inset Formula $\delta$
+\end_inset
+
+ es la distancia de deslizamiento del líquido y 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ es una constante de orden uno.
+ La fuerza externa total aplicada sobre la gota es la suma de las fuerzas
+ externas aplicadas a cada partícula perteneciente a la gota 
+\begin_inset Formula $F_{{\rm ext}}=n_{{\rm drop}}f_{{\rm ext}}$
+\end_inset
+
+.
+ La velocidad de la gota es constante, por lo que la sumatoria de todas
+ las fuerzas aplicadas sobre la gota deben ser nulas:
 \end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+0=n_{{\rm drop}}f_{{\rm ext}}-\gamma_{{\rm gas}}(v_{d}-v_{{\rm gas}})-\alpha\eta Av_{d}/\delta\label{eq:bal_force}
+\end{equation}
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Standard
+Despejando la velocidad de la gota: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+v_{d}=v_{{\rm gas}}\gamma_{{\rm gas}}/(\gamma_{{\rm gas}}+\eta\alpha)+n_{{\rm drop}}f_{{\rm ext}}/(\gamma_{{\rm gas}}+\eta A\alpha/\delta)\label{eq:friction}
+\end{equation}
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+En el recuadro de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "dropVel_vs_L_kb0"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, se grafica la velocidad de la gota 
+\begin_inset Formula $v_{d}$
+\end_inset
+
+ en función de la velocidad del gas circundante 
+\begin_inset Formula $v_{g}$
+\end_inset
+
+.
+ La relación lineal entre las variables (ver regresión lineal en rojo),
+ está de acuerdo con la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:friction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ y sostiene el modelo de arrastre propuesto .
+ Según la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:friction"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, el coeficiente de fricción 
+\begin_inset Formula $\gamma_{gas}$
+\end_inset
+
+ puede ser estimado de este ajuste.
+ Cabe notar que la influencia del gas en la dinámica de la gota depende
+ de la relación entre las densidades de vapor 
+\begin_inset Formula $\rho_{v}$
+\end_inset
+
+ y el líquido 
+\begin_inset Formula $\rho_{l}$
+\end_inset
+
+ a la temperatura dada.
+ En este caso, la temperatura se mantuvo fija a 
+\begin_inset Formula $k_{B}T=0.8\varepsilon$
+\end_inset
+
+, y la relación entre las densidades del líquido y del vapor fue 
+\begin_inset Formula $\rho_{l}/\rho_{v}=0.7\sigma^{-3}/0.03\sigma^{-3}\simeq23$
+\end_inset
+
+.
+ Vale remarcar que la fricción entre el líquido y el gas puede tener una
+ gran influencia en flujos bifásicos en nanocanales, y debe ser tenida en
+ cuenta en los cálculos reológicos.
 \end_layout
 
 \begin_layout Section
