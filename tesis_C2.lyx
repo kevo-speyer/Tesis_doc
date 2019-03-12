@@ -4,13 +4,8 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass amsbook
+\textclass extbook
 \use_default_options true
-\begin_removed_modules
-theorems-ams
-eqs-within-sections
-figs-within-sections
-\end_removed_modules
 \maintain_unincluded_children false
 \language spanish
 \language_package auto
@@ -37,7 +32,7 @@ figs-within-sections
 \spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -62,6 +57,10 @@ figs-within-sections
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 2.5cm
+\bottommargin 3cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -73,11 +72,12 @@ figs-within-sections
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author -8664667 "Claudio Pastorino"
 \end_header
 
 \begin_body
@@ -92,7 +92,11 @@ Lic.
  Kevin Speyer
 \end_layout
 
-\begin_layout Abstract
+\begin_layout Section*
+Resumen
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -144,7 +148,7 @@ s de fricción y transporte del líquido.
  
 \end_layout
 
-\begin_layout Abstract
+\begin_layout Standard
 Por otro lado, se estudió el comportamiento del sistema cuando el ancho
  del canal es menor al doble de la longitud de contorno de los polímeros
  anclados en su interior.
@@ -189,7 +193,6 @@ literal "true"
  de temperatura constante y su conexión con la mecánica estadística.
  Más adelante se explica cómo es el proceso de medición de una cantidad
  física y la estimación de su incerteza en una corrida.
- 
 \end_layout
 
 \begin_layout Section
@@ -205,28 +208,64 @@ name "sec:Dinámica-Molecular"
 
 \begin_layout Standard
 En este trabajo se realizaron simulaciones numéricas de grano grueso con
- la técnica de dinámica molecular.
+ la técnica de dinámica molecular
+\change_inserted -8664667 1551904537
+(MD)
+\change_unchanged
+.
  Esta técnica consiste en resolver las ecuaciones de movimiento para todas
- las partículas presentes en el sistema y seguir su evolución en el tiempo.
+ las partículas presentes en el sistema y seguir su evolución en el tiempo
+\change_inserted -8664667 1551903895
+, mediante la integración numérica de dichas ecuaciones
+\change_unchanged
+.
  Primero se inicializa el sistema, ubicando cada partícula en una posición
  inicial.
  Para moléculas lineales, la posición inicial es elegida de acuerdo a una
  caminata al azar en el espacio, de manera de obtener una configuración
- cercana a al equilibrio.
+ cercana 
+\change_deleted -8664667 1551903910
+a
+\change_unchanged
+ al equilibrio.
  Para partículas sueltas, se puede elegir simplemente un punto aleatorio
  dentro de la caja de simulación como posición inicial.
  Las velocidades iniciales son seleccionadas de una distribución Maxwell-Boltzma
 nn con la temperatura deseada.
  Dado el estado inicial de todas las partículas del sistema, se calculan
  las fuerzas y se integran las ecuaciones de movimiento mediante el esquema
- Velocity Verlet, obteniendo así las trayectorias de las partículas en el
- espacio de fases.
  
+\emph on
+Velocity Verlet
+\emph default
+, obteniendo así las trayectorias de las partículas en el espacio de fases.
+
+\change_deleted -8664667 1551903958
+ 
+\change_inserted -8664667 1551903964
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -8664667 1551903985
+Sugiero poner en itálica nombres propios y palabras en inglés
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-El esquema de integración Velocity Verlet utiliza un punto medio temporal,
- como los métodos de salto de rana (
+El esquema de integración 
+\emph on
+Velocity Verlet
+\emph default
+ utiliza un punto medio temporal, como los métodos de salto de rana (
 \shape italic
 leapfrog
 \shape default
@@ -243,7 +282,11 @@ leapfrog
 \begin_inset Formula $\boldsymbol{f}(t)$
 \end_inset
 
- actuantes sobre un partícula en un instante de tiempo 
+ actuantes sobre un
+\change_inserted -8664667 1551903993
+a
+\change_unchanged
+ partícula en un instante de tiempo 
 \begin_inset Formula $t$
 \end_inset
 
@@ -326,7 +369,26 @@ Si bien este algoritmo no es particularmente preciso para incrementos temporales
  estudio, como de la gran mayoría tratados mediante el método de Dinámica
  Molecular, es sensible a las condiciones iniciales.
  Esto significa que ante condiciones iniciales muy cercanas, las trayectorias
- divergen exponencialmente.
+ divergen exponencialmente
+\change_inserted -8664667 1551904105
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -8664667 1551904111
+Cita.
+ Frenkel?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
  Como consecuencia, es de esperar que las trayectorias de las partículas
  obtenidas difieran apreciablemente de las reales.
  Sin embargo esto no representa un verdadero problema, pues no son las trayector
@@ -335,7 +397,13 @@ ias de cada una de las partículas las que se quieren conocer con exactitud,
  partículas.
  Por esta razón es que es importante que la trayectoria del sistema en el
  espacio de fases sea compatible con las restricciones dadas en el ensamble
- que se esté trabajando.
+ 
+\change_inserted -8664667 1551904147
+en el cuál 
+\change_deleted -8664667 1551904148
+que
+\change_unchanged
+ se esté trabajando.
  Si se trabaja en el ensamble canónico, que la temperatura se mantenga constante
  durante toda la experiencia, es una condición necesaria para saber que
  se están integrando correctamente las ecuaciones de movimiento.
@@ -360,7 +428,11 @@ nes.
  Para sortear las posiciones iniciales de todos los monómeros de un cepillo
  polimérico, primero se sitúan los monómeros terminales sobre la superficie,
  de manera tal que no haya solapamientos, y luego se crecen los monómeros
- subsiguientes de cada cadena, siguiendo una caminata al azar.
+ subsiguientes de cada cadena
+\change_inserted -8664667 1551904257
+ polimérica
+\change_unchanged
+, siguiendo una caminata al azar.
 \end_layout
 
 \begin_layout Standard
@@ -402,8 +474,13 @@ Force Switch on
  que no haya superposición entre partículas al finalizar al rutina de encendido
  de fuerza.
  Pero si se elige un tiempo excesivamente largo, se está desperdiciando
- tiempo de computo, ya que el sistema demora más en alcanzar el estado de
- equilibrio.
+ tiempo de c
+\change_inserted -8664667 1551904362
+ó
+\change_deleted -8664667 1551904361
+o
+\change_unchanged
+mputo, ya que el sistema demora más en alcanzar el estado de equilibrio.
 \end_layout
 
 \begin_layout Standard
@@ -433,7 +510,13 @@ Para hacer evolucionar al sistema temporalmente, es necesario conocer las
 \begin_layout Standard
 En este caso se combinaron dos métodos (
 \shape italic
-Verlet list
+Verlet 
+\change_inserted -8664667 1551904408
+L
+\change_deleted -8664667 1551904408
+l
+\change_unchanged
+ist
 \shape default
  y 
 \shape italic
@@ -480,7 +563,11 @@ reference "fig:Verlet list"
 s interactuando.
  Renovar la lista de vecinos es un algoritmo que escalea como el cuadrado
  de la cantidad de partículas, pero típicamente esto se realiza cada diez
- pasos.
+ pasos
+\change_inserted -8664667 1551904502
+ de MD
+\change_unchanged
+.
  El método de la lista de celdas sirve para agilizar el llenado de las listas
  de Verlet y funciona dividiendo la caja de simulación en celdas cuyo lado
  sea parecido a 
@@ -496,7 +583,11 @@ s interactuando.
 \end_inset
 
 .
+
+\change_deleted -8664667 1551904336
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -528,9 +619,17 @@ name "fig:Verlet list"
 \end_inset
 
 Se representa gráficamente como se realizan las listas de vecinos en el
- algoritmo Verlet List para la partícula i-ésima.
+ algoritmo 
+\emph on
+Verlet List 
+\emph default
+para la partícula i-ésima.
  La primera lista contiene a todas las partículas a una distancia menor
- al radio de de corte de las interacciones 
+ al radio 
+\change_deleted -8664667 1551904622
+de
+\change_unchanged
+ de corte de las interacciones 
 \begin_inset Formula $r_{C}$
 \end_inset
 
@@ -549,7 +648,14 @@ Se representa gráficamente como se realizan las listas de vecinos en el
  Este método permite disminuir considerablemente la cantidad de cálculos,
  ya que solamente hay que computar la distancia de cada partícula con un
  pequeño número de vecinos y no con todas las existentes en el sistema.
- Figura extraída de 
+ Figura extraída de
+\change_inserted -8664667 1551904683
+ la Ref.
+ 
+\change_deleted -8664667 1551904682
+ 
+\change_unchanged
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "frenkel.md.book.1996"
@@ -583,8 +689,13 @@ cell linked-lists
 .
  Este método es más eficiente en manejo de memoria, ya que no requiere de
  un buffer de posibles vecinos como el método anterior.
- El método consiste en dividir el espacio en celdas cubicas, y generar una
- lista enlazada (
+ El método consiste en dividir el espacio en celdas c
+\change_inserted -8664667 1551904774
+ú
+\change_deleted -8664667 1551904773
+u
+\change_unchanged
+bicas, y generar una lista enlazada (
 \shape italic
 linked-list
 \shape default
@@ -597,14 +708,21 @@ linked-list
  ), entonces para calcular las interacciones con una partícula es suficiente
  con explorar todas las partículas que se sitúan en la misma celda o en
  cualquiera de las 26 celdas lindantes.
- En principio este método es más costos que el descrito anteriormente (Verlet
- cell list), ya que para cada partícula se tienen que barrer más vecinos.
+ En principio este método es más costos que el descrito anteriormente (
+\emph on
+Verlet cell list
+\emph default
+), ya que para cada partícula se tienen que barrer más vecinos.
  Esto es fácil de ver en un sistema homogéneo con densidad 
 \begin_inset Formula $\rho$
 \end_inset
 
 .
- Para el caso de Verlet cell list, el volumen a barrer es 
+ Para el caso de 
+\emph on
+Verlet cell list
+\emph default
+, el volumen a barrer es 
 \begin_inset Formula $V=\frac{4}{3}\pi r_{c}^{3}$
 \end_inset
 
@@ -650,20 +768,55 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename figs/Time_vs_nthreads.agr
-	width 48page%
+	lyxscale 50
+	width 35page%
+	clip
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename figs/Speedup_vs_nth.agr
-	width 48page%
+	lyxscale 50
+	width 35page%
+	clip
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -674,6 +827,23 @@ name "fig:Time_vs_threads"
 \end_inset
 
 Comparación entre los métodos de listas enlazadas y lista de Verlet+celdas
+\change_inserted -8664667 1551904924
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -8664667 1551904948
+no queda claro a que hace referencia el segundo metodo: unificar nombres
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
  para optimizar el cálculo de interacciones entre pares.
  El sistema está compuesto por 90000 partículas, que interactuan por medio
  de un potencial de Lennard-Jones en una caja de dimensiones 
@@ -714,7 +884,13 @@ noprefix "false"
  a) se compara el tiempo que tardan en completar una simulación utilizando
  los dos métodos descritos, en función de la cantidad de núcleos utilizados.
  Es interesante ver que el programa serial (un solo núcleo) utilizando del
- método Verlet+listas en mucho más rápido que el de listas enlazadas.
+ método Verlet+listas e
+\change_deleted -8664667 1551905078
+n
+\change_inserted -8664667 1551905079
+s
+\change_unchanged
+ mucho más rápido que el de listas enlazadas.
  A medida que se utilizan más nucleos para los cálculos, el tiempo para
  completar la simulación baja rápidamente en el caso de celdas enlazadas,
  llegando a ser un 25% más rápido que el método de Verlet para 12 hilos.
@@ -728,10 +904,37 @@ noprefix "false"
 
 \end_inset
 
- b), en la que se muestra la curva de speed-up.
- En ésta, se calcula cuantas veces más rápido corre el programa, a medida
+ b), en la que se muestra la curva de 
+\emph on
+speed-up
+\emph default
+.
+ 
+\change_inserted -8664667 1551905192
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -8664667 1551905222
+Explicar en una oración que es el speed-up y como es una parámetro para
+ cuantificar el rendimiento de los progrs en paralelo
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+En ésta, se calcula cuantas veces más rápido corre el programa, a medida
  que se utilizan más hilos en paralelo, mientras se mantiene igual el tamaño
- del sistema (strong scaling).
+ del sistema (
+\emph on
+strong scaling
+\emph default
+).
  Se aprecia que para el esquema de listas enlazadas, la curva crece rápidamente
  con la cantidad de núcleos de cálculo, mientras que el método Verlet+celdas,
  la curva se aplana rápidamente.
@@ -810,7 +1013,11 @@ donde
 
  refieren a las diferentes especies de partículas.
  Estas especies pueden ser distintos tipos de polímeros o distintos fluidos.
+
+\change_deleted -8664667 1551907673
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -844,7 +1051,11 @@ s de contorno, serían infinitos.
 \end_inset
 
 .
+
+\change_deleted -8664667 1551907766
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -854,13 +1065,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename figs/U_LJ.agr
+	clip
 
 \end_inset
 
@@ -920,7 +1128,12 @@ noprefix "false"
 \shape italic
 melt
 \shape default
- polimérico en buen solvente, dónde las cadenas no forman aglomerados.
+ polimérico en buen solvente, dónde las cadenas no forman aglomerados
+\change_inserted -8664667 1551907871
+ y presentan una repulsión efectiva entre ellas, debida a la intensidad
+ de la atracción polímero-solvente
+\change_unchanged
+.
  Esta elección para el radio de corte de la interacción suele utilizarse
  para simular la presencia de un buen solvente, sin colocar explícitamente
  las partículas del mismo, por lo que lleva el nombre de solvente implícito.
@@ -940,7 +1153,25 @@ Por otro lado, si se toma como radio de corte el doble del valor para el
 
 , se incluye la parte atractiva de la interacción.
  Esta elección da lugar a un diagrama de fases más rico, ya que permite
- la formación de líquidos en el sistema, como se aprecia en la figura 
+ la formación de líquidos
+\change_inserted -8664667 1551907907
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -8664667 1551907909
+??
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ en el sistema, como se aprecia en la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Phase_diag"
@@ -952,10 +1183,20 @@ noprefix "false"
 
 .
  A lo largo de este trabajo de tesis doctoral se han utilizado partículas
- sueltas con este valor de 
+ sueltas
+\change_inserted -8664667 1551907938
+ (monómeros)
+\change_deleted -8664667 1551907934
+ 
+\change_unchanged
+con este valor de 
 \begin_inset Formula $r_{C}$
 \end_inset
 
+
+\change_inserted -8664667 1551907928
+,
+\change_unchanged
  para simular líquidos simples en condiciones de flujo y en equilibrio.
  
 \end_layout
@@ -971,6 +1212,7 @@ status open
 \begin_inset Graphics
 	filename figs/Phase_diag.png
 	width 48text%
+	clip
 
 \end_inset
 
@@ -1024,9 +1266,14 @@ literal "false"
 
 \begin_layout Standard
 Al incluir interacciones atractivas entre polímeros anclados a una superficie,
- la aglomeración de las cadenas es energéticamente favorable, dando lugar
- a formaciones, como las que se pueden observar en el esquema de la figura
- 
+ la 
+\change_deleted -8664667 1551908133
+aglomeración
+\change_inserted -8664667 1551908138
+agregación
+\change_unchanged
+ de las cadenas es energéticamente favorable, dando lugar a formaciones,
+ como las que se pueden observar en el esquema de la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig: montañas"
@@ -1094,10 +1341,34 @@ name "fig: montañas"
 
 En el esquema se aprecia la formación de cúmulos en el cepillo polimérico,
  debido a la fuerza atractiva entre las cadenas.
- Es interesante estudiar bajo que condiciones se forman las aglomeraciones,
- su dependencia con la rigidez de las cadenas y como varía la distancia
- típica entre estas.
- Figura extraída de 
+ Es interesante estudiar bajo qu
+\change_inserted -8664667 1551908183
+é
+\change_deleted -8664667 1551908182
+e
+\change_unchanged
+ condiciones se forman las aglomeraciones, su dependencia con la rigidez
+ de las cadenas y c
+\change_inserted -8664667 1551908191
+ó
+\change_deleted -8664667 1551908191
+o
+\change_unchanged
+mo varía la distancia típica entre estas.
+ Figura extra
+\change_deleted -8664667 1551908197
+í
+\change_inserted -8664667 1551908198
+i
+\change_unchanged
+da de
+\change_inserted -8664667 1551908204
+la Ref.
+ 
+\change_deleted -8664667 1551908203
+ 
+\change_unchanged
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PhysRevE.88.042601"
@@ -1173,12 +1444,28 @@ noprefix "false"
  da la intensidad de la interacción entre partículas pertenecientes al cepillo
  y partículas pertenecientes al fluido.
  Este parámetro cambia la afinidad entre las diferentes especies y sirve
- para explorar diferentes condiciones fisico-químicas.
+ para explorar diferentes condiciones f
+\change_inserted -8664667 1551908249
+í
+\change_deleted -8664667 1551908248
+i
+\change_unchanged
+sico-químicas.
  Un valor frecuentemente utilizado a lo largo de este trabajo fue 
 \begin_inset Formula $\varepsilon^{(lc)}=1/3$
 \end_inset
 
- para fijar una incompatibilidad química entre cepillo y líquido.
+
+\change_inserted -8664667 1551908258
+,
+\change_unchanged
+ para 
+\change_deleted -8664667 1551908275
+fijar
+\change_inserted -8664667 1551908277
+modelar
+\change_unchanged
+ una incompatibilidad química entre cepillo y líquido.
  Este valor fue tomado de la bibliografía
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1202,8 +1489,13 @@ Fakir
  Cabe notar que la interacción líquido-cepillo no es puramente repulsiva,
  ya que el radio de corte para esta fuerza fue el mismo que para la interacción
  líquido-líquido.
- Es decir que la atracción entre dos monómeros de distintas especies la
- tercera parte de la fuerza que se ejercen dos partículas pertenecientes
+ Es decir que la atracción entre dos monómeros de distintas especies
+\change_inserted -8664667 1551908359
+ es
+\change_deleted -8664667 1551908359
+ 
+\change_unchanged
+la tercera parte de la fuerza que se ejercen dos partículas pertenecientes
  a la fase líquida, a la misma distancia.
  
 \end_layout
@@ -1281,8 +1573,27 @@ reference "eq:FENE"
 \end_layout
 
 \begin_layout Standard
-El modelo elegido para codificar la física de las cadenas se debe a Kremer
- y Grest 
+El modelo elegido para 
+\change_inserted -8664667 1551908409
+modelar 
+\change_deleted -8664667 1551908407
+codificar
+\change_unchanged
+ la 
+\change_deleted -8664667 1551908419
+física
+\change_inserted -8664667 1551908422
+conectividad 
+\change_deleted -8664667 1551908422
+ 
+\change_unchanged
+de las cadenas
+\change_inserted -8664667 1551908428
+ polímericas
+\change_deleted -8664667 1551908424
+ 
+\change_unchanged
+se debe a Kremer y Grest 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Kroeger2004453,PhysRevA.33.3628,doi:10.1021/ma00200a041"
@@ -1293,7 +1604,15 @@ literal "true"
 .
  Las interacciones entre monómeros contiguos, pertenecientes a un mismo
  polímero, es representada por un potencial elástico no lineal de extensión
- finita (FENE, de las siglas en ingles), que viene dado por la ecuación:
+ finita (FENE, 
+\change_deleted -8664667 1551908441
+de las
+\change_inserted -8664667 1551908444
+por sus
+\change_deleted -8664667 1551908442
+ 
+\change_unchanged
+siglas en ingles), que viene dado por la ecuación:
 \end_layout
 
 \begin_layout Standard
@@ -1359,11 +1678,34 @@ reference "fig:FENE"
 
  a medida que la separación se acerca a este límite, para imponer los efectos
  de extensión finita de las cadenas.
+
+\change_inserted -8664667 1551908628
+ Este potencial es más realista que el potencial armónico, ya que junto
+ con la repulsión del potencial LJ, evita los cruzamientos de ligaduras
+ (
+\emph on
+bond crossings).
+
+\change_unchanged
+ 
+\change_inserted -8664667 1551908676
+
+\emph default
+Estos entrecruzamientos no ocurren entre las unión covalentes de los polímeros
+ reales.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
 Uno de los puntos distintivos de este trabajo es el estudio de las propiedades
- del sistema líquido-cepillo en función de la rigidez de los polímeros.
+ del sistema líquido-cepillo en función de la rigidez
+\change_inserted -8664667 1551908692
+ local
+\change_deleted -8664667 1551908689
+ 
+\change_unchanged
+de los polímeros.
  Esta se impuso mediante un potencial de flexión armónico entre tres monómeros
  sucesivos.
  
@@ -1394,9 +1736,14 @@ reference "fig:Bendig_versores"
 \end_inset
 
 ).
- Si bien la dependencia del potencial con ángulo es simple, se necesita
- expresar la fuerza en coordenadas cartesianas para acoplarla a la estructura
- del programa de dinámica molecular.
+ Si bien la dependencia del potencial con
+\change_deleted -8664667 1551908770
+ 
+\change_inserted -8664667 1551908771
+ el 
+\change_unchanged
+ángulo es simple, se necesita expresar la fuerza en coordenadas cartesianas
+ para acoplarla a la estructura del programa de dinámica molecular.
  El ángulo se puede escribir en función de las coordenadas de los monómeros
  según la relación:
 \end_layout
@@ -1424,6 +1771,7 @@ status open
 \begin_inset Graphics
 	filename figs/Bending.eps
 	width 20page%
+	clip
 
 \end_inset
 
@@ -1505,14 +1853,29 @@ Las fuerzas actuantes sobre cada masa pueden ser calculadas tomando las
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\boldsymbol{F}_{3}=-\nabla_{3}U_{flex}(\boldsymbol{r}_{1},\boldsymbol{r}_{2},\boldsymbol{r}_{3})=\frac{k_{f}\theta}{|\boldsymbol{r}_{3}-\boldsymbol{r}_{2}|}\left[\frac{(\boldsymbol{r}_{2}-\boldsymbol{r}_{1})}{|\boldsymbol{r}_{2}-\boldsymbol{r}_{1}||sen(\theta)|}-\frac{cos(\theta)(\boldsymbol{r}_{3}-\boldsymbol{r}_{2})}{|sen(\theta)||\boldsymbol{r}_{3}-\boldsymbol{r}_{2}|}\right]
+\boldsymbol{F}_{3}=-\nabla_{3}U_{flex}(\boldsymbol{r}_{1},\boldsymbol{r}_{2},\boldsymbol{r}_{3})=\frac{k_{f}\theta}{|\boldsymbol{r}_{3}-\boldsymbol{r}_{2}|}\left[\frac{(\boldsymbol{r}_{2}-\boldsymbol{r}_{1})}{|\boldsymbol{r}_{2}-\boldsymbol{r}_{1}||sen(\theta)|}-\frac{cos(\theta)(\boldsymbol{r}_{3}-\boldsymbol{r}_{2})}{|sen(\theta)||\boldsymbol{r}_{3}-\boldsymbol{r}_{2}|}\right]\label{eq:f3_bending}
 \end{equation}
 
 \end_inset
 
-Se puede demostrar que el corchete en la ecuación anterior es un vector
- de módulo unidad, que está contenido en el plano formado por los versores
- 
+Se puede demostrar que el corchete en la ecuación 
+\change_inserted -8664667 1551908922
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:f3_bending"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\change_deleted -8664667 1551908913
+anterior
+\change_unchanged
+ es un vector de módulo unidad, que está contenido en el plano formado por
+ los versores 
 \begin_inset Formula $\boldsymbol{r}_{2}-\boldsymbol{r}_{1}$
 \end_inset
 
@@ -1604,7 +1967,12 @@ De la misma manera se puede hallar la fuerza sobre el primer monómero para
 
 \end_inset
 
-La fuerza sobre la partícula 2 se calcula del mismo modo y se cumple que
+La fuerza sobre la partícula 2 se calcula del mismo modo y se cumple 
+\change_inserted -8664667 1551909075
+la relación
+\change_deleted -8664667 1551909073
+que
+\change_unchanged
  
 \begin_inset Formula 
 \begin{equation}
@@ -1618,8 +1986,11 @@ Esta ecuación indica que la sumatoria de fuerzas internas es nula, lo que
  cadena se conserva.
  Si bien esta es una característica física esperable, cabe notar que no
  se deduce de la cancelación de pares de interacción, pues la fuerza sobre
- cada partícula depende la posición de los dos primeros vecinos de de la
- cadena.
+ cada partícula depende la posición de los dos primeros vecinos de 
+\change_deleted -8664667 1551909109
+de
+\change_unchanged
+ la cadena.
  Esto es fácil de ver fijando la posición de la dos últimas masas y notando
  que al mover el primer monómero varía la apertura angular y por tanto la
  intensidad de la fuerza ejercida sobre el último eslabón.
@@ -1669,7 +2040,26 @@ Cabe mencionar que este no es el único potencial utilizado para modelar
 \shape italic
 mean field theory
 \shape default
-).
+)
+\change_inserted -8664667 1551909205
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -8664667 1551909219
+Cita.
+ aunque sea Rubinstein
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
  Es conveniente destacar que ambos potenciales de flexión presentados tienen
  una forma funcional similar y exhiben un comportamiento muy parecido.
  Esto queda claro al desarrollar el potencial alrededor del valor de equilibrio
@@ -1697,7 +2087,11 @@ Es decir, que un potencial utilizado en este trabajo se puede pensar como
 \end_inset
 
 .
+
+\change_deleted -8664667 1551909232
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -1726,7 +2120,13 @@ reference "fig:Orientacion"
 
 , directamente debajo del monómero sujeto a la pared.
  La fuerza sobre la segunda partícula fue hallada como se explicó anteriormente,
- aplicándolo a esta terna.
+ 
+\change_inserted -8664667 1551909366
+aplicando los desarrollos explicados 
+\change_deleted -8664667 1551909354
+aplicándolo
+\change_unchanged
+ a esta terna.
 \end_layout
 
 \begin_layout Standard
@@ -1741,6 +2141,7 @@ status open
 \begin_inset Graphics
 	filename figs/Orientation.eps
 	width 20page%
+	clip
 
 \end_inset
 
@@ -1757,11 +2158,20 @@ name "fig:Orientacion"
 
 \end_inset
 
+
+\change_inserted -8664667 1551909423
+Fuerza orientacional de la cadenas fijada al sustrato.
+ 
+\change_unchanged
 Directamente debajo del monómero fijo al sustrato (1), se ubica una partícula
  en línea punteada (0), que facilita el cálculo de la fuerza sobre el último
  eslabón de la cadena (2).
  La posición de equilibrio de esta terna corresponde a las partículas alineadas
- en posición vertical, perpendicular al sustrato.
+ en posición vertical, 
+\change_inserted -8664667 1551909467
+de forma 
+\change_unchanged
+perpendicular al sustrato.
  La fuerza sobre el monómero 2 se calculó tomando en cuenta el ángulo formado
  ente los vectores 
 \begin_inset Formula $\boldsymbol{r}_{2}-\boldsymbol{r}_{1}$
@@ -1794,11 +2204,45 @@ La constante de flexión
 \begin_inset Formula $k_{f}$
 \end_inset
 
- tiene unidades de energía y es adecuada para el acercamiento teórico a
- la rigidez de los polímeros, sin embargo esta no es una cantidad accesible
- directamente desde los experimentos.
+ tiene unidades de energía y es adecuada para el 
+\change_deleted -8664667 1551909512
+acercamiento
+\change_inserted -8664667 1551909515
+estudio
+\change_unchanged
+ teórico 
+\change_deleted -8664667 1551909518
+a
+\change_inserted -8664667 1551909520
+de 
+\change_deleted -8664667 1551909520
+ 
+\change_unchanged
+la rigidez de los polímeros, sin embargo esta no es 
+\change_deleted -8664667 1551909529
+una cantidad
+\change_inserted -8664667 1551909533
+ parámetro
+\change_deleted -8664667 1551909530
+ 
+\change_unchanged
+accesible directamente 
+\change_deleted -8664667 1551909541
+desde
+\change_inserted -8664667 1551909542
+en
+\change_unchanged
+ los experimentos.
  Para presentar los resultados, es conveniente utilizar otra medida de la
- rigidez que sea físicamente más relevante y preferiblemente adimensional.
+ rigidez que sea físicamente más relevante y
+\change_inserted -8664667 1551909554
+,
+\change_unchanged
+ preferiblemente
+\change_inserted -8664667 1551909558
+,
+\change_unchanged
+ adimensional.
  La cantidad utilizada para medir la rigidez es el cociente entre la longitud
  de de persistencia 
 \begin_inset Formula $l_{p}$
@@ -1823,7 +2267,11 @@ donde
 \end_inset
 
  es la cantidad de monómeros del polímero.
+
+\change_deleted -8664667 1551909569
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -1831,6 +2279,25 @@ La longitud de persistencia
 \begin_inset Formula $l_{p}$
 \end_inset
 
+
+\change_inserted -8664667 1551909588
+ o segmento estadístico de Kuhn
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -8664667 1551909594
+cita.
+ Rubinstein
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 , es la distancia a la cual se pierde la correlación orientacional de los
  segmentos de un polímero.
  A medida que aumenta la constante de flexión, la orientación de los segmentos
@@ -1846,13 +2313,13 @@ literal "false"
 
 \begin_inset Formula 
 \begin{equation}
-l_{p}=-\frac{a}{ln<cos\,\theta>}\,,\label{eq:lp=-1/lncos}
+l_{p}=-\frac{a}{ln\langle cos\,\theta\rangle}\,,\label{eq:lp=-1/lncos}
 \end{equation}
 
 \end_inset
 
 donde 
-\begin_inset Formula $<cos\,\theta>$
+\begin_inset Formula $\langle cos\,\theta\rangle$
 \end_inset
 
  es el valor medio sobre toda la cadena del coseno del ángulo definido por
@@ -1902,7 +2369,13 @@ donde
 \begin_inset Formula $k=1$
 \end_inset
 
-, se puede despejar el 
+, se puede despejar 
+\change_inserted -8664667 1551909762
+la longitud de persistencia
+\change_deleted -8664667 1551909756
+el
+\change_unchanged
+ 
 \begin_inset Formula $l_{p}$
 \end_inset
 
@@ -1920,7 +2393,11 @@ noprefix "false"
 
 \end_inset
 
- .
+
+\change_deleted -8664667 1551909770
+ 
+\change_unchanged
+.
  Bajo este modelo, la relación entre la longitud de persistencia y la constante
  de flexión es lineal
 \begin_inset CommandInset citation
@@ -1930,7 +2407,13 @@ literal "false"
 
 \end_inset
 
- y está depende de la temperatura:
+ y est
+\change_inserted -8664667 1551909785
+a
+\change_deleted -8664667 1551909784
+á
+\change_unchanged
+ depende de la temperatura:
 \end_layout
 
 \begin_layout Standard
@@ -1966,12 +2449,49 @@ noprefix "false"
 
 \end_inset
 
- es una estimación muy buena a lo que arrojan las simulaciones.
  
+\change_inserted -8664667 1551909812
+representa 
+\change_deleted -8664667 1551909808
+es
+\change_unchanged
+ una 
+\change_deleted -8664667 1551909819
+estimación
+\change_unchanged
+ muy buena
+\change_inserted -8664667 1551909826
+ estimación
+\change_deleted -8664667 1551909844
+ 
+\change_inserted -8664667 1551909848
+de los resultados 
+\change_deleted -8664667 1551909850
+a lo
+\change_unchanged
+ que 
+\change_deleted -8664667 1551909859
+arrojan
+\change_inserted -8664667 1551909863
+se obtienen de
+\change_deleted -8664667 1551909860
+ 
+\change_unchanged
+las simulaciones.
+
+\change_deleted -8664667 1551909815
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
-Las simulaciones en nano canales se llevaron a cabo en un prisma ortogonal
+Las simulaciones en nano canales se llevaron a cabo en un 
+\change_inserted -8664667 1551909893
+paralelepípedo
+\change_deleted -8664667 1551909887
+prisma ortogonal
+\change_unchanged
  de dimensiones 
 \begin_inset Formula $L_{x}\times L_{y}\times L_{z}$
 \end_inset
@@ -2016,9 +2536,12 @@ reference "fig:CPC"
  las demás, contenidas en la misma celda o con las imágenes de las mismas,
  en las celdas vecinas.
  Si una partícula escapa a través de uno de los límites de la celda de dinámica
- molecular, simultáneamente entra a la misma la imagen de esta partícula
- por el lado opuesto, conservando el impulso lineal y la cantidad de monómeros
- en la caja de simulación.
+ molecular, simultáneamente entra a la misma
+\change_inserted -8664667 1551909988
+,
+\change_unchanged
+ la imagen de esta partícula por el lado opuesto, conservando el impulso
+ lineal y la cantidad de monómeros en la caja de simulación.
  
 \end_layout
 
@@ -2034,6 +2557,7 @@ status open
 \begin_inset Graphics
 	filename figs/CPC.eps
 	scale 50
+	clip
 
 \end_inset
 
@@ -2050,8 +2574,14 @@ name "fig:CPC"
 
 \end_inset
 
-Se muestra, de manera esquemática, como se aplican las condiciones periódicas
- de contorno en las simulaciones de dinámica molecular.
+Se muestra, de manera esquemática, c
+\change_inserted -8664667 1551910010
+ó
+\change_deleted -8664667 1551910009
+o
+\change_unchanged
+mo se aplican las condiciones periódicas de contorno en las simulaciones
+ de dinámica molecular.
  Cada rectángulo es una imagen exacta de la caja de simulación original.
  Las partículas en la caja de simulación original puede interactuar con
  los vecinos en la misma celda o con las imágenes de las mismas, en las
@@ -2079,8 +2609,11 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-Los límites del canal confinante se imponen en sobre los planos definidos
- por las ecuaciones 
+Los límites del canal confinante se imponen 
+\change_deleted -8664667 1551910032
+en
+\change_unchanged
+ sobre los planos definidos por las ecuaciones 
 \begin_inset Formula $z=0$
 \end_inset
 
@@ -2093,7 +2626,16 @@ Los límites del canal confinante se imponen en sobre los planos definidos
 \end_inset
 
  define  el ancho del canal.
- El sustrato fue modelado como una pared ideal sin rugosidad, impenetrable,
+ El sustrato fue modelado como una pared ideal
+\change_inserted -8664667 1551910055
+ impenetrable
+\change_deleted -8664667 1551910050
+ 
+\change_unchanged
+sin rugosidad, 
+\change_deleted -8664667 1551910059
+impenetrable,
+\change_unchanged
  cuya interacción con los monómeros viene dada por un potencial de Lennard-Jones
  integrado:
 \end_layout
@@ -2124,7 +2666,27 @@ literal "false"
 
 .
  Este potencial representa una pared netamente repulsiva, de manera tal
- de no favorecer la penetración del líquido en los intersticios del cepillo.
+ de no favorecer la penetración del líquido en los intersticios del cepillo
+\change_inserted -8664667 1551910095
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -8664667 1551910153
+OJO: es repulsiva si se pone modulo en el termino atractivo y se pone negativa
+ la constante.
+ Como está escrito no es repulsivo.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
  La simetría de traslación en las direcciones paralelas a la pared implican
  que la misma no realiza esfuerzos de corte y no es capaz de arrastrar al
  líquido.
@@ -2154,7 +2716,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figs/Usus.agr
+	filename figs/Usus.eps
 	width 50text%
 	clip
 
@@ -2212,11 +2774,25 @@ Si se llevaran a cabo las simulaciones integrando directamente las ecuaciones
  de movimiento dadas por el modelo, la energía total del sistema sería una
  constante de movimiento y no la temperatura.
  Este esquema corresponde al ensamble microcanónico, pero los experimentos
- se realizan mayoritariamente manteniendo constante la temperatura, que
- se corresponde con el ensamble canónico.
- Para satisfacer esta condición en las experiencias, se pone en contacto
- la muestra con un baño térmico, de manera tal, que se permite el intercambio
- de calor con el exterior.
+ se realizan mayoritariamente manteniendo constante la temperatura, 
+\change_deleted -8664667 1551967118
+que
+\change_inserted -8664667 1551967120
+lo cual
+\change_deleted -8664667 1551967120
+ 
+\change_unchanged
+se corresponde con el ensamble canónico.
+ Para satisfacer esta condición en las experiencias, 
+\change_deleted -8664667 1551967199
+se pone en contacto
+\change_unchanged
+ la muestra 
+\change_inserted -8664667 1551967203
+se pone en contacto 
+\change_unchanged
+con un baño térmico, de manera tal, que se permite el intercambio de calor
+ con el exterior.
  La técnica para llevar a cabo simulaciones en el ensamble canónico es parecida.
  En el termostato utilizado, se agregan fuerzas externas al sistema para
  que se cumplan las condiciones termodinámicas compatibles con el ensamble.
@@ -2449,8 +3025,19 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-Para certificar que el termostato este funcionando correctamente, es conveniente
- verificar la temperatura del sistema.
+Para 
+\change_inserted -8664667 1551971161
+verificar
+\change_deleted -8664667 1551971158
+certificar
+\change_unchanged
+ que el termostato este funcionando correctamente, es conveniente 
+\change_deleted -8664667 1551971177
+verificar
+\change_inserted -8664667 1551971180
+monitorear
+\change_unchanged
+ la temperatura del sistema.
  Utilizando el teorema de equipartición, podemos obtener una expresión de
  la temperatura instantánea del sistema en función de las velocidades de
  todas las partículas:
@@ -2464,7 +3051,11 @@ Para certificar que el termostato este funcionando correctamente, es conveniente
 Típicamente las muestras examinadas no son homogéneas, por lo cual se calculan
  perfiles de densidad en función de alguna coordenada del canal, y así controlar
  una temperatura uniforme a lo largo de la caja de simulación.
+
+\change_deleted -8664667 1551971204
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -2544,8 +3135,13 @@ Al lector atento puede llamarle la atención la falta del factor
  al tomar el promedio, dado que se quieren obtener cantidades dentro del
  ensamble canónico.
  Podemos pensar que el factor de probabilidad de la distribución de Maxwell-Bolt
-zmann se encuentra presente implícitamente, ya que, como se explico en la
- sección 
+zmann se encuentra presente implícitamente, ya que, como se explic
+\change_deleted -8664667 1551971614
+o
+\change_inserted -8664667 1551971615
+ó
+\change_unchanged
+ en la sección 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Termostato-y-conexión"
@@ -2559,7 +3155,13 @@ noprefix "false"
 \begin_inset Formula $\{\boldsymbol{r},\boldsymbol{v}\}$
 \end_inset
 
- son sorteadas de la distribución de probabilidad apropiados.
+ son sorteadas de la distribución de probabilidad apropiad
+\change_inserted -8664667 1551971628
+a
+\change_deleted -8664667 1551971627
+os
+\change_unchanged
+.
  Es decir, que los microestados con mayor peso 
 \begin_inset Formula $e^{-\frac{1}{k_{B}T}H[\{\boldsymbol{r}(t),\boldsymbol{v}(t)\}]}$
 \end_inset
@@ -2574,9 +3176,18 @@ Por otro lado, se puede argumentar que este promedio no es exacto, pues
 \begin_inset Formula $\tau\rightarrow\infty$
 \end_inset
 
- es posible que no coincida el promedio temporal con el promedio estadístico
- sobre el ensamble 
-\begin_inset Formula $<A>$
+ es posible que
+\change_inserted -8664667 1551971746
+ el promedio temporal
+\change_deleted -8664667 1551971745
+ 
+\change_unchanged
+no coincida 
+\change_deleted -8664667 1551971744
+el promedio temporal
+\change_unchanged
+ con el promedio estadístico sobre el ensamble 
+\begin_inset Formula $\langle A\rangle$
 \end_inset
 
 .
@@ -2677,7 +3288,11 @@ Se define el tiempo de correlación
 \begin_inset Formula $A$
 \end_inset
 
- como independientes
+ como 
+\change_inserted -8664667 1551980003
+estadísticamente 
+\change_unchanged
+independientes
 \end_layout
 
 \end_inset
@@ -2771,8 +3386,21 @@ Antecedentes
 
 \begin_layout Standard
 A partir de los resultados obtenidos y de lo aprendido a lo largo del trabajo
- de esta tesis de doctorado, se propuso investigar como la rigidez de los
- polímeros pueden mejorar la eficiencia en en dispositivos de nanofluídica.
+ de esta tesis de doctorado, se propuso investigar c
+\change_inserted -8664667 1551981848
+ó
+\change_deleted -8664667 1551981848
+o
+\change_unchanged
+mo la rigidez de los polímeros puede
+\change_deleted -8664667 1551981919
+n
+\change_unchanged
+ mejorar la eficiencia 
+\change_deleted -8664667 1551981923
+en
+\change_unchanged
+ en dispositivos de nanofluídica.
  Los resultados presentados en este capítulo fueron publicados y pueden
  encontrarse de manera resumida en la referencia 
 \begin_inset CommandInset citation
@@ -2809,10 +3437,25 @@ Una forma de controlar el flujo utilizada en la actualidad, es disponer
  externo, modificar estados de conducción entre altos y bajos.
  El parámetro externo puede ser el pH del solvente, o la temperatura, o
  las condiciones lumínicas.
- Estos sistemas tienen un funcionamiento que tiene una semejanza al de un
- transistor eléctrico, en el cual la conducción entre dos de sus terminales,
- puede ser ajustada al modificar un estímulo externo (corriente sobre sus
- otras terminales).
+ Estos sistemas 
+\change_deleted -8664667 1551982029
+tienen un funcionamiento que tiene una semejanza
+\change_inserted -8664667 1551982038
+funcionan de manera semejante 
+\change_deleted -8664667 1551982033
+ 
+\change_unchanged
+a
+\change_inserted -8664667 1551982359
+ 
+\change_unchanged
+l
+\change_inserted -8664667 1551982360
+a
+\change_unchanged
+ de un transistor eléctrico, en el cual la conducción entre dos de sus terminale
+s, puede ser ajustada al modificar un estímulo externo (corriente sobre
+ sus otras terminales).
  El cambio en el estado de conducción en este caso se produce por una alteración
  en la morfología del cepillo polimérico.
  Por ejemplo, al variar el pH del solvente, los polímeros sufren una transición
@@ -2846,6 +3489,7 @@ status open
 \begin_inset Graphics
 	filename figs/coil_to_globule.png
 	width 40col%
+	clip
 
 \end_inset
 
@@ -2860,9 +3504,37 @@ name "fig:coil-to-globule"
 \end_inset
 
 Regulando el nivel de pH en el nano-canal se logra un cambio morfológco
- en el cepillo polimérico, y logrando que las cadenas se retraigan sobre
- el sustrato o que ocupen la mitad del canal, cambiando radicalmente el
- caudal.
+ en el cepillo polimérico
+\change_inserted -8664667 1551982478
+.
+\change_deleted -8664667 1551982480
+, y logrando que l
+\change_inserted -8664667 1551982521
+En el estado compacto, l
+\change_unchanged
+as cadenas se retra
+\change_inserted -8664667 1551982488
+en
+\change_deleted -8664667 1551982486
+igan
+\change_unchanged
+ sobre el sustrato
+\change_inserted -8664667 1551982556
+, mientras que al estar extendidas,
+\change_deleted -8664667 1551982557
+ o que
+\change_unchanged
+ ocup
+\change_inserted -8664667 1551982559
+a
+\change_deleted -8664667 1551982559
+e
+\change_unchanged
+n la mitad del canal, cambiando radicalmente el caudal
+\change_inserted -8664667 1551982590
+ de líquido en flujo a través del canal
+\change_unchanged
+.
  Figura tomada de la referencia 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2887,8 +3559,21 @@ literal "false"
 \begin_layout Standard
 Esta clase de nano-válvulas, reguladas por cepillos poliméricos han sido
  estudiadas previamente.
- Adiga y Brenner estudiaron teóricamente en una serie de trabajos nanovalvulas
- activadas por cepillos poliméricos sensibles a la calidad del solvente
+ Adiga y Brenner estudiaron teóricamente
+\change_inserted -8664667 1551982604
+,
+\change_unchanged
+ en una serie de trabajos
+\change_inserted -8664667 1551982606
+,
+\change_unchanged
+ nanov
+\change_inserted -8664667 1551982609
+á
+\change_deleted -8664667 1551982608
+a
+\change_unchanged
+lvulas activadas por cepillos poliméricos sensibles a la calidad del solvente
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1021/ma0617522,doi:10.1021/nl025527j,doi:10.1021/nl051843x,jfb3020239"
@@ -2906,8 +3591,13 @@ literal "false"
 
 \begin_layout Standard
 Fortin y Klok ensamblaron un sensor hidráulico utilizando cepillos poliméricos
- sensibles a la glucosa, que se expanden al entrar en contacto especificamente
- con esta molécula
+ sensibles a la glucosa, que se expanden al entrar en contacto espec
+\change_inserted -8664667 1551982660
+í
+\change_deleted -8664667 1551982659
+i
+\change_unchanged
+ficamente con esta molécula
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1021/am507927w"
@@ -2916,15 +3606,35 @@ literal "false"
 \end_inset
 
 .
- La glucosa se une a los polímeros funcionalizados, obligandolos a estirarse
- aumentando altura de los cepillos.
+ La glucosa se une a los polímeros funcionalizados, oblig
+\change_inserted -8664667 1551983058
+á
+\change_deleted -8664667 1551983057
+a
+\change_unchanged
+ndolos a estirarse 
+\change_inserted -8664667 1551983063
+y 
+\change_unchanged
+aumentando 
+\change_inserted -8664667 1551983083
+así la 
+\change_unchanged
+altura de los cepillos.
  Esto genera una reducción en el ancho efectivo del canal y se observa una
  reducción sensible del caudal a través del canal.
 \end_layout
 
 \begin_layout Standard
-Yameen et al.
- diseñaron un nanoporo cónico con las las paredes revestidas con cepillos
+Yameen 
+\change_deleted -8664667 1551984047
+et al.
+\change_inserted -8664667 1551984051
+y colaboradores
+\change_deleted -8664667 1551984048
+ 
+\change_unchanged
+diseñaron un nanoporo cónico con las las paredes revestidas con cepillos
  poliméricos, obteniendo un dispositivo funcionalizado, altamente sensible
  a cambios químicos 
 \begin_inset CommandInset citation
@@ -2975,7 +3685,11 @@ literal "false"
 
 \begin_layout Standard
 El interés de flujos confinados en la micro y nano escala por cepillos poliméric
-os no se limita a al desarrollo de aplicaciones tecnológicas.
+os no se limita 
+\change_deleted -8664667 1551988297
+a
+\change_unchanged
+ al desarrollo de aplicaciones tecnológicas.
  En los vasos sanguíneos se encuentra el glicocálix, una capa de proteínas
  que revisten la matriz extracelular de determinadas células, como las endotelia
 les de las superficies mucosas (ver figura 
@@ -2990,8 +3704,19 @@ noprefix "false"
 
 ).
  Varios grupos están investigando teórica y experimentalmente estos sistemas,
- para comprender la interacción entre estas estructuras ''peludas'' y el
- fluido confinado
+ para comprender la interacción entre estas estructuras 
+\change_deleted -8664667 1551988324
+''
+\change_inserted -8664667 1551988330
+``
+\change_unchanged
+peludas
+\change_inserted -8664667 1551988334
+''
+\change_deleted -8664667 1551988333
+''
+\change_unchanged
+ y el fluido confinado
 \begin_inset CommandInset citation
 LatexCommand cite
 key "CruzChu2014232,Deng_2012,doi:10.1146/annurev.bioeng.9.060906.151959,Jiang20170780,Roemer_15,Jiang2018"
@@ -3027,7 +3752,9 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/Glycocalyx_Zhuo_2018.jpg
+	lyxscale 70
 	width 50col%
+	clip
 
 \end_inset
 
@@ -3129,14 +3856,22 @@ Formaciones de estructuras en cepillos poliméricos semiflexibles en un solvente
 \end_layout
 
 \begin_layout Standard
-A diferencia del resto del trabajo de tesis de doctorado, en este capitulo
- se utiliza una interacción atractiva entre monómeros para modelar la condición
- de un solvente pobre.
+A diferencia del resto del trabajo de tesis de doctorado, en este cap
+\change_deleted -8664667 1551988519
+i
+\change_inserted -8664667 1551988520
+í
+\change_unchanged
+tulo se utiliza una interacción atractiva entre monómeros para modelar la
+ condición de un solvente pobre.
  Al entrar en contacto entre si, los polímeros forman estructuras estables,
  que dan lugar a una rica morfología.
  Las formaciones originadas son variadas y dependen de la distancia entre
- los polímeros, la longitud de contorno de los mismo, la temperatura y la
- rigidez de las cadenas, entre otros.
+ los polímeros, la longitud de contorno de los mismo
+\change_inserted -8664667 1551988545
+s
+\change_unchanged
+, la temperatura y la rigidez de las cadenas, entre otros.
 \end_layout
 
 \begin_layout Standard
@@ -3150,9 +3885,18 @@ Se exploró el comportamiento y los agregados formados por las cadenas, variando
 \end_inset
 
 .
- El sistema de estudio en este caso consiste de polímeros fijados en un
- arreglo ordenado de sitios a una pared lisa, que interactúan entre si mediante
- un potencial tipo Lennard-Jonnes.
+ El sistema de estudio en este caso consiste 
+\change_deleted -8664667 1551988569
+de
+\change_inserted -8664667 1551988570
+en
+\change_unchanged
+ polímeros fijados en un arreglo ordenado de sitios a una pared lisa, que
+ interactúan entre si mediante un potencial tipo Lennard-Jon
+\change_deleted -8664667 1551988618
+n
+\change_unchanged
+es.
  A diferencia de los casos anteriores, este sistema tiene una sola pared
  a la cual se fijan los polímeros y no es un canal, como se aprecia en la
  figura 
@@ -3192,14 +3936,17 @@ noprefix "false"
 \begin_inset Formula $z=40\sigma$
 \end_inset
 
- se impuso una pared lisa perfectamente reflectiva, equivalente a un pontecial
- infinito.
+ se impuso una pared lisa perfectamente reflectiva, equivalente a un ponte
+\change_inserted -8664667 1551990540
+n
+\change_unchanged
+cial infinito.
  La constante de fricción se fijó en 
 \begin_inset Formula $\gamma=0.1$
 \end_inset
 
  y se utilizó un paso temporal de 
-\begin_inset Formula $dt=0.5·10^{-2}$
+\begin_inset Formula $dt=5·10^{-3}$
 \end_inset
 
 .
@@ -3258,6 +4005,7 @@ status open
 \begin_inset Graphics
 	filename figs/system_formations.png
 	width 50col%
+	clip
 
 \end_inset
 
@@ -3299,6 +4047,10 @@ status open
 
 \begin_layout Plain Layout
 K: No me gusta usar diagrama de fase, no son fases distintas en ppio
+\change_inserted -8664667 1551990970
+.C: diagrama con las diferentes morfologías?
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -3350,9 +4102,24 @@ noprefix "false"
 
  bajo, las cadenas logran inclinarse en el sentido lateral y entrar en contacto
  con otras cadenas, formando ''arcos'' y ''hormigueros''.
- Denominamos ''hormigueros'' a los agregados formados por poliméricos anclados
- a sitios vecinos que establecen tocando el sustrato, sin crecer en la dirección
- perpendicular al mismo, como se aprecia en la figura 
+ Denominamos ''hormigueros'' a los agregados formados por pol
+\change_inserted -8664667 1551991759
+í
+\change_deleted -8664667 1551991757
+i
+\change_unchanged
+m
+\change_inserted -8664667 1551991763
+e
+\change_deleted -8664667 1551991762
+é
+\change_unchanged
+r
+\change_deleted -8664667 1551991753
+ic
+\change_unchanged
+os anclados a sitios vecinos que establecen tocando el sustrato, sin crecer
+ en la dirección perpendicular al mismo, como se aprecia en la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:formaciones"
@@ -3363,18 +4130,41 @@ noprefix "false"
 \end_inset
 
 .
- Vale aclarar que en estas simulaciones se utilizo un potencial de pared
- del tipo Lennard-Jonnes integrado, con un segmento atractivo, lo cual favorece
- la formación de agregados cerca del sustrato.
+ Vale aclarar que en estas simulaciones se utiliz
+\change_inserted -8664667 1551991793
+ó
+\change_deleted -8664667 1551991794
+o
+\change_unchanged
+ un potencial de pared del tipo Lennard-Jo
+\change_deleted -8664667 1551991808
+n
+\change_unchanged
+nes integrado, con un segmento atractivo, lo cual favorece la formación
+ de agregados cerca del sustrato.
  Los ''arcos'' son estructuras que se dan del encuentro de cadenas que describen
- curvas de una circunferencia elevado del sustrato donde están fijados los
- polímeros.
+ curvas de una circunferencia elevad
+\change_deleted -8664667 1551991880
+o
+\change_inserted -8664667 1551991881
+as
+\change_unchanged
+ del sustrato
+\change_inserted -8664667 1551991885
+,
+\change_unchanged
+ donde están fijados los polímeros.
 \end_layout
 
 \begin_layout Standard
 En el caso totalmente flexible y a baja densidad de fijado, los polímeros
- se doblan sobre si mismos, maximizando la entropía configuracional y formando
- glóbulos aislados.
+ se doblan sobre s
+\change_inserted -8664667 1551991901
+í
+\change_deleted -8664667 1551991900
+i
+\change_unchanged
+ mismos, maximizando la entropía configuracional y formando glóbulos aislados.
  Al aumentar la densidad de fijado a valores altos de rigidez 
 \begin_inset Formula $l_{p}/l_{c}\ge1$
 \end_inset
@@ -3403,7 +4193,11 @@ literal "false"
 \end_inset
 
  recientemente.
+
+\change_deleted -8664667 1551991944
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -3413,14 +4207,11 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename figs/bund_phas_diag.agr
 	lyxscale 50
+	clip
 
 \end_inset
 
@@ -3435,17 +4226,20 @@ name "fig:bundle_phase_diagram"
 \end_inset
 
 Diagrama de las formaciones poliméricas observadas en solvente pobre, en
- función de la rigiez de las cadenas (eje vertical) y de la densidad de
- fijado (eje horizontal).
+ función de la rigi
+\change_inserted -8664667 1551991956
+d
+\change_unchanged
+ez de las cadenas (eje vertical) y de la densidad de fijado (eje horizontal).
+
+\change_deleted -8664667 1551991961
  
+\change_unchanged
+
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -3466,9 +4260,14 @@ status open
 	filename figs/Formations.png
 	lyxscale 20
 	width 75col%
+	clip
 
 \end_inset
 
+
+\change_inserted -8664667 1551990455
+100
+\change_unchanged
 
 \begin_inset Caption Standard
 
@@ -3500,19 +4299,69 @@ Se muestran vistas laterales y superiores de las diferentes configuraciones
 \end_layout
 
 \begin_layout Standard
-Cabe mencionar que en varias simulaciones conviven dos o más de este tipo
- de formaciones.
+Cabe mencionar que en varias simulaciones c
+\change_inserted -8664667 1551992043
+oexisten
+\change_deleted -8664667 1551992040
+onviven
+\change_unchanged
+ dos o más de este tipo de formaciones.
  Para analizar si estas configuraciones con distintas formaciones poliméricas
  son estables, es necesario un estudio más profundo, dónde se mida y compare
- la energía libre de las distintas estructuras halladas para cada conjunto
- de parámetros.
+ la energía libre de las distintas estructuras
+\change_inserted -8664667 1551992065
+,
+\change_unchanged
+ halladas para cada conjunto de parámetros.
  Con las técnicas utilizadas en este trabajo es difícil discernir en este
  caso entre un estado metaestable y un estado de equilibrio.
- Una linea de investigación a futuro es analizar la estabilidad y el equilibrio
- de este tipo de sistemas e intentar dilucidad si existen fases separadas
- entre algunas de estas formaciones y como se dan las transiciones.
- También puede ser de interés estudiar como varían el ancho o la cantidad
- de cadenas de las formaciones en función de 
+ 
+\change_inserted -8664667 1551992087
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -8664667 1551992103
+Esto puede ir en un texto de trabajo futuro luego de las conclusiones.
+ Veamos.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+Una l
+\change_inserted -8664667 1551992082
+í
+\change_deleted -8664667 1551992081
+i
+\change_unchanged
+nea de investigación a futuro es analizar la estabilidad y el equilibrio
+ de este tipo de sistemas e intentar dilucida
+\change_deleted -8664667 1551992111
+d
+\change_inserted -8664667 1551992111
+r
+\change_unchanged
+ si existen fases separadas entre algunas de estas formaciones y c
+\change_inserted -8664667 1551992118
+ó
+\change_deleted -8664667 1551992117
+o
+\change_unchanged
+mo se dan las transiciones.
+ También puede ser de interés estudiar c
+\change_inserted -8664667 1551992127
+ó
+\change_deleted -8664667 1551992127
+o
+\change_unchanged
+mo varían el ancho o la cantidad de cadenas de las formaciones en función
+ de 
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
@@ -3521,19 +4370,32 @@ Cabe mencionar que en varias simulaciones conviven dos o más de este tipo
 \end_inset
 
 .
- Por ejemplo, para los ramilletes se apreció una gran variabilidad en la
- cantidad de cadenas que forman parte de estos aglomerados en función de
- los parámetros explorados.
+ Por ejemplo, para los ramilletes
+\change_inserted -8664667 1551992140
+,
+\change_unchanged
+ se apreció una gran variabilidad en la cantidad de cadenas que forman parte
+ de estos aglomerados en función de los parámetros explorados.
 \end_layout
 
 \begin_layout Standard
 Sin embargo, el objetivo en este caso fue explorar el espacio de parámetros
  relevantes, e investigar las posibles configuraciones del cepillo polimérico
+\change_inserted -8664667 1551992162
+,
+\change_unchanged
  para luego utilizar lo aprendido para simular un nanocanal revestido por
  cepillos poliméricos en condiciones de solvente pobre.
  El rango de parámetros que hemos utilizado para el caso de nanocanales,
- y cuyos resultados serán presentados en al proxima sección, puede observarse
- en el diagrama 
+ y cuyos resultados serán presentados en 
+\change_deleted -8664667 1551992172
+a
+\change_unchanged
+l
+\change_inserted -8664667 1551992174
+a
+\change_unchanged
+ proxima sección, puede observarse en el diagrama 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:bundle_phase_diag_2"
@@ -3554,7 +4416,15 @@ literal "false"
 \end_inset
 
 , que estudiaron la formación de agregados poliméricos fijados a la pared
- en mal solvente, variando la densidad de fijado 
+ en 
+\change_deleted -8664667 1551992196
+mal
+\change_unchanged
+ solvente
+\change_inserted -8664667 1551992201
+ pobre
+\change_unchanged
+, variando la densidad de fijado 
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
@@ -3573,8 +4443,13 @@ Si se tiene un nanocanal revestido con cepillos poliméricos en sus paredes
  de polímeros en la segunda pared confinante.
  De particular interés es el encuentro de los denominados ''ramilletes''
  anclados a paredes opuestas.
- Estos nuevos aglomerados forman estructuras estables a la ancho del canal
- (ver figura 
+ Estos nuevos aglomerados forman estructuras estables a l
+\change_inserted -8664667 1551992287
+o
+\change_deleted -8664667 1551992286
+a
+\change_unchanged
+ ancho del canal (ver figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:esquema_paper_3"
@@ -3600,6 +4475,7 @@ status open
 \begin_inset Graphics
 	filename figs/bund_phas_diag_2.png
 	width 50col%
+	clip
 
 \end_inset
 
@@ -3701,12 +4577,19 @@ noprefix "false"
 \begin_inset Formula $N=16$
 \end_inset
 
- monómeros, que según el modelo utilizado da una distancia de equilibrio
- para los segmentos de 
+ monómeros, que según el modelo utilizado
+\change_inserted -8664667 1552057260
+,
+\change_unchanged
+ da una distancia de equilibrio para los segmentos de 
 \begin_inset Formula $a=0.97\sigma$
 \end_inset
 
- y una la longitud de contorno de las cadenas de 
+ y una 
+\change_deleted -8664667 1552057300
+la
+\change_unchanged
+ longitud de contorno de las cadenas de 
 \begin_inset Formula $l_{c}\simeq15\sigma$
 \end_inset
 
@@ -3743,12 +4626,22 @@ noprefix "false"
 \end_inset
 
 .
- El radio de interacción entre todas las partículas fue fijada en 
+ El radio de interacción entre todas las partículas fue fijad
+\change_deleted -8664667 1552057756
+a
+\change_inserted -8664667 1552057756
+o
+\change_unchanged
+ en 
 \begin_inset Formula $r_{C}=2.24\sigma$
 \end_inset
 
-, excepto en el caso de ideal de buen solvente ideal, en el cual la interacción
- entre monómeros fue puramente repulsiva, fijando 
+, excepto en el caso 
+\change_deleted -8664667 1552057770
+de ideal
+\change_unchanged
+ de buen solvente ideal, en el cual la interacción entre monómeros fue puramente
+ repulsiva, fijando 
 \begin_inset Formula $r_{C}=1.12\sigma$
 \end_inset
 
@@ -3762,7 +4655,7 @@ La temperatura se mantuvo constante
 
 , como a lo largo de todo el trabajo de doctorado.
  Se utilizó el termostato DPD con una constante de fricción de 
-\begin_inset Formula $\gamma=0.5$
+\begin_inset Formula $\gamma=0.5\varepsilon\tau/\sigma^{2}$
 \end_inset
 
 .
@@ -3785,7 +4678,25 @@ La temperatura se mantuvo constante
 \begin_inset Formula $dt=2·10^{-3}\tau$
 \end_inset
 
- hasta alcanzar el equilibrio sistema.
+ hasta 
+\change_inserted -8664667 1552058000
+que el sistema 
+\change_unchanged
+alcanz
+\change_inserted -8664667 1552058003
+ó
+\change_deleted -8664667 1552058002
+ar
+\change_inserted -8664667 1552058008
+ claramente
+\change_deleted -8664667 1552058005
+ 
+\change_unchanged
+el equilibrio 
+\change_deleted -8664667 1552058012
+sistema
+\change_unchanged
+.
  Para las simulaciones fuera del equilibrio, el paso temporal fue de 
 \begin_inset Formula $dt=2·10^{-4}\tau$
 \end_inset
@@ -3843,8 +4754,15 @@ La densidad de cadenas por unidad de área
 \end_inset
 
 .
- Se eligió una distribución ordenada sobre una aleatoria, como se hizo en
- otros trabajos
+ Se eligió una distribución ordenada 
+\change_deleted -8664667 1552058401
+sobre
+\change_inserted -8664667 1552058406
+en lugar de 
+\change_deleted -8664667 1552058403
+ 
+\change_unchanged
+una aleatoria, como se hizo en otros trabajos
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Roemer_15,doi:10.1021/acs.langmuir.7b02640,C7SM00466D"
@@ -3853,10 +4771,23 @@ literal "false"
 \end_inset
 
 , para evitar inhomogeneidades que pudieran introducir efectos espurios
- que no se verían en un sistema real mas grande.
- De todas maneras, se realizaron simulaciones con una distribución de sitios
- de fijado al azar para comparar la respuesta del sistema, obteniendo comportami
-entos cualitativamente similares.
+ que no se verían en un sistema real 
+\change_deleted -8664667 1552058423
+mas grande
+\change_inserted -8664667 1552058444
+de mayor tamaño
+\change_unchanged
+.
+ De todas maneras, se realizaron 
+\change_inserted -8664667 1552058485
+también 
+\change_unchanged
+simulaciones con una distribución de sitios de fijado al azar
+\change_inserted -8664667 1552058492
+,
+\change_unchanged
+ para comparar la respuesta del sistema, obteniendo comportamientos cualitativam
+ente similares.
  Los detalles se dan en la siguiente sección.
 \end_layout
 
@@ -3887,7 +4818,11 @@ Los lados de la caja de simulación fueron alrededor de
 \end_inset
 
 .
+
+\change_deleted -8664667 1552058373
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -3901,6 +4836,7 @@ status open
 \begin_inset Graphics
 	filename figs/TOC.png
 	width 60text%
+	clip
 
 \end_inset
 
@@ -3913,6 +4849,7 @@ status open
 	filename figs/TOC_2.eps
 	lyxscale 34
 	width 60text%
+	clip
 
 \end_inset
 
@@ -3926,13 +4863,41 @@ name "fig:esquema_paper_3"
 
 \end_inset
 
-En la figura superior se muestra un esquela del sistema estudiado en equilibrio
- y luego al aplicarle un gradiente de presión .
+En la figura superior se muestra un esq
+\change_inserted -8664667 1552058540
+uema
+\change_deleted -8664667 1552058538
+uela
+\change_unchanged
+ del sistema estudiado en equilibrio y luego al aplicarle un gradiente de
+ presión .
  En la figura inferior se aprecia el sistema estudiado mediante el software
- VMD, que permite visualizar las simulaciones numéricas.
+ VMD
+\change_inserted -8664667 1552058557
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -8664667 1552058558
+cita
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+, que permite visualizar las simulaciones numéricas.
  En rojo se presentan los polímeros y en verde los monómeros terminales
  anclados al sustrato.
- Las partículas de fluido no se muestras para una mejor visualización.
+ Las partículas de fluido no se muestras para una mejor visualización
+\change_inserted -8664667 1552058604
+ de la morfología de los polímeros
+\change_unchanged
+.
 \end_layout
 
 \end_inset
@@ -3967,18 +4932,28 @@ noprefix "false"
 \end_inset
 
 .
- La densidad fue integrada y promediad en las direcciones paralelas al sustrato,
- aprovechando la simetría de traslación en estas direcciones.
+ La densidad fue integrada y promediad
+\change_inserted -8664667 1552058624
+a
+\change_unchanged
+ en las direcciones paralelas al sustrato, aprovechando la simetría de traslació
+n en estas direcciones.
  En equilibrio se observa la presencia de monómeros cerca del centro del
  canal (
 \begin_inset Formula $z=9\sigma$
 \end_inset
 
-), mientras que en condiciones de flujo, la densidad de monómeros en en
+), mientras que en condiciones de flujo, la densidad de monómeros en 
+\change_deleted -8664667 1552058641
+en
+\change_unchanged
  el centro del canal desaparece y la misma aumenta cerca de las paredes.
- De estas figuras se puede deducir que pasado cierto umbral de fuerza externa,
- los polímeros se retraen hacia las paredes del canal, dejando libre el
- centro del mismo.
+ De estas figuras se puede deducir que
+\change_inserted -8664667 1552058658
+,
+\change_unchanged
+ pasado cierto umbral de fuerza externa, los polímeros se retraen hacia
+ las paredes del canal, dejando libre el centro del mismo.
  La densidad de fijado de esta muestra es de 
 \begin_inset Formula $\rho_{g}=0.03\sigma^{-2}$
 \end_inset
@@ -4006,6 +4981,7 @@ status open
 	filename figs/dens_profs.eps
 	lyxscale 50
 	width 98col%
+	clip
 
 \end_inset
 
@@ -4179,7 +5155,13 @@ noprefix "false"
 
 \end_inset
 
-, que presentan una mirada lateral del canal, en cada uno de los regímenes.
+, que presentan una 
+\change_inserted -8664667 1552058844
+vista
+\change_deleted -8664667 1552058842
+mirada
+\change_unchanged
+ lateral del canal, en cada uno de los regímenes.
  Para flujos pequeños se aprecia que las cadenas fijadas a paredes opuestas
  del canal se encuentran en la mitad de la muestra, formando estructuras.
  La presencia de estas estructuras dificultan el flujo del solvente a través
@@ -4188,8 +5170,17 @@ noprefix "false"
 \begin_inset Formula $F_{ext}>F^{*}$
 \end_inset
 
-, las estructuras se rompen y la mitad de canal queda liberado, amplificando
- rápidamente el caudal.
+, las estructuras se rompen y la mitad de
+\change_inserted -8664667 1552073828
+l
+\change_unchanged
+ canal queda liberad
+\change_inserted -8664667 1552073836
+a
+\change_deleted -8664667 1552073835
+o
+\change_unchanged
+, amplificando rápidamente el caudal.
  En el recuadro de la derecha de la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4235,9 +5226,25 @@ name "fig:Mean-fluid-velocity_vs_Fx_example"
 \end_inset
 
 Caudal del solvente a través del canal en función de la fuerza externa.
- La linea punteada azul divide los dos regímenes: a la izquierda el canal
- obstruido y a su derecha, el canal liberado.
- Las lineas roja y verde son ajustes lineales para cada régimen (canal abierto
+ La l
+\change_inserted -8664667 1552073898
+í
+\change_deleted -8664667 1552073897
+i
+\change_unchanged
+nea punteada azul divide 
+\change_deleted -8664667 1552073889
+los
+\change_unchanged
+ dos regímenes: a la izquierda el canal obstruido y a su derecha, el canal
+ liberado.
+ Las l
+\change_deleted -8664667 1552073909
+i
+\change_inserted -8664667 1552073911
+í
+\change_unchanged
+neas roja y verde son ajustes lineales para cada régimen (canal abierto
  / canal cerrado).
  En los recuadros se observa un corte lateral del sistema para el canal
  cerrado (izquierda) y para el canal abierto (derecha).
@@ -4275,8 +5282,15 @@ noprefix "false"
  Es esperable que haya diferencias menores en la respuesta de los dos sistemas,
  ya que para muestras pequeñas, la distribución de los sitios de fijado
  puede modificar las formaciones de las estructuras poliméricas.
- Sin embargo, cabe destacar que el umbral del fuerza para el cual las formacione
-s se rompen y el canal se abre es el mismo en ambos casos.
+ Sin embargo, cabe destacar que el umbral de
+\change_deleted -8664667 1552075951
+l
+\change_unchanged
+ fuerza para el cual las formaciones se rompen y el canal se abre
+\change_inserted -8664667 1552075958
+,
+\change_unchanged
+ es el mismo en ambos casos.
  Esto indica que los resultados hallados en este capítulo se sostienen también
  para cepillos poliméricos desordenados o para sitios ordenados con otra
  geometría.
@@ -4293,6 +5307,7 @@ status open
 \begin_inset Graphics
 	filename figs/Q_random_vs_order_brush.agr
 	width 50col%
+	clip
 
 \end_inset
 
@@ -4427,7 +5442,13 @@ Primero se estudió como la rigidez de las cadenas afecta el proceso de apertura
 \begin_inset Formula $k_{f}=0;\,3.5\varepsilon;\,8.1\varepsilon;\,12.4\varepsilon;\,18.53\varepsilon;\,34.75\varepsilon;\,116\varepsilon$
 \end_inset
 
- para evaluar un amplio rango de valores de rigidez.
+ para 
+\change_deleted -8664667 1552079346
+evaluar
+\change_inserted -8664667 1552079348
+estudiar
+\change_unchanged
+ un amplio rango de valores de rigidez.
  El valor físicamente relevante para evaluar la rigidez de los polímeros
  es la longitud de persistencia 
 \begin_inset Formula $l_{p}$
@@ -4435,7 +5456,20 @@ Primero se estudió como la rigidez de las cadenas afecta el proceso de apertura
 
 , que cuantifica la distancia a la cual las cadenas pierden la coherencia
  orientacional.
- Se realizaron nuevas simulaciones con polímeros aislados, en las misma
+ Se realizaron 
+\change_deleted -8664667 1552079387
+nuevas
+\change_unchanged
+ simulaciones
+\change_inserted -8664667 1552079392
+ auxiliares
+\change_deleted -8664667 1552079390
+ 
+\change_unchanged
+con polímeros aislados, en las misma
+\change_inserted -8664667 1552079371
+s
+\change_unchanged
  condiciones termodinámicas, con la sola finalidad determinar el valor de
  
 \begin_inset Formula $l_{p},$
@@ -4497,16 +5531,37 @@ noprefix "false"
 \end_inset
 
 .
- Este curva sugiere que, para este caso, no existe una transición abierto/cerrad
-o del canal.
- Las cadenas permanecen en un estado de '' glóbulo'', maximizando asi su
- entropía configuracional, y no llegan a hacer contacto con los polímeros
+ Est
+\change_inserted -8664667 1552079440
+a
+\change_deleted -8664667 1552079438
+e
+\change_unchanged
+ curva sugiere que, para este caso, no existe una transición abierto/cerrado
+ del canal.
+ Las cadenas permanecen en un estado de ''
+\change_deleted -8664667 1552079451
+ 
+\change_unchanged
+glóbulo'', maximizando as
+\change_inserted -8664667 1552079460
+í
+\change_deleted -8664667 1552079457
+i
+\change_unchanged
+ su entropía configuracional, y no llegan a hacer contacto con los polímeros
  anclados a la pared opuesta.
  Para este caso de cadenas totalmente flexibles, el canal nunca está en
  un estado cerrado, ya que no hay formaciones de polímeros en el medio del
  canal.
- Al subir la rigidez, se comienza a apreciar un quiebre en la curva del
- caudal que corresponde al paso del régimen de bajo caudal al de alto caudal.
+ Al 
+\change_deleted -8664667 1552079486
+subir
+\change_inserted -8664667 1552079488
+aumentar
+\change_unchanged
+ la rigidez, se comienza a apreciar un quiebre en la curva del caudal que
+ corresponde al paso del régimen de bajo caudal al de alto caudal.
  El potencial de flexión obliga a las cadenas a estirarse en la direción
  perpendicular a las paredes, venciendo la fuerza entrópica y logrando contactar
  a los polímeros fijados al sustrato opuesto para formar estructuras estables.
@@ -4581,12 +5636,32 @@ Caudal de solvente líquido en función de la fuerza externa, para diferentes
 
 .
  En el recuadro se observa la misma curva, para los casos de polímeros totalment
-e flexibles y para 
+e flexibles 
+\change_deleted -8664667 1552079622
+y para
+\change_inserted -8664667 1552079624
+con
+\change_unchanged
+ 
 \begin_inset Formula $l_{p}/l_{c}=1$
 \end_inset
 
- para mostrar la diferencia de comportamiento visibilidad.
- Las lineas son guías para el ojo.
+
+\change_inserted -8664667 1552079630
+,
+\change_unchanged
+ para mostrar la diferencia de comportamiento 
+\change_deleted -8664667 1552079647
+visibilidad
+\change_unchanged
+.
+ Las l
+\change_inserted -8664667 1552079651
+í
+\change_deleted -8664667 1552079650
+i
+\change_unchanged
+neas son guías para el ojo.
 \end_layout
 
 \end_inset
@@ -4618,13 +5693,25 @@ noprefix "false"
 \begin_inset Formula $l_{p}/l_{c}\gg1$
 \end_inset
 
- re rigidez, la respuesta del sistema es plana y no se observan estados
- de flujo distinguibles.
+ 
+\change_deleted -8664667 1552079660
+re
+\change_inserted -8664667 1552079661
+de
+\change_unchanged
+ rigidez, la respuesta del sistema es plana y no se observan estados de
+ flujo distinguibles.
  Para valores intermedios de rigidez (
 \begin_inset Formula $0<l_{p}/l_{c}<10$
 \end_inset
 
-) existe un cambió notable en la dependencia del caudal con la fuerza externa.
+) existe un cambi
+\change_inserted -8664667 1552079681
+o
+\change_deleted -8664667 1552079680
+ó
+\change_unchanged
+ notable en la dependencia del caudal con la fuerza externa.
  Es de gran interés encontrar el valor de longitud de persistencia que maximiza
  este cambio de comportamiento de flujo.
  En la figura 
@@ -4691,6 +5778,9 @@ literal "false"
 \begin_layout Standard
 Para observar este fenómeno de manera experimental es necesario usar polímeros
  muy rígidos, dado que la longitud de persistencia de un polímero es de
+\change_inserted -8664667 1552079821
+l
+\change_unchanged
  orden de 
 \begin_inset Formula $1nm$
 \end_inset
@@ -4740,8 +5830,12 @@ literal "false"
 \end_inset
 
 .
- Otra posibilidades utilizar polielectrolitos de ADN monocatenario, cuyo
- grosor/dureza puede variarse con la fuerza iónica 
+ Otra posibilidad
+\change_inserted -8664667 1552079860
+ 
+\change_unchanged
+es utilizar polielectrolitos de ADN monocatenario, cuyo grosor/dureza puede
+ variarse con la fuerza iónica 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "0953-8984-18-14-S11"
@@ -4809,9 +5903,14 @@ Caudal en función del parámetro de rigidez de las cadenas, para el canal
 \end_layout
 
 \begin_layout Standard
-Para comprender como la rigidez de los polímeros modifica el flujo dentro
- del canal, es conveniente analizar la morfología del cepillo y los grados
- de libertad moleculares.
+Para comprender c
+\change_deleted -8664667 1552079935
+o
+\change_inserted -8664667 1552079937
+ó
+\change_unchanged
+mo la rigidez de los polímeros modifica el flujo dentro del canal, es convenient
+e analizar la morfología del cepillo y los grados de libertad moleculares.
  En la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4845,8 +5944,13 @@ noprefix "false"
 \end_inset
 
 , la altura media del cepillo no varía con la rigidez de las cadenas.
- La altura media del cepillo si cambia notablemente al cerrarse el canal
- (
+ La altura media del cepillo s
+\change_inserted -8664667 1552080039
+í
+\change_deleted -8664667 1552080039
+i
+\change_unchanged
+ cambia notablemente al cerrarse el canal (
 \begin_inset Formula $l_{p}/l_{c}>1.6$
 \end_inset
 
@@ -4879,7 +5983,11 @@ La variable que muestra un comportamiento similar al caudal en el rango
 \begin_inset Formula $\theta=0°$
 \end_inset
 
- corresponde al polímero perpendicular al sustrato y 
+ corresponde al polímero perpendicular al sustrato
+\change_inserted -8664667 1552080108
+,
+\change_unchanged
+ y 
 \begin_inset Formula $\theta=90°$
 \end_inset
 
@@ -4887,8 +5995,12 @@ La variable que muestra un comportamiento similar al caudal en el rango
  El ángulo de inclinación se midió tomando en cuenta solamente la diferencia
  entre la posición de los monómeros terminales y los monómeros fijados a
  la pared.
- El ángulo queda definido por la cuación 
-\begin_inset Formula $tan\,\theta=R_{x}/R_{z}$
+ El ángulo queda definido por la 
+\change_inserted -8664667 1552080135
+e
+\change_unchanged
+cuación 
+\begin_inset Formula $\tan\theta=R_{x}/R_{z}$
 \end_inset
 
 , dónde 
@@ -4900,7 +6012,7 @@ La variable que muestra un comportamiento similar al caudal en el rango
 \end_inset
 
  son las componentes del vector 
-\begin_inset Formula $\boldsymbol{R}_{end-to-end}$
+\begin_inset Formula $\boldsymbol{R}_{{\rm end-to-end}}$
 \end_inset
 
 .
@@ -4923,14 +6035,44 @@ literal "false"
 
 \end_inset
 
- en el contexto de flujo electroosmotico para cepillos polímeros totalmente
- flexibles.
+ en el contexto de flujo electroosm
+\change_inserted -8664667 1552080228
+ó
+\change_deleted -8664667 1552080227
+o
+\change_unchanged
+tico para cepillos pol
+\change_deleted -8664667 1552080236
+í
+\change_inserted -8664667 1552080237
+i
+\change_unchanged
+m
+\change_inserted -8664667 1552080241
+é
+\change_deleted -8664667 1552080238
+e
+\change_unchanged
+r
+\change_inserted -8664667 1552080245
+ic
+\change_unchanged
+os totalmente flexibles.
  El comportamiento no monótono de la inclinación en función de la dureza
  de los polímeros es muy interesante.
  Las cadenas totalmente flexibles permanecen en un régimen de glóbulo, dobladas
- sobre si mismas para maximizar su entropía configuracional resistiendose
- a la inclinación en la dirección del flujo, como se observa en el recuadro
- izquierdo de la figura 
+ sobre si mismas para maximizar su entropía configuracional
+\change_inserted -8664667 1552080264
+,
+\change_unchanged
+ resisti
+\change_inserted -8664667 1552080270
+é
+\change_deleted -8664667 1552080269
+e
+\change_unchanged
+ndose a la inclinación en la dirección del flujo, como se observa en el
+ recuadro izquierdo de la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Rend_vs_lp_Open_Channel"
@@ -4994,9 +6136,15 @@ name "fig:Rend_vs_lp_Open_Channel"
 
 \end_inset
 
- Se grafica el angulo de inclinación de las cadenas en la dirección del
- flujo (curva negra) y la altura media del cepillo en función de la rigidez
- de las cadenas (curva roja), para una fuerza externa constante de 
+ Se grafica el 
+\change_deleted -8664667 1552080386
+a
+\change_inserted -8664667 1552080388
+á
+\change_unchanged
+ngulo de inclinación de las cadenas en la dirección del flujo (curva negra)
+ y la altura media del cepillo en función de la rigidez de las cadenas (curva
+ roja), para una fuerza externa constante de 
 \begin_inset Formula $F_{ext}=0.008\varepsilon/\sigma$
 \end_inset
 
@@ -5029,7 +6177,13 @@ name "fig:Rend_vs_lp_Open_Channel"
 
 \begin_layout Standard
 La distribución de las cadenas en el canal modifica sustancialmente el comportam
-iento reologico del sistema.
+iento reol
+\change_inserted -8664667 1552080428
+ó
+\change_deleted -8664667 1552080427
+o
+\change_unchanged
+gico del sistema.
  Para tener una imagen más acabada de la morfología del cepillo, se calculó
  la función de distribución de pares 
 \begin_inset Formula $g(r)$
@@ -5071,7 +6225,11 @@ La función
 
  y luego dividiendo este valor por el área de la corona.
  Al estar usando condiciones periódicas de contorno, hay que ser cauteloso
- en el cálculo para no contar dos veces la misma partícula.
+ en el cálculo
+\change_inserted -8664667 1552080567
+,
+\change_unchanged
+ para no contar dos veces la misma partícula.
  Esto se puede lograr limitando el dominio de la función 
 \begin_inset Formula $g(r)$
 \end_inset
@@ -5098,8 +6256,14 @@ Para cadenas totalmente flexibles (
 \begin_inset Formula $l_{p}/l_{c}=0.1$
 \end_inset
 
-), no hay presencia de monomeros a mitad de altura del canal, y por lo tanto
- no hay formaciones de estructuras poliméricas.
+), no hay presencia de mon
+\change_inserted -8664667 1552080612
+ó
+\change_deleted -8664667 1552080611
+o
+\change_unchanged
+meros a mitad de altura del canal, y por lo tanto no hay formaciones de
+ estructuras poliméricas.
  Al aumentar la rigidez de las cadenas, la cantidad de formaciones crece
  (ver recuadro de la figura 
 \begin_inset CommandInset ref
@@ -5111,7 +6275,11 @@ noprefix "false"
 
 \end_inset
 
-), pero el ancho de las mismas nocambia significativamente en el rango 
+), pero el ancho de las mismas no
+\change_inserted -8664667 1552080628
+ 
+\change_unchanged
+cambia significativamente en el rango 
 \begin_inset Formula $l_{p}/l_{c}\le1.6$
 \end_inset
 
@@ -5120,15 +6288,27 @@ noprefix "false"
 \begin_inset Formula $l_{p}/l_{c}=3$
 \end_inset
 
-, la función de de distribución de pares presenta un pico marcado cerca
- de 
+, la función de 
+\change_deleted -8664667 1552080637
+de
+\change_unchanged
+ distribución de pares presenta un pico marcado cerca de 
 \begin_inset Formula $r=2\sigma$
 \end_inset
 
 , que corresponde a la presencia de segundos vecinos en las estructuras
  poliméricas.
- Estas formaciones están compuestas por una cantidad mayor de monomeros,
- y son más más difíciles de romper que las formaciones observadas para 
+ Estas formaciones están compuestas por una cantidad mayor de mon
+\change_inserted -8664667 1552080681
+ó
+\change_deleted -8664667 1552080680
+o
+\change_unchanged
+meros, y son 
+\change_deleted -8664667 1552080687
+más
+\change_unchanged
+ más difíciles de romper que las formaciones observadas para 
 \begin_inset Formula $l_{p}/l_{c}\le1.6$
 \end_inset
 
@@ -5147,9 +6327,14 @@ noprefix "false"
 \begin_inset Formula $l_{p}/l_{c}\ge3$
 \end_inset
 
- el caudal decrece rapidamente, ya que la fuerza externa no es suficiente
- para romper los enlaces de los polímeros en el centro de canal y pasar
- hacia un estado abierto.
+ el caudal decrece r
+\change_inserted -8664667 1552080700
+á
+\change_deleted -8664667 1552080699
+a
+\change_unchanged
+pidamente, ya que la fuerza externa no es suficiente para romper los enlaces
+ de los polímeros en el centro de canal y pasar hacia un estado abierto.
  
 \end_layout
 
@@ -5206,8 +6391,13 @@ noprefix "false"
 \end_inset
 
  para los sistemas en equilibrio en función de la dureza de los polímeros.
- En este recuadro se observa como la cantidad de monómeros crece monotonamente
- con la rigidez de las cadenas.
+ En este recuadro se observa c
+\change_inserted -8664667 1552080834
+ó
+\change_deleted -8664667 1552080834
+o
+\change_unchanged
+mo la cantidad de monómeros crece monotonamente con la rigidez de las cadenas.
  Como se mencionó anteriormente, las cadenas totalmente flexibles no alcanzan
  el seno del canal y no hay formaciones que obstruyan el flujo del solvente.
  A medida que aumenta la rigidez, las cadenas ancladas a paredes opuestas
@@ -5256,7 +6446,13 @@ es de equilibrio, para distintos valores de
  En el recuadro se muestra la densidad de monómeros en el centro del canal
  en función de la rigidez de las cadenas.
  Se observa como la cantidad de cadenas que alcanzan la mitad del canal
- crece monotonamente con la dureza de los polímeros
+ crece mon
+\change_deleted -8664667 1552080939
+o
+\change_inserted -8664667 1552080941
+ó
+\change_unchanged
+tonamente con la dureza de los polímeros
 \end_layout
 
 \end_inset
@@ -5281,13 +6477,24 @@ Hasta ahora se exploró el comportamiento del sistema variando solamente
 \end_inset
 
 .
- En esta sección se analiza la respuesta del sistema de estudio en función
- de la cantidad de cadenas por unidad de área 
+ En esta sección se analiza la respuesta del sistema 
+\change_deleted -8664667 1552330042
+de estudio
+\change_inserted -8664667 1552330044
+estudiado
+\change_unchanged
+ en función de la cantidad de cadenas por unidad de área 
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
 .
- La rigidez de las cadenas para este estudio se dejo fija en 
+ La rigidez de las cadenas para este estudio se dej
+\change_inserted -8664667 1552330080
+ó
+\change_deleted -8664667 1552330079
+o
+\change_unchanged
+ fija en 
 \begin_inset Formula $l_{p}/l_{c}=1$
 \end_inset
 
@@ -5318,7 +6525,11 @@ noprefix "false"
 
 \end_inset
 
- a) se muestra la permitividad del canal 
+
+\change_deleted -8664667 1552332573
+ 
+\change_unchanged
+a) se muestra la permitividad del canal 
 \begin_inset Formula $\kappa$
 \end_inset
 
@@ -5346,8 +6557,16 @@ noprefix "false"
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
-, la fuerza necesaria para romper las formaciones poliméricas incrementa.
+, la fuerza necesaria para romper las formaciones poliméricas 
+\change_inserted -8664667 1552332624
+se 
+\change_unchanged
+incrementa.
+
+\change_deleted -8664667 1552081028
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -5373,10 +6592,20 @@ noprefix "false"
 \end_inset
 
  explorados.
- Se observa como el valor medio de la altura de las cadenas decrece al mismo
- tiempo que se produce el aumento repentino en la permitividad.
- Esto muestra que la altura de del cepillo es un buen observable para determinar
- el estado (abierto o cerrado) del canal.
+ Se observa c
+\change_inserted -8664667 1552332661
+ó
+\change_deleted -8664667 1552332660
+o
+\change_unchanged
+mo el valor medio de la altura de las cadenas decrece al mismo tiempo que
+ se produce el aumento repentino en la permitividad.
+ Esto muestra que la altura 
+\change_deleted -8664667 1552332677
+de
+\change_unchanged
+ del cepillo es un buen observable para determinar el estado (abierto o
+ cerrado) del canal.
  El valor de 
 \begin_inset Formula $R_{z}$
 \end_inset
@@ -5403,7 +6632,13 @@ literal "false"
 \end_inset
 
  no varía sensiblemente con la fuerza externa.
- En este grafico 
+ En este gr
+\change_deleted -8664667 1552332709
+a
+\change_inserted -8664667 1552332710
+á
+\change_unchanged
+fico 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:flow_vs_fext_lp1"
@@ -5440,8 +6675,13 @@ noprefix "false"
 \end_inset
 
 .
- Este comportamiento coincide por lo reportado en la literatura por Huang
- et al.
+ Este comportamiento coincide 
+\change_inserted -8664667 1552332788
+con
+\change_deleted -8664667 1552332787
+por
+\change_unchanged
+ lo reportado en la literatura por Huang et al.
 \begin_inset CommandInset citation
 LatexCommand citep
 key "doi:10.1021/ma060628f"
@@ -5524,9 +6764,13 @@ name "fig:flow_vs_fext_lp1"
 \end_inset
 
 .
- Es importante notar que la baja repentina en la la altura del cepillo coincide
- con el aumento súbito del caudal en el canal, exponiendo la conexión entre
- la morfología del cepillo polimérico y la dinámica del fluido.
+ Es importante notar que la baja repentina en 
+\change_deleted -8664667 1552333389
+la
+\change_unchanged
+ la altura del cepillo coincide con el aumento súbito del caudal en el canal,
+ exponiendo la conexión entre la morfología del cepillo polimérico y la
+ dinámica del fluido.
 \end_layout
 
 \end_inset
@@ -5662,7 +6906,13 @@ noprefix "false"
 \end_inset
 
  se toman de manera tal de incluir el intervalo entre la mayor fuerza para
- el cual el canal permanece cerrado y la menor fuerza para la cual el canal
+ 
+\change_inserted -8664667 1552333130
+la
+\change_deleted -8664667 1552333128
+el
+\change_unchanged
+ cual el canal permanece cerrado y la menor fuerza para la cual el canal
  está abierto.
 \end_layout
 
@@ -5677,23 +6927,50 @@ noprefix "false"
 
 \end_inset
 
- que la fuerza de corte crece monotonamente con la cantidad de polímeros
- fijados.
+ que la fuerza de corte crece mon
+\change_inserted -8664667 1552333145
+ó
+\change_deleted -8664667 1552333144
+o
+\change_unchanged
+tonamente con la cantidad de polímeros fijados.
  Al incrementar el número de polímeros, es necesario más fuerza para romper
  los enlaces que unen las cadenas en el medio del canal.
  Este comportamiento es esperable, ya que al aumentar 
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
-, incrementa la cantidad de cadenas y consecuentemente aumenta la cantidad
- de enlaces que son necesarios romper para abrir el canal.
+,
+\change_inserted -8664667 1552333163
+ se 
+\change_deleted -8664667 1552333162
+ 
+\change_unchanged
+incrementa 
+\change_deleted -8664667 1552333167
+la cantidad
+\change_inserted -8664667 1552333169
+el número
+\change_deleted -8664667 1552333168
+ 
+\change_unchanged
+de cadenas y consecuentemente aumenta la cantidad de enlaces que son necesarios
+ romper
+\change_inserted -8664667 1552333181
+,
+\change_unchanged
+ para abrir el canal.
  La fuerza umbral 
 \begin_inset Formula $F^{*}$
 \end_inset
 
  se puede pensar como la fuerza necesaria para romper un enlace polimérico,
  multiplicado por la cantidad de enlaces.
- Esto es apoyado por en la curva roja de la figura 
+ Esto es apoyado por 
+\change_deleted -8664667 1552333200
+en
+\change_unchanged
+ la curva roja de la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:F*_vs_gd_lp1"
@@ -5738,7 +7015,13 @@ name "fig:F*_vs_gd_lp1"
 \end_inset
 
  La curva negra muestra la dependencia de la fuerza necesaria para la realizar
- la transición abierto/cerrado con la densidad de fijado de cadenas.
+ la transición abierto/cerrado 
+\change_inserted -8664667 1552333448
+en función de
+\change_deleted -8664667 1552333445
+con
+\change_unchanged
+ la densidad de fijado de cadenas.
  Se aprecia que la 
 \begin_inset Formula $F^{*}$
 \end_inset
@@ -5747,7 +7030,13 @@ name "fig:F*_vs_gd_lp1"
  La curva roja muestra la densidad de monómeros en el centro del canal,
  en función de la densidad de fijado de las cadenas.
  Como es de esperarse, a mayor cantidad de monómeros en el centro del canal,
- mayor es la fuerza necesaria para romper todos las formaciones poliméricas
+ mayor es la fuerza necesaria para romper tod
+\change_deleted -8664667 1552333469
+o
+\change_inserted -8664667 1552333469
+a
+\change_unchanged
+s las formaciones poliméricas
 \end_layout
 
 \end_inset
@@ -5792,15 +7081,50 @@ Para tener una mirada más amplia sobre la respuesta del sistema, se varió
 \begin_inset Formula $\varepsilon^{(lc)}=0.33\varepsilon$
 \end_inset
 
-, que corresponde a una interacción solvofóbica y, para completar el estudio
- se simuló un solvente pobre ideal, modelando una interacción puramente
- repulsiva modificando el radio de corte de la fuerza 
+, que corresponde a una interacción solvofóbica
+\change_inserted -8664667 1552335210
+.
+
+\change_deleted -8664667 1552335209
+ y,
+\change_unchanged
+ 
+\change_inserted -8664667 1552335213
+P
+\change_deleted -8664667 1552335212
+p
+\change_unchanged
+ara completar el estudio se simuló 
+\change_inserted -8664667 1552335221
+adicionalmente 
+\change_unchanged
+un solvente pobre ideal, modelando una interacción puramente repulsiva 
+\change_deleted -8664667 1552335238
+modificando
+\change_inserted -8664667 1552335260
+mediante el cambio del 
+\change_deleted -8664667 1552335281
+ el
+\change_unchanged
+ radio de corte de la fuerza
+\change_inserted -8664667 1552335286
+ a un valor
+\change_deleted -8664667 1552335265
+ 
+\change_unchanged
+
 \begin_inset Formula $r_{C}=1.12\sigma$
 \end_inset
 
 .
- Cabe recordad que el parámetro correspondiente a las interacciones solvente-sol
-vente y monómero-monómero es 
+ Cabe recorda
+\change_deleted -8664667 1552335291
+d
+\change_inserted -8664667 1552335293
+r
+\change_unchanged
+ que el parámetro correspondiente a las interacciones solvente-solvente
+ y monómero-monómero es 
 \begin_inset Formula $\varepsilon^{(ll)}=\varepsilon^{(cc)}=1\varepsilon$
 \end_inset
 
@@ -5836,7 +7160,13 @@ noprefix "false"
 \begin_inset Formula $\kappa$
 \end_inset
 
- para todo el tango de 
+ para todo el 
+\change_inserted -8664667 1552336180
+r
+\change_deleted -8664667 1552336180
+t
+\change_unchanged
+ango de 
 \begin_inset Formula $F_{ext}$
 \end_inset
 
@@ -5897,11 +7227,10 @@ En interesante notar que el valor de la fuerza para la cual se abre el canal
  y crece el flujo de manera no lineal, no depende de la calidad del solvente.
  En todos los casos presentados, la apertura del canal se produce alrededor
  de 
-\begin_inset Formula $F_{ext}=0.003\varepsilon/\sigma$
+\begin_inset Formula $F_{ext}\simeq0.003\varepsilon/\sigma$
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -5964,9 +7293,12 @@ noprefix "false"
 
 \end_inset
 
- se presenta el valor medio del estiramiento del los polímeros en la dirección
- perpendicular al sustrato, en función de la fuerza externa, para diferentes
- calidades de solvente.
+ se presenta el valor medio del estiramiento de
+\change_deleted -8664667 1552336460
+l
+\change_unchanged
+ los polímeros en la dirección perpendicular al sustrato, en función de
+ la fuerza externa, para diferentes calidades de solvente.
  En todos los casos se aprecia que las cadenas se retraen hacia las paredes
  del canal a medida que aumenta el gradiente de presión a lo largo del canal.
  Esto se debe a que las cadenas se inclinan en la dirección del flujo, arrastrad
@@ -5989,12 +7321,28 @@ literal "false"
 
 \end_inset
 
- en condiciones de solvente pobre, done la altura del cepillo no se ve afectada
- significativamente por la fuerza que induce el flujo.
+ en condiciones de solvente pobre, don
+\change_inserted -8664667 1552336733
+d
+\change_unchanged
+e la altura del cepillo no se ve afectada significativamente por la fuerza
+ que induce el flujo.
  Cabe mencionar que en el trabajo mencionado, las densidades de fijado son
  considerablemente mayores a las utilizadas en este trabajo, y ellos usan
- polímeros totalmente flexibles, mientras aquí los cadenas son semiflexibles.
- Se puede en la figura 
+ polímeros totalmente flexibles, mientras aquí l
+\change_inserted -8664667 1552336770
+a
+\change_deleted -8664667 1552336770
+o
+\change_unchanged
+s cadenas son semiflexibles.
+ Se puede
+\change_inserted -8664667 1552336780
+ observar
+\change_deleted -8664667 1552336778
+ 
+\change_unchanged
+en la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Rz_vs_F_all_solvents"
@@ -6004,6 +7352,10 @@ noprefix "false"
 
 \end_inset
 
+
+\change_inserted -8664667 1552336786
+,
+\change_unchanged
  nuevamente la correspondencia entre la disminución de la altura del cepillo
  y el crecimiento en el caudal.
  Esta correlación negativa entre la altura del cepillo y la permitividad
@@ -6015,15 +7367,31 @@ literal "false"
 
 \end_inset
 
+
+\change_inserted -8664667 1552336802
+,
+\change_unchanged
  variando la calidad del solvente.
 \end_layout
 
 \begin_layout Standard
-Para condiciones de buen solvente, la altura del cepillo disminuye suvamente
- con la fuerza externa.
+Para condiciones de buen solvente, la altura del cepillo disminuye su
+\change_inserted -8664667 1552336837
+a
+\change_unchanged
+v
+\change_deleted -8664667 1552336840
+a
+\change_inserted -8664667 1552336841
+e
+\change_unchanged
+mente con la fuerza externa.
  Resultados similares fueron observados por Adiga y Brenner, en simulaciones
- de dinámica molecular en un canal cilíndrico para polímeros totalmente
- flexibles (ver la figura 5 of ref 
+ de dinámica molecular en un canal cilíndrico
+\change_inserted -8664667 1552336830
+,
+\change_unchanged
+ para polímeros totalmente flexibles (ver la figura 5 of ref 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "doi:10.1021/nl051843x"
@@ -6055,6 +7423,25 @@ literal "false"
 
 \end_inset
 
+
+\change_inserted -8664667 1552336906
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -8664667 1552336948
+C: Para que condiciones? Conviene decir bien si vieron lo mismo en las mismas
+ condiciones, y mejor aún, en otras
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 .
 \end_layout
 
@@ -6179,12 +7566,24 @@ noprefix "false"
 \end_inset
 
 .
- Esto se entiende luego de hace una inspección visual del movimiento del
+ Esto se entiende luego de hace
+\change_inserted -8664667 1552340325
+r
+\change_unchanged
+ una inspección visual del movimiento de
+\change_deleted -8664667 1552340332
+l
+\change_unchanged
  los polímeros, y notando que no se forman estructuras poliméricas que perduren
  en el tiempo.
- Para el caso del buen solvente, las cadenas son atraidas con la misma intensida
-d por otras cadenas que por el solvente, por lo cual no se forman estructuras
- estables, como se vio anteriormente.
+ Para el caso del buen solvente, las cadenas son atra
+\change_inserted -8664667 1552341467
+í
+\change_deleted -8664667 1552341466
+i
+\change_unchanged
+das con la misma intensidad por otras cadenas que por el solvente, por lo
+ cual no se forman estructuras estables, como se vio anteriormente.
 \end_layout
 
 \begin_layout Standard
@@ -6202,7 +7601,15 @@ noprefix "false"
 \begin_inset Formula $z=L_{z}/2$
 \end_inset
 
- para las distitanas calidades de solvente estudiadas.
+ para las disti
+\change_inserted -8664667 1552341499
+n
+\change_unchanged
+ta
+\change_deleted -8664667 1552341501
+na
+\change_unchanged
+s calidades de solvente estudiadas.
  Se observa que la presencia de monómeros en el centro del canal no varía
  significativamente para solventes pobres, y crece rápidamente para el caso
  de buen solvente.
@@ -6277,9 +7684,31 @@ Resumen
 \end_layout
 
 \begin_layout Standard
-En este capitulo se estudió el flujo de líquido en un nanocanal con geometría
- de hendidura, cuyas paredes están revestidas por cepillos poliméricos.
- Una particularidad del sistema, es que las cadenas ancaldas a paredes opuestas
+En este cap
+\change_inserted -8664667 1552341599
+í
+\change_deleted -8664667 1552341598
+i
+\change_unchanged
+tulo se estudió el flujo de líquido en un nanocanal con geometría 
+\change_deleted -8664667 1552341610
+de hendidura
+\change_inserted -8664667 1552341611
+plana
+\change_unchanged
+, cuyas paredes están revestidas por cepillos poliméricos.
+ Una particularidad del sistema, es que las cadenas anc
+\change_deleted -8664667 1552341621
+a
+\change_unchanged
+l
+\change_inserted -8664667 1552341621
+a
+\change_unchanged
+das a paredes opuestas
+\change_inserted -8664667 1552341626
+,
+\change_unchanged
  llegan a tocarse en el interior de canal, es decir 
 \begin_inset Formula $2l_{c}<L_{z}$
 \end_inset
@@ -6340,14 +7769,30 @@ Con la rigidez fija en
 \begin_inset Formula $l_{p}/l_{c}=1$
 \end_inset
 
-, se procedió a investigar como varía la respuesta del sistema para diferentes
- valores de densidad de fijado de cadenas 
+, se procedió a investigar c
+\change_inserted -8664667 1552341755
+ó
+\change_deleted -8664667 1552341755
+o
+\change_unchanged
+mo varía la respuesta del sistema para diferentes valores de densidad de
+ fijado de cadenas 
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
 .
  Al aumentar la cantidad de polímeros en el sistema, se observó que la fuerza
- umbral necesaria para romper las formaciones incremente.
+ umbral necesaria para romper las formaciones 
+\change_inserted -8664667 1552341777
+se 
+\change_unchanged
+increment
+\change_inserted -8664667 1552341780
+a
+\change_deleted -8664667 1552341780
+e
+\change_unchanged
+.
  Es decir que la fuerza umbral 
 \begin_inset Formula $F^{*}$
 \end_inset
@@ -6356,13 +7801,33 @@ Con la rigidez fija en
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
- y es una función monotonamente creciente.
+ y es una función mon
+\change_inserted -8664667 1552341794
+ó
+\change_deleted -8664667 1552341793
+o
+\change_unchanged
+tonamente creciente.
  También se observó que la respuesta del sistema al abrirse el canal es
- mayort, cuanto menor es la densidad de fijado de cadenas 
+ mayor
+\change_deleted -8664667 1552341803
+t
+\change_unchanged
+, cuanto menor es la densidad de fijado de cadenas 
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
- en el tengo de valores estudiado en este trabajo.
+
+\change_inserted -8664667 1552341817
+,
+\change_unchanged
+ en el 
+\change_deleted -8664667 1552341821
+tengo
+\change_inserted -8664667 1552341825
+intervalo
+\change_unchanged
+ de valores estudiado en este trabajo.
 \end_layout
 
 \begin_layout Standard
@@ -6370,9 +7835,29 @@ Por último se estudió la respuesta del sistema para distintas afinidades
  entre el solvente y el cepillo polimérico.
  En este caso se vio que la respuesta del sistema se maximiza cuanto menor
  se la afinidad, es decir en condiciones de solvente pobre.
- Al mejorar disminuir la incompatiblidad química entre el cepillo y solvente,
- el caudal cambia de manera continua con la fuerza externa y no se ve una
- trasición del canal entre el estado abierto y el estado cerrado.
+ Al 
+\change_deleted -8664667 1552341854
+mejorar 
+\change_inserted -8664667 1552341855
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -8664667 1552341857
+??
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+disminuir la incompatiblidad química entre el cepillo y solvente, el caudal
+ cambia de manera continua con la fuerza externa y no se ve una trasición
+ del canal entre el estado abierto y el estado cerrado.
  Por lo tanto, concluimos que la incompatibilidad cepillo-solvente es necesaria
  para obtener una repuesta no lineal en el sistema.
 \end_layout
@@ -6381,21 +7866,9 @@ Por último se estudió la respuesta del sistema para distintas afinidades
 Observaciones finales
 \end_layout
 
-\begin_layout Thanks
+\begin_layout Standard
 Macri gato.
  Sci-Hub.
-\end_layout
-
-\begin_layout Section*
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-btprint "btPrintCited"
-bibfiles "bib/database,bib/database_2"
-options "plain"
-
-\end_inset
-
-
 \end_layout
 
 \end_body
