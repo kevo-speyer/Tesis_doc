@@ -749,6 +749,13 @@ noprefix "false"
 
 \begin_layout Section
 Modelado de interacciones
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Modelado-de-interacciones"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2744,6 +2751,13 @@ Esto hace que el tiempo de correlación disminuya fuertemente, siempre que
 \begin_layout Chapter
 Resultados I: Cepillos poliméricos en equilibrio y bajo flujo en régimen
  superhidrofóbico
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Resultados-I:-Cepillos"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -2847,6 +2861,381 @@ The system studied in this work consists of a slit like nano-channel, whose
 Detalles del sistema y metodología
 \end_layout
 
+\begin_layout Standard
+La metodología para abordar el estudio de este sistema fue similar a la
+ descrita en el capítulo anterior 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Resultados-I:-Cepillos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Se realizaron simulaciones de dinámica molecular fuera del equilibrio,
+ utilizando el termostato DPD para mantener la temperatura de la muestra
+ constante en el valor deseado 
+\begin_inset Formula $k_{B}T=0.8\varepsilon$
+\end_inset
+
+.
+ La constante de fricción para el termostato fue 
+\begin_inset Formula $\gamma=0.5$
+\end_inset
+
+, y se tomaron las elecciones detalladas las ecuaciones 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:DPD1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:DPD2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Los lados de la caja de simulación utilizados fueron 
+\begin_inset Formula $L_{x}$
+\end_inset
+
+ en la dirección del flujo, 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+ la distancia entre las paredes sólidas y 
+\begin_inset Formula $L_{y}=13.42\sigma$
+\end_inset
+
+.
+ El largo de la caja de simulación en la dirección del flujo fue variada,
+ para estudiar los efectos del mismo, pero el estudio sistemático se realizó
+ con un valor fijo de 
+\begin_inset Formula $L_{x}=107\sigma$
+\end_inset
+
+.
+ El valor del alto del canal 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+ fue variado en el rango 
+\begin_inset Formula $30\sigma<L_{z}<40\sigma$
+\end_inset
+
+, como se contará en la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Determinación-del-ancho"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, para comparar los sistemas estudiados manteniendo la forma de la gota
+ igual.
+ En las direcciones paralelas a las paredes 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ e 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ se utilizaron condiciones periódicas de contorno.
+ Se utilizó una fuerza externa constante 
+\begin_inset Formula $f_{ext}=0.002\varepsilon/\sigma$
+\end_inset
+
+ aplicada sobre cada una de las partículas del sistema, para perturbar al
+ sistema fuera del equilibrio e inducir un flujo en la dirección 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Polímeros de 
+\begin_inset Formula $N=10$
+\end_inset
+
+ monómeros fueron anclados por un monómero terminal a una de las dos paredes
+ internas del canal, situadas en 
+\begin_inset Formula $z=0$
+\end_inset
+
+ y 
+\begin_inset Formula $z=L_{z}$
+\end_inset
+
+.
+ Se tomo una densidad de cadenas fijadas por unidad de área 
+\begin_inset Formula $\rho_{g}=0.05\sigma^{-2}$
+\end_inset
+
+.
+ Los sitios de anclado de las cadenas fueron dispuestas en una red cuadrada,
+ para evitar efectos espurios provenientes eventuales inhomogeneidades al
+ distribuirlos de manera aleatoria.
+ Esto da una distancia media entre cadenas 
+\begin_inset Formula $a_{l}=1/\text{\sqrt{\rho_{g}}}=4.47\sigma$
+\end_inset
+
+.
+ Para tener una mejor idea de cuan grande es esta distancia entre primeros
+ vecinos, conviene compararla con la longitud de contorno 
+\begin_inset Formula $l_{c}=8.7\sigma$
+\end_inset
+
+ de las cadenas: 
+\begin_inset Formula $a_{l}/l_{c}\simeq0.5$
+\end_inset
+
+.
+ Es decir, que dependiendo de la inclinación de las cadenas en la dirección
+ del flujo, estas pueden llegar a entrar en contacto con sus primeros vecinos.
+ 
+\end_layout
+
+\begin_layout Standard
+Se realizó un estudio sistemático del sistema en función de la rigidez de
+ las cadenas poliméricas, variando la constante de flexión 
+\begin_inset Formula $k_{f}$
+\end_inset
+
+ del potencial que controla la dureza de las misma.
+ Cómo se describió en la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Modelado-de-interacciones"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, se utilizó una potencial armónico para modelar la rigidez de las cadenas
+\begin_inset Formula 
+\begin{equation}
+U_{flex}(\theta)=\frac{1}{2}k_{f}\theta^{2}\,,\label{eq:bend_2}
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $\theta$
+\end_inset
+
+ es el ángulo formado en la intersección de dos segmentos consecutivos.
+ La orientación vertical de las cadenas es favorecida, utilizando el mismo
+ potencial de la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:bend_2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, como se detalla en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Orientacion"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Los valores de constante de flexión utilizados fueron variados en el rango
+ 
+\begin_inset Formula $1\varepsilon<k_{f}<200\varepsilon$
+\end_inset
+
+, que corresponden valores de longitud de persistencia 
+\begin_inset Formula $0.1<l_{p}/l_{c}<23$
+\end_inset
+
+.
+ De esta manera se explora todo el rango de valores, desde una cadena totalmente
+ flexible 
+\begin_inset Formula $l_{p}/l_{c}<<1$
+\end_inset
+
+, hasta un comportamiento más parecido al de una vara 
+\begin_inset Formula $l_{p}/l_{c}>>1$
+\end_inset
+
+.
+ La conectividad entre monómeros para describir el modelo de cadena polimérica
+ fue dado por el modelo de Kreme-Grest
+\begin_inset CommandInset citation
+LatexCommand cite
+key ":/content/aip/journal/jcp/92/8/10.1063/1.458541,PhysRevA.33.3628"
+literal "false"
+
+\end_inset
+
+, detallado en la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Modelado-de-interacciones"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En el interior del canal se simularon partículas sueltas que constituyen
+ el fluido.
+ Las interacciones partícula-partícula y partícula-monómero fueron simuladas
+ mediante un potencial truncado y desplazado.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U(r)=U_{LJ}(r)-U_{LJ}(r_{c})\,,
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $U_{LJ}$
+\end_inset
+
+ es el potencial de Lennard-Jonnes:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U_{LJ}(r)=\begin{cases}
+4\varepsilon^{(ab)}\left[\left(\frac{\sigma}{r}\right)^{12}-\left(\frac{\sigma}{r}\right)^{6}\right] & ;\quad si\;r\leq r_{C}^{(ab)}\\
+0 & ;\quad si\;r>r_{C}^{(ab)}
+\end{cases}\,,\label{eq:Lennard_Jones-1}
+\end{equation}
+
+\end_inset
+
+donde los superíndices describen el típo de partícula 
+\begin_inset Formula $f$
+\end_inset
+
+ para el fluido y 
+\begin_inset Formula $m$
+\end_inset
+
+ para los monómeros.
+ Los parámetros para las interacciones fluido-fluido y partícula-partícula
+ fueron 
+\begin_inset Formula $\varepsilon^{(ff)}=\varepsilon^{(mm)}\equiv1\varepsilon$
+\end_inset
+
+, mientras que para la interacción fluido-monómero se utilizó 
+\begin_inset Formula $\varepsilon^{(lf)}=1/3\varepsilon$
+\end_inset
+
+, para imponer una incompatibilidad química entre el cepillo y el líquido,
+ que permita estudiar a la gota en un estado ''Fakir'', en que la gota no
+ moja al cepillo (Cassie-Baxter).
+ Los valores elegidos para los radios de corte de esta interacción fue la
+ misma que en el capítulo anterior.
+ Se utilizó 
+\begin_inset Formula $r_{C}^{(ff)}=r_{C}^{(fm)}=2.24\sigma$
+\end_inset
+
+ , que incluye una zona de atracción entre las partículas, mientras que
+ para las interacciones monómero-monómero se excluyeron las interacciones
+ atractivas, utilizando 
+\begin_inset Formula $r_{C}^{(mm)}=1.12\sigma$
+\end_inset
+
+.
+ La inclusión de la parte atractiva del potencial para las interacciones
+ entre partículas del fluido permite la formación de la fase líquida, en
+ equilibrio termodinámico.
+ Bajo estas condiciones, la fase líquida adopta una densidad de 
+\begin_inset Formula $\rho_{l}=0.7\sigma^{-3}$
+\end_inset
+
+ y la fase gaseosa 
+\begin_inset Formula $\rho_{v}=0.03\sigma^{-3}$
+\end_inset
+
+.
+ La cantidad de partículas de fluido fue alrededor 
+\begin_inset Formula $n_{f}=6000$
+\end_inset
+
+ y fue ajustada, junto al ancho del canal 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+, para mantener la gota del canal similar para todos los valores de rigidez
+ polimérica utilizados.
+ En la subsección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Determinación-del-ancho"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se explicará minuciosamente como se determinaron estas cantidades.
+\end_layout
+
+\begin_layout Standard
+Se utilizó el esquema de Velocity-Verlet para integrar las ecuaciones de
+ movimiento.
+ Primero se dejo estabilizar al sistema hasta llegar a un estado estacionario
+ en 
+\begin_inset Formula $\sim10^{6}$
+\end_inset
+
+ pasos temporales, con un paso de 
+\begin_inset Formula $\delta t=3\times10{}^{-4}$
+\end_inset
+
+, y luego se comenzaron a medir las cantidades medias de interés.
+ En las condiciones descritas, la velocidad de la gota siempre estuvo en
+ el rango
+\begin_inset Formula $0.1\sigma/\tau\,<v<0.5\sigma/\tau$
+\end_inset
+
+ , donde 
+\begin_inset Formula $\tau\equiv\sigma\sqrt{m/\varepsilon}.$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Seguimiento de las gotas 
 \begin_inset CommandInset label
@@ -2856,6 +3245,33 @@ name "subsec:Seguimiento-de-las-gotas"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Un problema técnico de trabajar con distintas fases, es poder discriminarlas
+ de manera automática en el programa de simulación.
+ Para el ojo humano es inmediato distinguir la gota líquida del vapor, como
+ se puede apreciar en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Snap"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ , pero como veremos, no es una tarea trivial para un algoritmo eficiente.
+ 
+\end_layout
+
+\begin_layout Standard
+La localización precisa de la gota líquida es necesaria para obtener la
+ velocidad de la misma, y para poder describir al sistema desde un sistema
+ de referencia solidario a la fase líquida.
+ Un requerimiento importante que debe cumplir el algoritmo de localización
+ de la gota, es la rapidez.
+ No orden N2, sino O(N)
 \end_layout
 
 \begin_layout Standard
@@ -2917,7 +3333,7 @@ name "fig:Histo_cm"
 \end_layout
 
 \begin_layout Subsection
-Determinación del ancho del canal
+Determinación del alto del canal
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Determinación-del-ancho"
