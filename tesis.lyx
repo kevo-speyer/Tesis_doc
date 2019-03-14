@@ -3189,7 +3189,7 @@ donde los superíndices describen el típo de partícula
 
 .
  La cantidad de partículas de fluido fue alrededor 
-\begin_inset Formula $n_{f}=6000$
+\begin_inset Formula $n_{f}\sim6·10^{3}$
 \end_inset
 
  y fue ajustada, junto al ancho del canal 
@@ -3262,7 +3262,27 @@ noprefix "false"
 \end_inset
 
  , pero como veremos, no es una tarea trivial para un algoritmo eficiente.
- 
+ Los algoritmos existentes son computacionalmente muy demandantes
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kuan_pan_shyy_2014"
+literal "false"
+
+\end_inset
+
+, o requieren parámetros 
+\shape italic
+ad-hoc 
+\shape default
+que dependen de las características del sistema
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sedighi_2010"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3271,12 +3291,82 @@ La localización precisa de la gota líquida es necesaria para obtener la
  de referencia solidario a la fase líquida.
  Un requerimiento importante que debe cumplir el algoritmo de localización
  de la gota, es la rapidez.
- No orden N2, sino O(N)
+ El algoritmo más costoso en el programa de dinámica molecular, es el encargado
+ de computar los pares de fuerzas de interacción entre todas las partículas
+ del sistema.
+ El tiempo de que consume este algoritmo depende del número total de partículas
+ 
+\begin_inset Formula $N_{tot}$
+\end_inset
+
+ según 
+\begin_inset Formula $O(N_{tot}log\,N_{tot})$
+\end_inset
+
+, por lo tanto.
+ Un algoritmo de localización de la gota que sea más lento que el algoritmo
+ de cálculo de fuerzas, ralentizaría considerablemente el programa de dinámica
+ molecular.
 \end_layout
 
 \begin_layout Standard
+Un primer acercamiento al problema planteado, es tomar el centro de masa
+ de todas la partículas de fluido y esperar que el promedio coincida con
+ el centro de masa del líquido.
+ El problema de este enfoque, es que la contribución de las partículas perteneci
+entes al vapor puede ser comparable al de las partículas de líquido, y el
+ el promedio puede caer fuera de la gota, como se muestra en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Histo_cm"
+plural "false"
+caps "false"
+noprefix "false"
 
-\lang english
+\end_inset
+
+.
+ El efecto del vapor en este calculo puede estimarse sencillamente.
+ Utilizando valores típicos empleados en este sistema: 
+\begin_inset Formula $k_{B}T=0.8\varepsilon$
+\end_inset
+
+, 
+\begin_inset Formula $L_{x}=322\sigma$
+\end_inset
+
+, numero de partículas de líquido 
+\begin_inset Formula $N_{liq}=4000$
+\end_inset
+
+.
+ La relación entre partícuals de vapor y partículas en el líquido es aproximadam
+ente:
+\begin_inset Formula 
+\[
+\frac{n_{v}}{n_{l}}=\frac{\rho_{v}V_{v}}{\rho_{l}V_{l}}\eqsim\frac{\rho_{v}(L_{x}-D)}{\rho_{l}D}=0.42\,,
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $D$
+\end_inset
+
+ es la extensión de la gota en la dirección del flujo y 
+\begin_inset Formula $\rho_{l,v}$
+\end_inset
+
+ son las densidades de líquido y de gas de las partículas.
+ Alrededor de un 
+\begin_inset Formula $30\%$
+\end_inset
+
+ de todas las partículas de fluido pertenecen al vapor, y tienen un peso
+ considerable en el cálculo del centro de masa del fluido en el nanocanal.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -3284,8 +3374,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename figs/cm_algorithm.eps
 	lyxscale 40
@@ -3298,28 +3386,23 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
-Histogram of particle positions along the channel (
-\begin_inset Formula $x$
-\end_inset
-
- coordinate).
- The difference in densities between vapor and liquid is clearly appreciated.
- The fluid's center of mass (black circle) falls outside the droplet, due
- to the significant number of particles in vapor phase.
- The mode of the distribution (
-\begin_inset Formula $x_{cm}^{0}$
-\end_inset
-
-) is a better estimator for the droplet's center of mass.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Histo_cm"
 
 \end_inset
 
+Histograma de la posición de las partículas de fluido a lo largo del canal.
+ Se puede apreciar claramente la diferencia en la densidad de partículas
+ de la gota y las de vapor.
+ El centro de masa del fluido, teniendo en cuenta todas las partículas,
+ cae fuera de la gota líquida, debido a la gran contribución de las partículas
+ de vapor.
+ Por otro lado, la moda de la distribución (
+\begin_inset Formula $x_{cm}^{0}$
+\end_inset
 
+) es un mejor estimador y siempre toma un valor dentro de la gota líquida.
 \end_layout
 
 \end_inset
@@ -3330,6 +3413,195 @@ name "fig:Histo_cm"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+En este trabajo hemos desarrollado un algoritmo eficiente 
+\begin_inset Formula $O(N)$
+\end_inset
+
+ para calcular el centro de masa de la gota, a partir de la posición de
+ todas las partículas de fluido.
+ El algoritmo funciona de manera iterativa, alcanzando en cada iteración
+ un valor más preciso.
+ Para iniciar el algoritmo, es necesario una primera estimación del centro
+ de masa de la gota, y para esto se tomó la moda de la distribución de partícula
+s
+\begin_inset Formula $x_{cm}^{0}$
+\end_inset
+
+, como se aprecia en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Histo_cm"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+De este histograma se puede estimar también el tamaño de la gota en la dirección
+ del flujo.
+ Sea 
+\begin_inset Formula $h_{max}$
+\end_inset
+
+la altura máxima del histograma, entonces habrá al menos un valor de 
+\begin_inset Formula $x$
+\end_inset
+
+, para el cual 
+\begin_inset Formula $h[x_{inicio}]<h_{max}/2$
+\end_inset
+
+ y 
+\begin_inset Formula $h[x_{inicio}+1]\ge h_{max}/2$
+\end_inset
+
+.
+ El valor 
+\begin_inset Formula $x_{inicio}$
+\end_inset
+
+corresponde al extremo izquierdo de la gota.
+ Análogamente, se puede calcular la posición del extremo derecho de la gota
+ 
+\begin_inset Formula $x_{fin}$
+\end_inset
+
+, para el cual se cumple 
+\begin_inset Formula $h[x_{min}]>h_{max}/2$
+\end_inset
+
+ y 
+\begin_inset Formula $h[x_{fin}+1]\leq h_{max}/2$
+\end_inset
+
+.
+ De esta manera se puede computar el largo de la gota 
+\begin_inset Formula $D=x_{end}-x_{start}$
+\end_inset
+
+, teniendo cuidado con las condiciones periódicas de contorno.
+\end_layout
+
+\begin_layout Standard
+El siguiente paso del algoritmo es trasladar todas la partículas de fluido,
+ según 
+\begin_inset Formula $x^{(i+1)}=x^{(i)}-x_{cm}^{(i)}+L_{x}/2$
+\end_inset
+
+, donde el superíndice 
+\begin_inset Formula $i$
+\end_inset
+
+ es el número de iteración.
+ Nuevamente, en este paso, es importante corregir la traslación con las
+ condiciones periódicas de contorno.
+ Luego de esta traslación, la siguiente iteración tendrá un centro de masa
+ del fluido más cerca de la mitad de la caja de simulación.
+ 
+\end_layout
+
+\begin_layout Standard
+Para calcular nuevamente el centro de masa, se filtran las partículas que
+ están lejos del centro de la caja, para dejar afuera a las partículas de
+ vapor y obtener un valor más preciso de la posición del centro de masa
+ de la gota.
+ Si la ventana para filtrar las partículas se elige correctamente, entonces
+ todas las partículas en la fase líquida serán tenidas en cuenta, mientras
+ que la mayoría de las partículas de la fase gaseosa quedan fuera.
+ La elección que tuvo buenos resultados, en todos los sistemas estudiados,
+ fue 
+\begin_inset Formula $L_{x}/2-D<x<L_{x}/2+D$
+\end_inset
+
+.
+ Con esta nueva estimación del centro de masa de la gota, puede realimentarse
+ el algoritmo, y así obtener completar una nueva estimación.
+\end_layout
+
+\begin_layout Standard
+Es importante observar que el valor 
+\begin_inset Formula $x_{cm}=L_{x}/2$
+\end_inset
+
+ es un punto fijo del algoritmo.
+ Esto quiere decir, que una vez que el valor estimado es efectivamente 
+\begin_inset Formula $x_{cm}^{(i)}=x_{cm}$
+\end_inset
+
+, entonces la siguiente estimación entregará la misma estimación correcta.
+ Para valores 
+\begin_inset Formula $x_{cm}^{0}\ne L_{x}/2$
+\end_inset
+
+, el algoritmo converge siempre 
+\begin_inset Formula $\underset{i\rightarrow\infty}{lim}\,x_{cm}^{i}=L/2$
+\end_inset
+
+.
+ Para computar la posición del centro de masa de la gota, en la iteración
+ 
+\begin_inset Formula $j$
+\end_inset
+
+, se utiliza la formula 
+\begin_inset Formula $x_{cm}=L/2+\stackrel[i=0]{j}{\sum}(x_{cm}^{i}-L/2)$
+\end_inset
+
+.
+ El número total de iteraciones depende de la precisión deseada en la estimación
+ final.
+ El criterio tomado en este trabajo para finalizar el proceso iterativo
+ fue que se cumplan las condiciones 
+\begin_inset Formula $|x_{cm}^{i}-L/2|<D/200$
+\end_inset
+
+ y 
+\begin_inset Formula $|x_{cm}^{i}-L/2|\leqslant|x_{cm}^{i-1}-L/2|$
+\end_inset
+
+.
+ La primera condición da la precisión en términos de la extensión de la
+ gota.
+ La segunda condición garantiza que la corrección en la última iteración
+ es menor que al corrección en la iteración anterior.
+ Esta última condición es importante cuando se trabaja con condiciones periódica
+s de contorno.
+ Típicamente se necesitan alrededor de 8 iteraciones, para localizar el
+ centro de masa de la gota, con una precisión de 
+\begin_inset Formula $0.1\sigma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Cabe notar que existe otro punto fijo en este algoritmo, en el caso que
+ una mitad de la gota este en el extremo derecho de la caja de simulación
+ y la otra este en el extremo izquierdo, cruzando el límite de la caja con
+ condiciones periódicas de contorno.
+ Este punto fijo del algoritmo es inestable, por lo cual en la práctica
+ nunca ocurre.
+ Es por este motivo, que es necesario ambos criterios de convergencia detallados
+ en el párrafo anterior y asegurarse de no obtener una solución indeseada.
+ 
+\end_layout
+
+\begin_layout Standard
+Este algoritmo presenta la ventaja de ser veloz 
+\begin_inset Formula $O(N)$
+\end_inset
+
+, tener una precisión ajustable, y se puede generalizar trivialmente para
+ muchas dimensiones.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -3344,7 +3616,56 @@ name "subsec:Determinación-del-ancho"
 \end_layout
 
 \begin_layout Standard
-das
+
+\lang english
+The problem consist in selecting the optimum value of channel width 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+ to obtain a droplet as similar as possible to a reference droplet.
+ This is not trivial, because the polymer brush height is strongly dependent
+ on the local stiffness of the individual polymers and studying the droplet's
+ flow properties as a function of chain stiffness is one of our key goals
+ in this work.
+ The idea is keeping constant the effective channel width and the droplet's
+ shape for all the studied cases.
+ To select the value of 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+, the two-dimensional density histograms of the droplets are compared to
+ the reference droplet via least squares: 
+\begin_inset Formula $\chi^{2}=\underset{bins}{\sum}(\rho_{Lz}-\rho_{ref})^{2}$
+\end_inset
+
+.
+ In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Chi2_vs_Lz"
+
+\end_inset
+
+, the value of 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ is plotted against the channel width 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+.
+ The value of 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+ that corresponds to a minimum of the 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ function is selected.
+ The distance between walls is chosen to obtain similar droplets' shapes
+ for all the explored bending rigidities .
 \end_layout
 
 \begin_layout Standard
