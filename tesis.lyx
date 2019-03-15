@@ -3616,61 +3616,84 @@ name "subsec:Determinación-del-ancho"
 \end_layout
 
 \begin_layout Standard
-
-\lang english
-The problem consist in selecting the optimum value of channel width 
+El alto del canal 
 \begin_inset Formula $L_{z}$
 \end_inset
 
- to obtain a droplet as similar as possible to a reference droplet.
- This is not trivial, because the polymer brush height is strongly dependent
- on the local stiffness of the individual polymers and studying the droplet's
- flow properties as a function of chain stiffness is one of our key goals
- in this work.
- The idea is keeping constant the effective channel width and the droplet's
- shape for all the studied cases.
- To select the value of 
-\begin_inset Formula $L_{z}$
-\end_inset
-
-, the two-dimensional density histograms of the droplets are compared to
- the reference droplet via least squares: 
-\begin_inset Formula $\chi^{2}=\underset{bins}{\sum}(\rho_{Lz}-\rho_{ref})^{2}$
+ se ajusto para cada valor de rigidez de los polímeros, para comparar las
+ mediciones manteniendo constante la forma de la gota líquida.
+ Al aumentar la dureza de las cadenas, estas se estiran en la dirección
+ perpendicular a las paredes y comprimen a la gota en 
+\begin_inset Formula $\hat{z}$
 \end_inset
 
 .
- In Figure 
+ Para compensar el estiramiento de las cadenas, es necesario ampliar la
+ distancia entre las paredes de nanocanal 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Para esto, se tomo una gota de referencia y se compararon todos los casos
+ contra esta.
+ La comparación se realizó cuantificando la diferencia entre los perfiles
+ de las densidades de las gotas.
+ Mediante el algoritmo de localización de la gota se logró utilizar un sistema
+ de referencia fijo al centro de masa de la gota y obtener perfiles bidimensiona
+les de densidad de las gotas
+\begin_inset Formula $\rho_{l}(x,y)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Con estos perfiles de densidad bidimensionales, se calculo la desviación
+ con respecto a la gota de referencia, como: 
+\begin_inset Formula $\chi^{2}=\underset{bins}{\sum}(\rho_{Lz}(x,y)-\rho_{ref}(x,y))^{2}$
+\end_inset
+
+.
+ Para cada valor de rigidez, se fue variando la distancia entre las paredes
+ 
+\begin_inset Formula $L_{z},$
+\end_inset
+
+y se calculo 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+, como puede observarse en la figura
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Chi2_vs_Lz"
 
 \end_inset
 
-, the value of 
-\begin_inset Formula $\chi^{2}$
-\end_inset
-
- is plotted against the channel width 
-\begin_inset Formula $L_{z}$
-\end_inset
-
 .
- The value of 
+ Del gráfico se puede observa que existe un valor de 
 \begin_inset Formula $L_{z}$
 \end_inset
 
- that corresponds to a minimum of the 
+ para el cual la diferencia entre la forma de las gotas alcanza un mínimo.
+ Este procedimiento fue realizado para cada valor de rigidez y el 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+ para el cual se minimiza 
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
- function is selected.
- The distance between walls is chosen to obtain similar droplets' shapes
- for all the explored bending rigidities .
+ fue elegido.
+ 
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 \begin_inset Float figure
 wide false
 sideways false
@@ -3678,8 +3701,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename figs/Chi2_vs_Lz_kb80_SM2.eps
 	lyxscale 40
@@ -3692,36 +3713,40 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Chi2_vs_Lz"
 
 \end_inset
 
- To select the appropriate width of the channel (
+ Para seleccionar la distancia apropiada entre paredes 
 \begin_inset Formula $L_{z}$
 \end_inset
 
-), the 2 dimensional density histograms of the droplets are compared.
+, se comparan los perfiles de densidad bidimensionales de la gota contr
+ una de referencia.
  
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
- is a metric that quantifies the distance between the simulation and the
- reference droplet, the lower it's value, the more similar the droplets.
- A value of 
+ es la métrica que cuantifica la diferencia entre la gota que se está evaluando
+ y la gota de referencia.
+ Un valor más pequeño de 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ indica una mayor similitud entre las gotas.
+ Un valor de 
 \begin_inset Formula $\chi^{2}=0$
 \end_inset
 
- is achieved for an exact match between histograms.
- Insets: two-dimensional histograms are presented for the smallest and largest
- values of 
+ señala una coincidencia perfecta entre los perfiles de ambas gotas.
+ En los recuadros se muestra perfiles de densidad de las gotas, para los
+ valores más pequeños y más grande de 
 \begin_inset Formula $L_{z}$
 \end_inset
 
- explored.
+ explorados.
 \end_layout
 
 \end_inset
@@ -5107,8 +5132,6 @@ literal "false"
 
 \begin_layout Standard
 \align block
-
-\lang english
 \begin_inset Float figure
 wide false
 sideways false
@@ -5116,8 +5139,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename figs/Deformation_vs_rigidity.eps
 	lyxscale 45
@@ -5433,8 +5454,6 @@ Dinámica del fluido
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 \begin_inset Float figure
 placement h
 wide false
@@ -5443,8 +5462,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename figs/vfluid_vs_Lx_5.eps
 	width 45col%
@@ -5924,6 +5941,124 @@ noprefix "false"
 
 \begin_layout Section
 Resumen
+\end_layout
+
+\begin_layout Standard
+Se estudió un sistema compuesto por una gota en coexistencia con su vapor,
+ en un nano canal revestido por un cepillo polimérico semiflexible.
+ El sistema fue sacado del equilibrio, imponiendo una fuerza constante sobre
+ cada partícula del sistema e induciendo el flujo.
+ Es importante mencionar que la gota no moja al cepillo, sino que se sostiene
+ sobre los polímeros.
+ 
+\end_layout
+
+\begin_layout Standard
+En en este capítulo se focalizó en el estudio de la influencia de la rigidez
+ de los polímeros en el flujo, manteniendo la forma de la gota constante.
+ Un amplio rango de valores de rigidez fue explorado, desde cadenas totalmente
+ flexibles, hasta varillas rígidas 
+\begin_inset Formula $0.1<l_{p}/l_{c}<23$
+\end_inset
+
+.
+ En estas condiciones, se observó que la velocidad del centro de masa de
+ la gota decrece al incrementar la rigidez de las cadenas.
+ Específicamente, en el rango 
+\begin_inset Formula $l_{p}/l_{c}<3$
+\end_inset
+
+, la velocidad de la gota decrece rápidamente con la rigidez, mientras que
+ para 
+\begin_inset Formula $l_{p}/l_{c}>3$
+\end_inset
+
+ decrece suavemente.
+\end_layout
+
+\begin_layout Standard
+Para entender el comportamiento del flujo con la rigidez, se estudió el
+ campo de velocidades de los monómeros terminales del cepillo.
+ Las cadenas más flexibles (
+\begin_inset Formula $l_{p}/l_{c}<3$
+\end_inset
+
+) presentan un movimiento colectivo particular, en que los monómeros cercanos
+ a la gota se mueven en la dirección del flujo, mientras los monómeros cercanos
+ a la pared poseen una velocidad negativa.
+ Este movimiento colectivo da lugar a un campo de velocidad positivo cerca
+ de la gota, permitiendo un un transporte más rápido de la gota a través
+ del canal.
+ Para 
+\begin_inset Formula $l_{p}/l_{c}>3$
+\end_inset
+
+, el espacio explorado por los monómeros terminales se ve reducido debido
+ al potencial de flexión duro, y no se observa el movimiento cíclico que
+ se aprecia para cadenas más flexibles.
+ Esto se refleja en una velocidad menor velocidad de la gota, ya que la
+ capa del cepillo en contacto con la gota posee una velocidad menor, que
+ en el caso de las cadenas más flexibles.
+ Se vio que la dinámica interna del cepillo tiene una influencia significativa
+ en el flujo.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+We analyzed in addition, the deformation of the polymer brush as a function
+ of rigidity.
+ The elongation of the chains in the flow direction presents a maximum for
+ polymers whose persistence length is equal to the contour length (
+\begin_inset Formula $l_{p}/l_{c}\simeq1$
+\end_inset
+
+).
+ For this value of bending rigidity, the maximum compression relative to
+ the unperturbed brush is observed.
+ The height of the polymers as a function of persistence length was also
+ examined, showing a good agreement with mean field theories 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BIRSHTEIN19832165,C4SM02862G"
+literal "true"
+
+\end_inset
+
+ for 
+\begin_inset Formula $l_{p}/l_{c}\leq4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+For the droplet flowing in coexistence with its gas, we observe that the
+ velocity of the gas phase decays exponentially as the distance from the
+ droplet increases.
+ The length of the simulations box was changed to modify the distance between
+ consecutive droplets, therefore varying the velocity at which the droplet
+ encounters the gas.
+ The droplet-vapor friction force was found to depend linearly on the velocity
+ difference between droplet and its surounding gas, as expected in a proposed
+ drag model.
+ Reducing the distance between consecutive droplets increases the velocity
+ of the flow.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Increasing the understanding of droplet flow through brush-covered surfaces
+ offers a great opportunity to control droplet flow by taking advantage
+ of the enormous versatility of polymer brushes as surface-modifiers.
+ This is of great importance for microfluidics and other technological applicati
+ons.
+ Hopefully the simulation results presented in this work can be compared
+ with upcoming experiments.
+ 
 \end_layout
 
 \begin_layout Chapter
