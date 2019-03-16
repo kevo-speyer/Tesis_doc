@@ -41,7 +41,7 @@ figs-within-sections
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
-\use_package esint 1
+\use_package esint 0
 \use_package mathdots 1
 \use_package mathtools 1
 \use_package mhchem 1
@@ -2777,19 +2777,9 @@ Antecedentes
 \end_layout
 
 \begin_layout Standard
-BLABLA INTRO.s
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Different forms of liquid flow under high confinement regime has gained
- attention in the last years due to the importance in a broad range of areas,
- like biology
+El flujo de diferentes tipos de fluidos en alto confinamiento ha ganado
+ atención en los últimos años, debido al alcance en diferentes áreas, como
+ la biología
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1146/annurev.bioeng.9.060906.151959,Lanotte_2014,CruzChu2014232"
@@ -2797,7 +2787,7 @@ literal "true"
 
 \end_inset
 
-, medicine
+, medicina
 \begin_inset CommandInset citation
 LatexCommand cite
 key "http://dx.doi.org/10.1038/nature13118"
@@ -2805,7 +2795,7 @@ literal "true"
 
 \end_inset
 
- and biotechnology
+ y biotecnología
 \begin_inset CommandInset citation
 LatexCommand cite
 key "BIOT:BIOT201500278"
@@ -2814,11 +2804,13 @@ literal "true"
 \end_inset
 
 .
- Microfluidics deals with flows in the pico-liter scale, focusing on accurate
- manipulation of liquids and gases in micro and nano-channels.
- Lab-on-chip devices, where complex biochemical reactions are automated,
- are an example of promising applications in this field.
- Although large-scale industrial implementations are not available yet
+ Dispositivos tipo 
+\shape italic
+lab-on-chip
+\shape default
+, en los cuales se realizan complejas operaciones de manera, son un ejemplo
+ promisorio de aplicaciones en este campo.
+ A pesar de que no haya implementaciones industriales a gran escala aún
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Volpatti2014347"
@@ -2826,7 +2818,8 @@ literal "true"
 
 \end_inset
 
-, microfluidic devices are widely used in research laboratories 
+, los dispositivos de microfluídica son ampliamente utilizados en el contexto
+ de la investigación y desarrollo
 \begin_inset CommandInset citation
 LatexCommand cite
 key "12ref19H,BIOT:BIOT201500278,http://dx.doi.org/10.1038/nature13118"
@@ -2835,22 +2828,20 @@ literal "true"
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
-
-\lang english
-A low Reynolds number (
+Un número de Reynolds (
 \begin_inset Formula $Re$
 \end_inset
 
-) and a high surface-area-to-volume ratio are characteristics of micro and
- nano-fluidics.
- Under these conditions, the flow is largely influenced by the confining
- substrate, which determines the boundary conditions.
- The no-slip boundary condition, usually assumed in macro scale calculations,
- is an approximation that is no longer valid in the micro-scale
+) bajo y una gran relación área sobre volumen son las características distintiva
+s del campo de la micro y nano fluídica.
+ Bajo estas condiciones, el sustrato tiene una gran influencia en el flujo,
+ determinando las condiciones de contorno del mismo.
+ La condición de no deslizamiento de un fluido en contacto con una pared,
+ usualmente aceptada para condiciones macroscópicas, es una aproximación
+ que no es valida in la microescala
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Lauga2007"
@@ -2859,11 +2850,19 @@ literal "true"
 \end_inset
 
 .
- Efforts are being made to understand and control liquids in the picoliter
- scale, by changing the properties of the inner coating surfaces and modifying
- the interaction with the confined fluid.
- There are several factors that affect the slip, including wettability,
- roughness, pressure, temperature or presence of undissolved gas and nanobubbles
+\end_layout
+
+\begin_layout Standard
+Se están realizando esfuerzos para entender y controlar líquidos en la escala
+ de los picolitros, modificando las propiedades del revestimiento interno
+ de las superficies para modificar la interacción con el fluido confinado.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+There are several factors that affect the slip, including wettability, roughness
+, pressure, temperature or presence of undissolved gas and nanobubbles
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1080/00268976.2015.1119899"
