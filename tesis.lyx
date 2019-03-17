@@ -2853,16 +2853,13 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-Se están realizando esfuerzos para entender y controlar líquidos en la escala
- de los picolitros, modificando las propiedades del revestimiento interno
- de las superficies para modificar la interacción con el fluido confinado.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-There are several factors that affect the slip, including wettability, roughness
-, pressure, temperature or presence of undissolved gas and nanobubbles
+Desde distintas disciplinas se están realizando esfuerzos para entender
+ y controlar líquidos en la escala de los picolitros, modificando las propiedade
+s del revestimiento interno de las superficies para modificar la interacción
+ con el fluido confinado.
+ Existen numerosos factores que afectan el deslizamiento del líquido sobre
+ una superficie, incluyendo la mojabilidad, rugosidad, presión, temperatura
+ y presencia de gases y nanoburbujas
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1080/00268976.2015.1119899"
@@ -2871,8 +2868,8 @@ literal "true"
 \end_inset
 
 .
- Several studies suggest that surface roughness influences greatly the boundary
- conditions of the flow
+ Varios estudios indican que la rugosidad de la superficie tiene una gran
+ influencia sobre las condiciones de contorno del flujo 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PhysRevE.74.066311,Zhang2016295,Yen2014,Choi_06,doi:10.1080/00268976.2015.1119899"
@@ -2881,17 +2878,12 @@ literal "true"
 \end_inset
 
 .
- A hierarchical structuration has been reported to reduce notably the friction
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Bixler_12,Zhang_12,PhysRevLett.99.176001"
-literal "true"
-
-\end_inset
-
-.
- There is consensus that hydrophobic coatings reduce friction, due to a
- weaker solid-fluid interaction
+ Se ha reportado que una estructuración jerarquica, donde hay rugosidades
+ en diferentes escalas de longitudes, reduce notablemente la fricción con
+ el líquido.
+ Al día de hoy existe un consenso generalizado que sostiene que un recubrimiento
+ hidrofóbico reduce la fricción, debido a la interacción repulsiva entre
+ el fluido y el sólido
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Liakopoulos2016,:/content/aip/journal/pof2/16/5/10.1063/1.1669400"
@@ -2899,7 +2891,7 @@ literal "true"
 
 \end_inset
 
-, but the underlying mechanism remains unclear
+, pero el mecanismo subyacente aún no esta esclarecido
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PhysRevLett.98.226001"
@@ -2912,10 +2904,8 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-
-\lang english
-Droplet transport in micro and nanochannels have been thoroughly investigated
- in the last decade both theoretically
+El transporte de gotas en micro y nano canales ha sido extensamente estudiado
+ en la última decada, tanto teórica
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PhysRevE.74.066311,doi:10.1021/acs.jpcc.5b07951,HE2010126,0953-8984-25-19-195103"
@@ -2923,7 +2913,7 @@ literal "true"
 
 \end_inset
 
- and experimentally
+ como experimentalmente
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1021/la0482406,doi:10.1021/la5004929,doi:10.1021/la504742w,doi:10.1021/la2004744,doi:10.1021/ac3028905"
@@ -2932,9 +2922,9 @@ literal "true"
 \end_inset
 
 .
- Multi-phase flows are important for chemical and biotechnological applications,
- because they allow complex phenomena like chemical reactions, emulsions
- and interfaces
+ Los flujos con múltiples fases son relevantes para aplicaciones químicas
+ y biotecnologícas, ya que permiten fenómenos complejos, como reacciones
+ químicas, emulsiones e interfases
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Shui200735,Rebrov2010"
@@ -2942,8 +2932,9 @@ literal "true"
 
 \end_inset
 
- with the potential of tailoring technological applications.
- Cao et al
+, con el potencial de ser ajustarse a las necesidades de aplicaciones tecnológic
+as.
+ Por medio de simulaciones de dinámica molecular, Cao et al.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PhysRevE.74.066311"
@@ -2951,12 +2942,12 @@ literal "true"
 
 \end_inset
 
- studied, by Molecular Dynamics (MD) simulations, the flow of a droplet
- in coexistence with its gas in a rough nanochannel.
- They observed that the slip can be largely influenced by the nano structuration
- of the hydrophobic walls.
- Slug flows are also present in polymer electrolyte membranes of fuel cells
- 
+ estudio el flujo de una gota líquida en coexistencia con su vapor de gas
+ en un nanocanal rugoso.
+ En este estudio se reporta que el deslizamiento depende de la nano etructuració
+n de las paredes hidrofóbicas.
+ Los flujos bifásicos gas-liquido también están presentes en las membranas
+ de electrolito polimérico para celdas de combustible
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1021/acs.jpcc.5b07951,Zhang01022006,Lu20093445,doi:10.1021/la403057k"
@@ -2964,9 +2955,9 @@ literal "true"
 
 \end_inset
 
-, where water has to be eliminated from microchannels at a controlled rate,
- to maximize the efficiency of the device.
- In this context, Fukushima et al
+, en las que el agua debe ser eliminada de microcanales a un ritmo controlado
+ para maximizar la eficiencia del dispositivo.
+ En este contexto, Fukushima et al
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1021/acs.jpcc.5b07951"
@@ -2974,9 +2965,9 @@ literal "true"
 
 \end_inset
 
- studied the friction between a droplet and the confining walls of a microchanne
-l, and its dependence on the channel width.
- A review on droplet based microfluidics can be found in Ref
+ estudiaron la fricción entre una gota y las paredes confinantes de un microcana
+l, y su dependencia con el ancho del canal.
+ En la referencia 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "10.1088/0034-4885/75/1/016601"
@@ -2984,16 +2975,14 @@ literal "true"
 
 \end_inset
 
-.
+, se puede encontrar una revisión del estado del campo de la microfluídica.
 \end_layout
 
 \begin_layout Standard
-
-\lang english
-Polymers tethered to a surface through a terminal monomer (polymer brushes)
- are good candidates to be used as coating in microchannels, due to their
- responsiveness to stimuli (pH, temperature, electric field, etc) and the
- ability to modify the rheological conditions
+Los cepillos poliméricos son buenos candidatos para ser utilizados en revestimie
+ntos de microcanales, debido a su sensibilidad frente a distintos estímulos
+ (pH, temperatura, campo eléctrico, etc) y su capacidad para modificar las
+ condiciones reológicas.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1021/ma401537j,Chen201094,doi:10.1021/acs.macromol.7b00450,SMLL:SMLL201402484,POLA:POLA26119,C5SM01962A"
@@ -3002,8 +2991,8 @@ literal "true"
 \end_inset
 
 .
- Polymer brushes present a very wide range of applications, like ph-controlled
- nanopores
+ Los cepillos poliméricos están presentes en una amplio rango de aplicaciones,
+ como nanopores controlados por pH
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1021/ja8086104"
@@ -3011,7 +3000,7 @@ literal "true"
 
 \end_inset
 
-, catalysis in microreactors
+, catálisis de microractores
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1021/ja807616z"
@@ -3019,7 +3008,7 @@ literal "true"
 
 \end_inset
 
- and cell adhesion and detachment control
+ y control de adhesión y repulsión celular 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1021/la904663m"
@@ -3028,8 +3017,11 @@ literal "true"
 \end_inset
 
 .
- The property of reducing friction of polymer brushes has been reported
- theoretically
+ 
+\end_layout
+
+\begin_layout Standard
+Una propiedad bien estudiada, tanto teórica como experimentalmente
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1021/ma8015757,Lee_12,doi:10.1021/ma062875p,C7SM00466D"
@@ -3037,27 +3029,12 @@ literal "true"
 
 \end_inset
 
- and experimentally
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1021/ma020043v,10.1038/370634a0,doi:10.1021/acs.macromol.5b01267"
-literal "true"
-
-\end_inset
-
-.
- To understand this phenomenon, the boundary conditions of liquids past
- fully flexible polymer brushes has been extensively investigated, and slip
- lengths of different orders of magnitude have been observed
-\begin_inset CommandInset citation
-LatexCommand cite
-key "C5SM02546J,doi:10.1021/acs.macromol.5b02505,Deng_2012,0953-8984-23-18-184105,PhysRevE.80.031608,PhysRevLett.92.018302,0953-8984-20-49-494225,doi:10.1021/ma991796t,doi:10.1021/ma020043v"
-literal "true"
-
-\end_inset
-
-.
- In reference 
+ de los cepillos poliméricos, es la reducción de fricción.
+ Para comprender este fenómeno, se ha investigado extensamente las condiciones
+ de contorno líquidos sobre cepillos de polímeros totalmente flexibles,
+ y se han reportado distancias de deslizamiento de distintos ordenes de
+ magnitud.
+ En la referencia
 \begin_inset CommandInset citation
 LatexCommand cite
 key "C5SM02919H"
@@ -3065,20 +3042,16 @@ literal "true"
 
 \end_inset
 
-, T.
- Kreer provides a recent and detailed review about the lubrication properties
- of polymer brushes.
- 
+, se proveé una revisión reciente y detallada de las propiedades lubricantes
+ de los cepillos poliméricos.
 \end_layout
 
 \begin_layout Standard
-
-\lang english
-Despite the numerous investigations in the field, little attention has been
- given to semiflexible polymer brushes under shear flow.
- Semiflexible polymer chains are an adequate coarse-grained model of macromolecu
-les, whenever the dimensions of the macromolecule do not significantly exceed
- its persistence length.
+A pesar de las numerosas investigaciones en este campo, se le ha prestado
+ poca atención a los cepillos de polímeros semiflexibles en flujo.
+ Los modelos de grano grueso de cadenas poliméricas semiflexibles son apropiados
+ para macromoleculas lineales, siempre que las dimensiones de la molécula
+ noexcedan significativamente su longitud de persistencia.
  Kim et al.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3087,22 +3060,9 @@ literal "true"
 
 \end_inset
 
- studied via mean field calculations and computer simulations the response
- of semiflexible brushes under shear flow, and found good agreement between
- both methods in the high rigidity regime.
- Deng et al.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Deng_2012"
-literal "true"
-
-\end_inset
-
- performed simulations of flow in microchannels coated with semiflexible
- polymers, to study glycocalyx fibers for 5 different values of bending
- rigidity.
- Flows are compared keeping constant the channel width, and varying the
- stiffness of the fibers.
+ estudiaron utilizando teoría de campo medio y simulaciones numéricas, la
+ respuesta de cepillos polimpericos semiflexibles en flujo, y observaron
+ un buen acuerdo entre ambos métodos en el régimen de alta rigidez.
  Römer and Fedosov
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3111,7 +3071,7 @@ literal "true"
 
 \end_inset
 
- extend the study by Kim et al.
+ extendieron el trabajo de Kim et al.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Kim_09"
@@ -3119,8 +3079,21 @@ literal "true"
 
 \end_inset
 
- for high grafting densities, but restricted to stiff polymers.
- On a recent study, Singh et al.
+ para altas densidades, pero restingiendose a polímeros rígidos.
+ Deng et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deng_2012"
+literal "true"
+
+\end_inset
+
+ realizaron simulaciones de flujo de líquido en microcanales revestidos
+ con polímeros semiflexibles, para estudiar las fibras de glicocálix para
+ diferentes valores de rigidez.
+ En este trabajo se compara el flujo manteniendo constante la altura de
+ canal, y variando la rigidez de las cadenas.
+ En un estudio reciente, Singh el al.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "polym8070254"
@@ -3128,83 +3101,27 @@ literal "true"
 
 \end_inset
 
- studied the trybological behavior of polymer-coated bilayers via MD simulations
-, and found that the friction coefficient for semiflexible polymer brushes
- was higher than for a fully flexible brush.
- The comparison of both types of brushes is made at equal effective width
- of the channel, but different grafting densities.
- In a previous work
+ estudiaron la tribilogía de bicapas revestidas por polímeros mediante simulacio
+nes de dinámica molecular, y observaron que el coeficiente de fricción para
+ cepillos poliméricos semiflexibles es mayor que para polímeros totalmente
+ flexibles.
+ La comparación es realizada a igual alto efectivo del canal, pero con diferente
+s densidades de fijado.
+ Hasta este trabajo, no existía en la bibliografía un estudió exhaustivo
+ y sistemático de cepillos poliméricos semiflexibles en flujo, que analice
+ los aspecto reologicos y las propiedades de las cadenas, cubriendo todo
+ el rango de durezas de las cadenas, desde polímeros totalmente flexibles,
+ hasta varillas rígidas.
+ Los resultados descritos en este capítulo fueron publicados en al revista
+ 
+\shape italic
+Langmuir
+\shape default
+ en el 2017
 \begin_inset CommandInset citation
 LatexCommand cite
-key "C5SM01075F"
-literal "true"
-
-\end_inset
-
-, we performed a comprehensive study of a nanochannel coated with semiflexible
- hydrophobic polymers, filled with a simple liquid.
- We found that for low grafting densities 
-\begin_inset Formula $\rho_{g}$
-\end_inset
-
-, the rigidity of the chains has a direct influence in the slip length of
- the flow.
- To the best of our knowledge there is no comprehensive study of semiflexible
- polymer brushes in shear flow, that analyzes the rheological and chain
- properties of the system, covering the whole range of chain stiffness,
- from fully flexible polymers to very stiff rod-like polymers.
- 
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-In this work, we perform MD simulations of a liquid-gas two-phase flow in
- a slit-like nanochannel, coated by a semiflexible hydrophobic polymer brushes
- (see Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig: Snap"
-
-\end_inset
-
-).
- This can be thought as the flow of a train of droplets through a brush-coated
- slit-like nanochannel, taking into account the periodic boundary conditions.
- The dependence of the droplet's velocity is analyzed by changing the distance
- between consecutive droplets in the axial direction of the channel, and
- varying the rigidity of the polymer chains.
- We investigate the friction forces acting on the liquid droplet due to
- the presence of a gaseous environment and due to the confining polymer
- brush, for a wide range of chains' persistence lengths.
- We also studied the deformation of the soft substrate and the conformational
- changes of the polymers due to the liquid droplet, and how the brush-liquid
- interaction varies with bending stiffness.
- Lastly, the dynamics of the polymer's free-end is analyzed individually
- and collectively.
- In section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Simulation-Technique"
-
-\end_inset
-
- we provide details of the out-of equilibrium simulation technique, system
- geometry, physical conditions and molecular coarse-grained description.
- In section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Results"
-
-\end_inset
-
- we present the simulation results, focusing on droplet dynamics and single-chai
-n and brush properties in succesive subsections.
- We finish our work with a final discussion and concluding remarks in section
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Concluding-Remarks"
+key "doi:10.1021/acs.langmuir.7b02640"
+literal "false"
 
 \end_inset
 
@@ -3212,8 +3129,72 @@ reference "sec:Concluding-Remarks"
 \end_layout
 
 \begin_layout Standard
+El sistema estudiado en este capítulo está compuesto por un canal tipo rendija,
+ cuyas paredes están revestidas por polímeros semiflexibles y con un flujo
+ bifásico líquido-gas, como se aprecia en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Snap"
+plural "false"
+caps "false"
+noprefix "false"
 
-\lang english
+\end_inset
+
+.
+ Debido a las condiciones de contorno utilizadas en las direcciones paralelas
+ a la pared del canal plano, este sistema puede pensarse como un tren de
+ gotas atravesando un canal revestido por un cepillo de polímeros semiflexible.
+ Se analiza la dependencia de la velocidad de la gota variando la distancia
+ entre las gotas consecutivas en la dirección del flujo y modificando la
+ rigidez de las cadenas.
+ Se investigan las fuerzas de fricción actiando sobre la gota líquida, debido
+ a la presencia del gas circundante y de la presencia de las cadenas, para
+ un amplio rango de longitudes de persistencia.
+ También se estudió la deformación del sustrato blando y los cambios morfológico
+s inducidos por la gota, y como varía la interacción líquido-cepillo con
+ la rigidez de las cadenas poliméricas.
+ Por último, se analiza la dinámica de los monómeros terminales de las cadenas,
+ tanto individual como colectivamente.
+ En la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Detalles-del-sistema_cap4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se proveen los detalles del sistema estudiado, la técnica de simulación
+ y los algoritmos desarrollados especificamente para este trabajo.
+ En la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Resultados_CAP4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, se presentan los resultados más relevantes encontrados, focalizándose
+ en la dinámica de la gota y las propiedades de la cadena.
+ El capítulo termina con un resumen y una discusión final, en la sección
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Resumen_Cap4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
@@ -3222,8 +3203,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang english
 \begin_inset Graphics
 	filename figs/Fig1_1.eps
 	lyxscale 45
@@ -3236,46 +3215,41 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig: Snap"
 
 \end_inset
 
-The system studied in this work consists of a slit like nano-channel, whose
- walls are separated by a distance 
-\begin_inset Formula $L_{z}$
+Se exhibe el sistema de estudio, compuesto por un nanocanal en forma de
+ hendidura, cuyas paredes planas están separadas por una distancia 
+\begin_inset Formula $L_{z}.$
+\end_inset
+
+ Los polímeros hidrofóbicos están anclados por un monómero terminal al sustrato,
+ generando un meido confinante blando.
+ Se tiene una gota líquida en coexistencia con su vapor de gas, que llenan
+ el interior del canal.
+ Se impone una fuerza externa constante sobre cada partícula del sistema
+ para inducir el flujo en la dirección 
+\begin_inset Formula $\hat{x}$
 \end_inset
 
 .
- Hydrophobic polymers anchored by a terminal bead to the walls coat the
- channel, generating a soft substrate.
- A liquid droplet in coexistence with its vapor fills the interior of the
- channel.
- A constant external force is applied to every particle to generate net
- flow of mass.
  
 \begin_inset Formula $D$
 \end_inset
 
- is the extent of the droplet in the direction of the flow (
-\begin_inset Formula $\hat{x}$
-\end_inset
-
-) and 
+ es la extensión de la gota en la dirección del flujo, y 
 \begin_inset Formula $L_{x}$
 \end_inset
 
- is the length of the simulation box in the same direction.
- Up: snapshot of the simulated system.
- Down: Schematic representation of the system.
+ es el largo de la caja de simulación en la misma dirección.
+ Arriba: captura de las simulación numérica del sistema.
+ Abajo: representación esquemática del sistema estudiado.
 \end_layout
 
 \end_inset
@@ -3290,6 +3264,13 @@ The system studied in this work consists of a slit like nano-channel, whose
 
 \begin_layout Section
 Detalles del sistema y metodología
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Detalles-del-sistema_cap4"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4192,6 +4173,13 @@ name "fig:Chi2_vs_Lz"
 
 \begin_layout Section
 Resultados
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Resultados_CAP4"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -6372,6 +6360,13 @@ noprefix "false"
 
 \begin_layout Section
 Resumen
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Resumen_Cap4"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
