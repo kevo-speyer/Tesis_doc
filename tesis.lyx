@@ -168,6 +168,19 @@ Por otro lado, se estudió el comportamiento del sistema cuando el ancho
 Introducción
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Mencionar cantidades típicas medidas Rend-to-end
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Técnica de simulación
 \end_layout
@@ -2754,6 +2767,724 @@ Resultados I: Cepillos poliméricos en equilibrio y bajo flujo en régimen
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Resultados-I:-Cepillos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Antecedentes 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Cepillos poliméricos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los cepillos poliméricos son sistemas altamente versátiles, cuyas propiedades
+ pueden ser ajustadas química y físicamente
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Advincula_04"
+literal "true"
+
+\end_inset
+
+.
+ Estos han sido estudiados ampliamente debido a su potencial aplicación
+ tecnológica, importancia en el área de la biofísica y su complejidad teórica.
+ Los cepillos poliméricos son empleados en estabilización de coloides, lubricaci
+ón, y en desarrollos en los cuales la fricción
+\begin_inset CommandInset citation
+LatexCommand cite
+key "10.1038/370634a0"
+literal "true"
+
+\end_inset
+
+, adhesión y las propiedades de mojado son relevantes
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Advincula_04"
+literal "true"
+
+\end_inset
+
+.
+ Estos también son utilizados en las denominadas ''superficies inteligentes'',
+ capaces de modificar de manera reversible las propiedades de una interfaz,
+ a partir de estímulos externos, como por ejemplo, pH
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Stratakis_10"
+literal "true"
+
+\end_inset
+
+, teperatura o calidad del solvente
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Peng_12"
+literal "true"
+
+\end_inset
+
+.
+ Los cepillos poliméricos se encuentran en los desarrllos científicos más
+ avanzados, desde bio interfaces, sistemas de suministro y liberación controlado
+ de medicamentos, films delgados y partículas, que actúan como sensores
+ de cantidades pequeñas de analito
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Peng_12"
+literal "true"
+
+\end_inset
+
+.
+ Una particularidad de estos sistemas, es que los polímeros se pueden fijar
+ a diversas superficies, como la superficie de nanopartículas o en la columna
+ vertebral de otros polímeros (
+\shape italic
+bottle-brushes
+\shape default
+)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Advincula_04,POLB:POLB23168"
+literal "true"
+
+\end_inset
+
+, variando la geometría y curvatura del cepillo.
+ 
+\end_layout
+
+\begin_layout Standard
+Un sistema de biofísico de importancia que presenta polímeros semiflexibles
+ fijados por un extremo a una superficie, es el glicocálix endotelial, presente
+ en sistema vascular de animales y plantas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1146/annurev.bioeng.9.060906.151959"
+literal "true"
+
+\end_inset
+
+.
+ El glicocálix posee una estructura compleja, formada por una matriz macromolecu
+lar de carbohidratos, que consiste en proteoglicanos y glucoproteínas, que
+ revisten la superficie de las celulas endoteliales
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deng_2012,doi:10.1146/annurev.bioeng.9.060906.151959"
+literal "true"
+
+\end_inset
+
+.
+ Estas formaciones tienen funciones importantes como moduladores de la permeabil
+iad en el intercambio de agua y como regulador de la adherencia de los glóbulos
+ rojos y blancos
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1146/annurev.bioeng.9.060906.151959"
+literal "true"
+
+\end_inset
+
+.
+ Desde un punto de vista mesoscópico, estas estructuras pueden ser modeladas
+ como como un cepillo polimérico semiflexible, dónde el tamaño de los sitos
+ de interacción representan el ancho de las cadenas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deng_2012"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+cadenas semiflexibles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los cepillo poliméricos han sido ampliamente estudiados en condiciones de
+ flujo y en equilibrio
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Binder_11,Lee_14,POLB:POLB23168"
+literal "true"
+
+\end_inset
+
+ mediante simulaciones computacionales y teóricamente
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Milner91"
+literal "true"
+
+\end_inset
+
+.
+ Sin embargo, la mayoría de los trabajos se centraron en cadenas totalmente
+ flexibles.
+ Utilizando simulaciones numéricas de grano grueso se estudio la fricción
+ entre superficies revestidas por cepillos poliméricos
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Galuschko_10,Kreer2002,T.Kreer2001a,Grest1999"
+literal "true"
+
+\end_inset
+
+, y el flujo de líquidos simples o complejos confinados en canales recubiertos
+ por cepillos, en función de la densidad de fijado, propiedades de la interfaz
+ e intensidad del flujo
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mueller_08b,Goicochea_14,pastorino:064902,doi:10.1021/ma8015757,:/content/aip/journal/jcp/140/1/10.1063/1.4851195"
+literal "true"
+
+\end_inset
+
+.
+ Recientemente, Milchev y Binder estudiaron la estructura de cepillos integrados
+ por polímeros semiflexibles, mediante simulaciones de Monte Carlo y Dinámica
+ Molecular
+\begin_inset CommandInset citation
+LatexCommand cite
+key "milchev:194901"
+literal "true"
+
+\end_inset
+
+.
+ En este trabajo describen una transición de fase del sistema al ser comprimido
+ de manera axial, en el que los polímeros se comban a presiones moderadas
+ y se flexionan a presiones altas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "0295-5075-102-5-58003"
+literal "true"
+
+\end_inset
+
+.
+ El primer segmento de los polímeros anclados en esta referencia está dirigidos
+ de manera perpendicular al plano de fijado, como en el modelo desarrollado
+ en este trabajo de tesis.
+ Utilizando el esquema de simulación de potenciales blandos y termostato
+ DPD, varios grupos estudiaron diferentes aspectos de los cepillos poliméricos
+ en condiciones de flujo
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deng_2012,Goicochea_14,Goujon_04"
+literal "true"
+
+\end_inset
+
+.
+ Deng 
+\emph on
+et al.
+\emph default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deng_2012"
+literal "true"
+
+\end_inset
+
+ utilizaron un modelo de grano grueso de cadenas semiflexibles, para simular
+ el flujo sobre el glicocálix, en un contexto de relevancia biológica.
+ Römer y Fedosov
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Roemer_15"
+literal "true"
+
+\end_inset
+
+ desarrollaron un modelo teórico, que también comparan con simulaciones,
+ de un cepillo semiflexible en bajo flujo.
+ En ese trabajo encuentran un buen acuerdo entre los modelos teóricos y
+ las simulaciones para un ampio rango de altura del cepillo, velocidad del
+ flujo y densidades de fijado.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Superficies hidrofóbicas 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Relevant to the present work are also the super-hydrofobic surfaces.
+ In these, surface texture or structure at the micro and/or nanoscopic level,
+ is used to enhance the intrinsic hydrophobic chemistry of the surface,
+ to produce highly non-wetting surfaces.
+ Superhydrophobic surfaces typically exhibit very high water-repellency,
+ which translates in high contact angles 
+\begin_inset Formula $\Theta$
+\end_inset
+
+ of droplets deposited over them (
+\begin_inset Formula $\Theta>150^{o}$
+\end_inset
+
+).
+ This property is desirable for an important range of technological applications
+, such us self-cleaning surfaces, anti-fog, anti-corrosion, icephobicity
+ and fluidic drag reduction
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Roach_08,Zhang_12"
+literal "true"
+
+\end_inset
+
+.
+ Polymer brushes and coatings are also a way to obtain super-hydrophobic
+ surfaces
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Stratakis_10,Genzer00"
+literal "true"
+
+\end_inset
+
+.
+ In recent years, new methodologies were developed to produce specific super-hyd
+rophobic surfaces on small and large scales, suitable for basic research
+ and production, respectively.
+ Despite this, the underlying basic mechanisms of the super-hydrophobic
+ effects are under discussion, beyond the basics developed a long time ago
+ by Wenzel, Cassie and Baxter
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wenzel_36,Cassie_44"
+literal "true"
+
+\end_inset
+
+.This includes, for example, the role of roughness at multiple scales, which
+ has also importance in the development of bio-mimetic surfaces, whose biologica
+l counterparts, such as the lotus leaf, are still under active research
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bixler_12"
+literal "true"
+
+\end_inset
+
+.
+ Mimicking nature, is a promising route to the developing of multifunctional
+ super-hydrophobic surfaces.
+ Lotus leaf's morphology, for example, was used to produce self-cleaning
+ films and iridescent super-hydrophobic surfaces were developed to obtain
+ anisotropic wettability by copying the structure of butterfly wings
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zhang_12"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Experimental results confirm the efficiency of super-hydrophobic coatings
+ to reduce the drag of objects moving in water
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Shi_07,Choi_06"
+literal "true"
+
+\end_inset
+
+ or, equivalently, increase the flow rate of liquid flowing in channels
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Shirtcliffe2010124,superhydro2"
+literal "true"
+
+\end_inset
+
+.
+ The friction reduction is attributed to the air filling of local structure
+ in the solid-gas composite interfaces, which gives rise to surface slip
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zhang_12,PhysRevLett.97.266101,:/content/aip/journal/pof2/16/5/10.1063/1.1669400,PhysRevLett.101.226101"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Nuestro trabajo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este trabajo
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+In this work, we study in equilibrium and under flow, the interface of a
+ liquid and a layer of end-grafted semiflexible polymers for different bending
+ rigidities and as a function of grafting density.
+ The interaction between grafted chains and liquid is chosen such that the
+ interface is hydrophobic and compatible with super-hydrophobic behavior,
+ for a wide range of grafting densities.
+ A typical snapshot of the system in the superhydrophobic Cassie-Baxter
+ state, for the stiffest polymers considered in this work, can be observed
+ in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:System_Snapchot"
+
+\end_inset
+
+.
+ We studied a small number of bending rigidities, ranging from fully flexible
+ to highly stiff polymers, such that the polymer resembles a pillar, typical
+ of superhydrophobic surfaces, and its configurational entropy is minimal.
+ This implies also statistical Kuhn segments much smaller, of the order,
+ or much higher than the contour length of the chains.
+ In section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Simulation-techniques"
+
+\end_inset
+
+ we present the simulation technique, details of the model, and the way
+ in which we imposed flow in the system.
+ Simulation results are presented in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Results"
+
+\end_inset
+
+, devoting subsections 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Static-properties"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Flow-properties"
+
+\end_inset
+
+ to equilibrium properties and behavior under flow, respectively.
+ We provide a final discussion and conclusions in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Conclusions"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename ../Paper_1/Muestra1.eps
+	width 53col%
+	clip
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../Paper_1/Brushes2.eps
+	lyxscale 50
+	width 45col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:System_Snapchot"
+
+\end_inset
+
+Left panel: Snapshot of the simulated system for a grafting density of 
+\begin_inset Formula $\rho_{g}=0.05\sigma^{-2}$
+\end_inset
+
+ and bending constant 
+\begin_inset Formula $k_{b}=80\varepsilon$
+\end_inset
+
+ in equilibrium.
+ Particles of the liquid are shown in light gray, the polymer chains in
+ the brush are presented in red, while their en beads (steadily fixed to
+ the wall) are shown in light-blue.
+ Right panel: Configuration of the polymer brushes for the different bending
+ rigidities studied (the liquid is not shown).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Detalles del sistema y método
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Detalles-del-sistema_3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Slip Velocity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Al desplazar las paredes a una tasa constante, los polímeros interactúan
+ con el líquido, generando un flujo que puede ser analizado observando el
+ perfil de velocidades.
+ Con el mismo método de láminas empleado para la temperatura y la densidad,
+ se halla el perfil de velocidad del líquido en la dirección del movimiento
+ del sustrato, en función de 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ De este gráfico se puede extraer información sobre la dinámica del sistema
+ fuera del equilibrio.
+ Primeramente es importante analizar la linealidad del perfil de velocidad
+ en el seno del líquido, para verificar que efectivamente se está en presencia
+ de un flujo de Couette, condición que se cumplió en todos los casos.
+\end_layout
+
+\begin_layout Standard
+Dos cantidades de gran interés en simulaciones fuera del equilibrio son
+ la velocidad de deslizamiento (
+\shape italic
+slip velocity,
+\shape default
+ 
+\begin_inset Formula $v_{s}$
+\end_inset
+
+) y la longitud de deslizamiento (
+\shape italic
+slip length
+\shape default
+, 
+\begin_inset Formula $\delta$
+\end_inset
+
+).
+ Estas cuantifican la violación de las condiciones de contorno macroscópicas,
+ en que la velocidad del fluido en la interfase es igual a la del sustrato.
+ La velocidad de deslizamiento es la diferencia entre la velocidad de la
+ pared y la extrapolación del comportamiento lineal de la velocidad del
+ líquido a la interfase (ver Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Explicacion Vslip"
+
+\end_inset
+
+).
+ Para hallar la longitud de deslizamiento primero hay que encontrar la posición
+ en la cual el ajuste lineal de la velocidad es igual a la velocidad de
+ la pared.
+ Luego, al valor hallado se le resta la posición de la interfase y se obtiene
+ la distancia de deslizamiento.
+ Esta magnitud da cuenta de cuanto dista la condición de contorno real del
+ caso ideal.
+ El tratamiento de errores de ambas cantidades se expone el el apéndice.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Tesis_lic/figs/Slip1.agr
+	width 60text%
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Explicacion Vslip"
+
+\end_inset
+
+En línea llena negra se grafica la velocidad del líquido, normalizada con
+ respecto a la velocidad de la pared, en función de la coordenada perpendicular
+ al sustrato.
+ En rojo se aprecia el ajuste lineal del perfil de velocidad.
+ El ajuste debe hacerse en el seno de la muestra, lejos de los efectos de
+ la interfase.
+ La línea verde vertical da la posición de la interfase.
+ La diferencia entre el valor del ajuste lineal en la interfase y la velocidad
+ de la pared de la velocidad de deslizamiento 
+\begin_inset Formula $v_{s}$
+\end_inset
+
+.
+ En azul se señala la posición en la cual el ajuste lineal de la velocidad
+ (en rojo) alcanza la velocidad de la pared (línea negra punteada).
+ La diferencia entre este valor y la posición de la interfase, da la longitud
+ de deslizamiento 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el caso de estudio fuera de equilibrio, es interesante analizar la fuerza
+ realizada sobre los extremos fijos de las cadenas, en la dirección del
+ movimiento de las paredes.
+ Esta cantidad está asociada con la capacidad del cepillo para mover al
+ líquido.
+ Si bien es cierto que fluido interactúa mayoritariamente con los extremos
+ libres de las cadenas, estas fuerzas se transmiten hasta los monómeros
+ fijos, pues la suma de fuerzas internas de cada cadena se cancelan.
+ Por lo tanto, se puede conocer la fuerza de interacción entre el cepillo
+ y el líquido y relacionarla con el deslizamiento del líquido en el canal
+ blando.
+\end_layout
+
+\begin_layout Section
+Resultados
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Resultados_3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Resumen
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Resumen_3"
 
 \end_inset
 
@@ -10110,7 +10841,7 @@ Macri gato.
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintCited"
-bibfiles "bib/database,bib/database_2"
+bibfiles "bib/database"
 options "plain"
 
 \end_inset
