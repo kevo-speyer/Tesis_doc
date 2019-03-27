@@ -3037,8 +3037,6 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-
-\lang american
 \begin_inset Note Note
 status open
 
@@ -3052,25 +3050,20 @@ Superficies hidrofóbicas
 \end_layout
 
 \begin_layout Standard
-
-\lang american
-Relevant to the present work are also the super-hydrofobic surfaces.
- In these, surface texture or structure at the micro and/or nanoscopic level,
- is used to enhance the intrinsic hydrophobic chemistry of the surface,
- to produce highly non-wetting surfaces.
- Superhydrophobic surfaces typically exhibit very high water-repellency,
- which translates in high contact angles 
-\begin_inset Formula $\Theta$
+Una característica destacable del sistema estudiado en este capítulo y a
+ lo largo del trabajo de doctorado, es la interacción superhidrofóbica entre
+ el solvente y el medio confinante blando.
+ Las superficies superhidrofóbicas son materiales con una textura o estructuraci
+ón en la micro y/o nanoescala que permite mejorar la hidrofobicidad química,
+ para producir superficies impermeables.
+ Esta impermeabilidad se traduce en altos ángulos de contacto (
+\begin_inset Formula $\Theta>150°$
 \end_inset
 
- of droplets deposited over them (
-\begin_inset Formula $\Theta>150^{o}$
-\end_inset
-
-).
- This property is desirable for an important range of technological applications
-, such us self-cleaning surfaces, anti-fog, anti-corrosion, icephobicity
- and fluidic drag reduction
+ ) al depositar una gota de solvente en la superficie superhidrofóbica.
+ Las superficies superhidrofóbicas tiene varias aplicaciones, como superficies
+ auto limpiantes, antiniebla, anticorroción, hielo-fóbicos y como reductores
+ de fricción 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Roach_08,Zhang_12"
@@ -3079,8 +3072,8 @@ literal "true"
 \end_inset
 
 .
- Polymer brushes and coatings are also a way to obtain super-hydrophobic
- surfaces
+ Es posible obtener superficies superhidrofóbicas utilizando polímeros fijados
+ por un monómero terminal a la superficie
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Stratakis_10,Genzer00"
@@ -3089,12 +3082,12 @@ literal "true"
 \end_inset
 
 .
- In recent years, new methodologies were developed to produce specific super-hyd
-rophobic surfaces on small and large scales, suitable for basic research
- and production, respectively.
- Despite this, the underlying basic mechanisms of the super-hydrophobic
- effects are under discussion, beyond the basics developed a long time ago
- by Wenzel, Cassie and Baxter
+ Recientemente se han desarrollado nuevos métodos para elaborar superficies
+ superhidrofóbicas a pequeña y gran escala, adecuadas para investigación
+ básica y para producción industrial.
+ A pesar de esto, aún no están claros los mecanismos subyacentes de los
+ fenómenos superhidrofóbicos, más allá de los conceptos desarrollados hace
+ tiempo por Wenzel, Cassie y Baxter
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Wenzel_36,Cassie_44"
@@ -3102,9 +3095,9 @@ literal "true"
 
 \end_inset
 
-.This includes, for example, the role of roughness at multiple scales, which
- has also importance in the development of bio-mimetic surfaces, whose biologica
-l counterparts, such as the lotus leaf, are still under active research
+.
+ Una de las áreas de investigación activa en este sentido, es la influencia
+ de la rugosidad en múltiples escalas
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bixler_12"
@@ -3113,11 +3106,14 @@ literal "true"
 \end_inset
 
 .
- Mimicking nature, is a promising route to the developing of multifunctional
- super-hydrophobic surfaces.
- Lotus leaf's morphology, for example, was used to produce self-cleaning
- films and iridescent super-hydrophobic surfaces were developed to obtain
- anisotropic wettability by copying the structure of butterfly wings
+ Las superficies que presentan rugosidades en varias escalas son importantes
+ en el desarrollo de materiales bio-miméticos, como por ejemplo la flor
+ de loto.
+ Imitar a la naturaleza es un camino promisorio para desarrollar superficies
+ superhidrofóbicas multifuncionales.
+ También se han desarrollado superficies superhidrofóbicas iridiscentes
+ para obtener una mojabilidad anisotrópica, copiando la estructura de las
+ alas de las mariposas
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Zhang_12"
@@ -3129,10 +3125,9 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-
-\lang american
-Experimental results confirm the efficiency of super-hydrophobic coatings
- to reduce the drag of objects moving in water
+Existe una relación estrecha entre la superhidrofobicidad y la reducción
+ de la fricción de los objetos moviendose sobre el agua, que ha sido confirmada
+ experimentalmente
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Shi_07,Choi_06"
@@ -3140,7 +3135,10 @@ literal "true"
 
 \end_inset
 
- or, equivalently, increase the flow rate of liquid flowing in channels
+.
+ También se han realizado experimentos en los cuales se observó un aumento
+ notable en el caudal al recubrir las paredes de nanocanales con revestimentos
+ superhidrofóbicos
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Shirtcliffe2010124,superhydro2"
@@ -3149,8 +3147,9 @@ literal "true"
 \end_inset
 
 .
- The friction reduction is attributed to the air filling of local structure
- in the solid-gas composite interfaces, which gives rise to surface slip
+ Esta reducción en la fricción es atribuida a gas que llena los intersticios
+ de la interfaz sólido-gas, disminuyendo el contacto y elevando el deslizamiento
+ del líquido con respecto a la superficie.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Zhang_12,PhysRevLett.97.266101,:/content/aip/journal/pof2/16/5/10.1063/1.1669400,PhysRevLett.101.226101"
@@ -3175,78 +3174,84 @@ Nuestro trabajo
 \end_layout
 
 \begin_layout Standard
-En este trabajo
-\end_layout
+En este capítulo se estudia mediante simulaciones numéricas el flujo de
+ un líquido simple en un nanocanal en forma de hendidura revestido por cepillos
+ poliméricos semiflexibles.
+ El sistema es estudiado en equilibrio y en condiciones de flujo, en función
+ de la cantidad de cadenas fijadas por unidad de área y de la velocidad
+ del flujo y se utilizaron distintos valores de rigidez de las cadenas.
+ La interacción entre el cepillo polimérico y el solvente es compatible
+ con condiciones superhidrofóbicas, dónde una gota depositada sobre esta
+ superficie forma ángulos cercanos a los 
+\begin_inset Formula $\Theta\thickapprox150°$
+\end_inset
 
-\begin_layout Standard
-
-\lang american
-In this work, we study in equilibrium and under flow, the interface of a
- liquid and a layer of end-grafted semiflexible polymers for different bending
- rigidities and as a function of grafting density.
- The interaction between grafted chains and liquid is chosen such that the
- interface is hydrophobic and compatible with super-hydrophobic behavior,
- for a wide range of grafting densities.
- A typical snapshot of the system in the superhydrophobic Cassie-Baxter
- state, for the stiffest polymers considered in this work, can be observed
- in Fig.
- 
+.
+ En el panel izquierdo de la figura  
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:System_Snapchot"
 
 \end_inset
 
-.
- We studied a small number of bending rigidities, ranging from fully flexible
- to highly stiff polymers, such that the polymer resembles a pillar, typical
- of superhydrophobic surfaces, and its configurational entropy is minimal.
- This implies also statistical Kuhn segments much smaller, of the order,
- or much higher than the contour length of the chains.
- In section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Simulation-techniques"
-
+ se puede apreciar una captura del sistema, en la que el líquido (esferas
+ blancas) llena el interior del canal de ancho 
+\begin_inset Formula $D$
 \end_inset
 
- we present the simulation technique, details of the model, and the way
- in which we imposed flow in the system.
- Simulation results are presented in section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Results"
-
-\end_inset
-
-, devoting subsections 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:Static-properties"
-
-\end_inset
-
- and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:Flow-properties"
-
-\end_inset
-
- to equilibrium properties and behavior under flow, respectively.
- We provide a final discussion and conclusions in Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Conclusions"
-
-\end_inset
-
-.
+, y dónde los polímeros (en rojo) están anclados por un monómero terminal
+ (en verde) a una de las dos paredes del canal.
+ Para estudiar al sistema fuera del equilibrio, las paredes se mueven a
+ velocidad constante y en sentido contratio, induciendo un perfil de velocidad
+ tipo Couette en el líquido.
+ Se utilizan cuatro valores distintos de dureza de los polímeros, cubriendo
+ un amplio rango de rigideces, desde cadenas totalmente flexibles, hasta
+ varillas rígidas.
+ De esta manera se puede estudiar al sistema para cadenas cuyo segmento
+ estadístico de Kuhn es mucho menor, del mismo orden, o mucho mayor a la
+ longitud de contorno de la cadena.
+ 
 \end_layout
 
 \begin_layout Standard
+En la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Detalles-del-sistema_3"
+plural "false"
+caps "false"
+noprefix "false"
 
-\lang american
+\end_inset
+
+ se presentan los detalles del sistema estudiado, así como la metodología
+ para ataca los medir las distintas cantidades.
+ En la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Resultados_3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se exhiben los resultados hallados del estudio sistemático del sistema
+ en equilibrio y en condiciones de flujo.
+ Por último, en la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Resumen_3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se da un breve resumen de los hallazgos más importantes del capítulo.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -3254,8 +3259,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang american
 \begin_inset Graphics
 	filename ../Paper_1/Muestra1.eps
 	width 53col%
@@ -3276,29 +3279,30 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang american
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:System_Snapchot"
 
 \end_inset
 
-Left panel: Snapshot of the simulated system for a grafting density of 
+En el panel izquierdo se presenta una captura lateral del sistema de estudio.
+ Las paredes del canal, separadas por una distancia 
+\begin_inset Formula $D$
+\end_inset
+
+, sujetan a los polímeros (en rojo) por un monómero terminal (verde).
+ Las partículas de líquido está representadas en blanco.
+ Esta figura corresponde a una densidad de fijado
 \begin_inset Formula $\rho_{g}=0.05\sigma^{-2}$
 \end_inset
 
- and bending constant 
-\begin_inset Formula $k_{b}=80\varepsilon$
+ y una constante de flexión 
+\begin_inset Formula $k_{f}=80\varepsilon$
 \end_inset
 
- in equilibrium.
- Particles of the liquid are shown in light gray, the polymer chains in
- the brush are presented in red, while their en beads (steadily fixed to
- the wall) are shown in light-blue.
- Right panel: Configuration of the polymer brushes for the different bending
- rigidities studied (the liquid is not shown).
- 
+ del sistema en equilibrio.
+ En el panel derecho se aprecian las configuraciones del cepillo polimérico
+ para los cuatro valores de constante de flexión utilizados.
 \end_layout
 
 \end_inset
