@@ -3249,6 +3249,21 @@ noprefix "false"
 \end_inset
 
  se da un breve resumen de los hallazgos más importantes del capítulo.
+ Los resultado que se exponen en este capítulo fueron publicados por el
+ autor de este trabajo en 2015 en la revista 
+\shape italic
+Soft Matter
+\shape default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C5SM01075F"
+literal "false"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3260,7 +3275,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Paper_1/Muestra1.eps
+	filename figs/cap3_Muestra1.eps
 	width 53col%
 	clip
 
@@ -3268,7 +3283,7 @@ status open
 
 
 \begin_inset Graphics
-	filename ../Paper_1/Brushes2.eps
+	filename figs/cap3_Brushes2.eps
 	lyxscale 50
 	width 45col%
 	clip
@@ -3407,7 +3422,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Tesis_lic/figs/Slip1.agr
+	filename figs/Slip1.agr
 	width 60text%
 	clip
 
@@ -3478,6 +3493,1015 @@ Resultados
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Resultados_3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Estudio en equilibrio
+\end_layout
+
+\begin_layout Standard
+Primero se estudió al sistema en ausencia de fuerzas externas, dejándolo
+ relajar al equilibrio.
+ En la figura
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Density_prof"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se grafica el perfil de densidad de los monómeros y del líquido en función
+ de la coordenada 
+\begin_inset Formula $z$
+\end_inset
+
+ perpendicular a las paredes del canal.
+ Se aprecia que el líquido alcanza una densidad constante en el seno del
+ canal y decrece hasta cero al acercarse al cepillo polimérico.
+ Por otro lado, la densidad de los polímeros es alta cerca de las paredes
+ del canal, situadas en 
+\begin_inset Formula $z=0$
+\end_inset
+
+ y 
+\begin_inset Formula $z=40\sigma$
+\end_inset
+
+, y decrece hacia el centro del canal.
+ En todos los casos se observan picos en los perfiles de densidad de los
+ monómeros cercanos a la pared, debido a la estructuración de las capas
+ de monómeros.
+ Al aumentar la constante de flexión, los polímeros se estiran en la dirección
+ perpendicular a la pared.
+ Cabe recordar que los polímeros están sometidos a un potencial de orientación,
+ que favorecen esta dirección de estiramiento, como se describió en la sección
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Modelado-de-interacciones"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Para el mayor valor de constante de flexión estudiado 
+\begin_inset Formula $k_{f}=80\varepsilon$
+\end_inset
+
+, se aprecia una estructuración de los monómeros más parecida a un sólido
+ que a un líquido.
+ En este caso las fuerzas de flexión dominan ampliamente sobre los efectos
+ entrópicos en la cadena.
+ 
+\end_layout
+
+\begin_layout Standard
+También se puede observar una interfaz bien marcada en todos los casos.
+ Esto es indicio de que el líquido no moja el cepillo polimérico, sino que
+ el mismo reposa sobre las cadenas en un estado en un estado Cassie-Baxter
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cassie_44"
+literal "false"
+
+\end_inset
+
+ y compatible con superficies nano-estructuradas superhidrofóbicas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cassie_44,Wang_12b,Tretyakov_13"
+literal "true"
+
+\end_inset
+
+.
+ También se observa que la densidad del fluido dentro del cepillo no es
+ nula, sino que adopta un valor muy pequeño.
+ Esto se debe a que algunas partículas del vapor de gas en coexistencia
+ con el líquido logran penetrar los intersticios del cepillo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/cap3_perfil_dens.eps
+	width 98col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Density_prof"
+
+\end_inset
+
+Perfiles de densidad del fluido (lineas negras punteadas) y del cepillo
+ polimérico (lineas rojas) para distintos valores de la constante de flexión.
+ Al incrementar la rigidez de las cadenas, estas se estiran en la dirección
+ perpendicular a la pared y se observa una mayor estructuración del cepillo.
+ La densidad de fijado en este caso es 
+\begin_inset Formula $\rho_{g}=0.2\sigma^{-2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un factor importante en la morfología del cepillo es la cantidad de cadenas
+ fijadas por unidad de área 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ Esta es una propiedad accesible tanto en los experimentos como en el abordaje
+ teórico.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rz_vs_gd"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se grafica la componente vertical 
+\begin_inset Formula $z$
+\end_inset
+
+ del vector 
+\begin_inset Formula $\boldsymbol{R}_{end}$
+\end_inset
+
+ en función de la densidad de fijado 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+, para los cuatro valores de rigideces utilizados en este capítulo.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename figs/cap3_Rz_vs_gd_vx0.eps
+	width 98col%
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Rz_vs_gd"
+
+\end_inset
+
+Perpendicular component of the polymer end to end vector 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ as a function of the grafting density 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ for the studied bending constants 
+\begin_inset Formula $k_{b}$
+\end_inset
+
+.
+ A linear relation may be observed between the brush height and the number
+ of chains per surface area for the fully flexible case (black curve).
+ The height of the stiffest chains (
+\begin_inset Formula $k_{b}=80$
+\end_inset
+
+) is almost independent on the grafting density.
+ Inset: Standard deviation of perpendicular component of the end-to-end
+ vector, as a function of the grafting density.
+ At low 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ the mobility of the semiflexible chains with 
+\begin_inset Formula $k_{b}=8\varepsilon$
+\end_inset
+
+ is higher than the mobility of fully flexible chains.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename figs/cap3_BondAngle_vs_gd_vx0.eps
+	width 98col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset CommandInset label
+LatexCommand label
+name "Ubond_vs_gd_vx0"
+
+\end_inset
+
+Panel (a): mean square bond angle of individual bonds versus grafting density
+ (
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+) .
+ Panels (b)-(d): Bond energy (
+\begin_inset Formula $U_{b}$
+\end_inset
+
+) of individual bonds versus
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ The first bond is not shown due to its special behavior (see text).
+ The bond angles diminish upon increasing 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+, leading to an augment in the chains end to end distance.
+ The energy also increases with the proximity of the bond to the free end
+ bead.
+ For 
+\begin_inset Formula $k_{B}=80$
+\end_inset
+
+ the bending energy per bond remains roughly the same for all grafting densities.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Estudio en condiciones de flujo
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename figs/cap3_sym_vel_prof.eps
+	width 98col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Velocity-profiles-as"
+
+\end_inset
+
+Velocity profiles as function of shear rates for a grafting density 
+\begin_inset Formula $\rho_{g}=0.1\sigma^{-2}$
+\end_inset
+
+ and bending constant 
+\begin_inset Formula $k_{b}=8\varepsilon$
+\end_inset
+
+.
+ A linear profile can be observed in the bulk of the channel.
+ In the vicinity of the brush-liquid interface (vertical dotted lines) there
+ is a deviation from the linear dependence.
+ The noisy section of the profile near the wall, corresponds to the fluid
+ in its gaseous state.
+ The wall velocity (and extension of the brush layer) is indicated with
+ dashed horizontal lines.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename figs/cap3_Rz_vs_We_kb80.eps
+	width 98col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Rz_vs_Shear"
+
+\end_inset
+
+Perpendicular component of the end to en vector 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ for the polymer rods (
+\begin_inset Formula $k_{b}=80\varepsilon$
+\end_inset
+
+) as a function of Weissenberg number for different grafting densities.
+ For low 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+, the stretched polymers lean in the direction of the flow and the mean
+ value of the normal component decreases.
+ For high grafting the presence of near neighbour chains hinders the leaning
+ of the polymers and this effect does not take place.
+ Inset: Standard Deviation of 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ as a function of Weissenberg number.
+ Upon increasing the shear rate, the mobility of the free end increases
+ for low grafting densities.
+ The rapidly flowing particles of the liquid collide with the polymer, bending
+ it and increasing the standard deviation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename figs/cap3_Theta_vs_We_GR.eps
+	width 98col%
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Theta_vs_Shear"
+
+\end_inset
+
+Mean end to end inclination angle of the chain (defined in the inset), as
+ a function of the Weissenber number for the studied grafting densities
+ and bending constants.
+ For lower grafting densities the polymers lean more, because there are
+ less excluded volume interactions with other neighbours.
+ 
+\begin_inset Formula $\Theta_{{\rm end}}$
+\end_inset
+
+ is greater for the chains with bending constant 
+\begin_inset Formula $k_{b}=8\varepsilon$
+\end_inset
+
+ than for the more flexible ones.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename figs/cap3_SDRx_vs_gd.eps
+	width 98col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SDRx_vs_gd"
+
+\end_inset
+
+Standard deviation of the component parallel to the flow direction of the
+ end to end vector (
+\begin_inset Formula $SDR_{x}$
+\end_inset
+
+) as a function of the grafting density (
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+) for the studied bending rigidities.
+ The mean distance between grafting points is shown with a black dashed
+ line.
+ For low shear rates, the mobility of the polymers in the direction of the
+ flow decreases monotonically with the grafting density.
+ For high shear rates the behaviour of 
+\begin_inset Formula $SDRx$
+\end_inset
+
+ is non monotonic with 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ At low grafting densities and large shear rates, the chains lean in the
+ direction of the flow and are not able to relax to the equilibrium configuratio
+n, due to collisions with liquid particles.
+ Upon increasing the number of chains per surface area, there is a screening
+ effect that allows polymers to gain mobility in the shear direction.
+ This effect has a peak at intermediate 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+, decreasing then for higher grafting due to the hindering of the mobility
+ by excluded volume interactions.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename figs/cap3_Theta_PDF_gd0.02_We.eps
+	width 98col%
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ThetaPDF"
+
+\end_inset
+
+Probability density function (PDF) of the end-to-end angle of the polymers
+ as a function of shear rate, for the lowest grafting density 
+\begin_inset Formula $\rho_{g}=0.02\sigma^{-2}$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $k_{b}=8\varepsilon$
+\end_inset
+
+, the equilibrium PDF is bimodal.
+ The pressure exerted by the liquid difficults the full stretching of polymers
+ perpendicular to the wall, giving rise to a non vanishing end-to-end angle.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename figs/cap3_BondEnergy_vs_We_gd0.02.eps
+	width 98col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ThetaBond_vs_Shear"
+
+\end_inset
+
+Panel (a): Mean square angle of each bond in the chain as function of Weissenber
+g number (
+\begin_inset Formula $We$
+\end_inset
+
+) for the fully flexible case and 
+\begin_inset Formula $\rho_{g}=0.02\sigma^{-2}$
+\end_inset
+
+.
+ Panels (b)-(d): Bond bending energy 
+\begin_inset Formula $U_{b}=1/2\text{·}k_{b}\text{·}\theta^{2}$
+\end_inset
+
+ of each bond as function of 
+\begin_inset Formula $We$
+\end_inset
+
+ and 
+\begin_inset Formula $\rho_{g}=0.02\sigma^{-2}$
+\end_inset
+
+.
+ For the most flexible polymers studied (
+\begin_inset Formula $k_{b}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $k_{b}=0.8$
+\end_inset
+
+), the bonds in the chain decrease with increasing shear rate, and the chains
+ end-to-end distance increases.
+ The orientation angle (Bond 1) increases because the chains lean on the
+ direction of the flowing liquid in the channel.
+ The behaviour of the rods (
+\begin_inset Formula $k_{b}=80$
+\end_inset
+
+) is different: all the bond angles increase upong rising the shear rate.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename figs/cap3_SlipLen_vs_gd.eps
+	width 98col%
+	clip
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Slip-length vs gd"
+
+\end_inset
+
+Slip length (
+\begin_inset Formula $\delta$
+\end_inset
+
+) as a function of the grafting density (
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+) for the studied shear rates.
+ The slip length decreases rapidly upon increasing 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ .
+ For intermediate and high grafting densities (
+\begin_inset Formula $\rho_{g}\geq0.1\sigma^{-2}$
+\end_inset
+
+) 
+\begin_inset Formula $\delta$
+\end_inset
+
+ takes roughly the same value 
+\begin_inset Formula $\delta\eqsim11\sigma$
+\end_inset
+
+ for every wall velocity and bending rigidity.
+ All the studied cases present non-zero slip length, indicating that the
+ no-slip condition between the polymer brush and the free melt does not
+ hold.
+ The rod-like polymers (
+\begin_inset Formula $k_{b}=80\varepsilon$
+\end_inset
+
+) are the ones that offer the most resistance to the liquid flow for every
+ grafting density and shear rate.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename figs/cap3_SlipLen_vs_We_gd0.05.eps
+	width 98col%
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SlipLength_vs_Shear"
+
+\end_inset
+
+Slip length 
+\begin_inset Formula $\begin{gathered}\delta\end{gathered}
+$
+\end_inset
+
+ as a function of Weissenberg number 
+\begin_inset Formula $We$
+\end_inset
+
+, for systems with low grafting density (
+\begin_inset Formula $\rho_{g}=0.05\sigma^{-2}$
+\end_inset
+
+).
+ The slip length is highly dependent on the bending constant at lower grafting
+ densities.
+ The stiffest chains (
+\begin_inset Formula $k_{b}=80\varepsilon$
+\end_inset
+
+) present less slip for all shear rates studied.
+ It is interesting to note the non-monotonic dependence of 
+\begin_inset Formula $\delta$
+\end_inset
+
+ with the bending constant 
+\begin_inset Formula $k_{b}$
+\end_inset
+
+.
+ Inset: detail of 
+\begin_inset Formula $\delta$
+\end_inset
+
+ at low 
+\begin_inset Formula $We$
+\end_inset
+
+.
+ The slip is higher for the semiflexible polymers with 
+\begin_inset Formula $k_{b}=0.8\varepsilon$
+\end_inset
+
+, than for the fully flexible polymers.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+
+\lang american
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Graphics
+	filename figs/cap3_Mu_vs_Shear_modified2.eps
+	width 98col%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Friction-coefficient-vs-shear"
+
+\end_inset
+
+Friction coefficient 
+\begin_inset Formula $\mu$
+\end_inset
+
+ of the system versus shear rate.
+ Each group of curves corresponds to a different grafting density 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ It can be observed that 
+\begin_inset Formula $\mu$
+\end_inset
+
+ is proportional to the shear rate, and the slope is highly dependent on
+ the grafting density 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ For systems with the same 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+, the friction coefficient is higher, the higher the bending constant .
+ Inset: double-logarithmic scaling plot for the slope of 
+\begin_inset Formula $\mu$
+\end_inset
+
+ vs 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+, as a function of the grafting density.
+ The dependence of the slope on 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ seems to follow a power law.
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
