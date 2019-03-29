@@ -3488,6 +3488,23 @@ En el caso de estudio fuera de equilibrio, es interesante analizar la fuerza
  blando.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Explicar que es el 
+\begin_inset Formula $\boldsymbol{R}_{end}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Resultados
 \begin_inset CommandInset label
@@ -3669,11 +3686,128 @@ noprefix "false"
 \end_inset
 
 , para los cuatro valores de rigideces utilizados en este capítulo.
+ Para cadenas flexibles 
+\begin_inset Formula $k_{b}\ll k_{B}T$
+\end_inset
+
+ (curvas negra y roja), se aprecia un crecimiento de la altura del cepillo
+ lineal con la cantidad de cadenas fijadas por unidad de área 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ Al haber mas cadenas en el mismo volumen, las interacciones de volumen
+ excluido fuerzan a los monómeros a buscar más espacio y separarse, creciendo
+ hacia el centro del canal
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Pastorino_06,Pastorino_09"
+literal "true"
+
+\end_inset
+
+.
+ Para las cadenas más rígidas (
+\begin_inset Formula $k_{b}=80\varepsilon$
+\end_inset
+
+), en cambio, la altura del cepillo varía muy levemente con 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ Esto se debe a que las cadenas más rígidas se estiran en la dirección perpendic
+ular al sustrato debido al potencial del flexión, y no debido a un efecto
+ inducido por las interacciones de volumen excluido.
+ Las cadenas cuyo longitud de persistencia es igual a su longitud de contorno
+ (
+\begin_inset Formula $l_{p}/l_{c}\simeq1$
+\end_inset
+
+ o 
+\begin_inset Formula $k_{b}=8\varepsilon$
+\end_inset
+
+, en verde en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rz_vs_gd"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) tienen un comportamiento más complejo.
+ Para densidades de fijado bajas, la altura del cepillo crece rápidamente
+ con 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+, mientras que a densidades de fijado altas, la altura del cepillo crece
+ lentamente con 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ También se aprecia que para todas la densidades de fijado, la altura del
+ cepillo crece monotonamente con la rigidez de las cadenas.
 \end_layout
 
 \begin_layout Standard
+En el recuadro de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rz_vs_gd"
+plural "false"
+caps "false"
+noprefix "false"
 
-\lang american
+\end_inset
+
+ se grafica la desviación estándar de la componente vertical de 
+\begin_inset Formula $\boldsymbol{R}_{end}$
+\end_inset
+
+ en función de la densidad de fijado 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ Esta cantidad se puede asociar al movimiento típico del monómero libre
+ en la dirección 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Se aprecia que para altos valores de rigidez (curva zul), la movilidad
+ de este último monómero es baja con respecto a las cadenas más flexibles.
+ Esto es esperable, ya que el potencial de flexión duro le impide a la cadena
+ flexionarse localmente.
+ La movilidad de las cadenas más fexibles (curvas negra y roja) son más
+ altas que la más rígida, y se mantienen relativamente constante para todo
+ el tango de densidad de fijado explorado.
+ La movilidad del monómero terminal para las cadenas con 
+\begin_inset Formula $l_{p}/l_{c}\simeq1$
+\end_inset
+
+ varía ampliamente con 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ Al tener pocos vecinos cercano (
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ bajo) la desviación estándar es alta, mientras que para 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ alto, la desviación estándar decrece.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -3681,8 +3815,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang american
 \begin_inset Graphics
 	filename figs/cap3_Rz_vs_gd_vx0.eps
 	width 98col%
@@ -3694,50 +3826,42 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\lang american
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang american
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Rz_vs_gd"
 
 \end_inset
 
-Perpendicular component of the polymer end to end vector 
+Componente perpendicular a la pared del vector 
+\begin_inset Formula $\boldsymbol{R}_{end}$
+\end_inset
+
+ en función de la densidad de fijado 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+, para los distintos valores de rigidez estudiados.
+ La altura de las cadenas más flexibles crece linealmente con la cantidad
+ de polímeros anclados por unidad de área(curva negra), mientras que la
+ altura de las cadenas más rígidas es independiente de la presencia de vecinos
+ cercanos.
+ En el recuadro se observa la desviación estándar de 
 \begin_inset Formula $R_{z}$
 \end_inset
 
- as a function of the grafting density 
-\begin_inset Formula $\rho_{g}$
+ en función de la densidad de fijado de las cadenas.
+ Se aprecia que la movilidad de las cadenas con 
+\begin_inset Formula $l_{p}/l_{c}\simeq1$
 \end_inset
 
- for the studied bending constants 
-\begin_inset Formula $k_{b}$
-\end_inset
-
-.
- A linear relation may be observed between the brush height and the number
- of chains per surface area for the fully flexible case (black curve).
- The height of the stiffest chains (
-\begin_inset Formula $k_{b}=80$
-\end_inset
-
-) is almost independent on the grafting density.
- Inset: Standard deviation of perpendicular component of the end-to-end
- vector, as a function of the grafting density.
- At low 
-\begin_inset Formula $\rho_{g}$
-\end_inset
-
- the mobility of the semiflexible chains with 
+ (
 \begin_inset Formula $k_{b}=8\varepsilon$
 \end_inset
 
- is higher than the mobility of fully flexible chains.
+) depende fuertemente de la interacción con los vecinos cercanos.
 \end_layout
 
 \end_inset
@@ -3748,6 +3872,20 @@ Perpendicular component of the polymer end to end vector
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+En la figura
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Ubond_vs_gd_vx0"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se aprecia.
 \end_layout
 
 \begin_layout Standard
