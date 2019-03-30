@@ -3885,7 +3885,93 @@ noprefix "false"
 
 \end_inset
 
- se aprecia.
+ se aprecia la energiza de flexión media (
+\begin_inset Formula $U_{b}=1/2k_{b}\theta^{2}$
+\end_inset
+
+ ) almacenada en cada unión de la cadena en función de la densidad de fijado
+ de las cadenas 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ Este gráfico permite comprender el comportamiento de los grados internos
+ de libertad de los polímeros.
+ En el caso de polímeros totalmente flexibles, se grafica el angulo cuadrático
+ medio de flexión 
+\begin_inset Formula $\theta^{2}$
+\end_inset
+
+, ya que la constante de flexión es nula 
+\begin_inset Formula $k_{b}=0$
+\end_inset
+
+.
+ La tendencia general para las cadenas más flexibles es que 
+\begin_inset Formula $\theta^{2}$
+\end_inset
+
+ incrementa para cada unión, al recorrer la cadena desde el extremo fijo
+ hacia el extremo libre.
+ El extremo libre es el que presenta el máximo valor de 
+\begin_inset Formula $\theta^{2}$
+\end_inset
+
+ en el rango de cadenas menos duras (
+\begin_inset Formula $k_{b}\ll k_{B}T$
+\end_inset
+
+).
+ Esto es razonable si se tiene en cuenta que sobre los monómeros terminales
+ se aplica la fuerza de flexión desde el único monómero vecino, a diferencia
+ del resto de la cadena, que tienen dos primeros vecino que le aplican fuerzas
+ de flexión.
+ 
+\end_layout
+
+\begin_layout Standard
+Otra tendencia general es que la energía de flexión almacenada en todas
+ las uniones decrece la densidad de fijado de cadenas 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ Al aumentar el número de vecinos cercanos a cada cadena, las interacciones
+ entre monómeros pertenecientes a polímeros de distintas cadenas aumenta,
+ limitando el movimiento de las mismas.
+ Esta impedimento en el movimiento de las cadenas se ve reflejado en los
+ valores más acotados que toma 
+\begin_inset Formula $\theta^{2}$
+\end_inset
+
+ al aumenta 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ Se pueden observar excepciones a este fenómeno, en la segunda unión de
+ las cadenas más rígidas (rectángulos rojos en los gráficos correspondientes
+ a 
+\begin_inset Formula $k_{b}=8\varepsilon$
+\end_inset
+
+ y 
+\begin_inset Formula $k_{b}=80\varepsilon$
+\end_inset
+
+ ).
+ En estos casos excepcionales, se observa un aumento en la energía de flexión
+ de la unión de las cadenas más próxima a la pared.
+ Luego de realizar inspecciones visuales, se llego a la conclusión de que
+ este este efecto proviene ubicar dos monómeros terminales a la pared en
+ lugares muy próximos.
+ Al haber un solapamiento en sitios de fijado de dos polímeros, el segundo
+ monómero se inclina forzado por las interacciones de volumen excluido de
+ la cadena vecina.
+ Este es un efecto espurio que aparece en las simulaciones numéricas, pero
+ no tiene correlación experimental, ya que no podría haber solapamiento
+ en los sitios de fijado de distintas cadenas.
+ 
 \end_layout
 
 \begin_layout Standard
