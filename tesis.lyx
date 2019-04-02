@@ -3505,6 +3505,424 @@ Explicar que es el
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Como se calculo la posición de la interfaz
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset Formula $k_{b}\,[\varepsilon$
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset Formula $l_{p}/\left\langle a\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset Formula $k_{b}/k_{B}T$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset Formula $\tau_{R}\,[\tau]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+0.16 
+\begin_inset Formula $\pm$
+\end_inset
+
+ 0.01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+1.4 
+\begin_inset Formula $\pm$
+\end_inset
+
+ 0.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+17
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+0.8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+0.22 
+\begin_inset Formula $\pm$
+\end_inset
+
+ 0.03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+2.0 
+\begin_inset Formula $\pm$
+\end_inset
+
+ 0.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+18
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+1.12 
+\begin_inset Formula $\pm$
+\end_inset
+
+ 0.06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+10.1 
+\begin_inset Formula $\pm$
+\end_inset
+
+ 0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+50
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+10.1 
+\begin_inset Formula $\pm$
+\end_inset
+
+ 1.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+91 
+\begin_inset Formula $\pm$
+\end_inset
+
+ 15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+260
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Persistence-length"
+
+\end_inset
+
+Persistence length (
+\begin_inset Formula $l_{p}$
+\end_inset
+
+) over contour length (
+\begin_inset Formula $l_{c}$
+\end_inset
+
+) for every studied bending constant (
+\begin_inset Formula $k_{b}$
+\end_inset
+
+) studied.
+ In the third column is presented the persistence length over mean bond
+ length (
+\begin_inset Formula $\left\langle a\right\rangle $
+\end_inset
+
+).
+ The persistence length covers a wide range of polymer rigidities, from
+ fully flexible chains, to highly rigid rods.
+ The values were obtained from independent simulations of isolated chains.
+ The last column shows an estimate of the relaxation time of the grafted
+ polymers, obtained from the correlation time of the end-to-end vector autocorre
+lation function.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Resultados
 \begin_inset CommandInset label
@@ -3886,7 +4304,7 @@ noprefix "false"
 \end_inset
 
  se aprecia la energiza de flexión media (
-\begin_inset Formula $U_{b}=1/2k_{b}\theta^{2}$
+\begin_inset Formula $U_{b}=1/2k_{b}\theta_{i}^{2}$
 \end_inset
 
  ) almacenada en cada unión de la cadena en función de la densidad de fijado
@@ -3897,6 +4315,16 @@ noprefix "false"
 .
  Este gráfico permite comprender el comportamiento de los grados internos
  de libertad de los polímeros.
+ Las uniónes en la leyenda de la figura están numeradas desde la mas cercana
+ a la pared (
+\begin_inset Formula $i=2$
+\end_inset
+
+), hasta la más lejana (
+\begin_inset Formula $i=9$
+\end_inset
+
+).
  En el caso de polímeros totalmente flexibles, se grafica el angulo cuadrático
  medio de flexión 
 \begin_inset Formula $\theta^{2}$
@@ -3907,7 +4335,15 @@ noprefix "false"
 \end_inset
 
 .
- La tendencia general para las cadenas más flexibles es que 
+ El ángulo del primer eslabón (
+\begin_inset Formula $i=1$
+\end_inset
+
+) es el que le da la orientación inicial a la cadena y no se muestra.
+\end_layout
+
+\begin_layout Standard
+La tendencia general para las cadenas más flexibles es que 
 \begin_inset Formula $\theta^{2}$
 \end_inset
 
@@ -3975,8 +4411,6 @@ Otra tendencia general es que la energía de flexión almacenada en todas
 \end_layout
 
 \begin_layout Standard
-
-\lang american
 \begin_inset Float figure
 wide false
 sideways false
@@ -3984,8 +4418,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang american
 \begin_inset Graphics
 	filename figs/cap3_BondAngle_vs_gd_vx0.eps
 	width 98col%
@@ -3997,42 +4429,41 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang american
 \begin_inset CommandInset label
 LatexCommand label
 name "Ubond_vs_gd_vx0"
 
 \end_inset
 
-Panel (a): mean square bond angle of individual bonds versus grafting density
- (
-\begin_inset Formula $\rho_{g}$
-\end_inset
-
-) .
- Panels (b)-(d): Bond energy (
-\begin_inset Formula $U_{b}$
-\end_inset
-
-) of individual bonds versus
+Panel a): valor cuadrático medio del angulo formado en cada unión de las
+ cadenas en función de la densidad de fijado 
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
 .
- The first bond is not shown due to its special behavior (see text).
- The bond angles diminish upon increasing 
+ Paneles b) - d): Energía de flexión 
+\begin_inset Formula $U_{b}$
+\end_inset
+
+de los almacenada en las uniones de las cadenas en función de 
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
-, leading to an augment in the chains end to end distance.
- The energy also increases with the proximity of the bond to the free end
- bead.
- For 
-\begin_inset Formula $k_{B}=80$
+.
+ Al aumentar la cantidad de cadenas por unidad de área las cadenas se estiran
+ en la dirección vertical, disminuyendo el valor cuadrático medio 
+\begin_inset Formula $\theta^{2}$
 \end_inset
 
- the bending energy per bond remains roughly the same for all grafting densities.
+.
+ También se observa que 
+\begin_inset Formula $U_{b}$
+\end_inset
+
+ crece a medida que aumenta la distancia del polímero con la pared.
+ Dentro de la figura d) se aprecian dos polímeros cuyos monómeros fijados
+ a la pared se solapan.
+ 
 \end_layout
 
 \end_inset
@@ -4050,8 +4481,156 @@ Estudio en condiciones de flujo
 \end_layout
 
 \begin_layout Standard
+El sistema se saco del equilibrio, moviendo las paredes del canal en la
+ dirección 
+\begin_inset Formula $\hat{x}$
+\end_inset
 
-\lang american
+ y en sentido contrario, generando un perfil de velocidad tipo Couette en
+ el seno de la muestra.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Velocity-profiles-as"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se aprecia el perfil de velocidad del líquido en función de la altura (
+\begin_inset Formula $z$
+\end_inset
+
+) del canal.
+ Para obtener valores más precisos, se promediaron los valores del perfil
+ de velocidad para 
+\begin_inset Formula $z<L_{z}/2$
+\end_inset
+
+ y 
+\begin_inset Formula $z>L_{z}/2$
+\end_inset
+
+, aprovechando la simetría de reflexión del sistema.
+ El centro del canal en este gráfico se ubica en 
+\begin_inset Formula $z=0$
+\end_inset
+
+ y en 
+\begin_inset Formula $z=20\sigma$
+\end_inset
+
+ se encuentra la pared del canal.
+ El intervalo donde se ubica interfaz está marcado con lineas punteadas
+ horizontales, y se calculó a partir de la multiplicación de los perfiles
+ de densidad 
+\begin_inset Formula $\rho_{g}(z)\rho_{l}(z)$
+\end_inset
+
+, como se explicó en la sección
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Detalles-del-sistema_3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para valores alejados de la interfaz se observa una relación lineal entre
+ la velocidad y la coordenada 
+\begin_inset Formula $z$
+\end_inset
+
+, como es de esperarse para un flujo de Couette.
+ Al acercarse a la interfaz, el comportamiento del líquido de desvía del
+ comportamiento lineal, aumentando rápidamente con 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Las partículas del fluido que penetran dentro del líquido en estado gaseoso,
+ toman la velocidad de la pared, marcada en lineas punteada horizontales.
+ De este gráfico puede observarse que existe una velocidad de deslizamiento
+ mayor a cero en todos los casos (ver sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Detalles-del-sistema_3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Es decir, que la interpolación lineal del perfil de velocidad del líquido
+ a la altura de la intersección del líquido con el cepillo es menor a la
+ velocidad de la pared.
+\end_layout
+
+\begin_layout Standard
+La pendiente del perfil de velocidad (
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+) se obtuvo haciendo una regresión lineal sobre la parte lineal del perfil
+ de velocidad.
+ 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+ incrementa con la velocidad de la pared, pero también depende de la densidad
+ de fijado y de la constante de flexión 
+\begin_inset Formula $k_{b}$
+\end_inset
+
+ de las cadenas.
+ Se utiliza el numero de Weissenberg 
+\begin_inset Formula $We$
+\end_inset
+
+ para cuantificar 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+ en función del tiempo de relajación natural de los polímeros.
+ 
+\begin_inset Formula $We$
+\end_inset
+
+ se define como la velocidad de cizalla 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+ multiplicada por el tiempo del relajación (
+\begin_inset Formula $\tau_{R}$
+\end_inset
+
+) propio de los polímeros aislados a la misma temperatura 
+\begin_inset Formula $We=\dot{\gamma}\tau_{R}$
+\end_inset
+
+.
+ Como se observa en la tabla 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+falta meter tabla con TRelax
+\end_layout
+
+\end_inset
+
+, el tiempo de relajación de las cadenas depende fuertemente de su rigidez.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -4059,8 +4638,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang american
 \begin_inset Graphics
 	filename figs/cap3_sym_vel_prof.eps
 	width 98col%
@@ -4069,33 +4646,59 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang american
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Velocity-profiles-as"
 
 \end_inset
 
-Velocity profiles as function of shear rates for a grafting density 
-\begin_inset Formula $\rho_{g}=0.1\sigma^{-2}$
+Perfil de velocidad del fluido en la dirección 
+\begin_inset Formula $x$
 \end_inset
 
- and bending constant 
+ en función de la altura del canal 
+\begin_inset Formula $z$
+\end_inset
+
+, para diferentes velocidades de las paredes.
+ En este caso la constante de flexión es de 
 \begin_inset Formula $k_{b}=8\varepsilon$
 \end_inset
 
+ y densidad de fijado 
+\begin_inset Formula $\rho_{g}=0.1\sigma^{-2}$
+\end_inset
+
+ El eje horizontal comienza en el centro del canal 
+\begin_inset Formula $z=0$
+\end_inset
+
+ y termina en la pared 
+\begin_inset Formula $z=20\sigma$
+\end_inset
+
 .
- A linear profile can be observed in the bulk of the channel.
- In the vicinity of the brush-liquid interface (vertical dotted lines) there
- is a deviation from the linear dependence.
- The noisy section of the profile near the wall, corresponds to the fluid
- in its gaseous state.
- The wall velocity (and extension of the brush layer) is indicated with
- dashed horizontal lines.
+ Las lineas punteadas verticales indican la posición de la interfaz líquido-cepi
+llo.
+ Se observa una relación lineal entre la velocidad y la coordenada 
+\begin_inset Formula $z$
+\end_inset
+
+ en el seno del canal, y luego un crecimiento rápido de la misma cerca de
+ la interfaz.
+ La velocidad de la pared se muestra con lineas discontinuas horizontales
+ para cada caso de 
+\begin_inset Formula $v_{w}$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -4109,8 +4712,124 @@ Velocity profiles as function of shear rates for a grafting density
 \end_layout
 
 \begin_layout Standard
+Es interesante analizar la morfología del cepillo en función de la velocidad
+ de las paredes.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rz_vs_Shear"
+plural "false"
+caps "false"
+noprefix "false"
 
-\lang american
+\end_inset
+
+ se grafica la componente vertical del vector 
+\begin_inset Formula $\boldsymbol{R}_{end}$
+\end_inset
+
+ en función del número de Weissenberg 
+\begin_inset Formula $We$
+\end_inset
+
+ para los distintos valores de densidad polímerica de fijado 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ , en el caso de los polímeros más rígidos 
+\begin_inset Formula $k_{b}=80\varepsilon$
+\end_inset
+
+.
+ Para las densidades de fijado bajas 
+\begin_inset Formula $\rho_{g}\le0.2\sigma^{-2}$
+\end_inset
+
+ se observa una decrecimiento de la altura del cepillo al aumentar la velocidad
+ de la pared.
+ Las cadenas son chocadas por el líquido y en consecuencia se inclinan en
+ la dirección del flujo, disminuyendo su altura media.
+ Además, para el caso de estos polímeros rígidos (
+\begin_inset Formula $l_{p}/l_{c}\gg1$
+\end_inset
+
+) la movilidad de las cadenas en la dirección vertical crece con 
+\begin_inset Formula $We$
+\end_inset
+
+.
+ Para evidencia este efecto, en el recuadro de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rz_vs_Shear"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se grafica la desviación estándar (
+\begin_inset Formula $SDR_{z}$
+\end_inset
+
+) de la distribución de 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ de las cadenas.
+ Una mayor desviación estándar está asociada a una distribución más amplia
+ de valores de 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ y una mayor movilidad de las cadenas.
+ Al aumentar la velocidad de la pared, las cadenas son embestidas a mayor
+ velocidad y por lo tanto toman valores más extremos de 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+, aumentando 
+\begin_inset Formula $SDR_{z}$
+\end_inset
+
+.
+ Para la densidad de fijado más baja 
+\begin_inset Formula $\rho_{g}=0.02\sigma^{-2}$
+\end_inset
+
+, 
+\begin_inset Formula $SDR_{z}$
+\end_inset
+
+ duplica su valor al pasar de 
+\begin_inset Formula $We=0$
+\end_inset
+
+ a 
+\begin_inset Formula $We=10$
+\end_inset
+
+.
+ Este último efecto no se vio para los demás valores de 
+\begin_inset Formula $l_{p}/l_{c}=0.16;\,0.22;\,1.1$
+\end_inset
+
+ utilizados, ya que la dinámica de la cadena está menos restringida por
+ el potencial de flexión.
+ Este comportamiento concuerda con el modelo y las simulaciones numéricas
+ llevadas a cabo por Römer and Fedosov
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Roemer_15"
+literal "true"
+
+\end_inset
+
+ en un sistema similar, pero en condiciones hidrofílicas.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -4118,8 +4837,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang american
 \begin_inset Graphics
 	filename figs/cap3_Rz_vs_We_kb80.eps
 	width 98col%
@@ -4130,40 +4847,42 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang american
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Rz_vs_Shear"
 
 \end_inset
 
-Perpendicular component of the end to en vector 
-\begin_inset Formula $R_{z}$
+Componente vertícal del vector 
+\begin_inset Formula $\boldsymbol{R}_{end}$
 \end_inset
 
- for the polymer rods (
-\begin_inset Formula $k_{b}=80\varepsilon$
-\end_inset
-
-) as a function of Weissenberg number for different grafting densities.
- For low 
+ en función de la número de Weissenberg, para diferentes valores de 
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
-, the stretched polymers lean in the direction of the flow and the mean
- value of the normal component decreases.
- For high grafting the presence of near neighbour chains hinders the leaning
- of the polymers and this effect does not take place.
- Inset: Standard Deviation of 
+, en el caso de los polímeros más rígidos 
+\begin_inset Formula $l_{p}/l_{c}=10$
+\end_inset
+
+.
+ A densidades de fijado bajas, las cadenas se inclinan en la dirección del
+ flujo y su altura decrece.
+ A densidades de fijado altas, la presencia de vecinos cercanos impide la
+ inclinación de las cadenas y en consecuencia no se observa un decrecimiento
+ de la altura del cepillo.
+ En el recuadro se observa la desviación estándar de la distribución de
+ 
 \begin_inset Formula $R_{z}$
 \end_inset
 
- as a function of Weissenberg number.
- Upon increasing the shear rate, the mobility of the free end increases
- for low grafting densities.
- The rapidly flowing particles of the liquid collide with the polymer, bending
- it and increasing the standard deviation.
+ en función del 
+\begin_inset Formula $We$
+\end_inset
+
+, para distintos valores de densidad de fijado de las cadenas.
+ Se puede apreciar el incremento de la movilidad de las cadenas al incrementar
+ la velocidad de las paredes, a densidades de fijado bajas.
 \end_layout
 
 \end_inset
