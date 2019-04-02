@@ -4617,12 +4617,12 @@ La pendiente del perfil de velocidad (
 
 .
  Como se observa en la tabla 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-falta meter tabla con TRelax
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Persistence-length"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -4896,8 +4896,183 @@ Componente vertícal del vector
 \end_layout
 
 \begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Theta_vs_Shear"
+plural "false"
+caps "false"
+noprefix "false"
 
-\lang american
+\end_inset
+
+ se presenta la inclinación de las cadenas en la dirección del flujo en
+ función del número de Weissenberg 
+\begin_inset Formula $We$
+\end_inset
+
+, para todos los valores de rigidez (
+\begin_inset Formula $k_{b}$
+\end_inset
+
+)y de densidad de fijado (
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+) estudiados.
+ El ángulo es calculado a partir del vector 
+\shape italic
+end-to-end
+\shape default
+, como se aprecia en el recuadro superior derecho de la figura:
+\begin_inset Formula 
+\begin{equation}
+tan(\Theta_{end})=R_{z}/R_{x}\,,
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $R_{x}$
+\end_inset
+
+ y 
+\begin_inset Formula $R_{z}$
+\end_inset
+
+ son las componentes del vector 
+\begin_inset Formula $\boldsymbol{R}_{end}$
+\end_inset
+
+ en la dirección del flujo 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ y perpendicular a las paredes del canal 
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+, respectivamente.
+ Se puede observar que en todos los casos el aumento de 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ implica una disminución del ángulo de inclinación de las cadenas 
+\begin_inset Formula $\Theta_{end}$
+\end_inset
+
+.
+ Al aumentar la cantidad de cadenas vecinas, las interacciones de volumen
+ excluido dificultan la inclinación de las cadenas.
+ Este es el mismo efecto que causa el estiramiento de las cadenas en la
+ dirección vertical, al aumentar la densidad de fijado
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rubinstein_colby"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Por otro lado, al incrementar la velocidad de las paredes (que se ve reflejado
+ en un incremento en 
+\begin_inset Formula $We$
+\end_inset
+
+), aumenta el ángulo de inclinación de las cadenas en la dirección del flujo.
+ Para 
+\begin_inset Formula $\rho_{g}\ge0.2\sigma^{-2}$
+\end_inset
+
+ la inclinación de las cadenas es siempre 
+\begin_inset Formula $\Theta_{end}\le20°$
+\end_inset
+
+ y la el ángulo de inclinación mantiene una relación lineal con 
+\begin_inset Formula $We$
+\end_inset
+
+.
+ En cambio, para 
+\begin_inset Formula $\rho_{g}\le0.2\sigma^{-2}$
+\end_inset
+
+ se observa una saturación de 
+\begin_inset Formula $\Theta_{end}$
+\end_inset
+
+ en función de 
+\begin_inset Formula $We$
+\end_inset
+
+, que se ve reflejada en una relación no lineal.
+ 
+\end_layout
+
+\begin_layout Standard
+La dependencia de 
+\begin_inset Formula $\Theta_{end}$
+\end_inset
+
+ con la rigidez de las cadenas es más compleja.
+ Se aprecian dos comportamientos distintos, dependiendo de la relación 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+.
+ Para cadenas flexibles 
+\begin_inset Formula $l_{p}/l_{c}\le1$
+\end_inset
+
+, incrementar la rigidez de las cadenas produce ángulos de inclinación mayores
+ de las mismas en condiciones de flujo.
+ En este caso, el potencial de flexión induce la orientación coherente de
+ las cadenas en una misma dirección.
+ El líquido presiona verticalmente sobre las cadenas, forzando a las cadenas
+ a doblarse y tomar la forma de un arco de curva, maximizando 
+\begin_inset Formula $\Theta_{end}$
+\end_inset
+
+.
+ Para cadenas más duras 
+\begin_inset Formula $l_{p}/l_{c}\ge1$
+\end_inset
+
+, el potencial de flexión duro limita la aparición de ángulos locales grandes,
+ dificultando la inclinación de las cadenas en la dirección del flujo.
+ Como se puede apreciar en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rz_vs_gd"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, las cadenas más rígidas 
+\begin_inset Formula $l_{p}/l_{c}=10$
+\end_inset
+
+ se estiran verticalmente en equilibrio, para todos los valores de 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ Cabe destacar que en este modelo existe un ángulo de orientación privilegiado,
+ que es el ángulo de equilibrio 
+\begin_inset Formula $\Theta_{end}=0°$
+\end_inset
+
+, debido al potencial de flexión orientacional que se aplica sobre el primer
+ monómero.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -4905,8 +5080,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang american
 \begin_inset Graphics
 	filename figs/cap3_Theta_vs_We_GR.eps
 	width 98col%
@@ -4918,44 +5091,306 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\lang american
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang american
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Theta_vs_Shear"
 
 \end_inset
 
-Mean end to end inclination angle of the chain (defined in the inset), as
- a function of the Weissenber number for the studied grafting densities
- and bending constants.
- For lower grafting densities the polymers lean more, because there are
- less excluded volume interactions with other neighbours.
- 
-\begin_inset Formula $\Theta_{{\rm end}}$
+ Ángulo medio de inclinación de las cadenas en función del número de Weissenberg
+ para todos los valores de densidad de fijado 
+\begin_inset Formula $\rho_{g}$
 \end_inset
 
- is greater for the chains with bending constant 
+ y rigidez utilizados 
+\begin_inset Formula $k_{b}$
+\end_inset
+
+.
+ En el recuadro superior derecho se muestra la definición gráfica de 
+\begin_inset Formula $\Theta_{end}.$
+\end_inset
+
+A densidades de fijado altas se observa una menor inclinación de las cadenas,
+ debido al incremento en las interacciones de volumen excluido con las cadenas
+ vecinas.
+ La inclinación de las cadenas presenta un comportamiento no monótono con
+ la rigidez, alcanzando un máximo para 
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Otra cantidad que ayuda a entender el comportamiento de los polímeros, es
+ la desviación estándar del vector 
+\begin_inset Formula $\boldsymbol{R}_{end}$
+\end_inset
+
+ en la dirección del flujo 
+\begin_inset Formula $SDR_{x}$
+\end_inset
+
+.
+ Esta cantidad da información acerca de la movilidad de los monómeros terminales
+ alrededor de la posición de equilibrio en la dirección de la velocidad
+ de las paredes.
+ En la figura
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SDRx_vs_gd"
+
+\end_inset
+
+ se presenta 
+\begin_inset Formula $SDR_{x}$
+\end_inset
+
+ en función de la densidad de fijado 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+, para distintos valores de velocidad de la pared 
+\begin_inset Formula $v_{w}$
+\end_inset
+
+ y rigidez 
+\begin_inset Formula $k_{b}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Se puede apreciar que en el rango 
+\begin_inset Formula $l_{p}/l_{c}\le1$
+\end_inset
+
+, la desviación estándar de 
+\begin_inset Formula $R_{x}$
+\end_inset
+
+ aumenta con la rigidez de las cadenas.
+ Las cadenas cuya longitud de contorno es igual a su longitud de persistencia
+ 
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+ se inclinan coherentemente en una dirección al ser presionadas verticalmente
+ por el líquido, maximizando el desplazamiento comparado con las demás cadenas.
+ Las cadenas más rígidas 
+\begin_inset Formula $l_{p}/l_{c}>1$
+\end_inset
+
+ ven su movilidad reducida debido a la dureza del potencial de flexión.
+ Por otro lado, las cadenas más blandas 
+\begin_inset Formula $l_{p}/l_{c}<1$
+\end_inset
+
+ permiten grandes ángulos locales de flexión, disminuyendo la probabilidad
+ de encontrarlas totalmente estiradas en la dirección del flujo.
+ Un comportamiento similar fue observado por Milchev y Binder
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Milchev_14b"
+literal "true"
+
+\end_inset
+
+ para cepillos poliméricos en equilibrio, simulados con solvente implicito.
+\end_layout
+
+\begin_layout Standard
+Otra característica interesante de esta cantidad 
+\begin_inset Formula $SDR_{x}$
+\end_inset
+
+, es que para 
+\begin_inset Formula $We$
+\end_inset
+
+ altos la dependencia con la densidad de fijado no es monótona.
+ A densidades de fijado bajas las cadenas se inclinan en la dirección del
+ flujo y no llegan a relajar hacia la configuración de equilibrio, dando
+ lugar a una movilidad baja.
+ Al incrementar la cantidad de cadenas vecinas 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+, se produce un efecto de apantallamiento y el monómero terminal gana recorrido
+ espacial.
+ La desviación estándar de 
+\begin_inset Formula $R_{x}$
+\end_inset
+
+ alcanza un máximo a densidades de fijado intermedias, ya que a altas 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ las interacciones con las cadenas vecinas limitan la movilidad de las cadenas.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The typical displacement 
+\begin_inset Formula $SDR_{x}$
+\end_inset
+
+ is compared to the mean distance between grafting points (dashed line in
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SDRx_vs_gd"
+
+\end_inset
+
+).
+ As expected for high 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+, the chain movement is limited by the presence of neighbour polymers, and
+ 
+\begin_inset Formula $SDR_{x}$
+\end_inset
+
+ match the mean distance between neighbours.
+ At low grafting densities, the standard deviation of 
+\begin_inset Formula $R_{x}$
+\end_inset
+
+ is limited by the finite length of the polymer, and by entropic effects.
+ At intermediate 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+, 
+\begin_inset Formula $SDR_{x}$
+\end_inset
+
+ is higher than the mean distance between grafting points for semiflexible
+ chains (
+\begin_inset Formula $k_{b}=0.8\varepsilon$
+\end_inset
+
+ and 
 \begin_inset Formula $k_{b}=8\varepsilon$
 \end_inset
 
- than for the more flexible ones.
- 
+).
+ It may be also observed that for rigid rods (
+\begin_inset Formula $k_{b}=80\varepsilon$
+\end_inset
+
+) 
+\begin_inset Formula $SDRx$
+\end_inset
+
+ is always less than the mean distance between grafting points.
+ This indicates that even for high 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+, the dynamics of this polymers are greatly affected by the bending force.
 \end_layout
+
+\begin_layout Standard
+
+\lang american
+We also checked the existence of cyclic motion dynamics in semiflexible
+ chains under shear, found in previous works for fully flexible isolated
+ grafted chains and polymer brushes
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mueller_08b,Pastorino_14"
+literal "true"
 
 \end_inset
 
- 
-\end_layout
+.
+ We analysed the effect of stiffness in the mechanism of cyclic motion,
+ whose origin is attributed to spontaneous fluctuations of the polymer chains
+ towards regions of higher velocity in the liquid.
+ According to this description, a stiffer chain should have a reduction
+ in the cyclic motion, because the thermal fluctuations are reduced.
+ This is in fact what we observe.
+ We computed the mean brush momentum velocity profile 
+\begin_inset Formula $p(z)=\langle m\rho(z)v(z)\rangle$
+\end_inset
+
+, exactly in the same way, than previous references
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Pastorino_14"
+literal "true"
 
 \end_inset
 
+ (not shown).
+ The presence of cyclic motion is evidenced when a positive 
+\begin_inset Formula $p(z)$
+\end_inset
 
+ is observed in the region in which the chains are directly exposed to and
+ dragged by the fluid and, at the same time, a negative 
+\begin_inset Formula $p(z)$
+\end_inset
+
+ is observed in an inner region, inside the brush.
+ We found cyclic motion dynamics for bending constants 
+\begin_inset Formula $k_{b}=0.8\varepsilon$
+\end_inset
+
+ and 
+\begin_inset Formula $k_{b}=8\varepsilon$
+\end_inset
+
+.
+ This was the case for low grafting density (
+\begin_inset Formula $\rho_{g}=0.02\sigma^{-2}$
+\end_inset
+
+ and 
+\begin_inset Formula $0.05\sigma^{-2}$
+\end_inset
+
+), in which the dynamics of chains can be regarded as independent, but also
+ for higher grafting (
+\begin_inset Formula $\rho_{g}=0.3\sigma^{-2}$
+\end_inset
+
+) already in the brush regime.
+ The cyclic dynamics is indeed reduced upon increase of the chain stiffness
+ and vanishes completely for the stiffest chains (
+\begin_inset Formula $k_{b}=80\varepsilon)$
+\end_inset
+
+.
+ A more comprehensive characterization of the effect and its consequences
+ for flow inversion
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mueller_08b,Pastorino_14"
+literal "true"
+
+\end_inset
+
+ could be an interesting future study.
 \end_layout
 
 \begin_layout Standard
