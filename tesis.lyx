@@ -5245,152 +5245,123 @@ Otra característica interesante de esta cantidad
 \end_layout
 
 \begin_layout Standard
-
-\lang american
-The typical displacement 
+Es conveniente comparar el desplazamiento medio 
 \begin_inset Formula $SDR_{x}$
 \end_inset
 
- is compared to the mean distance between grafting points (dashed line in
- Figure 
+ con la distancia media entre los sitios de fijado de los polímeros, presentada
+ como linea punteada en la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:SDRx_vs_gd"
 
 \end_inset
 
-).
- As expected for high 
-\begin_inset Formula $\rho_{g}$
+.
+ Se puede observar que para altas densidades de fijado 
+\begin_inset Formula $\rho_{g}\ge0.4\sigma^{-2}$
 \end_inset
 
-, the chain movement is limited by the presence of neighbour polymers, and
- 
+, el movimiento de las cadenas está fuertemente limitado por la presencia
+ de polímeros vecinos y 
 \begin_inset Formula $SDR_{x}$
 \end_inset
 
- match the mean distance between neighbours.
- At low grafting densities, the standard deviation of 
+ se acerca al valor de la distancia media entre vecinos.
+ A densidades de fijado bajas, 
+\begin_inset Formula $SDR_{x}$
+\end_inset
+
+está limitado por la longitud finita de los polímeros y los efectos entrópicos,
+ que tienden a contraer la cadena.
+ Es interesante notar que en el caso de las cadenas semiflexibles (
+\begin_inset Formula $0.2<l_{p}/l_{c}\le1$
+\end_inset
+
+), la desviación estándar de 
 \begin_inset Formula $R_{x}$
 \end_inset
 
- is limited by the finite length of the polymer, and by entropic effects.
- At intermediate 
-\begin_inset Formula $\rho_{g}$
+ es mayor a la distancia media entre vecinos a densidades de fijado intermedias
+ 
+\begin_inset Formula $0.3\sigma^{-2}\le\rho_{g}\le0.5\sigma^{-2}$
 \end_inset
 
-, 
+.
+ En cambio, las cadenas más rígidas 
+\begin_inset Formula $l_{p}/l_{c}\gg1$
+\end_inset
+
+ presentan valores de 
 \begin_inset Formula $SDR_{x}$
 \end_inset
 
- is higher than the mean distance between grafting points for semiflexible
- chains (
-\begin_inset Formula $k_{b}=0.8\varepsilon$
-\end_inset
-
- and 
-\begin_inset Formula $k_{b}=8\varepsilon$
-\end_inset
-
-).
- It may be also observed that for rigid rods (
-\begin_inset Formula $k_{b}=80\varepsilon$
-\end_inset
-
-) 
-\begin_inset Formula $SDRx$
-\end_inset
-
- is always less than the mean distance between grafting points.
- This indicates that even for high 
+ por debajo de la distancia media entre sitios de fijado, para todo el rango
+ de 
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
-, the dynamics of this polymers are greatly affected by the bending force.
+ estudiado.
+ Esto indica que la dinámica de las cadenas más rígidas está dominada por
+ el potencial de flexión, incluso para densidades de fijado altas.
 \end_layout
 
 \begin_layout Standard
-
-\lang american
-We also checked the existence of cyclic motion dynamics in semiflexible
- chains under shear, found in previous works for fully flexible isolated
- grafted chains and polymer brushes
+También se verificó la existencia de movimiento dinámico cíclico de los
+ monómeros terminales en cadenas semiflexibles en flujo, como se observó
+ en otros trabajos para cadenas aisladas y para cepillos poliméricos
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Mueller_08b,Pastorino_14"
+key "Mueller_08b,:/content/aip/journal/jcp/140/1/10.1063/1.4851195"
 literal "true"
 
 \end_inset
 
 .
- We analysed the effect of stiffness in the mechanism of cyclic motion,
- whose origin is attributed to spontaneous fluctuations of the polymer chains
- towards regions of higher velocity in the liquid.
- According to this description, a stiffer chain should have a reduction
- in the cyclic motion, because the thermal fluctuations are reduced.
- This is in fact what we observe.
- We computed the mean brush momentum velocity profile 
+ El movimiento cíclico de las cadenas comienza cuando el monómero terminal
+ de una cadena visita sitios de alta velocidad del líquido debido a fluctuacione
+s espontaneas y se estira en la dirección del flujo, debido a las colisiones.
+ Luego, la cadena se repliega y vuelve por una trayectoria más cercana a
+ la pared de fijado, completando el ciclo
+\begin_inset CommandInset citation
+LatexCommand cite
+key ":/content/aip/journal/jcp/140/1/10.1063/1.4851195"
+literal "false"
+
+\end_inset
+
+.
+ De acuerdo a esta descripción, las cadenas más rigidas deberían presentar
+ un movimiento cíclico menos visible, ya que la dinámica de las cadenas
+ está dominada por el potencial de flexión.
+ Esto es exactamente lo que se puede observar en estos casos.
+ Se calculó el perfil de densidad de momento lineal 
 \begin_inset Formula $p(z)=\langle m\rho(z)v(z)\rangle$
 \end_inset
 
-, exactly in the same way, than previous references
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Pastorino_14"
-literal "true"
-
+, para verificar que dentro del cepillo esta valor sea negativo y para valores
+ de 
+\begin_inset Formula $z$
 \end_inset
 
- (not shown).
- The presence of cyclic motion is evidenced when a positive 
+ mayores a la interfaz cepillo-líquido, 
 \begin_inset Formula $p(z)$
 \end_inset
 
- is observed in the region in which the chains are directly exposed to and
- dragged by the fluid and, at the same time, a negative 
-\begin_inset Formula $p(z)$
-\end_inset
-
- is observed in an inner region, inside the brush.
- We found cyclic motion dynamics for bending constants 
-\begin_inset Formula $k_{b}=0.8\varepsilon$
-\end_inset
-
- and 
-\begin_inset Formula $k_{b}=8\varepsilon$
+ tome valores positivos, exhibiendo el movimiento cíclico.
+ Para todas las cadenas, excepto las más rígidas, se observaron indicios
+ de movimiento cíclico de las cadenas, incluso para densidades de fijado
+ 
+\begin_inset Formula $\rho_{g}\le0.3\sigma^{-2}$
 \end_inset
 
 .
- This was the case for low grafting density (
-\begin_inset Formula $\rho_{g}=0.02\sigma^{-2}$
+ Para altos valores de rigidez 
+\begin_inset Formula $l_{p}/l_{c}\gg1$
 \end_inset
 
- and 
-\begin_inset Formula $0.05\sigma^{-2}$
-\end_inset
-
-), in which the dynamics of chains can be regarded as independent, but also
- for higher grafting (
-\begin_inset Formula $\rho_{g}=0.3\sigma^{-2}$
-\end_inset
-
-) already in the brush regime.
- The cyclic dynamics is indeed reduced upon increase of the chain stiffness
- and vanishes completely for the stiffest chains (
-\begin_inset Formula $k_{b}=80\varepsilon)$
-\end_inset
-
-.
- A more comprehensive characterization of the effect and its consequences
- for flow inversion
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Mueller_08b,Pastorino_14"
-literal "true"
-
-\end_inset
-
- could be an interesting future study.
+, no se observó la dinámica cíclica de los monómeros terminales.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -5416,49 +5387,53 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang american
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:SDRx_vs_gd"
 
 \end_inset
 
-Standard deviation of the component parallel to the flow direction of the
- end to end vector (
-\begin_inset Formula $SDR_{x}$
+Desviación estándar de la componente paralela al flujo del vector 
+\shape italic
+end-to-end
+\shape default
+ en función de la densidad de fijado de las cadenas, para los cuatro valores
+ de rigidez polimérica estudiados.
+ La distancia media entre sitios de fijado se grafica como referencia en
+ linea discontinua.
+ Para 
+\begin_inset Formula $We$
 \end_inset
 
-) as a function of the grafting density (
-\begin_inset Formula $\rho_{g}$
-\end_inset
-
-) for the studied bending rigidities.
- The mean distance between grafting points is shown with a black dashed
- line.
- For low shear rates, the mobility of the polymers in the direction of the
- flow decreases monotonically with the grafting density.
- For high shear rates the behaviour of 
-\begin_inset Formula $SDRx$
-\end_inset
-
- is non monotonic with 
+ bajos, la movilidad de las cadenas en la dirección del flujo decrece monotoname
+nte con 
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
 .
- At low grafting densities and large shear rates, the chains lean in the
- direction of the flow and are not able to relax to the equilibrium configuratio
-n, due to collisions with liquid particles.
- Upon increasing the number of chains per surface area, there is a screening
- effect that allows polymers to gain mobility in the shear direction.
- This effect has a peak at intermediate 
-\begin_inset Formula $\rho_{g}$
+ Para valores más altos de velocidad de las paredes (alto 
+\begin_inset Formula $We$
 \end_inset
 
-, decreasing then for higher grafting due to the hindering of the mobility
- by excluded volume interactions.
+), el comportamiento cambia y se aprecia un máximo de 
+\begin_inset Formula $SDR_{x}$
+\end_inset
+
+ en función de la densidad de fijado.
+ A densidades de fijado bajas y alta velocidad de la pared, las cadenas
+ se inclinan en la dirección del flujo y no logran relajar a su configuración
+ de equilibrio, debido a las frecuentes colisiones con las partículas del
+ fluido.
+ Al incrementar el número de cadenas por unidad de área, se presenta un
+ efecto de apantallamiento y las cadenas ganan movilidad en la dirección
+ del flujo.
+ Este efecto alcanza un pico a densidades de fijado intermedias, y luego
  
+\begin_inset Formula $SDR_{x}$
+\end_inset
+
+ decrece debido que las interacciones de volumen excluido con las cadenas
+ vecinas limitan el movimiento de los polímeros
 \end_layout
 
 \end_inset
