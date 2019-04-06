@@ -5365,8 +5365,6 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-
-\lang american
 \begin_inset Float figure
 wide false
 sideways false
@@ -5374,8 +5372,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang american
 \begin_inset Graphics
 	filename figs/cap3_SDRx_vs_gd.eps
 	width 98col%
@@ -5433,7 +5429,7 @@ nte con
 \end_inset
 
  decrece debido que las interacciones de volumen excluido con las cadenas
- vecinas limitan el movimiento de los polímeros
+ vecinas limitan el movimiento de los polímeros.
 \end_layout
 
 \end_inset
@@ -5447,8 +5443,142 @@ nte con
 \end_layout
 
 \begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Theta_vs_Shear"
+plural "false"
+caps "false"
+noprefix "false"
 
-\lang american
+\end_inset
+
+ se presenta la distribución de la probabilidad del ángulo de inclinación
+ de las cadenas 
+\begin_inset Formula $\Theta_{end}$
+\end_inset
+
+ para distintos valores de 
+\begin_inset Formula $We$
+\end_inset
+
+ (que corresponden a diferentes valores de la velocidad de las paredes),
+ distintos valores de rigidez de los polímeros y una densidad de fijado
+ baja 
+\begin_inset Formula $\rho_{g}=0.02\sigma^{-2}$
+\end_inset
+
+.
+ Para esta densidad de fijado, la distancia media entre sitios de anclaje
+ es de 
+\begin_inset Formula $1/\sqrt{\rho_{g}}=7.1\sigma$
+\end_inset
+
+, mientras que la longitud de contorno de las cadenas es de 
+\begin_inset Formula $l_{c}=8.7\sigma$
+\end_inset
+
+.
+ Por lo tanto, las interacciones entre cadenas son poco frecuentes y las
+ interacciones de volumen excluido entre cadenas es despreciable.
+ En los caso de equilibrio, la media de la distribución es 
+\begin_inset Formula $\left\langle \Theta_{end}\right\rangle =0$
+\end_inset
+
+ y presenta una gran varianza 
+\begin_inset Formula $var(\Theta_{end})=\left\langle \Theta_{end}^{2}\right\rangle -\left\langle \Theta_{end}\right\rangle ^{2}$
+\end_inset
+
+.
+ Al incrementar la velocidad de la pared, las cadenas se inclinan en la
+ dirección de del flujo y decrece la varianza de la distribución, indicando
+ una menor movilidad de las cadenas alrededor de su valor medio.
+ Se puede observar que fuera del equilibrio las distribuciones de densidad
+ de 
+\begin_inset Formula $\Theta_{end}$
+\end_inset
+
+ son altamente no simétricas con respecto a la moda.
+ Para las cadenas más rígidas 
+\begin_inset Formula $l_{p}/l_{c}\gg1$
+\end_inset
+
+ esta característica es menos evidente que en los casod de cadenas más flexibles.
+ Cabe destacar que todas las distribuciones de probabilidad se desvían de
+ la distribución normal, y en particular las colas decaen más lentamente
+ que en una distribución gaussiana.
+ Este comportamiento no gaussiano ya fue observado tanto en experimentos
+ como teóricamente en casos de cadena aislada en flujo
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Winkler06"
+literal "true"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+La configuración particular de las cadenas con rigidez 
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+ (
+\begin_inset Formula $k_{b}=8\varepsilon$
+\end_inset
+
+) puede observarse de la distribución de probabilidad de 
+\begin_inset Formula $\Theta_{end}$
+\end_inset
+
+ en equilibrio (panel inferior izquierdo, en círculos negros de la figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Theta_vs_Shear"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ En este caso se pueden apreciar dos máximos alrededor de 
+\begin_inset Formula $\Theta_{end}=\pm40°$
+\end_inset
+
+, y un mínimo local en 
+\begin_inset Formula $\Theta_{end}=0$
+\end_inset
+
+ que corresponde con la posición de equilibrio de las cadenas.
+ El líquido ejerce presión sobre la cadenas, comprimiendolas axialmente.
+ Las uniones del polímero comprimido se flexionan en una dirección coherente,
+ minimizando la energía de flexión, dadas las restricciones del sistema,
+ adoptando un configuración de arco de curva, como se puede observar en
+ el recuadro del panel inferior izquierdo de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ThetaPDF"
+
+\end_inset
+
+.
+ Este efecto es evidente para cadenas cuya longitud de persistencia es similiar
+ a la longitud de contorno, debido al alcance de la orientación de orientación
+ en las uniones del polímero.
+ Para longitudes de persistencia más bajas se observa una meseta en el máximo,
+ en vez de una distribución bimodal.
+ Las distribución de probabilidad de 
+\begin_inset Formula $\Theta_{end}$
+\end_inset
+
+ para las cadenas más rígidas, se asemeja más a una distribución normal.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -5456,8 +5586,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang american
 \begin_inset Graphics
 	filename figs/cap3_Theta_PDF_gd0.02_We.eps
 	width 98col%
@@ -5469,33 +5597,39 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\lang american
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang american
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:ThetaPDF"
 
 \end_inset
 
-Probability density function (PDF) of the end-to-end angle of the polymers
- as a function of shear rate, for the lowest grafting density 
+Distribución de probabilidad del ángulo de inclinación de las cadenas 
+\begin_inset Formula $\Theta_{end}$
+\end_inset
+
+, para distintos valores de rigidez y de velocidad de flujo.
+ En este caso solo se muestran las distribuciones de densidad para el caso
+ de densidades de fijado muy bajas 
 \begin_inset Formula $\rho_{g}=0.02\sigma^{-2}$
 \end_inset
 
-.
- For 
-\begin_inset Formula $k_{b}=8\varepsilon$
+, en los cuales puede despreciarse los efectos de interacción entre cadenas
+ vecinas.
+ Para 
+\begin_inset Formula $k_{b}=8$
 \end_inset
 
-, the equilibrium PDF is bimodal.
- The pressure exerted by the liquid difficults the full stretching of polymers
- perpendicular to the wall, giving rise to a non vanishing end-to-end angle.
- 
+ (
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+), se observa una distribución bimodal en equilibrio.
+ La presión ejercida por el líquido sobre las cadenas impide el estirameinto
+ de las mismas en al dirección vertical, favoreciendo ángulos de inclinación
+ no nulos.
 \end_layout
 
 \end_inset
@@ -5509,8 +5643,96 @@ Probability density function (PDF) of the end-to-end angle of the polymers
 \end_layout
 
 \begin_layout Standard
+Es interesante analizar el comportamiento de los grados internos de libertad
+ al imponer un flujo de líquido sobre las cadenas.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ThetaBond_vs_Shear"
 
-\lang american
+\end_inset
+
+ se presenta la energía de flexión 
+\begin_inset Formula $U_{b}$
+\end_inset
+
+ para cada unión en función del número de Weissenerg 
+\begin_inset Formula $We$
+\end_inset
+
+, para cada valor de constante de flexión utilizado 
+\begin_inset Formula $k_{b}$
+\end_inset
+
+, en el caso de menor densidad de fijado (
+\begin_inset Formula $\rho_{g}=0.02\sigma^{-2}$
+\end_inset
+
+).
+ Se pueden distinguir dos regímenes, uno para 
+\begin_inset Formula $l_{p}/l_{c}\ll1$
+\end_inset
+
+ y otro para 
+\begin_inset Formula $l_{p}/l_{c}\gg1$
+\end_inset
+
+.
+ En el primer régimen (paneles a y b), el ángulo de orientación (Bond 1)
+ es considerablemente menor a los ángulos internos de la cadena.
+ En este régimen también se cumple que los ángulos decrecen al incrementar
+ la velocidad de la pared, incrementando así la distancia entre los monómeros
+ terminales de los polímeros y disminuyendo la energía total de flexión
+ por cadena.
+ 
+\end_layout
+
+\begin_layout Standard
+Para 
+\begin_inset Formula $l_{p}/l_{c}\gg1$
+\end_inset
+
+ (panel d), los ángulos de orientación son mayores a los ángulos internos
+ y la energía de flexión de todas las uniones incrementa con 
+\begin_inset Formula $We$
+\end_inset
+
+.
+ También se observa un decrecimiento en el modulo de 
+\begin_inset Formula $\boldsymbol{R}_{end}$
+\end_inset
+
+, ya que las cadenas se flexionan con el flujo, perdiendo altura.
+\end_layout
+
+\begin_layout Standard
+Los polímeros con 
+\begin_inset Formula $k_{b}=8$
+\end_inset
+
+ (
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+, panel c), son un caso límite en el cual la longitud de persistencia es
+ similar a la longitud de contorno.
+ La energía de flexión media por cadena y la distancia entre los monómeros
+ terminales de las cadenas se mantiene constante para todas las condiciones
+ de flujo estudiadas.
+ En este caso (
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+) no se ven grandes cambios en la estructura interna de los polímeros con
+ la velocidad del flujo, excepto un crecimiento del ángulo de la primera
+ unión con 
+\begin_inset Formula $We$
+\end_inset
+
+, lo cual le da un mayor ángulo de inclinación a la cadenas.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -5518,8 +5740,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang american
 \begin_inset Graphics
 	filename figs/cap3_BondEnergy_vs_We_gd0.02.eps
 	width 98col%
@@ -5531,38 +5751,34 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang american
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:ThetaBond_vs_Shear"
 
 \end_inset
 
-Panel (a): Mean square angle of each bond in the chain as function of Weissenber
-g number (
+a) Valor cuadrático medio del ángulo en cada unión de las cadenas en función
+ del número de Weissenberg 
 \begin_inset Formula $We$
 \end_inset
 
-) for the fully flexible case and 
-\begin_inset Formula $\rho_{g}=0.02\sigma^{-2}$
-\end_inset
-
 .
- Panels (b)-(d): Bond bending energy 
-\begin_inset Formula $U_{b}=1/2\text{·}k_{b}\text{·}\theta^{2}$
-\end_inset
-
- of each bond as function of 
+ En los panales b), c) y d) se presenta la energía media de flexión de cada
+ unión de las cadenas en función de 
 \begin_inset Formula $We$
 \end_inset
 
- and 
+.
+ Los símbolos vacíos corresponden a los diferentes ángulos internos de la
+ cadena, mientras que los círculos negros llenos son la energía de flexión
+ por cadena.
+ Los gráficos corresponden a una muestra con densidad de fijado de cadenas
+ baja (
 \begin_inset Formula $\rho_{g}=0.02\sigma^{-2}$
 \end_inset
 
-.
- For the most flexible polymers studied (
+).
+ Las cadenas más flexibles (
 \begin_inset Formula $k_{b}=0$
 \end_inset
 
@@ -5570,15 +5786,26 @@ g number (
 \begin_inset Formula $k_{b}=0.8$
 \end_inset
 
-), the bonds in the chain decrease with increasing shear rate, and the chains
- end-to-end distance increases.
- The orientation angle (Bond 1) increases because the chains lean on the
- direction of the flowing liquid in the channel.
- The behaviour of the rods (
-\begin_inset Formula $k_{b}=80$
+), la energía total de flexión decrece con el flujo y la distancia 
+\shape italic
+end-to-end
+\shape default
+ de las cadenas crece.
+ El ángulo de orientación (Bond 1) crece, ya que las cadenas se inclinan
+ en la dirección del flujo.
+ En cambio, para 
+\begin_inset Formula $k_{b}=80\varepsilon$
 \end_inset
 
-) is different: all the bond angles increase upong rising the shear rate.
+ (
+\begin_inset Formula $l_{p}/l_{c}\gg1$
+\end_inset
+
+) todos los ángulos internos de las cadenas incrementan con 
+\begin_inset Formula $We$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -5592,8 +5819,130 @@ g number (
 \end_layout
 
 \begin_layout Standard
+Como se menciono anteriormente, la condición de no deslizamiento se vio
+ violada en todos los casos estudiados.
+ La reducción de la fricción en sistemas con cepillos poliméricos se ha
+ venido estudiando desde hace décadas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "10.1038/370634a0"
+literal "false"
 
-\lang american
+\end_inset
+
+.
+ En este caso se investiga la influencia de la rigidez de las cadenas en
+ el deslizamiento del líquido sobre el cepillo polimérico.
+ Para cuantificar este fenómeno, se muestra en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Slip-length vs gd"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ la longitud de deslizamiento 
+\begin_inset Formula $\delta$
+\end_inset
+
+ en función de la densidad de fijado 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+, para los distintas intensidades de flujo 
+\begin_inset Formula $We$
+\end_inset
+
+ y valores de rigidez.
+ La longitud de deslizamiento 
+\begin_inset Formula $\delta$
+\end_inset
+
+ se defino como la distancia a la cual la extrapolación del perfil de velocidad
+ del líquido coincide con la velocidad del sustrato
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tretyakov_13"
+literal "true"
+
+\end_inset
+
+.
+ La posición de la interfaz líquido-cepillo se determina como el valor 
+\begin_inset Formula $z$
+\end_inset
+
+ que maximiza la función 
+\begin_inset Formula $f(z)=\rho_{l}(z)\text{·}\rho_{p}(z)$
+\end_inset
+
+, dónde 
+\begin_inset Formula $\rho_{l}$
+\end_inset
+
+ y 
+\begin_inset Formula $\rho_{b}$
+\end_inset
+
+ son las densidades del líquido y del cepillo respectivamente y 
+\begin_inset Formula $z$
+\end_inset
+
+ es la coordenada espacial perpendicular a las paredes del canal.
+\end_layout
+
+\begin_layout Standard
+A densidades de fijado bajas, la longitud de deslizamiento del líquido es
+ altamente dependiente de la propiedades del sustrato.
+ En general, 
+\begin_inset Formula $\delta$
+\end_inset
+
+ decrece rápidamente al incrementar la densidad de fijado de cadenas.
+ A partir de densidades de fijado intermedias 
+\begin_inset Formula $\rho_{g}\geqslant0.1\sigma^{-2}$
+\end_inset
+
+, la longitud de deslizamiento parece saturar y alcanza un valor constante,
+ para todos los valores de rigidez e intensidad del flujo.
+ Solamente para las cadenas más rígidas 
+\begin_inset Formula $k_{b}=80\varepsilon$
+\end_inset
+
+ (
+\begin_inset Formula $l_{p}/l_{c}\gg1$
+\end_inset
+
+) se observa un decrecimiento de 
+\begin_inset Formula $\delta$
+\end_inset
+
+ a altas densidades de fijado y para 
+\begin_inset Formula $We\le1$
+\end_inset
+
+.
+ Creemos que para 
+\begin_inset Formula $\rho_{g}\ge0.1\sigma^{-2}$
+\end_inset
+
+, la longitud de deslizamiento está fuertemente determinada por la compatibilida
+d entre el los polímeros y el líquido, que en todos los casos se fijo en
+ 
+\begin_inset Formula $\varepsilon_{lp}=1/3\varepsilon_{ll}=1/3\varepsilon_{pp}$
+\end_inset
+
+.
+ Por otro lado, la dependencia de 
+\begin_inset Formula $\delta$
+\end_inset
+
+ con la rigidez de las cadenas parece no-monótona.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -5601,8 +5950,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang american
 \begin_inset Graphics
 	filename figs/cap3_SlipLen_vs_gd.eps
 	width 98col%
@@ -5614,56 +5961,55 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\lang american
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang american
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Slip-length vs gd"
 
 \end_inset
 
-Slip length (
+Longitud de deslizamiento 
 \begin_inset Formula $\delta$
 \end_inset
 
-) as a function of the grafting density (
+ en función de la densidad de fijado 
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
-) for the studied shear rates.
- The slip length decreases rapidly upon increasing 
-\begin_inset Formula $\rho_{g}$
+ para distintos valores de 
+\begin_inset Formula $We$
 \end_inset
 
- .
- For intermediate and high grafting densities (
-\begin_inset Formula $\rho_{g}\geq0.1\sigma^{-2}$
+ y rigidez.
+ En todos los caso, la longitud de deslizamiento decrece con la densidad
+ de fijado.
+ A partir de 
+\begin_inset Formula $\rho_{g}\ge0.1\sigma^{-2}$
 \end_inset
 
-) 
-\begin_inset Formula $\delta$
-\end_inset
-
- takes roughly the same value 
+, la longitud de deslizamiento toma aproximadamente el mismo valor 
 \begin_inset Formula $\delta\eqsim11\sigma$
 \end_inset
 
- for every wall velocity and bending rigidity.
- All the studied cases present non-zero slip length, indicating that the
- no-slip condition between the polymer brush and the free melt does not
- hold.
- The rod-like polymers (
+, para todos los valores de velocidad de pared y rigidez.
+ En todos los casos la 
+\begin_inset Formula $\delta$
+\end_inset
+
+ fue mayor a cero, indicando que la condición de no deslizamiento no se
+ cumple en ningún caso.
+ Los polímeros más rígidos 
 \begin_inset Formula $k_{b}=80\varepsilon$
 \end_inset
 
-) are the ones that offer the most resistance to the liquid flow for every
- grafting density and shear rate.
- 
+ (
+\begin_inset Formula $l_{p}/l_{c}=10$
+\end_inset
+
+) son los que ofrecen más resistencia al flujo de líquido para todos las
+ intensidades de flujo.
 \end_layout
 
 \end_inset
@@ -5677,8 +6023,6 @@ Slip length (
 \end_layout
 
 \begin_layout Standard
-
-\lang american
 \begin_inset Float figure
 wide false
 sideways false
@@ -5686,8 +6030,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang american
 \begin_inset Graphics
 	filename figs/cap3_SlipLen_vs_We_gd0.05.eps
 	width 98col%
@@ -5700,8 +6042,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang american
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
