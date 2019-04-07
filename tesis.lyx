@@ -6023,6 +6023,199 @@ Longitud de deslizamiento
 \end_layout
 
 \begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SlipLength_vs_Shear"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se presenta la longitud de deslizamiento 
+\begin_inset Formula $\delta$
+\end_inset
+
+ en función del número de Weissenberg 
+\begin_inset Formula $We$
+\end_inset
+
+, para todos los valores de rigidez explorados, en un sistema de densidad
+ de cadenas baja 
+\begin_inset Formula $\rho_{g}=0.05\sigma^{-2}$
+\end_inset
+
+.
+ En todos los casos, 
+\begin_inset Formula $\delta$
+\end_inset
+
+ aumenta con la velocidad de las paredes.
+ Esto ya había sido observado para cadenas totalmente flexibles y con líquidos
+ complejos
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pastorino:064902"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Es interesante notar que las cepillos semiflexibles con constante de flexión
+ 
+\begin_inset Formula $k_{b}=0.8\varepsilon$
+\end_inset
+
+ (
+\begin_inset Formula $l_{p}/l_{c}\simeq0.2$
+\end_inset
+
+) inducen una mayor longitud de deslizamiento que las cadenas totalmente
+ flexibles, para todos los valores de 
+\begin_inset Formula $We$
+\end_inset
+
+.
+ Al aumentar la longitud de persistencia, las cadenas se estiran y adoptan
+ configuraciones que pueden presentar menos resistencia que las cadenas
+ más flexibles, que adoptan configuraciones tipo glóbulo.
+ Se puede apreciar que la dependencia de 
+\begin_inset Formula $\delta$
+\end_inset
+
+ con 
+\begin_inset Formula $k_{b}$
+\end_inset
+
+ no es monótona.
+ Al aumentar aún más la rigidez de las cadenas, de 
+\begin_inset Formula $l_{p}/l_{c}=0.2$
+\end_inset
+
+ a 
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+, la longitud de deslizamiento decrece a igual 
+\begin_inset Formula $We$
+\end_inset
+
+.
+ A pesar de que la longitud de deslizamiento para los cepillos con 
+\begin_inset Formula $k_{b}=8\varepsilon$
+\end_inset
+
+ es menor que para las cadenas más flexibles, la tasa de crecimiento de
+ 
+\begin_inset Formula $\delta$
+\end_inset
+
+ con 
+\begin_inset Formula $We$
+\end_inset
+
+ es aproximadamente igual en el rango 
+\begin_inset Formula $We\ge0.5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+El cepillo compuesto por polímeros muy rígidos 
+\begin_inset Formula $k_{b}=80$
+\end_inset
+
+ (
+\begin_inset Formula $l_{p}/l_{c}\gg1$
+\end_inset
+
+) muestra una gran capacidad de arrastre contra el líquido comparado con
+ las cadenas más flexibles.
+ La longitud de deslizamiento en este caso es menor que para los demás cepillos
+ en todo el rango de 
+\begin_inset Formula $We$
+\end_inset
+
+ estudiado y crece más lentamente.
+ Se sabe que la longitud de deslizamiento depende de la presión normal,
+ al aumentar la presión, disminuye el deslizamiento
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tretyakov_13"
+literal "true"
+
+\end_inset
+
+.
+ En este caso, la presión normal sobre el cepillo en los diferentes casos
+ varió menos del 
+\begin_inset Formula $15\%$
+\end_inset
+
+, y decrece monótonamente con la constante de flexión.
+ Esto implica que el comportamiento de la longitud de deslizamiento no puede
+ ser atribuida a variaciones de la presión normal.
+ 
+\end_layout
+
+\begin_layout Standard
+Es importante aclarar que la comparación se hace a igual número de Weissenberg,
+ pero no a igual velocidad de la pared.
+ El número de Weissenberg sirve para adimencionalizar la intensidad del
+ flujo, teniendo en cuenta el tiempo propio de relajación del polímero.
+\end_layout
+
+\begin_layout Standard
+También se analizo la fuerza aplicada sobre las paredes en la dirección
+ del movimiento en función de la velocidad de cizalla 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+.
+ Los datos de las ocho diferentes densidades de fijado, cuatro distintas
+ constantes de flexión y cinco velocidades de pared distintas colapsan en
+ una única linea recta.
+ Esto que la relación entre la fuerza necesaria para mover las paredes 
+\begin_inset Formula $F_{x}$
+\end_inset
+
+ y 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+ es independiente del cepillo polimérico y depende únicamente del líquido.
+ De esta relación lineal es posible obtener la viscosidad del líquido utilizado,
+ mediante la relación
+\begin_inset Formula $F_{x}=\eta\text{·}A\text{·}\dot{\gamma}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Pastorino_06,Goicochea_14"
+literal "true"
+
+\end_inset
+
+.
+ En este caso se obtuvo una viscosidad de 
+\begin_inset Formula $\eta=1.28\varepsilon\tau\sigma^{-3}$
+\end_inset
+
+.
+ El luido se comporta como un fluido simple newtoniano con una viscosidad
+ definida para todo el rango de flujos estudiado y los fenómenos de la interfaz
+ o el contenido de gas en el cepillo no modifican significativamente la
+ difusión de momento en el líquido.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -6045,58 +6238,51 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang american
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:SlipLength_vs_Shear"
 
 \end_inset
 
-Slip length 
-\begin_inset Formula $\begin{gathered}\delta\end{gathered}
-$
+Longitud de deslizamiento 
+\begin_inset Formula $\delta$
 \end_inset
 
- as a function of Weissenberg number 
+ en función del número de Weissenberg 
 \begin_inset Formula $We$
 \end_inset
 
-, for systems with low grafting density (
+, para un sistema de densidad de fijado baja 
 \begin_inset Formula $\rho_{g}=0.05\sigma^{-2}$
 \end_inset
 
-).
- The slip length is highly dependent on the bending constant at lower grafting
- densities.
- The stiffest chains (
+.
+ A densidades de fijado baja, la longitud de deslizamiento depende de la
+ rigidez de las cadenas.
+ Las cadenas más rígidas 
 \begin_inset Formula $k_{b}=80\varepsilon$
 \end_inset
 
-) present less slip for all shear rates studied.
- It is interesting to note the non-monotonic dependence of 
+ (
+\begin_inset Formula $l_{p}/l_{c}\gg1$
+\end_inset
+
+) presentan la menor longitud de deslizamiento de todos los casos.
+ Se puede observar un comportamiento no monótono de 
 \begin_inset Formula $\delta$
 \end_inset
 
- with the bending constant 
+ con la rigidez 
 \begin_inset Formula $k_{b}$
 \end_inset
 
-.
- Inset: detail of 
-\begin_inset Formula $\delta$
-\end_inset
-
- at low 
+ de las cadenas.
+ En el recuadro se presentan los mismos datos, con un acercamiento para
+ valores bajos de 
 \begin_inset Formula $We$
 \end_inset
 
-.
- The slip is higher for the semiflexible polymers with 
-\begin_inset Formula $k_{b}=0.8\varepsilon$
-\end_inset
 
-, than for the fully flexible polymers.
 \end_layout
 
 \end_inset
@@ -6110,18 +6296,256 @@ $
 \end_layout
 
 \begin_layout Standard
+Por último, se analiza el coeficiente de fricción dinámico (
+\begin_inset Formula $\mu$
+\end_inset
 
-\lang american
-\begin_inset Separator latexpar
+), definido como el cociente entre la fuerza paralela y la fuerza normal
+ aplicada sobre la pared 
+\begin_inset Formula $\mu=F_{x}/F_{z}$
+\end_inset
+
+.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Friction-coefficient-vs-shear"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se presenta 
+\begin_inset Formula $\mu$
+\end_inset
+
+ en función de 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+ para los distintos valores de rigidez 
+\begin_inset Formula $k_{b}$
+\end_inset
+
+ y de densidad de fijado de cadenas 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+.
+ Se puede observar que la fricción no depende fuertemente de la rigidez
+ de las cadenas.
+ La variación de 
+\begin_inset Formula $\mu$
+\end_inset
+
+ entre sistemas con la misma densidad de fijado y bajo el mismo 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+ es en todos los casos menor al 
+\begin_inset Formula $20\%$
+\end_inset
+
+.
+ Al incrementar la densidad de fijado, 
+\begin_inset Formula $\mu$
+\end_inset
+
+ decrece.
+ Como se encontró en otros trabajos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Galuschko_10,Goicochea_14"
+literal "true"
+
+\end_inset
+
+, 
+\begin_inset Formula $\mu$
+\end_inset
+
+ crece con la velocidad de cizalla 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+.
+ En este caso se observa una relación lineal entre 
+\begin_inset Formula $\mu$
+\end_inset
+
+ y 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+ para altas densidades de fijado 
+\begin_inset Formula $\rho_{g}\ge0.1\sigma^{-2}$
+\end_inset
+
+, porque las fuerzas normales al flujo varían muy poco con 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para comprender mejor de que parámetros del sistema depende 
+\begin_inset Formula $\mu$
+\end_inset
+
+, se realizó una regresión lineal de la forma 
+\begin_inset Formula $\mu=m\dot{\gamma}$
+\end_inset
+
+ para cada curva mostrada en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Friction-coefficient-vs-shear"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ La pendiente 
+\begin_inset Formula $m$
+\end_inset
+
+ de cada curva se grafica en función de 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ en el recuadro de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Friction-coefficient-vs-shear"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ en escala 
+\begin_inset Formula $log-log$
+\end_inset
+
+.
+ Esto indica que 
+\begin_inset Formula $m$
+\end_inset
+
+ sigue una ley de potencias de la forma 
+\begin_inset Formula $\begin{gathered}m=B(k_{b})\rho_{g}^{-1}\end{gathered}
+$
+\end_inset
+
+.
+ El exponente de 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ resulta ser 
+\begin_inset Formula $-1$
+\end_inset
+
+ para todas los valores de rigidez explorados.
+ Combinando las últimas dos ecuaciones es posible obtener una ley de potencias
+ para el comportamiento de 
+\begin_inset Formula $\mu$
+\end_inset
+
+ en función de la intensidad del flujo 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+ y de la densidad de fijado 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+\mu\thicksim B(k_{b})\dot{\gamma}\rho_{g}^{-1}
+\end{equation}
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Es interesante notar que la fricción decrece con el número de cadenas por
+ unidad de área.
+ Creemos que al incrementar 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ el líquido en menos propenso a penetrar el cepillo polimérico.
+ Al aumentar la cantidad de cadenas en este sistema super hidrofóbico, la
+ interfaz líquido-cepillo se vuelve más marcada, reduciendo 
+\begin_inset Formula $\mu$
+\end_inset
+
+.
+ El comportamiento de la fuerza aplicada externa aplicada sobre las paredes
+ (
+\begin_inset Formula $F_{x}$
+\end_inset
+
+ y 
+\begin_inset Formula $F_{z}$
+\end_inset
+
+) tienen una dependencia distinta con la densidad de fijado.
+ Mientras que 
+\begin_inset Formula $F_{z}$
+\end_inset
+
+ crece linealmente con 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+, 
+\begin_inset Formula $F_{x}$
+\end_inset
+
+ crece rápidamente a bajos 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ y para valores altos de 
+\begin_inset Formula $\rho_{g}\ge0.3\sigma^{-2}$
+\end_inset
+
+ toma un valor constante.
+ De todas maneras, cabe mencionar que los fenómenos de fricción dependen
+ de la escala en la que se trabaje y arrojan resultados distintos en escalas
+ nanoscopicas y macroscópicas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NOSONOVSKY2007162"
+literal "false"
+
+\end_inset
+
+.
+ Existen contribuciones de procesos disipativos a varias escalas de longitud.
+ También es importante notar que los conceptos macroscópicos de fricción
+ no son fácilmente extrapolables a escalas pequeñas 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tretyakov_13"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 \align block
-
-\lang american
 \begin_inset Float figure
 wide false
 sideways false
@@ -6129,8 +6553,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-
-\lang american
 \begin_inset Graphics
 	filename figs/cap3_Mu_vs_Shear_modified2.eps
 	width 98col%
@@ -6142,53 +6564,66 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang american
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Friction-coefficient-vs-shear"
 
 \end_inset
 
-Friction coefficient 
+ Coeficiente de fricción 
 \begin_inset Formula $\mu$
 \end_inset
 
- of the system versus shear rate.
- Each group of curves corresponds to a different grafting density 
-\begin_inset Formula $\rho_{g}$
-\end_inset
-
-.
- It can be observed that 
-\begin_inset Formula $\mu$
-\end_inset
-
- is proportional to the shear rate, and the slope is highly dependent on
- the grafting density 
-\begin_inset Formula $\rho_{g}$
-\end_inset
-
-.
- For systems with the same 
-\begin_inset Formula $\rho_{g}$
-\end_inset
-
-, the friction coefficient is higher, the higher the bending constant .
- Inset: double-logarithmic scaling plot for the slope of 
-\begin_inset Formula $\mu$
-\end_inset
-
- vs 
+ del sistema en función de la velocidad de cizalla 
 \begin_inset Formula $\dot{\gamma}$
 \end_inset
 
-, as a function of the grafting density.
- The dependence of the slope on 
+.
+ Cada grupo de curvas corresponde a una densidad de fijado 
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
- seems to follow a power law.
+ distinta.
+ Puede observarse que 
+\begin_inset Formula $\mu$
+\end_inset
+
+ es proporcional a 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+, y la pendiente es altamente dependiente de la densidad de fijado.
+ Para sistemas con la misma 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+, el coeficiente de fricción es mayor al aumentar la rigidez de las cadenas.
+ En el recuadro se observa en escala 
+\begin_inset Formula $log-log$
+\end_inset
+
+ la pendiente de 
+\begin_inset Formula $\mu$
+\end_inset
+
+ contra 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+ (
+\begin_inset Formula $m$
+\end_inset
+
+) en función de la densidad de fijado.
+ La dependencia de la pendiente 
+\begin_inset Formula $m$
+\end_inset
+
+ con 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ parase seguir una ley de potencias.
 \end_layout
 
 \end_inset
