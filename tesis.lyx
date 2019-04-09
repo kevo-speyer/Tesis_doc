@@ -3179,7 +3179,7 @@ En este capítulo se estudia mediante simulaciones numéricas el flujo de
  poliméricos semiflexibles.
  El sistema es estudiado en equilibrio y en condiciones de flujo, en función
  de la cantidad de cadenas fijadas por unidad de área y de la velocidad
- del flujo y se utilizaron distintos valores de rigidez de las cadenas.
+ del flujo, utilizando distintos valores de rigidez de las cadenas.
  La interacción entre el cepillo polimérico y el solvente es compatible
  con condiciones superhidrofóbicas, dónde una gota depositada sobre esta
  superficie forma ángulos cercanos a los 
@@ -3202,7 +3202,7 @@ reference "fig:System_Snapchot"
 , y dónde los polímeros (en rojo) están anclados por un monómero terminal
  (en verde) a una de las dos paredes del canal.
  Para estudiar al sistema fuera del equilibrio, las paredes se mueven a
- velocidad constante y en sentido contratio, induciendo un perfil de velocidad
+ velocidad constante y en sentido contrario, induciendo un perfil de velocidad
  tipo Couette en el líquido.
  Se utilizan cuatro valores distintos de dureza de los polímeros, cubriendo
  un amplio rango de rigideces, desde cadenas totalmente flexibles, hasta
@@ -3335,6 +3335,200 @@ Detalles del sistema y método
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Detalles-del-sistema_3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+FUERZAS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los polímeros se anclan a la pared, fijando un monómero terminal de la cadena
+ a una posición fija de la misma.
+ La conectividad entre los monómeros pertenecientes a un mismo polímero
+ se da mediante el potencial FENE, descrito en la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Modelado-de-interacciones"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Para modelar las interacciones entre todas las partículas (pertenezcan
+ al fluido o al cepillo polimérico) se utilizó un potencial de Lennard-Jones
+ truncado y desplazado:
+\begin_inset Formula 
+\begin{equation}
+U_{LJ}(r)=\begin{cases}
+4\varepsilon^{(ab)}\left[\left(\frac{\sigma}{r}\right)^{12}-\left(\frac{\sigma}{r}\right)^{6}\right] & ;\quad si\;r\leq r_{C}^{(ab)}\\
+0 & ;\quad si\;r>r_{C}^{(ab)}
+\end{cases}\,,\label{eq:Lennard_Jones-2}
+\end{equation}
+
+\end_inset
+
+donde los superíndices 
+\begin_inset Formula $\varepsilon^{(ab)}$
+\end_inset
+
+, indican si las partículas corresponden a un polímero o al fluido.
+ Para las interacciones entre partículas de la misma especie se utilizo
+ un valor 
+\begin_inset Formula $\varepsilon^{(ll)}=\varepsilon^{(pp)}\equiv1\varepsilon$
+\end_inset
+
+, mientras que para interacciones polímero-líquido se utilizo un valor 
+\begin_inset Formula $\varepsilon^{(lp)}=1/3\varepsilon$
+\end_inset
+
+ para codificar la incompatibilidad entre ambos.
+ El radio de corte de las interacciones se fijó en 
+\begin_inset Formula $r_{C}^{(ll)}=r_{C}^{(lp)}=2.24\sigma$
+\end_inset
+
+ para incluir la parte atractiva del potencial, mientras que para las interaccio
+nes polímero-polímero el radio de corte para esta interacción es puramente
+ repulsivo 
+\begin_inset Formula $r_{C}^{(pp)}=1.12\sigma$
+\end_inset
+
+.
+ Con esta elección de parámetros los polímeros no se atraen entre si, simulando
+ una condición de buen solvente, mientras las partículas de fluido forman
+ una fase líquida y una gaseosa en equilibrio.
+\end_layout
+
+\begin_layout Standard
+La rigidez de las cadenas poliméricas se impuso mediante un potencial de
+ flexión de la forma 
+\begin_inset Formula $U_{b}=1/2k_{b}\theta^{2}$
+\end_inset
+
+ en cada unión entre monómeros.
+ El ángulo 
+\begin_inset Formula $\theta$
+\end_inset
+
+ se mide desde la columna del polímero, siendo 
+\begin_inset Formula $\theta=0$
+\end_inset
+
+ el ángulo de equilibrio que corresponde a la cadena totalmente estirada.
+ Como se explicó en la sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Modelado-de-interacciones"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, la orientación perpendicular a la pared de fijado es favorecida mediante
+ este potencial.
+\end_layout
+
+\begin_layout Standard
+La interacción entre las partículas y las paredes, situadas en 
+\begin_inset Formula $z=0$
+\end_inset
+
+ y 
+\begin_inset Formula $z=40\sigma$
+\end_inset
+
+, se modeló mediante un potencial de Lennard-Jones integrado:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+U_{wall}(z)=\left|A_{w}\right|\left(\frac{\sigma}{r}\right)^{9}+A_{w}\left(\frac{\sigma}{r}\right)^{3}\,,
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $A=3.2\varepsilon$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/ma8015757,:/content/aip/journal/jcp/140/1/10.1063/1.4851195,C5SM01075F"
+literal "false"
+
+\end_inset
+
+.
+ Este potencial no tiene rugosidad y no tiene capacidad de arrastrar al
+ líquido.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+DPD
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La 
+\end_layout
+
+\begin_layout Standard
+Lx x Ly x Lz
+\end_layout
+
+\begin_layout Standard
+Nmon = 10
+\end_layout
+
+\begin_layout Standard
+dt
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+VELOCIDAD PARED
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+CANTIDAD DE PARTÍCULAS para llenar el canal
+\end_layout
 
 \end_inset
 
@@ -3511,6 +3705,19 @@ status open
 
 \begin_layout Plain Layout
 Como se calculo la posición de la interfaz
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Tiempo relax
 \end_layout
 
 \end_inset
