@@ -1,6 +1,6 @@
 # Grace project file
 #
-@version 50123
+@version 50125
 @page size 792, 612
 @page scroll 5%
 @page inout 5%
@@ -63,7 +63,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Mon Mar 10 18:41:22 2014"
+@timestamp def "Thu Apr 11 22:05:00 2019"
 @with line
 @    line on
 @    line loctype view
@@ -168,7 +168,7 @@
 @    string rot 0
 @    string font 0
 @    string just 0
-@    string char size 1.500000
+@    string char size 1.750000
 @    string def "v\ss"
 @with string
 @    string on
@@ -178,7 +178,7 @@
 @    string rot 0
 @    string font 0
 @    string just 0
-@    string char size 1.500000
+@    string char size 1.750000
 @    string def "\xd"
 @r0 off
 @link r0 to g0
@@ -252,7 +252,7 @@
 @    xaxis  label "z/D"
 @    xaxis  label layout para
 @    xaxis  label place auto
-@    xaxis  label char size 1.500000
+@    xaxis  label char size 1.750000
 @    xaxis  label font 0
 @    xaxis  label color 1
 @    xaxis  label place normal
@@ -288,7 +288,7 @@
 @    xaxis  ticklabel start 0.000000
 @    xaxis  ticklabel stop type auto
 @    xaxis  ticklabel stop 0.000000
-@    xaxis  ticklabel char size 1.250000
+@    xaxis  ticklabel char size 1.500000
 @    xaxis  ticklabel font 0
 @    xaxis  ticklabel color 1
 @    xaxis  tick place both
@@ -303,7 +303,7 @@
 @    yaxis  label "v\sx\N/v\sp"
 @    yaxis  label layout para
 @    yaxis  label place auto
-@    yaxis  label char size 1.500000
+@    yaxis  label char size 1.750000
 @    yaxis  label font 0
 @    yaxis  label color 1
 @    yaxis  label place normal
@@ -339,7 +339,7 @@
 @    yaxis  ticklabel start 0.000000
 @    yaxis  ticklabel stop type auto
 @    yaxis  ticklabel stop 0.000000
-@    yaxis  ticklabel char size 1.250000
+@    yaxis  ticklabel char size 1.500000
 @    yaxis  ticklabel font 0
 @    yaxis  ticklabel color 1
 @    yaxis  tick place both
@@ -384,7 +384,7 @@
 @    s0 symbol skip 0
 @    s0 line type 1
 @    s0 line linestyle 1
-@    s0 line linewidth 1.5
+@    s0 line linewidth 5.5
 @    s0 line color 1
 @    s0 line pattern 1
 @    s0 baseline type 0
@@ -433,7 +433,7 @@
 @    s1 symbol skip 0
 @    s1 line type 1
 @    s1 line linestyle 1
-@    s1 line linewidth 1.5
+@    s1 line linewidth 5.0
 @    s1 line color 2
 @    s1 line pattern 1
 @    s1 baseline type 0
@@ -482,7 +482,7 @@
 @    s2 symbol skip 0
 @    s2 line type 1
 @    s2 line linestyle 1
-@    s2 line linewidth 1.5
+@    s2 line linewidth 3.5
 @    s2 line color 15
 @    s2 line pattern 1
 @    s2 baseline type 0
@@ -531,7 +531,7 @@
 @    s3 symbol skip 0
 @    s3 line type 1
 @    s3 line linestyle 1
-@    s3 line linewidth 1.5
+@    s3 line linewidth 3.5
 @    s3 line color 4
 @    s3 line pattern 1
 @    s3 baseline type 0
@@ -580,7 +580,7 @@
 @    s4 symbol skip 0
 @    s4 line type 1
 @    s4 line linestyle 3
-@    s4 line linewidth 1.5
+@    s4 line linewidth 3.5
 @    s4 line color 1
 @    s4 line pattern 1
 @    s4 baseline type 0

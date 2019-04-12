@@ -3355,8 +3355,8 @@ FUERZAS
 \end_layout
 
 \begin_layout Standard
-Los polímeros se anclan a la pared, fijando un monómero terminal de la cadena
- a una posición fija de la misma.
+Los polímeros se anclan a la pared, asegurando un monómero terminal de la
+ cadena a una posición fijada del sustrato.
  La conectividad entre los monómeros pertenecientes a un mismo polímero
  se da mediante el potencial FENE, descrito en la sección 
 \begin_inset CommandInset ref
@@ -3370,7 +3370,7 @@ noprefix "false"
 
 .
  Para modelar las interacciones entre todas las partículas (pertenezcan
- al fluido o al cepillo polimérico) se utilizó un potencial de Lennard-Jones
+ al fluido o al cepillo polimérico), se utilizó un potencial de Lennard-Jones
  truncado y desplazado:
 \begin_inset Formula 
 \begin{equation}
@@ -3383,7 +3383,7 @@ U_{LJ}(r)=\begin{cases}
 \end_inset
 
 donde los superíndices 
-\begin_inset Formula $\varepsilon^{(ab)}$
+\begin_inset Formula $^{(ab)}$
 \end_inset
 
 , indican si las partículas corresponden a un polímero o al fluido.
@@ -4181,16 +4181,9 @@ Slip Velocity
 \end_layout
 
 \begin_layout Standard
-Al desplazar las paredes a una tasa constante, los polímeros interactúan
+Al desplazar las paredes a una tasa constante los polímeros interactúan
  con el líquido, generando un flujo que puede ser analizado observando el
- perfil de velocidades.
- Con el mismo método de láminas empleado para la temperatura y la densidad,
- se halla el perfil de velocidad del líquido en la dirección del movimiento
- del sustrato, en función de 
-\begin_inset Formula $z$
-\end_inset
-
-.
+ perfil de velocidades del fluido.
  De este gráfico se puede extraer información sobre la dinámica del sistema
  fuera del equilibrio.
  Primeramente es importante analizar la linealidad del perfil de velocidad
@@ -4218,10 +4211,10 @@ slip length
 
 ).
  Estas cuantifican la violación de las condiciones de contorno macroscópicas,
- en que la velocidad del fluido en la interfase es igual a la del sustrato.
+ que igualan la velocidad del fluido en la interfaz a la velocidad del sustrato.
  La velocidad de deslizamiento es la diferencia entre la velocidad de la
  pared y la extrapolación del comportamiento lineal de la velocidad del
- líquido a la interfase (ver Figura 
+ líquido a la interfaz (ver figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Explicacion Vslip"
@@ -4232,11 +4225,11 @@ reference "fig:Explicacion Vslip"
  Para hallar la longitud de deslizamiento primero hay que encontrar la posición
  en la cual el ajuste lineal de la velocidad es igual a la velocidad de
  la pared.
- Luego, al valor hallado se le resta la posición de la interfase y se obtiene
+ Luego, al valor hallado se le resta la posición de la interfaz y se obtiene
  la distancia de deslizamiento.
  Esta magnitud da cuenta de cuanto dista la condición de contorno real del
  caso ideal.
- El tratamiento de errores de ambas cantidades se expone el el apéndice.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -4273,7 +4266,7 @@ En línea llena negra se grafica la velocidad del líquido, normalizada con
  En rojo se aprecia el ajuste lineal del perfil de velocidad.
  El ajuste debe hacerse en el seno de la muestra, lejos de los efectos de
  la interfase.
- La línea verde vertical da la posición de la interfase.
+ La línea verde vertical da la posición de la interfaz.
  La diferencia entre el valor del ajuste lineal en la interfase y la velocidad
  de la pared de la velocidad de deslizamiento 
 \begin_inset Formula $v_{s}$
@@ -4301,37 +4294,6 @@ En línea llena negra se grafica la velocidad del líquido, normalizada con
 \end_layout
 
 \begin_layout Standard
-En el caso de estudio fuera de equilibrio, es interesante analizar la fuerza
- realizada sobre los extremos fijos de las cadenas, en la dirección del
- movimiento de las paredes.
- Esta cantidad está asociada con la capacidad del cepillo para mover al
- líquido.
- Si bien es cierto que fluido interactúa mayoritariamente con los extremos
- libres de las cadenas, estas fuerzas se transmiten hasta los monómeros
- fijos, pues la suma de fuerzas internas de cada cadena se cancelan.
- Por lo tanto, se puede conocer la fuerza de interacción entre el cepillo
- y el líquido y relacionarla con el deslizamiento del líquido en el canal
- blando.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Explicar que es el 
-\begin_inset Formula $\boldsymbol{R}_{end}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -4345,7 +4307,8 @@ Como se calculo la posición de la interfaz
 \end_layout
 
 \begin_layout Standard
-A partir del perfil de densidad se puede estimar la posición de la interfase.
+A partir del perfil de densidad se puede estimar la posición de la interfase
+ líquido-cepillo.
  Cabe destacar que en la gran mayoría de los casos hay una región de coexistenci
 a entre las fases, en la cual las densidades de ambas son similares, por
  lo que es difícil distinguir unívocamente la posición de la interfase.
@@ -4360,13 +4323,13 @@ a entre las fases, en la cual las densidades de ambas son similares, por
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-f(z)=\rho_{c}(z)\text{·}\rho_{l}(z)\,,
+f(z)=\rho_{b}(z)\text{·}\rho_{l}(z)\,,
 \end{equation}
 
 \end_inset
 
 donde 
-\begin_inset Formula $\rho_{c}(z)$
+\begin_inset Formula $\rho_{b}(z)$
 \end_inset
 
  es la densidad del cepillo y 
@@ -4384,8 +4347,8 @@ reference "fig: perfil de densidad27"
 
 .
  De esta manera se obtiene una estimación de la distancia pared-interfase
- y el error que se comete es la resolución del perfil de densidad, es decir
- el ancho de las láminas.
+ y el error que se comete es la resolución del perfil de densidad, que puede
+ tomarse como el ancho de los picos.
 \end_layout
 
 \begin_layout Standard
@@ -4419,7 +4382,7 @@ name "fig: perfil de densidad27"
 En este gráfico se muestra el método para determinar la posición de las
  interfases.
  En rojo se aprecia el perfil de densidad polimérico 
-\begin_inset Formula $\rho_{c}$
+\begin_inset Formula $\rho_{b}$
 \end_inset
 
 , en negro , el perfil de densidad del fluido 
@@ -4428,7 +4391,7 @@ En este gráfico se muestra el método para determinar la posición de las
 
 .
  La línea punteada azul es la función 
-\begin_inset Formula $f(z)=\rho_{c}\text{·}\rho_{l}$
+\begin_inset Formula $f(z)=\rho_{b}\text{·}\rho_{l}$
 \end_inset
 
 .
@@ -6824,6 +6787,20 @@ Longitud de deslizamiento
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+De aca para abajo lo volaría.
+ Me parece que no queda claro y confunde más de lo que aporta.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Por último, se analiza el coeficiente de fricción dinámico (
 \begin_inset Formula $\mu$
 \end_inset
@@ -7173,6 +7150,80 @@ name "sec:Resumen_3"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+En este capitulo se realizó un estudio exhaustivo de un nanocanal revestido
+ por cepillos polméricos hidrofóbicos y lleno de un líquido simple, en equilibri
+o y en condiciones de flujo.
+ Se hizo un análisis sistemático del sistema en función de la cantidad de
+ cadenas por unidad de área y de la intensidad del flujo.
+ También se modificó la dureza del sustrato, utilizando cuatro valores distintos
+ de rigidez de las cadenas, para investigar el efecto en el flujo.
+ En todos los casos se comprobó que el líquido permaneció en un estado Cassie-Ba
+xter, es decir, que no penetró los intersticios del cepillo polimérico.
+ También se realizaron simulaciones con las cadenas aisladas para calcular
+ el tiempo de relajación de las mismas, que es altamente dependiente de
+ la rigidez de los polímeros.
+\end_layout
+
+\begin_layout Standard
+En equilibrio se analizó la estructura del cepillo polimérico a partir del
+ perfil de densidad, el comportamiento de los monómeros terminas, los ángulos
+ medios de inclinación de las cadenas y la energía de flexión almacenada
+ en cada unión de los polímeros.
+ Encontramos que para cadenas flexibles (
+\begin_inset Formula $l_{p}/l_{p}\le1$
+\end_inset
+
+) la energía total de flexión incrementa con la dureza, mientras que para
+ 
+\begin_inset Formula $l_{p}/l_{c}\ge1$
+\end_inset
+
+ la energía total de flexión alcanza un valor de saturación y no incrementa
+ con la constante de flexión.
+ También se estudió la distribución de probabilidad del ángulo de inclinación
+ de las cadenas en equilibrio y en condiciones de flujo, y se observaron
+ distribuciones no gaussianas.
+ Se halló un comportamiento distinto según la rigidez de las cadenas poliméricas
+, estudiando el sistema a bajas densidades de fijado.
+ Estas distribuciones de inclinación de las cadenas permiten ayudan a comprender
+ las configuraciones típicas que adoptan las cadenas al ser comprimidas
+ por el líquido presente en el canal.
+ Las cadenas más flexibles se repliegan sobre si mismas, permaneciendo en
+ un estado globular a bajas densidades de fijado.
+  Para valores de rigidez 
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+ los polímeros se arquean coherentemente, formando un arco de circunferencia
+ al ser presionadas por el líquido.
+ Esto lleva a una mayor estiramiento de las cadenas en la dirección paralela
+ a las paredes del sustrato.
+ En el límite de alta rigidez 
+\begin_inset Formula $l_{p}/l_{c}\gg1$
+\end_inset
+
+ las cadenas adoptan una configuración estirada verticalmente y son ligeramente
+ flexionadas por el líquido.
+\end_layout
+
+\begin_layout Standard
+Al mover las paredes del canal en sentidos opuestos a velocidad constante,
+ se genera un perfil de velocidad lineal en el seno del canal, que permite
+ estudiar las propiedades reologicas del sistema en función de la densidad
+ de fijado de cadenas y de la intensidad del flujo.
+ Se observó que la longitud de deslizamiento del líquido disminuye con la
+ densidad de fijado de cadenas y a alta 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ es independiente de la rigidez de las cadenas y de la velocidad de las
+ paredes.
+ A bajas densidades de fijado el perfil de velocidad del líquido varia con
+ la rigidez de las cadenas de manera no monótona.
+ 
 \end_layout
 
 \begin_layout Chapter
