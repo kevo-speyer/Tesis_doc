@@ -63,7 +63,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Thu Apr 11 22:08:19 2019"
+@timestamp def "Mon Apr 15 17:34:06 2019"
 @r0 off
 @link r0 to g0
 @r0 type above
@@ -268,7 +268,7 @@
 @    s0 symbol skip 0
 @    s0 line type 1
 @    s0 line linestyle 1
-@    s0 line linewidth 4.5
+@    s0 line linewidth 3.5
 @    s0 line color 1
 @    s0 line pattern 1
 @    s0 baseline type 0
@@ -317,7 +317,7 @@
 @    s1 symbol skip 0
 @    s1 line type 1
 @    s1 line linestyle 1
-@    s1 line linewidth 4.0
+@    s1 line linewidth 3.0
 @    s1 line color 2
 @    s1 line pattern 1
 @    s1 baseline type 0
@@ -366,7 +366,7 @@
 @    s2 symbol skip 0
 @    s2 line type 1
 @    s2 line linestyle 4
-@    s2 line linewidth 5.0
+@    s2 line linewidth 3.0
 @    s2 line color 15
 @    s2 line pattern 1
 @    s2 baseline type 0
@@ -414,8 +414,8 @@
 @    s3 symbol char font 0
 @    s3 symbol skip 0
 @    s3 line type 1
-@    s3 line linestyle 3
-@    s3 line linewidth 5.0
+@    s3 line linestyle 4
+@    s3 line linewidth 3.0
 @    s3 line color 15
 @    s3 line pattern 1
 @    s3 baseline type 0
@@ -464,7 +464,7 @@
 @    s7 symbol skip 0
 @    s7 line type 1
 @    s7 line linestyle 1
-@    s7 line linewidth 3.5
+@    s7 line linewidth 3.0
 @    s7 line color 4
 @    s7 line pattern 1
 @    s7 baseline type 0
@@ -497,7 +497,7 @@
 @    s7 errorbar riser clip off
 @    s7 errorbar riser clip length 0.100000
 @    s7 comment "copy of setdata G0.S0"
-@    s7 legend  "\xr\0\sl\N·\xr\0\sc"
+@    s7 legend  "\xr\0\sl\N·\xr\0\sb"
 @    s8 hidden false
 @    s8 type xy
 @    s8 symbol 0
