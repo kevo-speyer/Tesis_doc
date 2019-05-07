@@ -273,7 +273,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Tesis_lic/figs/Fractal1.eps
+	filename figs/Fractal1.eps
 	scale 40
 	clip
 
@@ -333,7 +333,7 @@ freely jointed chain
  cada uno.
  Si bien este modelo es muy crudo, ya que ignora totalmente las interacciones
  entre monómeros, predice correctamente algunas propiedades en determinadas
- circunstancias.
+ condiciones experimentales.
  No es esperable que 
 \begin_inset Formula $N$
 \end_inset
@@ -380,9 +380,24 @@ donde
 
  es la cantidad de monómeros de Kuhn.
  Es notable que dos polímeros con distinta longitud total y longitud de
- persistencia, puedan ser descriptos por el modelo, con la misma cantidad
+ persistencia, puedan ser descritos por el modelo, con la misma cantidad
  de monómeros de Kuhn y la misma longitud estadística de Kuhn.
+ Esta representación es valida siempre que la longitud de persistencia sea
+ mucho menor a la longitud de contorno del polímero.
+ Para polímeros rígidos existen otros modelos más adecuados, como el modelo
+ de varilla elástica (modelo de
+\shape italic
+ Kratky-Porod
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/ma9023813"
+literal "false"
+
+\end_inset
+
  
+\shape default
+).
 \end_layout
 
 \begin_layout Standard
@@ -395,7 +410,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Tesis_lic/figs/Blob
+	filename figs/Blob
 	width 100text%
 	clip
 
@@ -523,7 +538,23 @@ Esta es la ley de Hooke, en la cuál se enuncia que la fuerza ejercida por
 \end_inset
 
 .
- Bajo este régimen (
+ Lo primero que se puede advertir de esta deducción, es que la configuración
+ de equilibrio para el polímero corresponde a un estiramiento nulo.
+ Para maximizar la energía libre y maximizar la cantidad de configuraciones
+ compatibles con las condiciones termodinámicas, los polímeros se disponen
+ en forma de glóbulo y es poco probable encontrarlos totalmente estirados.
+ Con el aumento de la temperatura, las cadenas se contraen de manera más
+ marcada.
+ Por el contrario, al disminuir la temperatura es más facil estirar las
+ cadenas.
+ Se conoce a los polímeros como resortes entrópicos, ya que el carácter
+ de la fuerza restitutiva que tiende a contraer las cadenas nace del término
+ entrópico de la energía libre que maximiza la cantidad de configuraciones
+ posibles.
+\end_layout
+
+\begin_layout Standard
+Bajo este régimen (
 \begin_inset Formula $x\ll Nb$
 \end_inset
 
@@ -585,7 +616,17 @@ Cepillos Poliméricos
 
 \begin_layout Standard
 Fijando muchos polímeros a una superficie por un monómero terminal se obtiene
- un sustrato blando estable, denominado cepillo polimérico.
+ un sustrato blando estable, denominado cepillo polimérico (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Brush_intro"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
  Los cepillos poliméricos son sistemas altamente versátiles, cuyas propiedades
  pueden ser ajustadas química y físicamente
 \begin_inset CommandInset citation
@@ -706,6 +747,277 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/Brushes_intro.png
+	width 60text%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Brush_intro"
+
+\end_inset
+
+Poliméros (en rojo) fijados a un sustrato (verde) que conforman un cepillo
+ polimérico.
+ En la figura a), las cadenas son totalmente flexibles, mientras que en
+ b) las cadenas son semiflexibles.
+ Figura extraída de la referencia 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Milchev_14b"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+semiflexibles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los cepillo poliméricos han sido ampliamente estudiados en condiciones de
+ flujo y en equilibrio
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Binder_11,Lee_14,POLB:POLB23168"
+literal "true"
+
+\end_inset
+
+ mediante simulaciones computacionales y teóricamente
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Milner91"
+literal "true"
+
+\end_inset
+
+.
+ Sin embargo, la mayoría de los trabajos se concentran en cadenas totalmente
+ flexibles.
+ Si el segmento estadístico de Kuhn es comparable con la longitud de contorno
+ total del polímero, entonces la rigidez de la cadena no es despreciable.
+ En estos casos es necesario modelar la dureza del polímero mediante un
+ potencial de flexión, que le de dureza y reproduzca la correlación orientaciona
+l de los segmentos.
+ Como se aprecia en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Brush_intro"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, las configuraciones adoptadas por polímeros totalmente flexibles en a),
+ son sensiblemente distintas a las adoptadas por polímeros semiflexibles
+ en b).
+ Algunos ejemplos de polímeros semiflexibles son el ADN, que presenta una
+ con una longitud de persistencia de aproximadamente 
+\begin_inset Formula $40nm$
+\end_inset
+
+ y los filamentos de actina (
+\begin_inset Formula $17\mu m$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Utilizando simulaciones numéricas de grano grueso se ha estudiado la fricción
+ entre superficies revestidas por cepillos poliméricos
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Galuschko_10,Kreer2002,T.Kreer2001a,Grest1999"
+literal "true"
+
+\end_inset
+
+, y el flujo de líquidos simples o complejos confinados en canales recubiertos
+ por cepillos, en función de la densidad de fijado, propiedades de la interfaz
+ e intensidad del flujo
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mueller_08b,Goicochea_14,pastorino:064902,doi:10.1021/ma8015757,:/content/aip/journal/jcp/140/1/10.1063/1.4851195"
+literal "true"
+
+\end_inset
+
+.
+ Recientemente, Milchev y Binder estudiaron la estructura de cepillos integrados
+ por polímeros semiflexibles, mediante simulaciones de Monte Carlo y Dinámica
+ Molecular
+\begin_inset CommandInset citation
+LatexCommand cite
+key "milchev:194901"
+literal "true"
+
+\end_inset
+
+, utilizando un modelo similar al implementado en este trabajo de tesis.
+ Milchev y Binder describen una transición de fase del sistema al ser comprimido
+ de manera axial, en el que los polímeros se comban a presiones moderadas
+ y se flexionan a presiones altas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "0295-5075-102-5-58003"
+literal "true"
+
+\end_inset
+
+.
+ Utilizando el esquema de simulación de potenciales blandos y termostato
+ DPD, varios grupos estudiaron diferentes aspectos de los cepillos poliméricos
+ en condiciones de flujo
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deng_2012,Goicochea_14,Goujon_04"
+literal "true"
+
+\end_inset
+
+.
+ Kim et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kim_09"
+literal "true"
+
+\end_inset
+
+ estudiaron utilizando teoría de campo medio y simulaciones numéricas, la
+ respuesta de cepillos polimpericos semiflexibles en flujo, y observaron
+ un buen acuerdo entre ambos métodos en el régimen de alta rigidez.
+ Römer y Fedosov
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Roemer_15"
+literal "true"
+
+\end_inset
+
+ extendieron el trabajo de Kim et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kim_09"
+literal "true"
+
+\end_inset
+
+ para altas densidades, pero restingiendose a polímeros rígidos.
+ En este trabajo
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Roemer_15"
+literal "true"
+
+\end_inset
+
+ desarrollaron un modelo teórico, que también comparan con simulaciones,
+ de un cepillo semiflexible en bajo flujo y encuentran un buen acuerdo entre
+ los modelos teóricos y las simulaciones para un amplio rango de altura
+ del cepillo, velocidad del flujo y densidades de fijado.
+ Deng et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deng_2012"
+literal "true"
+
+\end_inset
+
+ realizaron simulaciones de flujo de líquido en microcanales revestidos
+ con polímeros semiflexibles, para estudiar el flujo sobre el glicocálix,
+ en un contexto de relevancia biológica.
+ En este trabajo se compara el flujo manteniendo constante la altura de
+ canal, y variando la rigidez de las cadenas.
+ En este contexto observaron una disminución del flujo al aumentar la rigidez
+ de los polímeros anclados.
+ En un estudio reciente, Singh el al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "polym8070254"
+literal "true"
+
+\end_inset
+
+ estudiaron la tribilogía de bicapas revestidas por polímeros mediante simulacio
+nes de dinámica molecular, y observaron que el coeficiente de fricción para
+ cepillos poliméricos semiflexibles es mayor que para polímeros totalmente
+ flexibles.
+ La comparación es realizada a igual alto efectivo del canal, pero con diferente
+s densidades de fijado.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ok hasta aca.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+glicocálix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Un sistema de biofísico de importancia que presenta polímeros semiflexibles
  fijados por un extremo a una superficie, es el glicocálix endotelial, presente
  en sistema vascular de animales y plantas
@@ -799,6 +1111,100 @@ literal "true"
 \end_inset
 
 .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El interés de flujos confinados en la micro y nano escala por cepillos poliméric
+os no se limita a al desarrollo de aplicaciones tecnológicas.
+ En los vasos sanguíneos se encuentra el glicocálix, una capa de proteínas
+ que revisten la matriz extracelular de determinadas células, como las endotelia
+les de las superficies mucosas (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Glycocalyx_Zhup"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Varios grupos están investigando teórica y experimentalmente estos sistemas,
+ para comprender la interacción entre estas estructuras ''peludas'' y el
+ fluido confinado
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CruzChu2014232,Deng_2012,doi:10.1146/annurev.bioeng.9.060906.151959,Jiang20170780,Roemer_15,Jiang2018"
+literal "false"
+
+\end_inset
+
+.
+ Lanotte et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lanotte_2014"
+literal "false"
+
+\end_inset
+
+ estudiaron el flujo de glóbulos rojos en microcapilares de vidrio revestidos
+ por un cepillo polimérico, hallando que el glicocálix es el factor mas
+ importante para explicar la gran resistencia al caudal observado en los
+ experimentos 
+\shape italic
+in vivo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/Glycocalyx_Zhuo_2018.jpg
+	width 65text%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Glycocalyx_Zhup"
+
+\end_inset
+
+Simulaciones de dinámica molecular realizadas por Zhuo et al.
+ del flujo y su interacción con el glicocálix endotelial.
+ En verde se observan las proteínas ancladas a la membrana celular, formando
+ un cepillo polimérico.
+ Figura tomada de la referencia
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jiang2018"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -928,6 +1334,208 @@ Un aspecto importante en el que se diferencia la microfluídica de la microelect
 \end_layout
 
 \begin_layout Standard
+El flujo de diferentes tipos de fluidos en alto confinamiento ha ganado
+ atención en los últimos años, debido al alcance en diferentes áreas, como
+ la biología
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1146/annurev.bioeng.9.060906.151959,Lanotte_2014,CruzChu2014232"
+literal "true"
+
+\end_inset
+
+, medicina
+\begin_inset CommandInset citation
+LatexCommand cite
+key "http://dx.doi.org/10.1038/nature13118"
+literal "true"
+
+\end_inset
+
+ y biotecnología
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BIOT:BIOT201500278"
+literal "true"
+
+\end_inset
+
+.
+ Dispositivos tipo 
+\shape italic
+lab-on-chip
+\shape default
+, en los cuales se realizan complejas operaciones de manera, son un ejemplo
+ promisorio de aplicaciones en este campo.
+ A pesar de que no haya implementaciones industriales a gran escala aún
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Volpatti2014347"
+literal "true"
+
+\end_inset
+
+, los dispositivos de microfluídica son ampliamente utilizados en el contexto
+ de la investigación y desarrollo
+\begin_inset CommandInset citation
+LatexCommand cite
+key "12ref19H,BIOT:BIOT201500278,http://dx.doi.org/10.1038/nature13118"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Un número de Reynolds (
+\begin_inset Formula $Re$
+\end_inset
+
+) bajo y una gran relación área sobre volumen son las características distintiva
+s del campo de la micro y nano fluídica.
+ Bajo estas condiciones, el sustrato tiene una gran influencia en el flujo,
+ determinando las condiciones de contorno del mismo.
+ La condición de no deslizamiento de un fluido en contacto con una pared,
+ usualmente aceptada para condiciones macroscópicas, es una aproximación
+ que no es valida in la microescala
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lauga2007"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Desde distintas disciplinas se están realizando esfuerzos para entender
+ y controlar líquidos en la escala de los picolitros, modificando las propiedade
+s del revestimiento interno de las superficies para modificar la interacción
+ con el fluido confinado.
+ Existen numerosos factores que afectan el deslizamiento del líquido sobre
+ una superficie, incluyendo la mojabilidad, rugosidad, presión, temperatura
+ y presencia de gases y nanoburbujas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1080/00268976.2015.1119899"
+literal "true"
+
+\end_inset
+
+.
+ Varios estudios indican que la rugosidad de la superficie tiene una gran
+ influencia sobre las condiciones de contorno del flujo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevE.74.066311,Zhang2016295,Yen2014,Choi_06,doi:10.1080/00268976.2015.1119899"
+literal "true"
+
+\end_inset
+
+.
+ Se ha reportado que una estructuración jerarquica, donde hay rugosidades
+ en diferentes escalas de longitudes, reduce notablemente la fricción con
+ el líquido.
+ Al día de hoy existe un consenso generalizado que sostiene que un recubrimiento
+ hidrofóbico reduce la fricción, debido a la interacción repulsiva entre
+ el fluido y el sólido
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Liakopoulos2016,:/content/aip/journal/pof2/16/5/10.1063/1.1669400"
+literal "true"
+
+\end_inset
+
+, pero el mecanismo subyacente aún no esta esclarecido
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.98.226001"
+literal "true"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+El transporte de gotas en micro y nano canales ha sido extensamente estudiado
+ en la última decada, tanto teórica
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevE.74.066311,doi:10.1021/acs.jpcc.5b07951,HE2010126,0953-8984-25-19-195103"
+literal "true"
+
+\end_inset
+
+ como experimentalmente
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/la0482406,doi:10.1021/la5004929,doi:10.1021/la504742w,doi:10.1021/la2004744,doi:10.1021/ac3028905"
+literal "true"
+
+\end_inset
+
+.
+ Los flujos con múltiples fases son relevantes para aplicaciones químicas
+ y biotecnologícas, ya que permiten fenómenos complejos, como reacciones
+ químicas, emulsiones e interfases
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Shui200735,Rebrov2010"
+literal "true"
+
+\end_inset
+
+, con el potencial de ser ajustarse a las necesidades de aplicaciones tecnológic
+as.
+ Por medio de simulaciones de dinámica molecular, Cao et al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevE.74.066311"
+literal "true"
+
+\end_inset
+
+ estudio el flujo de una gota líquida en coexistencia con su vapor de gas
+ en un nanocanal rugoso.
+ En este estudio se reporta que el deslizamiento depende de la nano etructuració
+n de las paredes hidrofóbicas.
+ Los flujos bifásicos gas-liquido también están presentes en las membranas
+ de electrolito polimérico para celdas de combustible
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/acs.jpcc.5b07951,Zhang01022006,Lu20093445,doi:10.1021/la403057k"
+literal "true"
+
+\end_inset
+
+, en las que el agua debe ser eliminada de microcanales a un ritmo controlado
+ para maximizar la eficiencia del dispositivo.
+ En este contexto, Fukushima et al
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/acs.jpcc.5b07951"
+literal "true"
+
+\end_inset
+
+ estudiaron la fricción entre una gota y las paredes confinantes de un microcana
+l, y su dependencia con el ancho del canal.
+ En la referencia 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "10.1088/0034-4885/75/1/016601"
+literal "true"
+
+\end_inset
+
+, se puede encontrar una revisión del estado del campo de la microfluídica.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -988,6 +1596,279 @@ literal "true"
  La comprensión básica de los detalles de la interfase entre el líquido
  y el medio confinante deformable, es de gran interés actual y las simulaciones
  numéricas constituyen una herramienta importante para su estudio.
+\end_layout
+
+\begin_layout Standard
+Los cepillos poliméricos son buenos candidatos para ser utilizados en revestimie
+ntos de microcanales, debido a su sensibilidad frente a distintos estímulos
+ (pH, temperatura, campo eléctrico, etc) y su capacidad para modificar las
+ condiciones reológicas.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/ma401537j,Chen201094,doi:10.1021/acs.macromol.7b00450,SMLL:SMLL201402484,POLA:POLA26119,C5SM01962A"
+literal "true"
+
+\end_inset
+
+.
+ Los cepillos poliméricos están presentes en una amplio rango de aplicaciones,
+ como nanopores controlados por pH
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Yameen_2009"
+literal "true"
+
+\end_inset
+
+, catálisis de microractores
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/ja807616z"
+literal "true"
+
+\end_inset
+
+ y control de adhesión y repulsión celular 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/la904663m"
+literal "true"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Una propiedad bien estudiada, tanto teórica como experimentalmente
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/ma8015757,Lee_12,doi:10.1021/ma062875p,C7SM00466D"
+literal "true"
+
+\end_inset
+
+ de los cepillos poliméricos, es la reducción de fricción.
+ Para comprender este fenómeno, se ha investigado extensamente las condiciones
+ de contorno líquidos sobre cepillos de polímeros totalmente flexibles,
+ y se han reportado distancias de deslizamiento de distintos ordenes de
+ magnitud.
+ En la referencia
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C5SM02919H"
+literal "true"
+
+\end_inset
+
+, se proveé una revisión reciente y detallada de las propiedades lubricantes
+ de los cepillos poliméricos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+nanoválvulas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una forma de controlar el flujo utilizada en la actualidad, es disponer
+ de cepillos poliméricos sujetos a un sustrato y, variando algún parámetro
+ externo, modificar estados de conducción entre altos y bajos.
+ El parámetro externo puede ser el pH del solvente, o la temperatura, o
+ las condiciones lumínicas.
+ Estos sistemas tienen un funcionamiento que tiene una semejanza al de un
+ transistor eléctrico, en el cual la conducción entre dos de sus terminales,
+ puede ser ajustada al modificar un estímulo externo (corriente sobre sus
+ otras terminales).
+ El cambio en el estado de conducción en este caso se produce por una alteración
+ en la morfología del cepillo polimérico.
+ Por ejemplo, al variar el pH del solvente, los polímeros sufren una transición
+ conocida como 
+\shape italic
+coil-to-globule transition 
+\shape default
+en la cual las cadenas pasan de un estado contraído contra el sustrato a
+ estar estiradas y ocupar el centro del canal, como se aprecia en la figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:coil-to-globule"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/coil_to_globule.png
+	width 60text%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:coil-to-globule"
+
+\end_inset
+
+Regulando el nivel de pH en el nano-canal se logra un cambio morfológco
+ en el cepillo polimérico, y logrando que las cadenas se retraigan sobre
+ el sustrato o que ocupen la mitad del canal, cambiando radicalmente el
+ caudal.
+ Figura tomada de la referencia 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C5RA08990E"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta clase de nano-válvulas, reguladas por cepillos poliméricos han sido
+ estudiadas previamente.
+ Adiga y Brenner estudiaron teóricamente en una serie de trabajos nanovalvulas
+ activadas por cepillos poliméricos sensibles a la calidad del solvente
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/ma0617522,doi:10.1021/nl025527j,doi:10.1021/nl051843x,jfb3020239"
+literal "false"
+
+\end_inset
+
+.
+ En esta serie de trabajos estudian, mediante simulaciones numéricas, la
+ influencia de la geometría del canal, el largo de las cadenas, la densidad
+ de fijado de cadenas y la diferencia de presión en el flujo de líquido.
+ El resultado más notable, es el cambio significativo en el caudal al cambiar
+ la afinidad entre el líquido y los polímeros.
+\end_layout
+
+\begin_layout Standard
+Fortin y Klok ensamblaron un sensor hidráulico utilizando cepillos poliméricos
+ sensibles a la glucosa, que se expanden al entrar en contacto especificamente
+ con esta molécula
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/am507927w"
+literal "false"
+
+\end_inset
+
+.
+ La glucosa se une a los polímeros funcionalizados, obligandolos a estirarse
+ aumentando altura de los cepillos.
+ Esto genera una reducción en el ancho efectivo del canal y se observa una
+ reducción sensible del caudal a través del canal.
+\end_layout
+
+\begin_layout Standard
+Yameen et al.
+ diseñaron un nanoporo cónico con las las paredes revestidas con cepillos
+ poliméricos, obteniendo un dispositivo funcionalizado, altamente sensible
+ a cambios químicos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Yameen_2009"
+literal "false"
+
+\end_inset
+
+.
+ En este caso, se utilizaron polímeros compuestos por monómeros zwitteriónicos
+ cuya carga es regulada por medio de las condiciones del pH del medio, logrando
+ así rectificar el flujo de iones.
+\end_layout
+
+\begin_layout Standard
+También se han investigado experimental 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1002/smll.200801318"
+literal "false"
+
+\end_inset
+
+ y teóricamente
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1080/00222348.2016.1254563"
+literal "false"
+
+\end_inset
+
+ nanoválvulas activadas por medio de la temperatura, alcanzando una alta
+ sensibilidad de la compuerta.
+ Estos resultados significan grandes avances hacia el desarrollo de nano
+ dispositivos con aplicaciones medicinales, donde el transporte de drogas
+ encapsuladas a traves de nanoporos revestidos con polímeros es regulada
+ por medio de cambios en parámetros fisiológicos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "jfb3020239,doi:10.1021/nn405092w,doi:10.1021/ja401000m,C2JM32430J"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Huang et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/ma060628f"
+literal "false"
+
+\end_inset
+
+ estudiaron por simulaciones de dinámica molecular un canal en forma de
+ hendidura, con polímeros fijados a la pared y solvente en el seno del sistema.
+ Ellos estudiaron el proceso de apertura y cerrado del canal para diferentes
+ afinidades solvente-cepillo, densidad de fijado de las cadenas y longitud
+ de las mismas.
+ En ese trabajo también se encuentra una relación cercana entre los cambios
+ morfológicos del cepillo polimérico y el cambio en el caudal que atraviesa
+ el canal.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1214,6 +2095,117 @@ literal "true"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Una característica destacable del sistema estudiado en este capítulo y a
+ lo largo del trabajo de doctorado, es la interacción superhidrofóbica entre
+ el solvente y el medio confinante blando.
+ Las superficies superhidrofóbicas son materiales con una textura o estructuraci
+ón en la micro y/o nanoescala que permite mejorar la hidrofobicidad química,
+ para producir superficies impermeables.
+ Esta impermeabilidad se traduce en altos ángulos de contacto (
+\begin_inset Formula $\Theta>150°$
+\end_inset
+
+ ) al depositar una gota de solvente en la superficie superhidrofóbica.
+ Las superficies superhidrofóbicas tiene varias aplicaciones, como superficies
+ auto limpiantes, antiniebla, anticorroción, hielo-fóbicos y como reductores
+ de fricción 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Roach_08,Zhang_12"
+literal "true"
+
+\end_inset
+
+.
+ Es posible obtener superficies superhidrofóbicas utilizando polímeros fijados
+ por un monómero terminal a la superficie
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Stratakis_10,Genzer00"
+literal "true"
+
+\end_inset
+
+.
+ Recientemente se han desarrollado nuevos métodos para elaborar superficies
+ superhidrofóbicas a pequeña y gran escala, adecuadas para investigación
+ básica y para producción industrial.
+ A pesar de esto, aún no están claros los mecanismos subyacentes de los
+ fenómenos superhidrofóbicos, más allá de los conceptos desarrollados hace
+ tiempo por Wenzel, Cassie y Baxter
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wenzel_36,Cassie_44"
+literal "true"
+
+\end_inset
+
+.
+ Una de las áreas de investigación activa en este sentido, es la influencia
+ de la rugosidad en múltiples escalas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bixler_12"
+literal "true"
+
+\end_inset
+
+.
+ Las superficies que presentan rugosidades en varias escalas son importantes
+ en el desarrollo de materiales bio-miméticos, como por ejemplo la flor
+ de loto.
+ Imitar a la naturaleza es un camino promisorio para desarrollar superficies
+ superhidrofóbicas multifuncionales.
+ También se han desarrollado superficies superhidrofóbicas iridiscentes
+ para obtener una mojabilidad anisotrópica, copiando la estructura de las
+ alas de las mariposas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zhang_12"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Existe una relación estrecha entre la superhidrofobicidad y la reducción
+ de la fricción de los objetos moviendose sobre el agua, que ha sido confirmada
+ experimentalmente
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Shi_07,Choi_06"
+literal "true"
+
+\end_inset
+
+.
+ También se han realizado experimentos en los cuales se observó un aumento
+ notable en el caudal al recubrir las paredes de nanocanales con revestimentos
+ superhidrofóbicos
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Shirtcliffe2010124,superhydro2"
+literal "true"
+
+\end_inset
+
+.
+ Esta reducción en la fricción es atribuida a gas que llena los intersticios
+ de la interfaz sólido-gas, disminuyendo el contacto y elevando el deslizamiento
+ del líquido con respecto a la superficie.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zhang_12,PhysRevLett.97.266101,:/content/aip/journal/pof2/16/5/10.1063/1.1669400,PhysRevLett.101.226101"
+literal "true"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1449,6 +2441,35 @@ literal "false"
 \end_inset
 
 .
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+MERGE
+\end_layout
+
+\end_inset
+
+Hasta este trabajo, no existía en la bibliografía un estudió exhaustivo
+ y sistemático de cepillos poliméricos semiflexibles en flujo, que analice
+ los aspecto reologicos y las propiedades de las cadenas, cubriendo todo
+ el rango de durezas de las cadenas, desde polímeros totalmente flexibles,
+ hasta varillas rígidas.
+ Los resultados descritos en este capítulo fueron publicados en al revista
+ 
+\shape italic
+Langmuir
+\shape default
+ en el 2017
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/acs.langmuir.7b02640"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1517,27 +2538,6 @@ noprefix "false"
 
  también se proponen lineas de investigación para seguir construyendo conocimien
 to a partir de los resultados encontrados a lo largo de este trabajo.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Mis papers
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1021/acs.langmuir.7b02640,C8SM02388C,C5SM01075F"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -4158,250 +5158,7 @@ name "chap:Resultados-I:-Cepillos"
 \end_layout
 
 \begin_layout Section
-Antecedentes 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-cadenas semiflexibles
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Los cepillo poliméricos han sido ampliamente estudiados en condiciones de
- flujo y en equilibrio
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Binder_11,Lee_14,POLB:POLB23168"
-literal "true"
-
-\end_inset
-
- mediante simulaciones computacionales y teóricamente
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Milner91"
-literal "true"
-
-\end_inset
-
-.
- Sin embargo, la mayoría de los trabajos se centraron en cadenas totalmente
- flexibles.
- Utilizando simulaciones numéricas de grano grueso se estudio la fricción
- entre superficies revestidas por cepillos poliméricos
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Galuschko_10,Kreer2002,T.Kreer2001a,Grest1999"
-literal "true"
-
-\end_inset
-
-, y el flujo de líquidos simples o complejos confinados en canales recubiertos
- por cepillos, en función de la densidad de fijado, propiedades de la interfaz
- e intensidad del flujo
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Mueller_08b,Goicochea_14,pastorino:064902,doi:10.1021/ma8015757,:/content/aip/journal/jcp/140/1/10.1063/1.4851195"
-literal "true"
-
-\end_inset
-
-.
- Recientemente, Milchev y Binder estudiaron la estructura de cepillos integrados
- por polímeros semiflexibles, mediante simulaciones de Monte Carlo y Dinámica
- Molecular
-\begin_inset CommandInset citation
-LatexCommand cite
-key "milchev:194901"
-literal "true"
-
-\end_inset
-
-.
- En este trabajo describen una transición de fase del sistema al ser comprimido
- de manera axial, en el que los polímeros se comban a presiones moderadas
- y se flexionan a presiones altas
-\begin_inset CommandInset citation
-LatexCommand cite
-key "0295-5075-102-5-58003"
-literal "true"
-
-\end_inset
-
-.
- El primer segmento de los polímeros anclados en esta referencia está dirigidos
- de manera perpendicular al plano de fijado, como en el modelo desarrollado
- en este trabajo de tesis.
- Utilizando el esquema de simulación de potenciales blandos y termostato
- DPD, varios grupos estudiaron diferentes aspectos de los cepillos poliméricos
- en condiciones de flujo
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Deng_2012,Goicochea_14,Goujon_04"
-literal "true"
-
-\end_inset
-
-.
- Deng 
-\emph on
-et al.
-\emph default
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Deng_2012"
-literal "true"
-
-\end_inset
-
- utilizaron un modelo de grano grueso de cadenas semiflexibles, para simular
- el flujo sobre el glicocálix, en un contexto de relevancia biológica.
- Römer y Fedosov
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Roemer_15"
-literal "true"
-
-\end_inset
-
- desarrollaron un modelo teórico, que también comparan con simulaciones,
- de un cepillo semiflexible en bajo flujo.
- En ese trabajo encuentran un buen acuerdo entre los modelos teóricos y
- las simulaciones para un ampio rango de altura del cepillo, velocidad del
- flujo y densidades de fijado.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Superficies hidrofóbicas 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Una característica destacable del sistema estudiado en este capítulo y a
- lo largo del trabajo de doctorado, es la interacción superhidrofóbica entre
- el solvente y el medio confinante blando.
- Las superficies superhidrofóbicas son materiales con una textura o estructuraci
-ón en la micro y/o nanoescala que permite mejorar la hidrofobicidad química,
- para producir superficies impermeables.
- Esta impermeabilidad se traduce en altos ángulos de contacto (
-\begin_inset Formula $\Theta>150°$
-\end_inset
-
- ) al depositar una gota de solvente en la superficie superhidrofóbica.
- Las superficies superhidrofóbicas tiene varias aplicaciones, como superficies
- auto limpiantes, antiniebla, anticorroción, hielo-fóbicos y como reductores
- de fricción 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Roach_08,Zhang_12"
-literal "true"
-
-\end_inset
-
-.
- Es posible obtener superficies superhidrofóbicas utilizando polímeros fijados
- por un monómero terminal a la superficie
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Stratakis_10,Genzer00"
-literal "true"
-
-\end_inset
-
-.
- Recientemente se han desarrollado nuevos métodos para elaborar superficies
- superhidrofóbicas a pequeña y gran escala, adecuadas para investigación
- básica y para producción industrial.
- A pesar de esto, aún no están claros los mecanismos subyacentes de los
- fenómenos superhidrofóbicos, más allá de los conceptos desarrollados hace
- tiempo por Wenzel, Cassie y Baxter
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Wenzel_36,Cassie_44"
-literal "true"
-
-\end_inset
-
-.
- Una de las áreas de investigación activa en este sentido, es la influencia
- de la rugosidad en múltiples escalas
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Bixler_12"
-literal "true"
-
-\end_inset
-
-.
- Las superficies que presentan rugosidades en varias escalas son importantes
- en el desarrollo de materiales bio-miméticos, como por ejemplo la flor
- de loto.
- Imitar a la naturaleza es un camino promisorio para desarrollar superficies
- superhidrofóbicas multifuncionales.
- También se han desarrollado superficies superhidrofóbicas iridiscentes
- para obtener una mojabilidad anisotrópica, copiando la estructura de las
- alas de las mariposas
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Zhang_12"
-literal "true"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Existe una relación estrecha entre la superhidrofobicidad y la reducción
- de la fricción de los objetos moviendose sobre el agua, que ha sido confirmada
- experimentalmente
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Shi_07,Choi_06"
-literal "true"
-
-\end_inset
-
-.
- También se han realizado experimentos en los cuales se observó un aumento
- notable en el caudal al recubrir las paredes de nanocanales con revestimentos
- superhidrofóbicos
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Shirtcliffe2010124,superhydro2"
-literal "true"
-
-\end_inset
-
-.
- Esta reducción en la fricción es atribuida a gas que llena los intersticios
- de la interfaz sólido-gas, disminuyendo el contacto y elevando el deslizamiento
- del líquido con respecto a la superficie.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Zhang_12,PhysRevLett.97.266101,:/content/aip/journal/pof2/16/5/10.1063/1.1669400,PhysRevLett.101.226101"
-literal "true"
-
-\end_inset
-
-.
+Sistema estudiado 
 \end_layout
 
 \begin_layout Standard
@@ -8484,359 +9241,20 @@ name "chap:Resultados-II:-Influencia"
 \end_layout
 
 \begin_layout Section
-Antecedentes
+Sistema estudiado
 \end_layout
 
 \begin_layout Standard
-El flujo de diferentes tipos de fluidos en alto confinamiento ha ganado
- atención en los últimos años, debido al alcance en diferentes áreas, como
- la biología
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1146/annurev.bioeng.9.060906.151959,Lanotte_2014,CruzChu2014232"
-literal "true"
+\begin_inset Note Note
+status open
 
-\end_inset
-
-, medicina
-\begin_inset CommandInset citation
-LatexCommand cite
-key "http://dx.doi.org/10.1038/nature13118"
-literal "true"
-
-\end_inset
-
- y biotecnología
-\begin_inset CommandInset citation
-LatexCommand cite
-key "BIOT:BIOT201500278"
-literal "true"
-
-\end_inset
-
-.
- Dispositivos tipo 
-\shape italic
-lab-on-chip
-\shape default
-, en los cuales se realizan complejas operaciones de manera, son un ejemplo
- promisorio de aplicaciones en este campo.
- A pesar de que no haya implementaciones industriales a gran escala aún
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Volpatti2014347"
-literal "true"
-
-\end_inset
-
-, los dispositivos de microfluídica son ampliamente utilizados en el contexto
- de la investigación y desarrollo
-\begin_inset CommandInset citation
-LatexCommand cite
-key "12ref19H,BIOT:BIOT201500278,http://dx.doi.org/10.1038/nature13118"
-literal "true"
-
-\end_inset
-
-.
+\begin_layout Plain Layout
+sistema de estudio
 \end_layout
 
-\begin_layout Standard
-Un número de Reynolds (
-\begin_inset Formula $Re$
 \end_inset
 
-) bajo y una gran relación área sobre volumen son las características distintiva
-s del campo de la micro y nano fluídica.
- Bajo estas condiciones, el sustrato tiene una gran influencia en el flujo,
- determinando las condiciones de contorno del mismo.
- La condición de no deslizamiento de un fluido en contacto con una pared,
- usualmente aceptada para condiciones macroscópicas, es una aproximación
- que no es valida in la microescala
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Lauga2007"
-literal "true"
 
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Desde distintas disciplinas se están realizando esfuerzos para entender
- y controlar líquidos en la escala de los picolitros, modificando las propiedade
-s del revestimiento interno de las superficies para modificar la interacción
- con el fluido confinado.
- Existen numerosos factores que afectan el deslizamiento del líquido sobre
- una superficie, incluyendo la mojabilidad, rugosidad, presión, temperatura
- y presencia de gases y nanoburbujas
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1080/00268976.2015.1119899"
-literal "true"
-
-\end_inset
-
-.
- Varios estudios indican que la rugosidad de la superficie tiene una gran
- influencia sobre las condiciones de contorno del flujo 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "PhysRevE.74.066311,Zhang2016295,Yen2014,Choi_06,doi:10.1080/00268976.2015.1119899"
-literal "true"
-
-\end_inset
-
-.
- Se ha reportado que una estructuración jerarquica, donde hay rugosidades
- en diferentes escalas de longitudes, reduce notablemente la fricción con
- el líquido.
- Al día de hoy existe un consenso generalizado que sostiene que un recubrimiento
- hidrofóbico reduce la fricción, debido a la interacción repulsiva entre
- el fluido y el sólido
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Liakopoulos2016,:/content/aip/journal/pof2/16/5/10.1063/1.1669400"
-literal "true"
-
-\end_inset
-
-, pero el mecanismo subyacente aún no esta esclarecido
-\begin_inset CommandInset citation
-LatexCommand cite
-key "PhysRevLett.98.226001"
-literal "true"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-El transporte de gotas en micro y nano canales ha sido extensamente estudiado
- en la última decada, tanto teórica
-\begin_inset CommandInset citation
-LatexCommand cite
-key "PhysRevE.74.066311,doi:10.1021/acs.jpcc.5b07951,HE2010126,0953-8984-25-19-195103"
-literal "true"
-
-\end_inset
-
- como experimentalmente
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1021/la0482406,doi:10.1021/la5004929,doi:10.1021/la504742w,doi:10.1021/la2004744,doi:10.1021/ac3028905"
-literal "true"
-
-\end_inset
-
-.
- Los flujos con múltiples fases son relevantes para aplicaciones químicas
- y biotecnologícas, ya que permiten fenómenos complejos, como reacciones
- químicas, emulsiones e interfases
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Shui200735,Rebrov2010"
-literal "true"
-
-\end_inset
-
-, con el potencial de ser ajustarse a las necesidades de aplicaciones tecnológic
-as.
- Por medio de simulaciones de dinámica molecular, Cao et al.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "PhysRevE.74.066311"
-literal "true"
-
-\end_inset
-
- estudio el flujo de una gota líquida en coexistencia con su vapor de gas
- en un nanocanal rugoso.
- En este estudio se reporta que el deslizamiento depende de la nano etructuració
-n de las paredes hidrofóbicas.
- Los flujos bifásicos gas-liquido también están presentes en las membranas
- de electrolito polimérico para celdas de combustible
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1021/acs.jpcc.5b07951,Zhang01022006,Lu20093445,doi:10.1021/la403057k"
-literal "true"
-
-\end_inset
-
-, en las que el agua debe ser eliminada de microcanales a un ritmo controlado
- para maximizar la eficiencia del dispositivo.
- En este contexto, Fukushima et al
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1021/acs.jpcc.5b07951"
-literal "true"
-
-\end_inset
-
- estudiaron la fricción entre una gota y las paredes confinantes de un microcana
-l, y su dependencia con el ancho del canal.
- En la referencia 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "10.1088/0034-4885/75/1/016601"
-literal "true"
-
-\end_inset
-
-, se puede encontrar una revisión del estado del campo de la microfluídica.
-\end_layout
-
-\begin_layout Standard
-Los cepillos poliméricos son buenos candidatos para ser utilizados en revestimie
-ntos de microcanales, debido a su sensibilidad frente a distintos estímulos
- (pH, temperatura, campo eléctrico, etc) y su capacidad para modificar las
- condiciones reológicas.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1021/ma401537j,Chen201094,doi:10.1021/acs.macromol.7b00450,SMLL:SMLL201402484,POLA:POLA26119,C5SM01962A"
-literal "true"
-
-\end_inset
-
-.
- Los cepillos poliméricos están presentes en una amplio rango de aplicaciones,
- como nanopores controlados por pH
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Yameen_2009"
-literal "true"
-
-\end_inset
-
-, catálisis de microractores
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1021/ja807616z"
-literal "true"
-
-\end_inset
-
- y control de adhesión y repulsión celular 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1021/la904663m"
-literal "true"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Una propiedad bien estudiada, tanto teórica como experimentalmente
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1021/ma8015757,Lee_12,doi:10.1021/ma062875p,C7SM00466D"
-literal "true"
-
-\end_inset
-
- de los cepillos poliméricos, es la reducción de fricción.
- Para comprender este fenómeno, se ha investigado extensamente las condiciones
- de contorno líquidos sobre cepillos de polímeros totalmente flexibles,
- y se han reportado distancias de deslizamiento de distintos ordenes de
- magnitud.
- En la referencia
-\begin_inset CommandInset citation
-LatexCommand cite
-key "C5SM02919H"
-literal "true"
-
-\end_inset
-
-, se proveé una revisión reciente y detallada de las propiedades lubricantes
- de los cepillos poliméricos.
-\end_layout
-
-\begin_layout Standard
-A pesar de las numerosas investigaciones en este campo, se le ha prestado
- poca atención a los cepillos de polímeros semiflexibles en flujo.
- Los modelos de grano grueso de cadenas poliméricas semiflexibles son apropiados
- para macromoleculas lineales, siempre que las dimensiones de la molécula
- noexcedan significativamente su longitud de persistencia.
- Kim et al.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Kim_09"
-literal "true"
-
-\end_inset
-
- estudiaron utilizando teoría de campo medio y simulaciones numéricas, la
- respuesta de cepillos polimpericos semiflexibles en flujo, y observaron
- un buen acuerdo entre ambos métodos en el régimen de alta rigidez.
- Römer and Fedosov
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Roemer_15"
-literal "true"
-
-\end_inset
-
- extendieron el trabajo de Kim et al.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Kim_09"
-literal "true"
-
-\end_inset
-
- para altas densidades, pero restingiendose a polímeros rígidos.
- Deng et al.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Deng_2012"
-literal "true"
-
-\end_inset
-
- realizaron simulaciones de flujo de líquido en microcanales revestidos
- con polímeros semiflexibles, para estudiar las fibras de glicocálix para
- diferentes valores de rigidez.
- En este trabajo se compara el flujo manteniendo constante la altura de
- canal, y variando la rigidez de las cadenas.
- En un estudio reciente, Singh el al.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "polym8070254"
-literal "true"
-
-\end_inset
-
- estudiaron la tribilogía de bicapas revestidas por polímeros mediante simulacio
-nes de dinámica molecular, y observaron que el coeficiente de fricción para
- cepillos poliméricos semiflexibles es mayor que para polímeros totalmente
- flexibles.
- La comparación es realizada a igual alto efectivo del canal, pero con diferente
-s densidades de fijado.
- Hasta este trabajo, no existía en la bibliografía un estudió exhaustivo
- y sistemático de cepillos poliméricos semiflexibles en flujo, que analice
- los aspecto reologicos y las propiedades de las cadenas, cubriendo todo
- el rango de durezas de las cadenas, desde polímeros totalmente flexibles,
- hasta varillas rígidas.
- Los resultados descritos en este capítulo fueron publicados en al revista
- 
-\shape italic
-Langmuir
-\shape default
- en el 2017
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1021/acs.langmuir.7b02640"
-literal "false"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -12197,7 +12615,7 @@ name "chap:Resultados-III:-Cepillos"
 \end_layout
 
 \begin_layout Section
-Antecedentes
+Sistema estudiado
 \end_layout
 
 \begin_layout Standard
@@ -12218,6 +12636,19 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+microfluidica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Controlar el flujo en condiciones de alto confinamiento es de gran interés
  para el desarrollo de aplicaciones tecnológicas.
  Poder manejar líquido en la micro y nano escala permite implementar nuevos
@@ -12235,293 +12666,16 @@ drug delivery
 \end_layout
 
 \begin_layout Standard
-Una forma de controlar el flujo utilizada en la actualidad, es disponer
- de cepillos poliméricos sujetos a un sustrato y, variando algún parámetro
- externo, modificar estados de conducción entre altos y bajos.
- El parámetro externo puede ser el pH del solvente, o la temperatura, o
- las condiciones lumínicas.
- Estos sistemas tienen un funcionamiento que tiene una semejanza al de un
- transistor eléctrico, en el cual la conducción entre dos de sus terminales,
- puede ser ajustada al modificar un estímulo externo (corriente sobre sus
- otras terminales).
- El cambio en el estado de conducción en este caso se produce por una alteración
- en la morfología del cepillo polimérico.
- Por ejemplo, al variar el pH del solvente, los polímeros sufren una transición
- conocida como 
-\shape italic
-coil-to-globule transition 
-\shape default
-en la cual las cadenas pasan de un estado contraído contra el sustrato a
- estar estiradas y ocupar el centro del canal, como se aprecia en la figura
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:coil-to-globule"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figs/coil_to_globule.png
-	width 60text%
-	clip
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:coil-to-globule"
-
-\end_inset
-
-Regulando el nivel de pH en el nano-canal se logra un cambio morfológco
- en el cepillo polimérico, y logrando que las cadenas se retraigan sobre
- el sustrato o que ocupen la mitad del canal, cambiando radicalmente el
- caudal.
- Figura tomada de la referencia 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "C5RA08990E"
-literal "false"
-
-\end_inset
-
-.
+sistema estudiado
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Esta clase de nano-válvulas, reguladas por cepillos poliméricos han sido
- estudiadas previamente.
- Adiga y Brenner estudiaron teóricamente en una serie de trabajos nanovalvulas
- activadas por cepillos poliméricos sensibles a la calidad del solvente
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1021/ma0617522,doi:10.1021/nl025527j,doi:10.1021/nl051843x,jfb3020239"
-literal "false"
-
-\end_inset
-
-.
- En esta serie de trabajos estudian, mediante simulaciones numéricas, la
- influencia de la geometría del canal, el largo de las cadenas, la densidad
- de fijado de cadenas y la diferencia de presión en el flujo de líquido.
- El resultado más notable, es el cambio significativo en el caudal al cambiar
- la afinidad entre el líquido y los polímeros.
-\end_layout
-
-\begin_layout Standard
-Fortin y Klok ensamblaron un sensor hidráulico utilizando cepillos poliméricos
- sensibles a la glucosa, que se expanden al entrar en contacto especificamente
- con esta molécula
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1021/am507927w"
-literal "false"
-
-\end_inset
-
-.
- La glucosa se une a los polímeros funcionalizados, obligandolos a estirarse
- aumentando altura de los cepillos.
- Esto genera una reducción en el ancho efectivo del canal y se observa una
- reducción sensible del caudal a través del canal.
-\end_layout
-
-\begin_layout Standard
-Yameen et al.
- diseñaron un nanoporo cónico con las las paredes revestidas con cepillos
- poliméricos, obteniendo un dispositivo funcionalizado, altamente sensible
- a cambios químicos 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Yameen_2009"
-literal "false"
-
-\end_inset
-
-.
- En este caso, se utilizaron polímeros compuestos por monómeros zwitteriónicos
- cuya carga es regulada por medio de las condiciones del pH del medio, logrando
- así rectificar el flujo de iones.
-\end_layout
-
-\begin_layout Standard
-También se han investigado experimental 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1002/smll.200801318"
-literal "false"
-
-\end_inset
-
- y teóricamente
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1080/00222348.2016.1254563"
-literal "false"
-
-\end_inset
-
- nanoválvulas activadas por medio de la temperatura, alcanzando una alta
- sensibilidad de la compuerta.
- Estos resultados significan grandes avances hacia el desarrollo de nano
- dispositivos con aplicaciones medicinales, donde el transporte de drogas
- encapsuladas a traves de nanoporos revestidos con polímeros es regulada
- por medio de cambios en parámetros fisiológicos 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "jfb3020239,doi:10.1021/nn405092w,doi:10.1021/ja401000m,C2JM32430J"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-El interés de flujos confinados en la micro y nano escala por cepillos poliméric
-os no se limita a al desarrollo de aplicaciones tecnológicas.
- En los vasos sanguíneos se encuentra el glicocálix, una capa de proteínas
- que revisten la matriz extracelular de determinadas células, como las endotelia
-les de las superficies mucosas (ver figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Glycocalyx_Zhup"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-).
- Varios grupos están investigando teórica y experimentalmente estos sistemas,
- para comprender la interacción entre estas estructuras ''peludas'' y el
- fluido confinado
-\begin_inset CommandInset citation
-LatexCommand cite
-key "CruzChu2014232,Deng_2012,doi:10.1146/annurev.bioeng.9.060906.151959,Jiang20170780,Roemer_15,Jiang2018"
-literal "false"
-
-\end_inset
-
-.
- Lanotte et al.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Lanotte_2014"
-literal "false"
-
-\end_inset
-
- estudiaron el flujo de glóbulos rojos en microcapilares de vidrio revestidos
- por un cepillo polimérico, hallando que el glicocálix es el factor mas
- importante para explicar la gran resistencia al caudal observado en los
- experimentos 
-\shape italic
-in vivo.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figs/Glycocalyx_Zhuo_2018.jpg
-	width 65text%
-	clip
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Glycocalyx_Zhup"
-
-\end_inset
-
-Simulaciones de dinámica molecular realizadas por Zhuo et al.
- del flujo y su interacción con el glicocálix endotelial.
- En verde se observan las proteínas ancladas a la membrana celular, formando
- un cepillo polimérico.
- Figura tomada de la referencia
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Jiang2018"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Huang et al.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1021/ma060628f"
-literal "false"
-
-\end_inset
-
- estudiaron por simulaciones de dinámica molecular un canal en forma de
- hendidura, con polímeros fijados a la pared y solvente en el seno del sistema.
- Ellos estudiaron el proceso de apertura y cerrado del canal para diferentes
- afinidades solvente-cepillo, densidad de fijado de las cadenas y longitud
- de las mismas.
- En ese trabajo también se encuentra una relación cercana entre los cambios
- morfológicos del cepillo polimérico y el cambio en el caudal que atraviesa
- el canal.
- 
 \end_layout
 
 \begin_layout Standard
