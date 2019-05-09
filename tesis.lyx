@@ -172,7 +172,7 @@ Introducción
 status open
 
 \begin_layout Plain Layout
-Polímeros: flexibilidad
+Polímeros
 \end_layout
 
 \end_inset
@@ -996,19 +996,6 @@ s densidades de fijado.
 status open
 
 \begin_layout Plain Layout
-Ok hasta aca.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
 glicocálix
 \end_layout
 
@@ -1612,19 +1599,6 @@ literal "true"
 status open
 
 \begin_layout Plain Layout
-OK hasta aca
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
 microfluidica + cepillos polimericos
 \end_layout
 
@@ -1646,8 +1620,8 @@ literal "true"
 \end_inset
 
 .
- Los cepillos poliméricos están presentes en una amplio rango de aplicaciones,
- como nanopores controlados por pH
+ Los cepillos poliméricos están presentes en un amplio rango de aplicaciones,
+ como nanoporos controlados por pH
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Yameen_2009"
@@ -1655,7 +1629,7 @@ literal "true"
 
 \end_inset
 
-, catálisis de microractores
+, catálisis de microreactores
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1021/ja807616z"
@@ -1672,16 +1646,12 @@ literal "true"
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-En este límite de alto confinamiento, caracterizado por un alto cociente
+ En este límite de alto confinamiento, caracterizado por un alto cociente
  de área sobre volumen (S/V), la dinámica del líquido es influenciada significat
 ivamente por lo que ocurre en la interfase con el medio lindante.
- Además, los grados de libertad moleculares tienen un rol importante en
- la dinámica del líquido y su interfase con el medio confinante, que puede
- ser muy diferente a la esperada en fluidos macroscópicos 
+ Los grados de libertad moleculares tienen un rol importante en la dinámica
+ del líquido y su interfase con el medio confinante, que puede ser muy diferente
+ a la esperada en fluidos macroscópicos 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "RevModPhys.77.977"
@@ -1765,9 +1735,11 @@ nanoválvulas
 \end_layout
 
 \begin_layout Standard
-Una forma de controlar el flujo utilizada en la actualidad, es disponer
- de cepillos poliméricos sujetos a un sustrato y, variando algún parámetro
- externo, modificar estados de conducción entre altos y bajos.
+Un ejemplo de interés práctico de utilización de polímeros para funcionalizar
+ superficies en nanocanales son las nanoválvulas.
+ En este caso se disponen cepillos poliméricos sujetos a un sustrato y,
+ variando algún parámetro externo, se modifica el estado de conducción en
+ el canal entre alto y bajo.
  El parámetro externo puede ser el pH del solvente, o la temperatura, o
  las condiciones lumínicas.
  Estos sistemas tienen un funcionamiento que tiene una semejanza al de un
@@ -1848,7 +1820,7 @@ literal "false"
 
 \begin_layout Standard
 Esta clase de nano-válvulas, reguladas por cepillos poliméricos han sido
- estudiadas previamente.
+ estudiadas previamente, tanto experimental como teóricamente.
  Adiga y Brenner estudiaron teóricamente en una serie de trabajos nanovalvulas
  activadas por cepillos poliméricos sensibles a la calidad del solvente
 \begin_inset CommandInset citation
@@ -1879,9 +1851,9 @@ literal "false"
 
 .
  La glucosa se une a los polímeros funcionalizados, obligandolos a estirarse
- aumentando altura de los cepillos.
+ y aumentando la altura de los cepillos.
  Esto genera una reducción en el ancho efectivo del canal y se observa una
- reducción sensible del caudal a través del canal.
+ disminución sensible del caudal a través del canal.
 \end_layout
 
 \begin_layout Standard
@@ -1992,7 +1964,7 @@ reference "superhidro gota"
  en las interfases líquido-sólido, líquido-vapor y sólido-vapor.
  En el campo experimental se generaron y estudiaron superficies con propiedades
  morfológicas y funcionales notables, mediante la estructuración micro-
- y nona-scópica.
+ y nano-scópica.
  Se combinaron jerarquías de estructuras en escalas micro y nano para conseguir
  estructuración bio-mimética, típica de superficies biológicas, como la
  flor de loto, pétalos de flores, o alas de mariposas 
@@ -2014,10 +1986,10 @@ literal "true"
 .
  La utilidad tecnológica de estas superficies es muy amplia, con propiedades
  auto-limpiantes, hielo-fóbicas, anti-corrosivas y de reducción de fricción,
- por citar sólo algunas 
+ por citar sólo algunas
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Zhang_12"
+key "Roach_08,Zhang_12"
 literal "true"
 
 \end_inset
@@ -2028,9 +2000,8 @@ literal "true"
 biofouling
 \shape default
 ) son aplicaciones importantes de las superficies super-hidrofóbicas para
- muy diversas aplicaciones industriales como catethers hospitalarios, cañerías
- y cascos de embarcaciones.
- 
+ muy diversas aplicaciones industriales como los catéteres hospitalarios,
+ cañerías y cascos de embarcaciones.
 \end_layout
 
 \begin_layout Standard
@@ -2099,6 +2070,28 @@ reference "fig:superhidrofobicidad"
 \end_inset
 
 ).
+ Existe una relación estrecha entre la superhidrofobicidad y la reducción
+ de la fricción de los objetos moviendose sobre el agua, que ha sido confirmada
+ experimentalmente
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Shi_07,Choi_06"
+literal "true"
+
+\end_inset
+
+.
+ También se han realizado experimentos en los cuales se observó un aumento
+ notable en el caudal al recubrir las paredes de nanocanales con revestimentos
+ superhidrofóbicos
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Shirtcliffe2010124,superhydro2"
+literal "true"
+
+\end_inset
+
+.
  Sin embargo, no está clara la influencia de las diferentes escalas de rugosidad
  del material, en el deslizamiento de líquidos sobre este tipo de superficies
  
@@ -2122,7 +2115,15 @@ literal "true"
 
 \end_inset
 
-.
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zhang_12,PhysRevLett.97.266101,:/content/aip/journal/pof2/16/5/10.1063/1.1669400,PhysRevLett.101.226101"
+literal "true"
+
+\end_inset
+
+..
 \end_layout
 
 \begin_layout Standard
@@ -2183,29 +2184,7 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-Una característica destacable del sistema estudiado en este capítulo y a
- lo largo del trabajo de doctorado, es la interacción superhidrofóbica entre
- el solvente y el medio confinante blando.
- Las superficies superhidrofóbicas son materiales con una textura o estructuraci
-ón en la micro y/o nanoescala que permite mejorar la hidrofobicidad química,
- para producir superficies impermeables.
- Esta impermeabilidad se traduce en altos ángulos de contacto (
-\begin_inset Formula $\Theta>150°$
-\end_inset
-
- ) al depositar una gota de solvente en la superficie superhidrofóbica.
- Las superficies superhidrofóbicas tiene varias aplicaciones, como superficies
- auto limpiantes, antiniebla, anticorroción, hielo-fóbicos y como reductores
- de fricción 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Roach_08,Zhang_12"
-literal "true"
-
-\end_inset
-
-.
- Es posible obtener superficies superhidrofóbicas utilizando polímeros fijados
+Es posible obtener superficies superhidrofóbicas utilizando polímeros fijados
  por un monómero terminal a la superficie
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2229,68 +2208,7 @@ literal "true"
 \end_inset
 
 .
- Una de las áreas de investigación activa en este sentido, es la influencia
- de la rugosidad en múltiples escalas
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Bixler_12"
-literal "true"
-
-\end_inset
-
-.
- Las superficies que presentan rugosidades en varias escalas son importantes
- en el desarrollo de materiales bio-miméticos, como por ejemplo la flor
- de loto.
- Imitar a la naturaleza es un camino promisorio para desarrollar superficies
- superhidrofóbicas multifuncionales.
- También se han desarrollado superficies superhidrofóbicas iridiscentes
- para obtener una mojabilidad anisotrópica, copiando la estructura de las
- alas de las mariposas
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Zhang_12"
-literal "true"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Existe una relación estrecha entre la superhidrofobicidad y la reducción
- de la fricción de los objetos moviendose sobre el agua, que ha sido confirmada
- experimentalmente
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Shi_07,Choi_06"
-literal "true"
-
-\end_inset
-
-.
- También se han realizado experimentos en los cuales se observó un aumento
- notable en el caudal al recubrir las paredes de nanocanales con revestimentos
- superhidrofóbicos
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Shirtcliffe2010124,superhydro2"
-literal "true"
-
-\end_inset
-
-.
- Esta reducción en la fricción es atribuida a gas que llena los intersticios
- de la interfaz sólido-gas, disminuyendo el contacto y elevando el deslizamiento
- del líquido con respecto a la superficie.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Zhang_12,PhysRevLett.97.266101,:/content/aip/journal/pof2/16/5/10.1063/1.1669400,PhysRevLett.101.226101"
-literal "true"
-
-\end_inset
-
-.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2307,8 +2225,16 @@ Simulaciones Computacionales
 \end_layout
 
 \begin_layout Standard
-El estudio del sistema se realizó por simulaciones computacionales, lo cual
- presenta varias ventajas por sobre otros métodos.
+El abordaje en está tesis de doctorado se realizó por simulaciones computacional
+es, lo cual presenta varias ventajas por sobre otros métodos
+\begin_inset CommandInset citation
+LatexCommand cite
+key "frenkel.md.book.1996"
+literal "false"
+
+\end_inset
+
+.
  Por un lado, se tiene acceso a información que de otra manera es imposible
  obtener, como las posiciones o velocidades de partículas individuales.
  Esto permite estudiar ciertas propiedades de los sistemas de manera más
@@ -2318,18 +2244,17 @@ El estudio del sistema se realizó por simulaciones computacionales, lo cual
  de libertad, sin realizar mayores simplificaciones.
  Excepto en situaciones particularmente simples, la gran mayoría de los
  problemas físicos no pueden ser resueltos exactamente de manera analítica.
- Si bien es cierto que realizando aproximaciones, es posible describir ciertas
+ Si bien es cierto que realizando aproximaciones es posible describir ciertas
  situaciones físicas sin el uso de computadoras, esto conlleva un nuevo
  problema.
  Si la solución analítica obtenida no retrata correctamente los resultados
  experimentales, no es fácil determinar si se esta cometiendo un error al
- hacer alguna aproximación inadecuada, o al plantear incorrectamente la
- situación inicial.
- Realizando apropiadamente las simulaciones correspondientes al problema
- inicialmente planteado, se puede determinar la bondad del resultado analítico
- hallado.
+ hacer alguna aproximación inadecuada, o si se planteó incorrectamente el
+ problema.
+ Realizando las simulaciones correspondientes al problema inicialmente planteado
+, se puede determinar la bondad del resultado hallado analíticamente.
  Si este no se corresponde con las simulaciones, entonces se ha realizado
- una aproximación incorrecta en el algún punto del procedimiento.
+ una aproximación incorrecta en el algún punto del procedimiento analítico.
  En este sentido, las simulaciones juegan el rol de experimentos computacionales.
  Es decir que la alta capacidad de cómputos se puede usar tanto para predecir
  resultados sobre sistemas físicos reales, como para verificar una teoría.
@@ -2353,7 +2278,7 @@ Las simulaciones presentan también algunas limitaciones.
  Una, es la calidad y repetitividad de los modelos de interacción utilizados.
  También puede ser dificultoso simular tiempos o tamaños experimentalmente
  relevantes con el grado de descripción adecuado.
- Esto po|dría significar tiempos de simulación muy largos, que harían al
+ Esto podría significar tiempos de simulación muy largos, que harían al
  estudio irrealizable.
 \end_layout
 
@@ -2372,8 +2297,8 @@ Que se estudió en cada capítulo
 
 \begin_layout Standard
 En está tesis de doctorado se estudian exhaustivamente sistemas compuestos
- por nanocanales revestidos en su interior con cepillos poliméricos, que
- confinan fluidos en equilibrio y en condiciones de flujo.
+ por nanocanales revestidos en su interior con cepillos poliméricos solvofóbicos
+, que confinan fluidos en equilibrio y en condiciones de flujo.
  Para abordar el tema se utilizaron simulaciones numéricas mediante la técnica
  de dinámica molecular, utilizando modelos de grano grueso que permiten
  acelerar los tiempos de cómputo, reteniendo la física esencial de los sistemas.
@@ -2413,7 +2338,7 @@ noprefix "false"
  de flexión polimérico desarrollado, que se utilizó para estudiar la influencia
  de la rigidez de las cadenas en las condiciones de flujo y en la física
  de los polímeros.
- También se hace describe el marco teórico en el que se encuadra este trabajo
+ También se describe el marco teórico en el que se encuadra este trabajo
  y se precisa la conexión entre la mecánica estadística y las simulaciones
  numéricas.
  Dentro de la técnica de simulación se discuten y comparan brevemente las
@@ -2445,7 +2370,11 @@ s del sistema: la cantidad de polímeros fijados por unidad de área y la
  intensidad del flujo.
  En este trabajo se estudió por primera un sistema de cepillos poliméricos
  superhidrofóbicos semiflexibles, lo que permitió publicar los resultados
- hallados
+ hallados en la revista 
+\shape italic
+Soft Matter
+\shape default
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "C5SM01075F"
@@ -2455,7 +2384,7 @@ literal "false"
 
 .
  La semiflexibilidad de las cadenas fue impuesta mediante un potencial de
- flexión cuadrático que permite controlar la rigidez de la cadenas.
+ flexión cuadrático que permite controlar la rigidez los segmentos.
  Aparte de estudiar los grados de libertad moleculares de las cadenas y
  la morfología del cepillo, también se indagó en su influencia sobre el
  flujo de líquido dentro del nanocanal.
@@ -2504,6 +2433,11 @@ as.
  En este caso se realizó un estudio sistemático del flujo en función de
  la rigidez de las cadenas del cepillo polimérico, profundizando en la interfaz
  líquido-medio confinante.
+ Hasta este trabajo, no existía en la bibliografía un estudió exhaustivo
+ y sistemático de cepillos poliméricos semiflexibles en flujo, que analice
+ los aspecto reologicos y las propiedades de las cadenas, cubriendo todo
+ el rango de durezas de las cadenas, desde polímeros totalmente flexibles,
+ hasta varillas rígidas.
  Se observó que bajo ciertas condiciones, la rigidez de las cadenas tiene
  un influencia significativa en la velocidad de la gota.
  En este sistema se halló un acoplamiento no trivial entre la dinámica cíclica
@@ -2527,37 +2461,6 @@ literal "false"
 
 .
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-MERGE
-\end_layout
-
-\end_inset
-
-Hasta este trabajo, no existía en la bibliografía un estudió exhaustivo
- y sistemático de cepillos poliméricos semiflexibles en flujo, que analice
- los aspecto reologicos y las propiedades de las cadenas, cubriendo todo
- el rango de durezas de las cadenas, desde polímeros totalmente flexibles,
- hasta varillas rígidas.
- Los resultados descritos en este capítulo fueron publicados en al revista
- 
-\shape italic
-Langmuir
-\shape default
- en el 2017
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1021/acs.langmuir.7b02640"
-literal "false"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -2586,7 +2489,17 @@ noprefix "false"
  Bajo ciertas condiciones, estas formaciones polímericas que ocupan el centro
  del canal se desarman al imponer un gradiente de presión suficientemente
  grande, liberando el centro del nanocanal y amplificando sensiblemente
- el caudal.
+ el caudal (ver figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nanovalve"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
  Se encontró que la rigidez de los poliméros juega un rol destacable en
  el efecto de apertura del canal y apmplificación del flujo.
  También se estudió la respuesta del canal en función de la cantidad de
@@ -2611,6 +2524,66 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/TOC.png
+	width 75text%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nanovalve"
+
+\end_inset
+
+Esquema de la nanoválvula estudiada en el capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Resultados-III:-Cepillos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ A bajos gradientes de presión los polímeros anclados a las paredes forman
+ estructuras que obstruyen el flujo.
+ A partir de algún valor límite de presión, las formaciones poliméricas
+ se desarman y aumenta sensiblemente el caudal.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 La tesis de doctorado concluye con un balance del trabajo realizado durante
  estos 5 años, repasando los resultados más importantes y poniéndolos en
  contexto.
@@ -2626,19 +2599,6 @@ noprefix "false"
 
  también se proponen lineas de investigación para seguir construyendo conocimien
 to a partir de los resultados encontrados a lo largo de este trabajo.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Mencionar cantidades típicas medidas Rend-to-end
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Chapter
@@ -6751,6 +6711,19 @@ noprefix "false"
 .
  También se aprecia que para todas la densidades de fijado, la altura del
  cepillo crece monotonamente con la rigidez de las cadenas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Mencionar cantidades típicas medidas Rend-to-end
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
