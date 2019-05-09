@@ -1058,17 +1058,7 @@ literal "true"
 \end_inset
 
 .
- Desde un punto de vista mesoscópico, estas estructuras pueden ser modeladas
- como como un cepillo polimérico semiflexible, dónde el tamaño de los sitos
- de interacción representan el ancho de las cadenas
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Deng_2012"
-literal "false"
-
-\end_inset
-
-.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1124,11 +1114,17 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-El interés de flujos confinados en la micro y nano escala por cepillos poliméric
-os no se limita a al desarrollo de aplicaciones tecnológicas.
- En los vasos sanguíneos se encuentra el glicocálix, una capa de proteínas
- que revisten la matriz extracelular de determinadas células, como las endotelia
-les de las superficies mucosas (ver figura 
+Desde un punto de vista mesoscópico, estas estructuras pueden ser modeladas
+ como como un cepillo polimérico semiflexible, dónde el tamaño de los sitos
+ de interacción representan el ancho de las cadenas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deng_2012"
+literal "false"
+
+\end_inset
+
+(ver figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Glycocalyx_Zhup"
@@ -1231,7 +1227,9 @@ Microfluídica
 \end_layout
 
 \begin_layout Standard
-La reducción de las dimensiones espaciales en los dispositivos electrónicos
+El comportamiento de fluidos en la nano y micro escala no es solamente relevante
+ para la biología, ya que abre un sinnúmero de posibilidades tecnológicas.
+ La reducción de las dimensiones espaciales en los dispositivos electrónicos
  ha llevado a una revolución en el campo de la computación, cambiando profundame
 nte la manera en que se vive y se hace ciencia.
  Cabe preguntarse si es posible automatizar procesos químicos y biológicos,
@@ -1319,8 +1317,9 @@ Un aspecto importante en el que se diferencia la microfluídica de la microelect
  llegado aún a escalas suficientemente pequeñas como para observar un cambio
  cualitativo en el comportamiento de los fenómenos físicos.
  Por el contrario, en sistemas de fluidos, este tipo de cambios se alcanzan
- rápidamente al disminuuir las dimensiones espaciales.
- Un ejemplo claro de esto, son los bajos valores que toma el número de Reynolds.
+ rápidamente al disminuir las dimensiones espaciales.
+ El comportamiento de sistemas fluidos está caracterizado por los valores
+ que toma el número de Reynolds.
  Esta cantidad adimensional da una idea de la influencia de las fuerzas
  inerciales con respecto a las fuerzas viscosas.
  Es decir que en sistemas típicos de estudio de la microfluídica, los efectos
@@ -1330,6 +1329,136 @@ Un aspecto importante en el que se diferencia la microfluídica de la microelect
  Si bien esto parece empobrecer el comportamiento, existen otros fenómenos,
  despreciables en la escala macroscópica, que juegan un rol importante en
  este contexto.
+ 
+\end_layout
+
+\begin_layout Standard
+Bajo estas condiciones, el sustrato tiene una gran influencia en el flujo,
+ determinando las condiciones de contorno del mismo.
+ La condición de no deslizamiento de un fluido en contacto con una pared,
+ usualmente aceptada para condiciones macroscópicas, es una aproximación
+ que no es valida in la microescala
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lauga2007"
+literal "true"
+
+\end_inset
+
+.
+ Velocidades de distintos ordenes de magnitud han sido reportadas sobre
+ sustratos sólidos en la bibliografía 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C5SM02546J,Doshi05072005,Lee_14,Suzuki20083414,:/content/aip/journal/pof2/16/5/10.1063/1.1669400,doi:10.1080/00268976.2015.1119899,PhysRevLett.98.226001,PhysRevLett.82.4671,Choi_06,PhysRevLett.101.226101"
+literal "false"
+
+\end_inset
+
+.
+ Este deslizamiento del líquido sobre el sustrato modifica sustancialmente
+ el caudal y domina el comportamiento en el régimen de alto confinamiento.
+ En un caso ideal, si se cumple con la condición de no deslizamiento del
+ líquido, el caudal en un canal cilíndrico se calcula como:
+\begin_inset Formula 
+\begin{equation}
+Q_{NS}=\frac{\Delta P\pi R^{4}}{8L\eta}\,,
+\end{equation}
+
+\end_inset
+
+donde 
+\begin_inset Formula $\Delta P$
+\end_inset
+
+ es el gradiente de presión en el largo 
+\begin_inset Formula $L$
+\end_inset
+
+ del canal, 
+\begin_inset Formula $\eta$
+\end_inset
+
+ es la viscosidad del fluido y 
+\begin_inset Formula $R$
+\end_inset
+
+ el radio del canal.
+ Si la velocidad del fluido sobre la superficie (
+\begin_inset Formula $v_{s}$
+\end_inset
+
+) no es nula, al caudal se le agrega un término 
+\begin_inset Formula $Q_{Slip}=v_{slip}\pi R^{2}$
+\end_inset
+
+.
+ Experimentos en nanocanales han arrojado valores de 
+\begin_inset Formula $Q_{Slip}/Q_{NS}\sim10^{3}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Holt1034"
+literal "false"
+
+\end_inset
+
+.
+ Es decir, que en condiciones de alto confinamiento, la interacción entre
+ fluido y sustrato pasa a jugar un rol fundamental para determinar las propiedad
+es de transporte.
+\end_layout
+
+\begin_layout Standard
+Desde distintas disciplinas se están realizando esfuerzos para entender
+ y controlar líquidos en la escala de los picolitros, modificando las propiedade
+s del revestimiento interno de las superficies para modificar la interacción
+ con el fluido confinado.
+ Existen numerosos factores que afectan el deslizamiento del líquido sobre
+ una superficie, incluyendo la mojabilidad, rugosidad, presión, temperatura
+ y presencia de gases y nanoburbujas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1080/00268976.2015.1119899"
+literal "true"
+
+\end_inset
+
+.
+ Varios estudios indican que la rugosidad de la superficie tiene una gran
+ influencia sobre las condiciones de contorno del flujo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevE.74.066311,Zhang2016295,Yen2014,Choi_06,doi:10.1080/00268976.2015.1119899"
+literal "true"
+
+\end_inset
+
+.
+ Se ha reportado que una estructuración jerarquica, donde hay rugosidades
+ en diferentes escalas de longitudes, reduce notablemente la fricción con
+ el líquido.
+ Al día de hoy existe un consenso generalizado que sostiene que un recubrimiento
+ hidrofóbico reduce la fricción, debido a la interacción repulsiva entre
+ el fluido y el sólido
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Liakopoulos2016,:/content/aip/journal/pof2/16/5/10.1063/1.1669400"
+literal "true"
+
+\end_inset
+
+, pero el mecanismo subyacente aún no esta esclarecido
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.98.226001"
+literal "true"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -1388,80 +1517,35 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-Un número de Reynolds (
-\begin_inset Formula $Re$
-\end_inset
+\begin_inset Note Note
+status open
 
-) bajo y una gran relación área sobre volumen son las características distintiva
-s del campo de la micro y nano fluídica.
- Bajo estas condiciones, el sustrato tiene una gran influencia en el flujo,
- determinando las condiciones de contorno del mismo.
- La condición de no deslizamiento de un fluido en contacto con una pared,
- usualmente aceptada para condiciones macroscópicas, es una aproximación
- que no es valida in la microescala
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Lauga2007"
-literal "true"
+\begin_layout Plain Layout
+flujos multifásicos
+\end_layout
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
-Desde distintas disciplinas se están realizando esfuerzos para entender
- y controlar líquidos en la escala de los picolitros, modificando las propiedade
-s del revestimiento interno de las superficies para modificar la interacción
- con el fluido confinado.
- Existen numerosos factores que afectan el deslizamiento del líquido sobre
- una superficie, incluyendo la mojabilidad, rugosidad, presión, temperatura
- y presencia de gases y nanoburbujas
+Los flujos con múltiples fases son relevantes para aplicaciones químicas
+ y biotecnologícas, ya que permiten fenómenos complejos, como reacciones
+ químicas, emulsiones e interfases
 \begin_inset CommandInset citation
 LatexCommand cite
-key "doi:10.1080/00268976.2015.1119899"
+key "Shui200735,Rebrov2010"
 literal "true"
 
 \end_inset
 
-.
- Varios estudios indican que la rugosidad de la superficie tiene una gran
- influencia sobre las condiciones de contorno del flujo 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "PhysRevE.74.066311,Zhang2016295,Yen2014,Choi_06,doi:10.1080/00268976.2015.1119899"
-literal "true"
-
-\end_inset
-
-.
- Se ha reportado que una estructuración jerarquica, donde hay rugosidades
- en diferentes escalas de longitudes, reduce notablemente la fricción con
- el líquido.
- Al día de hoy existe un consenso generalizado que sostiene que un recubrimiento
- hidrofóbico reduce la fricción, debido a la interacción repulsiva entre
- el fluido y el sólido
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Liakopoulos2016,:/content/aip/journal/pof2/16/5/10.1063/1.1669400"
-literal "true"
-
-\end_inset
-
-, pero el mecanismo subyacente aún no esta esclarecido
-\begin_inset CommandInset citation
-LatexCommand cite
-key "PhysRevLett.98.226001"
-literal "true"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-El transporte de gotas en micro y nano canales ha sido extensamente estudiado
+, con el potencial de ser ajustarse a las necesidades de aplicaciones tecnológic
+as.
+ Al tener más de una fase, ya sea un líquido y un gas o dos líquidos, existen
+ varias interfaces que incidir en el comportamiento del sistema, enriqueciendo
+ la física del problema.
+ El transporte de gotas en micro y nano canales ha sido extensamente estudiado
  en la última decada, tanto teórica
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1479,18 +1563,6 @@ literal "true"
 \end_inset
 
 .
- Los flujos con múltiples fases son relevantes para aplicaciones químicas
- y biotecnologícas, ya que permiten fenómenos complejos, como reacciones
- químicas, emulsiones e interfases
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Shui200735,Rebrov2010"
-literal "true"
-
-\end_inset
-
-, con el potencial de ser ajustarse a las necesidades de aplicaciones tecnológic
-as.
  Por medio de simulaciones de dinámica molecular, Cao et al.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1499,8 +1571,8 @@ literal "true"
 
 \end_inset
 
- estudio el flujo de una gota líquida en coexistencia con su vapor de gas
- en un nanocanal rugoso.
+ estudiaron el flujo de una gota líquida en coexistencia con su vapor de
+ gas en un nanocanal rugoso.
  En este estudio se reporta que el deslizamiento depende de la nano etructuració
 n de las paredes hidrofóbicas.
  Los flujos bifásicos gas-liquido también están presentes en las membranas
@@ -1540,12 +1612,67 @@ literal "true"
 status open
 
 \begin_layout Plain Layout
+OK hasta aca
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 microfluidica + cepillos polimericos
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Los cepillos poliméricos son buenos candidatos para ser utilizados en revestimie
+ntos de microcanales, debido a su sensibilidad frente a distintos estímulos
+ (pH, temperatura, campo eléctrico, etc) y su capacidad para modificar las
+ condiciones reológicas.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/ma401537j,Chen201094,doi:10.1021/acs.macromol.7b00450,SMLL:SMLL201402484,POLA:POLA26119,C5SM01962A"
+literal "true"
+
+\end_inset
+
+.
+ Los cepillos poliméricos están presentes en una amplio rango de aplicaciones,
+ como nanopores controlados por pH
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Yameen_2009"
+literal "true"
+
+\end_inset
+
+, catálisis de microractores
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/ja807616z"
+literal "true"
+
+\end_inset
+
+ y control de adhesión y repulsión celular 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1021/la904663m"
+literal "true"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1596,48 +1723,6 @@ literal "true"
  La comprensión básica de los detalles de la interfase entre el líquido
  y el medio confinante deformable, es de gran interés actual y las simulaciones
  numéricas constituyen una herramienta importante para su estudio.
-\end_layout
-
-\begin_layout Standard
-Los cepillos poliméricos son buenos candidatos para ser utilizados en revestimie
-ntos de microcanales, debido a su sensibilidad frente a distintos estímulos
- (pH, temperatura, campo eléctrico, etc) y su capacidad para modificar las
- condiciones reológicas.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1021/ma401537j,Chen201094,doi:10.1021/acs.macromol.7b00450,SMLL:SMLL201402484,POLA:POLA26119,C5SM01962A"
-literal "true"
-
-\end_inset
-
-.
- Los cepillos poliméricos están presentes en una amplio rango de aplicaciones,
- como nanopores controlados por pH
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Yameen_2009"
-literal "true"
-
-\end_inset
-
-, catálisis de microractores
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1021/ja807616z"
-literal "true"
-
-\end_inset
-
- y control de adhesión y repulsión celular 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "doi:10.1021/la904663m"
-literal "true"
-
-\end_inset
-
-.
- 
 \end_layout
 
 \begin_layout Standard
@@ -2442,6 +2527,9 @@ literal "false"
 
 .
  
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
