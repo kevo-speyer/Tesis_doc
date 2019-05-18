@@ -16052,6 +16052,273 @@ name "chap:Observaciones-finales"
 \end_layout
 
 \begin_layout Standard
+En este trabajo de tesis doctoral se estudió en profundidad la física de
+ una nanocanal revestido con con cepillos poliméricos semiflexibles lleno
+ de fluido mediante simulaciónes de dinámica molecular.
+ La investigación se centró en cepillos poliméricos hidrofóbicos con una
+ baja afinidad con el solvente que llena el canal.
+ A pesar de la relevancia, los nanocanales en estas condiciones no habían
+ sido estudiados exhaustivamente hasta este trabajo.
+ En está tesis se busca analizar y comprender el comportamiento desde los
+ grados de libertad moleculares, hasta las cantidades más macro como el
+ caudal y el ancho efectivo del canal.
+ El trabajo comienza analizando el comportamiento general del sistema, compuesto
+ por un líquido simple confinado entre cepillos poliméricos, y a medida
+ que se comprende la fenomenología, nacen nuevas preguntas que guían la
+ investigación.
+ Si bien han quedado varias puertas abiertas para continuar la linea de
+ investigación, consideramos que se hemos logrado correr, aunque sea infinitesin
+almente, la frontera del conocimiento.
+ Los resultados más relevantes han sido reportados en tres publicaciones
+ en revistas internacionales de primer nivel con referato.
+ Estos aportes al entendimiento de la materia blanda, nanofluídica y física
+ de polímeros servirán para seguir construyendo conocimiento y para el desarroll
+o nuevas aplicaciones tecnológicas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Paper 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el primer capítulo de esta tesis se estudia de manera exhaustiva al nanocanal
+ lleno de líquido simple y revestido con cepillos poliméricos hidrofóbicos
+ en equilibrio y fuera del mismo.
+ Se exploraron pocos valores de rigidez de las cadenas y se realizó un estudio
+ sistemático del sistema en función de la densidad polimérica de fijado
+ y de la velocidad de paredes.
+ En este primer acercamiento al sistema se obtuvieron resultados interesantes
+ para continuar explorando el comportamiento en otros contextos.
+ Se observó que el líquido no mojó al cepillo en ningún caso y, aún fuera
+ del equilibrio, el líquido fluye sobre los polímeros sin penetrar el seno
+ del medio confinante.
+ El líquido nunca entra contacto con las paredes sólidas del canal, por
+ lo tanto no es necesario modelar su rugosidad.
+ También se observó que a altas densidades de fijado la rigidez de las cadenas
+ no es relevante en la respuesta reológica del sistema, mientras que a bajas
+ densidades de fijado hay una dependencia del flujo con la dureza de los
+ polímeros.
+ En este sistema se observó que al presionar a los polímeros axialmente,
+ estos adoptan configuraciones muy distintas según su rigidez.
+ Es interesante notar que el estiramiento de las cadenas en las direcciones
+ paralelas al sustrato depende de manera no monótona de la constante de
+ flexión.
+ Esto lleva a que el cepillo polimérico formado por cadenas poliméricas
+ semiflexibles sea menos resistente a las deformaciones que el cepillo poliméric
+o totalmente flexible.
+ Estos cambios morfológicos dependientes de la rigidez invitaron a continuar
+ investigando el sistema en profundidad en función de la dureza de las cadenas.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Paper 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir de lo resultados obtenidos, se decidió estudiar el flujo bifásico
+ en un nanocanal, en función de la rigidez de los polímeros.
+ En este caso el fluido está compuesto por una gota que viaja a traves del
+ canal en coexistencia con su vapor de gas.
+ El ancho del canal fue ajustado para hacer la comparación manteniendo la
+ forma de la gota similar.
+ En este contexto, se observó un decrecimiento de la velocidad de transporte
+ del líquido al incrementar la rigidez de los polímeros.
+ Se observó este fenómeno no estaba ligado a un cambio morfológico, sino
+ a el comportamiento dinámico colectivo de las cadenas.
+ Gracias al estudio sistemático en función de la rigidez de las cadenas,
+ se observó que las cadenas más flexibles acompañan el movimiento del líquido
+ cuando entran en contacto con el mismo, disminuyendo el rozamiento.
+ En cambio, las cadenas más rígidas no tienen la flexibilidad para realizar
+ el movimiento cíclico, frenando de manera más eficiente el flujo de la
+ gota.
+\end_layout
+
+\begin_layout Standard
+Al medir la compresibilidad de los cepillos ante la presión axial, se encontró
+ que las cadenas cuya longitud de persistencia 
+\begin_inset Formula $l_{p}$
+\end_inset
+
+ era igual a su longitud de contorno 
+\begin_inset Formula $l_{c}$
+\end_inset
+
+ presentaron la mayor deformación.
+ Estas cadenas son las más fáciles de comprimir, ya que los segmentos se
+ estiran coherentemente en la dirección paralela a la pared.
+ Este resultado es anti-intuitivo, ya que se esperaría que las cadenas más
+ flexibles sean más deformables.
+ Sin embargo las cadenas totalmente flexibles se resisten a la compresión,
+ ya que al adoptar configuraciones globulares, son las fuerzas de volumen
+ excluido las que evitan la compresión en este caso.
+ La utilización del parámetro adimensional de rigidez 
+\begin_inset Formula $l_{p}/l_{c}$
+\end_inset
+
+resultó de gran ayuda para entender el comportamiento morfológico del cepillo.
+ El valor de rigidez 
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+ divide la fenomenología del cepillo en dos regímenes distintos.
+\end_layout
+
+\begin_layout Standard
+También se estudió la interacción líquido-gas y como varía con la longitud
+ del nanocanal.
+ El gas adopta un perfil de velocidad que decae exponencialmente a lo largo
+ del canal.
+ Gracias a las condiciones periódicas de contorno, se puede pensar al sistema
+ como un tren de gotas que son transportadas a través del canal.
+ Se confirmó que la fuerza de fricción gota-vapor es proporcional a la velocidad
+ relativa entre ambos, por lo cual la distancia entre gotas modifica esta
+ fuerza de fricción.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Paper 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por último se decidió incluir las interacciones atractivas entre monómeros
+ y estudiar las formaciones poliméricas en el cepillo.
+ Primero se estudiaron las formaciones de un cepillo polimérico en una superfici
+e abierta no confinada, observando una rica diversidad de estructuras en
+ función de la rigidez de las cadenas y de la densidad de fijado.
+ Luego se estudió este cepillo como revestimiento en un nanocanal lleno
+ de líquido, dónde la distancia entre paredes permita el contacto entre
+ cadenas fijadas a sustratos opuestos.
+ El comportamiento de este sistema cambia cualitativamente con la dureza
+ de las cadenas.
+ Se estudió la conformación de estructuras en equilibrio e imponiendo un
+ gradiente de presión a lo largo del canal para inducir un flujo tipo Poiseuille.
+ En equilibrio, los polímeros semiflexibles se estiran en la dirección perpendic
+ular a las paredes, formando estructuras que atraviesan, mientras que las
+ cadenas totalmente flexibles toman una configuración espacial en forma
+ de glóbulo y no arman estructuras.
+ Al inducir el flujo en el canal, las formaciones pliméricas obstruyen el
+ transporte de líquido, dejando al canal en un estado de bajo caudal.
+ Si el gradiente de presión es suficientemente grande, las estructuras que
+ obstruyen el flujo se rompen, las cadenas se inclinan en la dirección de
+ las paredes y el caudal aumenta rápidamente.
+ Este sistema se comporta como una válvula sensible a la diferencia de presión
+ entre los extremos del canal.
+ Se observó que la respuesta de la válvula se maximiza para un cepillo con
+ cadenas cuyo parámetro de rigidez es 
+\begin_inset Formula $l_{p}/l_{c}=1$
+\end_inset
+
+.
+ Este es un resultado interesante para ser contrastado experimentalmente.
+\end_layout
+
+\begin_layout Standard
+Luego se estudió la respuesta del sistema en función de la cantidad de cadenas
+ por unidad de área y de la afinidad entre el solvente y el cepillo polimérico.
+ 
+\end_layout
+
+\begin_layout Standard
+COMPLETAR ACA
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+quiza de aca para abajo es más para agradecimientos? 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Más allá de lo aportes científicos concretos, plasmados en las publicaciones
+ en revistas y en esta misma tesis, el trabajo de estos cinco años ha dejado
+ otras consecuencias irreversibles.
+ Una de ellas es el desarrollo de software de punta.
+ Para realizar eficientemente las simulaciones numéricas y analizar los
+ datos, se han desarrollado técnicas de computo de alto rendimiento.
+ Este conocimiento acumulado durante años en el trabajo de doctorado seguirá
+ siendo utilizado por el grupo de teoría y simulación de materia blanda
+ y se encuentra en repositorios públicos.
+ En particular, se destaca el desarrollo de la paralelización de los cómputos
+ en un esquema de memoria compartida, que apunta a ser usado en nodos con
+ varios núcleos.
+ La tendencia en las nuevas computadoras es a sumar más núcleos de procesamiento
+, en vez de aumentar la velocidad de los procesadores, y uno de los programas
+ desarrollados en este trabajo utiliza eficientemente los procesadores para
+ disminuir el tiempo de simulación.
+ 
+\end_layout
+
+\begin_layout Standard
+Otra consecuencia de estos años de trabajo es la formación de recursos humanos.
+ A lo largo del doctorado he aprendido a hacer ciencia, lo cual implica
+ abordar un tema de investigación, saber filtrar las publicaciones relevantes
+ en el océano de revistas, proponer experiencias relevantes, aprender a
+ analizar los datos para extraer conclusiones, bajo el mayor rigor crítico.
+ Para hacer ciencia también es importante pulir las formas de comunicación,
+ y utilizar los métodos que sean mas eficaces para hacer llegar una idea.
+ En el proceso de envío y publicación de un artículo se aprende que la presentac
+ión de los resultados y de un hilo conductor puede ser determinante su aceptació
+n e impacto.
+ 
+\end_layout
+
+\begin_layout Standard
+Por otro lado, he aprendido a aplicar a becas y subsidios para continuar
+ lineas de investigación o para profundizar el conocimiento en algunas técnicas
+ relevantes al trabajo de doctorado.
+ En 2018 accedí a una beca del Servicio Alemán de Intercambio Académico
+ (
+\shape italic
+DAAD
+\shape default
+) para estudiar por un período de dos meses cepillos poliméricos activos
+ en un grupo alemán, especializado en teoría y simulación e materia blanda,
+ encabezado por el Dr Marcus Müller.
+ También tuve la oportunidad de viajar becado dos veces a Italia, para participa
+r de Workshops de programación en paralelo y manejo de paquetes de código
+ abierto.
+ Aprender a aplicar para fondos y exhibir de manera convincente que esos
+ fondos están siendo bien destinados es una habilidad importante también
+ fuera del ambiente científico.
+\end_layout
+
+\begin_layout Standard
 Macri gato.
  Sci-Hub.
 \end_layout
