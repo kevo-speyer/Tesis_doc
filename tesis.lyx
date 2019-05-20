@@ -105,20 +105,24 @@ FALTA REESCRIBIR, LO HAGO DESPUES
 
 \end_inset
 
-En este trabajo de tesis se estudió un sistema compuesto por un fluido,
- confinado en un canal blando mediante simulaciones de dinámica molecular.
- El medio confinante está compuesto por cadenas poliméricas con un extremo
- fijo a la a pared del canal.
+En este trabajo de tesis se estudió un sistema compuesto por un fluido confinado
+ en un canal blando mediante simulaciones de dinámica molecular.
+ El medio confinante está compuesto por cadenas poliméricas fijadas a la
+ a pared del canal por un monómero terminal.
  El sistema es de interés en aplicaciones de microfluídica, nano-estructuración
- de superficies y en problemas de motivación biofísica.
- Se utilizó un modelo de grano grueso que describe las características principal
-es de la cadena polimérica.
- Implementando un potencial de flexión armónico en los ángulos formados
- entre uniones de monómeros sucesivos, se modificó la rigidez del cepillo
- polimérico.
+ de superficies y en sistemas biológicos.
+ Se utilizaron modelos de grano grueso que describe las características
+ principales de la cadena polimérica y que permite simular tiempos muchos
+ más largos que los de relajación del sistema.
+ Se implementó un potencial de flexión armónico en los ángulos formados
+ entre uniones de monómeros sucesivos, para estudiar los sistemas en función
+ de la rigidez del cepillo polimérico.
  Se utilizó el termostato de dissipative particle dynamics para realizar
  simulaciones en el ensamble canónico (N, V, T) o a temperatura constante,
  fuera del equilibrio.
+ En gran parte del trabajo de tesis se utilizó una interacción hidrofóbica
+ entre el solvente que llena el canal y los cepillos poliméricos, de manera
+ que el líquido no moja el interior del cepillo.
  El trabajo está dividido en tres partes, según las características del
  sistema estudiado.
  Primero se investigó el canal lleno por un líquido simple en equilibrio
@@ -132,9 +136,13 @@ es de la cadena polimérica.
  del fluido en los intersticios del medio confinante.
  Se cuantificó el deslizamiento del líquido sobre el medio confinante, observand
 o siempre un resbalamiento apreciable.
- Por último, se estudió como se modifica la estructura y la dinámica del
- cepillo polimérico ante la presencia del flujo.
- En otro estudio se analizó el flujo multifásico en un nano-canal, recubierto
+ Adicionalmente, se estudió como se modifica la estructura y la dinámica
+ del cepillo polimérico ante la presencia del flujo.
+ 
+\end_layout
+
+\begin_layout Standard
+En otro estudio se analizó el flujo multifásico en un nano-canal, recubierto
  por cepillos poliméricos.
  En este caso, el fluido forma una gota en el canal, que coexiste con su
  vapor en equilibrio termodinámico.
@@ -148,9 +156,9 @@ s de fricción y transporte del líquido.
 \end_layout
 
 \begin_layout Standard
-Por otro lado, se estudió el comportamiento del sistema cuando el ancho
- del canal es menor al doble de la longitud de contorno de los polímeros
- anclados en su interior.
+Por último, se estudió el comportamiento del sistema cuando el ancho del
+ canal es menor al doble de la longitud de contorno de los polímeros anclados
+ en su interior.
  De esta manera, se permite la interacción directa entre cadenas ancladas
  a paredes opuestas, generando estructuras que atraviesan el ancho del canal.
  Imponiendo una fuerza externa, se investigó el flujo del líquido que llena
@@ -158,9 +166,18 @@ Por otro lado, se estudió el comportamiento del sistema cuando el ancho
  Se encontró una respuesta no lineal muy rica, debido al rompimiento de
  los enlaces entre polímeros de paredes opuestas y la desobstrucción del
  canal.
- Luego, se estudió esta respuesta en función de parámetros físicos relevantes
- como la rigidez de las cadenas, la calidad del solvente.
+ Luego, se estudió esta respuesta en función de parámetros físicos relevantes:
+ la rigidez de las cadenas, la calidad del solvente y la cantidad de cadenas
+ por unidad de área.
  
+\end_layout
+
+\begin_layout Standard
+En el trabajo de tesis doctoral estudian en profundidad los mecanismos de
+ interacción entre un solvente y los cepillos poliméricos que lo confinan.
+ Se utiliza la detallada información provista por las simulaciones numéricas
+ para desentrañar el complejo acoplamiento entre el medio confinante blando
+ y el solvente, y comprender la reología del sistema.
 \end_layout
 
 \begin_layout Chapter
