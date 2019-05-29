@@ -2666,9 +2666,10 @@ name "sec:Dinamica-Molecular"
 
 \begin_layout Standard
 En este trabajo se realizaron simulaciones numéricas de grano grueso con
- la técnica de dinámica molecular.
+ la técnica de dinámica molecular (MD).
  Esta técnica consiste en resolver las ecuaciones de movimiento para todas
- las partículas presentes en el sistema y seguir su evolución en el tiempo.
+ las partículas presentes en el sistema y seguir su evolución en el tiempo,
+ mediante la integración numérica de dichas ecuaciones.
  Primero se inicializa el sistema, ubicando cada partícula en una posición
  inicial.
  Para moléculas lineales, la posición inicial es elegida de acuerdo a una
@@ -2680,14 +2681,20 @@ En este trabajo se realizaron simulaciones numéricas de grano grueso con
 nn con la temperatura deseada.
  Dado el estado inicial de todas las partículas del sistema, se calculan
  las fuerzas y se integran las ecuaciones de movimiento mediante el esquema
- Velocity Verlet, obteniendo así las trayectorias de las partículas en el
- espacio de fases.
+ 
+\shape italic
+Velocity Verlet
+\shape default
+, obteniendo así las trayectorias de las partículas en el espacio de fases.
  
 \end_layout
 
 \begin_layout Standard
-El esquema de integración Velocity Verlet utiliza un punto medio temporal,
- como los métodos de salto de rana (
+El esquema de integración 
+\shape italic
+Velocity Verlet
+\shape default
+ utiliza un punto medio temporal, como los métodos de salto de rana (
 \shape italic
 leapfrog
 \shape default
@@ -2704,7 +2711,7 @@ leapfrog
 \begin_inset Formula $\boldsymbol{f}(t)$
 \end_inset
 
- actuantes sobre un partícula en un instante de tiempo 
+ actuantes sobre una partícula en un instante de tiempo 
 \begin_inset Formula $t$
 \end_inset
 
@@ -2787,7 +2794,15 @@ Si bien este algoritmo no es particularmente preciso para incrementos temporales
  estudio, como de la gran mayoría tratados mediante el método de Dinámica
  Molecular, es sensible a las condiciones iniciales.
  Esto significa que ante condiciones iniciales muy cercanas, las trayectorias
- divergen exponencialmente.
+ divergen exponencialmente
+\begin_inset CommandInset citation
+LatexCommand cite
+key "frenkel.md.book.1996"
+literal "false"
+
+\end_inset
+
+.
  Como consecuencia, es de esperar que las trayectorias de las partículas
  obtenidas difieran apreciablemente de las reales.
  Sin embargo esto no representa un verdadero problema, pues no son las trayector
@@ -2796,7 +2811,7 @@ ias de cada una de las partículas las que se quieren conocer con exactitud,
  partículas.
  Por esta razón es que es importante que la trayectoria del sistema en el
  espacio de fases sea compatible con las restricciones dadas en el ensamble
- que se esté trabajando.
+ en el cuál se esté trabajando.
  Si se trabaja en el ensamble canónico, que la temperatura se mantenga constante
  durante toda la experiencia, es una condición necesaria para saber que
  se están integrando correctamente las ecuaciones de movimiento.
@@ -2821,7 +2836,7 @@ nes.
  Para sortear las posiciones iniciales de todos los monómeros de un cepillo
  polimérico, primero se sitúan los monómeros terminales sobre la superficie,
  de manera tal que no haya solapamientos, y luego se crecen los monómeros
- subsiguientes de cada cadena, siguiendo una caminata al azar.
+ subsiguientes de cada cadena polimérica, siguiendo una caminata al azar.
 \end_layout
 
 \begin_layout Standard
@@ -2863,7 +2878,7 @@ Force Switch on
  que no haya superposición entre partículas al finalizar al rutina de encendido
  de fuerza.
  Pero si se elige un tiempo excesivamente largo, se está desperdiciando
- tiempo de computo, ya que el sistema demora más en alcanzar el estado de
+ tiempo de cómputo, ya que el sistema demora más en alcanzar el estado de
  equilibrio.
 \end_layout
 
@@ -2894,7 +2909,7 @@ Para hacer evolucionar al sistema temporalmente, es necesario conocer las
 \begin_layout Standard
 En este caso se combinaron dos métodos (
 \shape italic
-Verlet list
+Verlet List
 \shape default
  y 
 \shape italic
@@ -2941,7 +2956,7 @@ reference "fig:Verlet list"
 s interactuando.
  Renovar la lista de vecinos es un algoritmo que escalea como el cuadrado
  de la cantidad de partículas, pero típicamente esto se realiza cada diez
- pasos.
+ pasos de MD.
  El método de la lista de celdas sirve para agilizar el llenado de las listas
  de Verlet y funciona dividiendo la caja de simulación en celdas cuyo lado
  sea parecido a 
@@ -2991,7 +3006,7 @@ name "fig:Verlet list"
 Se representa gráficamente como se realizan las listas de vecinos en el
  algoritmo Verlet List para la partícula i-ésima.
  La primera lista contiene a todas las partículas a una distancia menor
- al radio de de corte de las interacciones 
+ al radio de corte de las interacciones 
 \begin_inset Formula $r_{C}$
 \end_inset
 
@@ -3010,7 +3025,7 @@ Se representa gráficamente como se realizan las listas de vecinos en el
  Este método permite disminuir considerablemente la cantidad de cálculos,
  ya que solamente hay que computar la distancia de cada partícula con un
  pequeño número de vecinos y no con todas las existentes en el sistema.
- Figura extraída de 
+ Figura extraída de la referencia 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "frenkel.md.book.1996"
@@ -3033,7 +3048,7 @@ literal "true"
 
 \begin_layout Standard
 Para aprovechar los recursos de cómputo en paralelo disponibles en CNEA,
- se exploraron otros algoritmo para agilizar el cálculo de fuerzas entre
+ se exploraron otros algoritmos para agilizar el cálculo de fuerzas entre
  pares de partículas.
  Un método que resulto ser particularmente ventajoso para el cálculo en
  un esquema de memoria compartida y múltiples núcleos de cálculo, es el
@@ -3044,7 +3059,7 @@ cell linked-lists
 .
  Este método es más eficiente en manejo de memoria, ya que no requiere de
  un buffer de posibles vecinos como el método anterior.
- El método consiste en dividir el espacio en celdas cubicas, y generar una
+ El método consiste en dividir el espacio en celdas cúbicas, y generar una
  lista enlazada (
 \shape italic
 linked-list
@@ -3058,14 +3073,21 @@ linked-list
  ), entonces para calcular las interacciones con una partícula es suficiente
  con explorar todas las partículas que se sitúan en la misma celda o en
  cualquiera de las 26 celdas lindantes.
- En principio este método es más costos que el descrito anteriormente (Verlet
- cell list), ya que para cada partícula se tienen que barrer más vecinos.
+ En principio este método es más costos que el descrito anteriormente (
+\shape italic
+Verlet List
+\shape default
+), ya que para cada partícula se tienen que barrer más vecinos.
  Esto es fácil de ver en un sistema homogéneo con densidad 
 \begin_inset Formula $\rho$
 \end_inset
 
 .
- Para el caso de Verlet cell list, el volumen a barrer es 
+ Para el caso de
+\shape italic
+ Verlet List
+\shape default
+, el volumen a barrer es 
 \begin_inset Formula $V=\frac{4}{3}\pi r_{c}^{3}$
 \end_inset
 
@@ -3073,7 +3095,11 @@ linked-list
 \begin_inset Formula $N_{verlet}=\rho\frac{4}{3}\pi r_{c}^{3}$
 \end_inset
 
-, mientras que el método de listas enlazadas por celda da un volumen 
+, mientras que el método de listas enlazadas (
+\shape italic
+Cell Linked List
+\shape default
+) por celda da un volumen 
 \begin_inset Formula $V_{celdas}=27r_{c}^{3}$
 \end_inset
 
@@ -3083,7 +3109,7 @@ linked-list
 
 .
  Es decir, que en promedio, el método de celdas computa 
-\begin_inset Formula $N_{celdas}/N_{verlet}=\frac{3·27}{4\pi}\backsimeq6.5$
+\begin_inset Formula $N_{linked-list}/N_{verlet}=\frac{3·27}{4\pi}\backsimeq6.5$
 \end_inset
 
  veces más distancias.
@@ -3111,8 +3137,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename figs/Time_vs_nthreads.agr
+	lyxscale 50
 	width 48text%
 	clip
 
@@ -3121,6 +3149,7 @@ status open
 
 \begin_inset Graphics
 	filename figs/Speedup_vs_nth.agr
+	lyxscale 50
 	width 48text%
 	clip
 
@@ -3136,9 +3165,9 @@ name "fig:Time_vs_threads"
 
 \end_inset
 
-Comparación entre los métodos de listas enlazadas y lista de Verlet+celdas
- para optimizar el cálculo de interacciones entre pares.
- El sistema está compuesto por 90000 partículas, que interactuan por medio
+Comparación entre los métodos de listas enlazadas y lista de Verlet para
+ optimizar el cálculo de interacciones entre pares.
+ El sistema está compuesto por 90000 partículas, que interactúan por medio
  de un potencial de Lennard-Jones en una caja de dimensiones 
 \begin_inset Formula $50\sigma\times50\sigma\times50\sigma$
 \end_inset
@@ -3177,7 +3206,11 @@ noprefix "false"
  a) se compara el tiempo que tardan en completar una simulación utilizando
  los dos métodos descritos, en función de la cantidad de núcleos utilizados.
  Es interesante ver que el programa serial (un solo núcleo) utilizando del
- método Verlet+listas en mucho más rápido que el de listas enlazadas.
+ método 
+\shape italic
+Verlet List
+\shape default
+ en mucho más rápido que el de listas enlazadas.
  A medida que se utilizan más nucleos para los cálculos, el tiempo para
  completar la simulación baja rápidamente en el caso de celdas enlazadas,
  llegando a ser un 25% más rápido que el método de Verlet para 12 hilos.
@@ -3191,13 +3224,53 @@ noprefix "false"
 
 \end_inset
 
- b), en la que se muestra la curva de speed-up.
+ b), en la que se muestra la curva de 
+\shape italic
+speedup
+\shape default
+.
  En ésta, se calcula cuantas veces más rápido corre el programa, a medida
  que se utilizan más hilos en paralelo, mientras se mantiene igual el tamaño
  del sistema (strong scaling).
+ El 
+\shape italic
+speedup
+\shape default
+ se define como cociente entre el tiempo que tarda el programa serie y el
+ tiempo que tarda el programa paralelo.
+ Como el tiempo que tarda en correr el programa en paralelo es menor al
+ tiempo que tarda el programa serie, este número es normalmente mayor a
+ uno.
+ En el caso de paralelización ideal, el tiempo de ejecución de un programa
+ en paralelo en 
+\begin_inset Formula $n$
+\end_inset
+
+ nucleos, tarda 
+\begin_inset Formula $n$
+\end_inset
+
+ veces menos que el programa serie, por lo que el 
+\shape italic
+speedup
+\shape default
+ ideal es exactamete la cantidad de 
+\shape italic
+threads
+\shape default
+ o núclos de procesamiento.
+ En casos reales el la curva de 
+\shape italic
+speedup
+\shape default
+ crece por debajo de este régimen lineal, ya que la totalidad del programa
+ de simulación no puede paralelizarse.
  Se aprecia que para el esquema de listas enlazadas, la curva crece rápidamente
- con la cantidad de núcleos de cálculo, mientras que el método Verlet+celdas,
- la curva se aplana rápidamente.
+ con la cantidad de núcleos de cálculo, mientras que el método 
+\shape italic
+Verlet List
+\shape default
+, la curva se aplana rápidamente.
  Este último esquema fue desarrollado y optimizado para agilizar los cálculos
  en un programa serial y no hace un uso eficiente de los diferentes núcleos
  de computo al paralelizar el programa.
@@ -3211,6 +3284,19 @@ Modelado de interacciones
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Modelado-de-interacciones"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+hasta aca corregí
+\end_layout
 
 \end_inset
 
@@ -3392,13 +3478,15 @@ noprefix "false"
 \shape italic
 melt
 \shape default
- polimérico en buen solvente, dónde las cadenas no forman aglomerados.
+ polimérico en buen solvente, dónde las cadenas no forman aglomerados y
+ presentan una repulsión efectiva entre ellas, debida a la atracción polímero-so
+lvente.
  Esta elección para el radio de corte de la interacción suele utilizarse
  para simular la presencia de un buen solvente, sin colocar explícitamente
  las partículas del mismo, por lo que lleva el nombre de solvente implícito.
  La ventaja de esta elección radica en ahorrarse los cálculos de las fuerzas
- para las partículas del solvente, que pueden ser muchos más que para los
- monómeros, y así agilizar sensiblemente el programa de simulación.
+ entre las partículas del solvente, que pueden ser muchos más que las fuerzas
+ entre monómeros, y así agilizar sensiblemente el programa de simulación.
  La desventaja del modelado con solvente implícito, es que se pierde el
  movimiento del solvente, que puede ser importante para entender el comportamien
 to del sistema.
@@ -3412,7 +3500,8 @@ Por otro lado, si se toma como radio de corte el doble del valor para el
 
 , se incluye la parte atractiva de la interacción.
  Esta elección da lugar a un diagrama de fases más rico, ya que permite
- la formación de líquidos en el sistema, como se aprecia en la figura 
+ la formación de una fase líquida en el sistema, como se aprecia en la figura
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Phase_diag"
@@ -3424,11 +3513,11 @@ noprefix "false"
 
 .
  A lo largo de este trabajo de tesis doctoral se han utilizado partículas
- sueltas con este valor de 
+ sueltas (monómeros) con este valor de 
 \begin_inset Formula $r_{C}$
 \end_inset
 
- para simular líquidos simples en condiciones de flujo y en equilibrio.
+, para simular líquidos simples en condiciones de flujo y en equilibrio.
  
 \end_layout
 
@@ -3497,7 +3586,7 @@ literal "false"
 
 \begin_layout Standard
 Al incluir interacciones atractivas entre polímeros anclados a una superficie,
- la aglomeración de las cadenas es energéticamente favorable, dando lugar
+ la agregación de las cadenas es energéticamente favorable, dando lugar
  a formaciones, como las que se pueden observar en el esquema de la figura
  
 \begin_inset CommandInset ref
@@ -3567,10 +3656,10 @@ name "fig: montañas"
 
 En el esquema se aprecia la formación de cúmulos en el cepillo polimérico,
  debido a la fuerza atractiva entre las cadenas.
- Es interesante estudiar bajo que condiciones se forman las aglomeraciones,
- su dependencia con la rigidez de las cadenas y como varía la distancia
+ Es interesante estudiar bajo qué condiciones se forman las aglomeraciones,
+ su dependencia con la rigidez de las cadenas y cómo varía la distancia
  típica entre estas.
- Figura extraída de 
+ Figura extraída de la referencia 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PhysRevE.88.042601"
@@ -3646,12 +3735,12 @@ noprefix "false"
  da la intensidad de la interacción entre partículas pertenecientes al cepillo
  y partículas pertenecientes al fluido.
  Este parámetro cambia la afinidad entre las diferentes especies y sirve
- para explorar diferentes condiciones fisico-químicas.
+ para explorar diferentes condiciones físico-químicas.
  Un valor frecuentemente utilizado a lo largo de este trabajo fue 
 \begin_inset Formula $\varepsilon^{(lc)}=1/3$
 \end_inset
 
- para fijar una incompatibilidad química entre cepillo y líquido.
+, para modelar una incompatibilidad química entre cepillo y líquido.
  Este valor fue tomado de la bibliografía
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3675,8 +3764,8 @@ Fakir
  Cabe notar que la interacción líquido-cepillo no es puramente repulsiva,
  ya que el radio de corte para esta fuerza fue el mismo que para la interacción
  líquido-líquido.
- Es decir que la atracción entre dos monómeros de distintas especies la
- tercera parte de la fuerza que se ejercen dos partículas pertenecientes
+ Es decir que la atracción entre dos monómeros de distintas especies es
+ la tercera parte de la fuerza que se ejercen dos partículas pertenecientes
  a la fase líquida, a la misma distancia.
  
 \end_layout
@@ -3754,8 +3843,8 @@ reference "eq:FENE"
 \end_layout
 
 \begin_layout Standard
-El modelo elegido para codificar la física de las cadenas se debe a Kremer
- y Grest 
+El modelo elegido para modelar la conectividad de las cadenas poliméricas
+ se debe a Kremer y Grest 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Kroeger2004453,PhysRevA.33.3628,doi:10.1021/ma00200a041"
@@ -3766,7 +3855,7 @@ literal "true"
 .
  Las interacciones entre monómeros contiguos, pertenecientes a un mismo
  polímero, es representada por un potencial elástico no lineal de extensión
- finita (FENE, de las siglas en ingles), que viene dado por la ecuación:
+ finita (FENE, por las siglas en ingles), que viene dado por la ecuación:
 \end_layout
 
 \begin_layout Standard
@@ -3832,11 +3921,20 @@ reference "fig:FENE"
 
  a medida que la separación se acerca a este límite, para imponer los efectos
  de extensión finita de las cadenas.
+ Este potencial es más realista que el potencial armónico, ya que junto
+ con la repulsión del potencial LJ, evita los cruzamientos de ligaduras
+ (
+\emph on
+bond crossings).
+ 
+\emph default
+Estos entrecruzamientos no ocurren entre las unión covalentes de los polímeros
+ reales.
 \end_layout
 
 \begin_layout Standard
 Uno de los puntos distintivos de este trabajo es el estudio de las propiedades
- del sistema líquido-cepillo en función de la rigidez de los polímeros.
+ del sistema líquido-cepillo en función de la rigidez local de los polímeros.
  Esta se impuso mediante un potencial de flexión armónico entre tres monómeros
  sucesivos.
  
@@ -3867,7 +3965,7 @@ reference "fig:Bendig_versores"
 \end_inset
 
 ).
- Si bien la dependencia del potencial con ángulo es simple, se necesita
+ Si bien la dependencia del potencial con el ángulo es simple, se necesita
  expresar la fuerza en coordenadas cartesianas para acoplarla a la estructura
  del programa de dinámica molecular.
  El ángulo se puede escribir en función de las coordenadas de los monómeros
@@ -3978,14 +4076,23 @@ Las fuerzas actuantes sobre cada masa pueden ser calculadas tomando las
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\boldsymbol{F}_{3}=-\nabla_{3}U_{flex}(\boldsymbol{r}_{1},\boldsymbol{r}_{2},\boldsymbol{r}_{3})=\frac{k_{f}\theta}{|\boldsymbol{r}_{3}-\boldsymbol{r}_{2}|}\left[\frac{(\boldsymbol{r}_{2}-\boldsymbol{r}_{1})}{|\boldsymbol{r}_{2}-\boldsymbol{r}_{1}||sen(\theta)|}-\frac{cos(\theta)(\boldsymbol{r}_{3}-\boldsymbol{r}_{2})}{|sen(\theta)||\boldsymbol{r}_{3}-\boldsymbol{r}_{2}|}\right]
+\boldsymbol{F}_{3}=-\nabla_{3}U_{flex}(\boldsymbol{r}_{1},\boldsymbol{r}_{2},\boldsymbol{r}_{3})=\frac{k_{f}\theta}{|\boldsymbol{r}_{3}-\boldsymbol{r}_{2}|}\left[\frac{(\boldsymbol{r}_{2}-\boldsymbol{r}_{1})}{|\boldsymbol{r}_{2}-\boldsymbol{r}_{1}||sen(\theta)|}-\frac{cos(\theta)(\boldsymbol{r}_{3}-\boldsymbol{r}_{2})}{|sen(\theta)||\boldsymbol{r}_{3}-\boldsymbol{r}_{2}|}\right]\label{eq:f3_bending}
 \end{equation}
 
 \end_inset
 
-Se puede demostrar que el corchete en la ecuación anterior es un vector
- de módulo unidad, que está contenido en el plano formado por los versores
- 
+Se puede demostrar que el corchete en la ecuación 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:f3_bending"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ anterior es un vector de módulo unidad, que está contenido en el plano
+ formado por los versores 
 \begin_inset Formula $\boldsymbol{r}_{2}-\boldsymbol{r}_{1}$
 \end_inset
 
@@ -4077,8 +4184,8 @@ De la misma manera se puede hallar la fuerza sobre el primer monómero para
 
 \end_inset
 
-La fuerza sobre la partícula 2 se calcula del mismo modo y se cumple que
- 
+La fuerza sobre la partícula 2 se calcula del mismo modo y se cumple la
+ relación 
 \begin_inset Formula 
 \begin{equation}
 \boldsymbol{F}_{1}+\boldsymbol{F}_{2}+\boldsymbol{F}_{3}=0
@@ -4091,8 +4198,7 @@ Esta ecuación indica que la sumatoria de fuerzas internas es nula, lo que
  cadena se conserva.
  Si bien esta es una característica física esperable, cabe notar que no
  se deduce de la cancelación de pares de interacción, pues la fuerza sobre
- cada partícula depende la posición de los dos primeros vecinos de de la
- cadena.
+ cada partícula depende la posición de los dos primeros vecinos de la cadena.
  Esto es fácil de ver fijando la posición de la dos últimas masas y notando
  que al mover el primer monómero varía la apertura angular y por tanto la
  intensidad de la fuerza ejercida sobre el último eslabón.
@@ -4142,7 +4248,15 @@ Cabe mencionar que este no es el único potencial utilizado para modelar
 \shape italic
 mean field theory
 \shape default
-).
+)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "opac-b1121927"
+literal "false"
+
+\end_inset
+
+.
  Es conveniente destacar que ambos potenciales de flexión presentados tienen
  una forma funcional similar y exhiben un comportamiento muy parecido.
  Esto queda claro al desarrollar el potencial alrededor del valor de equilibrio
@@ -4199,7 +4313,7 @@ reference "fig:Orientacion"
 
 , directamente debajo del monómero sujeto a la pared.
  La fuerza sobre la segunda partícula fue hallada como se explicó anteriormente,
- aplicándolo a esta terna.
+ aplicando los desarrollos explicados a esta terna.
 \end_layout
 
 \begin_layout Standard
@@ -4230,11 +4344,12 @@ name "fig:Orientacion"
 
 \end_inset
 
-Directamente debajo del monómero fijo al sustrato (1), se ubica una partícula
+Fuerza orientacional de la cadenas fijada al sustrato.
+ Directamente debajo del monómero fijo al sustrato (1), se ubica una partícula
  en línea punteada (0), que facilita el cálculo de la fuerza sobre el último
  eslabón de la cadena (2).
  La posición de equilibrio de esta terna corresponde a las partículas alineadas
- en posición vertical, perpendicular al sustrato.
+ en posición vertical, de forma perpendicular al sustrato.
  La fuerza sobre el monómero 2 se calculó tomando en cuenta el ángulo formado
  ente los vectores 
 \begin_inset Formula $\boldsymbol{r}_{2}-\boldsymbol{r}_{1}$
@@ -4267,11 +4382,11 @@ La constante de flexión
 \begin_inset Formula $k_{f}$
 \end_inset
 
- tiene unidades de energía y es adecuada para el acercamiento teórico a
- la rigidez de los polímeros, sin embargo esta no es una cantidad accesible
- directamente desde los experimentos.
+ tiene unidades de energía y es adecuada para el estudio teórico de la rigidez
+ de los polímeros, sin embargo esta no es un parámetro accesible directamente
+ en los experimentos.
  Para presentar los resultados, es conveniente utilizar otra medida de la
- rigidez que sea físicamente más relevante y preferiblemente adimensional.
+ rigidez que sea físicamente más relevante y, preferiblemente, adimensional.
  La cantidad utilizada para medir la rigidez es el cociente entre la longitud
  de de persistencia 
 \begin_inset Formula $l_{p}$
@@ -4304,6 +4419,14 @@ La longitud de persistencia
 \begin_inset Formula $l_{p}$
 \end_inset
 
+ o segmento estadístico de Kuhn
+\begin_inset CommandInset citation
+LatexCommand cite
+key "opac-b1121927"
+literal "false"
+
+\end_inset
+
 , es la distancia a la cual se pierde la correlación orientacional de los
  segmentos de un polímero.
  A medida que aumenta la constante de flexión, la orientación de los segmentos
@@ -4325,7 +4448,7 @@ l_{p}=-\frac{a}{ln<cos\,\theta>}\,,\label{eq:lp=-1/lncos}
 \end_inset
 
 donde 
-\begin_inset Formula $<cos\,\theta>$
+\begin_inset Formula $\left\langle cos\,\theta\right\rangle $
 \end_inset
 
  es el valor medio sobre toda la cadena del coseno del ángulo definido por
@@ -4375,7 +4498,7 @@ donde
 \begin_inset Formula $k=1$
 \end_inset
 
-, se puede despejar el 
+, se puede despejar la longitud de persistencia 
 \begin_inset Formula $l_{p}$
 \end_inset
 
@@ -4393,7 +4516,7 @@ noprefix "false"
 
 \end_inset
 
- .
+.
  Bajo este modelo, la relación entre la longitud de persistencia y la constante
  de flexión es lineal
 \begin_inset CommandInset citation
@@ -4403,7 +4526,7 @@ literal "false"
 
 \end_inset
 
- y está depende de la temperatura:
+ y esta depende de la temperatura:
 \end_layout
 
 \begin_layout Standard
@@ -4439,12 +4562,13 @@ noprefix "false"
 
 \end_inset
 
- es una estimación muy buena a lo que arrojan las simulaciones.
+ representa una muy buena estimación de los resultados que se obtienen de
+ las simulaciones.
  
 \end_layout
 
 \begin_layout Standard
-Las simulaciones en nano canales se llevaron a cabo en un prisma ortogonal
+Las simulaciones en nano canales se llevaron a cabo en un paralelepípedo
  de dimensiones 
 \begin_inset Formula $L_{x}\times L_{y}\times L_{z}$
 \end_inset
@@ -4523,7 +4647,7 @@ name "fig:CPC"
 
 \end_inset
 
-Se muestra, de manera esquemática, como se aplican las condiciones periódicas
+Se muestra, de manera esquemática, cómo se aplican las condiciones periódicas
  de contorno en las simulaciones de dinámica molecular.
  Cada rectángulo es una imagen exacta de la caja de simulación original.
  Las partículas en la caja de simulación original puede interactuar con
@@ -4552,8 +4676,8 @@ literal "true"
 \end_layout
 
 \begin_layout Standard
-Los límites del canal confinante se imponen en sobre los planos definidos
- por las ecuaciones 
+Los límites del canal confinante se imponen sobre los planos definidos por
+ las ecuaciones 
 \begin_inset Formula $z=0$
 \end_inset
 
@@ -4566,7 +4690,7 @@ Los límites del canal confinante se imponen en sobre los planos definidos
 \end_inset
 
  define  el ancho del canal.
- El sustrato fue modelado como una pared ideal sin rugosidad, impenetrable,
+ El sustrato fue modelado como una pared ideal impenetrable sin rugosidad,
  cuya interacción con los monómeros viene dada por un potencial de Lennard-Jones
  integrado:
 \end_layout
@@ -4597,7 +4721,20 @@ literal "false"
 
 .
  Este potencial representa una pared netamente repulsiva, de manera tal
- de no favorecer la penetración del líquido en los intersticios del cepillo.
+ de no favorecer la penetración del líquido en los intersticios del cepillo
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+OJO: es repulsiva si se pone modulo en el termino atractivo y se pone negativa
+ la constante.
+ Como está escrito no es repulsivo.
+ K: Ojo q no tiene el - en el medio, es puramente repulsivo 
+\end_layout
+
+\end_inset
+
+.
  La simetría de traslación en las direcciones paralelas a la pared implican
  que la misma no realiza esfuerzos de corte y no es capaz de arrastrar al
  líquido.
@@ -4685,10 +4822,10 @@ Si se llevaran a cabo las simulaciones integrando directamente las ecuaciones
  de movimiento dadas por el modelo, la energía total del sistema sería una
  constante de movimiento y no la temperatura.
  Este esquema corresponde al ensamble microcanónico, pero los experimentos
- se realizan mayoritariamente manteniendo constante la temperatura, que
+ se realizan mayoritariamente manteniendo constante la temperatura, lo cual
  se corresponde con el ensamble canónico.
- Para satisfacer esta condición en las experiencias, se pone en contacto
- la muestra con un baño térmico, de manera tal, que se permite el intercambio
+ Para satisfacer esta condición en las experiencias, la muestra se pone
+ en contacto con un baño térmico, de manera tal, que se permite el intercambio
  de calor con el exterior.
  La técnica para llevar a cabo simulaciones en el ensamble canónico es parecida.
  En el termostato utilizado, se agregan fuerzas externas al sistema para
@@ -4922,8 +5059,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-Para certificar que el termostato este funcionando correctamente, es conveniente
- verificar la temperatura del sistema.
+Para verificar que el termostato este funcionando correctamente, es conveniente
+ monitorear la temperatura del sistema.
  Utilizando el teorema de equipartición, podemos obtener una expresión de
  la temperatura instantánea del sistema en función de las velocidades de
  todas las partículas:
@@ -5017,7 +5154,7 @@ Al lector atento puede llamarle la atención la falta del factor
  al tomar el promedio, dado que se quieren obtener cantidades dentro del
  ensamble canónico.
  Podemos pensar que el factor de probabilidad de la distribución de Maxwell-Bolt
-zmann se encuentra presente implícitamente, ya que, como se explico en la
+zmann se encuentra presente implícitamente, ya que, como se explicó en la
  sección 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5032,7 +5169,7 @@ noprefix "false"
 \begin_inset Formula $\{\boldsymbol{r},\boldsymbol{v}\}$
 \end_inset
 
- son sorteadas de la distribución de probabilidad apropiados.
+ son sorteadas de la distribución de probabilidad apropiada.
  Es decir, que los microestados con mayor peso 
 \begin_inset Formula $e^{-\frac{1}{k_{B}T}H[\{\boldsymbol{r}(t),\boldsymbol{v}(t)\}]}$
 \end_inset
@@ -5047,7 +5184,7 @@ Por otro lado, se puede argumentar que este promedio no es exacto, pues
 \begin_inset Formula $\tau\rightarrow\infty$
 \end_inset
 
- es posible que no coincida el promedio temporal con el promedio estadístico
+ es posible que el promedio temporal no coincida con el promedio estadístico
  sobre el ensamble 
 \begin_inset Formula $<A>$
 \end_inset
@@ -5150,7 +5287,7 @@ Se define el tiempo de correlación
 \begin_inset Formula $A$
 \end_inset
 
- como independientes
+ como estadísticamente independientes
 \end_layout
 
 \end_inset
