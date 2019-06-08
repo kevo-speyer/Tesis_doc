@@ -78,6 +78,7 @@
 \html_css_as_file 0
 \html_be_strict false
 \author -8664667 "Claudio Pastorino"
+\author 226858018 "Kevin"
 \end_header
 
 \begin_body
@@ -3571,6 +3572,10 @@ status open
 
 \change_inserted -8664667 1556915920
 C: todo esto no está en el capítulo de metodología? Sugiero no ponerlo
+\change_inserted 226858018 1560034115
+ K: Los valores de los parámetros usados en este capítulo hay que ponerlos
+ y me parece mejor que estén las fórmulas acá, asi el lector no tiene q
+ ir a buscarlas a otro capitulo
 \change_unchanged
 
 \end_layout
