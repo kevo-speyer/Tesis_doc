@@ -5378,6 +5378,16 @@ name "chap:Resultados-I:-Cepillos"
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Corregido
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -5399,8 +5409,8 @@ Nuestro trabajo
 
 \begin_layout Standard
 En este capítulo se estudia mediante simulaciones numéricas el flujo de
- un líquido simple en un nanocanal en forma de hendidura revestido por cepillos
- poliméricos semiflexibles.
+ un líquido simple en un nanocanal en forma de hendidura, revestido por
+ cepillos poliméricos semiflexibles.
  El sistema es estudiado en equilibrio y en condiciones de flujo, en función
  de la cantidad de cadenas fijadas por unidad de área y de la velocidad
  del flujo, utilizando distintos valores de rigidez de las cadenas.
@@ -9060,21 +9070,89 @@ Longitud de deslizamiento
 status open
 
 \begin_layout Plain Layout
-K: HASTA ACA CORREGIDO
+K: De aca hasta Resumen lo volaría.
+ Me parece que no queda claro y confunde más de lo que aporta.
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
 
 \begin_layout Plain Layout
-De aca hasta Resumen lo volaría.
- Me parece que no queda claro y confunde más de lo que aporta.
+C: Creo que es porque el grafico es demasiado compacto (Estamos haciendo
+ 
+\begin_inset Formula $\mu$
+\end_inset
+
+ vs 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+,
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+ y 
+\begin_inset Formula $k_{b}$
+\end_inset
+
+ a la vez).
+ Teníamos restricciones de espacio en el paper pero no aca.
+ Si lo querés dejar, propongo hacer dos o tres graficos: 
+\begin_inset Formula $\mu$
+\end_inset
+
+ vs 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+ para una sola 
+\begin_inset Formula $k_{b}$
+\end_inset
+
+.
+ Y decir luego que todas son lineales y dan parecido.
+ Otro grafico de 
+\begin_inset Formula $\mu$
+\end_inset
+
+ vs 
+\begin_inset Formula $\rho_{g}$
+\end_inset
+
+para los tres 
+\begin_inset Formula $k_{b}$
+\end_inset
+
+ representativos a un 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+ determinado.
+ Como no son iguales, tomamos el valor de 
+\begin_inset Formula $\mu$
+\end_inset
+
+ interpolando linealmente "a puntero de grace" igual 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+.
+ Separando así creo que se aclara cada dependencia y da coherente.
+\end_layout
+
+\begin_layout Plain Layout
+Para mi es interesante pero por la cantidad de resultados seguramente no
+ va a ir en la defensa.
+\end_layout
+
+\begin_layout Plain Layout
+K: OK, veo que hago.
+ Lo de tomar el valor de 
+\begin_inset Formula $\mu$
+\end_inset
+
+ a igual 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset
+
+ es laburo, tengo q encontrar un tiempo para hacerlo.
 \end_layout
 
 \end_inset
@@ -9410,7 +9488,8 @@ name "fig:Friction-coefficient-vs-shear"
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
- parase seguir una ley de potencias.
+ sigue una ley de potencias.
+ 
 \end_layout
 
 \end_inset
@@ -9435,7 +9514,7 @@ name "sec:Resumen_3"
 \end_layout
 
 \begin_layout Standard
-En este capitulo se realizó un estudio exhaustivo de un nanocanal revestido
+En este capítulo se realizó un estudio exhaustivo de un nanocanal revestido
  por cepillos polméricos hidrofóbicos y lleno de un líquido simple, en equilibri
 o y en condiciones de flujo.
  Se hizo un análisis sistemático del sistema en función de la cantidad de
@@ -9443,45 +9522,68 @@ o y en condiciones de flujo.
  También se modificó la dureza del sustrato, utilizando cuatro valores distintos
  de rigidez de las cadenas, para investigar el efecto en el flujo.
  En todos los casos se comprobó que el líquido permaneció en un estado Cassie-Ba
-xter, es decir, que no penetró los intersticios del cepillo polimérico.
- También se realizaron simulaciones con las cadenas aisladas para calcular
+xter, es decir, que no penetró los intersticios del cepillo polimérico (ver
+ figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "superhidro gota"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+C: lo anterior no se entiende sin background previo.
+ Se puede poner referencia a una explicación en la intro.
+ K: OK
+\end_layout
+
+\end_inset
+
+.También se realizaron simulaciones con las cadenas aisladas para calcular
  el tiempo de relajación de las mismas, que es altamente dependiente de
  la rigidez de los polímeros.
 \end_layout
 
 \begin_layout Standard
 En equilibrio se analizó la estructura del cepillo polimérico a partir del
- perfil de densidad, el comportamiento de los monómeros terminas, los ángulos
- medios de inclinación de las cadenas y la energía de flexión almacenada
+ perfil de densidad, el comportamiento de los monómeros terminales, los
+ ángulos medios de inclinación de las cadenas y la energía de flexión almacenada
  en cada unión de los polímeros.
  Encontramos que para cadenas flexibles (
 \begin_inset Formula $l_{p}/l_{p}\le1$
 \end_inset
 
-) la energía total de flexión incrementa con la dureza, mientras que para
- 
+) la energía total de flexión se incrementa con la dureza, mientras que
+ para 
 \begin_inset Formula $l_{p}/l_{c}\ge1$
 \end_inset
 
- la energía total de flexión alcanza un valor de saturación y no incrementa
+ la energía total de flexión alcanza un valor de saturación y no aumenta
  con la constante de flexión.
  También se estudió la distribución de probabilidad del ángulo de inclinación
  de las cadenas en equilibrio y en condiciones de flujo, y se observaron
  distribuciones no gaussianas.
  Se halló un comportamiento distinto según la rigidez de las cadenas poliméricas
 , estudiando el sistema a bajas densidades de fijado.
- Estas distribuciones de inclinación de las cadenas permiten ayudan a comprender
+ Estas distribuciones de inclinación de las cadenas permiten comprender
  las configuraciones típicas que adoptan las cadenas al ser comprimidas
  por el líquido presente en el canal.
- Las cadenas más flexibles se repliegan sobre si mismas, permaneciendo en
+ Las cadenas más flexibles se repliegan sobre sí mismas, permaneciendo en
  un estado globular a bajas densidades de fijado.
   Para valores de rigidez 
 \begin_inset Formula $l_{p}/l_{c}=1$
 \end_inset
 
  los polímeros se arquean coherentemente, formando un arco de circunferencia
- al ser presionadas por el líquido.
- Esto lleva a una mayor estiramiento de las cadenas en la dirección paralela
+ al ser presionados por el líquido.
+ Esto lleva a un mayor estiramiento de las cadenas en la dirección paralela
  a las paredes del sustrato.
  En el límite de alta rigidez 
 \begin_inset Formula $l_{p}/l_{c}\gg1$
@@ -9494,7 +9596,7 @@ En equilibrio se analizó la estructura del cepillo polimérico a partir del
 \begin_layout Standard
 Al mover las paredes del canal en sentidos opuestos a velocidad constante,
  se genera un perfil de velocidad lineal en el seno del canal, que permite
- estudiar las propiedades reologicas del sistema en función de la densidad
+ estudiar las propiedades reológicas del sistema en función de la densidad
  de fijado de cadenas y de la intensidad del flujo.
  Se observó que la longitud de deslizamiento del líquido disminuye con la
  densidad de fijado de cadenas y a alta 
@@ -9503,7 +9605,7 @@ Al mover las paredes del canal en sentidos opuestos a velocidad constante,
 
  es independiente de la rigidez de las cadenas y de la velocidad de las
  paredes.
- A bajas densidades de fijado el perfil de velocidad del líquido varia con
+ A bajas densidades de fijado el perfil de velocidad del líquido varía con
  la rigidez de las cadenas de manera no monótona.
  
 \end_layout
@@ -9564,10 +9666,10 @@ noprefix "false"
  Debido a las condiciones de contorno utilizadas en las direcciones paralelas
  a la pared del canal plano, este sistema puede pensarse como un tren de
  gotas atravesando un canal revestido por un cepillo de polímeros semiflexible.
- Se analiza la dependencia de la velocidad de la gota variando la distancia
- entre las gotas consecutivas en la dirección del flujo y modificando la
- rigidez de las cadenas.
- Se investigan las fuerzas de fricción actiando sobre la gota líquida, debido
+ Se analiza la velocidad de la gota variando la distancia entre las gotas
+ consecutivas en la dirección del flujo y modificando la rigidez de las
+ cadenas.
+ Se investigan las fuerzas de fricción actuando sobre la gota líquida, debido
  a la presencia del gas circundante y de la presencia de las cadenas, para
  un amplio rango de longitudes de persistencia.
  También se estudió la deformación del sustrato blando y los cambios morfológico
@@ -13175,20 +13277,7 @@ Sistema estudiado
 A partir de los resultados obtenidos y de lo aprendido a lo largo del trabajo
  de esta tesis de doctorado, se propuso investigar como la rigidez de los
  polímeros pueden mejorar la eficiencia en en dispositivos de nanofluídica.
- Los resultados presentados en este capítulo fueron publicados y pueden
- encontrarse de manera resumida en la referencia 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "C8SM02388C"
-literal "false"
-
-\end_inset
-
-.
  
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -13198,10 +13287,6 @@ microfluidica
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Controlar el flujo en condiciones de alto confinamiento es de gran interés
  para el desarrollo de aplicaciones tecnológicas.
  Poder manejar líquido en la micro y nano escala permite implementar nuevos
@@ -13232,7 +13317,25 @@ sistema estudiado
 \end_layout
 
 \begin_layout Standard
-Como se estudió en el capítulo 
+En este capítulo se estudia el flujo de líquido simple en una nanoválvula,
+ como puede observarse en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:snap_3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ En este caso el las paredes del nanocanal estaás suficientemente cerca
+ para que las cadenas ancladas a paredes opuestas interactúen entre sí,
+ obstruyendo el nanocanal.
+ Al inducir un flujo suficientemente grande, las formaciones poliméricas
+ que obstruyen el nanaocanal se rompen, y el flujo de solvente aumenta notableme
+nte.
+ Como se estudió en el capítulo 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Resultados-II:-Influencia"
@@ -13260,7 +13363,68 @@ noprefix "false"
  Para completar el estudio de este sistema, se varió la afinidad entre el
  solvente y las cadenas poliméricas.
  Este análisis en función de la calidad del solvente sirve también para
- comparar nuestros resultados con la bibliografía existente y validarlos.
+ comparar nuestros resultados con la bibliografía existente y validarlos.Los
+ resultados presentados en este capítulo fueron publicados y pueden encontrarse
+ de manera resumida en la referencia 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C8SM02388C"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figs/TOC.png
+	width 75text%
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:snap_3"
+
+\end_inset
+
+Esquema del nanocanl estudiado en este capítulo.
+ Los polímeros ancaldos a paredes opuestas logran tocarse, formando obstruccione
+s en el seno del canal.
+ Al inducir una diferencia de presión suficientemente grande entre los extremos
+ del canal, las formaciones poliméricas se deasarman, liberando el flujo
+ de solvente.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -13782,7 +13946,7 @@ Detalles del sistema estudiado
 \end_layout
 
 \begin_layout Standard
-El sistema estudiado puede observarse en las figuras 
+El sistema estudiado puede observarse en la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:esquema_paper_3"
@@ -14043,18 +14207,6 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figs/TOC.png
-	width 75text%
-	clip
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
 	filename figs/TOC_2.eps
 	lyxscale 34
 	width 75text%
@@ -14072,10 +14224,9 @@ name "fig:esquema_paper_3"
 
 \end_inset
 
-En la figura superior se muestra un esquema del sistema estudiado en equilibrio
- y luego al aplicarle un gradiente de presión .
- En la figura inferior se aprecia el sistema estudiado mediante el software
- VMD
+En la figura se muestra un esquema del sistema estudiado en equilibrio (izquierd
+a) y luego al aplicarle un gradiente de presión (derecha).
+ Se aprecia el sistema estudiado mediante el software VMD
 \begin_inset CommandInset citation
 LatexCommand cite
 key "HUMP96"
