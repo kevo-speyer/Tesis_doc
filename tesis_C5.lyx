@@ -247,13 +247,7 @@ Polímeros
 \end_layout
 
 \begin_layout Standard
-Los polímeros son moléculas omnipresentes en 
-\change_deleted -8664667 1560201128
-el día a día
-\change_inserted -8664667 1560201132
-la vida cotidiana
-\change_unchanged
-.
+Los polímeros son moléculas omnipresentes en la vida cotidiana.
  Desde el núcleo de las células, hasta los neumáticos de los vehículos,
  los polímeros se encuentran en una cantidad innumerable de materiales,
  tanto naturales como sintéticos.
@@ -288,29 +282,21 @@ La física de polímeros es un área de investigación que explora un amplio
 \end_inset
 
 , 
-\begin_inset Formula $10^{-13}{\rm seg}$
+\begin_inset Formula $10^{-13}{\rm {\rm seg}}$
 \end_inset
 
 )
-\change_inserted -8664667 1560201181
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
 
-\change_inserted -8664667 1560201185
-
 \backslash
 rm{seg}
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
  hasta el comportamiento macroscópico de un condensado (
 \begin_inset Formula $\sim1{\rm cm}$
 \end_inset
@@ -424,12 +410,8 @@ freely jointed chain
 
  cada uno.
  Si bien este modelo es muy crudo, ya que ignora totalmente las interacciones
- entre monómeros
-\change_inserted -8664667 1560201518
-, excepción de la conectividad de la cadena
-\change_unchanged
-, predice correctamente algunas propiedades en determinadas condiciones
- experimentales.
+ entre monómeros, excepción de la conectividad de la cadena, predice correctamen
+te algunas propiedades en determinadas condiciones experimentales.
  No es esperable que 
 \begin_inset Formula $N$
 \end_inset
@@ -438,20 +420,7 @@ freely jointed chain
 \begin_inset Formula $b$
 \end_inset
 
- la distancia media entre las mismas, pues se sabe que la
-\change_inserted -8664667 1560201562
-s
-\change_unchanged
- orientaci
-\change_inserted -8664667 1560201548
-o
-\change_deleted -8664667 1560201548
-ó
-\change_unchanged
-n
-\change_inserted -8664667 1560201554
-es
-\change_unchanged
+ la distancia media entre las mismas, pues se sabe que las orientaciones
  de los enlaces no son independientes entre sí.
  Para cada polímero existe una longitud de persistencia que da cuenta cuenta
  de la extensión de la correlación espacial entre uniones.
@@ -491,25 +460,10 @@ donde
  Es notable que dos polímeros con distinta longitud total y longitud de
  persistencia, puedan ser descritos por el modelo, con la misma cantidad
  de monómeros de Kuhn y la misma longitud estadística de Kuhn.
- Esta representación es v
-\change_deleted -8664667 1560201621
-a
-\change_inserted -8664667 1560201622
-á
-\change_unchanged
-lida siempre que la longitud de persistencia sea mucho menor a la longitud
- de contorno del polímero.
- Para polímeros rígidos existen otros modelos más adecuados
-\change_deleted -8664667 1560201655
-,
-\change_unchanged
- como
-\change_inserted -8664667 1560201660
-, por ejemplo,
-\change_deleted -8664667 1560201646
- 
-\change_unchanged
-el modelo de varilla elástica (modelo de
+ Esta representación es válida siempre que la longitud de persistencia sea
+ mucho menor a la longitud de contorno del polímero.
+ Para polímeros rígidos existen otros modelos más adecuados como, por ejemplo,el
+ modelo de varilla elástica (modelo de
 \shape italic
  Kratky-Porod
 \begin_inset CommandInset citation
@@ -621,15 +575,7 @@ Para adentrarse en la física de polímeros, es conveniente calcular que fuerza
 \begin_inset Formula $G(T,f,N)$
 \end_inset
 
-
-\change_inserted -8664667 1560201795
- 
-\change_unchanged
-del sistema y
-\change_inserted -8664667 1560201801
-,
-\change_unchanged
- diferenciando con respecto a 
+ del sistema y, diferenciando con respecto a 
 \begin_inset Formula $f$
 \end_inset
 
@@ -652,15 +598,7 @@ y para apartamientos pequeños (
 \begin_inset Formula $x\ll Nb$
 \end_inset
 
-) se 
-\change_inserted -8664667 1560201822
-tiene 
-\change_unchanged
-que
-\change_deleted -8664667 1560201812
- 
-\change_unchanged
-
+) se tiene que
 \end_layout
 
 \begin_layout Standard
@@ -677,26 +615,6 @@ Esta es la ley de Hooke, en la cuál se enuncia que la fuerza ejercida por
 \begin_inset Formula $K_{{\rm eff}}(T)=\frac{k_{B}T}{b^{2}N}$
 \end_inset
 
-
-\change_inserted -8664667 1560201845
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\change_inserted -8664667 1560201851
-
-\backslash
-rm{eff}
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
 .
  Lo primero que se puede advertir de esta deducción, es que la configuración
  de equilibrio para el polímero corresponde a un estiramiento nulo.
@@ -757,13 +675,8 @@ blobs
 
  se puede apreciar el estiramiento en la dirección de la fuerza.
  De esta manera, se maximiza la cantidad de configuraciones accesibles a
- la cadena y por lo tanto se logra maximizar la entropía
-\change_inserted -8664667 1560202612
- configuracional
-\change_deleted -8664667 1560202610
- 
-\change_unchanged
-del sistema.
+ la cadena y por lo tanto se logra maximizar la entropía configuracionaldel
+ sistema.
  
 \end_layout
 
@@ -882,17 +795,10 @@ literal "true"
 \end_inset
 
 .
- Los cepillos poliméricos se encuentran en los desarr
-\change_inserted -8664667 1560202681
-o
-\change_unchanged
-llos científicos más avanzados, desde bio
-\change_deleted -8664667 1560202734
- 
-\change_unchanged
-interfaces, sistemas de suministro y liberación controlado de medicamentos,
- films delgados y partículas, que actúan como sensores de cantidades pequeñas
- de analito
+ Los cepillos poliméricos se encuentran en los desarrollos científicos más
+ avanzados, desde biointerfaces, sistemas de suministro y liberación controlado
+ de medicamentos, films delgados y partículas, que actúan como sensores
+ de cantidades pequeñas de analito
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Peng_12"
@@ -916,20 +822,22 @@ literal "true"
 \end_inset
 
 , variando la geometría y curvatura del cepillo
-\change_inserted -8664667 1560202777
+\begin_inset CommandInset citation
+LatexCommand cite
+key "POLA:POLA26119"
+literal "false"
+
+\end_inset
+
 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -8664667 1560202921
 C: podría citarse tmb a azzaroni:
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -8664667 1560202907
 @Article{Azzaroni_12, Title = {Polymer brushes here, there, and everywhere:
  Recent advances in their practical applications and emerging opportunities
  in multiple research fields}, Author = {Azzaroni, Omar}, Journal = {Journal
@@ -938,20 +846,14 @@ C: podría citarse tmb a azzaroni:
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -8664667 1560202907
 Doi = {10.1002/pola.26119}, File = {Azzaroni_12.pdf:brushes/Azzaroni_12.pdf:PDF},
  ISSN = {1099-0518}, Keywords = {brushes, kevin1}, Owner = {speyer}, Publisher
  = {Wiley Subscription Services, Inc., A Wiley Company}, Timestamp = {2015.05.19},
- Url = {http://dx.doi.org/10.1002/pola.26119} }
-\change_unchanged
-
+ Url = {http://dx.doi.org/10.1002/pola.26119} } K: OK
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 .
  
 \end_layout
@@ -1020,12 +922,8 @@ semiflexibles
 \end_layout
 
 \begin_layout Standard
-Los cepillo
-\change_inserted -8664667 1560202931
-s
-\change_unchanged
- poliméricos han sido ampliamente estudiados en condiciones de flujo y en
- equilibrio
+Los cepillos poliméricos han sido ampliamente estudiados en condiciones
+ de flujo y en equilibrio
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Binder_11,Lee_14,POLB:POLB23168"
@@ -1046,19 +944,9 @@ literal "true"
  flexibles.
  Si el segmento estadístico de Kuhn es comparable con la longitud de contorno
  total del polímero, entonces la rigidez de la cadena no es despreciable.
- En estos casos es necesario modelar la
-\change_inserted -8664667 1560203022
- rigidez de flexión
-\change_deleted -8664667 1560203018
- dureza
-\change_unchanged
- del polímero mediante un potencial 
-\change_inserted -8664667 1560203067
-actuante entre dos ligaduras consecutivas
-\change_deleted -8664667 1560203054
-de flexión
-\change_unchanged
-, que le de dureza y reproduzca la correlación orientacional de los segmentos.
+ En estos casos es necesario modelar la rigidez de flexión del polímero
+ mediante un potencial actuante entre dos ligaduras consecutivas, que le
+ de dureza y reproduzca la correlación orientacional de los segmentos.
  Como se aprecia en la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1069,58 +957,31 @@ noprefix "false"
 
 \end_inset
 
-, las configuraciones adoptadas por polímeros totalmente flexibles en
-\change_inserted -8664667 1560206752
- el panel
-\change_deleted -8664667 1560206751
- 
-\change_unchanged
-a), son sensiblemente distintas a las adoptadas por polímeros semiflexibles
- en
-\change_inserted -8664667 1560206762
- el panel
-\change_deleted -8664667 1560206760
- 
-\change_unchanged
-b).
- Algunos ejemplos de polímeros semiflexibles son el ADN, que presenta 
-\change_deleted -8664667 1560206785
-una con 
-\change_unchanged
-una longitud de persistencia de aproximadamente 
+, las configuraciones adoptadas por polímeros totalmente flexibles en el
+ panela), son sensiblemente distintas a las adoptadas por polímeros semiflexible
+s en el panelb).
+ Algunos ejemplos de polímeros semiflexibles son el ADN, que presenta una
+ longitud de persistencia de aproximadamente 
 \begin_inset Formula $40{\rm nm}$
 \end_inset
 
-
-\change_inserted -8664667 1560206796
 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
 
-\change_inserted -8664667 1560206802
-
 \backslash
 rm{nm}
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
  y los filamentos de actina (
 \begin_inset Formula $17\mu m$
 \end_inset
 
 ).
-
-\change_deleted -8664667 1560206467
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -1156,14 +1017,8 @@ literal "true"
 
 , utilizando un modelo similar al implementado en este trabajo de tesis.
  Milchev y Binder describen una transición de fase del sistema al ser comprimido
- de manera axial, en 
-\change_inserted -8664667 1560206885
-la
-\change_deleted -8664667 1560206883
-el
-\change_unchanged
- que los polímeros se comban a presiones moderadas y se flexionan a presiones
- altas
+ de manera axial, en la que los polímeros se comban a presiones moderadas
+ y se flexionan a presiones altas
 \begin_inset CommandInset citation
 LatexCommand cite
 key "0295-5075-102-5-58003"
@@ -1191,21 +1046,9 @@ literal "true"
 
 \end_inset
 
- estudiaron
-\change_inserted -8664667 1560206904
-,
-\change_unchanged
- utilizando teoría de campo medio y simulaciones numéricas, la respuesta
- de cepillos polim
-\change_deleted -8664667 1560206911
-p
-\change_inserted -8664667 1560206912
-é
-\change_deleted -8664667 1560206911
-e
-\change_unchanged
-ricos semiflexibles en flujo, y observaron un buen acuerdo entre ambos métodos
- en el régimen de alta rigidez.
+ estudiaron, utilizando teoría de campo medio y simulaciones numéricas,
+ la respuesta de cepillos poliméricos semiflexibles en flujo, y observaron
+ un buen acuerdo entre ambos métodos en el régimen de alta rigidez.
  Römer y Fedosov
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1222,13 +1065,7 @@ literal "true"
 
 \end_inset
 
- para altas densidades, pero restingi
-\change_deleted -8664667 1560206935
-e
-\change_inserted -8664667 1560206936
-é
-\change_unchanged
-ndose a polímeros rígidos.
+ para altas densidades, pero restingiéndose a polímeros rígidos.
  En este trabajo
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1238,13 +1075,9 @@ literal "true"
 \end_inset
 
  desarrollaron un modelo teórico, que también comparan con simulaciones,
- de un cepillo semiflexible 
-\change_deleted -8664667 1560206948
-en
-\change_unchanged
- bajo flujo y encuentran un buen acuerdo entre los modelos teóricos y las
- simulaciones para un amplio rango de altura del cepillo, velocidad del
- flujo y densidades de fijado.
+ de un cepillo semiflexible bajo flujo y encuentran un buen acuerdo entre
+ los modelos teóricos y las simulaciones para un amplio rango de altura
+ del cepillo, velocidad del flujo y densidades de fijado.
  Deng et al.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1268,15 +1101,10 @@ literal "true"
 
 \end_inset
 
- estudiaron la trib
-\change_deleted -8664667 1560206995
-i
-\change_inserted -8664667 1560206996
-o
-\change_unchanged
-logía de bicapas revestidas por polímeros mediante simulaciones de dinámica
- molecular, y observaron que el coeficiente de fricción para cepillos polimérico
-s semiflexibles es mayor que para polímeros totalmente flexibles.
+ estudiaron la tribología de bicapas revestidas por polímeros mediante simulacio
+nes de dinámica molecular, y observaron que el coeficiente de fricción para
+ cepillos poliméricos semiflexibles es mayor que para polímeros totalmente
+ flexibles.
  La comparación es realizada a igual alto efectivo del canal, pero con diferente
 s densidades de fijado.
  
@@ -1296,16 +1124,9 @@ glicocálix
 \end_layout
 
 \begin_layout Standard
-Un sistema 
-\change_deleted -8664667 1560207023
-de
-\change_unchanged
- biofísico de importancia que presenta polímeros semiflexibles fijados por
- un extremo a una superficie, es el glicocálix endotelial, presente en 
-\change_inserted -8664667 1560207034
-el 
-\change_unchanged
-sistema vascular de animales y plantas
+Un sistema biofísico de importancia que presenta polímeros semiflexibles
+ fijados por un extremo a una superficie, es el glicocálix endotelial, presente
+ en el sistema vascular de animales y plantas
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1146/annurev.bioeng.9.060906.151959"
@@ -1316,13 +1137,7 @@ literal "true"
 .
  El glicocálix posee una estructura compleja, formada por una matriz macromolecu
 lar de carbohidratos, que consiste en proteoglicanos y glucoproteínas, que
- revisten la superficie de las c
-\change_inserted -8664667 1560207054
-é
-\change_deleted -8664667 1560207052
-e
-\change_unchanged
-lulas endoteliales
+ revisten la superficie de las células endoteliales
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Deng_2012,doi:10.1146/annurev.bioeng.9.060906.151959"
@@ -1406,19 +1221,8 @@ literal "true"
 
 \begin_layout Standard
 Desde un punto de vista mesoscópico, estas estructuras pueden ser modeladas
- como 
-\change_deleted -8664667 1560207123
-como 
-\change_unchanged
-un cepillo polimérico semiflexible, dónde el tamaño de los sit
-\change_inserted -8664667 1560207131
-i
-\change_unchanged
-os de interacción representa
-\change_deleted -8664667 1560207138
-n
-\change_unchanged
- el ancho de las cadenas
+ como un cepillo polimérico semiflexible, dónde el tamaño de los sitios
+ de interacción representa el ancho de las cadenas
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Deng_2012"
@@ -1426,11 +1230,7 @@ literal "false"
 
 \end_inset
 
-
-\change_inserted -8664667 1560207143
- 
-\change_unchanged
-(ver figura 
+ (ver figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Glycocalyx_Zhup"
@@ -1462,13 +1262,8 @@ literal "false"
 \end_inset
 
  estudiaron el flujo de glóbulos rojos en microcapilares de vidrio revestidos
- por un cepillo polimérico, hallando que el glicocálix es el factor m
-\change_inserted -8664667 1560207435
-á
-\change_deleted -8664667 1560207434
-a
-\change_unchanged
-s importante para explicar la gran resistencia al caudal observado en los
+ por un cepillo polimérico, hallando que el glicocálix es el factor más
+ importante para explicar la gran resistencia al caudal observado en los
  experimentos 
 \shape italic
 in vivo.
@@ -1597,13 +1392,7 @@ status open
 
 \begin_layout Plain Layout
 Una sofisticada red de microcanales permite la paralelización y automatización
- de 
-\change_inserted -8664667 1560282354
-procesos
-\change_deleted -8664667 1560282352
-sistemas
-\change_unchanged
- químicos y biológicos.
+ de procesos químicos y biológicos.
  En la Figura se muestra un chip integrado para medir interacciones proteicas.
  Las líneas de color manipulan las válvulas, que al cerrarse y abrirse dirigen
  soluciones reactivas a través de los canales sin colorear, hacia las cámaras
@@ -1658,19 +1447,7 @@ Bajo estas condiciones, el sustrato tiene una gran influencia en el flujo,
  determinando las condiciones de contorno del mismo.
  La condición de no deslizamiento de un fluido en contacto con una pared,
  usualmente aceptada para condiciones macroscópicas, es una aproximación
- que no es v
-\change_inserted -8664667 1560284521
-á
-\change_deleted -8664667 1560284520
-a
-\change_unchanged
-lida 
-\change_deleted -8664667 1560284524
-i
-\change_inserted -8664667 1560284526
-e
-\change_unchanged
-n la microescala
+ que no es válida en la microescala
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Lauga2007"
@@ -1679,14 +1456,8 @@ literal "true"
 \end_inset
 
 .
- Velocidades de distintos 
-\change_inserted -8664667 1560284534
-ó
-\change_deleted -8664667 1560284533
-o
-\change_unchanged
-rdenes de magnitud han sido reportadas sobre sustratos sólidos en la bibliografí
-a 
+ Velocidades de distintos órdenes de magnitud han sido reportadas sobre
+ sustratos sólidos en la bibliografía 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "C5SM02546J,Doshi05072005,Lee_14,Suzuki20083414,:/content/aip/journal/pof2/16/5/10.1063/1.1669400,doi:10.1080/00268976.2015.1119899,PhysRevLett.98.226001,PhysRevLett.82.4671,Choi_06,PhysRevLett.101.226101"
@@ -1707,7 +1478,7 @@ Q_{NS}=\frac{\Delta P\pi R^{4}}{8L\eta}\,,
 \end_inset
 
 donde 
-\begin_inset Formula $\Delta P$
+\begin_inset Formula $\Delta P/L$
 \end_inset
 
  es el gradiente de presión en el largo 
@@ -1715,14 +1486,10 @@ donde
 \end_inset
 
  del canal
-\change_inserted -8664667 1560349286
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -8664667 1560349351
 C: en realidad 
 \begin_inset Formula $\Delta P/L$
 \end_inset
@@ -1731,15 +1498,12 @@ C: en realidad
 \begin_inset Formula $\Delta P$
 \end_inset
 
- sería la caida de presión (pressure drop)
-\change_unchanged
-
+ sería la caida de presión (pressure drop).
+ K: correcto, corregido
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 , 
 \begin_inset Formula $\eta$
 \end_inset
@@ -1758,25 +1522,17 @@ C: en realidad
 \end_inset
 
 
-\change_inserted -8664667 1560349391
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -8664667 1560349398
 C: 
 \backslash
 rm{slip}
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 .
  Experimentos en nanocanales han arrojado valores de 
 \begin_inset Formula $Q_{{\rm slip}}/Q_{NS}\sim10^{3}$
@@ -1822,17 +1578,9 @@ literal "true"
 \end_inset
 
 .
- Se ha reportado que una estructuración jer
-\change_inserted -8664667 1560349542
-á
-\change_deleted -8664667 1560349541
-a
-\change_unchanged
-rquica, donde hay rugosidades en diferentes escalas de longitud
-\change_deleted -8664667 1560349551
-es
-\change_unchanged
-, reduce notablemente la fricción con el líquido.
+ Se ha reportado que una estructuración jerárquica, donde hay rugosidades
+ en diferentes escalas de longitud, reduce notablemente la fricción con
+ el líquido.
  Al día de hoy existe un consenso generalizado que sostiene que un recubrimiento
  hidrofóbico reduce la fricción, debido a la interacción repulsiva entre
  el fluido y el sólido
@@ -1857,13 +1605,8 @@ literal "true"
 
 \begin_layout Standard
 El flujo de diferentes tipos de fluidos en alto confinamiento ha ganado
- atención en los últimos años, debido al 
-\change_inserted -8664667 1560349596
-interés
-\change_deleted -8664667 1560349594
-alcance
-\change_unchanged
- en diferentes áreas, como la biología
+ atención en los últimos años, debido al interés en diferentes áreas, como
+ la biología
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1146/annurev.bioeng.9.060906.151959,Lanotte_2014,CruzChu2014232"
@@ -1892,11 +1635,8 @@ literal "true"
 \shape italic
 lab-on-chip
 \shape default
-, en los cuales se realizan complejas operaciones de manera
-\change_inserted -8664667 1560349613
- automática
-\change_unchanged
-, son un ejemplo promisorio de aplicaciones en este campo.
+, en los cuales se realizan complejas operaciones de manera automática,
+ son un ejemplo promisorio de aplicaciones en este campo.
  A pesar de que no haya implementaciones industriales a gran escala aún
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1941,23 +1681,11 @@ literal "true"
 
 \end_inset
 
-, con el potencial de 
-\change_deleted -8664667 1560349644
-ser
-\change_unchanged
- ajustarse a las necesidades de 
-\change_inserted -8664667 1560349652
-las 
-\change_unchanged
-aplicaciones tecnológicas.
+, con el potencial de ajustarse a las necesidades de las aplicaciones tecnológic
+as.
  Al tener más de una fase, ya sea un líquido y un gas o dos líquidos, existen
- varias interfaces que incid
-\change_inserted -8664667 1560349664
-en
-\change_deleted -8664667 1560349663
-ir
-\change_unchanged
- en el comportamiento del sistema, enriqueciendo la física del problema.
+ varias interfaces que inciden en el comportamiento del sistema, enriqueciendo
+ la física del problema.
  El transporte de gotas en micro y nano canales ha sido extensamente estudiado
  en la última decada, tanto teórica
 \begin_inset CommandInset citation
@@ -1988,14 +1716,8 @@ literal "true"
  gas en un nanocanal rugoso.
  En este estudio se reporta que el deslizamiento depende de la nano etructuració
 n de las paredes hidrofóbicas.
- Los flujos bifásicos gas-l
-\change_inserted -8664667 1560349696
-í
-\change_deleted -8664667 1560349695
-i
-\change_unchanged
-quido también están presentes en las membranas de electrolito polimérico
- para celdas de combustible
+ Los flujos bifásicos gas-líquido también están presentes en las membranas
+ de electrolito polimérico para celdas de combustible
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1021/acs.jpcc.5b07951,Zhang01022006,Lu20093445,doi:10.1021/la403057k"
@@ -2024,10 +1746,7 @@ literal "true"
 \end_inset
 
 , se puede encontrar una revisión del estado del campo de la microfluídica
-\change_inserted -8664667 1560352247
- basada en gotas
-\change_unchanged
-.
+ basada en gotas.
 \end_layout
 
 \begin_layout Standard
@@ -2143,13 +1862,8 @@ literal "true"
  de los cepillos poliméricos, es la reducción de fricción.
  Para comprender este fenómeno, se ha investigado extensamente las condiciones
  de contorno líquidos sobre cepillos de polímeros totalmente flexibles,
- y se han reportado distancias de deslizamiento de distintos 
-\change_inserted -8664667 1560352465
-ó
-\change_deleted -8664667 1560352464
-o
-\change_unchanged
-rdenes de magnitud.
+ y se han reportado distancias de deslizamiento de distintos órdenes de
+ magnitud.
  En la referencia
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2234,11 +1948,8 @@ name "fig:coil-to-globule"
 
 \end_inset
 
-Regulando el nivel de pH en el nano-canal se logra un cambio morfológ
-\change_inserted -8664667 1560352546
-i
-\change_unchanged
-co en el cepillo polimérico, y logrando que las cadenas se retraigan sobre
+Regulando el nivel de pH en el nano-canal se logra un cambio morfológico
+ en el cepillo polimérico, y logrando que las cadenas se retraigan sobre
  el sustrato o que ocupen la mitad del canal, cambiando radicalmente el
  caudal.
  Figura tomada de la referencia 
@@ -2265,17 +1976,8 @@ literal "false"
 \begin_layout Standard
 Esta clase de nano-válvulas, reguladas por cepillos poliméricos han sido
  estudiadas previamente, tanto experimental como teóricamente.
- Adiga y Brenner estudiaron teóricamente en una serie de trabajos
-\change_inserted -8664667 1560352576
-,
-\change_unchanged
- nanov
-\change_inserted -8664667 1560352579
-á
-\change_deleted -8664667 1560352578
-a
-\change_unchanged
-lvulas activadas por cepillos poliméricos sensibles a la calidad del solvente
+ Adiga y Brenner estudiaron teóricamente en una serie de trabajos, nanoválvulas
+ activadas por cepillos poliméricos sensibles a la calidad del solvente
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1021/ma0617522,doi:10.1021/nl025527j,doi:10.1021/nl051843x,jfb3020239"
@@ -2293,13 +1995,8 @@ literal "false"
 
 \begin_layout Standard
 Fortin y Klok ensamblaron un sensor hidráulico utilizando cepillos poliméricos
- sensibles a la glucosa, que se expanden al entrar en contacto espec
-\change_deleted -8664667 1560352612
-i
-\change_inserted -8664667 1560352613
-í
-\change_unchanged
-ficamente con esta molécula
+ sensibles a la glucosa, que se expanden al entrar en contacto específicamente
+ con esta molécula
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1021/am507927w"
@@ -2308,13 +2005,8 @@ literal "false"
 \end_inset
 
 .
- La glucosa se une a los polímeros funcionalizados, oblig
-\change_deleted -8664667 1560352620
-a
-\change_inserted -8664667 1560352622
-á
-\change_unchanged
-ndolos a estirarse y aumentando la altura de los cepillos.
+ La glucosa se une a los polímeros funcionalizados, obligándolos a estirarse
+ y aumentando la altura de los cepillos.
  Esto genera una reducción en el ancho efectivo del canal y se observa una
  disminución sensible del caudal a través del canal.
 \end_layout
@@ -2358,12 +2050,7 @@ literal "false"
  sensibilidad de la compuerta.
  Estos resultados significan grandes avances hacia el desarrollo de nano
  dispositivos con aplicaciones medicinales, donde el transporte de drogas
- encapsuladas a traves de nanoporos revestidos con polímeros es regulad
-\change_inserted -8664667 1560352734
-o
-\change_deleted -8664667 1560352733
-a
-\change_unchanged
+ encapsuladas a traves de nanoporos revestidos con polímeros es regulado
  por medio de cambios en parámetros fisiológicos 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2386,9 +2073,7 @@ literal "false"
 \end_inset
 
  estudiaron por simulaciones de dinámica molecular un canal en forma de
- hendidura
-\change_inserted -8664667 1560352759
- (
+ hendidura (
 \emph on
 slit
 \emph default
@@ -2396,20 +2081,13 @@ slit
 \emph on
 channel
 \emph default
-)
-\change_unchanged
-, con polímeros fijados a la pared y solvente en el seno del sistema.
+), con polímeros fijados a la pared y solvente en el seno del sistema.
  Ellos estudiaron el proceso de apertura y cerrado del canal para diferentes
  afinidades solvente-cepillo, densidad de fijado de las cadenas y longitud
  de las mismas.
  En ese trabajo también se encuentra una relación cercana entre los cambios
  morfológicos del cepillo polimérico y el cambio en el caudal que atraviesa
  el canal.
-
-\change_deleted -8664667 1560360735
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -2448,49 +2126,30 @@ reference "superhidro gota"
  en las interfases líquido-sólido, líquido-vapor y sólido-vapor.
  En el campo experimental se generaron y estudiaron superficies con propiedades
  morfológicas y funcionales notables, mediante la estructuración micro-
- y nano
-\change_deleted -8664667 1560360781
--
-\change_unchanged
-scópica.
+ y nanoscópica.
  Se combinaron jerarquías de estructuras en escalas micro y nano para conseguir
  estructuración bio-mimética, típica de superficies biológicas, como la
  flor de loto, pétalos de flores, o alas de mariposas 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Zhang_12"
+key "Zhang_12,Bixler_12"
 literal "true"
 
 \end_inset
 
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Bixler_12"
-literal "true"
-
-\end_inset
-
-
-\change_inserted -8664667 1560360976
 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -8664667 1560361011
 C: tenés varias refs como esta en que las dos citas no están en la misma
  caja.
- Van a salir con diferentes corchetes
-\change_unchanged
-
+ Van a salir con diferentes corchetes.
+ K: OK, corrijo los q veo
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 .
  La utilidad tecnológica de estas superficies es muy amplia, con propiedades
  auto-limpiantes, hielo-fóbicas, anti-corrosivas y de reducción de fricción,
@@ -2542,19 +2201,7 @@ name "superhidro gota"
 \end_inset
 
 Una gota de líquido depositada sobre una superficie super-hidrofóbica.
- En rojo se muestra c
-\change_inserted -8664667 1560360844
-ó
-\change_deleted -8664667 1560360843
-o
-\change_unchanged
-mo se define el 
-\change_inserted -8664667 1560360848
-á
-\change_deleted -8664667 1560360847
-a
-\change_unchanged
-ngulo de apoyo de la gota.
+ En rojo se muestra cómo se define el ángulo de apoyo de la gota.
  Un ángulo de 
 \begin_inset Formula $\theta=0$
 \end_inset
@@ -2564,24 +2211,16 @@ ngulo de apoyo de la gota.
 \end_inset
 
  corresponde a la gota perfectamente esférica
-\change_inserted -8664667 1560360866
-
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -8664667 1560360883
 C: si no son importantes los efectos gravitaorios.
  Es decir, gota chica
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 .
 \end_layout
 
@@ -2610,13 +2249,8 @@ reference "fig:superhidrofobicidad"
 
 ).
  Existe una relación estrecha entre la superhidrofobicidad y la reducción
- de la fricción de los objetos movi
-\change_inserted -8664667 1560360942
-é
-\change_deleted -8664667 1560360941
-e
-\change_unchanged
-ndose sobre el agua, que ha sido confirmada experimentalmente
+ de la fricción de los objetos moviéndose sobre el agua, que ha sido confirmada
+ experimentalmente
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Shi_07,Choi_06"
@@ -2646,10 +2280,6 @@ literal "true"
 
 \end_inset
 
-
-\change_deleted -8664667 1560360967
- 
-\change_unchanged
 .
  Por otro lado, se ha investigado la importancia de la repulsión dada por
  la incompatibilidad química entre el líquido y la superficie.
@@ -2658,15 +2288,7 @@ literal "true"
  capa de vapor 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "PhysRevLett.82.4671"
-literal "true"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Zhang_12,PhysRevLett.97.266101,:/content/aip/journal/pof2/16/5/10.1063/1.1669400,PhysRevLett.101.226101"
+key "Zhang_12,PhysRevLett.97.266101,:/content/aip/journal/pof2/16/5/10.1063/1.1669400,PhysRevLett.101.226101,PhysRevLett.82.4671"
 literal "true"
 
 \end_inset
@@ -2756,11 +2378,6 @@ literal "true"
 \end_inset
 
 .
-
-\change_deleted -8664667 1560361020
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -2777,14 +2394,8 @@ Simulaciones Computacionales
 \end_layout
 
 \begin_layout Standard
-El abordaje en está tesis de doctorado se realizó 
-\change_deleted -8664667 1560361184
-por 
-\change_inserted -8664667 1560361191
-mediante 
-\change_unchanged
-simulaciones computacionales, lo cual presenta varias ventajas por sobre
- otros métodos
+El abordaje en está tesis de doctorado se realizó mediante simulaciones
+ computacionales, lo cual presenta varias ventajas por sobre otros métodos
 \begin_inset CommandInset citation
 LatexCommand cite
 key "frenkel.md.book.1996"
@@ -2859,37 +2470,12 @@ En está tesis de doctorado se estudian exhaustivamente sistemas compuestos
 , que confinan fluidos en equilibrio y en condiciones de flujo.
  Para abordar el tema se utilizaron simulaciones numéricas mediante la técnica
  de dinámica molecular, utilizando modelos de grano grueso que permiten
- acelerar los tiempos de cómputo, reteniendo la
-\change_inserted -8664667 1560362629
-s propiedades 
-\change_deleted -8664667 1560362626
- 
-\change_unchanged
-físic
-\change_inserted -8664667 1560362631
-o-químicas
-\change_deleted -8664667 1560362536
-a
-\change_unchanged
- esencial
-\change_inserted -8664667 1560362634
-es
-\change_unchanged
- de los sistemas.
+ acelerar los tiempos de cómputo, reteniendo las propiedades físico-químicas
+ esenciales de los sistemas.
  Se investigaron diferentes sistemas, utilizando flujos bifásicos, induciendo
- perfiles de velocidad tipo Couette
-\change_inserted -8664667 1560362654
- (lineal)
-\change_deleted -8664667 1560362650
- 
-\change_unchanged
-y Poiseuille
-\change_inserted -8664667 1560362662
- (cuadrático)
-\change_unchanged
-, variando la densidad y rigidez polimérica de los cepillos para comprender
- de una manera abarcativa la interacción entre los polímeros y el fluido
- confinado.
+ perfiles de velocidad tipo Couette (lineal)y Poiseuille (cuadrático), variando
+ la densidad y rigidez polimérica de los cepillos para comprender de una
+ manera abarcativa la interacción entre los polímeros y el fluido confinado.
  El estudio sistemático de los sistemas en función de la rigidez de las
  cadenas que componen los cepillos poliméricos es una de las características
  distintivas de este trabajo de doctorado, que dio lugar a tres publicaciones
@@ -2902,11 +2488,6 @@ literal "false"
 \end_inset
 
 .
-
-\change_deleted -8664667 1560362682
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -2977,14 +2558,8 @@ literal "false"
  la morfología del cepillo, también se indagó en su influencia sobre el
  flujo de líquido dentro del nanocanal.
  Explorando el espacio de parámetros del sistema se hallaron las magnitudes
- relevantes a los aspectos reol
-\change_inserted -8664667 1560371970
-ó
-\change_deleted -8664667 1560371969
-o
-\change_unchanged
-gicos del sistema y las condiciones en las cuales la rigidez de las cadenas
- tienen un efecto notable sobre el flujo.
+ relevantes a los aspectos reológicos del sistema y las condiciones en las
+ cuales la rigidez de las cadenas tienen un efecto notable sobre el flujo.
 \end_layout
 
 \begin_layout Standard
@@ -3013,20 +2588,8 @@ noprefix "false"
  En este caso el fluido está compuesto por una gota líquida que fluye por
  el canal, en coexistencia con su vapor de gas.
  Es importante comprender el comportamiento de flujos mutifásicos, ya que
- son relevantes para aplicaciones químicas y biotecnol
-\change_inserted -8664667 1560372002
-ó
-\change_deleted -8664667 1560372001
-o
-\change_unchanged
-g
-\change_deleted -8664667 1560372003
-í
-\change_inserted -8664667 1560372004
-i
-\change_unchanged
-cas, permitiendo fenómenos complejos, como reacciones químicas, emulsiones
- e interfases
+ son relevantes para aplicaciones químicas y biotecnológicas, permitiendo
+ fenómenos complejos, como reacciones químicas, emulsiones e interfases
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Shui200735,Rebrov2010"
@@ -3034,37 +2597,20 @@ literal "true"
 
 \end_inset
 
-, con el potencial de 
-\change_deleted -8664667 1560372107
-ser
-\change_unchanged
- ajustarse a las necesidades de aplicaciones tecnológicas.
+, con el potencial de ajustarse a las necesidades de aplicaciones tecnológicas.
  En este caso se realizó un estudio sistemático del flujo en función de
  la rigidez de las cadenas del cepillo polimérico, profundizando en la interfaz
  líquido-medio confinante.
- Hasta este trabajo, no existía en la bibliografía un estudi
-\change_inserted -8664667 1560372135
-o
-\change_deleted -8664667 1560372135
-ó
-\change_unchanged
- exhaustivo y sistemático de cepillos poliméricos semiflexibles en flujo,
- que analice los aspecto reol
-\change_deleted -8664667 1560372145
-o
-\change_inserted -8664667 1560372147
-ó
-\change_unchanged
-gicos y las propiedades de las cadenas, cubriendo todo el rango de durezas
- de las cadenas, desde polímeros totalmente flexibles, hasta varillas rígidas.
+ Hasta este trabajo, no existía en la bibliografía un estudio exhaustivo
+ y sistemático de cepillos poliméricos semiflexibles en flujo, que analice
+ los aspecto reológicos y las propiedades de las cadenas, cubriendo todo
+ el rango de durezas de las cadenas, desde polímeros totalmente flexibles,
+ hasta varillas rígidas.
  Se observó que bajo ciertas condiciones, la rigidez de las cadenas tiene
  un influencia significativa en la velocidad de la gota.
  En este sistema se halló un acoplamiento no trivial entre la dinámica cíclica
- de las cadenas, que esta limitada 
-\change_inserted -8664667 1560372176
-por 
-\change_unchanged
-su rigidez, y la velocidad de transporte de la gota a la largo del nanocanal.
+ de las cadenas, que esta limitada por su rigidez, y la velocidad de transporte
+ de la gota a la largo del nanocanal.
  También se estudió la interacción entre la gota líquida y el gas circundante,
  evaluando la validez del modelo de fuerza de arrastre propocional a la
  velocidad relativa entre la gota y el vapor de gas.
@@ -3107,28 +2653,11 @@ noprefix "false"
  que atraviesan perpendicularmente el canal.
  Al inducir el flujo de líquido mediante un gradiente de presión, estas
  formaciones obstruyen el flujo de líquido a través del canal, conformando
- un estado de bajo 
-\change_deleted -8664667 1560372269
-transporte
-\change_inserted -8664667 1560372270
-caudal
-\change_unchanged
-.
- Bajo ciertas condiciones, estas formaciones pol
-\change_inserted -8664667 1560372279
-i
-\change_deleted -8664667 1560372276
-í
-\change_unchanged
-m
-\change_inserted -8664667 1560372281
-é
-\change_deleted -8664667 1560372280
-e
-\change_unchanged
-ricas que ocupan el centro del canal se desarman al imponer un gradiente
- de presión suficientemente grande, liberando el centro del nanocanal y
- amplificando sensiblemente el caudal (ver figura 
+ un estado de bajo caudal.
+ Bajo ciertas condiciones, estas formaciones poliméricas que ocupan el centro
+ del canal se desarman al imponer un gradiente de presión suficientemente
+ grande, liberando el centro del nanocanal y amplificando sensiblemente
+ el caudal (ver figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:nanovalve"
@@ -3139,27 +2668,8 @@ noprefix "false"
 \end_inset
 
 ).
- Se encontró que la rigidez de los pol
-\change_deleted -8664667 1560372298
-i
-\change_inserted -8664667 1560372300
-í
-\change_unchanged
-m
-\change_deleted -8664667 1560372303
-é
-\change_inserted -8664667 1560372304
-e
-\change_unchanged
-ros juega un rol destacable en el efecto de apertura del canal y 
-\change_inserted -8664667 1560372323
-de la 
-\change_unchanged
-a
-\change_deleted -8664667 1560372315
-p
-\change_unchanged
-mplificación del flujo.
+ Se encontró que la rigidez de los polímeros juega un rol destacable en
+ el efecto de apertura del canal y de la amplificación del flujo.
  También se estudió la respuesta del canal en función de la cantidad de
  cadenas fijadas por unidad de área y en función de la afinidad química
  relativa entre polímeros y el líquido.
@@ -3222,17 +2732,7 @@ noprefix "false"
 
 .
  A bajos gradientes de presión los polímeros anclados a las paredes forman
- estructuras que 
-\change_inserted -8664667 1560372384
-dificultan 
-\change_deleted -8664667 1560372377
-obstruyen
-\change_unchanged
- el flujo
-\change_inserted -8664667 1560372389
- de líquido
-\change_unchanged
-.
+ estructuras que dificultan el flujo de líquido.
  A partir de algún valor límite de presión, las formaciones poliméricas
  se desarman y aumenta sensiblemente el caudal.
 \end_layout
@@ -3261,14 +2761,8 @@ noprefix "false"
 
 \end_inset
 
- también se proponen l
-\change_inserted -8664667 1560372412
-í
-\change_deleted -8664667 1560372411
-i
-\change_unchanged
-neas de investigación para seguir construyendo conocimiento a partir de
- los resultados encontrados a lo largo de este trabajo.
+ también se proponen líneas de investigación para seguir construyendo conocimien
+to a partir de los resultados encontrados a lo largo de este trabajo.
 \end_layout
 
 \begin_layout Chapter
@@ -17194,7 +16688,7 @@ n del canal entre el estado abierto y el estado cerrado.
 \end_layout
 
 \begin_layout Chapter
-Observaciones finales
+Conclusiones 
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Observaciones-finales"
@@ -17216,61 +16710,33 @@ Falta corregir
 
 \begin_layout Standard
 En este trabajo de tesis doctoral se estudió en profundidad la física de
- una nanocanal revestido 
-\change_deleted -8664667 1560373802
-con
-\change_unchanged
- con cepillos poliméricos semiflexibles lleno de fluido mediante simulaciónes
- de dinámica molecular.
+ una nanocanal revestido con cepillos poliméricos semiflexibles lleno de
+ fluido mediante simulaciónes de dinámica molecular.
  La investigación se centró en cepillos poliméricos hidrofóbicos con una
  baja afinidad con el solvente que llena el canal.
- A pesar de 
-\change_deleted -8664667 1560373837
-la
-\change_inserted -8664667 1560373838
-su
-\change_unchanged
- relevancia, los nanocanales en estas condiciones no habían sido estudiados
- exhaustivamente hasta este trabajo.
+ A pesar de su relevancia, los nanocanales en estas condiciones no habían
+ sido estudiados exhaustivamente hasta este trabajo.
  En está tesis se busca analizar y comprender el comportamiento desde los
- grados de libertad moleculares, hasta las cantidades más macro
-\change_inserted -8664667 1560373857
-,
-\change_unchanged
- como el caudal y el ancho efectivo del canal.
+ grados de libertad moleculares, hasta las cantidades más macro, como el
+ caudal y el ancho efectivo del canal.
  El trabajo comienza analizando el comportamiento general del sistema, compuesto
  por un líquido simple confinado entre cepillos poliméricos, y a medida
  que se comprende la fenomenología, nacen nuevas preguntas que guían la
  investigación.
- Si bien han quedado varias puertas abiertas para continuar la l
-\change_inserted -8664667 1560373877
-í
-\change_deleted -8664667 1560373875
-i
-\change_unchanged
-nea de investigación, consideramos que 
-\change_deleted -8664667 1560373886
-se
-\change_unchanged
- hemos logrado correr, aunque sea infinitesinalmente, la frontera del conocimien
-to
-\change_inserted -8664667 1560373897
-
+ Si bien han quedado varias puertas abiertas para continuar la línea de
+ investigación, consideramos que hemos logrado correr, aunque sea infinitesinalm
+ente, la frontera del conocimiento, logrando avances significativos en la
+ comprensión de estos sistemas 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -8664667 1560373969
-<— C: avanzado significativamente en la comprensión de estos sistemas?
-\change_unchanged
-
+<— C: avanzado significativamente en la comprensión de estos sistemas? K:
+ OK
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 .
  Los resultados más relevantes han sido reportados en tres publicaciones
  en revistas internacionales de primer nivel con referato.
@@ -17301,27 +16767,15 @@ En el primer capítulo de esta tesis se estudia de manera exhaustiva al nanocana
  y de la velocidad de paredes.
  En este primer acercamiento al sistema se obtuvieron resultados interesantes
  para continuar explorando el comportamiento en otros contextos.
- Se observó que el líquido no moj
-\change_inserted -8664667 1560374003
-a
-\change_deleted -8664667 1560374003
-ó
-\change_unchanged
- al cepillo en ningún caso y, aún fuera del equilibrio, el líquido fluye
- sobre los polímeros sin penetrar el seno del medio confinante.
+ Se observó que el líquido no moja al cepillo en ningún caso y, aún fuera
+ del equilibrio, el líquido fluye sobre los polímeros sin penetrar el seno
+ del medio confinante.
  El líquido nunca entra contacto con las paredes sólidas del canal, por
  lo tanto no es necesario modelar su rugosidad.
  También se observó que a altas densidades de fijado la rigidez de las cadenas
  no es relevante en la respuesta reológica del sistema, mientras que a bajas
- densidades de fijado hay una dependencia del flujo con la 
-\change_deleted -8664667 1560374042
-dureza
-\change_inserted -8664667 1560374057
-rigidez de flexión 
-\change_deleted -8664667 1560374044
- 
-\change_unchanged
-de los polímeros.
+ densidades de fijado hay una dependencia del flujo con la rigidez de flexiónde
+ los polímeros.
  En este sistema se observó que al presionar a los polímeros axialmente,
  estos adoptan configuraciones muy distintas según su rigidez.
  Es interesante notar que el estiramiento de las cadenas en las direcciones
@@ -17349,27 +16803,16 @@ Paper 2
 \end_layout
 
 \begin_layout Standard
-A partir de lo
-\change_inserted -8664667 1560374091
-s
-\change_unchanged
- resultados obtenidos, se decidió estudiar el flujo bifásico en un nanocanal,
- en función de la rigidez de los polímeros.
- En este caso el fluido está compuesto por una gota que viaja a traves del
+A partir de los resultados obtenidos, se decidió estudiar el flujo bifásico
+ en un nanocanal, en función de la rigidez de los polímeros.
+ En este caso el fluido está compuesto por una gota que viaja a través del
  canal en coexistencia con su vapor de gas.
  El ancho del canal fue ajustado para hacer la comparación manteniendo la
  forma de la gota similar.
  En este contexto, se observó un decrecimiento de la velocidad de transporte
  del líquido al incrementar la rigidez de los polímeros.
- Se observó 
-\change_inserted -8664667 1560374132
-que 
-\change_unchanged
-este fenómeno no estaba ligado a un cambio morfológico, sino a
-\change_deleted -8664667 1560374137
- e
-\change_unchanged
-l comportamiento dinámico colectivo de las cadenas.
+ Se observó que este fenómeno no estaba ligado a un cambio morfológico,
+ sino al comportamiento dinámico colectivo de las cadenas.
  Gracias al estudio sistemático en función de la rigidez de las cadenas,
  se observó que las cadenas más flexibles acompañan el movimiento del líquido
  cuando entran en contacto con el mismo, disminuyendo el rozamiento.
@@ -17409,13 +16852,8 @@ resultó de gran ayuda para entender el comportamiento morfológico del cepillo.
 \end_layout
 
 \begin_layout Standard
-También se estudió la interacción líquido-gas y c
-\change_inserted -8664667 1560374218
-ó
-\change_deleted -8664667 1560374217
-o
-\change_unchanged
-mo varía con la longitud del nanocanal.
+También se estudió la interacción líquido-gas y cómo varía con la longitud
+ del nanocanal.
  El gas adopta un perfil de velocidad que decae exponencialmente a lo largo
  del canal.
  Gracias a las condiciones periódicas de contorno, se puede pensar al sistema
@@ -17446,13 +16884,8 @@ Por último se decidió incluir las interacciones atractivas entre monómeros
 e abierta no confinada, observando una rica diversidad de estructuras en
  función de la rigidez de las cadenas y de la densidad de fijado.
  Luego se estudió este cepillo como revestimiento en un nanocanal lleno
- de líquido, dónde la distancia entre paredes permit
-\change_inserted -8664667 1560374277
-e
-\change_deleted -8664667 1560374277
-a
-\change_unchanged
- el contacto entre cadenas fijadas a sustratos opuestos.
+ de líquido, dónde la distancia entre paredes permite el contacto entre
+ cadenas fijadas a sustratos opuestos.
  El comportamiento de este sistema cambia cualitativamente con la dureza
  de las cadenas.
  Se estudió la conformación de estructuras en equilibrio e imponiendo un
@@ -17460,19 +16893,9 @@ a
  En equilibrio, los polímeros semiflexibles se estiran en la dirección perpendic
 ular a las paredes, formando estructuras que atraviesan, mientras que las
  cadenas totalmente flexibles toman una configuración espacial en forma
- de glóbulo y no 
-\change_deleted -8664667 1560374317
-arman
-\change_inserted -8664667 1560374319
-forman
-\change_unchanged
- estructuras.
- Al inducir el flujo en el canal, las formaciones p
-\change_inserted -8664667 1560374328
-o
-\change_unchanged
-liméricas obstruyen el transporte de líquido, dejando al canal en un estado
- de bajo caudal.
+ de glóbulo y no forman estructuras.
+ Al inducir el flujo en el canal, las formaciones poliméricas obstruyen
+ el transporte de líquido, dejando al canal en un estado de bajo caudal.
  Si el gradiente de presión es suficientemente grande, las estructuras que
  obstruyen el flujo se rompen, las cadenas se inclinan en la dirección de
  las paredes y el caudal aumenta rápidamente.
@@ -17495,50 +16918,50 @@ liméricas obstruyen el transporte de líquido, dejando al canal en un estado
 Luego se estudió la respuesta del sistema en función de la cantidad de cadenas
  por unidad de área y de la afinidad entre el solvente y el cepillo polimérico.
  Se encontró que al aumentar la afinidad solvente-cepillo, la diferencia
- entre los estados de caudal alto y bajo 
-\change_deleted -8664667 1560374405
-se achica
-\change_inserted -8664667 1560374410
-disminuye
-\change_unchanged
-, empobreciendo la respuesta de la válvula.
+ entre los estados de caudal alto y bajo disminuye, empobreciendo la respuesta
+ de la válvula.
  Este resultado coincide con otros estudios en los que investigan el caudal
- de
-\change_deleted -8664667 1560374422
-n
-\change_unchanged
- nanocanales revestidos con cepillos poliméricos en función de la calidad
+ de nanocanales revestidos con cepillos poliméricos en función de la calidad
  del solvente.
  Por otro lado, incrementar la densidad de fijado de cadenas aumenta, casi
  de manera lineal, el valor del gradiente de presión para el cual se abre
  la nanoválvula.
-
-\change_deleted -8664667 1560374776
- 
-\change_inserted -8664667 1560374776
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -8664667 1560374777
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -8664667 1560374820
-Faltaría una oración de "trabajo futuro", otras geometrías ...
- o lo que se te ocurra en base a tu laburo
-\change_unchanged
-
+C: Faltaría una oración de "trabajo futuro", otras geometrías ...
+ o lo que se te ocurra en base a tu laburo.
+ K: OK
 \end_layout
 
 \end_inset
 
 
-\change_unchanged
+\end_layout
 
+\begin_layout Standard
+Durante este trabajo de tesis se iniciaron otras lineas de investigación
+ que no se continuaron debido a restricciones de tiempo.
+ Una de estas es el estudio de gotas de líquido depositadas en un sustrato
+ formado por cepillos poliméricos.
+ En este caso es interesante estudiar el ángulo de contacto de la gota con
+ el cepillo, en función de la rigidez de las cadenas.
+ Otra variable interesante para investigar, es la incidencia de la geometría
+ en la reología de los nanocanales.
+ Por ejemplo, estudiar el flujo de líquido simple en un nanocanal cilíndrico
+ revestido por cepillos poliméricos semiflexibles.
+ Otra linea de investigación que quedó trunca, es el estudio de la sincrinizació
+n de polímeros activos.
+ La idea en este caso es investigar el acople por medio del solvente en
+ cadenas con un movimiento autosustentable.
+\end_layout
+
+\begin_layout Section*
+Reflexiones finales
 \end_layout
 
 \begin_layout Standard
@@ -17546,18 +16969,13 @@ Faltaría una oración de "trabajo futuro", otras geometrías ...
 status open
 
 \begin_layout Plain Layout
-quiza de aca para abajo es más para agradecimientos?
-\change_inserted -8664667 1560374882
- Quizás lo anterior puede ser "Conclusiones" y esto "Observaciones o Reflexiones
- Finales".
+quiza de aca para abajo es más para agradecimientos? Quizás lo anterior
+ puede ser "Conclusiones" y esto "Observaciones o Reflexiones Finales".
  Creo que no es agradecimientos porque estás hablando del trabajo de Tesis,
  aunque fuera del tema específico.
  Agradecimiento los pondría a parte como chapter* Fijate: que hay instrucciones
- del DF sobre como va todo (me mostró Iván)
-\change_deleted -8664667 1560374636
- 
-\change_unchanged
-
+ del DF sobre como va todo (me mostró Iván).
+ K: OK
 \end_layout
 
 \end_inset
@@ -17571,13 +16989,7 @@ Más allá de lo aportes científicos concretos, plasmados en las publicaciones
  otras consecuencias irreversibles.
  Una de ellas es el desarrollo de software de punta.
  Para realizar eficientemente las simulaciones numéricas y analizar los
- datos, se han desarrollado técnicas de c
-\change_inserted -8664667 1560374470
-ó
-\change_deleted -8664667 1560374470
-o
-\change_unchanged
-mputo de alto rendimiento.
+ datos, se han desarrollado técnicas de cómputo de alto rendimiento.
  Este conocimiento acumulado durante años en el trabajo de doctorado seguirá
  siendo utilizado por el grupo de teoría y simulación de materia blanda
  y se encuentra en repositorios públicos.
@@ -17588,11 +17000,6 @@ mputo de alto rendimiento.
 , en vez de aumentar la velocidad de los procesadores, y uno de los programas
  desarrollados en este trabajo utiliza eficientemente los procesadores para
  disminuir el tiempo de simulación.
-
-\change_deleted -8664667 1560374858
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -17606,22 +17013,11 @@ Otra consecuencia de estos años de trabajo es la formación de recursos humanos
  En el proceso de envío y publicación de un artículo se aprende que la presentac
 ión de los resultados y de un hilo conductor puede ser determinante su aceptació
 n e impacto.
-
-\change_deleted -8664667 1560374858
- 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
 Por otro lado, he aprendido a aplicar a becas y subsidios para continuar
- l
-\change_inserted -8664667 1560374561
-í
-\change_deleted -8664667 1560374560
-i
-\change_unchanged
-neas de investigación o para profundizar el conocimiento en algunas técnicas
+ líneas de investigación o para profundizar el conocimiento en algunas técnicas
  relevantes al trabajo de doctorado.
  En 2018 accedí a una beca del Servicio Alemán de Intercambio Académico
  (
@@ -17635,14 +17031,9 @@ DAAD
  También tuve la oportunidad de viajar becado dos veces a Italia, para participa
 r de Workshops de programación en paralelo y manejo de paquetes de código
  abierto.
- Aprender a aplicar para 
-\change_inserted -8664667 1560374621
-recursos
-\change_deleted -8664667 1560374619
-fondos
-\change_unchanged
- y exhibir de manera convincente que esos fondos están siendo bien destinados
- es una habilidad importante también fuera del ambiente científico.
+ Aprender a aplicar para recursos y exhibir de manera convincente que esos
+ fondos están siendo bien destinados es una habilidad importante también
+ fuera del ambiente científico.
 \end_layout
 
 \begin_layout Section*
