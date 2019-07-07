@@ -1,0 +1,69 @@
+Hola Mónica,
+
+mi nombre es Kevin Speyer y estoy terminando mi doctorado en física en la UBA. Quería preguntarte si podrías ser jurado en la defensa de la misma. Ya terminé la escritura de la tesis, así que la fecha de la defensa depende de los tiempos académicos. Estimo que desde que arranque los trámites, serán dos meses. Con mi director, Claudio Pastorino, pensamos en vos, ya que tenés un gran dominio de la técnica utilizada (dinámica molecular) y del objeto de estudio (física de polímeros) de esta tesis. A continuación te dejo un resumen del trabajo de tesis doctoral y las publicaciones de referencia, para que puedas evaluarlo.
+ 
+Título: Estudio por simulación del flujo confinado por cepillos poliméricos semi-flexibles
+
+Director: Dr Claudio Pastorino
+
+
+
+Resumen: En este trabajo de tesis se estudió un sistema compuesto por un fluido confinado en un canal blando, mediante simulaciones de dinámica molecular. El medio confinante está formado por cadenas poliméricas semi-flexibles, fijadas a la a pared del canal por un monómero terminal. La rigidez local de flexión de los polímeros es uno de los elementos principales de esta tesis. Esta favorece configuraciones de cadena más estiradas, oponiendose a las configuraciones de forma globular, favorecidas por la maximización de entropía configuracional para cadenas totalmente flexibles. El sistema es de interés en aplicaciones de microfluídica, nano-estructuración de superficies y en sistemas biológicos. Se utilizaron modelos de grano grueso que describen las características principales de la cadena polimérica y que permiten simular tiempos muchos más largos que los de relajación del sistema. Se implementó un potencial de flexión armónico en los ángulos formados entre uniones de monómeros sucesivos, para estudiar los sistemas en función de la rigidez del cepillo polimérico. Se utilizó el termostato de dissipative particle dynamics para realizar simulaciones en el ensamble canónico (N, V, T) o a temperatura constante, en simulaciones fuera del equilibrio. En gran parte del trabajo de tesis se utilizó una interacción hidrofóbica entre el solvente que llena el canal y los cepillos poliméricos, de manera que el líquido no moja el interior del cepillo. 
+
+
+En este trabajo de tesis doctoral se estudian en profundidad los mecanismos de interacción entre un solvente y los cepillos poliméricos que lo confinan. Se utiliza la detallada información provista por las simulaciones numéricas para desentrañar el complejo acoplamiento entre el medio confinante blando y el solvente, y comprender la reología del sistema.
+
+Publicaciones:
+
+1) Brushes of semiflexible polymers in equilibrium and under flow in a super-hydrophobic regime
+K Speyer, C Pastorino
+Soft Matter 11 (27), 5473-5484
+DOI: 10.1039/C5SM01075F
+
+2) Droplet transport in a nanochannel coated by hydrophobic semiflexible polymer brushes: the effect of chain stiffness
+K Speyer, C Pastorino
+Langmuir 33 (40), 10753-10763
+DOI: 10.1021/acs.langmuir.7b02640.
+
+3) Pressure responsive gating in nanochannels coated by semiflexible polymer brushes
+K Speyer, C Pastorino
+Soft matter 15 (5), 937-946
+DOI: 10.1039/C8SM02388C
+
+Saludos,
+Kevin Speyer
+----------------------------------------------------------------------- 
+
+
+Hola Mario,
+
+mi nombre es Kevin Speyer y actualmente estoy terminando el doctorado en el departamento de física de la UBA. Quería preguntarte si podrías ser jurado de mi trabajo de tesis. El trabajo trata sobre simulación computacional de flujo en nanocanales, revestidos por cepillos poliméricos. Junto a mi director, Claudio Pastorino, pensamos en vos, ya que trabajas en teoría y simulación de materia blanda. Dada tu experiencia científica en nanotecnología y en cepillos poliméricos, creemos que le podes aportar una mirada crítica desde un ángulo interesante. Ya terminé la escritura de la tesis, así que la fecha de la defensa depende de los tiempos académicos. Estimo que desde que arranque los tramites, serán dos meses. A continuación te dejo algunas publicaciones de referencia y el resumen del trabajo, para que puedas evaluarlo.
+
+Título: Estudio por simulación del flujo confinado por cepillos poliméricos semi-flexibles
+
+Director: Dr Claudio Pastorino
+
+
+Resumen: En este trabajo de tesis se estudió un sistema compuesto por un fluido confinado en un canal blando, mediante simulaciones de dinámica molecular. El medio confinante está formado por cadenas poliméricas semi-flexibles, fijadas a la a pared del canal por un monómero terminal. La rigidez local de flexión de los polímeros es uno de los elementos principales de esta tesis. Esta favorece configuraciones de cadena más estiradas, oponiendose a las configuraciones de forma globular, favorecidas por la maximización de entropía configuracional para cadenas totalmente flexibles. El sistema es de interés en aplicaciones de microfluídica, nano-estructuración de superficies y en sistemas biológicos. Se utilizaron modelos de grano grueso que describen las características principales de la cadena polimérica y que permiten simular tiempos muchos más largos que los de relajación del sistema. Se implementó un potencial de flexión armónico en los ángulos formados entre uniones de monómeros sucesivos, para estudiar los sistemas en función de la rigidez del cepillo polimérico. Se utilizó el termostato de dissipative particle dynamics para realizar simulaciones en el ensamble canónico (N, V, T) o a temperatura constante, en simulaciones fuera del equilibrio. En gran parte del trabajo de tesis se utilizó una interacción hidrofóbica entre el solvente que llena el canal y los cepillos poliméricos, de manera que el líquido no moja el interior del cepillo. 
+
+En este trabajo de tesis doctoral se estudian en profundidad los mecanismos de interacción entre un solvente y los cepillos poliméricos que lo confinan. Se utiliza la detallada información provista por las simulaciones numéricas para desentrañar el complejo acoplamiento entre el medio confinante blando y el solvente, y comprender la reología del sistema.
+
+Publicaciones:
+
+1) Brushes of semiflexible polymers in equilibrium and under flow in a super-hydrophobic regime
+K Speyer, C Pastorino
+Soft Matter 11 (27), 5473-5484
+DOI: 10.1039/C5SM01075F
+
+2) Droplet transport in a nanochannel coated by hydrophobic semiflexible polymer brushes: the effect of chain stiffness
+K Speyer, C Pastorino
+Langmuir 33 (40), 10753-10763
+DOI: 10.1021/acs.langmuir.7b02640.
+
+3) Pressure responsive gating in nanochannels coated by semiflexible polymer brushes
+K Speyer, C Pastorino
+Soft matter 15 (5), 937-946
+DOI: 10.1039/C8SM02388C
+
+Saludos,
+Kevin Speyer

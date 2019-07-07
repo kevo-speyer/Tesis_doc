@@ -81,14 +81,88 @@
 
 \begin_body
 
-\begin_layout Title
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename figs/LogoExactasNEGRO.jpg
+	width 30page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+Universidad de Buenos Aires
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Facultad de Ciencias Exactas y Naturales 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Departamento de Física
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size largest
 Estudio por simulación del flujo confinado por cepillos poliméricos semi-flexibl
 es
 \end_layout
 
-\begin_layout Author
-Lic.
- Kevin Speyer
+\begin_layout Standard
+\align center
+
+\size large
+Tesis presentada para optar al título de Doctor de la Universidad de Buenos
+ Aires en el área Ciencias Físicas
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+Kevin Speyer
+\end_layout
+
+\begin_layout Standard
+Director de Tesis: Dr.
+ Claudio Pastorino
+\end_layout
+
+\begin_layout Standard
+Consejero de Estudios: Dra.
+ Marta Ferrado
+\end_layout
+
+\begin_layout Standard
+Lugar de Trabajo: Departamento de la Materia Condensada, Centro Atómico
+ Constituyentes, CNEA
+\end_layout
+
+\begin_layout Standard
+Buenos Aires, 2019 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter*
@@ -112,20 +186,23 @@ En este trabajo de tesis se estudió un sistema compuesto por un fluido confinad
  fijadas a la a pared del canal por un monómero terminal.
  La rigidez local de flexión de los polímeros es uno de los elementos originales
  principales de esta tesis.
- Esta favorece configuraciones de cadena más estiradas, oponiendose a las
+ Esta favorece configuraciones de cadena más estiradas, oponiéndose a las
  configuraciones de forma globular, favorecidas por la maximización de entropía
- configuracional, para cadenas totalmente flexibles, El sistema es de interés
- en aplicaciones de microfluídica, nano-estructuración de superficies y
- en sistemas biológicos.
+ configuracional, para cadenas totalmente flexibles.
+ El sistema es de interés en aplicaciones de microfluídica, nano-estructuración
+ de superficies y en sistemas biológicos.
  Se utilizaron modelos de grano grueso que describen las características
  principales de la cadena polimérica y que permiten simular tiempos muchos
  más largos que los de relajación del sistema.
  Se implementó un potencial de flexión armónico en los ángulos formados
  entre uniones de monómeros sucesivos, para estudiar los sistemas en función
  de la rigidez del cepillo polimérico.
- Se utilizó el termostato de dissipative particle dynamics para realizar
- simulaciones en el ensamble canónico (N, V, T) o a temperatura constante,
- en simulaciones fuera del equilibrio.
+ Se utilizó el termostato de 
+\shape italic
+dissipative particle dynamics
+\shape default
+ para realizar simulaciones en el ensamble canónico (N, V, T) o a temperatura
+ constante, en simulaciones fuera del equilibrio.
  En gran parte del trabajo de tesis se utilizó una interacción hidrofóbica
  entre el solvente que llena el canal y los cepillos poliméricos, de manera
  que el líquido no moja el interior del cepillo.
@@ -186,6 +263,162 @@ En el trabajo de tesis doctoral se estudian en profundidad los mecanismos
  Se utiliza la detallada información provista por las simulaciones numéricas
  para desentrañar el complejo acoplamiento entre el medio confinante blando
  y el solvente, y comprender la reología del sistema.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Palabras clave
+\series default
+: Nanofluídica, Cepillos Poliméricos, Dinámica Molecular
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size largest
+A Simulation study of flow confined between semiflexible polymer brushes
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size largest
+Abstract
+\series default
+\size default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Falta corrgeir
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A system coposed by a fluid confined in a soft matter channel is studied,
+ by means of molecular dynamics simulations.
+ Semiflexible polymer chains tethered by one end to the channel forma polymer
+ brush that constitutes the soft confining material.
+ The inclusion of the local rigidity of the polymers is one of the key original
+ elements in this thesis.
+ Fully flexible polymers tend to adopt globular configurations, due to entropic
+ effects, while semiflexible polymers tend to adpot stretched configurations,
+ due to the bending reigidity.
+ The influence of the bending rigiidity in the flow across the channel is
+ thoroughly studied in this work.
+ This system is of great interest in microfludics, nanopatterning of surfaces,
+ and in biological systems.
+ Coarse-grain models were used to describe the main features of the polymers,
+ which allows to simulate times much larger than the relaxation times of
+ the system.
+ A harmonic bending potential between consecutive beads was implemented
+ to study the system as a function of the stiffnes of the grafted polymers.
+ The Dissipative Particle Dynamycs thermostat was used to perform simulations
+ in the canonical ensemble (
+\begin_inset Formula $N,V,T$
+\end_inset
+
+) or at constant temperature, in non-equilibrium simulations.
+ For a large part of this work, a hydrophobic interaction between polymer
+ brush and solvent was used, such that the liquid does not wet the interior
+ of the brush.
+ This work is divided in three parts, according to the characterisitcs of
+ the system studied.
+ First, a channel filled by a simple liquid is studied in equilibrium and
+ under linear shear conditions (Couette flow).
+ The structure and dynamycs of the confinig matter was investigated, exploring
+ different values for the bending constant of the polymers.
+ The number of tethered chains per unit area and the shear rate was also
+ varied in this system.
+ A detailed studi of the brush-liquid interface was performed, and the penetrati
+on of the liquid in the brush was analyzed.
+ The slip of the solvent over the polymer brush was cuantified, observing
+ a significant slippage.
+ Aditionally, the structure and the dynamycs of the grafted polymer chains
+ are studied for a wide rage of shear rates.
+\end_layout
+
+\begin_layout Standard
+A second studied system is composed of multiphasic flow in a nanochannel,
+ coated by semiflexible polymer brushes.
+ In this case, the fluid is a liquid droplet in coexistence with its vapor
+ in thermodinamic equilibrium.
+ The focus of this study was put in the friction mechanism and in the flow
+ properties of the system.
+ A close and complex connection between the internal brush dynamics and
+ the flow found.
+ Also, the deformation of the polymer brush was studied as a funtion of
+ the bending rigidity, observing a non-trivial response.
+\end_layout
+
+\begin_layout Standard
+Lastly, the behavior of the system was studied for a channel whose width
+ is less than two times the contour length of the polymers grafted to the
+ inside walls.
+ This allows the chains tethered to opposing walls to interact among each
+ other, forming stable structures across the channel.
+ An external force is imposed over all particles in the system, inducing
+ a net flow of liquid that fills the channel.
+ A non-linear behavior of the flow as a function of the external force was
+ observed, due to the polymer structures breaking appart and uncloging the
+ channel.
+ The response of the system is studied as a function of the relevant parameters:
+ the polymer stiffness, the quality of the solvent and the grafting density.
+\end_layout
+
+\begin_layout Standard
+The mechanisms of interaction between the solvent and the confining polymer
+ brush are deeply studied in this doctoral thesis.
+ The detailed information provided by the numerical simulations is utilized
+ to unravel the complex coupling between the confining soft matter and the
+ solvent, and understand the rheologyof the system.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+keywords
+\series default
+: Nanofluidics, Polymer Brushes, Molecular Dynamics
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -195,6 +428,16 @@ status open
 
 \begin_layout Plain Layout
 Corregido
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Introducción
 \end_layout
 
 \end_inset
@@ -407,7 +650,7 @@ s
 \begin{equation}
 \begin{cases}
 Nb=R_{max}\\
-Nb^{2}=\left\langle \overset{\rightharpoonup}{R}_{end}^{2}\right\rangle 
+Nb^{2}=\left\langle \boldsymbol{R}_{end}^{2}\right\rangle 
 \end{cases}\,,
 \end{equation}
 
@@ -2749,6 +2992,16 @@ Corregido
 \end_inset
 
 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Técnica de simulación
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2780,6 +3033,16 @@ Dinámica Molecular
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Dinamica-Molecular"
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Dinámica Molecular
+\end_layout
 
 \end_inset
 
@@ -3406,6 +3669,16 @@ Modelado de interacciones
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Modelado-de-interacciones"
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Modelado de Interacciones
+\end_layout
 
 \end_inset
 
@@ -4929,7 +5202,7 @@ Se muestra la dependencia del potencial de interacción entre la pared y
 \end_layout
 
 \begin_layout Section
-Termostato y conexión con Mecánica estadística
+Termostato y conexión con Mecánica Estadística
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Termostato-y-conexión"
@@ -4937,6 +5210,16 @@ name "sec:Termostato-y-conexión"
 \end_inset
 
  
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Termostato y conexión con Mecánica Estadística
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5233,6 +5516,16 @@ noprefix "false"
 
 \begin_layout Section
 Tratamiento de incertezas
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Tratamiento de incertezas
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5472,6 +5765,17 @@ Esto hace que el tiempo de correlación disminuya fuertemente, siempre que
 \begin_layout Chapter
 Resultados I: Cepillos poliméricos en equilibrio y bajo flujo en régimen
  superhidrofóbico
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Resultados I: Cepillos poliméricos en equilibrio y bajo flujo en régimen
+ superhidrofóbico
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Resultados-I:-Cepillos"
@@ -5492,7 +5796,17 @@ Corregido
 \end_layout
 
 \begin_layout Section
-Sistema estudiado 
+Sistema estudiado
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Sistema estudiado
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
@@ -5667,6 +5981,16 @@ En el panel izquierdo se presenta una captura lateral del sistema de estudio.
 
 \begin_layout Section
 Detalles del sistema y método
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Detalles del sistema y método
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Detalles-del-sistema_3"
