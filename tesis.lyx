@@ -292,7 +292,6 @@ Palabras clave
 
 \series bold
 \size largest
-\lang english
 A Simulation study of flow confined between semiflexible polymer brushes
  
 \end_layout
@@ -301,11 +300,9 @@ A Simulation study of flow confined between semiflexible polymer brushes
 
 \series bold
 \size largest
-\lang english
 Abstract
 \series default
 \size default
-\lang spanish
 
 \begin_inset Note Note
 status open
@@ -320,8 +317,6 @@ Falta corrgeir
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 A system composed by a fluid confined in a soft matter channel is studied,
  by means of molecular dynamics simulations.
  Semiflexible polymer chains tethered by one end to the channel form a polymer
@@ -366,8 +361,6 @@ on of the liquid in the brush was analyzed.
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 A second studied system is composed of multiphasic flow in a nanochannel,
  coated by semiflexible polymer brushes.
  In this case, the fluid is a liquid droplet in coexistence with its vapor
@@ -381,8 +374,6 @@ A second studied system is composed of multiphasic flow in a nanochannel,
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Lastly, the behavior of the system was studied for a channel whose width
  is less than two times the contour length of the polymers grafted to the
  inside walls.
@@ -398,15 +389,11 @@ Lastly, the behavior of the system was studied for a channel whose width
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 The mechanisms of interaction between the solvent and the confining polymer
  brush are deeply studied in this doctoral thesis.
  The detailed information provided by the numerical simulations is utilized
  to unravel the complex coupling between the confining soft matter and the
  solvent, and understand the rheology of the system.
-\lang spanish
-
 \begin_inset Newline newline
 \end_inset
 
@@ -416,7 +403,6 @@ The mechanisms of interaction between the solvent and the confining polymer
 \begin_layout Standard
 
 \series bold
-\lang english
 keywords
 \series default
 : Nanofluidics, Polymer Brushes, Molecular Dynamics
@@ -557,7 +543,7 @@ literal "true"
 
 .
  Los polímeros tienen la particularidad de presentar una conformación espacial
- similar en diferentes escalas de longitud (ver Figura 
+ similar en diferentes escalas de longitud (ver figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Rubinstein-1.14"
