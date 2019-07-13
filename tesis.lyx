@@ -430,7 +430,7 @@ Introducción
 status open
 
 \begin_layout Plain Layout
-Corregido
+K:Corregido y revisado
 \end_layout
 
 \end_inset
@@ -838,7 +838,7 @@ Esta es la ley de Hooke, en la cuál se enuncia que la fuerza ejercida por
  en forma de glóbulo y es poco probable encontrarlos totalmente estirados.
  Con el aumento de la temperatura, las cadenas se contraen de manera más
  marcada.
- Por el contrario, al disminuir la temperatura es más facil estirar las
+ Por el contrario, al disminuir la temperatura es más fácil estirar las
  cadenas.
  Se conoce a los polímeros como resortes entrópicos, ya que el carácter
  de la fuerza restitutiva que tiende a contraer las cadenas nace del término
@@ -890,8 +890,8 @@ blobs
 
  se puede apreciar el estiramiento en la dirección de la fuerza.
  De esta manera, se maximiza la cantidad de configuraciones accesibles a
- la cadena y por lo tanto se logra maximizar la entropía configuracionaldel
- sistema.
+ la cadena y por lo tanto se logra maximizar la entropía configuracional
+ del sistema.
  
 \end_layout
 
@@ -931,8 +931,9 @@ literal "true"
 \end_inset
 
 .
- Estos han sido estudiados ampliamente debido a su potencial aplicación
- tecnológica, importancia en el área de la biofísica y su complejidad teórica
+ Estos han sido estudiados ampliamente debido a su potenciales aplicaciones
+ tecnológicas, su importancia en el área de la biofísica y su complejidad
+ teórica
 \begin_inset CommandInset citation
 LatexCommand cite
 key "POLB:POLB23168"
@@ -992,7 +993,7 @@ literal "true"
 
 .
  Estos también son utilizados en las denominadas ''superficies inteligentes'',
- capaces de modificar de manera reversible las propiedades de una interfaz,
+ capaces de modificar de manera reversible las propiedades de una interfaz
  a partir de estímulos externos, como por ejemplo, pH
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1001,7 +1002,7 @@ literal "true"
 
 \end_inset
 
-, teperatura o calidad del solvente
+, temperatura o calidad del solvente
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Peng_12"
@@ -1012,8 +1013,8 @@ literal "true"
 .
  Los cepillos poliméricos se encuentran en los desarrollos científicos más
  avanzados, desde biointerfaces, sistemas de suministro y liberación controlado
- de medicamentos, films delgados y partículas, que actúan como sensores
- de cantidades pequeñas de analito
+ de medicamentos, films delgados y partículas que actúan como sensores de
+ cantidades pequeñas de analito
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Peng_12"
@@ -1022,9 +1023,9 @@ literal "true"
 \end_inset
 
 .
- Una particularidad de estos sistemas, es que los polímeros se pueden fijar
- a diversas superficies, como la superficie de nanopartículas o en la columna
- vertebral de otros polímeros (
+ Una particularidad de estos sistemas es que los polímeros se pueden fijar
+ a diversas superficies, como la cara exterior de nanopartículas o en la
+ columna vertebral de otros polímeros (
 \shape italic
 bottle-brushes
 \shape default
@@ -1158,7 +1159,8 @@ literal "true"
  Sin embargo, la mayoría de los trabajos se concentran en cadenas totalmente
  flexibles.
  Si el segmento estadístico de Kuhn es comparable con la longitud de contorno
- total del polímero, entonces la rigidez de la cadena no es despreciable.
+ total del polímero, entonces la rigidez de la cadena no es despreciable
+ ya que modifica el comportamiento físico del polímero.
  En estos casos es necesario modelar la rigidez de flexión del polímero
  mediante un potencial actuante entre dos ligaduras consecutivas, que le
  de dureza y reproduzca la correlación orientacional de los segmentos.
@@ -1173,8 +1175,8 @@ noprefix "false"
 \end_inset
 
 , las configuraciones adoptadas por polímeros totalmente flexibles en el
- panela), son sensiblemente distintas a las adoptadas por polímeros semiflexible
-s en el panelb).
+ panel a), son sensiblemente distintas a las adoptadas por polímeros semiflexibl
+es en el panel b).
  Algunos ejemplos de polímeros semiflexibles son el ADN, que presenta una
  longitud de persistencia de aproximadamente 
 \begin_inset Formula $40{\rm nm}$
@@ -1192,7 +1194,7 @@ rm{nm}
 
 \end_inset
 
- y los filamentos de actina (
+, y los filamentos de actina (
 \begin_inset Formula $17\mu m$
 \end_inset
 
@@ -1262,7 +1264,7 @@ literal "true"
 \end_inset
 
  estudiaron, utilizando teoría de campo medio y simulaciones numéricas,
- la respuesta de cepillos poliméricos semiflexibles en flujo, y observaron
+ la respuesta de cepillos poliméricos semiflexibles en flujo y observaron
  un buen acuerdo entre ambos métodos en el régimen de alta rigidez.
  Römer y Fedosov
 \begin_inset CommandInset citation
@@ -1280,7 +1282,7 @@ literal "true"
 
 \end_inset
 
- para altas densidades, pero restingiéndose a polímeros rígidos.
+ para altas densidades, pero restringiéndose a polímeros rígidos.
  En este trabajo
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1647,13 +1649,13 @@ Un aspecto importante en el que se diferencia la microfluídica de la microelect
  que toma el número de Reynolds.
  Esta cantidad adimensional da una idea de la influencia de las fuerzas
  inerciales con respecto a las fuerzas viscosas.
- Es decir que en sistemas típicos de estudio de la microfluídica, los efectos
- inerciales son despreciables frente a los efectos de disipación viscosa.
+ En sistemas típicos de estudio de la microfluídica los efectos inerciales
+ son despreciables frente a los efectos de disipación viscosa.
  Al ser despreciable el término no lineal en la ecuación de Navier-Stokes,
  no se esperan ver inestabilidades o turbulencia en el flujo.
- Si bien esto parece empobrecer el comportamiento, existen otros fenómenos,
- despreciables en la escala macroscópica, que juegan un rol importante en
- este contexto.
+ Si bien esto parece simplificar el comportamiento del fluido, existen otros
+ fenómenos, despreciables en la escala macroscópica, que juegan un rol important
+e en este contexto.
  
 \end_layout
 
@@ -1671,8 +1673,8 @@ literal "true"
 \end_inset
 
 .
- Velocidades de distintos órdenes de magnitud han sido reportadas sobre
- sustratos sólidos en la bibliografía 
+ Velocidades de deslizamiento de distintos órdenes de magnitud han sido
+ reportadas sobre sustratos sólidos en la bibliografía 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "C5SM02546J,Doshi05072005,Lee_14,Suzuki20083414,:/content/aip/journal/pof2/16/5/10.1063/1.1669400,doi:10.1080/00268976.2015.1119899,PhysRevLett.98.226001,PhysRevLett.82.4671,Choi_06,PhysRevLett.101.226101"
@@ -1727,7 +1729,7 @@ C: en realidad
 \begin_inset Formula $R$
 \end_inset
 
- el radio del canal.
+ el radio del canal cilíndrico.
  Si la velocidad del fluido sobre la superficie (
 \begin_inset Formula $v_{s}$
 \end_inset
@@ -1770,7 +1772,7 @@ es de transporte.
 \begin_layout Standard
 Desde distintas disciplinas se están realizando esfuerzos para entender
  y controlar líquidos en la escala de los picolitros, modificando las propiedade
-s del revestimiento interno de las superficies para modificar la interacción
+s del revestimiento interno de las superficies, para modificar la interacción
  con el fluido confinado.
  Existen numerosos factores que afectan el deslizamiento del líquido sobre
  una superficie, incluyendo la mojabilidad, rugosidad, presión, temperatura
@@ -2108,12 +2110,12 @@ nanoválvulas
 Un ejemplo de interés práctico de utilización de polímeros para funcionalizar
  superficies en nanocanales son las nanoválvulas.
  En este caso se disponen cepillos poliméricos sujetos a un sustrato y,
- variando algún parámetro externo, se modifica el estado de conducción en
- el canal entre alto y bajo.
+ variando algún parámetro externo, se modifica el estado del caudal en el
+ canal entre alto y bajo.
  El parámetro externo puede ser el pH del solvente, o la temperatura, o
  las condiciones lumínicas.
  Estos sistemas tienen un funcionamiento que tiene una semejanza al de un
- transistor eléctrico, en el cual la conducción entre dos de sus terminales,
+ transistor eléctrico, en el cual la conducción entre dos de sus terminales
  puede ser ajustada al modificar un estímulo externo (corriente sobre sus
  otras terminales).
  El cambio en el estado de conducción en este caso se produce por una alteración
@@ -2121,10 +2123,18 @@ Un ejemplo de interés práctico de utilización de polímeros para funcionaliza
  Por ejemplo, al variar el pH del solvente, los polímeros sufren una transición
  conocida como 
 \shape italic
-coil-to-globule transition 
+coil-to-globule transition
 \shape default
-en la cual las cadenas pasan de un estado contraído contra el sustrato a
- estar estiradas y ocupar el centro del canal, como se aprecia en la figura
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "C5RA08990E"
+literal "false"
+
+\end_inset
+
+ en la cual las cadenas pasan de un estado contraído contra el sustrato
+ a estar estiradas y ocupar el centro del canal, como se aprecia en la figura
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2222,13 +2232,13 @@ literal "false"
 .
  La glucosa se une a los polímeros funcionalizados, obligándolos a estirarse
  y aumentando la altura de los cepillos.
- Esto genera una reducción en el ancho efectivo del canal y se observa una
- disminución sensible del caudal a través del canal.
+ Esto genera una reducción en el ancho efectivo del canal, observándose
+ una disminución sensible del caudal a través del canal.
 \end_layout
 
 \begin_layout Standard
 Yameen et al.
- diseñaron un nanoporo cónico con las las paredes revestidas con cepillos
+ diseñaron un nanoporo cónico, cuyas paredes están revestidas con cepillos
  poliméricos, obteniendo un dispositivo funcionalizado, altamente sensible
  a cambios químicos 
 \begin_inset CommandInset citation
@@ -2265,7 +2275,7 @@ literal "false"
  sensibilidad de la compuerta.
  Estos resultados significan grandes avances hacia el desarrollo de nano
  dispositivos con aplicaciones medicinales, donde el transporte de drogas
- encapsuladas a traves de nanoporos revestidos con polímeros es regulado
+ encapsuladas a través de nanoporos revestidos con polímeros es regulado
  por medio de cambios en parámetros fisiológicos 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2287,8 +2297,8 @@ literal "false"
 
 \end_inset
 
- estudiaron por simulaciones de dinámica molecular un canal en forma de
- hendidura (
+ estudiaron, por medio de simulaciones de dinámica molecular, un canal en
+ forma de hendidura (
 \emph on
 slit
 \emph default
@@ -2320,8 +2330,8 @@ Superhidrofóbicidad
 
 \begin_layout Standard
 Por otra parte, el interés por superficies super-hidrofóbicas produjo un
- intenso trabajo experimental y teórico en los últimos 10 años, y sus propiedade
-s son muy promisorias tecnológicamente.
+ intenso trabajo de investigación en los últimos 10 años, y sus propiedades
+ son muy promisorias tecnológicamente.
  Se define como super-hidrofóbica una superficie sobre la cual una gota
  allí depositada, marca un angulo mayor a 
 \begin_inset Formula $150^{o}$
@@ -2545,7 +2555,7 @@ Se muestran gotas depositadas sobre sustratos con diferentes rugosidades.
  penetrarlos, y aumentando el ángulo de contacto.
  Al agregar una textura en una escala diferente se logra un mayor ángulo,
  reduciendo el área de contacto líquido superficie.
- Se espera que el líquido resbale sobre esta superficie super-hidrofóbica,
+ Se espera que el líquido resbale sobre esta superficie superhidrofóbica,
  debido a la baja fricción entre ambos.
  Figura obtenida de 
 \begin_inset CommandInset citation
@@ -2579,7 +2589,7 @@ literal "true"
 \end_inset
 
 .
- Recientemente se han desarrollado nuevos métodos para elaborar superficies
+ Recientemente, se han desarrollado nuevos métodos para elaborar superficies
  superhidrofóbicas a pequeña y gran escala, adecuadas para investigación
  básica y para producción industrial.
  A pesar de esto, aún no están claros los mecanismos subyacentes de los
@@ -2663,7 +2673,7 @@ Las simulaciones presentan también algunas limitaciones.
  También puede ser dificultoso simular tiempos o tamaños experimentalmente
  relevantes con el grado de descripción adecuado.
  Esto podría significar tiempos de simulación muy largos, que harían al
- estudio irrealizable.
+ estudio imposible de abordar.
 \end_layout
 
 \begin_layout Standard
@@ -2683,14 +2693,15 @@ Que se estudió en cada capítulo
 En está tesis de doctorado se estudian exhaustivamente sistemas compuestos
  por nanocanales revestidos en su interior con cepillos poliméricos solvofóbicos
 , que confinan fluidos en equilibrio y en condiciones de flujo.
- Para abordar el tema se utilizaron simulaciones numéricas mediante la técnica
- de dinámica molecular, utilizando modelos de grano grueso que permiten
+ Para abordar el tema, se utilizaron simulaciones numéricas mediante la
+ técnica de dinámica molecular, utilizando modelos de grano grueso que permiten
  acelerar los tiempos de cómputo, reteniendo las propiedades físico-químicas
  esenciales de los sistemas.
  Se investigaron diferentes sistemas, utilizando flujos bifásicos, induciendo
- perfiles de velocidad tipo Couette (lineal)y Poiseuille (cuadrático), variando
- la densidad y rigidez polimérica de los cepillos para comprender de una
- manera abarcativa la interacción entre los polímeros y el fluido confinado.
+ perfiles de velocidad tipo Couette (lineal) y Poiseuille (cuadrático),
+ variando la densidad y rigidez polimérica de los cepillos para comprender
+ de una manera abarcativa la interacción entre los polímeros y el fluido
+ confinado.
  El estudio sistemático de los sistemas en función de la rigidez de las
  cadenas que componen los cepillos poliméricos es una de las características
  distintivas de este trabajo de doctorado, que dio lugar a tres publicaciones
@@ -2718,16 +2729,23 @@ noprefix "false"
 
  se detalla la técnica de simulación, así como los modelos utilizados para
  representar las fuerzas y el tratamiento de la incertezas.
- Allí se explica la elección de cada modelo elegido y se introduce el potencial
- de flexión polimérico desarrollado, que se utilizó para estudiar la influencia
- de la rigidez de las cadenas en las condiciones de flujo y en la física
- de los polímeros.
+ Allí se explica la elección de cada modelo de interacción elegido y se
+ introduce el potencial de flexión polimérico desarrollado, que se utilizó
+ para estudiar la influencia de la rigidez de las cadenas en las condiciones
+ de flujo y en la física de los polímeros.
  También se describe el marco teórico en el que se encuadra este trabajo
  y se precisa la conexión entre la mecánica estadística y las simulaciones
  numéricas.
  Dentro de la técnica de simulación se discuten y comparan brevemente las
  técnicas de aceleración de los cómputos numéricos, para minimizar los tiempos
  de las corridas.
+ Cabe mencionar que gran parte del tiempo y esfuerzo en este trabajo fue
+ dirigido a desarrollar y mejorar programas (
+\shape italic
+software
+\shape default
+) para agilizar los tiempos de cómputo, aumentando la eficiencia de los
+ algoritmos en las supercomputadoras disponibles.
 \end_layout
 
 \begin_layout Standard
@@ -2741,18 +2759,19 @@ noprefix "false"
 
 \end_inset
 
- se estudia un nanocanal revestido por cepillos poliméricos lleno de un
- líquido simple en condiciones de equilibrio y flujo.
+ se estudia un nanocanal, revestido por cepillos poliméricos, lleno de un
+ líquido simple en condiciones de equilibrio y en flujo.
  Una particularidad de este sistema es la incompatibilidad química entre
  los polímeros anclados a la pared y el líquido que llena el canal, describiendo
  un cepillo polimérico superhidrofóbico.
  En este capítulo se caracteriza exhaustivamente el sistema con baja afinidad
  líquido-cepillo y sirve como base para enmarcar el resto del trabajo de
- tesis doctoral, en el cual se trabaja mayoritariamente dentro de este régimen.
+ tesis doctoral, en el cual se trabaja mayoritariamente dentro de este régimen
+ hidrofóbico.
  Se indagó el comportamiento en función de variables experimentalmente accesible
 s del sistema: la cantidad de polímeros fijados por unidad de área y la
  intensidad del flujo.
- En este trabajo se estudió por primera un sistema de cepillos poliméricos
+ En este trabajo se estudió por primera vez un sistema de cepillos poliméricos
  superhidrofóbicos semiflexibles, lo que permitió publicar los resultados
  hallados en la revista 
 \shape italic
@@ -2773,8 +2792,8 @@ literal "false"
  la morfología del cepillo, también se indagó en su influencia sobre el
  flujo de líquido dentro del nanocanal.
  Explorando el espacio de parámetros del sistema se hallaron las magnitudes
- relevantes a los aspectos reológicos del sistema y las condiciones en las
- cuales la rigidez de las cadenas tienen un efecto notable sobre el flujo.
+ relevantes a la reología del sistema y las condiciones en las cuales la
+ rigidez de las cadenas tienen un efecto notable sobre el flujo.
 \end_layout
 
 \begin_layout Standard
@@ -2867,8 +2886,8 @@ noprefix "false"
  Los enlaces entre cadenas fijadas a paredes opuestas dan lugar a formaciones
  que atraviesan perpendicularmente el canal.
  Al inducir el flujo de líquido mediante un gradiente de presión, estas
- formaciones obstruyen el flujo de líquido a través del canal, conformando
- un estado de bajo caudal.
+ formaciones obstruyen el flujo de líquido a través del canal, dando lugar
+ a un estado de bajo caudal.
  Bajo ciertas condiciones, estas formaciones poliméricas que ocupan el centro
  del canal se desarman al imponer un gradiente de presión suficientemente
  grande, liberando el centro del nanocanal y amplificando sensiblemente
