@@ -5,6 +5,9 @@
 \save_transient_properties true
 \origin unavailable
 \textclass extbook
+\begin_preamble
+
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language spanish
@@ -289,6 +292,7 @@ Palabras clave
 
 \series bold
 \size largest
+\lang english
 A Simulation study of flow confined between semiflexible polymer brushes
  
 \end_layout
@@ -297,9 +301,11 @@ A Simulation study of flow confined between semiflexible polymer brushes
 
 \series bold
 \size largest
+\lang english
 Abstract
 \series default
 \size default
+\lang spanish
 
 \begin_inset Note Note
 status open
@@ -314,16 +320,18 @@ Falta corrgeir
 \end_layout
 
 \begin_layout Standard
-A system coposed by a fluid confined in a soft matter channel is studied,
+
+\lang english
+A system composed by a fluid confined in a soft matter channel is studied,
  by means of molecular dynamics simulations.
- Semiflexible polymer chains tethered by one end to the channel forma polymer
- brush that constitutes the soft confining material.
+ Semiflexible polymer chains tethered by one end to the channel form a polymer
+ brush that confines the solvent inside the channel.
  The inclusion of the local rigidity of the polymers is one of the key original
  elements in this thesis.
  Fully flexible polymers tend to adopt globular configurations, due to entropic
- effects, while semiflexible polymers tend to adpot stretched configurations,
- due to the bending reigidity.
- The influence of the bending rigiidity in the flow across the channel is
+ effects, while semiflexible polymers tend to adopt stretched configurations,
+ due to the bending rigidity.
+ The influence of the bending rigidity in the flow across the channel is
  thoroughly studied in this work.
  This system is of great interest in microfludics, nanopatterning of surfaces,
  and in biological systems.
@@ -331,7 +339,7 @@ A system coposed by a fluid confined in a soft matter channel is studied,
  which allows to simulate times much larger than the relaxation times of
  the system.
  A harmonic bending potential between consecutive beads was implemented
- to study the system as a function of the stiffnes of the grafted polymers.
+ to study the system as a function of the stiffness of the grafted polymers.
  The Dissipative Particle Dynamycs thermostat was used to perform simulations
  in the canonical ensemble (
 \begin_inset Formula $N,V,T$
@@ -341,36 +349,40 @@ A system coposed by a fluid confined in a soft matter channel is studied,
  For a large part of this work, a hydrophobic interaction between polymer
  brush and solvent was used, such that the liquid does not wet the interior
  of the brush.
- This work is divided in three parts, according to the characterisitcs of
+ This work is divided in three parts, according to the characteristics of
  the system studied.
  First, a channel filled by a simple liquid is studied in equilibrium and
  under linear shear conditions (Couette flow).
- The structure and dynamycs of the confinig matter was investigated, exploring
+ The structure and dynamics of the confining matter was investigated, exploring
  different values for the bending constant of the polymers.
  The number of tethered chains per unit area and the shear rate was also
  varied in this system.
- A detailed studi of the brush-liquid interface was performed, and the penetrati
+ A detailed study of the brush-liquid interface was performed, and the penetrati
 on of the liquid in the brush was analyzed.
- The slip of the solvent over the polymer brush was cuantified, observing
+ The slip of the solvent over the polymer brush was quantified, observing
  a significant slippage.
- Aditionally, the structure and the dynamycs of the grafted polymer chains
+ Additionally, the structure and the dynamics of the grafted polymer chains
  are studied for a wide rage of shear rates.
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 A second studied system is composed of multiphasic flow in a nanochannel,
  coated by semiflexible polymer brushes.
  In this case, the fluid is a liquid droplet in coexistence with its vapor
- in thermodinamic equilibrium.
+ in thermodynamic equilibrium.
  The focus of this study was put in the friction mechanism and in the flow
  properties of the system.
  A close and complex connection between the internal brush dynamics and
  the flow found.
- Also, the deformation of the polymer brush was studied as a funtion of
+ Also, the deformation of the polymer brush was studied as a function of
  the bending rigidity, observing a non-trivial response.
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Lastly, the behavior of the system was studied for a channel whose width
  is less than two times the contour length of the polymers grafted to the
  inside walls.
@@ -379,18 +391,22 @@ Lastly, the behavior of the system was studied for a channel whose width
  An external force is imposed over all particles in the system, inducing
  a net flow of liquid that fills the channel.
  A non-linear behavior of the flow as a function of the external force was
- observed, due to the polymer structures breaking appart and uncloging the
+ observed, due to the polymer structures breaking apart and unclogging the
  channel.
  The response of the system is studied as a function of the relevant parameters:
  the polymer stiffness, the quality of the solvent and the grafting density.
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 The mechanisms of interaction between the solvent and the confining polymer
  brush are deeply studied in this doctoral thesis.
  The detailed information provided by the numerical simulations is utilized
  to unravel the complex coupling between the confining soft matter and the
- solvent, and understand the rheologyof the system.
+ solvent, and understand the rheology of the system.
+\lang spanish
+
 \begin_inset Newline newline
 \end_inset
 
@@ -400,6 +416,7 @@ The mechanisms of interaction between the solvent and the confining polymer
 \begin_layout Standard
 
 \series bold
+\lang english
 keywords
 \series default
 : Nanofluidics, Polymer Brushes, Molecular Dynamics
