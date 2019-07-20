@@ -75,11 +75,12 @@
 \papercolumns 1
 \papersides 2
 \paperpagestyle default
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author -8664667 "Claudio Pastorino"
 \end_header
 
 \begin_body
@@ -174,7 +175,7 @@ Resumen
 status open
 
 \begin_layout Plain Layout
-Corregido y revisado
+Corregido
 \end_layout
 
 \end_inset
@@ -187,18 +188,25 @@ En este trabajo de tesis se estudió un sistema compuesto por un fluido confinad
  en un canal blando, mediante simulaciones de dinámica molecular.
  El medio confinante está formado por cadenas poliméricas semi-flexibles,
  fijadas a la a pared del canal por un monómero terminal.
- Se genera de esta forma una monocapa de polímeros fijados a la pared denominada
+ 
+\change_inserted -8664667 1563373945
+Se genera de esta forma una monocapa de polímeros fijados a la pared denominada
  cepillo polimérico.
- La rigidez local de flexión de los polímeros es uno de los elementos originales
+ 
+\change_unchanged
+La rigidez local de flexión de los polímeros es uno de los elementos originales
  principales de esta tesis.
  Esta favorece configuraciones de cadena más estiradas, oponiéndose a las
  configuraciones de forma globular, favorecidas por la maximización de entropía
  configuracional, para cadenas totalmente flexibles.
  El sistema es de interés en aplicaciones de microfluídica, nano-estructuración
  de superficies y en sistemas biológicos.
- Se utilizaron modelos de grano grueso que describen con potenciales sencillos
- las características principales de la cadena polimérica y que permiten
- simular tiempos muchos más largos que los de relajación del sistema.
+ Se utilizaron modelos de grano grueso que describen 
+\change_inserted -8664667 1563373990
+con potenciales sencillos 
+\change_unchanged
+las características principales de la cadena polimérica y que permiten simular
+ tiempos muchos más largos que los de relajación del sistema.
  Se implementó un potencial de flexión armónico en los ángulos formados
  entre uniones de monómeros sucesivos, para estudiar los sistemas en función
  de la rigidez del cepillo polimérico.
@@ -227,7 +235,11 @@ o siempre un resbalamiento (
 \emph on
 slip
 \emph default
-)apreciable.
+)
+\change_inserted -8664667 1563374077
+ 
+\change_unchanged
+apreciable.
  Adicionalmente, se estudió cómo se modifica la estructura y la dinámica
  del cepillo polimérico ante la presencia del flujo.
 \end_layout
@@ -242,7 +254,11 @@ s de fricción y transporte del líquido.
  Se halló una estrecha y compleja relación entre la dinámica interna del
  cepillo polimérico y el flujo sobre el mismo.
  También se estudió la deformación del cepillo en función de la constante
- de rigidez local de los polímeros, obteniendo una respuesta no trivial.
+ de rigidez 
+\change_inserted -8664667 1563374117
+local 
+\change_unchanged
+de los polímeros, obteniendo una respuesta no trivial.
 \end_layout
 
 \begin_layout Standard
@@ -267,8 +283,11 @@ En el trabajo de tesis doctoral se estudian en profundidad los mecanismos
  de interacción entre un solvente y los cepillos poliméricos que lo confinan.
  Se utiliza la detallada información provista por las simulaciones numéricas
  para desentrañar el complejo acoplamiento entre el medio confinante blando
- y el solvente, y comprender la reología del sistema y las propiedades de
- flujo.
+ y el solvente, y comprender la reología del sistema
+\change_inserted -8664667 1563374194
+ y las propiedades de flujo
+\change_unchanged
+.
 \begin_inset Newline newline
 \end_inset
 
@@ -304,6 +323,19 @@ A Simulation study of flow confined between semiflexible polymer brushes
 \series bold
 \size largest
 Abstract
+\series default
+\size default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Falta corrgeir
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -926,7 +958,39 @@ literal "true"
  teórica
 \begin_inset CommandInset citation
 LatexCommand cite
-key "POLB:POLB23168,raey,10.1038/370634a0,pastorino:064902,0295-5075-81-2-28002"
+key "POLB:POLB23168"
+literal "true"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "raey"
+literal "true"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "10.1038/370634a0"
+literal "true"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pastorino:064902"
+literal "true"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "0295-5075-81-2-28002"
 literal "true"
 
 \end_inset
@@ -2966,7 +3030,7 @@ name "chap:Técnica-de-simulación"
 status open
 
 \begin_layout Plain Layout
-Corregido y revisado
+Corregido
 \end_layout
 
 \end_inset
@@ -2996,13 +3060,13 @@ literal "true"
 
 , que fue la utilizada para estudiar los sistemas físicos de interés.
  Se discuten brevemente los algoritmos más importantes, las dificultades
- en su implementación y sus soluciones.
+ y sus soluciones.
  También se desarrollan los modelos de interacciones de grano grueso, utilizados
  para simular las fuerzas entre las partículas del sistema estudiado y se
  introducen cantidades de interés que serán utilizadas a lo largo de todo
  el trabajo.
- Luego se presenta el termostato con el cuál se mantuvo la condición termodinámi
-ca de temperatura constante y su conexión con la mecánica estadística.
+ Luego se presenta termostato con el cuál se mantuvo la condición termodinámica
+ de temperatura constante y su conexión con la mecánica estadística.
  Más adelante se explica cómo es el proceso de medición de una cantidad
  física y la estimación de su incerteza en una corrida.
  
@@ -3037,9 +3101,9 @@ En este trabajo se realizaron simulaciones numéricas de grano grueso con
  mediante la integración numérica de dichas ecuaciones.
  Primero se inicializa el sistema, ubicando cada partícula en una posición
  inicial.
- Para moléculas lineales, la posición inicial de cada monómero es elegida
- de acuerdo a una caminata al azar en el espacio, de manera de obtener una
- configuración cercana a al equilibrio.
+ Para moléculas lineales, la posición inicial es elegida de acuerdo a una
+ caminata al azar en el espacio, de manera de obtener una configuración
+ cercana a al equilibrio.
  Para partículas sueltas, se puede elegir simplemente un punto aleatorio
  dentro de la caja de simulación como posición inicial.
  Las velocidades iniciales son seleccionadas de una distribución Maxwell-Boltzma
@@ -3174,9 +3238,9 @@ literal "false"
 ias de cada una de las partículas las que se quieren conocer con exactitud,
  sino las magnitudes físicas macroscópicas y comportamiento medio de las
  partículas.
- Por esta razón es importante que la trayectoria del sistema en el espacio
- de fases sea compatible con las restricciones dadas en el ensamble en el
- cuál se esté trabajando.
+ Por esta razón es que es importante que la trayectoria del sistema en el
+ espacio de fases sea compatible con las restricciones dadas en el ensamble
+ en el cuál se esté trabajando.
  Si se trabaja en el ensamble canónico, que la temperatura se mantenga constante
  durante toda la experiencia, es una condición necesaria para saber que
  se están integrando correctamente las ecuaciones de movimiento.
@@ -3198,17 +3262,16 @@ nes.
  otra.
  Esta estrategia funciona de manera eficaz para situar el primer monómero
  de un polímero anclado a una superficie.
- Para asignar las posiciones iniciales de todos los monómeros de un cepillo
+ Para sortear las posiciones iniciales de todos los monómeros de un cepillo
  polimérico, primero se sitúan los monómeros terminales sobre la superficie,
- de manera tal que no haya solapamientos con otros monómeros terminales,
- y luego se crecen los monómeros subsiguientes de cada cadena polimérica,
- siguiendo una caminata al azar.
+ de manera tal que no haya solapamientos, y luego se crecen los monómeros
+ subsiguientes de cada cadena polimérica, siguiendo una caminata al azar.
 \end_layout
 
 \begin_layout Standard
-Sin embargo, para densidades altas, como es el caso al tratar líquidos,
- este método no es eficiente, porque la probabilidad de que la partícula
- sea reasignada a una posición suficientemente lejana a las demás es pequeña.
+Sin embargo para densidades altas, como es el caso al tratar líquidos, este
+ método no es eficiente, porque la probabilidad de que la partícula sea
+ reasignada a una posición suficientemente lejana a las demás es pequeña.
  Para resolver el inconveniente se utilizó una técnica denominada 
 \shape italic
 Force Switch on
@@ -3238,14 +3301,14 @@ Force Switch on
 \begin_inset Formula $r_{min}$
 \end_inset
 
- disminuye lentamente con el tiempo hasta llegar a cero, y a partir de ese
+ disminuye lealmente con el tiempo hasta llegar a cero, y a partir de ese
  momento la fuerza utilizada es la correspondiente al modelo.
  Es conveniente elegir un tiempo de encendido suficientemente largo, para
  que no haya superposición entre partículas al finalizar al rutina de encendido
  de fuerza.
- Por el contrario, si se elige un tiempo excesivamente largo, se está desperdici
-ando tiempo de cómputo, ya que el sistema demora más en alcanzar el estado
- de equilibrio.
+ Pero si se elige un tiempo excesivamente largo, se está desperdiciando
+ tiempo de cómputo, ya que el sistema demora más en alcanzar el estado de
+ equilibrio.
 \end_layout
 
 \begin_layout Standard
@@ -3474,11 +3537,11 @@ Cell Linked List
 \end_inset
 
 .
- Es decir, que en promedio, el método de celdas realiza 
+ Es decir, que en promedio, el método de celdas computa 
 \begin_inset Formula $N_{linked-list}/N_{verlet}=\frac{3·27}{4\pi}\backsimeq6.5$
 \end_inset
 
- veces más cómputos de distancias.
+ veces más distancias.
  Sin embargo, el método de listas enlazadas tiene la ventaja de no tener
  que rearmar nunca la lista de vecinos completa.
  Cada vez que una partícula sale de una celda y entra en otra, simplemente
@@ -3534,8 +3597,8 @@ name "fig:Time_vs_threads"
 Comparación entre los métodos de listas enlazadas y lista de Verlet para
  optimizar el cálculo de interacciones entre pares.
  El sistema está compuesto por 90000 partículas, que interactúan por medio
- de un potencial de Lennard-Jones en una caja cúbica de lado
-\begin_inset Formula $50\sigma$
+ de un potencial de Lennard-Jones en una caja de dimensiones 
+\begin_inset Formula $50\sigma\times50\sigma\times50\sigma$
 \end_inset
 
 .
@@ -3579,12 +3642,7 @@ Verlet List
  en mucho más rápido que el de listas enlazadas.
  A medida que se utilizan más nucleos para los cálculos, el tiempo para
  completar la simulación baja rápidamente en el caso de celdas enlazadas,
- llegando a ser un 25% más rápido que el método de Verlet para 12 hilos
- (
-\shape italic
-threads
-\shape default
-).
+ llegando a ser un 25% más rápido que el método de Verlet para 12 hilos.
  Esto también se puede ver en la Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3766,7 +3824,7 @@ noprefix "false"
  la fuerza con todos los monómeros, que en el caso de usar condiciones periódica
 s de contorno, serían infinitos.
  El desplazamiento del potencial es necesario para que el mismo sea continuo
- y no haya saltos en el cálculo de la energía.
+ y que no haya saltos en el cálculo de la energía.
  En todos los casos se utilizó 
 \begin_inset Formula $\sigma=1$
 \end_inset
@@ -3824,8 +3882,6 @@ Potencial de interacción de Lennard-Jonnes truncado y desplazado.
 \end_inset
 
 , que resulta puramente repulsivo.
- Las líneas punteadas indican la distancia a la cual el potencia se hace
- cero.
 \end_layout
 
 \end_inset
@@ -4617,7 +4673,7 @@ Si ahora se considera una cadena más larga, el cálculo de la fuerza de flexió
 \begin_layout Standard
 Cabe mencionar que este no es el único potencial utilizado para modelar
  la rigidez en moléculas lineales.
- Otra opción comúnmente utilizada es tomar la energía de flexión como 
+ Otra opción comunmente utilizada es tomar la energía de flexión como 
 \begin_inset Formula $U(\theta)=k_{f}(1-cos\,\theta)$
 \end_inset
 
@@ -4771,7 +4827,7 @@ La constante de flexión
  Para presentar los resultados, es conveniente utilizar otra medida de la
  rigidez que sea físicamente más relevante y, preferiblemente, adimensional.
  La cantidad utilizada para medir la rigidez es el cociente entre la longitud
- de persistencia 
+ de de persistencia 
 \begin_inset Formula $l_{p}$
 \end_inset
 
@@ -5491,7 +5547,7 @@ noprefix "false"
 \begin_inset Formula $\hat{x}$
 \end_inset
 
-) que aparta del equilibrio al sistema, para medir la temperatura:
+) que apartan del equilibrio al sistema, para medir la temperatura:
 \begin_inset Formula 
 \begin{equation}
 <T>=\frac{\underset{i=1}{\overset{N}{\sum}}m_{i}<v_{y}{}_{i}^{2}>}{Nk_{B}}=\frac{\underset{i=1}{\overset{N}{\sum}}m_{i}<v_{z}{}_{i}^{2}>}{Nk_{B}}
@@ -5541,7 +5597,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\bar{A}_{\tau}\equiv\frac{1}{\tau}\int_{0}^{\tau}A(\boldsymbol{r}_{1}(t),...,\boldsymbol{r}_{N}(t),\boldsymbol{v}_{1}(t),...,\boldsymbol{v}_{N}(t))dt\,,
+\bar{A}_{\tau}=\frac{1}{\tau}\int_{0}^{\tau}A(\boldsymbol{r}_{1}(t),...,\boldsymbol{r}_{N}(t),\boldsymbol{v}_{1}(t),...,\boldsymbol{v}_{N}(t))dt
 \end{equation}
 
 \end_inset
@@ -5775,7 +5831,7 @@ name "chap:Resultados-I:-Cepillos"
 status open
 
 \begin_layout Plain Layout
-Corregido y revisado 3.1, 3.2
+Corregido
 \end_layout
 
 \end_inset
@@ -5862,7 +5918,7 @@ noprefix "false"
 \end_inset
 
  se presentan los detalles del sistema estudiado, así como la metodología
- para los medir las distintas cantidades.
+ para ataca los medir las distintas cantidades.
  En la sección 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5943,7 +5999,7 @@ En el panel izquierdo se presenta una captura lateral del sistema de estudio.
 \end_inset
 
 , sujetan a los polímeros (en rojo) por un monómero terminal (verde).
- Las partículas de líquido están representadas en blanco.
+ Las partículas de líquido está representadas en blanco.
  Esta figura corresponde a una densidad de fijado
 \begin_inset Formula $\rho_{g}=0.05\sigma^{-2}$
 \end_inset
@@ -6010,6 +6066,11 @@ C: todo esto no está en el capítulo de metodología? Sugiero no ponerlo K:
  Los valores de los parámetros usados en este capítulo hay que ponerlos
  y me parece mejor que estén las fórmulas acá, asi el lector no tiene q
  ir a buscarlas a otro capitulo
+\change_inserted -8664667 1563374620
+.
+ C: OK
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -6019,7 +6080,7 @@ C: todo esto no está en el capítulo de metodología? Sugiero no ponerlo K:
 
 \begin_layout Standard
 Los polímeros se anclan a la pared, asegurando un monómero terminal de la
- cadena a una posición fija del sustrato.
+ cadena a una posición fijada del sustrato.
  La conectividad entre los monómeros pertenecientes a un mismo polímero
  se da mediante el potencial FENE, descrito en la sección 
 \begin_inset CommandInset ref
@@ -6065,7 +6126,8 @@ donde los superíndices
 \end_inset
 
  para incluir la parte atractiva del potencial, mientras que para las interaccio
-nes polímero-polímero el radio de corte es puramente repulsivo 
+nes polímero-polímero el radio de corte para esta interacción es puramente
+ repulsivo 
 \begin_inset Formula $r_{C}^{(pp)}=1.12\sigma$
 \end_inset
 
@@ -6242,8 +6304,8 @@ literal "false"
 
 \end_inset
 
- para integrar las ecuaciones de movimiento, con intervalos temporales en
- el rango 
+ para integrar las ecuacinoes de movimiento, con intervalos temporales en
+ el rengo 
 \begin_inset Formula $2\text{·}10^{-4}\tau\leq dt\leq5\text{·}10^{-4}\tau$
 \end_inset
 
@@ -6318,7 +6380,7 @@ CANTIDAD DE PARTÍCULAS para llenar el canal
 
 \begin_layout Standard
 En este capítulo se estudian sistemas con distintas densidades de fijado
- y rigideces de cadenas.
+ de cadenas y rigideces de las cadenas.
  Para poder comparar cuantitativamente el comportamiento de los distintos
  sistemas, es conveniente definir una magnitud para mantener constante en
  todas las muestras.
@@ -6365,7 +6427,7 @@ VELOCIDAD PARED
 \end_layout
 
 \begin_layout Standard
-El sistema se perturbó fuera del equilibrio moviendo ambas paredes a velocidad
+El sistema se perturbó fuera del equilibrio moviendo las paredes a velocidad
  constante en la dirección 
 \begin_inset Formula $\hat{x}$
 \end_inset
@@ -6467,9 +6529,8 @@ C_{i}(t)=\frac{\left\langle \left(R_{i}(0)-\left\langle R_{i}\right\rangle \righ
 \end_inset
 
 ).
- No se pretende estudiar en profundidad la compleja dinámica interna de
- estas cadenas, sino obtener una estimación del tiempo de relajación de
- las mismas.
+ No se pretende estudiar la compleja dinámica interna de estas cadenas,
+ sino obtener una estimación del tiempo de relajación de las mismas.
  Sería interesante conducir en un futuro una investigación profunda sobre
  la dinámica de estas cadenas rígidas.
 \end_layout
@@ -7241,19 +7302,6 @@ Perfiles de densidad del fluido (lineas negras punteadas) y del cepillo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Mencionar cantidades típicas medidas: Rend-to-end
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Un factor importante en la morfología del cepillo es la cantidad de cadenas
  fijadas por unidad de área 
 \begin_inset Formula $\rho_{g}$
@@ -7285,12 +7333,6 @@ noprefix "false"
 \end_inset
 
 , para los cuatro valores de rigideces utilizados en este capítulo.
- Cada polímero tiene un vector
-\begin_inset Formula $\boldsymbol{R}_{end}$
-\end_inset
-
- asociado, que va desde el monómero terminal fijado a la pared, hasta el
- monómero terminal libre.
  Para cadenas flexibles 
 \begin_inset Formula $k_{b}\ll k_{B}T$
 \end_inset
@@ -7357,6 +7399,19 @@ noprefix "false"
 .
  También se aprecia que para todas la densidades de fijado, la altura del
  cepillo crece monótonamente con la rigidez de las cadenas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Mencionar cantidades típicas medidas: Rend-to-end
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -9583,6 +9638,10 @@ K: OK, veo que hago.
 
  es laburo, tengo q encontrar un tiempo para hacerlo.
  K: Listo 2 gráficos queda mejor!
+\change_inserted -8664667 1563374699
+ C: OK
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -12007,6 +12066,11 @@ status open
 Aca podría ir una figura del cyclic motion de un polímero C: Si.
  te puedo pasar un grafico del JCP 14.
  K: Creo q esta va bien
+\change_inserted -8664667 1563374378
+.
+ C: Ok
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -12287,6 +12351,10 @@ C: capa límite está muy asociado, creo, a frontera entre flujo laminar y
  Le cambiaría el nombre para no inducir a pensar que estamos hablando de
  eso.
  K: Cambiado por capa interfacial
+\change_inserted -8664667 1563374394
+ OK
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -17480,8 +17548,13 @@ C: Faltaría una oración de "trabajo futuro", otras geometrías ...
 \end_layout
 
 \begin_layout Standard
-Durante este trabajo de tesis se iniciaron otras líneas de investigación
- que no se continuaron debido a restricciones de tiempo.
+Durante este trabajo de tesis se iniciaron otras l
+\change_inserted -8664667 1563542244
+í
+\change_deleted -8664667 1563542244
+i
+\change_unchanged
+neas de investigación que no se continuaron debido a restricciones de tiempo.
  Una de estas es el estudio de gotas de líquido depositadas en un sustrato
  formado por cepillos poliméricos.
  En este caso es interesante estudiar el ángulo de contacto de la gota con
@@ -17490,8 +17563,25 @@ Durante este trabajo de tesis se iniciaron otras líneas de investigación
  en la reología de los nanocanales.
  Por ejemplo, estudiar el flujo de líquido simple en un nanocanal cilíndrico
  revestido por cepillos poliméricos semiflexibles.
- Otra línea de investigación que se comenzó y puede continuarse en el futuro,
- es el estudio de la sincronización de polímeros activos.
+ Otra l
+\change_inserted -8664667 1563542235
+í
+\change_deleted -8664667 1563542234
+i
+\change_unchanged
+nea de investigación que 
+\change_inserted -8664667 1563542275
+se comenzó y puede continuarse en el futuro
+\change_deleted -8664667 1563542262
+quedó trunca
+\change_unchanged
+, es el estudio de la sincr
+\change_inserted -8664667 1563542256
+o
+\change_deleted -8664667 1563542254
+i
+\change_unchanged
+nización de polímeros activos.
  La idea en este caso es investigar el acople por medio del solvente en
  cadenas con un movimiento autosustentable.
 \end_layout
