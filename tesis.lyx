@@ -220,7 +220,7 @@ dissipative particle dynamics
  diferentes valores de rigidez para los polímeros.
  También se varió la cantidad de polímeros fijados a la pared del canal
  por unidad de área y la velocidad de las paredes.
- Se caracterizó la interfaz líquido-cepillo y se analizó la penetración
+ Se caracterizó la interfase líquido-cepillo y se analizó la penetración
  del fluido en los intersticios del medio confinante.
  Se cuantificó el deslizamiento del líquido sobre el medio confinante, observand
 o siempre un resbalamiento (
@@ -849,7 +849,7 @@ Bajo este régimen (
 \begin_inset Formula $\xi$
 \end_inset
 
-, como se puede observar en la Figura 
+, como se puede observar en la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:DeGennes-1.10."
@@ -951,7 +951,7 @@ literal "true"
 
 .
  Estos también son utilizados en las denominadas ''superficies inteligentes'',
- capaces de modificar de manera reversible las propiedades de una interfaz
+ capaces de modificar de manera reversible las propiedades de una interfase
  a partir de estímulos externos, como por ejemplo, pH
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1170,7 +1170,7 @@ literal "true"
 \end_inset
 
 , y el flujo de líquidos simples o complejos confinados en canales recubiertos
- por cepillos, en función de la densidad de fijado, propiedades de la interfaz
+ por cepillos, en función de la densidad de fijado, propiedades de la interfase
  e intensidad del flujo
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1320,7 +1320,7 @@ literal "true"
 
 \end_inset
 
- (ver Figura 
+ (ver figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:.glicocalix"
@@ -1568,7 +1568,7 @@ status open
 \begin_layout Plain Layout
 Una sofisticada red de microcanales permite la paralelización y automatización
  de procesos químicos y biológicos.
- En la Figura se muestra un chip integrado para medir interacciones proteicas.
+ En la figura se muestra un chip integrado para medir interacciones proteicas.
  Las líneas de color manipulan las válvulas, que al cerrarse y abrirse dirigen
  soluciones reactivas a través de los canales sin colorear, hacia las cámaras
  circulares para ser almacenadas para reacciones subsiguientes.
@@ -2295,7 +2295,7 @@ Por otra parte, el interés por superficies super-hidrofóbicas produjo un
 \begin_inset Formula $150^{o}$
 \end_inset
 
- (ver Figura 
+ (ver figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "superhidro gota"
@@ -2423,7 +2423,7 @@ A pesar de los avances en este campo de investigación, aún quedan preguntas
  Si se logra depositar una gota de líquido sobre una superficie rugosa,
  de manera que esta no moje al sustrato (efecto Fakir o Cassie-Baxter),
  entonces se reduce el área efectiva de contacto con la gota y con ella
- la fricción (ver Figura 
+ la fricción (ver figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:superhidrofobicidad"
@@ -2791,7 +2791,7 @@ literal "true"
 
 , con el potencial de ajustarse a las necesidades de aplicaciones tecnológicas.
  En este caso se realizó un estudio sistemático del flujo en función de
- la rigidez de las cadenas del cepillo polimérico, profundizando en la interfaz
+ la rigidez de las cadenas del cepillo polimérico, profundizando en la interfase
  líquido-medio confinante.
  Hasta este trabajo, no existía en la bibliografía un estudio exhaustivo
  y sistemático de cepillos poliméricos semiflexibles en flujo, que analice
@@ -3302,7 +3302,7 @@ Cell List
 \begin_inset Formula $r_{V}$
 \end_inset
 
-) (ver Figura 
+) (ver figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Verlet list"
@@ -3559,7 +3559,7 @@ speed-up
 \end_layout
 
 \begin_layout Standard
-En la Figura 
+En la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Time_vs_threads"
@@ -3585,7 +3585,7 @@ Verlet List
 threads
 \shape default
 ).
- Esto también se puede ver en la Figura 
+ Esto también se puede ver en la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Time_vs_threads"
@@ -4270,7 +4270,7 @@ literal "true"
 \end_inset
 
  y es una elección frecuente para estudiar la dinámica de líquidos poliméricos.
- En la Figura 
+ En la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:FENE"
@@ -4340,7 +4340,7 @@ donde
 \begin_inset Formula $\theta$
 \end_inset
 
- (ver Figura 
+ (ver figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Bendig_versores"
@@ -4682,7 +4682,7 @@ Durante las simulaciones, el primer monómero de cada polímero permanece
  Para incluir esta interacción en el sistema, se programó una rutina que
  calcule la fuerza de flexión entre los eslabones 0,1 y 2, donde la posición
  del eslabón 0 fue arreglada de manera que la orientación de equilibrio
- fuera perpendicular al sustrato (ver Figura 
+ fuera perpendicular al sustrato (ver figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Orientacion"
@@ -4984,7 +4984,7 @@ slit-like channel
  comportamiento en el seno de la muestra, minimizando los efectos de superficie
  no deseados.
  Entender la implementación de esta técnica es sencillo si se imaginan celdas
- vecinas adyacentes, idénticas a la original (ver Figura 
+ vecinas adyacentes, idénticas a la original (ver figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:CPC"
@@ -5121,7 +5121,7 @@ OJO: es repulsiva si se pone modulo en el termino atractivo y se pone negativa
  La simetría de traslación en las direcciones paralelas a la pared implican
  que la misma no realiza esfuerzos de corte y no es capaz de arrastrar al
  líquido.
- En la Figura 
+ En la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Usus"
@@ -5775,7 +5775,7 @@ name "chap:Resultados-I:-Cepillos"
 status open
 
 \begin_layout Plain Layout
-Corregido y revisado 3.1, 3.2
+Corregido y revisado!
 \end_layout
 
 \end_inset
@@ -6879,10 +6879,11 @@ slip length
 
 ).
  Estas cuantifican la violación de las condiciones de contorno macroscópicas,
- que igualan la velocidad del fluido en la interfaz a la velocidad del sustrato.
+ que igualan la velocidad del fluido en la interfase a la velocidad del
+ sustrato.
  La velocidad de deslizamiento es la diferencia entre la velocidad de la
  pared y la extrapolación del comportamiento lineal de la velocidad del
- líquido a la interfaz (ver figura 
+ líquido a la interfase (ver figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Explicacion Vslip"
@@ -6893,7 +6894,7 @@ reference "fig:Explicacion Vslip"
  Para hallar la longitud de deslizamiento primero hay que encontrar la posición
  en la cual el ajuste lineal de la velocidad es igual a la velocidad de
  la pared.
- Luego, al valor hallado se le resta la posición de la interfaz y se obtiene
+ Luego, al valor hallado se le resta la posición de la interfase y se obtiene
  la distancia de deslizamiento.
  Esta magnitud da cuenta de cuanto dista la condición de contorno real del
  caso ideal.
@@ -6934,7 +6935,7 @@ En línea llena negra se grafica la velocidad del líquido, normalizada con
  En rojo se aprecia el ajuste lineal del perfil de velocidad.
  El ajuste debe hacerse en el seno de la muestra, lejos de los efectos de
  la interfase.
- La línea verde vertical da la posición de la interfaz.
+ La línea verde vertical da la posición de la interfase.
  La diferencia entre el valor del ajuste lineal en la interfase y la velocidad
  de la pared de la velocidad de deslizamiento 
 \begin_inset Formula $v_{s}$
@@ -6966,7 +6967,7 @@ En línea llena negra se grafica la velocidad del líquido, normalizada con
 status open
 
 \begin_layout Plain Layout
-Como se calculo la posición de la interfaz
+Como se calculo la posición de la interfase
 \end_layout
 
 \end_inset
@@ -7014,7 +7015,7 @@ donde
 
  es la densidad del fluido.
  Está función es diferente de cero solamente en la zona de la interfase
- y presenta dos picos, como se puede apreciar en la Figura 
+ y presenta dos picos, como se puede apreciar en la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig: perfil de densidad27"
@@ -7166,7 +7167,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-También se puede observar una interfaz bien marcada en todos los casos.
+También se puede observar una interfase bien marcada en todos los casos.
  Esto es indicio de que el líquido no moja el cepillo polimérico, sino que
  el mismo reposa sobre las cadenas en un estado Cassie-Baxter
 \begin_inset CommandInset citation
@@ -7561,9 +7562,8 @@ Otra tendencia general es que la energía de flexión almacenada en todas
 .
  Al aumentar el número de vecinos cercanos a cada cadena, las interacciones
  entre monómeros pertenecientes a polímeros de distintas cadenas aumenta,
- limitando el movimiento de las mismas.
- Este impedimento en el movimiento de las cadenas se ve reflejado en los
- valores más acotados que toma 
+ aumentando el estiramiento de las cadenas.
+ Esto se ve reflejado en los valores más acotados que toma 
 \begin_inset Formula $\theta^{2}$
 \end_inset
 
@@ -7632,7 +7632,7 @@ Panel a): valor cuadrático medio del ángulo formado en cada unión de las
 \begin_inset Formula $U_{b}$
 \end_inset
 
-de los almacenada en las uniones de las cadenas en función de 
+ almacenada en las uniones de las cadenas en función de 
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
@@ -7668,8 +7668,8 @@ Estudio en condiciones de flujo
 \end_layout
 
 \begin_layout Standard
-El sistema se sacó del equilibrio, moviendo las paredes del canal en la
- dirección 
+El sistema se sacó del equilibrio moviendo las paredes del canal en la dirección
+ 
 \begin_inset Formula $\hat{x}$
 \end_inset
 
@@ -7690,8 +7690,8 @@ noprefix "false"
 \end_inset
 
 ) del canal.
- Para obtener valores más precisos, se promediaron los valores del perfil
- de velocidad para 
+ Para obtener mayor precisión en las cantidades medidas, se promediaron
+ los valores del perfil de velocidad para 
 \begin_inset Formula $z<L_{z}/2$
 \end_inset
 
@@ -7709,7 +7709,7 @@ noprefix "false"
 \end_inset
 
  se encuentra la pared del canal.
- El intervalo donde se ubica interfaz está marcado con líneas punteadas
+ El intervalo donde se ubica interfase está marcado con líneas punteadas
  horizontales, y se calculó a partir de la multiplicación de los perfiles
  de densidad 
 \begin_inset Formula $\rho_{g}(z)\rho_{l}(z)$
@@ -7729,13 +7729,13 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-Para valores alejados de la interfaz se observa una relación lineal entre
+Para valores alejados de la interfase se observa una relación lineal entre
  la velocidad y la coordenada 
 \begin_inset Formula $z$
 \end_inset
 
 , como es de esperarse para un flujo de Couette.
- Al acercarse a la interfaz, el comportamiento del líquido de desvía del
+ Al acercarse a la interfase, el comportamiento del líquido de desvía del
  comportamiento lineal, aumentando rápidamente con 
 \begin_inset Formula $z$
 \end_inset
@@ -7873,14 +7873,14 @@ Perfil de velocidad del fluido en la dirección
 \end_inset
 
 .
- Las lineas punteadas verticales indican la posición de la interfaz líquido-cepi
-llo.
+ Las lineas punteadas verticales indican la posición de la interfase líquido-cep
+illo.
  Se observa una relación lineal entre la velocidad y la coordenada 
 \begin_inset Formula $z$
 \end_inset
 
  en el seno del canal, y luego un crecimiento rápido de la misma cerca de
- la interfaz.
+ la interfase.
  La velocidad de la pared se muestra con líneas discontinuas horizontales
  para cada caso de 
 \begin_inset Formula $v_{w}$
@@ -8070,7 +8070,7 @@ Componente vertical del vector
 
 , para distintos valores de densidad de fijado de las cadenas.
  Se puede apreciar el incremento de la movilidad de las cadenas al incrementar
- la velocidad de las paredes, a densidades de fijado bajas.
+ la velocidad de las paredes para densidades de fijado bajas.
 \end_layout
 
 \end_inset
@@ -8103,7 +8103,7 @@ noprefix "false"
 \begin_inset Formula $k_{b}$
 \end_inset
 
-)y de densidad de fijado (
+) y de densidad de fijado (
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
@@ -8112,7 +8112,17 @@ noprefix "false"
 \shape italic
 end-to-end
 \shape default
-, como se aprecia en el recuadro superior derecho de la figura:
+, como se aprecia en el recuadro superior derecho de la figura
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Theta_vs_Shear"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
 \begin_inset Formula 
 \begin{equation}
 tan(\Theta_{end})=R_{z}/R_{x}\,,
@@ -8206,7 +8216,8 @@ La dependencia de
 \end_inset
 
  con la rigidez de las cadenas es más compleja.
- Se aprecian dos comportamientos distintos, dependiendo de la relación 
+ Se aprecian dos comportamientos distintos, dependiendo del cociente entre
+ la longitud de persistencia y la longitud de contorno de las cadenas 
 \begin_inset Formula $l_{p}/l_{c}$
 \end_inset
 
@@ -8215,12 +8226,12 @@ La dependencia de
 \begin_inset Formula $l_{p}/l_{c}\le1$
 \end_inset
 
-, incrementar la rigidez de las cadenas produce ángulos de inclinación mayores
- de las mismas en condiciones de flujo.
+, incrementar la rigidez de los polímeros produce ángulos de inclinación
+ mayores de los mismos en condiciones de flujo.
  En este caso, el potencial de flexión induce la orientación coherente de
  las cadenas en una misma dirección.
- El líquido presiona verticalmente sobre las cadenas, forzando a las cadenas
- a doblarse y tomar la forma de un arco de curva, maximizando 
+ El líquido presiona verticalmente sobre las cadenas, forzándolas a doblarse
+ y tomar la forma de un arco de curva, maximizando 
 \begin_inset Formula $\Theta_{end}$
 \end_inset
 
@@ -8324,7 +8335,7 @@ name "fig:Theta_vs_Shear"
 \end_layout
 
 \begin_layout Standard
-Otra cantidad que ayuda a entender el comportamiento de los polímeros, es
+Otra cantidad que ayuda a entender el comportamiento de los polímeros es
  la desviación estándar del vector 
 \begin_inset Formula $\boldsymbol{R}_{end}$
 \end_inset
@@ -8335,7 +8346,7 @@ Otra cantidad que ayuda a entender el comportamiento de los polímeros, es
 
 .
  Esta cantidad da información acerca de la movilidad de los monómeros terminales
- alrededor de la posición de equilibrio en la dirección de la velocidad
+ alrededor de la posición de equilibrio, en la dirección de la velocidad
  de las paredes.
  En la figura
 \begin_inset CommandInset ref
@@ -8527,17 +8538,7 @@ literal "false"
 \begin_inset Formula $p(z)=\langle m\rho(z)v(z)\rangle$
 \end_inset
 
-, para verificar que dentro del cepillo este valor sea negativo y para valores
- de 
-\begin_inset Formula $z$
-\end_inset
-
- mayores a la interfaz cepillo-líquido, 
-\begin_inset Formula $p(z)$
-\end_inset
-
- tome valores positivos, exhibiendo el movimiento cíclico.
- Para todas las cadenas, excepto las más rígidas, se observaron indicios
+, para verificadas las cadenas, excepto las más rígidas, se observaron indicios
  de movimiento cíclico de las cadenas, incluso para densidades de fijado
  
 \begin_inset Formula $\rho_{g}\le0.3\sigma^{-2}$
@@ -8754,16 +8755,16 @@ reference "fig:ThetaPDF"
 \end_inset
 
 .
- Este efecto es evidente para cadenas cuya longitud de persistencia es similiar
- a la longitud de contorno, debido al alcance de la orientación de orientación
- en las uniones del polímero.
+ Este efecto es evidente para cadenas cuya longitud de persistencia es similar
+ a la longitud de contorno, debido al persistencia de la orientación de
+ los segmentos del polímero.
  Para longitudes de persistencia más bajas se observa una meseta en el máximo,
  en vez de una distribución bimodal.
  Las distribución de probabilidad de 
 \begin_inset Formula $\Theta_{end}$
 \end_inset
 
- para las cadenas más rígidas, se asemeja más a una distribución normal.
+ para las cadenas más rígidas se asemeja más a una distribución normal.
 \end_layout
 
 \begin_layout Standard
@@ -8815,7 +8816,7 @@ Distribución de probabilidad del ángulo de inclinación de las cadenas
 \end_inset
 
 ), se observa una distribución bimodal en equilibrio.
- La presión ejercida por el líquido sobre las cadenas impide el estirameinto
+ La presión ejercida por el líquido sobre las cadenas impide el estiramiento
  de las mismas en al dirección vertical, favoreciendo ángulos de inclinación
  no nulos.
 \end_layout
@@ -8831,7 +8832,16 @@ Distribución de probabilidad del ángulo de inclinación de las cadenas
 \end_layout
 
 \begin_layout Standard
-Es interesante analizar el comportamiento de los grados internos de libertad
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+K: HASTA ACA REVISION FINAL
+\end_layout
+
+\end_inset
+
+Es interesante analizar el comportamiento de los grados de libertad internos
  al imponer un flujo de líquido sobre las cadenas.
  En la figura 
 \begin_inset CommandInset ref
@@ -8970,15 +8980,20 @@ a) Valor cuadrático medio del ángulo en cada unión de las cadenas en función
 \begin_inset Formula $k_{b}=0$
 \end_inset
 
- and 
+ y 
 \begin_inset Formula $k_{b}=0.8$
 \end_inset
 
-), la energía total de flexión decrece con el flujo y la distancia 
+), la energía total de flexión decrece con el flujo, mientras que la distancia
+ 
 \shape italic
 end-to-end
 \shape default
- de las cadenas crece.
+ de las cadenas crece con 
+\begin_inset Formula $We$
+\end_inset
+
+.
  El ángulo de orientación (Bond 1) crece, ya que las cadenas se inclinan
  en la dirección del flujo.
  En cambio, para 
@@ -9039,7 +9054,7 @@ noprefix "false"
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
-, para los distintas intensidades de flujo 
+, para las distintas intensidades de flujo 
 \begin_inset Formula $We$
 \end_inset
 
@@ -9048,7 +9063,7 @@ noprefix "false"
 \begin_inset Formula $\delta$
 \end_inset
 
- se definió como la distancia a la cual la extrapolación del perfil de velocidad
+ se define como la distancia a la cual la extrapolación del perfil de velocidad
  del líquido coincide con la velocidad del sustrato
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -9058,7 +9073,8 @@ literal "true"
 \end_inset
 
 .
- La posición de la interfaz líquido-cepillo se determina como el valor 
+ La posición de la interfase líquido-cepillo se determina como el valor
+ 
 \begin_inset Formula $z$
 \end_inset
 
@@ -9235,7 +9251,7 @@ noprefix "false"
 \end_inset
 
 .
- En todos los casos, 
+ En todos los casos 
 \begin_inset Formula $\delta$
 \end_inset
 
@@ -9332,7 +9348,7 @@ El cepillo compuesto por polímeros muy rígidos
 
  estudiado y crece más lentamente.
  Se sabe que la longitud de deslizamiento depende de la presión normal,
- al aumentar la presión, disminuye el deslizamiento
+ y cuando esta aumenta, disminuye el deslizamiento
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Tretyakov_13"
@@ -9368,7 +9384,7 @@ También se analizó la fuerza aplicada sobre las paredes en la dirección
 .
  Los datos de las ocho diferentes densidades de fijado, cuatro distintas
  constantes de flexión y cinco velocidades de pared distintas colapsan en
- una única línea recta.
+ una única línea recta, como es esperable para un líquido simple.
  Se da entonces que la relación entre la fuerza necesaria para mover las
  paredes 
 \begin_inset Formula $F_{x}$
@@ -9400,8 +9416,8 @@ literal "true"
 .
  El fluido se comporta como un fluido simple newtoniano con una viscosidad
  definida para todo el rango de flujos estudiado y tanto los fenómenos de
- la interfaz como el contenido de gas en el cepillo, no modifican significativam
-ente la difusión de momento en el líquido.
+ la interfase como el contenido de gas en el cepillo, no modifican significativa
+mente la difusión de momento en el líquido.
 \end_layout
 
 \begin_layout Standard
@@ -9628,7 +9644,7 @@ noprefix "false"
 \end_inset
 
  .
- Las curvas para los distintos valores de 
+ Las curvas para los restantes valores de 
 \begin_inset Formula $k_{b}$
 \end_inset
 
@@ -9709,7 +9725,7 @@ name "fig:Friction-coefficient-vs-shear"
 \end_inset
 
 .
- Cada grupo de curvas corresponde a una densidad de fijado 
+ Cada curva corresponde a una densidad de fijado 
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
@@ -9728,32 +9744,6 @@ name "fig:Friction-coefficient-vs-shear"
 \end_inset
 
 , el coeficiente de fricción es mayor al aumentar la rigidez de las cadenas.
- En el recuadro se observa en escala 
-\begin_inset Formula $log-log$
-\end_inset
-
- la pendiente de 
-\begin_inset Formula $\mu$
-\end_inset
-
- contra 
-\begin_inset Formula $\dot{\gamma}$
-\end_inset
-
- (
-\begin_inset Formula $m$
-\end_inset
-
-) en función de la densidad de fijado.
- La dependencia de la pendiente 
-\begin_inset Formula $m$
-\end_inset
-
- con 
-\begin_inset Formula $\rho_{g}$
-\end_inset
-
- sigue una ley de potencias.
  
 \end_layout
 
@@ -9801,7 +9791,7 @@ noprefix "false"
 
  utilizados.
  Es interesante notar como todas las curvas en este gráfico parecen colapsar
- en una sola, indicando que la rigidez incide fuertemente en el coeficiente
+ en una sola, indicando que la rigidez no incide fuertemente en el coeficiente
  de fricción.
  También puede observarse de la figura 
 \begin_inset CommandInset ref
@@ -9962,8 +9952,8 @@ Es interesante notar que la fricción decrece con el número de cadenas por
 \end_inset
 
  el líquido en menos propenso a penetrar el cepillo polimérico.
- Al aumentar la cantidad de cadenas en este sistema super hidrofóbico, la
- interfaz líquido-cepillo se vuelve más marcada, reduciendo 
+ Al aumentar la cantidad de cadenas en este sistema superhidrofóbico, la
+ interfase líquido-cepillo se vuelve más marcada, reduciendo 
 \begin_inset Formula $\mu$
 \end_inset
 
@@ -10036,12 +10026,13 @@ name "sec:Resumen_3"
 
 \begin_layout Standard
 En este capítulo se realizó un estudio exhaustivo de un nanocanal revestido
- por cepillos polméricos hidrofóbicos y lleno de un líquido simple, en equilibri
-o y en condiciones de flujo.
+ por cepillos polméricos hidrofóbicos, lleno de un líquido simple, en equilibrio
+ y en condiciones de flujo.
  Se hizo un análisis sistemático del sistema en función de la cantidad de
  cadenas por unidad de área y de la intensidad del flujo.
  También se modificó la dureza del sustrato, utilizando cuatro valores distintos
- de rigidez de las cadenas, para investigar el efecto en el flujo.
+ de rigidez de las cadenas, para investigar el efecto en el flujo y en la
+ morfología del cepillo.
  En todos los casos se comprobó que el líquido permaneció en un estado Cassie-Ba
 xter, es decir, que no penetró los intersticios del cepillo polimérico (ver
  figura 
@@ -10067,16 +10058,16 @@ C: lo anterior no se entiende sin background previo.
 
 \end_inset
 
-.También se realizaron simulaciones con las cadenas aisladas para calcular
+.
+ También se realizaron simulaciones con las cadenas aisladas para calcular
  el tiempo de relajación de las mismas, que es altamente dependiente de
  la rigidez de los polímeros.
 \end_layout
 
 \begin_layout Standard
-En equilibrio se analizó la estructura del cepillo polimérico a partir del
- perfil de densidad, el comportamiento de los monómeros terminales, los
- ángulos medios de inclinación de las cadenas y la energía de flexión almacenada
- en cada unión de los polímeros.
+En equilibrio se analizó la estructura del cepillo polimérico, el comportamiento
+ de los monómeros terminales, los ángulos medios de inclinación de las cadenas
+ y la energía de flexión almacenada en cada unión de los polímeros.
  Encontramos que para cadenas flexibles (
 \begin_inset Formula $l_{p}/l_{p}\le1$
 \end_inset
@@ -10115,7 +10106,7 @@ En equilibrio se analizó la estructura del cepillo polimérico a partir del
 \end_layout
 
 \begin_layout Standard
-Al mover las paredes del canal en sentidos opuestos a velocidad constante,
+Al mover las paredes del canal en sentidos opuestos y a velocidad constante,
  se genera un perfil de velocidad lineal en el seno del canal, que permite
  estudiar las propiedades reológicas del sistema en función de la densidad
  de fijado de cadenas y de la intensidad del flujo.
@@ -10145,7 +10136,7 @@ name "chap:Resultados-II:-Influencia"
 status open
 
 \begin_layout Plain Layout
-Corregido
+Corregido y Revisado!
 \end_layout
 
 \end_inset
@@ -10172,8 +10163,8 @@ sistema de estudio
 
 \begin_layout Standard
 El sistema estudiado en este capítulo está compuesto por un canal tipo rendija,
- cuyas paredes están revestidas por polímeros semiflexibles y con un flujo
- bifásico líquido-gas, como se aprecia en la figura 
+ cuyas paredes están revestidas por polímeros semiflexibles y lleno por
+ un fluido bifásico líquido-gas, como se aprecia en la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig: Snap"
@@ -10186,13 +10177,13 @@ noprefix "false"
 .
  Debido a las condiciones de contorno utilizadas en las direcciones paralelas
  a la pared del canal plano, este sistema puede pensarse como un tren de
- gotas atravesando un canal revestido por un cepillo de polímeros semiflexible.
+ gotas atravesando un canal revestido por cepillos de polímeros semiflexibles.
  Se analiza la velocidad de la gota variando la distancia entre las gotas
  consecutivas en la dirección del flujo y modificando la rigidez de las
  cadenas.
- Se investigan las fuerzas de fricción actuando sobre la gota líquida, debido
- a la presencia del gas circundante y de la presencia de las cadenas, para
- un amplio rango de longitudes de persistencia.
+ Se investigan las fuerzas de fricción actuando sobre la gota líquida debido
+ a la presencia del gas circundante y de las cadenas, para un amplio rango
+ de longitudes de persistencia.
  También se estudió la deformación del sustrato blando y los cambios morfológico
 s inducidos por la gota, y como varía la interacción líquido-cepillo con
  la rigidez de las cadenas poliméricas.
@@ -10290,7 +10281,12 @@ Se exhibe el sistema de estudio, compuesto por un nanocanal plano, cuyas
 \end_inset
 
  es el largo de la caja de simulación en la misma dirección.
- Arriba: configuración del sistema según se observa de las simulación numérica.
+ Arriba: configuración del sistema según se observa de las simulación numérica
+ con el 
+\shape italic
+software
+\shape default
+ VMD.
  Abajo: representación esquemática del sistema estudiado explicitando el
  sistema de coordenadas y los parámetros relevantes.
 \end_layout
@@ -10376,7 +10372,7 @@ Los lados de la caja de simulación utilizados fueron
 \begin_inset Formula $L_{y}=13.42\sigma$
 \end_inset
 
-.
+ en la dirección restante paralela a las paredes.
  El largo de la caja de simulación en la dirección del flujo fue variada,
  para estudiar los efectos del mismo, pero el estudio sistemático se realizó
  con un valor fijo de 
@@ -10448,7 +10444,7 @@ Polímeros de
 .
  Los sitios de anclado de las cadenas fueron dispuestos en una red cuadrada,
  para evitar efectos espurios, provenientes de eventuales inhomogeneidades
- en la densidad de fijado, de ser distribuirlos de manera aleatoria.
+ en la densidad de fijado, al ser distribuidos de manera aleatoria.
  Esto da una distancia media entre cadenas 
 \begin_inset Formula $a_{l}=1/\text{\sqrt{\rho_{g}}}=4.47\sigma$
 \end_inset
@@ -10536,7 +10532,7 @@ noprefix "false"
 \begin_inset Formula $l_{p}/l_{c}\ll1$
 \end_inset
 
-, hasta un comportamiento más parecido al de una vara 
+, hasta un comportamiento más parecido al de una varilla rígida 
 \begin_inset Formula $l_{p}/l_{c}\gg1$
 \end_inset
 
@@ -10597,7 +10593,7 @@ U_{LJ}(r)=\begin{cases}
 
 \end_inset
 
-donde los superíndices describen el tipo de partícula 
+donde los superíndices describen el tipo de partícula: 
 \begin_inset Formula $f$
 \end_inset
 
@@ -10632,7 +10628,7 @@ donde los superíndices describen el tipo de partícula
 
 .
  La inclusión de la parte atractiva del potencial para las interacciones
- entre partículas del fluido permite la formación de la fase líquida, en
+ entre partículas del fluido permite la formación de la fase líquida en
  equilibrio termodinámico.
  Bajo estas condiciones, la fase líquida adopta una densidad de 
 \begin_inset Formula $\rho_{l}=0.7\sigma^{-3}$
@@ -10663,7 +10659,7 @@ noprefix "false"
 
 \end_inset
 
- se explicará minuciosamente como se determinaron estas cantidades.
+ se explica minuciosamente como se determinaron estas cantidades.
 \end_layout
 
 \begin_layout Standard
@@ -10678,9 +10674,9 @@ Se utilizó el esquema de Velocity-Verlet para integrar las ecuaciones de
 \begin_inset Formula $\delta t=3\times10{}^{-4}$
 \end_inset
 
-, y luego se comenzaron a medir las cantidades medias de interés.
+, y luego se comenzaron a medir las cantidades de interés.
  En las condiciones descritas, la velocidad de la gota siempre estuvo en
- el rango
+ el rango 
 \begin_inset Formula $0.1\sigma/\tau\,<v<0.5\sigma/\tau$
 \end_inset
 
@@ -11030,7 +11026,7 @@ Es importante observar que el valor
 \end_inset
 
 .
- Para computar la posición del centro de masa de la gota, en la iteración
+ Para computar la posición del centro de masa de la gota en la iteración
  
 \begin_inset Formula $j$
 \end_inset
@@ -11254,7 +11250,7 @@ les de densidad de las gotas
 \begin_inset Formula $\rho_{l}(x,y)$
 \end_inset
 
-.
+ estáticas.
  
 \end_layout
 
@@ -11420,8 +11416,8 @@ name "fig:veldroplet_vs_lpersistence"
 \end_inset
 
  Velocidad de la gota en función de la longitud de persistencia de las cadenas.
- En el recuadro se observa el mismo grafico, pero el eje vertical esta en
- escala logarítmica para una mejor visualización.
+ En el recuadro se observa el mismo grafico, pero el eje horizontal esta
+ en escala logarítmica para una mejor visualización.
 \end_layout
 
 \end_inset
@@ -11477,8 +11473,8 @@ noprefix "false"
 
 \end_inset
 
- se puede apreciar que la velocidad de la gota desciende rápidamente al
- aumentar la rigidez de los polímeros en el rango 
+ se puede apreciar que la velocidad de la gota decrece rápidamente al aumentar
+ la rigidez de los polímeros en el rango 
 \begin_inset Formula $l_{p}/l_{c}\le1$
 \end_inset
 
@@ -11549,6 +11545,8 @@ Perfiles de densidad del sistema visto en un corte en un plano
  corresponde al perfil de densidad de los polímeros.
  La imagen inferior es el producto de las densidades poliméricas y del fluido,
  y muestra el área donde las cadenas y el líquido interactúan.
+ Los colores cercanos al azul representan una baja densidad, mientras los
+ colores cercanos al rojo representan una alta densidad.
 \end_layout
 
 \end_inset
@@ -11716,7 +11714,7 @@ literal "false"
 
 , en función de la longitud de persistencia de los polímeros que forman
  el cepillo.
- Se puede apreciar en esta figura, que para 
+ Se puede apreciar en esta figura que, para 
 \begin_inset Formula $l_{p}/l_{c}\le1$
 \end_inset
 
@@ -11725,10 +11723,10 @@ literal "false"
 \begin_inset Formula $l_{p}/l_{c}>1$
 \end_inset
 
-, la cantidad de interacciónes entre el cepillo y la gota decrece con la
+, la cantidad de interacciones entre el cepillo y la gota decrece con la
  longitud de persistencia.
  El número de interacciones entre el líquido y el cepillo presenta un máximo
- marcado, para polímeros cuya longitud de persistencia es igual a su longitud
+ marcado para polímeros cuya longitud de persistencia es igual a su longitud
  de contorno 
 \begin_inset Formula $l_{p}/l_{c}=1$
 \end_inset
@@ -11904,7 +11902,7 @@ noprefix "false"
 \end_inset
 
 ) y el eje horizontal corresponde al eje paralelo a la dirección del flujo
- de la gota
+ de la gota 
 \begin_inset Formula $\hat{x}$
 \end_inset
 
@@ -11949,7 +11947,7 @@ noprefix "false"
 
 .
  Al aumentar la rigidez, el cepillo se expande en la dirección vertical
- y como se puede observar en el segundo gráfico de la figura 
+ y, como se puede observar en el segundo gráfico de la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Rend_2D_histo"
@@ -11965,7 +11963,7 @@ noprefix "false"
 
 ), el cepillo es menos compacto.
  Las cadenas totalmente flexibles son comprimidas con mayor facilidad por
- la gota que las semiflexibles, hasta el punto en que las interacciones
+ la gota que las cadenas semiflexibles, hasta el punto en que las interacciones
  de volumen excluido entran en juego.
  Estas interacciones impiden que el cepillo compuesto por cadenas totalmente
  flexibles siga comprimiéndose, alcanzando una alta densidad.
@@ -11983,9 +11981,19 @@ noprefix "false"
 
 \begin_layout Standard
 El campo vectorial de momento lineal de los monómeros terminales del cepillo
- graficado sobre los perfiles bidimensionales de densidad muestra que los
- monómeros en contacto con la gota son arrastrados en la dirección del flujo
- y tienden a acompañar su movimiento.
+ (flechas negras en la figura
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Rend_vs_lp_Open_Channel"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) graficado sobre los perfiles bidimensionales de densidad, muestra que
+ los monómeros en contacto con la gota son arrastrados en la dirección del
+ flujo y tienden a acompañar su movimiento.
  Los monómeros cercanos al frente de avance de la gota se mueven también
  hacia la pared de anclaje, sujetados por las cadenas fijadas al sustrato.
  Por otro lado, los monómeros cercanos al extremo izquierdo de la gota poseen
@@ -12048,7 +12056,7 @@ Se muestra la dinámica cíclica de un polímero anclado a un sustrato por
  arrastrado por el flujo(figura superior derecha).
  Luego, la cadena se retrae mientras el monómero libre permanece cerca del
  sustrato.
- Por Figura tomada de la referencia
+ Figura tomada de la referencia
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Huang_2012"
@@ -12105,8 +12113,16 @@ literal "false"
 \end_inset
 
 .
- Como se explica en las referencias, el movimiento cíclico describe el movimient
-o de las cadenas individuales en flujo (ver figura 
+ Como se explica en las referencias
+\begin_inset CommandInset citation
+LatexCommand cite
+key "0295-5075-81-2-28002,:/content/aip/journal/jcp/140/1/10.1063/1.4851195"
+literal "false"
+
+\end_inset
+
+, el movimiento cíclico describe la dinámica de las cadenas individuales
+ en flujo (ver figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:cyclic_motion"
@@ -12117,7 +12133,7 @@ noprefix "false"
 \end_inset
 
 ).
- Como se aprecia en este caso, los monómeros cercanos al líquido en movimiento
+ En este caso se aprecia que los monómeros cercanos al líquido en movimiento
  tienden a acompañar el movimiento del fluido, mientras que los monómeros
  más cercanos al sustrato de fijado se mueven en la dirección contraria.
  Al aumentar la rigidez de las cadenas, este movimiento colectivo deja de
@@ -12192,7 +12208,7 @@ donde
 
 , si la densidad del fluido es menor al promedio entre la densidad del líquido
  y la densidad de vapor de gas, para tomar en cuenta solamente la fase líquida
- y anular la contribución del gas.
+ y anular la contribución del vapor.
 \end_layout
 
 \begin_layout Standard
@@ -12253,7 +12269,8 @@ noprefix "false"
 \end_inset
 
  se grafican las velocidades del cepillo (en negro) y la velocidad del líquido
- (en rojo) en la zona de interacción cepillo líquido.
+ (en rojo) en la zona de interacción cepillo líquido en función de la rigidez
+ de las cadenas.
  Se puede apreciar que la velocidad del cepillo cercano al líquido decrece
  monótonamente con la rigidez de las cadenas.
  Como se aprecia en el perfil de momento lineal para las cadenas totalmente
@@ -12305,8 +12322,8 @@ El comportamiento de la velocidad del líquido en contacto con el cepillo
 \end_inset
 
 .
- Aunque de manera más ruidosa, la velocidad de la capa límite del líquido
- disminuye monótonamente con la rigidez de las cadenas.
+ Aunque de manera más ruidosa, la velocidad del del líquido en la zona interfaci
+al disminuye monótonamente con la rigidez de las cadenas.
  En la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -12333,7 +12350,7 @@ noprefix "false"
 .
  Esto indica que la velocidad de deslizamiento del líquido sobre el cepillo
  mantiene un valor similar para los distintos valores de rigidez, pero lo
- que se modifica es la velocidad de la capa límite del cepillo.
+ que se modifica es la velocidad de del cepillo en la interfase.
  Es decir, que al incrementar la rigidez de los polímeros, la velocidad
  de la capa de monómeros en contacto con el líquido disminuye, frenando
  de manera más eficaz a la gota, mientras que la velocidad relativa de la
@@ -12341,8 +12358,8 @@ noprefix "false"
  relativamente constante.
  Es interesante notar que el efecto de frenado del cepillo sobre la gota
  es de naturaleza dinámica y no estática.
- Es la forma de moverse de la gota, la que determina en gran medida la velocidad
- de la gota en el nanocanal.
+ Es la forma de moverse del cepillo, la que determina en gran medida la
+ velocidad de la gota en el nanocanal.
  
 \end_layout
 
@@ -12374,15 +12391,14 @@ noprefix "false"
 
 \end_inset
 
- la velocidad de la gota en función de la velocidad de la capa límite del
- líquido 
+ la velocidad de la gota en función de la velocidad del líquido en la interfase
+ 
 \begin_inset Formula $v_{l}^{(BL)}$
 \end_inset
 
 .
  Como es de esperarse, existe una relación lineal entre la velocidad de
- la gota y la velocidad de la capa límite del líquido en contacto con el
- cepillo polimérico.
+ la gota y la velocidad del líquido en contacto con el cepillo polimérico.
  De esta manera, se puede identificar aproximadamente a 
 \begin_inset Formula $v_{l}^{(BL)}$
 \end_inset
@@ -12439,8 +12455,8 @@ Para resumir, existen dos efectos que determinan la velocidad de la gota
  al de una cinta de una maquina caminadora y acompañan al líquido.
  Al aumentar la rigidez, la dinámica del cepillo amaina, reduciendo la velocidad
  final de la gota.
- La otra cantidad importante, es la velocidad de deslizamiento de la capa
- límite de líquido sobre los monómeros 
+ La otra cantidad importante, es la velocidad de deslizamiento del líquido
+ sobre los monómeros 
 \begin_inset Formula $\delta v_{s}$
 \end_inset
 
@@ -12510,8 +12526,11 @@ Se muestra la componente del vector
 \begin_inset Formula $\boldsymbol{R}_{end}$
 \end_inset
 
- medio de los polímeros en la dirección del flujo, en función de la posición
- de la cadena con respecto a la gota.
+ medio de los polímeros en la dirección del flujo 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+, en función de la posición de la cadena con respecto a la gota.
  El eje horizontal está normalizado por la mitad del ancho de la gota 
 \begin_inset Formula $D/2$
 \end_inset
@@ -12557,8 +12576,8 @@ noprefix "false"
 \end_inset
 
  corresponde al centro de masa de la misma.
- Se normalizó el horizontal, dividiendo la posición por la mitad del ancho
- de la gota 
+ Se normalizó el eje horizontal, dividiendo la posición por la mitad del
+ ancho de la gota 
 \begin_inset Formula $D/2$
 \end_inset
 
@@ -12615,8 +12634,8 @@ noprefix "false"
  Primero cabe notar el comportamiento no monótono del estiramiento de las
  cadenas en la dirección del flujo en función de la longitud de persistencia.
  La física de las cadenas totalmente flexibles es dominado por la entropía
- configuracional, y tienden a permanecer en un estado de glóbulo, flexionada
- sobre si misma, impidiendo el estiramiento.
+ configuracional, y tienden a permanecer en un estado de glóbulo, flexionadas
+ sobre si mismas, impidiendo el estiramiento.
  En el otro lado del espectro, la física de las cadenas muy rígidas 
 \begin_inset Formula $l_{p}/l_{c}\gg1$
 \end_inset
@@ -12671,8 +12690,8 @@ Perfil de la componente vertical (
 \begin_inset Formula $\boldsymbol{R}_{end}$
 \end_inset
 
- en función de la coordenada posición de las cadenas relativas al centro
- de masa de la gota, para distintos valores de rigidez 
+ en función de la posición de las cadenas relativas al centro de masa de
+ la gota, para distintos valores de rigidez 
 \begin_inset Formula $l_{p}/l_{c}$
 \end_inset
 
@@ -12778,8 +12797,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-En esta figura se aprecia el perfil de la altura del cepillo a lo largo
- del canal, en el sistema de referencia solidario a la gota.
+En esta figura se aprecia el perfil de altura del cepillo a lo largo del
+ canal, en el sistema de referencia solidario a la gota.
  Cerca de 
 \begin_inset Formula $x=0$
 \end_inset
@@ -12912,7 +12931,7 @@ noprefix "false"
  comprimido por la gota y el cepillo lejos de la gota, a medida que aumenta
  la rigidez de las cadenas.
  Sin embargo, en una inspección más cercana, puede notarse que existen desviacio
-nes entre ambas curvas, que están relacionadas a la compresibilidad los
+nes entre ambas curvas, que están relacionadas a la compresibilidad de los
  cepillos con cadenas de distintas rigideces.
  
 \end_layout
@@ -13140,7 +13159,8 @@ donde
  El efecto del potencial de flexión queda en evidencia para las cadenas
  más rígidas, al observar las oscilaciones en la función de autocorrelación.
  Como es de esperar, al aumentar la rigidez de las cadenas, incrementa la
- frecuencia de oscilación Para las cadenas menos rígidas 
+ frecuencia de oscilación.
+ Para las cadenas menos rígidas 
 \begin_inset Formula $l_{p}/l_{c}<3$
 \end_inset
 
@@ -13190,7 +13210,7 @@ name "fig:Fluid_vel_vs_x"
 \end_inset
 
  Perfil de velocidad del fluido en la dirección del flujo, para 
-\begin_inset Formula $y=L_{y}/2$
+\begin_inset Formula $z=L_{z}/2$
 \end_inset
 
 , en función de la coordenada 
@@ -13212,7 +13232,7 @@ name "fig:Fluid_vel_vs_x"
 
  constante.
  Sobre el mismo, se grafica el campo de velocidad de las partículas de líquido
- dentro de la gota, para un sistema de referencia solidario a la misma
+ dentro de la gota, para un sistema de referencia solidario a la misma.
 \end_layout
 
 \end_inset
@@ -13264,8 +13284,8 @@ noprefix "false"
 \end_inset
 
 .
- En primer lugar puede observarse la diferencia en la amplitud de las fluctuacio
-nes de la velocidad para la gota y para el gas.
+ En primer lugar, puede observarse la diferencia en la amplitud de las fluctuaci
+ones de la velocidad para la gota y para el gas.
  Naturalmente, la velocidad del líquido es menos ruidosa, ya que al ser
  una fase más densa, se tienen más partículas y en consecuencia promedios
  mas robustos.
@@ -13675,8 +13695,8 @@ Se estudió un sistema compuesto por una gota en coexistencia con su vapor,
 \end_layout
 
 \begin_layout Standard
-En en este capítulo se focalizó en el estudio de la influencia de la rigidez
- de los polímeros en el flujo, manteniendo la forma de la gota constante.
+En en este capítulo se focalizó en la influencia de la rigidez de los polímeros
+ en el flujo, manteniendo la forma de la gota constante.
  Un amplio rango de valores de rigidez fue explorado, desde cadenas totalmente
  flexibles, hasta varillas rígidas 
 \begin_inset Formula $0.1<l_{p}/l_{c}<23$
@@ -13718,7 +13738,7 @@ Para entender el comportamiento del flujo con la rigidez, se estudió el
  al potencial de flexión duro, y no se observa el movimiento cíclico que
  se aprecia para cadenas más flexibles.
  Esto se refleja en una velocidad menor de la gota, ya que la capa del cepillo
- en contacto con la gota posee una velocidad menor, que en el caso de las
+ en contacto con la gota posee una velocidad menor que en el caso de las
  cadenas más flexibles.
  Algo destacable de este estudio, es que se vio que la dinámica interna
  del cepillo tiene una influencia significativa en el flujo.
@@ -13759,14 +13779,15 @@ Por otro lado, se observó que la velocidad del vapor en coexistencia con
  el líquido decae exponencialmente a medida que la distancia del vapor con
  la gota crece.
  Se realizaron simulaciones para distintos valores de largo de la caja de
- simulación, para variar la velocidad a la cual la el vapor se encuentra
- con la gota.
- Se comprobó que la fuerza entre el vapor y la gota líquida depende linealmente
+ simulación, para variar la velocidad a la cual el vapor se encuentra con
+ la gota.
+ Se comprobó que la fuerza entre el vapor y la gota depende linealmente
  de la diferencia de velocidad entre la gota y el gas circundante a la misma,
  como se espera en un modelo de fuerza de arrastre.
- Al reducir la longitud de la caja (o la distancia entre gotas consecutivas,
- pensando en un canal infinito), se reduce la diferencia de velocidad entre
- las fases, y consecuentemente se ve incrementada la velocidad de la gota.
+ Al reducir la longitud de la caja (o reducir la distancia entre gotas consecuti
+vas, pensando en un canal infinito), disminuye la diferencia de velocidad
+ entre las fases, y consecuentemente se ve incrementada la velocidad de
+ la gota.
 \end_layout
 
 \begin_layout Chapter
