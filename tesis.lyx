@@ -100,7 +100,23 @@
 
 \series bold
 \size larger
-Universidad de Buenos Aires
+UNIVERSIDAD DE BUENOS AIRES
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-3cm}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -108,6 +124,22 @@ Universidad de Buenos Aires
 
 \size large
 Facultad de Ciencias Exactas y Naturales 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-3cm}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -148,13 +180,12 @@ Director de Tesis: Dr.
 \end_layout
 
 \begin_layout Standard
-Consejero de Estudios: Dra.
+Consejera de Estudios: Dra.
  Marta Ferrado
 \end_layout
 
 \begin_layout Standard
-Lugar de Trabajo: Departamento de la Materia Condensada, Centro Atómico
- Constituyentes, CNEA
+Lugar de Trabajo: Departamento de la Materia Condensada, CAC, CNEA
 \end_layout
 
 \begin_layout Standard
@@ -1060,7 +1091,7 @@ name "fig:Brush_intro"
 Poliméros (en rojo) fijados a un sustrato (verde) que conforman un cepillo
  polimérico.
  En la figura a), las cadenas son totalmente flexibles, mientras que en
- b) las cadenas son semiflexibles.
+ b) las cadenas son semi-flexibles.
  Figura extraída de la referencia 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1133,9 +1164,9 @@ noprefix "false"
 \end_inset
 
 , las configuraciones adoptadas por polímeros totalmente flexibles en el
- panel a), son sensiblemente distintas a las adoptadas por polímeros semiflexibl
-es en el panel b).
- Algunos ejemplos de polímeros semiflexibles son el ADN, que presenta una
+ panel a), son sensiblemente distintas a las adoptadas por polímeros semi-flexib
+les en el panel b).
+ Algunos ejemplos de polímeros semi-flexibles son el ADN, que presenta una
  longitud de persistencia de aproximadamente 
 \begin_inset Formula $40{\rm nm}$
 \end_inset
@@ -1181,7 +1212,7 @@ literal "true"
 
 .
  Recientemente, Milchev y Binder estudiaron la estructura de cepillos integrados
- por polímeros semiflexibles, mediante simulaciones de Monte Carlo y Dinámica
+ por polímeros semi-flexibles, mediante simulaciones de Monte Carlo y Dinámica
  Molecular
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1222,7 +1253,7 @@ literal "true"
 \end_inset
 
  estudiaron, utilizando teoría de campo medio y simulaciones numéricas,
- la respuesta de cepillos poliméricos semiflexibles en flujo y observaron
+ la respuesta de cepillos poliméricos semi-flexibles en flujo y observaron
  un buen acuerdo entre ambos métodos en el régimen de alta rigidez.
  Römer y Fedosov
 \begin_inset CommandInset citation
@@ -1250,7 +1281,7 @@ literal "true"
 \end_inset
 
  desarrollaron un modelo teórico, que también comparan con simulaciones,
- de un cepillo semiflexible bajo flujo y encuentran un buen acuerdo entre
+ de un cepillo semi-flexible bajo flujo y encuentran un buen acuerdo entre
  los modelos teóricos y las simulaciones para un amplio rango de altura
  del cepillo, velocidad del flujo y densidades de fijado.
  Deng et al.
@@ -1262,7 +1293,7 @@ literal "true"
 \end_inset
 
  realizaron simulaciones de flujo de líquido en microcanales revestidos
- con polímeros semiflexibles, para estudiar el flujo sobre el glicocálix,
+ con polímeros semi-flexibles, para estudiar el flujo sobre el glicocálix,
  en un contexto de relevancia biológica.
  En este trabajo se compara el flujo manteniendo constante la altura de
  canal, y variando la rigidez de las cadenas.
@@ -1278,7 +1309,7 @@ literal "true"
 
  estudiaron la tribología de bicapas revestidas por polímeros mediante simulacio
 nes de dinámica molecular, y observaron que el coeficiente de fricción para
- cepillos poliméricos semiflexibles es mayor que para polímeros totalmente
+ cepillos poliméricos semi-flexibles es mayor que para polímeros totalmente
  flexibles.
  La comparación es realizada a igual alto efectivo del canal, pero con diferente
 s densidades de fijado.
@@ -1299,7 +1330,7 @@ glicocálix
 \end_layout
 
 \begin_layout Standard
-Un sistema biofísico de importancia que presenta polímeros semiflexibles
+Un sistema biofísico de importancia que presenta polímeros semi-flexibles
  fijados por un extremo a una superficie, es el glicocálix endotelial, presente
  en el sistema vascular de animales y plantas
 \begin_inset CommandInset citation
@@ -1396,7 +1427,7 @@ literal "true"
 
 \begin_layout Standard
 Desde un punto de vista mesoscópico, estas estructuras pueden ser modeladas
- como un cepillo polimérico semiflexible, dónde el tamaño de los sitios
+ como un cepillo polimérico semi-flexible, dónde el tamaño de los sitios
  de interacción representa el ancho de las cadenas
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2730,7 +2761,7 @@ noprefix "false"
 s del sistema: la cantidad de polímeros fijados por unidad de área y la
  intensidad del flujo.
  En este trabajo se estudió por primera vez un sistema de cepillos poliméricos
- superhidrofóbicos semiflexibles, lo que permitió publicar los resultados
+ superhidrofóbicos semi-flexibles, lo que permitió publicar los resultados
  hallados en la revista 
 \shape italic
 Soft Matter
@@ -2775,8 +2806,8 @@ noprefix "false"
 
 \end_inset
 
- se estudia un nanocanal revestido por cepillos semiflexibles superhidrofóbicos,
- con un fluido bifásico.
+ se estudia un nanocanal revestido por cepillos semi-flexibles superhidrofóbicos
+, con un fluido bifásico.
  En este caso el fluido está compuesto por una gota líquida que fluye por
  el canal, en coexistencia con su vapor de gas.
  Es importante comprender el comportamiento de flujos mutifásicos, ya que
@@ -2794,7 +2825,7 @@ literal "true"
  la rigidez de las cadenas del cepillo polimérico, profundizando en la interfase
  líquido-medio confinante.
  Hasta este trabajo, no existía en la bibliografía un estudio exhaustivo
- y sistemático de cepillos poliméricos semiflexibles en flujo, que analice
+ y sistemático de cepillos poliméricos semi-flexibles en flujo, que analice
  los aspecto reológicos y las propiedades de las cadenas, cubriendo todo
  el rango de durezas de las cadenas, desde polímeros totalmente flexibles,
  hasta varillas rígidas.
@@ -4005,7 +4036,7 @@ noprefix "false"
 \end_inset
 
  se desarrolla como pueden utilizarse estas estructuras para generar válvulas
- sensibles a la presión en nano canales.
+ sensibles a la presión en nanocanales.
 \end_layout
 
 \begin_layout Standard
@@ -4951,7 +4982,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-Las simulaciones en nano canales se llevaron a cabo en un paralelepípedo
+Las simulaciones en nanocanales se llevaron a cabo en un paralelepípedo
  de dimensiones 
 \begin_inset Formula $L_{x}\times L_{y}\times L_{z}$
 \end_inset
@@ -5813,7 +5844,7 @@ Nuestro trabajo
 \begin_layout Standard
 En este capítulo se estudia mediante simulaciones numéricas el flujo de
  un líquido simple en un nanocanal en forma de hendidura, revestido por
- cepillos poliméricos semiflexibles.
+ cepillos poliméricos semi-flexibles.
  El sistema es estudiado en equilibrio y en condiciones de flujo, en función
  de la cantidad de cadenas fijadas por unidad de área y de la velocidad
  del flujo, utilizando distintos valores de rigidez de las cadenas.
@@ -8473,7 +8504,7 @@ reference "fig:SDRx_vs_gd"
 
  está limitado por la longitud finita de los polímeros y los efectos entrópicos,
  que tienden a contraer la cadena.
- Es interesante notar que en el caso de las cadenas semiflexibles (
+ Es interesante notar que en el caso de las cadenas semi-flexibles (
 \begin_inset Formula $0.2<l_{p}/l_{c}\le1$
 \end_inset
 
@@ -8507,7 +8538,7 @@ reference "fig:SDRx_vs_gd"
 
 \begin_layout Standard
 También se verificó la existencia de movimiento dinámico cíclico de los
- monómeros terminales en cadenas semiflexibles en flujo, como se observó
+ monómeros terminales en cadenas semi-flexibles en flujo, como se observó
  en otros trabajos para cadenas aisladas y para cepillos poliméricos
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -9270,7 +9301,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Es interesante notar que las cepillos semiflexibles con constante de flexión
+Es interesante notar que las cepillos semi-flexibles con constante de flexión
  
 \begin_inset Formula $k_{b}=0.8\varepsilon$
 \end_inset
@@ -10124,7 +10155,7 @@ Al mover las paredes del canal en sentidos opuestos y a velocidad constante,
 
 \begin_layout Chapter
 Resultados II: Estudio del flujo bifásico en un nanocanal revestido por
- cepillos poliméricos semiflexibles
+ cepillos poliméricos semi-flexibles
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Resultados-II:-Influencia"
@@ -10163,7 +10194,7 @@ sistema de estudio
 
 \begin_layout Standard
 El sistema estudiado en este capítulo está compuesto por un canal tipo rendija,
- cuyas paredes están revestidas por polímeros semiflexibles y lleno por
+ cuyas paredes están revestidas por polímeros semi-flexibles y lleno por
  un fluido bifásico líquido-gas, como se aprecia en la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -10177,7 +10208,7 @@ noprefix "false"
 .
  Debido a las condiciones de contorno utilizadas en las direcciones paralelas
  a la pared del canal plano, este sistema puede pensarse como un tren de
- gotas atravesando un canal revestido por cepillos de polímeros semiflexibles.
+ gotas atravesando un canal revestido por cepillos de polímeros semi-flexibles.
  Se analiza la velocidad de la gota variando la distancia entre las gotas
  consecutivas en la dirección del flujo y modificando la rigidez de las
  cadenas.
@@ -11963,11 +11994,11 @@ noprefix "false"
 
 ), el cepillo es menos compacto.
  Las cadenas totalmente flexibles son comprimidas con mayor facilidad por
- la gota que las cadenas semiflexibles, hasta el punto en que las interacciones
+ la gota que las cadenas semi-flexibles, hasta el punto en que las interacciones
  de volumen excluido entran en juego.
  Estas interacciones impiden que el cepillo compuesto por cadenas totalmente
  flexibles siga comprimiéndose, alcanzando una alta densidad.
- Por el contrario, las cadenas semiflexibles presentan una mayor resistencia
+ Por el contrario, las cadenas semi-flexibles presentan una mayor resistencia
  a la compresión debido al potencial de flexión, por lo que estas logran
  ocupar más espacio y configuran un cepillo polimérico menos denso.
  Al seguir aumentando la rigidez de los polímeros, se observa que los monómeros
@@ -12990,7 +13021,7 @@ presentan la mayor deformación ante la misma presión ejercida por la gota.
 \end_inset
 
 , ya que poseen una constante de flexión más baja.
- En este caso se observa que las cadenas semiflexibles 
+ En este caso se observa que las cadenas semi-flexibles 
 \begin_inset Formula $l_{p}/l_{c}=1$
 \end_inset
 
@@ -12999,7 +13030,7 @@ presentan la mayor deformación ante la misma presión ejercida por la gota.
 \end_inset
 
 , porque en estas últimas domina la interacción de volumen excluido, mientras
- que en las semiflexibles domina la energía de flexión.
+ que en las semi-flexibles domina la energía de flexión.
 \end_layout
 
 \begin_layout Standard
@@ -13177,7 +13208,7 @@ donde
 , que indica la descorrelación del movimiento de las cadenas para tiempos
  largos.
  También se puede observa que las cadenas totalmente flexibles tienen un
- tiempo característico de decaimiento mas corto que las cadenas semiflexibles.
+ tiempo característico de decaimiento mas corto que las cadenas semi-flexibles.
 \end_layout
 
 \begin_layout Subsection
@@ -13686,7 +13717,7 @@ name "sec:Resumen_Cap4"
 
 \begin_layout Standard
 Se estudió un sistema compuesto por una gota en coexistencia con su vapor,
- en un nano canal revestido por un cepillo polimérico semiflexible.
+ en un nanocanal revestido por un cepillo polimérico semi-flexible.
  El sistema fue sacado del equilibrio, imponiendo una fuerza constante sobre
  cada partícula del fluido e induciendo el flujo.
  Es importante mencionar que la gota no moja al cepillo, sino que se sostiene
@@ -13966,8 +13997,8 @@ s en el seno del canal.
 \end_layout
 
 \begin_layout Section
-Formaciones de estructuras en cepillos poliméricos semiflexibles en un solvente
- pobre
+Formaciones de estructuras en cepillos poliméricos semi-flexibles en un
+ solvente pobre
 \end_layout
 
 \begin_layout Standard
@@ -15457,7 +15488,7 @@ e flexibles (
 \begin_inset Formula $l_{p}/l_{c}=0$
 \end_inset
 
- en negro) y semiflexibles (
+ en negro) y semi-flexibles (
 \begin_inset Formula $l_{p}/l_{c}=1$
 \end_inset
 
@@ -16876,7 +16907,7 @@ literal "false"
  afectada significativamente por la fuerza que induce el flujo.
  Cabe mencionar que en el trabajo citado, las densidades de fijado son considera
 blemente mayores a las utilizadas en este trabajo, y ellos usan polímeros
- totalmente flexibles, mientras aquí las cadenas son semiflexibles.
+ totalmente flexibles, mientras aquí las cadenas son semi-flexibles.
  Se puede observar nuevamente en la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -17288,7 +17319,7 @@ name "chap:Observaciones-finales"
 status open
 
 \begin_layout Plain Layout
-corregido
+corregido y revisado
 \end_layout
 
 \end_inset
@@ -17298,8 +17329,8 @@ corregido
 
 \begin_layout Standard
 En este trabajo de tesis doctoral se estudió en profundidad la física de
- una nanocanal revestido con cepillos poliméricos semiflexibles lleno de
- fluido mediante simulaciónes de dinámica molecular.
+ una nanocanal revestido con cepillos poliméricos semi-flexibles lleno de
+ fluido, mediante simulaciones de dinámica molecular.
  La investigación se centró en cepillos poliméricos hidrofóbicos con una
  baja afinidad con el solvente que llena el canal.
  A pesar de su relevancia, los nanocanales en estas condiciones no habían
@@ -17329,8 +17360,8 @@ status open
  Los resultados más relevantes han sido reportados en tres publicaciones
  en revistas internacionales de primer nivel con referato.
  Estos aportes al entendimiento de la materia blanda, nanofluídica y física
- de polímeros servirán para seguir construyendo conocimiento y para el desarroll
-o nuevas aplicaciones tecnológicas.
+ de polímeros servirán para seguir construyendo más conocimiento y para
+ el desarrollo nuevas aplicaciones tecnológicas.
 \end_layout
 
 \begin_layout Standard
@@ -17350,9 +17381,9 @@ Paper 1
 En el primer capítulo de esta tesis se estudia de manera exhaustiva al nanocanal
  lleno de líquido simple y revestido con cepillos poliméricos hidrofóbicos
  en equilibrio y fuera del mismo.
- Se exploraron pocos valores de rigidez de las cadenas y se realizó un estudio
- sistemático del sistema en función de la densidad polimérica de fijado
- y de la velocidad de paredes.
+ Se exploraron algunos valores de rigidez de las cadenas y se realizó un
+ estudio sistemático del sistema en función de la densidad polimérica de
+ fijado y de la velocidad de paredes.
  En este primer acercamiento al sistema se obtuvieron resultados interesantes
  para continuar explorando el comportamiento en otros contextos.
  Se observó que el líquido no moja al cepillo en ningún caso y, aún fuera
@@ -17362,16 +17393,16 @@ En el primer capítulo de esta tesis se estudia de manera exhaustiva al nanocana
  lo tanto no es necesario modelar su rugosidad.
  También se observó que a altas densidades de fijado la rigidez de las cadenas
  no es relevante en la respuesta reológica del sistema, mientras que a bajas
- densidades de fijado hay una dependencia del flujo con la rigidez de flexiónde
- los polímeros.
+ densidades de fijado hay una dependencia del flujo con la rigidez de flexión
+ de los polímeros.
  En este sistema se observó que al presionar a los polímeros axialmente,
  estos adoptan configuraciones muy distintas según su rigidez.
  Es interesante notar que el estiramiento de las cadenas en las direcciones
  paralelas al sustrato depende de manera no monótona de la constante de
  flexión.
  Esto lleva a que el cepillo polimérico formado por cadenas poliméricas
- semiflexibles sea menos resistente a las deformaciones que el cepillo poliméric
-o totalmente flexible.
+ semi-flexibles sea menos resistente a las deformaciones que el cepillo
+ polimérico totalmente flexible.
  Estos cambios morfológicos dependientes de la rigidez invitaron a continuar
  investigando el sistema en profundidad en función de la dureza de las cadenas.
  
@@ -17395,8 +17426,9 @@ A partir de los resultados obtenidos, se decidió estudiar el flujo bifásico
  en un nanocanal, en función de la rigidez de los polímeros.
  En este caso el fluido está compuesto por una gota que viaja a través del
  canal en coexistencia con su vapor de gas.
- El ancho del canal fue ajustado para hacer la comparación manteniendo la
- forma de la gota similar.
+ El ancho del canal fue ajustado para mantener la forma de la gota similar
+ en todos los casos y hacer las mediciones comparables entre polímeros con
+ distintos valores de rigidez.
  En este contexto, se observó un decrecimiento de la velocidad de transporte
  del líquido al incrementar la rigidez de los polímeros.
  Se observó que este fenómeno no estaba ligado a un cambio morfológico,
@@ -17422,11 +17454,11 @@ Al medir la compresibilidad de los cepillos ante la presión axial, se encontró
  presentaron la mayor deformación.
  Estas cadenas son las más fáciles de comprimir, ya que los segmentos se
  estiran coherentemente en la dirección paralela a la pared.
- Este resultado es anti-intuitivo, ya que se esperaría que las cadenas más
- flexibles sean más deformables.
+ Este resultado es anti-intuitivo, ya que es de esperarse que las cadenas
+ más flexibles formen cepillos más deformables.
  Sin embargo las cadenas totalmente flexibles se resisten a la compresión,
  ya que al adoptar configuraciones globulares, son las fuerzas de volumen
- excluido las que evitan la compresión en este caso.
+ excluido las que evitan la compresión.
  La utilización del parámetro adimensional de rigidez 
 \begin_inset Formula $l_{p}/l_{c}$
 \end_inset
@@ -17440,7 +17472,7 @@ resultó de gran ayuda para entender el comportamiento morfológico del cepillo.
 \end_layout
 
 \begin_layout Standard
-También se estudió la interacción líquido-gas y cómo varía con la longitud
+También se estudió la interacción líquido-gas y cómo varía esta con la longitud
  del nanocanal.
  El gas adopta un perfil de velocidad que decae exponencialmente a lo largo
  del canal.
@@ -17471,17 +17503,17 @@ Por último se decidió incluir las interacciones atractivas entre monómeros
  Primero se estudiaron las formaciones de un cepillo polimérico en una superfici
 e abierta no confinada, observando una rica diversidad de estructuras en
  función de la rigidez de las cadenas y de la densidad de fijado.
- Luego se estudió este cepillo como revestimiento en un nanocanal lleno
+ Luego, se estudió este cepillo como revestimiento en un nanocanal lleno
  de líquido, dónde la distancia entre paredes permite el contacto entre
  cadenas fijadas a sustratos opuestos.
  El comportamiento de este sistema cambia cualitativamente con la dureza
  de las cadenas.
  Se estudió la conformación de estructuras en equilibrio e imponiendo un
  gradiente de presión a lo largo del canal para inducir un flujo tipo Poiseuille.
- En equilibrio, los polímeros semiflexibles se estiran en la dirección perpendic
-ular a las paredes, formando estructuras que atraviesan, mientras que las
- cadenas totalmente flexibles toman una configuración espacial en forma
- de glóbulo y no forman estructuras.
+ En equilibrio, los polímeros semi-flexibles se estiran en la dirección
+ perpendicular a las paredes, formando estructuras que atraviesan el canal,
+ mientras que las cadenas totalmente flexibles toman una configuración espacial
+ en forma de glóbulo y no forman estructuras.
  Al inducir el flujo en el canal, las formaciones poliméricas obstruyen
  el transporte de líquido, dejando al canal en un estado de bajo caudal.
  Si el gradiente de presión es suficientemente grande, las estructuras que
@@ -17541,11 +17573,11 @@ Durante este trabajo de tesis se iniciaron otras líneas de investigación
  Otra variable interesante para investigar, es la incidencia de la geometría
  en la reología de los nanocanales.
  Por ejemplo, estudiar el flujo de líquido simple en un nanocanal cilíndrico
- revestido por cepillos poliméricos semiflexibles.
+ revestido por cepillos poliméricos semi-flexibles.
  Otra línea de investigación que se comenzó y puede continuarse en el futuro,
  es el estudio de la sincronización de polímeros activos.
- La idea en este caso es investigar el acople por medio del solvente en
- cadenas con un movimiento autosustentable.
+ La idea en este caso es investigar el acoplamiento por medio del solvente
+ en cadenas con un movimiento autosustentable.
 \end_layout
 
 \begin_layout Section*
@@ -17584,18 +17616,18 @@ Más allá de lo aportes científicos concretos, plasmados en las publicaciones
  En particular, se destaca el desarrollo de la paralelización de los cómputos
  en un esquema de memoria compartida, que apunta a ser usado en nodos con
  varios núcleos.
- La tendencia en las nuevas computadoras es a sumar más núcleos de procesamiento
-, en vez de aumentar la velocidad de los procesadores, y uno de los programas
- desarrollados en este trabajo utiliza eficientemente los procesadores para
- disminuir el tiempo de simulación.
+ Los programas desarrollados en este trabajo utilizan eficientemente los
+ procesadores en paralelo para disminuir el tiempo de simulación, en concordanci
+a con la tendencia de sumar más núcleos de procesamiento, en vez de aumentar
+ la velocidad de los procesadores.
 \end_layout
 
 \begin_layout Standard
 Otra consecuencia de estos años de trabajo es la formación de recursos humanos.
  A lo largo del doctorado he aprendido a hacer ciencia, lo cual implica
  abordar un tema de investigación, saber filtrar las publicaciones relevantes
- en el océano de revistas, proponer experiencias relevantes, aprender a
- analizar los datos para extraer conclusiones, bajo el mayor rigor crítico.
+ en el océano de revistas, proponer experiencias relevantes y aprender a
+ analizar los datos para extraer conclusiones bajo el mayor rigor crítico.
  Para hacer ciencia también es importante pulir las formas de comunicación,
  y utilizar los métodos que sean mas eficaces para hacer llegar una idea.
  En el proceso de envío y publicación de un artículo se aprende que la presentac
