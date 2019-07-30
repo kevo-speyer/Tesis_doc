@@ -1,0 +1,31 @@
+\contentsline {section}{\numberline {1}Uso de \textsf {spanish} para babel}{2}{section.1}
+\contentsline {section}{\numberline {2}\textsf {spanish} como lengua principal}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Listas}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Contadores}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Otros}{5}{subsection.2.3}
+\contentsline {section}{\numberline {3}Traducciones}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Nombres}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Fechas}{6}{subsection.3.2}
+\contentsline {section}{\numberline {4}Abreviaciones (\textit {shorthands})}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Coma decimal}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Divisi\IeC {\'o}n de palabras}{9}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Otros}{10}{subsection.4.3}
+\contentsline {section}{\numberline {5}Funciones de texto y matem\IeC {\'a}ticas}{10}{section.5}
+\contentsline {subsection}{\numberline {5.1}Abreviaturas}{10}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Espaciado}{11}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Fuentes}{11}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Entrecomillados}{12}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Funciones matem\IeC {\'a}ticas}{13}{subsection.5.5}
+\contentsline {section}{\numberline {6}Opciones generales}{14}{section.6}
+\contentsline {section}{\numberline {7}Selecci\IeC {\'o}n}{14}{section.7}
+\contentsline {section}{\numberline {8}Adaptaci\IeC {\'o}n}{15}{section.8}
+\contentsline {subsection}{\numberline {8.1}Opciones por pa\IeC {\'\i }ses}{15}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Configuraci\IeC {\'o}n}{15}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Pasar opciones desde un paquete o clase}{16}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}Otros cambios}{16}{subsection.8.4}
+\contentsline {section}{\numberline {9}Plain T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}}{16}{section.9}
+\contentsline {section}{\numberline {10}Compatibilidad con versiones anteriores}{17}{section.10}
+\contentsline {section}{Referencias}{17}{section*.3}
+\contentsline {section}{\numberline {11}The Spanish language}{18}{section.11}
+\contentsline {paragraph}{Features}{18}{section*.5}
+\contentsline {paragraph}{Customization}{19}{section*.6}

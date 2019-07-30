@@ -7,6 +7,11 @@
 \textclass extbook
 \begin_preamble
 
+\usepackage[spanish]{babel}
+\addto\captionsspanish{
+\renewcommand{\partname}{Libro}
+\renewcommand{\chaptername}{Capítulo}
+}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -48,7 +53,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
-\biblio_style plain
+\biblio_style unsrt
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -457,16 +462,6 @@ K:Corregido y revisado
 \end_inset
 
 
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Introducción
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -702,6 +697,8 @@ donde
  modelo de varilla elástica (modelo de
 \shape italic
  Kratky-Porod
+\shape default
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "doi:10.1021/ma9023813"
@@ -709,9 +706,7 @@ literal "false"
 
 \end_inset
 
- 
-\shape default
-).
+ ).
 \end_layout
 
 \begin_layout Standard
@@ -5179,7 +5174,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/Usus.agr
-	width 50text%
+	width 60text%
 	clip
 
 \end_inset
@@ -5229,16 +5224,6 @@ name "sec:Termostato-y-conexión"
 \end_inset
 
  
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Termostato y conexión con Mecánica Estadística
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -5784,17 +5769,6 @@ Esto hace que el tiempo de correlación disminuya fuertemente, siempre que
 \begin_layout Chapter
 Resultados I: Cepillos poliméricos en equilibrio y bajo flujo en régimen
  superhidrofóbico
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Resultados I: Cepillos poliméricos en equilibrio y bajo flujo en régimen
- superhidrofóbico
-\end_layout
-
-\end_inset
-
-
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Resultados-I:-Cepillos"
@@ -5814,18 +5788,24 @@ Corregido y revisado!
 
 \end_layout
 
-\begin_layout Section
-Sistema estudiado
-\begin_inset Index idx
+\begin_layout Standard
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-Sistema estudiado
+
+
+\backslash
+chaptermark{Resultados I}
 \end_layout
 
 \end_inset
 
- 
+
+\end_layout
+
+\begin_layout Section
+Sistema estudiado
 \end_layout
 
 \begin_layout Standard
@@ -5944,7 +5924,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/cap3_Muestra1.eps
-	width 60text%
+	width 55text%
 	clip
 
 \end_inset
@@ -6000,16 +5980,6 @@ En el panel izquierdo se presenta una captura lateral del sistema de estudio.
 
 \begin_layout Section
 Detalles del sistema y método
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Detalles del sistema y método
-\end_layout
-
-\end_inset
-
-
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Detalles-del-sistema_3"
@@ -6942,7 +6912,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/Slip1.agr
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -7069,7 +7039,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/pos_inter.agr
-	width 55text%
+	width 70text%
 	clip
 
 \end_inset
@@ -7454,7 +7424,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/cap3_Rz_vs_gd_vx0.eps
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -7638,7 +7608,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/cap3_BondAngle_vs_gd_vx0.eps
-	width 60text%
+	width 80text%
 	clip
 
 \end_inset
@@ -7858,7 +7828,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/cap3_sym_vel_prof.eps
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -8058,7 +8028,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/cap3_Rz_vs_We_kb80.eps
-	width 60text%
+	width 70text%
 
 \end_inset
 
@@ -8312,7 +8282,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/cap3_Theta_vs_We_GR.eps
-	width 60text%
+	width 80text%
 	clip
 
 \end_inset
@@ -8594,7 +8564,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/cap3_SDRx_vs_gd.eps
-	width 60text%
+	width 80text%
 	clip
 
 \end_inset
@@ -8808,7 +8778,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/cap3_Theta_PDF_gd0.02_We.eps
-	width 60text%
+	width 80text%
 	clip
 
 \end_inset
@@ -8971,7 +8941,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/cap3_BondEnergy_vs_We_gd0.02.eps
-	width 60text%
+	width 80text%
 	clip
 
 \end_inset
@@ -9187,7 +9157,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/cap3_SlipLen_vs_gd.eps
-	width 60text%
+	width 80text%
 	clip
 
 \end_inset
@@ -9461,7 +9431,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/cap3_SlipLen_vs_We_gd0.05.eps
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -9732,7 +9702,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/Mu_vs_Shear.agr
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -9931,7 +9901,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/Mu_vs_gd.agr
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -10163,11 +10133,17 @@ name "chap:Resultados-II:-Influencia"
 \end_inset
 
 
-\begin_inset Note Note
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-Corregido y Revisado!
+
+
+\backslash
+chaptermark{Resultados II}
 \end_layout
 
 \end_inset
@@ -10270,7 +10246,7 @@ status open
 \begin_inset Graphics
 	filename figs/Fig1_1.eps
 	lyxscale 45
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -10859,7 +10835,7 @@ status open
 \begin_inset Graphics
 	filename figs/cm_algorithm.eps
 	lyxscale 40
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -11108,7 +11084,7 @@ status open
 \begin_inset Graphics
 	filename figs/drop_tracer.agr
 	lyxscale 70
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -11160,7 +11136,7 @@ status open
 \begin_inset Graphics
 	filename figs/drop_tracer_2.agr
 	lyxscale 70
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -11338,7 +11314,7 @@ status open
 \begin_inset Graphics
 	filename figs/Chi2_vs_Lz_kb80_SM2.eps
 	lyxscale 40
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -11427,7 +11403,7 @@ status open
 \begin_inset Graphics
 	filename figs/dropVel_vs_rigidity.eps
 	lyxscale 45
-	width 50text%
+	width 70text%
 	clip
 
 \end_inset
@@ -11649,7 +11625,7 @@ status open
 \begin_inset Graphics
 	filename figs/pol_liq_interac_vs_rigidity3.eps
 	lyxscale 45
-	width 60text%
+	width 70text%
 
 \end_inset
 
@@ -12067,7 +12043,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/cyc_motion.png
-	width 60text%
+	width 70text%
 
 \end_inset
 
@@ -12253,7 +12229,7 @@ status open
 \begin_inset Graphics
 	filename figs/SlipVel_vs_rigidity3.eps
 	lyxscale 45
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -12534,7 +12510,7 @@ status open
 \begin_inset Graphics
 	filename figs/Rx_vs_rigidity_norm.eps
 	lyxscale 45
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -12699,7 +12675,7 @@ status open
 \begin_inset Graphics
 	filename figs/Rz_vs_rigidity2_norm.eps
 	lyxscale 45
-	width 60text%
+	width 70text%
 
 \end_inset
 
@@ -12903,7 +12879,7 @@ status open
 \begin_inset Graphics
 	filename figs/Deformation_vs_rigidity.eps
 	lyxscale 45
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -13115,7 +13091,7 @@ status open
 \begin_inset Graphics
 	filename figs/Rx_time_autocorr.eps
 	lyxscale 45
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -13226,7 +13202,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/vfluid_vs_Lx_5.eps
-	width 60text%
+	width 75text%
 
 \end_inset
 
@@ -13451,7 +13427,7 @@ status open
 \begin_inset Graphics
 	filename figs/vd_vs_L2_.eps
 	lyxscale 50
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -13842,6 +13818,22 @@ Corregido y Revisado todo
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptermark{Resultados III}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Sistema estudiado
 \end_layout
@@ -13959,7 +13951,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/TOC.png
-	width 75text%
+	width 85text%
 	clip
 
 \end_inset
@@ -13999,6 +13991,22 @@ s en el seno del canal.
 \begin_layout Section
 Formaciones de estructuras en cepillos poliméricos semi-flexibles en un
  solvente pobre
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sectionmark{Formaciones de estructuras}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -14250,7 +14258,7 @@ status open
 \begin_inset Graphics
 	filename figs/bund_phas_diag.agr
 	lyxscale 50
-	width 85text%
+	width 99text%
 	clip
 
 \end_inset
@@ -14790,7 +14798,7 @@ status open
 \begin_inset Graphics
 	filename figs/TOC_2.eps
 	lyxscale 34
-	width 75text%
+	width 95text%
 	clip
 
 \end_inset
@@ -14892,7 +14900,7 @@ status open
 \begin_inset Graphics
 	filename figs/dens_profs.eps
 	lyxscale 50
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -15118,7 +15126,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/gd0.03_Q_vs_fext.eps
-	width 60text%
+	width 75text%
 	clip
 
 \end_inset
@@ -15191,7 +15199,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/Q_random_vs_order_brush.agr
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -15436,7 +15444,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/Q_vs_fext_gd0.02.eps
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -15679,7 +15687,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/mean_vel_vs_lp_gd0.02.eps
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -15889,7 +15897,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/Theta_Rend_vs_lp.eps
-	width 60text%
+	width 70text%
 
 \end_inset
 
@@ -16142,7 +16150,7 @@ status open
 \begin_inset Graphics
 	filename figs/gr_vs_lp_2.eps
 	lyxscale 40
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -16635,7 +16643,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figs/Fc_bund_dens_vs_gd.eps
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -16828,7 +16836,7 @@ status open
 \begin_inset Graphics
 	filename figs/perm_vs_Fx_solvQual.eps
 	lyxscale 50
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -16992,7 +17000,7 @@ status open
 \begin_inset Graphics
 	filename figs/R_vs_F_allSolvents_2.eps
 	lyxscale 50
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
@@ -17160,7 +17168,7 @@ status open
 \begin_inset Graphics
 	filename figs/gr_bunDens_vs_solvQ.eps
 	lyxscale 50
-	width 60text%
+	width 70text%
 	clip
 
 \end_inset
