@@ -5767,8 +5767,7 @@ Esto hace que el tiempo de correlación disminuya fuertemente, siempre que
 \end_layout
 
 \begin_layout Chapter
-Resultados I: Cepillos poliméricos en equilibrio y bajo flujo en régimen
- superhidrofóbico
+Cepillos poliméricos en equilibrio y bajo flujo en régimen superhidrofóbico
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Resultados-I:-Cepillos"
@@ -5796,7 +5795,7 @@ status open
 
 
 \backslash
-chaptermark{Resultados I}
+chaptermark{Cepillos poliméricos en equilibrio y bajo flujo ...}
 \end_layout
 
 \end_inset
@@ -10124,8 +10123,8 @@ Al mover las paredes del canal en sentidos opuestos y a velocidad constante,
 \end_layout
 
 \begin_layout Chapter
-Resultados II: Estudio del flujo bifásico en un nanocanal revestido por
- cepillos poliméricos semi-flexibles
+Estudio del flujo bifásico en un nanocanal revestido por cepillos poliméricos
+ semi-flexibles
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Resultados-II:-Influencia"
@@ -10143,7 +10142,7 @@ status open
 
 
 \backslash
-chaptermark{Resultados II}
+chaptermark{Estudio del flujo bifásico en un nanocanal ...}
 \end_layout
 
 \end_inset
@@ -13798,7 +13797,7 @@ vas, pensando en un canal infinito), disminuye la diferencia de velocidad
 \end_layout
 
 \begin_layout Chapter
-Resultados III: Cepillos poliméricos como válvulas en nanocanales
+Cepillos poliméricos como válvulas en nanocanales
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Resultados-III:-Cepillos"
@@ -13826,7 +13825,7 @@ status open
 
 
 \backslash
-chaptermark{Resultados III}
+chaptermark{Cepillos poliméricos como válvulas en nanocanales}
 \end_layout
 
 \end_inset
@@ -14494,8 +14493,8 @@ name "fig:bundle_phase_diag_2"
 
 \end_inset
 
-Las zonas delimitada en rojo muestras el rango de valores en el espacio
- de parámetros que se decidió utilizar para estudiar el nanocanal revestido
+Las zonas delimitada en rojo muestra el rango de valores en el espacio de
+ parámetros que se decidió utilizar para estudiar el nanocanal revestido
  con cepillos poliméricos en solvente pobre (ver sección 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -17336,6 +17335,7 @@ corregido y revisado
 \end_layout
 
 \begin_layout Standard
+\align block
 En este trabajo de tesis doctoral se estudió en profundidad la física de
  una nanocanal revestido con cepillos poliméricos semi-flexibles lleno de
  fluido, mediante simulaciones de dinámica molecular.
@@ -17373,19 +17373,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Paper 1
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\align block
 En el primer capítulo de esta tesis se estudia de manera exhaustiva al nanocanal
  lleno de líquido simple y revestido con cepillos poliméricos hidrofóbicos
  en equilibrio y fuera del mismo.
@@ -17417,19 +17405,7 @@ En el primer capítulo de esta tesis se estudia de manera exhaustiva al nanocana
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Paper 2
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\align block
 A partir de los resultados obtenidos, se decidió estudiar el flujo bifásico
  en un nanocanal, en función de la rigidez de los polímeros.
  En este caso el fluido está compuesto por una gota que viaja a través del
@@ -17450,6 +17426,7 @@ A partir de los resultados obtenidos, se decidió estudiar el flujo bifásico
 \end_layout
 
 \begin_layout Standard
+\align block
 Al medir la compresibilidad de los cepillos ante la presión axial, se encontró
  que las cadenas cuya longitud de persistencia 
 \begin_inset Formula $l_{p}$
@@ -17480,6 +17457,7 @@ resultó de gran ayuda para entender el comportamiento morfológico del cepillo.
 \end_layout
 
 \begin_layout Standard
+\align block
 También se estudió la interacción líquido-gas y cómo varía esta con la longitud
  del nanocanal.
  El gas adopta un perfil de velocidad que decae exponencialmente a lo largo
@@ -17493,19 +17471,7 @@ También se estudió la interacción líquido-gas y cómo varía esta con la lon
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Paper 3
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\align block
 Por último se decidió incluir las interacciones atractivas entre monómeros
  y estudiar las formaciones poliméricas en el cepillo.
  Primero se estudiaron las formaciones de un cepillo polimérico en una superfici
@@ -17543,6 +17509,7 @@ e abierta no confinada, observando una rica diversidad de estructuras en
 \end_layout
 
 \begin_layout Standard
+\align block
 Luego se estudió la respuesta del sistema en función de la cantidad de cadenas
  por unidad de área y de la afinidad entre el solvente y el cepillo polimérico.
  Se encontró que al aumentar la afinidad solvente-cepillo, la diferencia
@@ -17557,21 +17524,7 @@ Luego se estudió la respuesta del sistema en función de la cantidad de cadenas
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-C: Faltaría una oración de "trabajo futuro", otras geometrías ...
- o lo que se te ocurra en base a tu laburo.
- K: OK
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\align block
 Durante este trabajo de tesis se iniciaron otras líneas de investigación
  que no se continuaron debido a restricciones de tiempo.
  Una de estas es el estudio de gotas de líquido depositadas en un sustrato
@@ -17612,6 +17565,8 @@ quiza de aca para abajo es más para agradecimientos? Quizás lo anterior
 \end_layout
 
 \begin_layout Standard
+\paragraph_spacing single
+\align block
 Más allá de lo aportes científicos concretos, plasmados en las publicaciones
  en revistas y en esta misma tesis, el trabajo de estos cinco años ha dejado
  otras consecuencias irreversibles.
@@ -17631,6 +17586,8 @@ a con la tendencia de sumar más núcleos de procesamiento, en vez de aumentar
 \end_layout
 
 \begin_layout Standard
+\paragraph_spacing single
+\align block
 Otra consecuencia de estos años de trabajo es la formación de recursos humanos.
  A lo largo del doctorado he aprendido a hacer ciencia, lo cual implica
  abordar un tema de investigación, saber filtrar las publicaciones relevantes
@@ -17644,6 +17601,8 @@ n e impacto.
 \end_layout
 
 \begin_layout Standard
+\paragraph_spacing single
+\align block
 Por otro lado, he aprendido a aplicar a becas y subsidios para continuar
  líneas de investigación o para profundizar el conocimiento en algunas técnicas
  relevantes al trabajo de doctorado.
@@ -17666,19 +17625,6 @@ r de Workshops de programación en paralelo y manejo de paquetes de código
 
 \begin_layout Chapter*
 Agradecimientos
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Agradecimientos
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
