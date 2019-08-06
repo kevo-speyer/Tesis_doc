@@ -14477,8 +14477,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figs/bund_phas_diag_2.png
-	width 75col%
+	filename figs/bund_phas_diag_2.eps
+	width 99col%
 	clip
 
 \end_inset
@@ -17628,6 +17628,25 @@ Agradecimientos
 \end_layout
 
 \begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
 A mi familia por el aguante incondicional.
 \end_layout
 
