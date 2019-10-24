@@ -641,8 +641,8 @@ freely jointed chain
 
  cada uno.
  Si bien este modelo es muy crudo, ya que ignora totalmente las interacciones
- entre monómeros, excepción de la conectividad de la cadena, predice correctamen
-te algunas propiedades en determinadas condiciones experimentales.
+ entre monómeros, con excepción de la conectividad de la cadena, predice
+ correctamente algunas propiedades en determinadas condiciones experimentales.
  No es esperable que 
 \begin_inset Formula $N$
 \end_inset
@@ -8635,7 +8635,7 @@ nte con
 En la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Theta_vs_Shear"
+reference "fig:ThetaPDF"
 plural "false"
 caps "false"
 noprefix "false"
@@ -11547,7 +11547,7 @@ Perfiles de densidad del sistema visto en un corte en un plano
 \end_inset
 
  constante.
- La imagen superior corresponde la perfil del fluido y la imagen del centro
+ La imagen superior corresponde al perfil del fluido y la imagen del centro
  corresponde al perfil de densidad de los polímeros.
  La imagen inferior es el producto de las densidades poliméricas y del fluido,
  y muestra el área donde las cadenas y el líquido interactúan.
@@ -16284,8 +16284,8 @@ noprefix "false"
 \begin_inset Formula $R_{z}$
 \end_inset
 
- en función de la fuerza externa para cada un de los distintos valores de
- 
+ en función de la fuerza externa para cada uno de los distintos valores
+ de 
 \begin_inset Formula $\rho_{g}$
 \end_inset
 
@@ -17337,7 +17337,7 @@ corregido y revisado
 \begin_layout Standard
 \align block
 En este trabajo de tesis doctoral se estudió en profundidad la física de
- una nanocanal revestido con cepillos poliméricos semi-flexibles lleno de
+ un nanocanal revestido con cepillos poliméricos semi-flexibles lleno de
  fluido, mediante simulaciones de dinámica molecular.
  La investigación se centró en cepillos poliméricos hidrofóbicos con una
  baja afinidad con el solvente que llena el canal.
