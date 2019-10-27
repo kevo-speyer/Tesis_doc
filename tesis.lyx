@@ -4958,7 +4958,7 @@ noprefix "false"
 
  para determinar la longitud de persistencia de los polímeros.
  Para valores de rigidez 
-\begin_inset Formula $k_{f}\gg k_{B}T$
+\begin_inset Formula $k_{b}\gg k_{B}T$
 \end_inset
 
 , la ecuación 

@@ -77,29 +77,11 @@
 \begin_body
 
 \begin_layout Standard
-\begin_inset Formula $k_{B}T\sim300Kk_{B}=0.8\varepsilon\,\Rightarrow\varepsilon\sim5·10^{-21}J$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $l_{c}\sim100nm=15\sigma\,\Rightarrow\sigma\sim6·10^{-9}m$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\frac{\Delta m}{\Delta l}\sim2000Da/nm=3·10^{-15}kg/m\,\Rightarrow m=\frac{\Delta m}{\Delta l}·\sigma\sim2·10^{-23}kg$
+\begin_inset Formula $\begin{cases}
+k_{B}T\sim300Kk_{B}=0.8\varepsilon\,\Rightarrow & \varepsilon\sim5\text{·}10^{-21}J\\
+l_{c}\sim100nm=15\sigma\,\Rightarrow & \sigma\sim6\text{·}10^{-9}m\\
+\frac{\Delta m}{\Delta l}\sim2000Da/nm=3\text{·}10^{-15}kg/m\,\Rightarrow & \frac{\Delta m}{\Delta l}\text{·}\sigma=m\sim2\text{·}10^{-23}kg
+\end{cases}$
 \end_inset
 
 
@@ -132,7 +114,7 @@
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\Delta P\sim$
+\begin_inset Formula $\Delta P\sim30MPa$
 \end_inset
 
 
@@ -155,6 +137,28 @@
 
 \begin_layout Standard
 \begin_inset Formula $v\sim1m/s$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{b}(\theta)=\frac{1}{2}k_{b}\theta^{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $l_{p}$
 \end_inset
 
 

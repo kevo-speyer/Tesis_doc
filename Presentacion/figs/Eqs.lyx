@@ -140,6 +140,28 @@ l_{c}\sim100nm=15\sigma\,\Rightarrow & \sigma\sim6\text{·}10^{-9}m\\
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{b}(\theta)=\frac{1}{2}k_{b}\theta^{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $l_{p}=k_{b}\sigma/k_{B}T$
+\end_inset
+
+
 \end_layout
 
 \end_body
